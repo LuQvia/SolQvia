@@ -1,11 +1,11 @@
-// SolQvia.com Phase33 platform configuration. Keep issued IDs blank until the exact account provides them.
+// SolQvia.com Phase35 platform configuration. GTM and GA4 IDs verified on 2026-07-23.
 window.SOLQVIA_PLATFORM = Object.freeze({
   reviewFocusMode: true,
   focusSection: 'smartphone',
 
   // Analytics: GTM takes precedence over the direct GA4 ID.
-  gtmId: '',                      // GTM-XXXXXXX
-  ga4MeasurementId: '',           // G-XXXXXXXXXX
+  gtmId: 'GTM-WM4K76RF',                      // GTM-XXXXXXX
+  ga4MeasurementId: 'G-8QLJEW3TMP',           // G-XXXXXXXXXX
   clarityProjectId: '',           // Optional
   analyticsConsentVersion: '2026-07-23',
 
