@@ -1,0 +1,17 @@
+{
+  "phase": "phase37",
+  "html_files": 286,
+  "adsense_meta_inserted": 286,
+  "adsense_base_code_inserted": 286,
+  "consent_defaults_inserted": 286,
+  "independent_analytics_banner_removed": true,
+  "publisher_id": "ca-pub-1532240366110429",
+  "adsense_review_script_enabled": true,
+  "google_cmp_configured": true,
+  "consent_mode_v2": true,
+  "site_approved": false,
+  "manual_ads_enabled": false,
+  "auto_ads_enabled": false,
+  "issues": [],
+  "status": "PASS"
+}

@@ -1,0 +1,13 @@
+{
+  "release": "phase35",
+  "html_files": 286,
+  "indexable_urls": 281,
+  "analytics": {
+    "gtm": "GTM-WM4K76RF",
+    "ga4": "G-8QLJEW3TMP",
+    "consent_gated": true,
+    "double_tagging_prevented": true
+  },
+  "adsense": "not-configured",
+  "status": "ready-for-full-replace-deployment"
+}
