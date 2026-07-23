@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Design Error Logging and Safe Retries in Apps Script | SolQvia</title>
+<meta content="Record failures from APIs, email, and file operations, then retry only transient errors without creating duplicate work." name="description"/>
+<meta content="noindex,follow,max-image-preview:large" name="robots"/>
+<link href="https://solqvia.com/en/technology/apps-script/apps-script-error-logging-retry/" rel="canonical"/>
+<link href="https://solqvia.com/ja/technology/apps-script/apps-script-error-logging-retry/" hreflang="ja" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/apps-script/apps-script-error-logging-retry/" hreflang="en" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/apps-script/apps-script-error-logging-retry/" hreflang="x-default" rel="alternate"/>
+<meta content="article" property="og:type"/>
+<meta content="SolQvia" property="og:site_name"/>
+<meta content="Design Error Logging and Safe Retries in Apps Script | SolQvia" property="og:title"/>
+<meta content="Record failures from APIs, email, and file operations, then retry only transient errors without creating duplicate work." property="og:description"/>
+<meta content="https://solqvia.com/en/technology/apps-script/apps-script-error-logging-retry/" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="ja_JP" property="og:locale:alternate"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Design Error Logging and Safe Retries in Apps Script | SolQvia","description":"Record failures from APIs, email, and file operations, then retry only transient errors without creating duplicate work.","datePublished":"2026-07-22","dateModified":"2026-07-22","inLanguage":"en","mainEntityOfPage":"https://solqvia.com/en/technology/apps-script/apps-script-error-logging-retry/","author":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"},"publisher":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://solqvia.com/en/"},{"@type":"ListItem","position":2,"name":"Topics","item":"https://solqvia.com/en/topics/"},{"@type":"ListItem","position":3,"name":"Technology & Automation","item":"https://solqvia.com/en/technology/"},{"@type":"ListItem","position":4,"name":"Google Apps Script","item":"https://solqvia.com/en/technology/apps-script/"},{"@type":"ListItem","position":5,"name":"Design Error Logging and Safe Retries in Apps Script","item":"https://solqvia.com/en/technology/apps-script/apps-script-error-logging-retry/"}]}]}</script>
+<!-- Add consent, analytics, and advertising scripts only after account and policy setup. -->
+<script src="/assets/platform-config.js"></script><script defer="" src="/assets/platform-loader.js"></script>
+<!-- SEARCH_CONSOLE_VERIFICATION: add the exact Google meta tag or HTML file after verification is issued. -->
+</head>
+<body data-ad-eligible="false" data-ad-profile="none" data-content-type="general" data-index-status="noindex" data-review-focus="smartphone">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner">
+<a aria-label="SolQvia home" class="brand" href="/en/"><span>Sol</span><strong>Q</strong><span>via</span></a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<nav aria-label="Primary" class="site-nav" id="site-nav"><a href="/en/">Home</a><a href="/en/technology/smartphone/">Phone fixes</a><a href="/en/topics/">Topics</a><a href="/en/articles/">All guides</a><a href="/en/search/">Search</a><a href="/en/about/">About SolQvia</a><a class="lang-link" href="/ja/technology/apps-script/apps-script-error-logging-retry/">日本語</a></nav>
+</div></header>
+<main id="main"><article class="article"><header class="article-header"><div class="container article-narrow"><nav class="breadcrumbs"><span>Home</span><span>›</span><a href="/en/topics/">Topics</a><span>›</span><a href="/en/technology/">Technology &amp; Automation</a><span>›</span><a href="/en/technology/apps-script/">Google Apps Script</a><span>›</span><span>Design Error Logging and Safe Retries in Apps Script</span></nav><p class="eyebrow">Google Apps Script</p><h1>Design Error Logging and Safe Retries in Apps Script</h1><p class="article-lead">Record failures from APIs, email, and file operations, then retry only transient errors without creating duplicate work.</p><div class="article-meta"><span>Published: 2026-07-22</span><span>Last updated: 2026-07-22</span></div></div></header><div class="container article-layout"><aside class="toc"><strong>In this guide</strong><ol><li><a href="#section-1">Do not hide failures</a></li><li><a href="#section-2">Errors that may be retried</a></li><li><a href="#section-3">Exponential-backoff example</a></li><li><a href="#section-4">Operational design</a></li></ol></aside><div class="article-content"><section class="article-section" id="section-1"><h2>Do not hide failures</h2><p>Automations often fail when nobody is watching the screen. Swallowing every exception in a catch block makes it impossible to distinguish completed work from missing work.</p><p>Record the operation, record ID, time, message, and retry count. Avoid logging personal data, access tokens, or other secrets.</p></section><section class="article-section" id="section-2"><h2>Errors that may be retried</h2><ul><li>Temporary network failures and timeouts.</li><li>Rate limits such as HTTP 429.</li><li>Temporary server errors in the HTTP 500 range.</li><li>Do not automatically retry invalid input, missing permissions, authentication failures, or nonexistent IDs.</li></ul></section><section class="article-section" id="section-3"><h2>Exponential-backoff example</h2><pre><code class="language-javascript">function withRetry_(task, maxAttempts = 4) {
+  let lastError;
+  for (let attempt = 1; attempt &lt;= maxAttempts; attempt++) {
+    try {
+      return task();
+    } catch (error) {
+      lastError = error;
+      console.error(JSON.stringify({ attempt, message: error.message }));
+      if (attempt &lt; maxAttempts) {
+        Utilities.sleep(Math.pow(2, attempt - 1) * 1000);
+      }
+    }
+  }
+  throw lastError;
+}</code></pre></section><section class="article-section" id="section-4"><h2>Operational design</h2><ol class="steps"><li>Assign a unique ID to each unit of work.</li><li>Store completed, failed, and retry-pending states.</li><li>Make reruns idempotent so they do not create duplicates.</li><li>Notify an administrator only after the final failure.</li><li>Review failures regularly and group them by root cause.</li></ol><aside class="callout"><strong>Key point</strong><p>More retries are not a substitute for diagnosis. Structured logs should make failure categories visible.</p></aside></section><aside class="article-notice">This article provides general information. Check official sources for current specifications, prices, rules, and opening hours.</aside><section class="sources"><h2>Official references</h2><ul><li><a href="https://developers.google.com/apps-script/guides/logging" rel="noopener noreferrer">Google Apps Script: Logging</a></li><li><a href="https://developers.google.com/apps-script/guides/services/quotas" rel="noopener noreferrer">Google Apps Script: Quotas for Google services</a></li></ul></section></div></div></article><section class="section section-muted"><div class="container"><div class="section-heading"><h2>Related guides</h2></div><div class="card-grid"><article class="card article-card" data-card-category="gas">
+<div class="card-kicker">Google Apps Script</div>
+<h3><a href="/en/technology/apps-script/google-forms-slack-notification/">How to Send Google Forms Responses to Slack</a></h3>
+<p>Connect a Google Forms submit trigger to a Slack Incoming Webhook with Apps Script and secure the webhook URL in script properties.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/apps-script/google-forms-slack-notification/">Read guide →</a></div>
+</article><article class="card article-card" data-card-category="gas">
+<div class="card-kicker">Google Apps Script</div>
+<h3><a href="/en/technology/apps-script/google-forms-email-notification/">How to Send Google Forms Responses by Email Automatically</a></h3>
+<p>Use an installable form-submit trigger and MailApp to send a structured email whenever a new response arrives.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/apps-script/google-forms-email-notification/">Read guide →</a></div>
+</article><article class="card article-card" data-card-category="gas">
+<div class="card-kicker">Google Apps Script</div>
+<h3><a href="/en/technology/apps-script/google-apps-script-basics/">Google Apps Script Basics: Capabilities, Setup, and Safe Execution</a></h3>
+<p>Automate Sheets, Forms, Gmail, and Drive with Apps Script while managing permissions, triggers, quotas, and errors.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/apps-script/google-apps-script-basics/">Read guide →</a></div>
+</article></div></div></section></main>
+<footer class="site-footer"><div class="container footer-grid footer-grid-expanded"><div><a class="brand footer-brand" href="/en/"><span>Sol</span><strong>Q</strong><span>via</span></a><p>Bilingual smartphone troubleshooting guides with a clear diagnostic order and data-impact warnings.</p></div><div><h2>Phone guides</h2><a href="/en/technology/smartphone/">All smartphone guides</a><a href="/en/topics/">Browse by topic</a><a href="/en/articles/">All guides</a><a href="/en/search/">Search</a></div><div><h2>About</h2><a href="/en/about/">About SolQvia</a><a href="/en/about/editorial-team/">Editorial team</a><a href="/en/about/device-testing/">Testing policy</a><a href="/en/about/corrections/">Corrections</a><a href="/en/contact/">Contact</a></div><div><h2>Policies</h2><a href="/en/privacy/">Privacy policy</a><a href="/en/cookie-policy/">Cookie policy</a><a href="/en/advertising/">Advertising policy</a><a href="/en/terms/">Terms</a><a href="/en/editorial-policy/">Editorial policy</a></div></div><div class="container footer-bottom"><span>© 2026 SolQvia</span><span>Resolve smartphone problems step by step.</span></div></footer>
+<script defer="" src="/assets/site.js"></script>
+</body></html>

@@ -1,0 +1,11 @@
+{
+  "mode": "deployment-verification",
+  "release_id": "solqvia-phase32-2026-07-23",
+  "indexable_pages": 281,
+  "ad_eligible_pages": 177,
+  "adsense_review_configured": false,
+  "site_approved": false,
+  "cmp_configured": false,
+  "live_check_available": true,
+  "qa_pass": true
+}

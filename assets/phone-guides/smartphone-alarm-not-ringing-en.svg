@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Phone Alarm Did Not Ring or Was Too Quiet: What to Check</title><desc id="desc">Concept diagram — not an actual device screen</desc>
+<rect width="1200" height="630" rx="42" fill="#f3f8f7"/><rect x="42" y="42" width="1116" height="546" rx="32" fill="#fff" stroke="#bfd5d1" stroke-width="3"/>
+<text x="80" y="105" font-family="Noto Sans CJK JP, Noto Sans, Arial, sans-serif" font-size="31" font-weight="700" fill="#193f4b">SolQvia Smartphone Guide</text>
+<text x="80" y="150" font-family="Noto Sans CJK JP, Noto Sans, Arial, sans-serif" font-size="20" fill="#5d7077">Concept diagram — not an actual device screen</text>
+<g font-family="Noto Sans CJK JP, Noto Sans, Arial, sans-serif">
+<rect x="80" y="220" width="285" height="210" rx="24" fill="#edf7f5" stroke="#8ebeb5" stroke-width="3"/><circle cx="222" cy="265" r="27" fill="#285f6d"/><text x="222" y="274" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">1</text><text x="222" y="342" text-anchor="middle" font-size="24" font-weight="700" fill="#193f4b">Verify the time</text>
+<path d="M385 325h70" stroke="#7e9ba1" stroke-width="8" stroke-linecap="round"/><path d="M445 305l25 20-25 20" fill="none" stroke="#7e9ba1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="465" y="220" width="285" height="210" rx="24" fill="#fff8e8" stroke="#d1ad61" stroke-width="3"/><circle cx="607" cy="265" r="27" fill="#936713"/><text x="607" y="274" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">2</text><text x="607" y="342" text-anchor="middle" font-size="24" font-weight="700" fill="#193f4b">Verify sound</text>
+<path d="M770 325h70" stroke="#7e9ba1" stroke-width="8" stroke-linecap="round"/><path d="M830 305l25 20-25 20" fill="none" stroke="#7e9ba1" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="850" y="220" width="270" height="210" rx="24" fill="#f5f0fb" stroke="#ae91c5" stroke-width="3"/><circle cx="985" cy="265" r="27" fill="#76528f"/><text x="985" y="274" text-anchor="middle" font-size="24" font-weight="700" fill="#fff">3</text><text x="985" y="342" text-anchor="middle" font-size="24" font-weight="700" fill="#193f4b">Run a real test</text>
+<text x="600" y="510" text-anchor="middle" font-size="22" fill="#50666d">Check one step at a time and stop when the issue is resolved.</text></g></svg>

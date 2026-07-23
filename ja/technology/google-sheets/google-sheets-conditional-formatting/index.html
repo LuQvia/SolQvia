@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Googleスプレッドシートの条件付き書式で期限・異常値を見える化する方法 | SolQvia</title>
+<meta content="期限超過、未入力、目標未達、重複などを色で判別し、表を開いた瞬間に確認すべき箇所が分かる条件付き書式の設計方法です。" name="description"/>
+<meta content="noindex,follow,max-image-preview:large" name="robots"/>
+<link href="https://solqvia.com/ja/technology/google-sheets/google-sheets-conditional-formatting/" rel="canonical"/>
+<link href="https://solqvia.com/ja/technology/google-sheets/google-sheets-conditional-formatting/" hreflang="ja" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/google-sheets/google-sheets-conditional-formatting/" hreflang="en" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/google-sheets/google-sheets-conditional-formatting/" hreflang="x-default" rel="alternate"/>
+<meta content="article" property="og:type"/>
+<meta content="SolQvia" property="og:site_name"/>
+<meta content="Googleスプレッドシートの条件付き書式で期限・異常値を見える化する方法 | SolQvia" property="og:title"/>
+<meta content="期限超過、未入力、目標未達、重複などを色で判別し、表を開いた瞬間に確認すべき箇所が分かる条件付き書式の設計方法です。" property="og:description"/>
+<meta content="https://solqvia.com/ja/technology/google-sheets/google-sheets-conditional-formatting/" property="og:url"/>
+<meta content="ja_JP" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Googleスプレッドシートの条件付き書式で期限・異常値を見える化する方法 | SolQvia","description":"期限超過、未入力、目標未達、重複などを色で判別し、表を開いた瞬間に確認すべき箇所が分かる条件付き書式の設計方法です。","datePublished":"2026-07-22","dateModified":"2026-07-22","inLanguage":"ja","mainEntityOfPage":"https://solqvia.com/ja/technology/google-sheets/google-sheets-conditional-formatting/","author":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"},"publisher":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://solqvia.com/ja/"},{"@type":"ListItem","position":2,"name":"専門分野","item":"https://solqvia.com/ja/topics/"},{"@type":"ListItem","position":3,"name":"テクノロジー・自動化","item":"https://solqvia.com/ja/technology/"},{"@type":"ListItem","position":4,"name":"Googleスプレッドシート","item":"https://solqvia.com/ja/technology/google-sheets/"},{"@type":"ListItem","position":5,"name":"Googleスプレッドシートの条件付き書式で期限・異常値を見える化する方法","item":"https://solqvia.com/ja/technology/google-sheets/google-sheets-conditional-formatting/"}]}]}</script>
+<!-- Add consent, analytics, and advertising scripts only after account and policy setup. -->
+<script src="/assets/platform-config.js"></script><script defer="" src="/assets/platform-loader.js"></script>
+<!-- SEARCH_CONSOLE_VERIFICATION: add the exact Google meta tag or HTML file after verification is issued. -->
+</head>
+<body data-ad-eligible="false" data-ad-profile="none" data-content-type="general" data-index-status="noindex" data-review-focus="smartphone">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner">
+<a aria-label="SolQvia home" class="brand" href="/ja/"><span>Sol</span><strong>Q</strong><span>via</span></a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<nav aria-label="Primary" class="site-nav" id="site-nav"><a href="/ja/">ホーム</a><a href="/ja/technology/smartphone/">スマホ解決</a><a href="/ja/topics/">分野別</a><a href="/ja/articles/">記事一覧</a><a href="/ja/search/">検索</a><a href="/ja/about/">SolQviaについて</a><a class="lang-link" href="/en/technology/google-sheets/google-sheets-conditional-formatting/">English</a></nav>
+</div></header>
+<main id="main"><article class="article"><header class="article-header"><div class="container article-narrow"><nav class="breadcrumbs"><span>ホーム</span><span>›</span><a href="/ja/topics/">専門分野</a><span>›</span><a href="/ja/technology/">テクノロジー・自動化</a><span>›</span><a href="/ja/technology/google-sheets/">Googleスプレッドシート</a><span>›</span><span>Googleスプレッドシートの条件付き書式で期限・異常値を見える化する方法</span></nav><p class="eyebrow">Googleスプレッドシート</p><h1>Googleスプレッドシートの条件付き書式で期限・異常値を見える化する方法</h1><p class="article-lead">期限超過、未入力、目標未達、重複などを色で判別し、表を開いた瞬間に確認すべき箇所が分かる条件付き書式の設計方法です。</p><div class="article-meta"><span>公開日: 2026-07-22</span><span>最終更新: 2026-07-22</span></div></div></header><div class="container article-layout"><aside class="toc"><strong>この記事の内容</strong><ol><li><a href="#section-1">条件付き書式の役割</a></li><li><a href="#section-2">期限超過の例</a></li><li><a href="#section-3">よく使うルール</a></li><li><a href="#section-4">設定時の注意</a></li></ol></aside><div class="article-content"><section class="article-section" id="section-1"><h2>条件付き書式の役割</h2><p>条件付き書式は、値そのものを変えずに、条件に合うセルや行の見た目を変える機能です。タスク期限、未入力、売上目標、重複値などを視覚的に検出できます。</p><p>色を増やしすぎると意味が分からなくなるため、警告・要確認・完了など、少数の状態に絞ります。</p></section><section class="article-section" id="section-2"><h2>期限超過の例</h2><p>C列が期限、D列がステータスの例です。適用範囲をA2:Dなど行全体にすると、該当行をまとめて強調できます。</p><pre><code class="language-excel">=AND($C2&lt;TODAY(),$D2&lt;&gt;"完了",$C2&lt;&gt;"")</code></pre></section><section class="article-section" id="section-3"><h2>よく使うルール</h2><ul><li>未入力：<code>=A2=</code></li><li>重複：<code>=COUNTIF($A:$A,A2)&gt;1</code></li><li>目標未達：<code>=$E2&lt;$F2</code></li><li>今日の予定：<code>=$C2=TODAY()</code></li><li>期限が3日以内：<code>=AND($C2&gt;=TODAY(),$C2&lt;=TODAY()+3)</code></li></ul></section><section class="article-section" id="section-4"><h2>設定時の注意</h2><ul><li>数式は適用範囲の左上セルを基準に書く。</li><li>列を固定する場合は$を付け、行番号は必要に応じて相対参照にする。</li><li>上位ルールと下位ルールが競合しないか確認する。</li><li>赤・緑だけに依存せず、文字やアイコンと併用する。</li></ul><aside class="callout"><strong>ポイント</strong><p>条件付き書式は監視を補助する機能です。重要な期限は通知や担当者確認の仕組みと組み合わせてください。</p></aside></section><aside class="article-notice">掲載内容は一般的な情報です。実際の仕様、料金、制度、営業時間などは公式情報をご確認ください。</aside><section class="sources"><h2>参考・公式情報</h2><ul><li><a href="https://support.google.com/docs/answer/78413" rel="noopener noreferrer">Googleスプレッドシート: 条件付き書式</a></li></ul></section></div></div></article><section class="section section-muted"><div class="container"><div class="section-heading"><h2>関連記事</h2></div><div class="card-grid"><article class="card article-card" data-card-category="sheets">
+<div class="card-kicker">Googleスプレッドシート</div>
+<h3><a href="/ja/technology/google-sheets/google-sheets-vs-excel-small-business/">GoogleスプレッドシートとExcelを小規模事業で比較</a></h3>
+<p>Google SheetsとExcelを、用途、費用、共有、移行、保守の観点から比較します。</p>
+<div class="card-meta"><span>最終更新: 2026-07-22</span><a href="/ja/technology/google-sheets/google-sheets-vs-excel-small-business/">記事を読む →</a></div>
+</article><article class="card article-card" data-card-category="sheets">
+<div class="card-kicker">Googleスプレッドシート</div>
+<h3><a href="/ja/technology/google-sheets/google-sheets-slicer-dashboard/">Googleスプレッドシートのスライサーでダッシュボードを絞り込む</a></h3>
+<p>ピボットテーブルやグラフを店舗・担当者・期間などで操作できるスライサーの設定方法です。</p>
+<div class="card-meta"><span>最終更新: 2026-07-22</span><a href="/ja/technology/google-sheets/google-sheets-slicer-dashboard/">記事を読む →</a></div>
+</article><article class="card article-card" data-card-category="sheets">
+<div class="card-kicker">Googleスプレッドシート</div>
+<h3><a href="/ja/technology/google-sheets/google-sheets-remove-duplicates-clean-data/">Googleスプレッドシートで重複データを安全に整理する方法</a></h3>
+<p>重複削除の前にバックアップ、判定キー、候補確認、件数照合を行い、必要な顧客・取引データの誤削除を防ぐ手順です。</p>
+<div class="card-meta"><span>最終更新: 2026-07-22</span><a href="/ja/technology/google-sheets/google-sheets-remove-duplicates-clean-data/">記事を読む →</a></div>
+</article></div></div></section></main>
+<footer class="site-footer"><div class="container footer-grid footer-grid-expanded"><div><a class="brand footer-brand" href="/ja/"><span>Sol</span><strong>Q</strong><span>via</span></a><p>スマートフォンの操作・不具合・通信・データ移行を、確認順とデータ影響付きで解説する日英対応メディア。</p></div><div><h2>スマホガイド</h2><a href="/ja/technology/smartphone/">すべてのスマホ解決記事</a><a href="/ja/topics/">分野別に探す</a><a href="/ja/articles/">記事一覧</a><a href="/ja/search/">サイト内検索</a></div><div><h2>運営情報</h2><a href="/ja/about/">SolQviaについて</a><a href="/ja/about/editorial-team/">編集体制</a><a href="/ja/about/device-testing/">検証方針</a><a href="/ja/about/corrections/">訂正履歴</a><a href="/ja/contact/">お問い合わせ</a></div><div><h2>ポリシー</h2><a href="/ja/privacy/">プライバシーポリシー</a><a href="/ja/cookie-policy/">Cookieポリシー</a><a href="/ja/advertising/">広告・アフィリエイトポリシー</a><a href="/ja/terms/">利用規約</a><a href="/ja/editorial-policy/">編集方針</a></div></div><div class="container footer-bottom"><span>© 2026 SolQvia</span><span>スマートフォンの困ったを、解決へ。</span></div></footer>
+<script defer="" src="/assets/site.js"></script>
+</body></html>

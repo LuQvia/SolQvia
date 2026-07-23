@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <title>SolQvia Smartphone Troubleshooting</title>
+    <link>https://solqvia.com/en/technology/smartphone/</link>
+    <description>Smartphone operation and troubleshooting guides</description>
+    <language>en</language>
+    <item>
+      <title>Android App Links Open in a Browser Instead of the App</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-app-links-not-opening/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-app-links-not-opening/</guid>
+      <description>When verified URLs open in a browser instead of the app, inspect supported-link settings, domain verification, defaults, and competing apps.</description>
+    </item>
+    <item>
+      <title>Android Battery Optimization Stops an App</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-battery-optimization-app-stops/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-battery-optimization-app-stops/</guid>
+      <description>When tracking, VPN, health, or sync apps stop, understand battery-optimization exclusions and what to verify before allowing unrestricted background use.</description>
+    </item>
+    <item>
+      <title>How to Check Android Device Administrators and Management Profiles</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-device-admin-profile-check/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-device-admin-profile-check/</guid>
+      <description>When settings or app removal are blocked, distinguish device administrators, work profiles, VPN or certificates, and parental controls.</description>
+    </item>
+    <item>
+      <title>How to Factory Reset an Android Phone Safely</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-factory-reset/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-factory-reset/</guid>
+      <description>Prepare account access and backups before erasing an Android phone through Settings.</description>
+    </item>
+    <item>
+      <title>How to Force Restart an Android Phone</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-force-restart/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-force-restart/</guid>
+      <description>Force restart a frozen Android phone and account for manufacturer-specific button combinations safely.</description>
+    </item>
+    <item>
+      <title>Android Notification Category or Channel Is Missing</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-notification-channel-missing/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-notification-channel-missing/</guid>
+      <description>Find missing Android notification categories for messages, calls, sync, and conversations by checking channel creation, app version, and conversation controls.</description>
+    </item>
+    <item>
+      <title>Android Notification History: Enable, Read, and Troubleshoot It</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-notification-history-guide/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-notification-history-guide/</guid>
+      <description>Use Android Notification History and understand activation requirements, retention limits, excluded notifications, and manufacturer differences.</description>
+    </item>
+    <item>
+      <title>Google Play Protect Blocks or Disables an App</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-play-protect-blocks-app/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-play-protect-blocks-app/</guid>
+      <description>When Play Protect blocks or disables an app, verify its source, signature, update state, and management policy without casually disabling protection.</description>
+    </item>
+    <item>
+      <title>Android Private DNS Not Working: Advanced Troubleshooting</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-private-dns-not-working/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-private-dns-not-working/</guid>
+      <description>Diagnose Private DNS hostnames that will not save, break connectivity, or fail only on certain Wi-Fi networks by separating provider, VPN, certificate, and network restrictions.</description>
+    </item>
+    <item>
+      <title>Use Android Safe Mode to Identify a Problem App</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-safe-mode-guide/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-safe-mode-guide/</guid>
+      <description>Test whether restarts, freezing, battery drain, pop-ups, or other issues are caused by a downloaded app, then remove candidates one at a time.</description>
+    </item>
+    <item>
+      <title>Android Phone Stuck in a Boot Loop or on the Logo: Recovery Guide</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-stuck-boot-loop/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-stuck-boot-loop/</guid>
+      <description>Troubleshoot repeated reboots and logo freezes through charging, button checks, one forced restart, Safe mode, and model-specific official recovery.</description>
+    </item>
+    <item>
+      <title>Android System WebView Causes Apps to Crash</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-system-webview-app-crashes/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-system-webview-app-crashes/</guid>
+      <description>When multiple apps crash or embedded web pages turn blank, inspect Android System WebView, Chrome updates, beta builds, and cached components.</description>
+    </item>
+    <item>
+      <title>Android Date or Time Errors Cause Certificate Warnings</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-time-date-certificate-errors/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-time-date-certificate-errors/</guid>
+      <description>Fix certificate-expiry warnings caused by incorrect Android date or time by checking automatic time, time zone, SIM source, clock retention, and root certificates.</description>
+    </item>
+    <item>
+      <title>Transfer Data from Android to a New Android Phone</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-to-android-data-transfer/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-to-android-data-transfer/</guid>
+      <description>Use Google backup, cable transfer, wireless copy, and manufacturer tools while separately preparing authenticator, eSIM, banking, and messaging data.</description>
+    </item>
+    <item>
+      <title>Transfer from Android to iPhone with Move to iOS</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-to-iphone-data-transfer/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-to-iphone-data-transfer/</guid>
+      <description>Use Apple’s official Move to iOS process for contacts, messages, photos, and supported apps, then handle eSIM, authentication, and messaging services separately.</description>
+    </item>
+    <item>
+      <title>Android USB OTG Storage Is Not Mounting</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-usb-otg-storage-not-mounted/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-usb-otg-storage-not-mounted/</guid>
+      <description>When Android does not mount a USB drive or card reader, check OTG support, power, file system, USB mode, and encryption.</description>
+    </item>
+    <item>
+      <title>Android Work Profile Is Paused or Not Syncing</title>
+      <link>https://solqvia.com/en/technology/smartphone/android-work-profile-paused/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/android-work-profile-paused/</guid>
+      <description>Fix grayed-out work apps or stopped notifications by checking the Work Profile toggle, schedules, management policy, and device-policy controller connectivity.</description>
+    </item>
+    <item>
+      <title>Transfer an Authenticator App Before Resetting a Phone</title>
+      <link>https://solqvia.com/en/technology/smartphone/authenticator-app-transfer-before-reset/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/authenticator-app-transfer-before-reset/</guid>
+      <description>Avoid losing two-factor codes by checking cloud sync, export options, backup codes, and per-service re-enrollment before resetting a phone.</description>
+    </item>
+    <item>
+      <title>How to Find Text on a Web Page in Chrome and Safari</title>
+      <link>https://solqvia.com/en/technology/smartphone/find-text-on-web-page-smartphone/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/find-text-on-web-page-smartphone/</guid>
+      <description>Use Find in Page in Chrome and Safari to locate a word or phrase within a long page.</description>
+    </item>
+    <item>
+      <title>Samsung Galaxy Maintenance Mode: Setup and Repair Checklist</title>
+      <link>https://solqvia.com/en/technology/smartphone/galaxy-maintenance-mode-guide/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/galaxy-maintenance-mode-guide/</guid>
+      <description>Use Samsung Galaxy Maintenance Mode before repair, including eligibility, backup, system-log options, technician access, and exit steps.</description>
+    </item>
+    <item>
+      <title>Galaxy Secure Folder Notifications Are Missing or Hidden</title>
+      <link>https://solqvia.com/en/technology/smartphone/galaxy-secure-folder-notifications/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/galaxy-secure-folder-notifications/</guid>
+      <description>Fix missing or hidden Secure Folder notifications by checking folder lock state, content visibility, power controls, and differences from a work profile.</description>
+    </item>
+    <item>
+      <title>How to Search with Google Lens on a Smartphone</title>
+      <link>https://solqvia.com/en/technology/smartphone/google-lens-image-search/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/google-lens-image-search/</guid>
+      <description>Use Google Lens with a camera or saved photo to identify objects, places and text while reducing false matches.</description>
+    </item>
+    <item>
+      <title>How to Search Google Effectively on a Smartphone</title>
+      <link>https://solqvia.com/en/technology/smartphone/google-search-on-smartphone/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/google-search-on-smartphone/</guid>
+      <description>Build better search queries, recognize official sources, and narrow results by date, place and purpose.</description>
+    </item>
+    <item>
+      <title>iPhone Says This Accessory May Not Be Supported</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-accessory-not-supported/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-accessory-not-supported/</guid>
+      <description>Resolve iPhone accessory-not-supported warnings by checking certification, debris, power requirements, liquid detection, and iOS compatibility.</description>
+    </item>
+    <item>
+      <title>AirDrop Is Stuck on Waiting</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-airdrop-stuck-waiting/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-airdrop-stuck-waiting/</guid>
+      <description>Fix AirDrop stuck on waiting or unable to find the recipient by checking receiving mode, contact matching, Wi-Fi and Bluetooth, and Personal Hotspot.</description>
+    </item>
+    <item>
+      <title>iPhone App Shows a Cloud Icon and Will Not Open</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-app-offloaded-cloud-icon/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-app-offloaded-cloud-icon/</guid>
+      <description>Understand offloaded apps with cloud icons, automatic offloading, App Store availability, and which local documents remain.</description>
+    </item>
+    <item>
+      <title>iPhone Background App Refresh Is Not Working</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-background-app-refresh-not-working/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-background-app-refresh-not-working/</guid>
+      <description>Fix Background App Refresh that is disabled or ineffective by checking Low Power Mode, cellular access, Screen Time, and force-closing habits.</description>
+    </item>
+    <item>
+      <title>How to Factory Reset an iPhone Safely</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-factory-reset/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-factory-reset/</guid>
+      <description>Erase all content and settings on an iPhone safely after checking backup, eSIM and account access.</description>
+    </item>
+    <item>
+      <title>iPhone Focus Mode Is Blocking Important Notifications</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-focus-blocking-notifications/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-focus-blocking-notifications/</guid>
+      <description>Fix important alerts blocked by iPhone Focus by checking shared Focus state, schedules, filters, allowed people and apps, and emergency exceptions.</description>
+    </item>
+    <item>
+      <title>How to Force Restart an iPhone by Model</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-force-restart/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-force-restart/</guid>
+      <description>Force restart an unresponsive iPhone using the correct button sequence for Face ID, iPhone 7 and older models.</description>
+    </item>
+    <item>
+      <title>iPhone iCloud Backup Is Stuck or Calculating Time</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-icloud-backup-stuck/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-icloud-backup-stuck/</guid>
+      <description>Fix an iCloud backup stuck on calculating or not progressing by checking storage, Wi-Fi quality, power mode, included apps, and encryption.</description>
+    </item>
+    <item>
+      <title>iCloud Private Relay Causes Website or Wi-Fi Problems</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-private-relay-network-problem/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-private-relay-network-problem/</guid>
+      <description>When Private Relay breaks a site, changes location, or triggers a network warning, check IP tracking controls, network compatibility, and VPN overlap.</description>
+    </item>
+    <item>
+      <title>How to Use iPhone Recovery Mode: Update vs Restore Explained</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-recovery-mode-guide/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-recovery-mode-guide/</guid>
+      <description>Prepare a computer, enter Recovery mode, and understand the data-preserving Update option versus the data-erasing Restore option.</description>
+    </item>
+    <item>
+      <title>Why iPhone Stolen Device Protection Adds a Security Delay</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-stolen-device-protection-delay/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-stolen-device-protection-delay/</guid>
+      <description>Understand the security delay for Apple Account or passcode changes, including familiar locations, biometric checks, and protected actions.</description>
+    </item>
+    <item>
+      <title>iPhone Stuck on the Apple Logo: Data-Safe Recovery Order</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-stuck-apple-logo/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-stuck-apple-logo/</guid>
+      <description>Work through waiting, one forced restart, and Recovery mode when an iPhone remains on the Apple logo or progress bar, prioritizing Update before an erase.</description>
+    </item>
+    <item>
+      <title>iPhone System Data Storage Is Very Large</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-system-data-storage-large/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-system-data-storage-large/</guid>
+      <description>Investigate iPhone System Data growth by separating caches, logs, streaming data, update files, and incomplete sync operations.</description>
+    </item>
+    <item>
+      <title>Transfer from iPhone to Android: Photos, Contacts, Messages, and More</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-to-android-data-transfer/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-to-android-data-transfer/</guid>
+      <description>Use the official Android switch process while preparing iMessage, FaceTime, eSIM, authenticators, WhatsApp, and data that may not transfer automatically.</description>
+    </item>
+    <item>
+      <title>Transfer Data from an Old iPhone to a New iPhone with Quick Start</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-to-iphone-data-transfer/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-to-iphone-data-transfer/</guid>
+      <description>Compare Quick Start, iCloud, and encrypted computer backups and verify eSIM, authentication, messaging, Wallet, and important data before erasing the old iPhone.</description>
+    </item>
+    <item>
+      <title>iPhone Unavailable or Security Lockout: What to Do</title>
+      <link>https://solqvia.com/en/technology/smartphone/iphone-unavailable-security-lockout/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/iphone-unavailable-security-lockout/</guid>
+      <description>Handle iPhone Unavailable or Security Lockout safely by understanding wait times, previous passcode options, device erase, and Apple Account requirements.</description>
+    </item>
+    <item>
+      <title>Lost Phone: Find, Lock and Erase It Remotely</title>
+      <link>https://solqvia.com/en/technology/smartphone/lost-smartphone-find-lock-erase/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/lost-smartphone-find-lock-erase/</guid>
+      <description>Locate, lock and if necessary erase a lost iPhone or Android phone while protecting accounts and carrier service.</description>
+    </item>
+    <item>
+      <title>How to Recognize Phishing Text Messages and Fake Sites</title>
+      <link>https://solqvia.com/en/technology/smartphone/phishing-sms-smartphone-safety/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/phishing-sms-smartphone-safety/</guid>
+      <description>Recognize delivery, unpaid-bill and account-suspension scams, and respond safely after opening a suspicious link.</description>
+    </item>
+    <item>
+      <title>Pixel Adaptive Connectivity and Unexpected 5G or Wi-Fi Switching</title>
+      <link>https://solqvia.com/en/technology/smartphone/pixel-adaptive-connectivity-5g/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/pixel-adaptive-connectivity-5g/</guid>
+      <description>Understand how Pixel Adaptive Connectivity affects 5G use, battery consumption, and network switching, and how to run a controlled disabled test.</description>
+    </item>
+    <item>
+      <title>How to Use Pixel Device Diagnostics and Battery Checks</title>
+      <link>https://solqvia.com/en/technology/smartphone/pixel-device-health-diagnostics/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/pixel-device-health-diagnostics/</guid>
+      <description>Use Pixel settings and official support diagnostics to check battery, connectivity, and sensors and collect useful information before repair.</description>
+    </item>
+    <item>
+      <title>Pixel Repair Mode: Preparation and Limitations</title>
+      <link>https://solqvia.com/en/technology/smartphone/pixel-repair-mode-guide/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/pixel-repair-mode-guide/</guid>
+      <description>Prepare for Pixel Repair Mode by understanding eligibility, backups, screen-lock requirements, what technicians can access, and how to exit.</description>
+    </item>
+    <item>
+      <title>Why 5G Is Not Showing on a 5G Phone</title>
+      <link>https://solqvia.com/en/technology/smartphone/smartphone-5g-not-showing/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/smartphone-5g-not-showing/</guid>
+      <description>Diagnose a 5G-capable phone that stays on LTE by checking bands, NSA versus SA, power settings, SIM provisioning, and local coverage.</description>
+    </item>
+    <item>
+      <title>Phone Alarm Did Not Ring or Was Too Quiet: What to Check</title>
+      <link>https://solqvia.com/en/technology/smartphone/smartphone-alarm-not-ringing/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/smartphone-alarm-not-ringing/</guid>
+      <description>Verify time, repeat days, alarm sound, volume, Bluetooth output, clock-app restrictions, and a real test before relying on an alarm.</description>
+    </item>
+    <item>
+      <title>Android Auto Keeps Disconnecting or Will Not Start</title>
+      <link>https://solqvia.com/en/technology/smartphone/smartphone-android-auto-disconnects/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/smartphone-android-auto-disconnects/</guid>
+      <description>Fix Android Auto that disconnects or will not launch by checking USB quality, wireless requirements, permissions, battery controls, and head-unit compatibility.</description>
+    </item>
+    <item>
+      <title>Phone APN Settings Not Saving or Working</title>
+      <link>https://solqvia.com/en/technology/smartphone/smartphone-apn-settings-not-working/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/smartphone-apn-settings-not-working/</guid>
+      <description>Fix APN profiles that do not save or provide data even when 4G or 5G appears by checking APN type, authentication, MCC/MNC, and carrier provisioning.</description>
+    </item>
+    <item>
+      <title>App Keeps Crashing or Will Not Open on a Phone</title>
+      <link>https://solqvia.com/en/technology/smartphone/smartphone-app-crashes/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/smartphone-app-crashes/</guid>
+      <description>Fix an app that will not open or keeps closing by checking updates, permissions, storage and reinstall options.</description>
+    </item>
+    <item>
+      <title>How to Review Phone App Permissions and Choose Safely</title>
+      <link>https://solqvia.com/en/technology/smartphone/smartphone-app-permissions-guide/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/smartphone-app-permissions-guide/</guid>
+      <description>Limit camera, microphone, location, photos, contacts, Bluetooth, and notification access to what each app genuinely needs.</description>
+    </item>
+  </channel>
+</rss>

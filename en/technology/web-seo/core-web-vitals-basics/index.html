@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Core Web Vitals: Practical Design Basics | SolQvia</title>
+<meta content="Understand LCP, INP, and CLS and avoid performance regressions when adding images, scripts, analytics, and ads." name="description"/>
+<meta content="noindex,follow,max-image-preview:large" name="robots"/>
+<link href="https://solqvia.com/en/technology/web-seo/core-web-vitals-basics/" rel="canonical"/>
+<link href="https://solqvia.com/ja/technology/web-seo/core-web-vitals-basics/" hreflang="ja" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/web-seo/core-web-vitals-basics/" hreflang="en" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/web-seo/core-web-vitals-basics/" hreflang="x-default" rel="alternate"/>
+<meta content="article" property="og:type"/>
+<meta content="SolQvia" property="og:site_name"/>
+<meta content="Core Web Vitals: Practical Design Basics | SolQvia" property="og:title"/>
+<meta content="Understand LCP, INP, and CLS and avoid performance regressions when adding images, scripts, analytics, and ads." property="og:description"/>
+<meta content="https://solqvia.com/en/technology/web-seo/core-web-vitals-basics/" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="ja_JP" property="og:locale:alternate"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Core Web Vitals: Practical Design Basics | SolQvia","description":"Understand LCP, INP, and CLS and avoid performance regressions when adding images, scripts, analytics, and ads.","datePublished":"2026-07-22","dateModified":"2026-07-22","inLanguage":"en","mainEntityOfPage":"https://solqvia.com/en/technology/web-seo/core-web-vitals-basics/","author":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"},"publisher":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://solqvia.com/en/"},{"@type":"ListItem","position":2,"name":"Topics","item":"https://solqvia.com/en/topics/"},{"@type":"ListItem","position":3,"name":"Technology & Automation","item":"https://solqvia.com/en/technology/"},{"@type":"ListItem","position":4,"name":"Web & SEO","item":"https://solqvia.com/en/technology/web-seo/"},{"@type":"ListItem","position":5,"name":"Core Web Vitals: Practical Design Basics","item":"https://solqvia.com/en/technology/web-seo/core-web-vitals-basics/"}]}]}</script>
+<!-- Add consent, analytics, and advertising scripts only after account and policy setup. -->
+<script src="/assets/platform-config.js"></script><script defer="" src="/assets/platform-loader.js"></script>
+<!-- SEARCH_CONSOLE_VERIFICATION: add the exact Google meta tag or HTML file after verification is issued. -->
+</head>
+<body data-ad-eligible="false" data-ad-profile="none" data-content-type="general" data-index-status="noindex" data-review-focus="smartphone">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner">
+<a aria-label="SolQvia home" class="brand" href="/en/"><span>Sol</span><strong>Q</strong><span>via</span></a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<nav aria-label="Primary" class="site-nav" id="site-nav"><a href="/en/">Home</a><a href="/en/technology/smartphone/">Phone fixes</a><a href="/en/topics/">Topics</a><a href="/en/articles/">All guides</a><a href="/en/search/">Search</a><a href="/en/about/">About SolQvia</a><a class="lang-link" href="/ja/technology/web-seo/core-web-vitals-basics/">日本語</a></nav>
+</div></header>
+<main id="main"><article class="article"><header class="article-header"><div class="container article-narrow"><nav class="breadcrumbs"><span>Home</span><span>›</span><a href="/en/topics/">Topics</a><span>›</span><a href="/en/technology/">Technology &amp; Automation</a><span>›</span><a href="/en/technology/web-seo/">Web &amp; SEO</a><span>›</span><span>Core Web Vitals: Practical Design Basics</span></nav><p class="eyebrow">Web &amp; SEO</p><h1>Core Web Vitals: Practical Design Basics</h1><p class="article-lead">Understand LCP, INP, and CLS and avoid performance regressions when adding images, scripts, analytics, and ads.</p><div class="article-meta"><span>Published: 2026-07-22</span><span>Last updated: 2026-07-22</span></div></div></header><div class="container article-layout"><aside class="toc"><strong>In this guide</strong><ol><li><a href="#section-1">The three metrics</a></li><li><a href="#section-2">Common good thresholds</a></li><li><a href="#section-3">Improvement priority</a></li><li><a href="#section-4">When adding ads</a></li></ol></aside><div class="article-content"><section class="article-section" id="section-1"><h2>The three metrics</h2><p>Core Web Vitals measure loading performance, interaction responsiveness, and visual stability. The main metrics are LCP, INP, and CLS.</p><p>Treat them as user-experience indicators, not only search metrics. Readers must be able to load, read, and use the page reliably.</p></section><section class="article-section" id="section-2"><h2>Common good thresholds</h2><ul><li>LCP: loading of the largest main content element; good at 2.5 seconds or less.</li><li>INP: responsiveness to interaction; good at 200 milliseconds or less.</li><li>CLS: unexpected layout movement; good at 0.1 or less.</li></ul></section><section class="article-section" id="section-3"><h2>Improvement priority</h2><ol class="steps"><li>Optimize the largest above-the-fold image and serve an appropriate size and format.</li><li>Reduce unnecessary JavaScript and third-party tags.</li><li>Reserve dimensions or aspect ratios for images, ads, and embeds.</li><li>Limit web fonts or use efficient subsets.</li><li>Compare real-user field data with laboratory diagnostics from PageSpeed Insights.</li></ol></section><section class="article-section" id="section-4"><h2>When adding ads</h2><ul><li>Reserve ad space instead of inserting it after layout.</li><li>Avoid excessive advertising before the main content.</li><li>Prevent duplicate consent, analytics, and advertising scripts.</li><li>Compare Core Web Vitals and total revenue before and after implementation.</li></ul><aside class="callout"><strong>Key point</strong><p>Optimize for task completion and reading quality, not a score in isolation.</p></aside></section><aside class="article-notice">This article provides general information. Check official sources for current specifications, prices, rules, and opening hours.</aside><section class="sources"><h2>Official references</h2><ul><li><a href="https://web.dev/articles/vitals" rel="noopener noreferrer">web.dev: Web Vitals</a></li><li><a href="https://developers.google.com/search/docs/appearance/core-web-vitals" rel="noopener noreferrer">Google Search Central: Core Web Vitals</a></li></ul></section></div></div></article><section class="section section-muted"><div class="container"><div class="section-heading"><h2>Related guides</h2></div><div class="card-grid"><article class="card article-card" data-card-category="web">
+<div class="card-kicker">Web &amp; SEO</div>
+<h3><a href="/en/technology/web-seo/static-site-vs-wordpress/">Static Site vs WordPress: Maintenance, Publishing, and Flexibility</a></h3>
+<p>Compare a static site and WordPress across use case, cost, sharing, portability, and maintenance.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/web-seo/static-site-vs-wordpress/">Read guide →</a></div>
+</article><article class="card article-card" data-card-category="web">
+<div class="card-kicker">Web &amp; SEO</div>
+<h3><a href="/en/technology/web-seo/static-site-seo-basics/">Technical SEO Basics Before Publishing a Static Website</a></h3>
+<p>Check page titles, descriptions, canonicals, sitemaps, structured data, robots rules, and internal links before launch.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/web-seo/static-site-seo-basics/">Read guide →</a></div>
+</article><article class="card article-card" data-card-category="web">
+<div class="card-kicker">Web &amp; SEO</div>
+<h3><a href="/en/technology/web-seo/multilingual-site-hreflang/">How to Implement hreflang on a Multilingual Website</a></h3>
+<p>Connect Japanese and English URLs with reciprocal hreflang annotations and self-referencing canonicals.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/web-seo/multilingual-site-hreflang/">Read guide →</a></div>
+</article></div></div></section></main>
+<footer class="site-footer"><div class="container footer-grid footer-grid-expanded"><div><a class="brand footer-brand" href="/en/"><span>Sol</span><strong>Q</strong><span>via</span></a><p>Bilingual smartphone troubleshooting guides with a clear diagnostic order and data-impact warnings.</p></div><div><h2>Phone guides</h2><a href="/en/technology/smartphone/">All smartphone guides</a><a href="/en/topics/">Browse by topic</a><a href="/en/articles/">All guides</a><a href="/en/search/">Search</a></div><div><h2>About</h2><a href="/en/about/">About SolQvia</a><a href="/en/about/editorial-team/">Editorial team</a><a href="/en/about/device-testing/">Testing policy</a><a href="/en/about/corrections/">Corrections</a><a href="/en/contact/">Contact</a></div><div><h2>Policies</h2><a href="/en/privacy/">Privacy policy</a><a href="/en/cookie-policy/">Cookie policy</a><a href="/en/advertising/">Advertising policy</a><a href="/en/terms/">Terms</a><a href="/en/editorial-policy/">Editorial policy</a></div></div><div class="container footer-bottom"><span>© 2026 SolQvia</span><span>Resolve smartphone problems step by step.</span></div></footer>
+<script defer="" src="/assets/site.js"></script>
+</body></html>

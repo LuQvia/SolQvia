@@ -1,0 +1,16 @@
+{
+  "name": "SolQvia Smartphone Help",
+  "short_name": "SolQvia",
+  "start_url": "/ja/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#edf8f6",
+  "theme_color": "#173f46",
+  "icons": [
+    {
+      "src": "/assets/social/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

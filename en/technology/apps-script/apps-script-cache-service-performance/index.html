@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Reduce API Calls and Heavy Work with Apps Script CacheService | SolQvia</title>
+<meta content="Temporarily reuse API responses and reference data to improve Apps Script speed without treating the cache as permanent storage." name="description"/>
+<meta content="noindex,follow,max-image-preview:large" name="robots"/>
+<link href="https://solqvia.com/en/technology/apps-script/apps-script-cache-service-performance/" rel="canonical"/>
+<link href="https://solqvia.com/ja/technology/apps-script/apps-script-cache-service-performance/" hreflang="ja" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/apps-script/apps-script-cache-service-performance/" hreflang="en" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/apps-script/apps-script-cache-service-performance/" hreflang="x-default" rel="alternate"/>
+<meta content="article" property="og:type"/>
+<meta content="SolQvia" property="og:site_name"/>
+<meta content="Reduce API Calls and Heavy Work with Apps Script CacheService | SolQvia" property="og:title"/>
+<meta content="Temporarily reuse API responses and reference data to improve Apps Script speed without treating the cache as permanent storage." property="og:description"/>
+<meta content="https://solqvia.com/en/technology/apps-script/apps-script-cache-service-performance/" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="ja_JP" property="og:locale:alternate"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Reduce API Calls and Heavy Work with Apps Script CacheService | SolQvia","description":"Temporarily reuse API responses and reference data to improve Apps Script speed without treating the cache as permanent storage.","datePublished":"2026-07-22","dateModified":"2026-07-22","inLanguage":"en","mainEntityOfPage":"https://solqvia.com/en/technology/apps-script/apps-script-cache-service-performance/","author":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"},"publisher":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://solqvia.com/en/"},{"@type":"ListItem","position":2,"name":"Topics","item":"https://solqvia.com/en/topics/"},{"@type":"ListItem","position":3,"name":"Technology & Automation","item":"https://solqvia.com/en/technology/"},{"@type":"ListItem","position":4,"name":"Google Apps Script","item":"https://solqvia.com/en/technology/apps-script/"},{"@type":"ListItem","position":5,"name":"Reduce API Calls and Heavy Work with Apps Script CacheService","item":"https://solqvia.com/en/technology/apps-script/apps-script-cache-service-performance/"}]}]}</script>
+<!-- Add consent, analytics, and advertising scripts only after account and policy setup. -->
+<script src="/assets/platform-config.js"></script><script defer="" src="/assets/platform-loader.js"></script>
+<!-- SEARCH_CONSOLE_VERIFICATION: add the exact Google meta tag or HTML file after verification is issued. -->
+</head>
+<body data-ad-eligible="false" data-ad-profile="none" data-content-type="general" data-index-status="noindex" data-review-focus="smartphone">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner">
+<a aria-label="SolQvia home" class="brand" href="/en/"><span>Sol</span><strong>Q</strong><span>via</span></a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<nav aria-label="Primary" class="site-nav" id="site-nav"><a href="/en/">Home</a><a href="/en/technology/smartphone/">Phone fixes</a><a href="/en/topics/">Topics</a><a href="/en/articles/">All guides</a><a href="/en/search/">Search</a><a href="/en/about/">About SolQvia</a><a class="lang-link" href="/ja/technology/apps-script/apps-script-cache-service-performance/">日本語</a></nav>
+</div></header>
+<main id="main"><article class="article"><header class="article-header"><div class="container article-narrow"><nav class="breadcrumbs"><span>Home</span><span>›</span><a href="/en/topics/">Topics</a><span>›</span><a href="/en/technology/">Technology &amp; Automation</a><span>›</span><a href="/en/technology/apps-script/">Google Apps Script</a><span>›</span><span>Reduce API Calls and Heavy Work with Apps Script CacheService</span></nav><p class="eyebrow">Google Apps Script</p><h1>Reduce API Calls and Heavy Work with Apps Script CacheService</h1><p class="article-lead">Temporarily reuse API responses and reference data to improve Apps Script speed without treating the cache as permanent storage.</p><div class="article-meta"><span>Published: 2026-07-22</span><span>Last updated: 2026-07-22</span></div></div></header><div class="container article-layout"><aside class="toc"><strong>In this guide</strong><ol><li><a href="#section-1">What to cache</a></li><li><a href="#section-2">Cache scopes</a></li><li><a href="#section-3">API-response example</a></li><li><a href="#section-4">Design rules</a></li></ol></aside><div class="article-content"><section class="article-section" id="section-1"><h2>What to cache</h2><p>CacheService temporarily stores values that can be reused to reduce external requests or expensive calculations. It should not hold the authoritative copy of configuration or irreplaceable records.</p><p>Cached entries can disappear before their requested expiration, so the application must be able to rebuild the value from the original source.</p></section><section class="article-section" id="section-2"><h2>Cache scopes</h2><ul><li>Script cache: temporary data shared by script users.</li><li>User cache: temporary data specific to a user.</li><li>Document cache: temporary data associated with a document context.</li></ul></section><section class="article-section" id="section-3"><h2>API-response example</h2><pre><code class="language-javascript">function getReferenceData() {
+  const cache = CacheService.getScriptCache();
+  const key = 'reference-data-v1';
+  const cached = cache.get(key);
+  if (cached) return JSON.parse(cached);
+
+  const response = UrlFetchApp.fetch('https://api.example.com/reference');
+  const data = JSON.parse(response.getContentText());
+  cache.put(key, JSON.stringify(data), 900);
+  return data;
+}
+
+function clearReferenceCache() {
+  CacheService.getScriptCache().remove('reference-data-v1');
+}</code></pre></section><section class="article-section" id="section-4"><h2>Design rules</h2><ol class="steps"><li>Include the data type and version in the key.</li><li>Choose an expiration based on how often the source changes.</li><li>Remove related entries after an authoritative update.</li><li>Store a smaller summary instead of an oversized payload.</li><li>Test that a cache miss still produces a correct result.</li></ol><aside class="callout"><strong>Key point</strong><p>Use caching as an optional acceleration layer. Correctness must not depend on the cache being present.</p></aside></section><aside class="article-notice">This article provides general information. Check official sources for current specifications, prices, rules, and opening hours.</aside><section class="sources"><h2>Official references</h2><ul><li><a href="https://developers.google.com/apps-script/reference/cache" rel="noopener noreferrer">Google Apps Script: Cache Service</a></li><li><a href="https://developers.google.com/apps-script/guides/support/best-practices" rel="noopener noreferrer">Google Apps Script: Best practices</a></li></ul></section></div></div></article><section class="section section-muted"><div class="container"><div class="section-heading"><h2>Related guides</h2></div><div class="card-grid"><article class="card article-card" data-card-category="gas">
+<div class="card-kicker">Google Apps Script</div>
+<h3><a href="/en/technology/apps-script/google-forms-slack-notification/">How to Send Google Forms Responses to Slack</a></h3>
+<p>Connect a Google Forms submit trigger to a Slack Incoming Webhook with Apps Script and secure the webhook URL in script properties.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/apps-script/google-forms-slack-notification/">Read guide →</a></div>
+</article><article class="card article-card" data-card-category="gas">
+<div class="card-kicker">Google Apps Script</div>
+<h3><a href="/en/technology/apps-script/google-forms-email-notification/">How to Send Google Forms Responses by Email Automatically</a></h3>
+<p>Use an installable form-submit trigger and MailApp to send a structured email whenever a new response arrives.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/apps-script/google-forms-email-notification/">Read guide →</a></div>
+</article><article class="card article-card" data-card-category="gas">
+<div class="card-kicker">Google Apps Script</div>
+<h3><a href="/en/technology/apps-script/google-apps-script-basics/">Google Apps Script Basics: Capabilities, Setup, and Safe Execution</a></h3>
+<p>Automate Sheets, Forms, Gmail, and Drive with Apps Script while managing permissions, triggers, quotas, and errors.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/apps-script/google-apps-script-basics/">Read guide →</a></div>
+</article></div></div></section></main>
+<footer class="site-footer"><div class="container footer-grid footer-grid-expanded"><div><a class="brand footer-brand" href="/en/"><span>Sol</span><strong>Q</strong><span>via</span></a><p>Bilingual smartphone troubleshooting guides with a clear diagnostic order and data-impact warnings.</p></div><div><h2>Phone guides</h2><a href="/en/technology/smartphone/">All smartphone guides</a><a href="/en/topics/">Browse by topic</a><a href="/en/articles/">All guides</a><a href="/en/search/">Search</a></div><div><h2>About</h2><a href="/en/about/">About SolQvia</a><a href="/en/about/editorial-team/">Editorial team</a><a href="/en/about/device-testing/">Testing policy</a><a href="/en/about/corrections/">Corrections</a><a href="/en/contact/">Contact</a></div><div><h2>Policies</h2><a href="/en/privacy/">Privacy policy</a><a href="/en/cookie-policy/">Cookie policy</a><a href="/en/advertising/">Advertising policy</a><a href="/en/terms/">Terms</a><a href="/en/editorial-policy/">Editorial policy</a></div></div><div class="container footer-bottom"><span>© 2026 SolQvia</span><span>Resolve smartphone problems step by step.</span></div></footer>
+<script defer="" src="/assets/site.js"></script>
+</body></html>

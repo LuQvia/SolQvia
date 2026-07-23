@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>How to Implement hreflang on a Multilingual Website | SolQvia</title>
+<meta content="Connect Japanese and English URLs with reciprocal hreflang annotations and self-referencing canonicals." name="description"/>
+<meta content="noindex,follow,max-image-preview:large" name="robots"/>
+<link href="https://solqvia.com/en/technology/web-seo/multilingual-site-hreflang/" rel="canonical"/>
+<link href="https://solqvia.com/ja/technology/web-seo/multilingual-site-hreflang/" hreflang="ja" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/web-seo/multilingual-site-hreflang/" hreflang="en" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/web-seo/multilingual-site-hreflang/" hreflang="x-default" rel="alternate"/>
+<meta content="article" property="og:type"/>
+<meta content="SolQvia" property="og:site_name"/>
+<meta content="How to Implement hreflang on a Multilingual Website | SolQvia" property="og:title"/>
+<meta content="Connect Japanese and English URLs with reciprocal hreflang annotations and self-referencing canonicals." property="og:description"/>
+<meta content="https://solqvia.com/en/technology/web-seo/multilingual-site-hreflang/" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="ja_JP" property="og:locale:alternate"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How to Implement hreflang on a Multilingual Website | SolQvia","description":"Connect Japanese and English URLs with reciprocal hreflang annotations and self-referencing canonicals.","datePublished":"2026-07-22","dateModified":"2026-07-22","inLanguage":"en","mainEntityOfPage":"https://solqvia.com/en/technology/web-seo/multilingual-site-hreflang/","author":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"},"publisher":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://solqvia.com/en/"},{"@type":"ListItem","position":2,"name":"Topics","item":"https://solqvia.com/en/topics/"},{"@type":"ListItem","position":3,"name":"Technology & Automation","item":"https://solqvia.com/en/technology/"},{"@type":"ListItem","position":4,"name":"Web & SEO","item":"https://solqvia.com/en/technology/web-seo/"},{"@type":"ListItem","position":5,"name":"How to Implement hreflang on a Multilingual Website","item":"https://solqvia.com/en/technology/web-seo/multilingual-site-hreflang/"}]}]}</script>
+<!-- Add consent, analytics, and advertising scripts only after account and policy setup. -->
+<script src="/assets/platform-config.js"></script><script defer="" src="/assets/platform-loader.js"></script>
+<!-- SEARCH_CONSOLE_VERIFICATION: add the exact Google meta tag or HTML file after verification is issued. -->
+</head>
+<body data-ad-eligible="false" data-ad-profile="none" data-content-type="general" data-index-status="noindex" data-review-focus="smartphone">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner">
+<a aria-label="SolQvia home" class="brand" href="/en/"><span>Sol</span><strong>Q</strong><span>via</span></a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<nav aria-label="Primary" class="site-nav" id="site-nav"><a href="/en/">Home</a><a href="/en/technology/smartphone/">Phone fixes</a><a href="/en/topics/">Topics</a><a href="/en/articles/">All guides</a><a href="/en/search/">Search</a><a href="/en/about/">About SolQvia</a><a class="lang-link" href="/ja/technology/web-seo/multilingual-site-hreflang/">日本語</a></nav>
+</div></header>
+<main id="main"><article class="article"><header class="article-header"><div class="container article-narrow"><nav class="breadcrumbs"><span>Home</span><span>›</span><a href="/en/topics/">Topics</a><span>›</span><a href="/en/technology/">Technology &amp; Automation</a><span>›</span><a href="/en/technology/web-seo/">Web &amp; SEO</a><span>›</span><span>How to Implement hreflang on a Multilingual Website</span></nav><p class="eyebrow">Web &amp; SEO</p><h1>How to Implement hreflang on a Multilingual Website</h1><p class="article-lead">Connect Japanese and English URLs with reciprocal hreflang annotations and self-referencing canonicals.</p><div class="article-meta"><span>Published: 2026-07-22</span><span>Last updated: 2026-07-22</span></div></div></header><div class="container article-layout"><aside class="toc"><strong>In this guide</strong><ol><li><a href="#section-1">What hreflang communicates</a></li><li><a href="#section-2">URL structure</a></li><li><a href="#section-3">HTML example</a></li><li><a href="#section-4">Implementation checklist</a></li></ol></aside><div class="article-content"><section class="article-section" id="section-1"><h2>What hreflang communicates</h2><p>hreflang tells search engines that pages contain equivalent or closely related content for different languages or regions. Each language URL should reference the complete set of alternates.</p><p>It is not a direct ranking boost. It helps search engines show the most appropriate language version.</p></section><section class="article-section" id="section-2"><h2>URL structure</h2><p>Separate URLs for each language are easier to crawl, link, and share than changing the language of one URL dynamically.</p><pre><code class="language-text">https://example.com/ja/article/
+https://example.com/en/article/</code></pre></section><section class="article-section" id="section-3"><h2>HTML example</h2><p>Include the same reciprocal set on both the Japanese and English pages. One-way annotations may be ignored.</p><pre><code class="language-html">&lt;link rel="alternate" hreflang="ja" href="https://example.com/ja/article/"&gt;
+&lt;link rel="alternate" hreflang="en" href="https://example.com/en/article/"&gt;
+&lt;link rel="alternate" hreflang="x-default" href="https://example.com/en/article/"&gt;</code></pre></section><section class="article-section" id="section-4"><h2>Implementation checklist</h2><ul><li>Every page includes a self-reference.</li><li>Every alternate page links back.</li><li>The canonical points to the current language URL, not a different language.</li><li>Do not list missing URLs or unnecessary redirects.</li><li>Use valid language and, when needed, region codes.</li><li>Keep sitemap and HTML annotations consistent.</li></ul><aside class="callout"><strong>Key point</strong><p>Localize titles, headings, navigation, calls to action, and supporting text—not only the main article body.</p></aside></section><aside class="article-notice">This article provides general information. Check official sources for current specifications, prices, rules, and opening hours.</aside><section class="sources"><h2>Official references</h2><ul><li><a href="https://developers.google.com/search/docs/specialty/international/localized-versions" rel="noopener noreferrer">Google Search Central: Localized versions of your pages</a></li></ul></section></div></div></article><section class="section section-muted"><div class="container"><div class="section-heading"><h2>Related guides</h2></div><div class="card-grid"><article class="card article-card" data-card-category="web">
+<div class="card-kicker">Web &amp; SEO</div>
+<h3><a href="/en/technology/web-seo/static-site-vs-wordpress/">Static Site vs WordPress: Maintenance, Publishing, and Flexibility</a></h3>
+<p>Compare a static site and WordPress across use case, cost, sharing, portability, and maintenance.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/web-seo/static-site-vs-wordpress/">Read guide →</a></div>
+</article><article class="card article-card" data-card-category="web">
+<div class="card-kicker">Web &amp; SEO</div>
+<h3><a href="/en/technology/web-seo/static-site-seo-basics/">Technical SEO Basics Before Publishing a Static Website</a></h3>
+<p>Check page titles, descriptions, canonicals, sitemaps, structured data, robots rules, and internal links before launch.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/web-seo/static-site-seo-basics/">Read guide →</a></div>
+</article><article class="card article-card" data-card-category="web">
+<div class="card-kicker">Web &amp; SEO</div>
+<h3><a href="/en/technology/web-seo/helpful-content-review-checklist/">A Pre-publication Content Quality Checklist</a></h3>
+<p>Review intent, evidence, tested steps, limitations, localization, and updateability before publishing a guide.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/web-seo/helpful-content-review-checklist/">Read guide →</a></div>
+</article></div></div></section></main>
+<footer class="site-footer"><div class="container footer-grid footer-grid-expanded"><div><a class="brand footer-brand" href="/en/"><span>Sol</span><strong>Q</strong><span>via</span></a><p>Bilingual smartphone troubleshooting guides with a clear diagnostic order and data-impact warnings.</p></div><div><h2>Phone guides</h2><a href="/en/technology/smartphone/">All smartphone guides</a><a href="/en/topics/">Browse by topic</a><a href="/en/articles/">All guides</a><a href="/en/search/">Search</a></div><div><h2>About</h2><a href="/en/about/">About SolQvia</a><a href="/en/about/editorial-team/">Editorial team</a><a href="/en/about/device-testing/">Testing policy</a><a href="/en/about/corrections/">Corrections</a><a href="/en/contact/">Contact</a></div><div><h2>Policies</h2><a href="/en/privacy/">Privacy policy</a><a href="/en/cookie-policy/">Cookie policy</a><a href="/en/advertising/">Advertising policy</a><a href="/en/terms/">Terms</a><a href="/en/editorial-policy/">Editorial policy</a></div></div><div class="container footer-bottom"><span>© 2026 SolQvia</span><span>Resolve smartphone problems step by step.</span></div></footer>
+<script defer="" src="/assets/site.js"></script>
+</body></html>

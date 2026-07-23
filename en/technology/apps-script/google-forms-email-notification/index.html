@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>How to Send Google Forms Responses by Email Automatically | SolQvia</title>
+<meta content="Use an installable form-submit trigger and MailApp to send a structured email whenever a new response arrives." name="description"/>
+<meta content="noindex,follow,max-image-preview:large" name="robots"/>
+<link href="https://solqvia.com/en/technology/apps-script/google-forms-email-notification/" rel="canonical"/>
+<link href="https://solqvia.com/ja/technology/apps-script/google-forms-email-notification/" hreflang="ja" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/apps-script/google-forms-email-notification/" hreflang="en" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/apps-script/google-forms-email-notification/" hreflang="x-default" rel="alternate"/>
+<meta content="article" property="og:type"/>
+<meta content="SolQvia" property="og:site_name"/>
+<meta content="How to Send Google Forms Responses by Email Automatically | SolQvia" property="og:title"/>
+<meta content="Use an installable form-submit trigger and MailApp to send a structured email whenever a new response arrives." property="og:description"/>
+<meta content="https://solqvia.com/en/technology/apps-script/google-forms-email-notification/" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="ja_JP" property="og:locale:alternate"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How to Send Google Forms Responses by Email Automatically | SolQvia","description":"Use an installable form-submit trigger and MailApp to send a structured email whenever a new response arrives.","datePublished":"2026-07-22","dateModified":"2026-07-22","inLanguage":"en","mainEntityOfPage":"https://solqvia.com/en/technology/apps-script/google-forms-email-notification/","author":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"},"publisher":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://solqvia.com/en/"},{"@type":"ListItem","position":2,"name":"Topics","item":"https://solqvia.com/en/topics/"},{"@type":"ListItem","position":3,"name":"Technology & Automation","item":"https://solqvia.com/en/technology/"},{"@type":"ListItem","position":4,"name":"Google Apps Script","item":"https://solqvia.com/en/technology/apps-script/"},{"@type":"ListItem","position":5,"name":"How to Send Google Forms Responses by Email Automatically","item":"https://solqvia.com/en/technology/apps-script/google-forms-email-notification/"}]}]}</script>
+<!-- Add consent, analytics, and advertising scripts only after account and policy setup. -->
+<script src="/assets/platform-config.js"></script><script defer="" src="/assets/platform-loader.js"></script>
+<!-- SEARCH_CONSOLE_VERIFICATION: add the exact Google meta tag or HTML file after verification is issued. -->
+</head>
+<body data-ad-eligible="false" data-ad-profile="none" data-content-type="general" data-index-status="noindex" data-review-focus="smartphone">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner">
+<a aria-label="SolQvia home" class="brand" href="/en/"><span>Sol</span><strong>Q</strong><span>via</span></a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<nav aria-label="Primary" class="site-nav" id="site-nav"><a href="/en/">Home</a><a href="/en/technology/smartphone/">Phone fixes</a><a href="/en/topics/">Topics</a><a href="/en/articles/">All guides</a><a href="/en/search/">Search</a><a href="/en/about/">About SolQvia</a><a class="lang-link" href="/ja/technology/apps-script/google-forms-email-notification/">日本語</a></nav>
+</div></header>
+<main id="main"><article class="article"><header class="article-header"><div class="container article-narrow"><nav class="breadcrumbs"><span>Home</span><span>›</span><a href="/en/topics/">Topics</a><span>›</span><a href="/en/technology/">Technology &amp; Automation</a><span>›</span><a href="/en/technology/apps-script/">Google Apps Script</a><span>›</span><span>How to Send Google Forms Responses by Email Automatically</span></nav><p class="eyebrow">Google Apps Script</p><h1>How to Send Google Forms Responses by Email Automatically</h1><p class="article-lead">Use an installable form-submit trigger and MailApp to send a structured email whenever a new response arrives.</p><div class="article-meta"><span>Published: 2026-07-22</span><span>Last updated: 2026-07-22</span></div></div></header><div class="container article-layout"><aside class="toc"><strong>In this guide</strong><ol><li><a href="#section-1">Understand the workflow</a></li><li><a href="#section-2">Setup steps</a></li><li><a href="#section-3">Sample code</a></li><li><a href="#section-4">Operational checks</a></li></ol></aside><div class="article-content"><section class="article-section" id="section-1"><h2>Understand the workflow</h2><p>The standard pattern is: Google Forms writes a response to a linked spreadsheet, an <strong>installable form-submit trigger</strong> runs an Apps Script function, and MailApp sends the notification. This gives you control over recipients, subject lines, formatting, and conditions.</p><p>The built-in Forms notification can be enough for simple cases. Apps Script is useful when the message must contain selected answers, route to different teams, or follow custom rules.</p></section><section class="article-section" id="section-2"><h2>Setup steps</h2><ol class="steps"><li>Open the spreadsheet linked to the form and launch Apps Script from Extensions.</li><li>Paste the sample code and replace the recipient address.</li><li>Create an installable trigger for <code>onFormSubmit</code> and select the form-submit event.</li><li>Authorize the script once, submit a test response, and verify the subject and message body.</li></ol></section><section class="article-section" id="section-3"><h2>Sample code</h2><p><code>e.namedValues</code> returns answers keyed by question title. It is often easier to maintain than relying only on fixed column numbers.</p><pre><code class="language-javascript">function onFormSubmit(e) {
+  const recipient = 'info@example.com';
+  const values = e.namedValues;
+  const lines = Object.keys(values).map(key =&gt; {
+    return `${key}: ${values[key].join(', ')}`;
+  });
+
+  MailApp.sendEmail({
+    to: recipient,
+    subject: 'New Google Forms response',
+    body: lines.join('\n')
+  });
+}</code></pre></section><section class="article-section" id="section-4"><h2>Operational checks</h2><ul><li>Installable triggers run as the account that created the trigger.</li><li>Apps Script email quotas apply, so this is not designed for high-volume campaigns.</li><li>Review recipients and sharing rules when form responses contain personal or confidential data.</li><li>Retest the script after changing question titles or form structure.</li></ul><aside class="callout"><strong>Key point</strong><p>Test blank answers, multiple-choice responses, and long text before using the workflow in production.</p></aside></section><aside class="article-notice">This article provides general information. Check official sources for current specifications, prices, rules, and opening hours.</aside><section class="sources"><h2>Official references</h2><ul><li><a href="https://developers.google.com/apps-script/guides/triggers/installable" rel="noopener noreferrer">Google Apps Script: Installable triggers</a></li><li><a href="https://developers.google.com/apps-script/reference/mail/mail-app" rel="noopener noreferrer">Google Apps Script: MailApp</a></li></ul></section></div></div></article><section class="section section-muted"><div class="container"><div class="section-heading"><h2>Related guides</h2></div><div class="card-grid"><article class="card article-card" data-card-category="gas">
+<div class="card-kicker">Google Apps Script</div>
+<h3><a href="/en/technology/apps-script/google-forms-slack-notification/">How to Send Google Forms Responses to Slack</a></h3>
+<p>Connect a Google Forms submit trigger to a Slack Incoming Webhook with Apps Script and secure the webhook URL in script properties.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/apps-script/google-forms-slack-notification/">Read guide →</a></div>
+</article><article class="card article-card" data-card-category="gas">
+<div class="card-kicker">Google Apps Script</div>
+<h3><a href="/en/technology/apps-script/google-apps-script-basics/">Google Apps Script Basics: Capabilities, Setup, and Safe Execution</a></h3>
+<p>Automate Sheets, Forms, Gmail, and Drive with Apps Script while managing permissions, triggers, quotas, and errors.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/apps-script/google-apps-script-basics/">Read guide →</a></div>
+</article><article class="card article-card" data-card-category="gas">
+<div class="card-kicker">Google Apps Script</div>
+<h3><a href="/en/technology/apps-script/apps-script-web-app-do-get-do-post/">Use doGet and doPost Correctly in Apps Script Web Apps</a></h3>
+<p>Build Apps Script web pages and endpoints that handle query parameters, form submissions, and JSON POST requests.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/apps-script/apps-script-web-app-do-get-do-post/">Read guide →</a></div>
+</article></div></div></section></main>
+<footer class="site-footer"><div class="container footer-grid footer-grid-expanded"><div><a class="brand footer-brand" href="/en/"><span>Sol</span><strong>Q</strong><span>via</span></a><p>Bilingual smartphone troubleshooting guides with a clear diagnostic order and data-impact warnings.</p></div><div><h2>Phone guides</h2><a href="/en/technology/smartphone/">All smartphone guides</a><a href="/en/topics/">Browse by topic</a><a href="/en/articles/">All guides</a><a href="/en/search/">Search</a></div><div><h2>About</h2><a href="/en/about/">About SolQvia</a><a href="/en/about/editorial-team/">Editorial team</a><a href="/en/about/device-testing/">Testing policy</a><a href="/en/about/corrections/">Corrections</a><a href="/en/contact/">Contact</a></div><div><h2>Policies</h2><a href="/en/privacy/">Privacy policy</a><a href="/en/cookie-policy/">Cookie policy</a><a href="/en/advertising/">Advertising policy</a><a href="/en/terms/">Terms</a><a href="/en/editorial-policy/">Editorial policy</a></div></div><div class="container footer-bottom"><span>© 2026 SolQvia</span><span>Resolve smartphone problems step by step.</span></div></footer>
+<script defer="" src="/assets/site.js"></script>
+</body></html>

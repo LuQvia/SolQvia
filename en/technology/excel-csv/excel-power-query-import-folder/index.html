@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Combine Monthly Files from a Folder with Excel Power Query | SolQvia</title>
+<meta content="Import recurring CSV or Excel files with the same structure and refresh the combined data when new files arrive." name="description"/>
+<meta content="noindex,follow,max-image-preview:large" name="robots"/>
+<link href="https://solqvia.com/en/technology/excel-csv/excel-power-query-import-folder/" rel="canonical"/>
+<link href="https://solqvia.com/ja/technology/excel-csv/excel-power-query-import-folder/" hreflang="ja" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/excel-csv/excel-power-query-import-folder/" hreflang="en" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/excel-csv/excel-power-query-import-folder/" hreflang="x-default" rel="alternate"/>
+<meta content="article" property="og:type"/>
+<meta content="SolQvia" property="og:site_name"/>
+<meta content="Combine Monthly Files from a Folder with Excel Power Query | SolQvia" property="og:title"/>
+<meta content="Import recurring CSV or Excel files with the same structure and refresh the combined data when new files arrive." property="og:description"/>
+<meta content="https://solqvia.com/en/technology/excel-csv/excel-power-query-import-folder/" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="ja_JP" property="og:locale:alternate"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Combine Monthly Files from a Folder with Excel Power Query | SolQvia","description":"Import recurring CSV or Excel files with the same structure and refresh the combined data when new files arrive.","datePublished":"2026-07-22","dateModified":"2026-07-22","inLanguage":"en","mainEntityOfPage":"https://solqvia.com/en/technology/excel-csv/excel-power-query-import-folder/","author":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"},"publisher":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://solqvia.com/en/"},{"@type":"ListItem","position":2,"name":"Topics","item":"https://solqvia.com/en/topics/"},{"@type":"ListItem","position":3,"name":"Technology & Automation","item":"https://solqvia.com/en/technology/"},{"@type":"ListItem","position":4,"name":"Excel & CSV","item":"https://solqvia.com/en/technology/excel-csv/"},{"@type":"ListItem","position":5,"name":"Combine Monthly Files from a Folder with Excel Power Query","item":"https://solqvia.com/en/technology/excel-csv/excel-power-query-import-folder/"}]}]}</script>
+<!-- Add consent, analytics, and advertising scripts only after account and policy setup. -->
+<script src="/assets/platform-config.js"></script><script defer="" src="/assets/platform-loader.js"></script>
+<!-- SEARCH_CONSOLE_VERIFICATION: add the exact Google meta tag or HTML file after verification is issued. -->
+</head>
+<body data-ad-eligible="false" data-ad-profile="none" data-content-type="general" data-index-status="noindex" data-review-focus="smartphone">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner">
+<a aria-label="SolQvia home" class="brand" href="/en/"><span>Sol</span><strong>Q</strong><span>via</span></a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<nav aria-label="Primary" class="site-nav" id="site-nav"><a href="/en/">Home</a><a href="/en/technology/smartphone/">Phone fixes</a><a href="/en/topics/">Topics</a><a href="/en/articles/">All guides</a><a href="/en/search/">Search</a><a href="/en/about/">About SolQvia</a><a class="lang-link" href="/ja/technology/excel-csv/excel-power-query-import-folder/">日本語</a></nav>
+</div></header>
+<main id="main"><article class="article"><header class="article-header"><div class="container article-narrow"><nav class="breadcrumbs"><span>Home</span><span>›</span><a href="/en/topics/">Topics</a><span>›</span><a href="/en/technology/">Technology &amp; Automation</a><span>›</span><a href="/en/technology/excel-csv/">Excel &amp; CSV</a><span>›</span><span>Combine Monthly Files from a Folder with Excel Power Query</span></nav><p class="eyebrow">Excel &amp; CSV</p><h1>Combine Monthly Files from a Folder with Excel Power Query</h1><p class="article-lead">Import recurring CSV or Excel files with the same structure and refresh the combined data when new files arrive.</p><div class="article-meta"><span>Published: 2026-07-22</span><span>Last updated: 2026-07-22</span></div></div></header><div class="container article-layout"><aside class="toc"><strong>In this guide</strong><ol><li><a href="#section-1">When folder import helps</a></li><li><a href="#section-2">Setup workflow</a></li><li><a href="#section-3">Source-file standards</a></li><li><a href="#section-4">Refresh checks</a></li></ol></aside><div class="article-content"><section class="article-section" id="section-1"><h2>When folder import helps</h2><p>When locations or months produce files with the same layout, a folder data source avoids repeated copy-and-paste work.</p><p>The files should have consistent headers, data types, and table structure.</p></section><section class="article-section" id="section-2"><h2>Setup workflow</h2><ol class="steps"><li>Create a folder containing only files intended for consolidation.</li><li>Choose Folder as the data source.</li><li>Select a sample file and define transformation steps.</li><li>Remove unnecessary columns and set names and data types.</li><li>Load the result to a table or the data model.</li></ol></section><section class="article-section" id="section-3"><h2>Source-file standards</h2><ul><li>Keep header names and structure consistent.</li><li>Exclude titles, subtotals, and notes from the transaction area.</li><li>Do not place temporary or backup files in the import folder.</li><li>Include a month or location code in each filename.</li></ul></section><section class="article-section" id="section-4"><h2>Refresh checks</h2><ul><li>Confirm the new files are in the correct folder.</li><li>Look for errors caused by renamed columns.</li><li>Validate date and numeric data types.</li><li>Check that duplicate files were not imported twice.</li><li>Reconcile counts and totals to source files.</li></ul><aside class="callout"><strong>Key point</strong><p>The reliability of automation depends more on source-file standards than on complex query logic.</p></aside></section><aside class="article-notice">This article provides general information. Check official sources for current specifications, prices, rules, and opening hours.</aside><section class="sources"><h2>Official references</h2><ul><li><a href="https://support.microsoft.com/en-us/office/combine-files-in-a-folder-with-combine-binaries-power-query-94b8023c-2e66-4f6b-8c78-6a00041c90e4" rel="noopener noreferrer">Microsoft Support: Combine files in a folder with Power Query</a></li><li><a href="https://support.microsoft.com/en-US/Excel/about-power-query-in-excel" rel="noopener noreferrer">Microsoft Support: About Power Query in Excel</a></li></ul></section></div></div></article><section class="section section-muted"><div class="container"><div class="section-heading"><h2>Related guides</h2></div><div class="card-grid"><article class="card article-card" data-card-category="excel">
+<div class="card-kicker">Excel &amp; CSV</div>
+<h3><a href="/en/technology/excel-csv/excel-xlookup-function/">How to Use Excel XLOOKUP: Differences from VLOOKUP and Not-Found Handling</a></h3>
+<p>Use XLOOKUP for left or right lookup, exact matching, custom not-found output, and multi-column returns.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/excel-csv/excel-xlookup-function/">Read guide →</a></div>
+</article><article class="card article-card" data-card-category="excel">
+<div class="card-kicker">Excel &amp; CSV</div>
+<h3><a href="/en/technology/excel-csv/excel-vlookup-function/">How to Use Excel VLOOKUP: Exact Match and Column Index Risks</a></h3>
+<p>Understand VLOOKUP syntax, exact match, lookup columns, column indexes, #N/A, and type mismatches.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/excel-csv/excel-vlookup-function/">Read guide →</a></div>
+</article><article class="card article-card" data-card-category="excel">
+<div class="card-kicker">Excel &amp; CSV</div>
+<h3><a href="/en/technology/excel-csv/excel-table-structured-references/">How to Use Excel Tables for Automatically Expanding Data Ranges</a></h3>
+<p>Convert transaction data into an Excel Table so formulas, formatting, and report sources expand as rows are added.</p>
+<div class="card-meta"><span>Last updated: 2026-07-22</span><a href="/en/technology/excel-csv/excel-table-structured-references/">Read guide →</a></div>
+</article></div></div></section></main>
+<footer class="site-footer"><div class="container footer-grid footer-grid-expanded"><div><a class="brand footer-brand" href="/en/"><span>Sol</span><strong>Q</strong><span>via</span></a><p>Bilingual smartphone troubleshooting guides with a clear diagnostic order and data-impact warnings.</p></div><div><h2>Phone guides</h2><a href="/en/technology/smartphone/">All smartphone guides</a><a href="/en/topics/">Browse by topic</a><a href="/en/articles/">All guides</a><a href="/en/search/">Search</a></div><div><h2>About</h2><a href="/en/about/">About SolQvia</a><a href="/en/about/editorial-team/">Editorial team</a><a href="/en/about/device-testing/">Testing policy</a><a href="/en/about/corrections/">Corrections</a><a href="/en/contact/">Contact</a></div><div><h2>Policies</h2><a href="/en/privacy/">Privacy policy</a><a href="/en/cookie-policy/">Cookie policy</a><a href="/en/advertising/">Advertising policy</a><a href="/en/terms/">Terms</a><a href="/en/editorial-policy/">Editorial policy</a></div></div><div class="container footer-bottom"><span>© 2026 SolQvia</span><span>Resolve smartphone problems step by step.</span></div></footer>
+<script defer="" src="/assets/site.js"></script>
+</body></html>

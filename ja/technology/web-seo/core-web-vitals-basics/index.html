@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Core Web Vitalsを悪化させないサイト設計の基本 | SolQvia</title>
+<meta content="LCP・INP・CLSの意味と、画像・JavaScript・広告を導入するときの確認ポイントを整理します。" name="description"/>
+<meta content="noindex,follow,max-image-preview:large" name="robots"/>
+<link href="https://solqvia.com/ja/technology/web-seo/core-web-vitals-basics/" rel="canonical"/>
+<link href="https://solqvia.com/ja/technology/web-seo/core-web-vitals-basics/" hreflang="ja" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/web-seo/core-web-vitals-basics/" hreflang="en" rel="alternate"/>
+<link href="https://solqvia.com/en/technology/web-seo/core-web-vitals-basics/" hreflang="x-default" rel="alternate"/>
+<meta content="article" property="og:type"/>
+<meta content="SolQvia" property="og:site_name"/>
+<meta content="Core Web Vitalsを悪化させないサイト設計の基本 | SolQvia" property="og:title"/>
+<meta content="LCP・INP・CLSの意味と、画像・JavaScript・広告を導入するときの確認ポイントを整理します。" property="og:description"/>
+<meta content="https://solqvia.com/ja/technology/web-seo/core-web-vitals-basics/" property="og:url"/>
+<meta content="ja_JP" property="og:locale"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<link href="/assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/assets/styles.css" rel="stylesheet"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"Core Web Vitalsを悪化させないサイト設計の基本 | SolQvia","description":"LCP・INP・CLSの意味と、画像・JavaScript・広告を導入するときの確認ポイントを整理します。","datePublished":"2026-07-22","dateModified":"2026-07-22","inLanguage":"ja","mainEntityOfPage":"https://solqvia.com/ja/technology/web-seo/core-web-vitals-basics/","author":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"},"publisher":{"@type":"Organization","name":"SolQvia","url":"https://solqvia.com"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://solqvia.com/ja/"},{"@type":"ListItem","position":2,"name":"専門分野","item":"https://solqvia.com/ja/topics/"},{"@type":"ListItem","position":3,"name":"テクノロジー・自動化","item":"https://solqvia.com/ja/technology/"},{"@type":"ListItem","position":4,"name":"Web・SEO","item":"https://solqvia.com/ja/technology/web-seo/"},{"@type":"ListItem","position":5,"name":"Core Web Vitalsを悪化させないサイト設計の基本","item":"https://solqvia.com/ja/technology/web-seo/core-web-vitals-basics/"}]}]}</script>
+<!-- Add consent, analytics, and advertising scripts only after account and policy setup. -->
+<script src="/assets/platform-config.js"></script><script defer="" src="/assets/platform-loader.js"></script>
+<!-- SEARCH_CONSOLE_VERIFICATION: add the exact Google meta tag or HTML file after verification is issued. -->
+</head>
+<body data-ad-eligible="false" data-ad-profile="none" data-content-type="general" data-index-status="noindex" data-review-focus="smartphone">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container header-inner">
+<a aria-label="SolQvia home" class="brand" href="/ja/"><span>Sol</span><strong>Q</strong><span>via</span></a>
+<button aria-controls="site-nav" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
+<nav aria-label="Primary" class="site-nav" id="site-nav"><a href="/ja/">ホーム</a><a href="/ja/technology/smartphone/">スマホ解決</a><a href="/ja/topics/">分野別</a><a href="/ja/articles/">記事一覧</a><a href="/ja/search/">検索</a><a href="/ja/about/">SolQviaについて</a><a class="lang-link" href="/en/technology/web-seo/core-web-vitals-basics/">English</a></nav>
+</div></header>
+<main id="main"><article class="article"><header class="article-header"><div class="container article-narrow"><nav class="breadcrumbs"><span>ホーム</span><span>›</span><a href="/ja/topics/">専門分野</a><span>›</span><a href="/ja/technology/">テクノロジー・自動化</a><span>›</span><a href="/ja/technology/web-seo/">Web・SEO</a><span>›</span><span>Core Web Vitalsを悪化させないサイト設計の基本</span></nav><p class="eyebrow">Web・SEO</p><h1>Core Web Vitalsを悪化させないサイト設計の基本</h1><p class="article-lead">LCP・INP・CLSの意味と、画像・JavaScript・広告を導入するときの確認ポイントを整理します。</p><div class="article-meta"><span>公開日: 2026-07-22</span><span>最終更新: 2026-07-22</span></div></div></header><div class="container article-layout"><aside class="toc"><strong>この記事の内容</strong><ol><li><a href="#section-1">3つの指標</a></li><li><a href="#section-2">指標の目安</a></li><li><a href="#section-3">改善の優先順位</a></li><li><a href="#section-4">広告導入時の注意</a></li></ol></aside><div class="article-content"><section class="article-section" id="section-1"><h2>3つの指標</h2><p>Core Web Vitalsは、読み込み、操作応答、表示の安定性を測る指標です。代表的な指標はLCP、INP、CLSです。</p><p>検索だけでなく、読者が記事やツールを使い続けられるかという体験品質として確認します。</p></section><section class="article-section" id="section-2"><h2>指標の目安</h2><ul><li>LCP：主要コンテンツが表示されるまで。良好の目安は2.5秒以内。</li><li>INP：操作への応答性。良好の目安は200ミリ秒以下。</li><li>CLS：意図しないレイアウト移動。良好の目安は0.1以下。</li></ul></section><section class="article-section" id="section-3"><h2>改善の優先順位</h2><ol class="steps"><li>ファーストビューの大きな画像を適切なサイズと形式にします。</li><li>不要なJavaScriptと外部タグを減らします。</li><li>画像・広告・埋め込み枠に幅と高さ、またはアスペクト比を確保します。</li><li>Webフォントを減らし、システムフォントや必要文字だけの配信を検討します。</li><li>実ユーザーデータとPageSpeed Insightsのラボデータを分けて確認します。</li></ol></section><section class="article-section" id="section-4"><h2>広告導入時の注意</h2><ul><li>広告枠を後から押し込まず、事前に高さを確保する。</li><li>記事冒頭へ過剰な広告を置かない。</li><li>同意管理、解析、広告など複数タグの重複を避ける。</li><li>広告導入前後でLCP・INP・CLSと総収益を比較する。</li></ul><aside class="callout"><strong>ポイント</strong><p>スコアだけを上げるのではなく、主要ページで読者が目的を達成できるかを基準に改善します。</p></aside></section><aside class="article-notice">掲載内容は一般的な情報です。実際の仕様、料金、制度、営業時間などは公式情報をご確認ください。</aside><section class="sources"><h2>参考・公式情報</h2><ul><li><a href="https://web.dev/articles/vitals" rel="noopener noreferrer">web.dev: Web Vitals</a></li><li><a href="https://developers.google.com/search/docs/appearance/core-web-vitals" rel="noopener noreferrer">Google Search Central: Core Web Vitals</a></li></ul></section></div></div></article><section class="section section-muted"><div class="container"><div class="section-heading"><h2>関連記事</h2></div><div class="card-grid"><article class="card article-card" data-card-category="web">
+<div class="card-kicker">Web・SEO</div>
+<h3><a href="/ja/technology/web-seo/static-site-vs-wordpress/">静的サイトとWordPressを比較｜更新・保守・拡張性</a></h3>
+<p>静的サイトとWordPressを、用途、費用、共有、移行、保守の観点から比較します。</p>
+<div class="card-meta"><span>最終更新: 2026-07-22</span><a href="/ja/technology/web-seo/static-site-vs-wordpress/">記事を読む →</a></div>
+</article><article class="card article-card" data-card-category="web">
+<div class="card-kicker">Web・SEO</div>
+<h3><a href="/ja/technology/web-seo/static-site-seo-basics/">静的サイト公開前に確認するSEO設定</a></h3>
+<p>title、description、canonical、サイトマップ、構造化データなど最低限の技術設定を整理します。</p>
+<div class="card-meta"><span>最終更新: 2026-07-22</span><a href="/ja/technology/web-seo/static-site-seo-basics/">記事を読む →</a></div>
+</article><article class="card article-card" data-card-category="web">
+<div class="card-kicker">Web・SEO</div>
+<h3><a href="/ja/technology/web-seo/multilingual-site-hreflang/">多言語サイトでhreflangを正しく設定する方法</a></h3>
+<p>日本語・英語ページの対応関係をGoogleへ伝えるURL設計と相互指定の基本を解説します。</p>
+<div class="card-meta"><span>最終更新: 2026-07-22</span><a href="/ja/technology/web-seo/multilingual-site-hreflang/">記事を読む →</a></div>
+</article></div></div></section></main>
+<footer class="site-footer"><div class="container footer-grid footer-grid-expanded"><div><a class="brand footer-brand" href="/ja/"><span>Sol</span><strong>Q</strong><span>via</span></a><p>スマートフォンの操作・不具合・通信・データ移行を、確認順とデータ影響付きで解説する日英対応メディア。</p></div><div><h2>スマホガイド</h2><a href="/ja/technology/smartphone/">すべてのスマホ解決記事</a><a href="/ja/topics/">分野別に探す</a><a href="/ja/articles/">記事一覧</a><a href="/ja/search/">サイト内検索</a></div><div><h2>運営情報</h2><a href="/ja/about/">SolQviaについて</a><a href="/ja/about/editorial-team/">編集体制</a><a href="/ja/about/device-testing/">検証方針</a><a href="/ja/about/corrections/">訂正履歴</a><a href="/ja/contact/">お問い合わせ</a></div><div><h2>ポリシー</h2><a href="/ja/privacy/">プライバシーポリシー</a><a href="/ja/cookie-policy/">Cookieポリシー</a><a href="/ja/advertising/">広告・アフィリエイトポリシー</a><a href="/ja/terms/">利用規約</a><a href="/ja/editorial-policy/">編集方針</a></div></div><div class="container footer-bottom"><span>© 2026 SolQvia</span><span>スマートフォンの困ったを、解決へ。</span></div></footer>
+<script defer="" src="/assets/site.js"></script>
+</body></html>
