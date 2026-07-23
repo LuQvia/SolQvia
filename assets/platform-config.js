@@ -1,4 +1,4 @@
-// SolQvia.com Phase35 platform configuration. GTM and GA4 IDs verified on 2026-07-23.
+// SolQvia.com Phase36 platform configuration. GTM, GA4, and AdSense publisher ID verified on 2026-07-23.
 window.SOLQVIA_PLATFORM = Object.freeze({
   reviewFocusMode: true,
   focusSection: 'smartphone',
@@ -10,7 +10,7 @@ window.SOLQVIA_PLATFORM = Object.freeze({
   analyticsConsentVersion: '2026-07-23',
 
   // AdSense ownership review and ad serving are deliberately separate.
-  adsenseClient: '',              // AdSense ca-pub ID issued by the account
+  adsenseClient: 'ca-pub-1532240366110429',              // AdSense ca-pub ID issued by the account
   adsenseSiteReviewEnabled: false,// true after the site is added in AdSense
   siteApproved: false,            // true only when the site status is Ready
   autoAdsEnabled: false,          // also enable Auto ads in the AdSense account

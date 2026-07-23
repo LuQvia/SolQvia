@@ -1,5 +1,5 @@
 {
-  "release": "phase34-clean-brand-launch",
+  "release": "solqvia-phase36-adsense-review-2026-07-23",
   "generated_at": "2026-07-23",
   "brand_name": "SolQvia.com",
   "tagline_ja": "迷いを、解決へ。",
@@ -10,7 +10,20 @@
   "notes": [
     "Selected primary logo integrated in header, landing and home hero.",
     "Only sitemap-indexed pages and essential utility pages are included.",
-    "Retired noindex article files are excluded from the public package.",
-    "AdSense and analytics remain disabled until valid account IDs are configured."
-  ]
+    "GTM-WM4K76RF is configured and loads only after analytics consent.",
+    "GA4 measurement G-8QLJEW3TMP is delivered through the published GTM container.",
+    "AdSense and advertising remain disabled until valid account approval and IDs are configured."
+  ],
+  "version": "35.0.0",
+  "releasedAt": "2026-07-23",
+  "analytics": {
+    "gtmContainerId": "GTM-WM4K76RF",
+    "ga4MeasurementId": "G-8QLJEW3TMP",
+    "delivery": "consent-gated-gtm",
+    "directGa4FallbackActive": false
+  },
+  "phase": "phase36",
+  "adsenseOwnershipMeta": true,
+  "adsTxt": true,
+  "adsensePublisherId": "pub-1532240366110429"
 }
