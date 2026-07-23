@@ -1,4 +1,4 @@
-// SolQvia Phase31 platform configuration. Keep issued IDs blank until the exact account provides them.
+// SolQvia.com Phase33 platform configuration. Keep issued IDs blank until the exact account provides them.
 window.SOLQVIA_PLATFORM = Object.freeze({
   reviewFocusMode: true,
   focusSection: 'smartphone',

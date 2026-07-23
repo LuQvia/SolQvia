@@ -1,14 +1,14 @@
 :root {
   --bg: #f7f8fb;
   --surface: #ffffff;
-  --ink: #172033;
+  --ink: #0b1f3a;
   --muted: #667085;
   --line: #e4e7ec;
-  --primary: #5a42d4;
-  --primary-dark: #3f2ca7;
-  --accent: #19a7a0;
-  --accent-soft: #dff7f4;
-  --primary-soft: #eeebff;
+  --primary: #0866d8;
+  --primary-dark: #06265e;
+  --accent: #0aa7d8;
+  --accent-soft: #e4f6ff;
+  --primary-soft: #e9f1ff;
   --shadow: 0 16px 45px rgba(23, 32, 51, 0.09);
   --radius: 22px;
   --container: 1180px;
@@ -26,9 +26,11 @@ button, input, select { font: inherit; }
 .skip-link:focus { top: 12px; }
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(247,248,251,.92); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(228,231,236,.9); }
 .header-inner { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.brand { display: inline-flex; align-items: baseline; gap: 0; font-size: 27px; font-weight: 750; letter-spacing: -.045em; text-decoration: none; }
-.brand strong { color: var(--primary); font-size: 1.18em; margin-inline: 1px; }
-.brand-large { font-size: clamp(44px, 9vw, 82px); justify-content: center; }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-size: 25px; font-weight: 800; letter-spacing: -.035em; text-decoration: none; }
+.brand-icon { width: 40px; height: 40px; flex: 0 0 auto; border-radius: 11px; box-shadow: 0 5px 14px rgba(6,38,94,.16); }
+.brand-wordmark { white-space: nowrap; }
+.brand-large { flex-direction: column; gap: 20px; font-size: clamp(42px, 8vw, 76px); justify-content: center; }
+.brand-large .brand-icon { width: clamp(120px, 24vw, 210px); height: auto; border-radius: 28%; box-shadow: 0 24px 60px rgba(6,38,94,.2); }
 .site-nav { display: flex; align-items: center; gap: 25px; font-size: 14px; font-weight: 650; }
 .site-nav a { text-decoration: none; color: #344054; }
 .site-nav a:hover { color: var(--primary); }
@@ -272,3 +274,30 @@ html:not(.ads-enabled) .ad-slot{display:none!important}
 .ads-enabled .ad-slot[data-ad-state="ready"]::before{content:attr(data-label);display:block;margin-bottom:6px;color:#7a8790;font-size:11px;letter-spacing:.06em;text-align:center}
 .adsbygoogle{display:block;width:100%;min-height:90px}
 @media(max-width:640px){.ads-enabled .ad-slot[data-ad-state="ready"]{margin:34px 0;min-height:100px}}
+
+
+/* Phase 33: SolQvia.com brand icon integration */
+.brand-hero-visual { display: grid; place-items: center; }
+.hero-brand-icon { width: min(390px, 92%); height: auto; border-radius: 28%; box-shadow: 0 32px 75px rgba(6,38,94,.22); }
+.footer-brand { color: #fff; }
+.footer-brand .brand-icon { box-shadow: 0 6px 18px rgba(0,0,0,.28); }
+@media (max-width: 760px) {
+  .brand { gap: 8px; font-size: 21px; }
+  .brand-icon { width: 34px; height: 34px; border-radius: 9px; }
+  .brand-large { font-size: clamp(38px, 12vw, 62px); }
+  .brand-large .brand-icon { width: min(170px, 48vw); }
+}
+
+
+/* Phase 34: selected primary logo and clean launch package */
+.brand-wordmark-link { min-width: 164px; }
+.brand-wordmark-link picture { display: block; line-height: 0; }
+.brand-main-wordmark { display: block; width: 194px; height: auto; max-height: 48px; object-fit: contain; object-position: left center; }
+.hero-main-logo { display: block; width: min(590px, 100%); height: auto; filter: drop-shadow(0 20px 38px rgba(6,38,94,.12)); }
+.landing-main-logo { margin: 0 auto 22px; width: min(820px, 96%); }
+.landing-main-logo img { display: block; width: 100%; height: auto; }
+@media (max-width: 760px) {
+  .brand-wordmark-link { min-width: 132px; }
+  .brand-main-wordmark { width: 154px; max-height: 39px; }
+  .landing-main-logo { width: min(560px, 100%); }
+}

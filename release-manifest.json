@@ -1,31 +1,16 @@
 {
-  "release_id": "solqvia-phase32-2026-07-23",
-  "phase": "32",
+  "release": "phase34-clean-brand-launch",
   "generated_at": "2026-07-23",
-  "canonical_domain": "https://solqvia.com",
-  "review_focus": "smartphone",
-  "indexable_pages": 281,
-  "sitemap_urls": 281,
-  "ad_eligible_pages": 177,
-  "expected_manual_ad_slots": 531,
-  "adsense_review_configured": false,
-  "site_approved": false,
-  "cmp_configured": false,
-  "sample_urls": [
-    "https://solqvia.com/",
-    "https://solqvia.com/en/",
-    "https://solqvia.com/en/technology/smartphone/",
-    "https://solqvia.com/ja/",
-    "https://solqvia.com/ja/technology/smartphone/",
-    "https://solqvia.com/en/technology/smartphone/android-factory-reset/",
-    "https://solqvia.com/en/technology/smartphone/android-force-restart/",
-    "https://solqvia.com/en/technology/smartphone/iphone-factory-reset/",
-    "https://solqvia.com/en/technology/smartphone/iphone-force-restart/",
-    "https://solqvia.com/en/technology/smartphone/lost-smartphone-find-lock-erase/",
-    "https://solqvia.com/en/technology/smartphone/smartphone-app-crashes/",
-    "https://solqvia.com/en/technology/smartphone/smartphone-backup-before-reset/"
-  ],
-  "sitemap_sha256": "d056ce30e15f57437a52d8f1c7115022cd6bf30cc01adf28be627968fb8ef420",
-  "robots_sha256": "abddccaed700471c6f07e2bed0081de43c6230efc4854f678d2a6d700756c03c",
-  "platform_config_sha256": "b00c6cc64e77e254fd89c0acd13908f3bf3503b8b8227e6519a72fd227d2db6a"
+  "brand_name": "SolQvia.com",
+  "tagline_ja": "迷いを、解決へ。",
+  "tagline_en": "From questions to solutions.",
+  "launch_specialty": "smartphone guides",
+  "indexable_urls": 281,
+  "utility_noindex_pages": 4,
+  "notes": [
+    "Selected primary logo integrated in header, landing and home hero.",
+    "Only sitemap-indexed pages and essential utility pages are included.",
+    "Retired noindex article files are excluded from the public package.",
+    "AdSense and analytics remain disabled until valid account IDs are configured."
+  ]
 }
