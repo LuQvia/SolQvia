@@ -1,0 +1,36 @@
+{
+  "version": "2.0",
+  "updated": "2026-07-25",
+  "operator": "LuQvia",
+  "editorialLead": "SolQvia Editorial Lead",
+  "defaultOrder": [
+    "scope check",
+    "backup and recovery check",
+    "restart/update/storage/connection check",
+    "app or settings action",
+    "limited reset",
+    "factory reset or recovery"
+  ],
+  "stopConditions": [
+    "severe heat",
+    "battery swelling",
+    "burning odor",
+    "liquid damage",
+    "physical damage",
+    "unknown account access"
+  ],
+  "aiUse": [
+    "topic triage",
+    "official-source organization",
+    "draft assistance",
+    "translation assistance",
+    "technical QA"
+  ],
+  "humanReview": [
+    "data-loss impact",
+    "account-access impact",
+    "procedure order",
+    "stop conditions",
+    "publication and corrections"
+  ]
+}

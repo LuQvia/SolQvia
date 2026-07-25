@@ -47,7 +47,12 @@
       const a = e.target.closest('a[href]'); if (!a) return;
       const href = a.getAttribute('href') || '';
       if (/^https?:\/\//.test(href) && !href.startsWith(location.origin)) {
-        track(a.rel.includes('sponsored') ? 'affiliate_click' : 'outbound_click', { link_url: href, link_text: (a.textContent || '').trim().slice(0, 100) });
+        let destination = ''; try { destination = new URL(href, location.href).hostname; } catch (_) {}
+        if (/(^|\.)luqevora\.com$/.test(destination) || /(^|\.)luqvia\.com$/.test(destination)) {
+          track('cross_brand_click', { source_brand: 'solqvia', destination_brand: destination.includes('luqevora') ? 'luqevora' : 'luqvia', link_url: href, link_text: (a.textContent || '').trim().slice(0, 100) });
+        } else {
+          track(a.rel.includes('sponsored') ? 'affiliate_click' : 'outbound_click', { link_url: href, link_text: (a.textContent || '').trim().slice(0, 100) });
+        }
       }
       if (a.closest('.section-muted') || a.closest('[class*=related]')) track('related_article_click', { link_url: href });
     });
