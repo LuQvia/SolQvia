@@ -1,4 +1,4 @@
-// SolQvia.com Phase37 platform configuration. GTM, GA4, and AdSense publisher ID verified on 2026-07-23.
+// SolQvia.com Phase40 platform configuration. GTM, GA4, and AdSense publisher ID verified on 2026-07-23.
 window.SOLQVIA_PLATFORM = Object.freeze({
   reviewFocusMode: true,
   focusSection: 'smartphone',

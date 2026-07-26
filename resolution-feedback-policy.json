@@ -1,0 +1,14 @@
+{
+  "version": "40.0.0",
+  "updated": "2026-07-25",
+  "event": "article_resolution_feedback",
+  "values": [
+    "resolved",
+    "unresolved"
+  ],
+  "collection": "GA4/GTM event only",
+  "personal_data": "none",
+  "free_text": "not collected",
+  "retention": "controlled by configured analytics account",
+  "use": "article quality prioritization and troubleshooting coverage improvement"
+}

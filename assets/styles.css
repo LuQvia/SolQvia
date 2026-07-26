@@ -317,3 +317,8 @@ html:not(.ads-enabled) .ad-slot{display:none!important}
 
 .solqvia-editorial-decision{margin:24px 0;padding:22px;border:1px solid #cbdce6;border-radius:18px;background:linear-gradient(145deg,#f5fbfd,#f7fafc)}.solqvia-editorial-decision h2{margin:6px 0 10px;font-size:24px}.solqvia-editorial-decision .decision-label{font-size:12px;font-weight:900;letter-spacing:.08em;color:var(--accent)}.solqvia-editorial-decision .decision-basis{font-size:13px;color:var(--muted);border-top:1px solid #dbe6ec;padding-top:12px;margin-top:14px}.safe-order-list{display:grid;gap:8px;padding-left:1.3em}.method-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.method-card{padding:20px;border:1px solid var(--border);border-radius:16px;background:#fff}@media(max-width:760px){.method-grid{grid-template-columns:1fr}}
 
+
+/* Phase40 resolution feedback 2026-07-25 */
+
+.resolution-feedback{margin:32px 0;padding:24px;border:1px solid #bed3ea;border-radius:18px;background:#f5f9fd}.resolution-feedback h2{margin:0 0 8px}.resolution-feedback-actions{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}.resolution-feedback button{appearance:none;border:1px solid #1f5f9e;background:#fff;color:#113f70;border-radius:999px;padding:11px 18px;font-weight:800;cursor:pointer}.resolution-feedback button:hover,.resolution-feedback button:focus{background:#e7f1fb}.resolution-feedback button[disabled]{opacity:.55;cursor:default}.resolution-feedback-status{font-weight:700;color:#245c47}.resolution-feedback small{display:block;color:#61758a;margin-top:8px}
+

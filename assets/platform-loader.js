@@ -61,6 +61,33 @@
     });
     if (document.querySelector('h1')?.textContent.match(/404|見つかりません/i)) track('page_not_found', { page_path: location.pathname });
   };
+
+  const attachLearningLoop = () => {
+    const articleId = document.body?.dataset.articleId || location.pathname;
+    const pageContext = { article_id: articleId, content_type: document.body?.dataset.contentType || '', ad_eligible: document.body?.dataset.adEligible === 'true', release: document.body?.dataset.release || '' };
+    track('article_context_view', pageContext);
+    const decision = document.querySelector('.solqvia-editorial-decision');
+    if (decision && 'IntersectionObserver' in window) {
+      const ob = new IntersectionObserver(entries => entries.forEach(entry => { if (!entry.isIntersecting) return; track('editorial_decision_view', pageContext); ob.disconnect(); }), { threshold: 0.5 });
+      ob.observe(decision);
+    }
+    document.querySelectorAll('[data-resolution-feedback]').forEach(box => {
+      const key = `solqvia-feedback:${box.dataset.articleId || articleId}`;
+      const buttons = box.querySelectorAll('[data-resolution]');
+      const status = box.querySelector('.resolution-feedback-status');
+      let prior = ''; try { prior = sessionStorage.getItem(key) || ''; } catch (_) {}
+      if (prior) { buttons.forEach(b => b.disabled = true); if (status) status.textContent = document.documentElement.lang === 'ja' ? '回答済みです。' : 'Response recorded.'; }
+      buttons.forEach(button => button.addEventListener('click', () => {
+        if (button.disabled) return;
+        const outcome = button.dataset.resolution || 'unknown';
+        track('article_resolution_feedback', { ...pageContext, outcome });
+        try { sessionStorage.setItem(key, outcome); } catch (_) {}
+        buttons.forEach(b => b.disabled = true);
+        if (status) status.textContent = document.documentElement.lang === 'ja' ? '回答ありがとうございます。今後の改善に反映します。' : 'Thank you. This will inform future improvements.';
+      }));
+    });
+  };
+
   let adsensePromise = null;
   const ensureAdSenseScript = () => {
     if (!valid.client(cfg.adsenseClient)) return Promise.resolve(false);
@@ -118,6 +145,7 @@
   document.addEventListener('DOMContentLoaded', async () => {
     await enableAnalytics();
     attachEvents();
+    attachLearningLoop();
     await loadAdSenseForReview();
     await enableManualAds();
     publishStatus();
