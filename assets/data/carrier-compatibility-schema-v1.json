@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-08-08",
+  "fields": [
+    "article_slug",
+    "title",
+    "official_checked_at",
+    "methodology",
+    "source_urls"
+  ],
+  "notes": "Phase47 initial carrier-compatibility dataset. Device-specific ratings remain in the articles; future phases may normalize carrier-level score fields."
+}

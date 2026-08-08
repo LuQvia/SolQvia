@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "purpose": "SolQvia device reference master template",
   "fields": [
     "manufacturer",
@@ -38,5 +38,5 @@
     "device_test_environment"
   ],
   "last_updated": "2026-08-08",
-  "notes": "Phase46 expands concrete current-model regional variants (iPhone 17/17e, Pixel 10 Pro, Galaxy Z Flip7/Fold7). Always verify exact SKU and carrier support."
+  "notes": "Phase47 adds separate carrier compatibility articles/dataset. Frequency fit fields never equal carrier operation guarantee; imported devices require VoLTE/IMS, eSIM, Giteki and warranty checks."
 }

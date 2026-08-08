@@ -1,0 +1,727 @@
+{
+  "schema_version": "1.1",
+  "updated_at": "2026-08-08",
+  "release": "phase58",
+  "record_count": 32,
+  "records": [
+    {
+      "provider": "IIJmio",
+      "article_url": "/ja/technology/smartphone/iijmio-mnp-number-reissue-sim-reissue-blocked/",
+      "summary": "IIJmioでは、MNP予約番号が「発行中」の間は再発行できません。有効期限の延長もできず、発行中はSIM再発行もできません。期限切れ後も即時解除ではなく、タイプDは原則翌々日6時頃、タイプAは翌日6時頃まで待つ場合があります。",
+      "failure_points": [
+        "「予約番号発行中」では再発行不可",
+        "有効期限の延長はできない",
+        "SIM再発行とも競合する",
+        "期限切れ後の解除時刻を見る"
+      ],
+      "resolution_steps": [
+        "会員ページで現在のMNP予約番号状態と有効期限を確認する",
+        "発行中なら新規申請を重ねず、発行完了または失効を待つ",
+        "SIM再発行が必要なら、MNP番号発行後はサポートへ取消し可否を相談する",
+        "期限切れ後はタイプD/Aの解除目安を過ぎてから再申請する"
+      ],
+      "official_source_urls": [
+        "https://help.iijmio.jp/answer/611e0ef1b597a7001931d592/",
+        "https://help.iijmio.jp/answer/61135bf52b2265001db01ecd/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "mineo",
+      "article_url": "/ja/technology/smartphone/mineo-mnp-number-delayed-cancel-packet-share/",
+      "summary": "mineoのMNP予約番号発行・キャンセルは24時間受付ですが、9:02〜20:59以外の受付は翌日9:30以降の順次対応です。通常解約とMNP転出は別手続きで、MNP転出の場合はパケットシェアグループから自動脱退します。",
+      "failure_points": [
+        "受付は24時間でも即時処理とは限らない",
+        "通常解約とMNPを間違えない",
+        "パケットシェアはMNPと通常解約で扱いが違う",
+        "複数回線は1回線ずつ"
+      ],
+      "resolution_steps": [
+        "申請時刻を確認し、時間外なら翌日9:30以降まで待つ",
+        "マイページの「解約・MNP予約番号発行」からMNP側を選び直す",
+        "通常解約を先に入れない",
+        "複数回線の場合は対象番号を1回線ずつ確認する"
+      ],
+      "official_source_urls": [
+        "https://support.mineo.jp/usqa/use/change/quit/40014508_8885.html",
+        "https://support.mineo.jp/usqa/use/change/quit/4206925_8885.html"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "BIGLOBEモバイル",
+      "article_url": "/ja/technology/smartphone/biglobe-mobile-mnp-number-expired-reissue-cancellation/",
+      "summary": "BIGLOBEモバイルのMNP予約番号を有効期間内に使わなかった場合は、有効期間終了後に改めて予約番号を発行できます。MNPに伴って先に行ったBIGLOBEモバイルの解約申込は、予約番号の失効と同時にキャンセルされます。",
+      "failure_points": [
+        "有効期限内の番号を放置した場合",
+        "再発行は有効期間後",
+        "解約申込も自動で元に戻る点に注意",
+        "「解約済み」と思い込まない"
+      ],
+      "resolution_steps": [
+        "予約番号の有効期限を確認する",
+        "期限内なら転出先の申込条件を確認し、使えなければ失効を待つ",
+        "失効後にBIGLOBE側の契約状態を確認する",
+        "必要なら新しいMNP予約番号を再発行する"
+      ],
+      "official_source_urls": [
+        "https://faq.support.biglobe.ne.jp/faq_detail.html?faq_id=11385"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "日本通信SIM",
+      "article_url": "/ja/technology/smartphone/nihontsushin-sim-mnp-name-mismatch-two-days/",
+      "summary": "日本通信SIMは、MNP予約番号方式でもワンストップでも手続きに2日かかる場合があります。また、登録氏名・生年月日など契約者情報に不一致があると他社へ転出できない場合があります。",
+      "failure_points": [
+        "「ワンストップ＝即時」とは限らない",
+        "契約者情報を照合する",
+        "予約番号の有効期限は15日",
+        "ワンストップは転出先対応も必要"
+      ],
+      "resolution_steps": [
+        "日本通信マイページの登録氏名・生年月日を確認する",
+        "転出先の申込名義と一致させる",
+        "申請直後なら最大2日程度かかる可能性を考慮する",
+        "ワンストップ利用時はマイページのログイン情報を先に確認する"
+      ],
+      "official_source_urls": [
+        "https://www.nihontsushin.com/support/support_mnp_portout.html",
+        "https://www.nihontsushin.com/support/support_mnp_onestop.html",
+        "https://www.nihontsushin.com/support/support_require.html?applyKind=mnp"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "HISモバイル",
+      "article_url": "/ja/technology/smartphone/his-mobile-mnp-button-disabled-after-cancellation/",
+      "summary": "HISモバイルでは、先に解約手続きをするとMNP予約番号取得ボタンが押せなくなります。解約申込の取消しは原則不可ですが、契約状況によって受付可能な場合があるため、解約処理前にヘルプデスクへ確認する必要があります。",
+      "failure_points": [
+        "最有力原因は「解約を先に入れた」",
+        "解約取消しは原則不可",
+        "起算日を超えて解約処理されると復旧不可",
+        "データ専用SIMはMNP対象外"
+      ],
+      "resolution_steps": [
+        "解約申込済みかMy HISモバイルで確認する",
+        "まだ解約処理前ならヘルプデスクへ取消し可否を相談する",
+        "音声通話付きプランか確認する",
+        "再申請できる状態になったらMNP予約番号取得を行う"
+      ],
+      "official_source_urls": [
+        "https://support.his-mobile.com/hc/ja/articles/7739292394127-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%82%92%E5%8F%96%E5%BE%97%E3%81%97%E3%81%9F%E3%81%84%E3%81%AE%E3%81%A7%E3%81%99%E3%81%8C-%E5%8F%96%E5%BE%97%E3%83%9C%E3%82%BF%E3%83%B3%E3%81%8C%E3%82%AF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93",
+        "https://support.his-mobile.com/hc/ja/articles/7739305431567-MNP%E8%BB%A2%E5%87%BA%E6%96%B9%E6%B3%95-%E8%A9%B3%E7%B4%B0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "b-mobile",
+      "article_url": "/ja/technology/smartphone/bmobile-mnp-number-not-issued-unused-sim/",
+      "summary": "b-mobileでは、契約したSIMカードでデータ通信または携帯・固定電話への発信を一度もしていない場合、MNP予約番号を申し込めません。発行には申込から4営業日前後かかります。",
+      "failure_points": [
+        "SIM未利用はMNP予約番号申請不可",
+        "発行は4営業日前後",
+        "有効期限は15日",
+        "MNP完了後に自動解約"
+      ],
+      "resolution_steps": [
+        "契約SIMでデータ通信または通常発信の利用実績があるか確認する",
+        "未利用なら利用可能状態を確認してから実利用する",
+        "4営業日前後を見込んで申請する",
+        "予約番号発行メールと有効期限を確認して転出先へ申し込む"
+      ],
+      "official_source_urls": [
+        "https://www.bmobile.ne.jp/startsim/support_faq_start.html"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "DTI SIM",
+      "article_url": "/ja/technology/smartphone/dti-sim-mnp-data-sms-not-eligible-cancellation-flow/",
+      "summary": "DTI SIMのMNP転出は音声プランのみ対象です。データプランとデータSMSプランはMNP対象外です。音声プランではMyDTIから対象契約の解約手続きへ進み、その中でMNP転出予約番号を申請します。",
+      "failure_points": [
+        "プラン種別を最初に確認",
+        "「解約手続き」の中にMNP申請がある",
+        "予約番号はメールとMyDTIで通知",
+        "転入時は名義一致も重要"
+      ],
+      "resolution_steps": [
+        "MyDTIで対象回線のプラン名を確認する",
+        "音声プランなら解約手続き内のMNP転出予約番号申請へ進む",
+        "データ/SMSプランなら電話番号持ち運びはできない前提で契約変更可否を確認する",
+        "通知メールとMyDTIで予約番号を確認する"
+      ],
+      "official_source_urls": [
+        "https://dream.jp/mb/sim/step/mnp/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "hi-ho LTE typeD",
+      "article_url": "/ja/technology/smartphone/hiho-mnp-number-blocked-sim-exchange-cancel/",
+      "summary": "hi-hoでは、解約申込済み、SIMカード削除・交換中などの状態ではMNP転出できません。また、MNP予約番号発行中は解約申込ができず、発行申込のキャンセルや発行済み番号の解除もできません。",
+      "failure_points": [
+        "解約申込中はMNP予約番号を発行できない",
+        "SIM削除・交換時もMNP不可",
+        "発行中は解約申込不可",
+        "期限切れ後も解除待ちがある"
+      ],
+      "resolution_steps": [
+        "Myサポートで解約・SIM交換・MNPの進行状態を確認する",
+        "競合中の手続きが完了・解除されるまで新しい操作を重ねない",
+        "MNP予約番号が期限切れなら発行中状態の解除を待つ",
+        "解除後にMNPを再申請する"
+      ],
+      "official_source_urls": [
+        "https://hi-ho.jp/support/faq/ans/mnp-6.php"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "ロケットモバイル",
+      "article_url": "/ja/technology/smartphone/rocket-mobile-mnp-button-not-shown-plan-change-old-number/",
+      "summary": "ロケットモバイルのMNP転出ボタンは「通話プラン」で表示されます。データプランではMNP転出できません。また、翌月からのプラン変更予約や、以前発行したMNP予約番号で転出しなかった状態が新しい発行を妨げる場合があります。",
+      "failure_points": [
+        "MNP転出ボタンがない場合はプラン種別を見る",
+        "発行は1〜2日程度",
+        "翌月プラン変更予約が競合する場合がある",
+        "以前のMNP予約番号状態も確認"
+      ],
+      "resolution_steps": [
+        "通話プラン契約か確認する",
+        "翌月プラン変更予約の有無を確認する",
+        "以前発行したMNP予約番号の状態を確認する",
+        "競合状態が解消したら日付指定なしで再度MNP転出を申し込む"
+      ],
+      "official_source_urls": [
+        "https://support.rokemoba.co.jp/hc/ja/articles/360034374012-%E4%BB%96%E7%A4%BE%E3%81%AB%E8%BB%A2%E5%87%BA%E3%81%97%E3%81%9F%E3%81%84%E3%81%AE%E3%81%A7MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%82%92%E7%99%BA%E8%A1%8C%E3%81%97%E3%81%A6%E3%81%BB%E3%81%97%E3%81%84%E3%81%AE%E3%81%A7%E3%81%99%E3%81%8C",
+        "https://support.rokemoba.co.jp/hc/ja/articles/900006513703-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%8C%E4%B8%80%E5%90%91%E3%81%AB%E7%99%BA%E8%A1%8C%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84%E3%81%AE%E3%81%A7%E3%81%99%E3%81%8C%E3%81%AA%E3%81%9C%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "LIBMO",
+      "article_url": "/ja/technology/smartphone/libmo-mnp-multiple-lines-data-share-left-behind/",
+      "summary": "LIBMOのMNP申請は1回線ごとです。複数回線やデータシェアを利用していても、MNPした回線だけが転出対象となり、残り回線は別途MNPまたは解約しない限り継続します。",
+      "failure_points": [
+        "MNPは1回線ずつ",
+        "データシェアの残り回線は自動解約されない",
+        "端末残債は別に残る場合がある",
+        "セット割・特典も確認"
+      ],
+      "resolution_steps": [
+        "マイページで契約中の全回線を一覧確認する",
+        "今回MNPする電話番号だけを特定する",
+        "残す回線・不要な回線を分ける",
+        "残り回線が不要なら別途MNPまたは解約手続きを行う"
+      ],
+      "official_source_urls": [
+        "https://www.libmo.jp/mnporderintroduction/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "イオンモバイル",
+      "article_url": "/ja/technology/smartphone/aeon-mobile-mnp-onestop-name-change-web-deadline/",
+      "summary": "イオンモバイルはインターネット契約でMNPワンストップに対応しています。予約番号方式でWEB申込する場合は有効期間が10日以上必要です。現在の契約名義と異なる名義で申し込む場合は、同一住所など公式条件を満たせば申込と同時の名義変更を受け付ける案内があります。",
+      "failure_points": [
+        "ワンストップなら事前予約番号を省略できる場合がある",
+        "予約番号方式のWEB申込は残り10日以上",
+        "名義違いは条件付きで同時変更可",
+        "SIM到着後の切替受付時間にも期限がある"
+      ],
+      "resolution_steps": [
+        "転出元がワンストップ対象か申込画面で確認する",
+        "予約番号方式なら残り10日以上あるか確認する",
+        "名義が違う場合は同一住所条件と双方の本人確認書類を準備する",
+        "SIM到着後は切替受付時間内に開通手続きを行う"
+      ],
+      "official_source_urls": [
+        "https://aeonmobile.jp/mnp/",
+        "https://aeonmobile.jp/news/notice_240618_1/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "MVNO共通",
+      "article_url": "/ja/technology/smartphone/mvno-mnp-onestop-login-name-mismatch-troubleshooting/",
+      "summary": "MNPワンストップは「予約番号が不要」なだけで、転出元の契約者認証は必要です。転出先が対象事業者として転出元を扱っているか、転出元マイページへログインできるか、契約名義が転入先申込名義と一致しているかを順番に確認します。",
+      "failure_points": [
+        "転出元マイページへのログインが必要",
+        "対象事業者は固定ではない",
+        "名義不一致は別問題",
+        "ワンストップでも時間がかかる場合がある"
+      ],
+      "resolution_steps": [
+        "転入先の現行ワンストップ対象一覧で転出元を確認する",
+        "転出元マイページへ単独でログインできるか試す",
+        "契約者氏名・生年月日・電話番号を確認する",
+        "名義相違がある場合は転出元で変更可否を確認してから再試行する"
+      ],
+      "official_source_urls": [
+        "https://www.nihontsushin.com/support/support_mnp_onestop.html",
+        "https://www.nihontsushin.com/support/support_require.html?applyKind=mnp",
+        "https://www.nihontsushin.com/support/support_mnp_portout.html"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "NUROモバイル",
+      "article_url": "/ja/technology/smartphone/nuro-mobile-mnp-not-issued-reissue-multiple-sim/",
+      "summary": "MNP予約番号は即時発行ではなく、申請後1〜2日かかります。期限延長や発行済み番号の再発行はできず、複数SIMでは通知メールだけで対象番号を判別しにくい点にも注意が必要です。",
+      "failure_points": [
+        "申請直後に番号が出ない",
+        "期限切れ前に新しい番号を取り直したい",
+        "複数SIMでどの番号を申請したか分からない",
+        "ワンストップと予約番号方式を切り替えたい"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://support.sonynetwork.co.jp/faqsupport/nuromobile/web/knowledge2750.html",
+        "https://support.sonynetwork.co.jp/faqsupport/nuromobile/web/knowledge10899.html",
+        "https://mobile.nuro.jp/mnp/onestop/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "QTモバイル",
+      "article_url": "/ja/technology/smartphone/qtmobile-mnp-reissue-expired-procedure-lock/",
+      "summary": "有効期限内のMNP予約番号が残っている間は新しい番号を発行できません。失効後も翌々日以降の再発行となる案内があり、発行中は解約・SIM再発行・プラン変更等も制限されます。",
+      "failure_points": [
+        "有効期限内の番号が残っている",
+        "期限切れ直後に再発行しようとしている",
+        "SIM再発行やプラン変更も同時に進めたい",
+        "D/A/Sタイプの発行タイミングを混同している"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://faq.qtmobile.jp/faq_detail.html?id=900409"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "BB.exciteモバイル",
+      "article_url": "/ja/technology/smartphone/bb-excite-mnp-cancel-reissue-procedure-restrictions/",
+      "summary": "MNP転出申請はキャンセルできず、発行まで2〜5日程度かかります。転出申請中はSIM変更など一部手続きが制限され、再発行は転出確認日の翌日以降に行う設計です。",
+      "failure_points": [
+        "申請後すぐキャンセルしたい",
+        "発行待ちの2〜5日を即日発行と誤認している",
+        "MNP申請中にSIM変更をしようとしている",
+        "再発行可能日より前に操作している"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://bb.excite.co.jp/exmb/sim/mnpno/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "LinksMate",
+      "article_url": "/ja/technology/smartphone/linksmate-mnp-multiple-sim-reissue-delay/",
+      "summary": "同一グループの複数SIMはMNP予約番号の発行と転出を1枚ずつ進めます。期限切れ後も再発行可能になるまで最大3日程度かかる場合があり、SIM発行当日にMNP予約番号を出せない条件もあります。",
+      "failure_points": [
+        "複数SIMを同時発行しようとしている",
+        "1枚目の転出が完了していない",
+        "期限切れ直後で再発行待ち",
+        "SIM発行当日にMNP申請している"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://linksmate.jp/support/help/?id=391",
+        "https://linksmate.jp/support/help/?id=15",
+        "https://linksmate.jp/support/help/?id=389"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "y.u mobile",
+      "article_url": "/ja/technology/smartphone/yu-mobile-mnp-payment-invalid-share-sim/",
+      "summary": "支払い方法が無効だとMNP予約番号を発行できず、発行後に支払い方法が無効になった場合も予約番号がキャンセルされます。シェアプランの追加SIMでは契約者と利用者の手続き権限も分けて確認が必要です。",
+      "failure_points": [
+        "クレジットカード等の支払い方法が無効",
+        "発行後に支払い方法が利用不能になった",
+        "シェアプランの追加SIMから操作している",
+        "契約者本人ではなく追加SIM利用者が手続きしている"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://help.yumobile.jp/troubleshooting/detail/issue-mnp-reservation-number",
+        "https://help.yumobile.jp/manual/share-sim"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "NifMo",
+      "article_url": "/ja/technology/smartphone/nifmo-mnp-data-sms-cancel-mistake/",
+      "summary": "MNP転出できるのは音声通話対応SIMです。データ通信専用SIMやSMS対応SIMは090/080/070番号が割り当てられていてもMNPできません。また通常のNifMo解除は取り消せないため、MNP希望時は通常解除を先に実行しないことが重要です。",
+      "failure_points": [
+        "データ通信専用SIMを使っている",
+        "SMS対応SIMの番号をMNPしようとしている",
+        "通常のNifMo解除を先に進めた",
+        "@nifty解約とNifMoのMNPを混同している"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://nifmo.nifty.com/cancel/",
+        "https://nifmo.nifty.com/navi/mnp/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "OCN モバイル ONE",
+      "article_url": "/ja/technology/smartphone/ocn-mobile-one-mnp-three-business-days-onestop-existing-number/",
+      "summary": "MNP予約番号は申込から3営業日程度かかります。転出先がワンストップ対応でも、すでにMNP予約番号を発行している場合は発行済み番号を使う方式になるため、途中で方式を重ねないことが重要です。",
+      "failure_points": [
+        "申請から3営業日経っていない",
+        "MNP予約番号を発行済みなのにワンストップを開始した",
+        "音声対応SIM以外で番号発行を探している",
+        "OCNマイページの対象契約を取り違えている"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://support.ocn.ne.jp/personal/purpose/detail/pid2900001fiq/",
+        "https://support.ocn.ne.jp/personal/purpose/detail/pid2900001k6s/",
+        "https://support.ocn.ne.jp/personal/purpose/detail/pid2900001k6t/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "TONEモバイル",
+      "article_url": "/ja/technology/smartphone/tone-mobile-mnp-expired-cancellation-voice-option/",
+      "summary": "MNP予約番号の有効期限までに転入を完了しない場合、MNP予約手続きや関連する解約は取り消され、契約が継続する扱いがあります。090音声オプションと基本サービスのどこまで解約するかも確認が必要です。",
+      "failure_points": [
+        "予約番号の有効期限が切れた",
+        "MNP予約と通常解約を同じ扱いだと思っている",
+        "090音声オプションだけ転出するつもりでいる",
+        "転出完了後に予約番号を再発行しようとしている"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://tone.ne.jp/login.html",
+        "https://tone.ne.jp/terms/mnpcancellation.html"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "KABU&モバイル",
+      "article_url": "/ja/technology/smartphone/kabuand-mobile-mnp-onestop-twostop-conflict/",
+      "summary": "KABU&モバイルはワンストップとツーストップの両方を案内しています。転出先の申込画面でワンストップを選んだ場合は予約番号発行を重ねず、予約番号方式を選んだ場合は発行後の番号・期限を使って進めます。",
+      "failure_points": [
+        "ワンストップと予約番号方式を同時に進めている",
+        "転出先がワンストップ非対応",
+        "予約番号の発行状態を確認していない",
+        "転出完了前に通常解約をしようとしている"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://kabuand.com/support/contact-mobile",
+        "https://www.nihontsushin.com/support/support_mnp_onestop.html"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "Smiles Connect",
+      "article_url": "/ja/technology/smartphone/smiles-connect-mnp-sms-code-unpaid-cancellation/",
+      "summary": "解約/MNP申請ではSMSで届く認証コード入力が必要です。未払いがある場合は解約処理されない案内もあるため、SMS受信環境と支払い状態を先に確認します。",
+      "failure_points": [
+        "SMS認証コードを受信できない",
+        "対象SIMが圏外・SMS受信不可",
+        "未払い残高がある",
+        "通常解約とMNP転出の選択を間違えている"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://smilesconnect.com/guides/cancel/",
+        "https://smilesconnect.com/mnp-one-stop-guide-in-japan/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "BIC SIM",
+      "article_url": "/ja/technology/smartphone/bic-sim-mnp-iijmio-account-sim-reissue/",
+      "summary": "BIC SIMは契約後の回線管理をIIJmioの会員ページで行います。MNP予約番号発行中や有効期限内はIIJmio側のSIM再発行が制限されるため、BIC SIM店頭だけで解決しようとせず契約状態を確認します。",
+      "failure_points": [
+        "BIC SIMの店頭だけでMNP番号を探している",
+        "IIJmio会員ページへログインできていない",
+        "MNP予約番号発行中にSIM再発行を申請している",
+        "データSIM/SMS SIMでMNPを探している"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://help.iijmio.jp/answer/611768d52b2265001db0590e/",
+        "https://help.iijmio.jp/answer/6045d1dc33f57500138d5804",
+        "https://www.biccamera.com/bc/c/service/sim/qa.jsp"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "J:COM MOBILE",
+      "article_url": "/ja/technology/smartphone/jcom-mobile-mnp-onestop-login-reservation-number/",
+      "summary": "MNPワンストップ対象外、または転出元へのログインができない場合は、MNP予約番号を取得する方式へ切り替える必要があります。ワンストップと予約番号方式を同時に進めないことが重要です。",
+      "failure_points": [
+        "転出元事業者がワンストップ対象外",
+        "転出元の会員ページへログインできない",
+        "予約番号をすでに発行している",
+        "店舗・オンラインで手続き方式を混同している"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://www.jcom.co.jp/service/mobile/usage/mnp.html",
+        "https://www.jcom.co.jp/service/mobile/column/038.html"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "ピカラモバイル",
+      "article_url": "/ja/technology/smartphone/pikara-mobile-mnp-expired-contract-continues/",
+      "summary": "MNP予約番号を取得しただけではピカラモバイルは解約されません。有効期限内に転出しなければ予約番号は失効し、契約は継続します。再度転出する場合はMyページまたはサポートで新しい予約番号を確認します。",
+      "failure_points": [
+        "予約番号を取っただけで解約済みと思っている",
+        "有効期限内に転入を完了していない",
+        "通常解約とMNP転出を混同している",
+        "予約番号の発行キャンセル状態が不明"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://www.pikara.jp/mobile/support/mnp-tenshutsu.html"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "ヤマダニューモバイル",
+      "article_url": "/ja/technology/smartphone/yamada-new-mobile-mnp-existing-user-share-group/",
+      "summary": "新規申込受付は終了していますが、既存契約者のサービスとMNP転出手続きは継続しています。通話機能付きSIMが対象で、シェアグループのオーナーがMNP予約番号を発行するとグループが解散する条件にも注意します。",
+      "failure_points": [
+        "新規受付終了＝転出も不可と誤解している",
+        "データSIMでMNPを探している",
+        "シェアグループのオーナー回線を転出する",
+        "MNP予約番号発行後に転出しなかった"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://www.ynmobile.jp/faq"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "Tikimo SIM",
+      "article_url": "/ja/technology/smartphone/tikimo-sim-mnp-five-business-days-procedure-freeze/",
+      "summary": "MNP予約番号は発行まで5営業日程度かかる場合があります。MNP転出受付後はコース変更・プラン変更・通話オプション・SIM再発行/交換・5Gオプション変更などができなくなるため、先に必要な変更を整理します。",
+      "failure_points": [
+        "申請から5営業日以内",
+        "MNP転出受付後にプラン変更しようとしている",
+        "SIM再発行・交換を同時に進めている",
+        "期限の短い予約番号で転入先へ申し込んでいる"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://www.tiki.ne.jp/mobile/tikimo/mnp.html",
+        "https://www.tiki.ne.jp/mobile/tikimo/members.html"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "G-Call SIM",
+      "article_url": "/ja/technology/smartphone/gcall-sim-mnp-no-notification-check-mygcall/",
+      "summary": "G-Call SIMはMNP予約番号の発行通知をメール等で行わず、申請から2〜3日後（案内上は3日以内）に利用者自身がMy G-Callへ再ログインして確認する方式です。「通知が来ない＝未発行」と判断しないことが重要です。",
+      "failure_points": [
+        "MNP番号のメール通知を待っている",
+        "申請翌日に未発行と判断している",
+        "My G-Callへ再ログインしていない",
+        "旧G-Call SIMから新プランへの移行手順と通常MNPを混同している"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://www.g-call.com/sim2/norikae/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "RayL MOBILE",
+      "article_url": "/ja/technology/smartphone/rayl-mobile-mnp-13-days-data-sim-not-eligible/",
+      "summary": "予約番号方式でRayL Mobileへ乗り換える場合、申込時点で有効期限が13日以上残っている必要があります。データ専用SIMはMNP対象外で、ワンストップを使う場合は予約番号自体が不要です。",
+      "failure_points": [
+        "予約番号の残り日数が13日未満",
+        "データ専用SIMでMNPしようとしている",
+        "ワンストップなのに予約番号を取得している",
+        "SIM到着後に開通せず予約番号が失効した"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://rayl.jp/support/mobile/mnp/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "FLASH MOBILE",
+      "article_url": "/ja/technology/smartphone/flash-mobile-mnp-onestop-old-guide-conflict/",
+      "summary": "FLASH MOBILEは2025年1月27日からMNPワンストップ運用を開始しています。古い案内やチェックシートには予約番号方式が残るため、現在の申込画面でワンストップかツーストップかを先に決めます。",
+      "failure_points": [
+        "古い予約番号方式の記事だけを見ている",
+        "ワンストップとツーストップを二重に進めている",
+        "予約番号方式で残日数が不足している",
+        "転出/転入どちらの手順を見ているか混同している"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://rayl.jp/news/news250127.html"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "LPモバイル",
+      "article_url": "/ja/technology/smartphone/lp-mobile-mnp-onestop-support-route/",
+      "summary": "LP MobileはMNPワンストップ対応を公式に案内しています。ワンストップ非対応の転出先や申込画面で予約番号方式を選ぶ場合は従来方式になります。公開情報だけで転出予約番号の固定発行日数を断定せず、契約者画面の表示を優先します。",
+      "failure_points": [
+        "転出先がワンストップ非対応",
+        "ワンストップと予約番号方式を同時に開始した",
+        "予約番号の固定発行日数を第三者情報だけで判断している",
+        "本人確認・契約状態で申請が止まっている"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://zeromobile.co.jp/news/mnp%E6%89%8B%E7%B6%9A%E3%81%8D%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%80%8C%E3%83%AF%E3%83%B3%E3%82%B9%E3%83%88%E3%83%83%E3%83%97%E6%96%B9%E5%BC%8F%E3%80%8D%E5%AF%BE%E5%BF%9C%E9%96%8B%E5%A7%8B/",
+        "https://zeromobile.co.jp/hotline/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "provider": "センターモバイル",
+      "article_url": "/ja/technology/smartphone/center-mobile-mnp-onestop-name-match-data-sim/",
+      "summary": "センターモバイルは申込画面でMNPワンストップを利用できる案内があります。MNPでは転出元の契約名義と新契約名義を一致させ、電話番号MNPの対象となる音声回線かを確認します。",
+      "failure_points": [
+        "転出元と転入先の契約名義が違う",
+        "データ専用契約の番号をMNPしようとしている",
+        "ワンストップ対応画面と予約番号方式を混同している",
+        "予約番号方式で有効期限残日数が不足している"
+      ],
+      "resolution_steps": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する",
+        "公式画面とこの記事の確認日以降で差があれば、公式画面を優先してサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://sim.centermobile.co.jp/",
+        "https://centermobile.co.jp/guide/mnp/",
+        "https://www.jcom.co.jp/service/mobile/usage/mnp.html"
+      ],
+      "official_checked_at": "2026-08-08"
+    }
+  ]
+}

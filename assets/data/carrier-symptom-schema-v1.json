@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-08-08",
+  "fields": {
+    "id": "stable identifier",
+    "carrier": "carrier",
+    "device_or_scope": "device/model or general scope",
+    "symptom": "user-visible symptom",
+    "first_checks": "safe first checks",
+    "avoid_first": "destructive or unsupported action to avoid as first step",
+    "official_sources": "primary official sources",
+    "official_checked_at": "YYYY-MM-DD"
+  }
+}

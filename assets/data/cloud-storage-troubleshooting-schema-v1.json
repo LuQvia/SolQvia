@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-08-08",
+  "records": [
+    {
+      "slug": "icloud-photos-delete-iphone-also-deletes-cloud-all-devices",
+      "title": "iPhoneで写真を削除するとiCloudからも消える？iCloud写真の「同期」と削除範囲を確認",
+      "service": "iCloud",
+      "topic": "cloud_storage_troubleshooting",
+      "official_checked_at": "2026-08-08",
+      "source_urls": [
+        "https://support.apple.com/ja-jp/guide/icloud/mm08b49040b5/icloud",
+        "https://support.apple.com/ja-jp/105061"
+      ]
+    },
+    {
+      "slug": "icloud-storage-full-backup-sync-stops",
+      "title": "iCloudストレージがいっぱいになると何が止まる？バックアップ・写真同期を切り分ける",
+      "service": "iCloud",
+      "topic": "cloud_storage_troubleshooting",
+      "official_checked_at": "2026-08-08",
+      "source_urls": [
+        "https://support.apple.com/ja-jp/105061",
+        "https://support.apple.com/ja-jp/108318"
+      ]
+    },
+    {
+      "slug": "icloud-plus-downgrade-storage-over-quota-what-happens",
+      "title": "iCloud+を容量不足のままダウングレードするとどうなる？同期・バックアップ停止条件を確認",
+      "service": "iCloud",
+      "topic": "cloud_storage_troubleshooting",
+      "official_checked_at": "2026-08-08",
+      "source_urls": [
+        "https://support.apple.com/ja-jp/108318"
+      ]
+    },
+    {
+      "slug": "google-photos-delete-app-also-deletes-device-photo",
+      "title": "Googleフォトで写真を削除するとスマホ本体からも消える？削除とバックアップの違い",
+      "service": "Google Photos",
+      "topic": "cloud_storage_troubleshooting",
+      "official_checked_at": "2026-08-08",
+      "source_urls": [
+        "https://support.google.com/photos/answer/6128858?co=GENIE.Platform%3DAndroid&hl=ja",
+        "https://support.google.com/photos/answer/6128843?co=GENIE.Platform%3DAndroid&hl=ja"
+      ]
+    },
+    {
+      "slug": "google-photos-free-up-space-cloud-remains-device-removed",
+      "title": "Googleフォトの「このデバイスの空き容量を増やす」で写真は消える？クラウドと端末の残り方",
+      "service": "Google Photos",
+      "topic": "cloud_storage_troubleshooting",
+      "official_checked_at": "2026-08-08",
+      "source_urls": [
+        "https://support.google.com/photos/answer/6128843?co=GENIE.Platform%3DAndroid&hl=ja"
+      ]
+    },
+    {
+      "slug": "google-account-storage-full-drive-photos-gmail-effects",
+      "title": "Googleの保存容量がいっぱいになると何が止まる？Drive・フォト・Gmailへの影響",
+      "service": "OneDrive",
+      "topic": "cloud_storage_troubleshooting",
+      "official_checked_at": "2026-08-08",
+      "source_urls": [
+        "https://support.google.com/photos/answer/9284827?co=GENIE.Platform%3DAndroid&hl=ja"
+      ]
+    },
+    {
+      "slug": "google-drive-deleted-files-storage-not-decreasing-trash-owner",
+      "title": "Google Driveでファイルを削除したのに容量が減らない時｜ゴミ箱・オーナー権限を確認",
+      "service": "Google Drive",
+      "topic": "cloud_storage_troubleshooting",
+      "official_checked_at": "2026-08-08",
+      "source_urls": [
+        "https://support.google.com/drive/answer/2375102?co=GENIE.Platform%3DDesktop&hl=ja"
+      ]
+    },
+    {
+      "slug": "google-one-downgrade-cancel-over-storage-limit",
+      "title": "Google Oneをダウングレード・解約すると保存データはどうなる？容量超過前に確認すること",
+      "service": "Google One",
+      "topic": "cloud_storage_troubleshooting",
+      "official_checked_at": "2026-08-08",
+      "source_urls": [
+        "https://support.google.com/googleone/answer/6374282?co=GENIE.Platform%3DDesktop&hl=ja",
+        "https://support.google.com/photos/answer/9284827?co=GENIE.Platform%3DAndroid&hl=ja"
+      ]
+    },
+    {
+      "slug": "onedrive-camera-upload-delete-phone-photo-cloud-copy-remains",
+      "title": "OneDriveへ写真をバックアップ後、スマホ本体から削除しても大丈夫？カメラアップロードの仕組み",
+      "service": "OneDrive",
+      "topic": "cloud_storage_troubleshooting",
+      "official_checked_at": "2026-08-08",
+      "source_urls": [
+        "https://support.microsoft.com/ja-JP/onedrive/automatically-save-photos-and-videos-with-onedrive-on-ios",
+        "https://support.microsoft.com/ja-JP/onedrive/automatically-save-photos-and-videos-with-onedrive-for-android"
+      ]
+    },
+    {
+      "slug": "onedrive-full-read-only-storage-quota-recovery",
+      "title": "OneDriveが「いっぱい」になるとどうなる？読み取り専用・同期停止から戻す方法",
+      "service": "OneDrive",
+      "topic": "cloud_storage_troubleshooting",
+      "official_checked_at": "2026-08-08",
+      "source_urls": [
+        "https://support.microsoft.com/ja-JP/onedrive/my-onedrive-says-it-s-full",
+        "https://support.microsoft.com/ja-JP/onedrive/delete-files-or-folders-in-onedrive"
+      ]
+    }
+  ]
+}

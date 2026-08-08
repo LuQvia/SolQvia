@@ -1,0 +1,162 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-08-08",
+  "records": [
+    {
+      "id": "P50-001",
+      "scope": "au eSIM再発行・SMS未契約エラー",
+      "symptom": "auのeSIM再発行で「SMSが未契約のため本サイトでお手続きをお受けできません」と出る時",
+      "checks": [
+        "なぜSMS未契約でeSIM再発行できない？",
+        "確認と解決の順番",
+        "端末故障と決めつけない"
+      ],
+      "avoid_first": "eSIM削除・初期化・不要なSIM再発行を初手にしない",
+      "official_sources": [
+        "https://www.au.com/support/faq/details/00/0000/000022/pg00002281/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P50-002",
+      "scope": "au eSIM転送・契約条件",
+      "symptom": "auのeSIM転送ができない時｜法人・窓口払い・契約直後・5G SAなど対象外条件を確認",
+      "checks": [
+        "公式に案内されている主な対象外条件",
+        "回線種別が変わる場合にも注意",
+        "切り分け手順"
+      ],
+      "avoid_first": "eSIM削除・初期化・不要なSIM再発行を初手にしない",
+      "official_sources": [
+        "https://www.au.com/support/faq/details/00/0000/000022/pg00002281/",
+        "https://www.au.com/support/faq/details/00/0000/000030/pg00003049/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P50-003",
+      "scope": "SoftBank eSIM・開通未完了",
+      "symptom": "SoftBankのeSIMを設定したのに通信できない時｜「回線を開通させてください」メールも確認",
+      "checks": [
+        "まずeSIMが端末に入っているか確認",
+        "回線開通メールを確認",
+        "eSIMを削除してしまった場合"
+      ],
+      "avoid_first": "eSIM削除・初期化・不要なSIM再発行を初手にしない",
+      "official_sources": [
+        "https://www.softbank.jp/support/faq/view/178857",
+        "https://www.softbank.jp/mobile/support/product/sim/esim/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P50-004",
+      "scope": "楽天モバイル eSIM再発行・OTP未着",
+      "symptom": "楽天モバイルでeSIM再発行前に旧eSIMを削除してSMS認証できない時｜別申請ルートを確認",
+      "checks": [
+        "通常の再発行は旧回線へのSMS認証が必要",
+        "先に削除した場合",
+        "安全な順番"
+      ],
+      "avoid_first": "eSIM削除・初期化・不要なSIM再発行を初手にしない",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001406/",
+        "https://network.mobile.rakuten.co.jp/support/contract-detail/sim/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P50-005",
+      "scope": "楽天モバイル データタイプ・SMSなし端末",
+      "symptom": "楽天モバイルのデータタイプ・タブレットでSMSを受け取れずSIM再発行できない時",
+      "checks": [
+        "別申請ルートの対象になり得る例",
+        "SIM再発行申請フォームを確認",
+        "再発行前に確認すること"
+      ],
+      "avoid_first": "eSIM削除・初期化・不要なSIM再発行を初手にしない",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001406/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P50-006",
+      "scope": "ドコモ Android eSIM転送・物理SIM無効化",
+      "symptom": "ドコモAndroid機種変更で誤ってeSIM転送すると物理SIMはどうなる？UIMが無効になるケース",
+      "checks": [
+        "eSIM転送すると何が変わる？",
+        "物理SIMのまま使いたかった場合",
+        "転送前チェック"
+      ],
+      "avoid_first": "eSIM削除・初期化・不要なSIM再発行を初手にしない",
+      "official_sources": [
+        "https://www.docomo.ne.jp/support/uimcard/esim/android_transfer/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P50-007",
+      "scope": "ドコモ Android eSIM転送・項目が出ない",
+      "symptom": "ドコモAndroidでeSIM転送の項目が出ない時｜Android 14・対応機種・副回線サービスを確認",
+      "checks": [
+        "主な利用条件",
+        "画面に項目が出ない場合",
+        "すでにオンラインでeSIM手続き済みの場合"
+      ],
+      "avoid_first": "eSIM削除・初期化・不要なSIM再発行を初手にしない",
+      "official_sources": [
+        "https://www.docomo.ne.jp/support/uimcard/esim/android_transfer/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P50-008",
+      "scope": "Pixel 物理SIM→eSIM変換",
+      "symptom": "Pixelで物理SIMをeSIMへ変換すると元のSIMカードは使える？変換前後の注意点",
+      "checks": [
+        "変換の主な条件",
+        "変換後の物理SIMは無効になる",
+        "捨てる前に確認"
+      ],
+      "avoid_first": "eSIM削除・初期化・不要なSIM再発行を初手にしない",
+      "official_sources": [
+        "https://support.google.com/pixelphone/answer/16115471?hl=ja",
+        "https://support.google.com/pixelphone/answer/16115951?hl=ja"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P50-009",
+      "scope": "iOS 26・同一番号SIM重複・iMessage",
+      "symptom": "iOS 26でiMessageが電話番号認証できない時｜同じ番号の古いSIM・eSIMが残っていないか確認",
+      "checks": [
+        "起きる症状",
+        "Appleが案内する解決方法",
+        "その後iMessageを再確認"
+      ],
+      "avoid_first": "eSIM削除・初期化・不要なSIM再発行を初手にしない",
+      "official_sources": [
+        "https://support.apple.com/ja-jp/125367",
+        "https://support.apple.com/ja-jp/118433"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P50-010",
+      "scope": "ドコモ持ち込みAndroid・APN",
+      "symptom": "SIMフリーAndroidへドコモSIMを差し替えたらネットにつながらない時｜spmode.ne.jpのAPN設定",
+      "checks": [
+        "ドコモ公式の主なAPN設定",
+        "設定の確認順",
+        "APNが正しくても使えない場合"
+      ],
+      "avoid_first": "eSIM削除・初期化・不要なSIM再発行を初手にしない",
+      "official_sources": [
+        "https://www.docomo.ne.jp/support/for_simfree/apn.html",
+        "https://www.docomo.ne.jp/support/simcard_other/notice/"
+      ],
+      "official_checked_at": "2026-08-08"
+    }
+  ]
+}

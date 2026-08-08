@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "updated_at": "2026-08-08",
+  "fields": {
+    "id": "stable identifier",
+    "platform": "ios/android/pixel/general",
+    "scope": "device or scenario",
+    "symptom": "user-visible symptom",
+    "checks": "safe checks",
+    "avoid_first": "actions to avoid first",
+    "official_sources": "primary sources",
+    "official_checked_at": "YYYY-MM-DD"
+  }
+}

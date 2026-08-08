@@ -1,0 +1,192 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-08-08",
+  "records": [
+    {
+      "id": "P48-001",
+      "carrier": "docomo",
+      "device_or_scope": "ドコモ持ち込み端末・通話不可",
+      "symptom": "ドコモSIMでデータ通信はできるのに電話できない時｜VoLTE・IMS・3G終了後の確認順",
+      "first_checks": [
+        "まず症状を分ける",
+        "安全な確認順"
+      ],
+      "avoid_first": "eSIM削除・初期化・非公式IMS変更を初手にしない",
+      "official_sources": [
+        "https://www.docomo.ne.jp/support/simcard_other/notice/",
+        "https://www.docomo.ne.jp/support/for_simfree/apn.html",
+        "https://www.docomo.ne.jp/info/3g_closed/index.html",
+        "https://www.docomo.ne.jp/area/technology/5g/notice.html"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P48-002",
+      "carrier": "docomo",
+      "device_or_scope": "ドコモ5G契約SIM・4G端末",
+      "symptom": "ドコモの5G契約SIMを4G端末に入れて通信できない時｜対応機種・SIM情報更新の注意点",
+      "first_checks": [
+        "なぜ4G端末で通信できないことがある？",
+        "確認順"
+      ],
+      "avoid_first": "eSIM削除・初期化・非公式IMS変更を初手にしない",
+      "official_sources": [
+        "https://www.docomo.ne.jp/area/technology/5g/notice.html",
+        "https://www.docomo.ne.jp/support/simcard_other/notice/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P48-003",
+      "carrier": "au",
+      "device_or_scope": "au eSIM開通後・通信不可",
+      "symptom": "auのeSIMを開通したのにデータ通信できない時｜他社APN構成プロファイル・回線設定の確認",
+      "first_checks": [
+        "最初に確認する4項目",
+        "他社APN構成プロファイルが残っている場合"
+      ],
+      "avoid_first": "eSIM削除・初期化・非公式IMS変更を初手にしない",
+      "official_sources": [
+        "https://www.au.com/support/faq/details/00/0000/000021/pg00002144/",
+        "https://www.au.com/support/faq/details/00/0000/000025/pg00002510/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P48-004",
+      "carrier": "au",
+      "device_or_scope": "au eSIM転送エラー・5G SA",
+      "symptom": "auで「電話番号をこのiPhoneに転送できませんでした」と出る時｜5G SA eSIMと端末対応を確認",
+      "first_checks": [
+        "このエラーで先に見ること",
+        "5G SA eSIMの注意"
+      ],
+      "avoid_first": "eSIM削除・初期化・非公式IMS変更を初手にしない",
+      "official_sources": [
+        "https://www.au.com/support/faq/details/00/0000/000031/pg00003184/",
+        "https://support.apple.com/ja-jp/102478"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P48-005",
+      "carrier": "softbank",
+      "device_or_scope": "SoftBank eSIM設定後・通信不可",
+      "symptom": "SoftBankのeSIMを設定したのに通信できない時｜回線選択・再起動・プロファイル確認の順番",
+      "first_checks": [
+        "確認順",
+        "iPhoneでは初期設定とeSIM開通を分ける"
+      ],
+      "avoid_first": "eSIM削除・初期化・非公式IMS変更を初手にしない",
+      "official_sources": [
+        "https://www.softbank.jp/support/faq/view/178857",
+        "https://www.softbank.jp/support/faq/view/171731",
+        "https://www.softbank.jp/mobile/special/esim-support/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P48-006",
+      "carrier": "softbank",
+      "device_or_scope": "SoftBank持ち込み端末・APN/VoLTE",
+      "symptom": "他社購入スマホをSoftBankで使って通信・通話できない時｜APNとVoLTEを3G終了後基準で確認",
+      "first_checks": [
+        "データ通信できない場合",
+        "データは使えるが電話できない場合"
+      ],
+      "avoid_first": "eSIM削除・初期化・非公式IMS変更を初手にしない",
+      "official_sources": [
+        "https://www.softbank.jp/mobile/info/personal/news/service/20240418b/",
+        "https://www.softbank.jp/support/faq/view/20726"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P48-007",
+      "carrier": "rakuten",
+      "device_or_scope": "楽天モバイル持ち込み端末・APN",
+      "symptom": "他社で使っていたスマホが楽天モバイルで通信できない時｜対応製品・APN・SIMロックの確認順",
+      "first_checks": [
+        "確認順",
+        "APNだけでは解決しないケース"
+      ],
+      "avoid_first": "eSIM削除・初期化・非公式IMS変更を初手にしない",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/",
+        "https://network.mobile.rakuten.co.jp/product/byod/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/10000164/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P48-008",
+      "carrier": "multi-carrier",
+      "device_or_scope": "iPhone eSIMクイック転送失敗",
+      "symptom": "iPhoneのeSIMクイック転送ができない時｜Apple条件と国内キャリア側手続きを切り分ける",
+      "first_checks": [
+        "Apple側の確認",
+        "キャリア側の対応方式を確認"
+      ],
+      "avoid_first": "eSIM削除・初期化・非公式IMS変更を初手にしない",
+      "official_sources": [
+        "https://support.apple.com/ja-jp/118669",
+        "https://support.apple.com/ja-jp/102478",
+        "https://www.docomo.ne.jp/support/uimcard/esim/iphone_transfer/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P48-009",
+      "carrier": "docomo",
+      "device_or_scope": "米国版Pixel 10 Pro・ドコモ5G",
+      "symptom": "米国版Pixel 10 Pro G4QURでドコモ5Gを掴まない時｜n79非対応は設定では直せない",
+      "first_checks": [
+        "G4QURで使える5G帯",
+        "「5Gを掴まない」時の確認順"
+      ],
+      "avoid_first": "eSIM削除・初期化・非公式IMS変更を初手にしない",
+      "official_sources": [
+        "https://store.google.com/product/pixel_10_pro_specs?hl=en-US",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/simcard_other/notice/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P48-010",
+      "carrier": "docomo",
+      "device_or_scope": "香港版Galaxy Z Flip7・ドコモ通話",
+      "symptom": "香港版Galaxy Z Flip7 SM-F7660でドコモのデータは使えるのに電話できない時｜VoLTE・IMSを確認",
+      "first_checks": [
+        "周波数上の条件と通話は別",
+        "データは使えるが電話できない時の確認順"
+      ],
+      "avoid_first": "eSIM削除・初期化・非公式IMS変更を初手にしない",
+      "official_sources": [
+        "https://www.samsung.com/hk_en/business/smartphones/galaxy-z/galaxy-z-flip7-jetblack-256gb-sm-f7660zkatgy/",
+        "https://www.docomo.ne.jp/support/simcard_other/notice/",
+        "https://www.docomo.ne.jp/support/for_simfree/apn.html"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P48-011",
+      "carrier": "multi-carrier",
+      "device_or_scope": "iPhone 17・eSIM開通失敗",
+      "symptom": "iPhone 17でeSIMを追加・開通できない時｜国内キャリア共通の確認順と削除前の注意点",
+      "first_checks": [
+        "最初に確認すること",
+        "キャリアごとに発行方式が違う"
+      ],
+      "avoid_first": "eSIM削除・初期化・非公式IMS変更を初手にしない",
+      "official_sources": [
+        "https://support.apple.com/ja-jp/102478",
+        "https://support.apple.com/ja-jp/118669",
+        "https://support.apple.com/ja-jp/102421",
+        "https://www.docomo.ne.jp/support/uimcard/esim/iphone_transfer/",
+        "https://www.softbank.jp/mobile/special/esim-support/"
+      ],
+      "official_checked_at": "2026-08-08"
+    }
+  ]
+}

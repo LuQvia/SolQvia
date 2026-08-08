@@ -1,6 +1,6 @@
 {
-  "version": "1.1",
-  "release": "phase45",
+  "version": "1.2",
+  "release": "phase47",
   "updated": "2026-08-08",
   "principles": [
     "Separate product name from model number/SKU and sales region.",
@@ -11,7 +11,8 @@
     "Do not prioritize affiliate conversion during the AdSense/search growth stage.",
     "For imported devices, separate radio-band compatibility, VoLTE/IMS interoperability, carrier operation confirmation, and Japanese technical conformity (Giteki).",
     "Do not generalize the 90-day radio-equipment exception beyond its statutory inbound-device conditions.",
-    "For eSIM troubleshooting, separate transfer, reissue, profile deletion, and contract cancellation."
+    "For eSIM troubleshooting, separate transfer, reissue, profile deletion, and contract cancellation.",
+    "For device-carrier compatibility, rate frequency fit separately from official carrier operation guarantee; use ◎/○/△ only as an editorial compatibility assessment."
   ],
   "last_updated": "2026-08-08"
 }

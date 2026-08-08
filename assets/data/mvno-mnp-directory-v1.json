@@ -1,0 +1,484 @@
+{
+  "schema_version": "1.3",
+  "updated_at": "2026-08-08",
+  "records": [
+    {
+      "provider": "BIGLOBEモバイル",
+      "article_url": "/ja/technology/smartphone/biglobe-mobile-mnp-reservation-number-guide/",
+      "issue_time": "手続き完了後、翌日までに登録メールアドレスへ通知。",
+      "method": "Webの「MNP転出手続き」から予約番号の発行を申し込みます",
+      "one_stop": "対応"
+    },
+    {
+      "provider": "NUROモバイル",
+      "article_url": "/ja/technology/smartphone/nuro-mobile-mnp-reservation-number-guide/",
+      "issue_time": "申請後1〜2日。即日発行は不可。",
+      "method": "NUROモバイルのマイページで「契約情報」から解約手続きへ進み、「MNP転出による解約」を選択します",
+      "one_stop": "対応"
+    },
+    {
+      "provider": "日本通信SIM",
+      "article_url": "/ja/technology/smartphone/nihontsushin-sim-mnp-reservation-number-guide/",
+      "issue_time": "申し込みから2日かかる場合がある。",
+      "method": "日本通信SIMのマイページへログインし「MNP予約番号取得」から申し込みます",
+      "one_stop": "対応"
+    },
+    {
+      "provider": "HISモバイル",
+      "article_url": "/ja/technology/smartphone/his-mobile-mnp-reservation-number-guide/",
+      "issue_time": "ドコモ回線は通常当日〜2日程度、ソフトバンク回線は4日程度かかる場合がある。",
+      "method": "My HISモバイルへログインし、対象回線からMNP予約番号の取得を申し込みます",
+      "one_stop": "対応"
+    },
+    {
+      "provider": "QTモバイル",
+      "article_url": "/ja/technology/smartphone/qtmobile-mnp-reservation-number-guide/",
+      "issue_time": "Dタイプは2〜5日程度、A/Sタイプは翌日以降。",
+      "method": "QTnet会員専用ページの「各種お手続き」→「QTモバイルの解約予約お手続き」→「MNP転出予約番号の発行」から申請します",
+      "one_stop": "乗り換え先の対応状況を確認"
+    },
+    {
+      "provider": "BB.exciteモバイル",
+      "article_url": "/ja/technology/smartphone/bb-excite-mobile-mnp-reservation-number-guide/",
+      "issue_time": "申し込みから2〜5日程度。",
+      "method": "BB.exciteモバイルの契約者向けWeb手続きからMNP転出を申請します",
+      "one_stop": "乗り換え先の対応状況により利用"
+    },
+    {
+      "provider": "LinksMate",
+      "article_url": "/ja/technology/smartphone/linksmate-mnp-reservation-number-guide/",
+      "issue_time": "公式サポートでは発行に1〜2日程度の案内あり。",
+      "method": "LinksMateマイページの「MNP予約番号発行・確認」で対象電話番号を選んで申し込みます",
+      "one_stop": "転入側では対応"
+    },
+    {
+      "provider": "y.u mobile",
+      "article_url": "/ja/technology/smartphone/yu-mobile-mnp-reservation-number-guide/",
+      "issue_time": "発行には最大2日かかる場合があります。",
+      "method": "マイページの「契約内容確認・変更」→対象SIMの「変更」→「MNP予約番号発行」から進みます",
+      "one_stop": "乗り換え先の対応状況を確認"
+    },
+    {
+      "provider": "NifMo",
+      "article_url": "/ja/technology/smartphone/nifmo-mnp-reservation-number-guide/",
+      "issue_time": "公式ページで一律の発行日数の明記は確認できないため、申請画面の案内を優先。",
+      "method": "NifMoの解除・MNP転出ページから、音声対応SIMのMNP転出手続きを行います",
+      "one_stop": "対応事業者として案内あり"
+    },
+    {
+      "provider": "OCN モバイル ONE",
+      "article_url": "/ja/technology/smartphone/ocn-mobile-one-mnp-reservation-number-guide/",
+      "issue_time": "申し込みから3営業日程度。",
+      "method": "OCNマイページで「OCN モバイル ONE」のMNP転出予約番号発行手続きを行います",
+      "one_stop": "対応"
+    },
+    {
+      "provider": "LIBMO",
+      "article_url": "/ja/technology/smartphone/libmo-mnp-reservation-number-guide/",
+      "issue_time": "公式公開ページでは一律の日数を確認できないため、申請時の案内を優先。",
+      "method": "LIBMOマイページからMNP転出・予約番号発行の手続きを行います",
+      "one_stop": "乗り換え先の対応状況を確認"
+    },
+    {
+      "provider": "イオンモバイル",
+      "article_url": "/ja/technology/smartphone/aeon-mobile-mnp-reservation-number-guide/",
+      "issue_time": "当日8:00までの申請は同日23:00、8:00以降は翌日23:00の案内。",
+      "method": "マイページで「MNP予約番号発行」を選択",
+      "one_stop": "対応事業者として案内あり"
+    },
+    {
+      "provider": "KABU&モバイル",
+      "article_url": "/ja/technology/smartphone/kabuand-mobile-mnp-reservation-number-guide/",
+      "issue_time": "公式公開ページでは一律の発行日数を確認できないため、マイページの表示を優先。",
+      "method": "KABU&モバイルのマイページから「MNP予約番号の発行」を申し込みます",
+      "one_stop": "MNPワンストップ対応事業者として案内あり"
+    },
+    {
+      "provider": "メルカリモバイル",
+      "article_url": "/ja/technology/smartphone/mercari-mobile-mnp-reservation-number-guide/",
+      "issue_time": "通常、受付完了の1〜4日後。",
+      "method": "メルカリアプリの「おさいふ」→「メルカリモバイル」→「プラン情報」→「解約・MNP転出」→「電話番号を引き継ぎする」から予約番号を発行します",
+      "one_stop": "対応"
+    },
+    {
+      "provider": "Smiles Connect",
+      "article_url": "/ja/technology/smartphone/smiles-connect-mnp-reservation-number-guide/",
+      "issue_time": "公式ガイドでは一律の発行日数を明示していないため、申請後の通知を確認。",
+      "method": "Smiles Connect画面の「Plan」→「Apply to cancel」→対象プラン→MNPを選択→規約同意→SMSコード認証→「Request MNP number」で申請します",
+      "one_stop": "対応"
+    },
+    {
+      "provider": "b-mobile",
+      "article_url": "/ja/technology/smartphone/b-mobile-mnp-reservation-number-guide/",
+      "issue_time": "通常の一律発行日数は公式FAQで明記されていないため、マイページの発行状況を確認します。",
+      "method": "b-mobileのマイページからMNP予約番号発行を申し込みます",
+      "one_stop": "対応"
+    },
+    {
+      "provider": "TONEモバイル",
+      "article_url": "/ja/technology/smartphone/tone-mobile-mnp-reservation-number-guide/",
+      "issue_time": "公式の現行案内で一律の発行日数は明記されていないため、MY TONEの申請画面・通知を確認します。",
+      "method": "TONEモバイルの契約者向けページ「MY TONE」から解約・MNP予約番号発行へ進みます",
+      "one_stop": "乗り換え先の対応状況を確認"
+    },
+    {
+      "provider": "ANAモバイル",
+      "article_url": "/ja/technology/smartphone/ana-mobile-mnp-reservation-number-guide/",
+      "issue_time": "発行まで1〜4日。",
+      "method": "ANAモバイルのマイページからMNP予約番号の発行を申し込みます",
+      "one_stop": "対応"
+    },
+    {
+      "provider": "IIJmio",
+      "article_url": "/ja/technology/smartphone/iijmio-mnp-reservation-number-guide/",
+      "issue_time": "最短1日〜最大4日程度",
+      "method": "Web",
+      "one_stop": "対象事業者間で対応"
+    },
+    {
+      "provider": "BIC SIM",
+      "article_url": "/ja/technology/smartphone/bic-sim-mnp-reservation-number-guide/",
+      "issue_time": "IIJmioの予約番号発行は即時とは限らず、発行完了まで最短1日〜最大4日程度かかる場合があります。",
+      "method": "BIC SIM契約後のMNP転出は、IIJmioの会員専用ページから対象の音声SIM／音声eSIMを選び、MNP予約番号発行またはワンストップで進めます",
+      "one_stop": "対応"
+    },
+    {
+      "provider": "mineo",
+      "article_url": "/ja/technology/smartphone/mineo-mnp-reservation-number-guide/",
+      "issue_time": "公式手順画面で確認",
+      "method": "マイページ",
+      "one_stop": "対応"
+    },
+    {
+      "provider": "J:COM MOBILE",
+      "article_url": "/ja/technology/smartphone/jcom-mobile-mnp-reservation-number-guide/",
+      "issue_time": "ワンストップは予約番号の発行待ちが不要です。予約番号方式の個別発行時間は公開ページで一律の明記を確認できないため、申請画面の表示を優先します。",
+      "method": "転出先がMNPワンストップ対応なら、転出先の申込画面からJ:COM MOBILEを選んで認証・転出同意を進めます。予約番号方式を使う場合はJ:COMの契約者向け手続きまたは窓口で発行方法を確認します",
+      "one_stop": "対応"
+    },
+    {
+      "provider": "センターモバイル",
+      "article_url": "/ja/technology/smartphone/center-mobile-mnp-reservation-number-guide/",
+      "issue_time": "公開公式ページでは転出予約番号の一律発行日数を確認できません。申請時に表示される予定日を優先します。",
+      "method": "転出先がMNPワンストップ対応なら転出先の申込画面から手続きを進めます。予約番号方式の具体的な発行メニューは公開公式ページで確認できないため、センターモバイルの契約者向け画面またはサポート窓口で「MNP転出・予約番号発行」を確認します",
+      "one_stop": "MNPワンストップ対象事業者として案内されているため、転出先が対応していれば予約番号なしで進められる場合があります"
+    },
+    {
+      "provider": "LPモバイル",
+      "article_url": "/ja/technology/smartphone/lp-mobile-mnp-reservation-number-guide/",
+      "issue_time": "公開公式ページでは転出予約番号の一律発行日数を確認できません。サポートまたは申請画面の案内を優先します。",
+      "method": "転出先がワンストップ対応なら、転出先の申込画面からLPモバイルを選んで転出手続きを進めます。予約番号方式を使う場合はLPモバイルの契約者向け画面またはサポートセンターで発行手順を確認します",
+      "one_stop": "対応"
+    },
+    {
+      "provider": "RayL MOBILE",
+      "article_url": "/ja/technology/smartphone/rayl-mobile-mnp-reservation-number-guide/",
+      "issue_time": "公開公式ページではRayLからの転出予約番号の一律発行日数を確認できないため、申請画面またはサポート案内を優先します。",
+      "method": "RayL MOBILEからの転出で予約番号方式を使う場合、My RayLまたはRayLサポートセンターでMNP転出・予約番号発行の現行手順を確認します。転出先がワンストップ対応の場合は転出先からの手続きを優先します",
+      "one_stop": "ワンストップの利用可否は転出先の対応一覧と申込画面で確認します"
+    },
+    {
+      "provider": "FLASH MOBILE",
+      "article_url": "/ja/technology/smartphone/flash-mobile-mnp-reservation-number-guide/",
+      "issue_time": "公開公式ページでは転出予約番号の一律発行日数を確認できません。予約番号方式では申請画面の予定日を確認します。",
+      "method": "転出先がMNPワンストップ対応なら、転出先の申込画面からFLASH MOBILEを選択して転出認証を進めます。予約番号方式が必要な場合は契約者向け画面または運営元ハイホーのサポートで現行の発行方法を確認します",
+      "one_stop": "対応"
+    },
+    {
+      "provider": "ジャパネットたかた通信サービス",
+      "article_url": "/ja/technology/smartphone/japanet-mobile-service-mnp-reservation-number-guide/",
+      "issue_time": "公開公式ページでは転出予約番号の一律発行日数を確認できません。ワンストップなら予約番号の発行待ちは不要です。",
+      "method": "転出先がMNPワンストップ対応なら、転出先の申込画面から「ジャパネットたかた通信サービス」を選んで進めます。予約番号方式が必要な場合はジャパネット ワイモバイル サポート窓口で現行の発行手順を確認します",
+      "one_stop": "対応事業者一覧に掲載"
+    },
+    {
+      "provider": "DTI SIM",
+      "article_url": "/ja/technology/smartphone/dti-sim-mnp-reservation-number-guide/",
+      "issue_time": "公式ページでは申請から発行までの固定日数を明記していません。メールとMyDTIの通知を確認します。",
+      "method": "MyDTIへログインし、MNP転出したい契約の解約手続きへ進み、その手続き内でMNP転出予約番号を申請します。発行後は登録メールアドレスとMyDTIで確認します",
+      "one_stop": "DTI SIM公式の公開MNPページでは予約番号方式を案内",
+      "classification": "独立MVNO"
+    },
+    {
+      "provider": "ロケットモバイル",
+      "article_url": "/ja/technology/smartphone/rocket-mobile-mnp-reservation-number-guide/",
+      "issue_time": "公開公式FAQで一律の発行日数は確認できません。発行が進まない場合は、翌月からのプラン変更予約や過去のMNP予約番号の状態を確認します。",
+      "method": "ロケットモバイルの契約者向け手続きからMNP転出を進めます。公開FAQで操作画面の固定手順を断定できない場合は、マイページと公式サポートの現行表示を優先します",
+      "one_stop": "公開公式FAQでは予約番号方式のトラブル案内を確認",
+      "classification": "独立MVNO"
+    },
+    {
+      "provider": "Xmobile（シン・プラン／グリーンプラン）",
+      "article_url": "/ja/technology/smartphone/xmobile-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "HORIE MOBILE / HORIMO",
+      "article_url": "/ja/technology/smartphone/horie-mobile-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "D-lab SIM",
+      "article_url": "/ja/technology/smartphone/d-lab-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "livedoor MOBILE SIM",
+      "article_url": "/ja/technology/smartphone/livedoor-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "幻冬舎MOBILE SIM",
+      "article_url": "/ja/technology/smartphone/gentosha-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "Tackle Berry SIM",
+      "article_url": "/ja/technology/smartphone/tackle-berry-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "マジモバ SIM",
+      "article_url": "/ja/technology/smartphone/maji-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "クリモバSIM",
+      "article_url": "/ja/technology/smartphone/kurimoba-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "ハピモバSIM",
+      "article_url": "/ja/technology/smartphone/hapimoba-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "ベルモバ SIM",
+      "article_url": "/ja/technology/smartphone/bell-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "FFBC SIM",
+      "article_url": "/ja/technology/smartphone/ffbc-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "REDX MOBILE SIM",
+      "article_url": "/ja/technology/smartphone/redx-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "SHINGO MOBILE SIM",
+      "article_url": "/ja/technology/smartphone/shingo-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "レリモバSIM",
+      "article_url": "/ja/technology/smartphone/rerimoba-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "グリーン plus ♥ Ai",
+      "article_url": "/ja/technology/smartphone/green-plus-ai-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "たかみーモバイル SIM",
+      "article_url": "/ja/technology/smartphone/takami-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "MetaKozo MOBILE SIM",
+      "article_url": "/ja/technology/smartphone/metakozo-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "DAVE MOBILE SIM",
+      "article_url": "/ja/technology/smartphone/dave-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "Dstyle MOBILE SIM",
+      "article_url": "/ja/technology/smartphone/dstyle-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "ミュゼモバイル SIM",
+      "article_url": "/ja/technology/smartphone/musee-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "AVA MOBILE SIM",
+      "article_url": "/ja/technology/smartphone/ava-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "CR MOBILE SIM",
+      "article_url": "/ja/technology/smartphone/cr-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "BTC モバイル SIM",
+      "article_url": "/ja/technology/smartphone/btc-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "Cool girlモバイル SIM",
+      "article_url": "/ja/technology/smartphone/cool-girl-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "BUZZモバイル SIM",
+      "article_url": "/ja/technology/smartphone/buzz-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "井川MOBILE SIM",
+      "article_url": "/ja/technology/smartphone/ikawa-mobile-sim-mnp-reservation-number-guide/",
+      "issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "method": "XmobileのMY PAGEへログインし、「ご契約内容変更」→「解約・MNPのご案内はこちら」→「MNP予約番号の発行手続き」→注意事項確認後「MNP発行へ進む」の順で申請します",
+      "one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "provider": "誰でもスマホ",
+      "article_url": "/ja/technology/smartphone/daredemo-smartphone-mnp-reservation-number-guide/",
+      "issue_time": "公開公式FAQではMNP予約番号の固定発行日数は明記していません。ヘルプデスク申請時に確認します。",
+      "method": "誰でもスマホでMNP予約番号を発行する場合は、公式FAQの案内どおり「誰でもスマホヘルプデスク」へ連絡して発行を依頼します",
+      "one_stop": "公式FAQはMNP予約番号を発行して転出する方法を案内しています",
+      "classification": "支援型モバイルサービス"
+    },
+    {
+      "provider": "JALモバイル",
+      "article_url": "/ja/technology/smartphone/jal-mobile-mnp-reservation-number-guide/",
+      "issue_time": "powered by ahamoとpowered by IIJmioで異なります。JAL公式は契約・解約等の問い合わせ先をそれぞれahamo公式、IIJmioサポートへ分けています。",
+      "method": "JALモバイルは「powered by ahamo」と「powered by IIJmio」で契約管理先が異なります。ahamo版はahamo公式、IIJmio版はIIJmio会員専用ページ・サポートを基準にMNP転出を進めます",
+      "one_stop": "基盤がahamoかIIJmioかで手続きを分け、転出先がワンストップ対応ならその申込フローを優先します",
+      "classification": "提携モバイルサービス"
+    },
+    {
+      "provider": "ピカラモバイル",
+      "article_url": "/ja/technology/smartphone/pikara-mobile-mnp-reservation-number-guide/",
+      "issue_time": "公開公式ページでは固定の発行日数を明記していません。Myページまたはサービスセンターの案内を確認します。",
+      "method": "ピカラモバイルのMyページからMNP予約番号を発行できます。公式案内ではピカラモバイルサービスセンターでも発行受付を行っています",
+      "one_stop": "公式の転出ページは予約番号方式を案内しています",
+      "classification": "地域系MVNO"
+    },
+    {
+      "provider": "ヤマダニューモバイル",
+      "article_url": "/ja/technology/smartphone/yamada-new-mobile-mnp-reservation-number-guide/",
+      "issue_time": "公式FAQでは固定の発行日数を明記していません。マイページの受付状態・通知を確認します。",
+      "method": "ヤマダニューモバイル公式FAQでは、MNP予約番号の発行依頼はマイページから手続きすると案内しています",
+      "one_stop": "公式FAQでは予約番号方式を案内しています",
+      "classification": "受付終了・既存契約者向けMVNO"
+    },
+    {
+      "provider": "Tikimo SIM",
+      "article_url": "/ja/technology/smartphone/tikimo-sim-mnp-reservation-number-guide/",
+      "issue_time": "公式案内では発行まで5営業日程度かかる場合があります。",
+      "method": "会員サービスメニューからMNP予約番号の発行を申し込みます。予約番号はTikiTikiインターネットのメールアドレスへ通知されます",
+      "one_stop": "公式MNPページでは予約番号方式を案内しています",
+      "classification": "ISP系MVNO"
+    },
+    {
+      "provider": "ASAHIネット LTE ANSIM",
+      "article_url": "/ja/technology/smartphone/asahi-net-ansim-mnp-reservation-number-guide/",
+      "issue_time": "公開FAQでは固定の発行日数を明記していません。マイページの発行状況を確認します。",
+      "method": "ASAHIネットのマイページにあるモバイルサービス手続きから、ANSIM通話SIMのMNP予約番号を発行します",
+      "one_stop": "公式FAQではマイページで予約番号を発行する方式を案内しています",
+      "classification": "ISP系MVNO"
+    },
+    {
+      "provider": "hi-ho LTE typeD",
+      "article_url": "/ja/technology/smartphone/hiho-lte-typed-mnp-reservation-number-guide/",
+      "issue_time": "公式FAQでは発行まで4日程度と案内しています。",
+      "method": "hi-hoのMyサポートからMNP予約番号発行を申し込みます",
+      "one_stop": "公式FAQは予約番号方式を案内しています",
+      "classification": "ISP系MVNO"
+    },
+    {
+      "provider": "G-Call SIM",
+      "article_url": "/ja/technology/smartphone/g-call-sim-mnp-reservation-number-guide/",
+      "issue_time": "公式ページでは2〜3日後に発行されると案内しており、発番通知は行わないため自分でマイG-Callを再確認します。",
+      "method": "マイG-Callへログインし、G-Call電話・通信メニューの登録電話番号→詳細→MNP予約番号の発行・確認から申請します",
+      "one_stop": "確認した公式ページは予約番号方式を案内しています",
+      "classification": "専門系MVNO"
+    }
+  ],
+  "release": "phase56"
+}

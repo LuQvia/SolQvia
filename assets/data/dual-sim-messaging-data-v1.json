@@ -1,0 +1,177 @@
+{
+  "version": "1.0",
+  "updated_at": "2026-08-08",
+  "records": [
+    {
+      "id": "P49-001",
+      "platform": "ios",
+      "scope": "iPhoneデュアルSIM・もう片方の着信",
+      "symptom": "iPhoneのデュアルSIMで通話中にもう片方の回線へ着信しない時｜Wi-Fi通話とデータ切替を確認",
+      "checks": [
+        "通話中だけ副回線が着信しない理由",
+        "確認順",
+        "不在着信通知が出ないケースもある"
+      ],
+      "avoid_first": "eSIM削除・回線初期化・緊急番号への試験発信を初手にしない",
+      "official_sources": [
+        "https://support.apple.com/ja-jp/109317",
+        "https://support.apple.com/ja-jp/guide/iphone/iph9c5776d3c/ios"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P49-002",
+      "platform": "ios",
+      "scope": "iPhoneデュアルSIM・メッセージ送信回線",
+      "symptom": "iPhoneのデュアルSIMでSMS・RCSが違う番号から送られる時｜送信回線を会話ごとに確認",
+      "checks": [
+        "3つの「デフォルト回線」は分けて考える",
+        "違う番号から送られる時の確認順",
+        "RCS対応後も電話番号の選択が重要"
+      ],
+      "avoid_first": "eSIM削除・回線初期化・緊急番号への試験発信を初手にしない",
+      "official_sources": [
+        "https://support.apple.com/ja-jp/109317",
+        "https://support.apple.com/ja-jp/118227"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P49-003",
+      "platform": "pixel",
+      "scope": "PixelデュアルSIM・音声利用不可",
+      "symptom": "PixelのデュアルSIMで「音声が利用できません」「音声割り込み」と出る時｜SIM組み合わせを切り分ける",
+      "checks": [
+        "通知が示すもの",
+        "1回線ずつ切り分ける",
+        "Pixel 8a以降の同時通話条件"
+      ],
+      "avoid_first": "eSIM削除・回線初期化・緊急番号への試験発信を初手にしない",
+      "official_sources": [
+        "https://support.google.com/pixelphone/answer/9449293?hl=ja",
+        "https://support.google.com/pixelphone/answer/16115741?hl=ja"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P49-004",
+      "platform": "pixel",
+      "scope": "PixelデュアルSIM・5G表示",
+      "symptom": "PixelでデュアルSIMにしたら5Gを掴まない時｜データSIM・5G設定・キャリア条件を確認",
+      "checks": [
+        "デュアルSIMでも5Gは利用可能",
+        "5Gが出ない時の確認順",
+        "データ通信は1回線が基本"
+      ],
+      "avoid_first": "eSIM削除・回線初期化・緊急番号への試験発信を初手にしない",
+      "official_sources": [
+        "https://support.google.com/pixelphone/answer/9449293?hl=ja",
+        "https://support.google.com/pixelphone/answer/16115741?hl=ja"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P49-005",
+      "platform": "pixel",
+      "scope": "PixelデュアルSIM・SMS回線",
+      "symptom": "PixelのデュアルSIMでSMSが違うSIMから送信される時｜「テキストメッセージ」のプライマリSIMを確認",
+      "checks": [
+        "用途ごとに既定SIMがある",
+        "SMSが違う回線から出る時",
+        "RCSとSMSを混同しない"
+      ],
+      "avoid_first": "eSIM削除・回線初期化・緊急番号への試験発信を初手にしない",
+      "official_sources": [
+        "https://support.google.com/pixelphone/answer/9449293?hl=ja",
+        "https://support.google.com/messages/answer/7189714?hl=ja"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P49-006",
+      "platform": "android",
+      "scope": "Android機種変更・RCS未着",
+      "symptom": "Androidへ機種変更後にメッセージが届かない時｜旧端末のRCS登録を解除して電話番号を再確認",
+      "checks": [
+        "SMSとRCSを分けて確認する",
+        "旧端末へアクセスできる場合",
+        "旧端末を紛失・故障している場合"
+      ],
+      "avoid_first": "eSIM削除・回線初期化・緊急番号への試験発信を初手にしない",
+      "official_sources": [
+        "https://support.google.com/messages/answer/7189714?hl=ja",
+        "https://support.google.com/messages/answer/9363493?hl=ja"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P49-007",
+      "platform": "multi-platform",
+      "scope": "au eSIM・MMS/auメール",
+      "symptom": "auのeSIM開通後にMMS・auメールが使えない時｜再起動とデュアルSIMの優先回線を確認",
+      "checks": [
+        "開通後の再起動が必要なケース",
+        "デュアルSIM時の初期設定",
+        "再起動しても使えない時"
+      ],
+      "avoid_first": "eSIM削除・回線初期化・緊急番号への試験発信を初手にしない",
+      "official_sources": [
+        "https://www.au.com/support/faq/details/00/0000/000021/pg00002146/",
+        "https://www.au.com/support/faq/details/00/0000/000021/pg00002144/"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P49-008",
+      "platform": "ios",
+      "scope": "iPhone旅行eSIM・日本番号維持",
+      "symptom": "海外旅行でデータeSIMを使いながら日本の電話番号でSMSを受ける方法｜iPhoneデュアルSIM設定",
+      "checks": [
+        "基本構成",
+        "iPhoneでの確認順",
+        "iOS 26の旅行eSIM案内"
+      ],
+      "avoid_first": "eSIM削除・回線初期化・緊急番号への試験発信を初手にしない",
+      "official_sources": [
+        "https://support.apple.com/ja-jp/118227",
+        "https://support.apple.com/ja-jp/109317"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P49-009",
+      "platform": "pixel",
+      "scope": "Pixel旅行eSIM・日本SIM維持",
+      "symptom": "Pixelで旅行eSIMを使いながら日本のSIMでSMSを受ける方法｜データ・通話・テキストの回線を分ける",
+      "checks": [
+        "回線の役割を決める",
+        "設定順",
+        "Pixel 7以降は2つのeSIM同時利用にも対応条件あり"
+      ],
+      "avoid_first": "eSIM削除・回線初期化・緊急番号への試験発信を初手にしない",
+      "official_sources": [
+        "https://support.google.com/pixelphone/answer/9449293?hl=ja",
+        "https://support.google.com/pixelphone/answer/16115741?hl=ja"
+      ],
+      "official_checked_at": "2026-08-08"
+    },
+    {
+      "id": "P49-010",
+      "platform": "general",
+      "scope": "海外版スマホ・緊急通報",
+      "symptom": "海外版スマホで110・119は使える？日本で緊急通報を前提にする前に通信方式・VoLTE・動作保証を確認",
+      "checks": [
+        "Band一致だけでは判断できない",
+        "ドコモ公式の注意点",
+        "主回線にする前の確認項目"
+      ],
+      "avoid_first": "eSIM削除・回線初期化・緊急番号への試験発信を初手にしない",
+      "official_sources": [
+        "https://www.docomo.ne.jp/support/simcard_other/notice/",
+        "https://www.docomo.ne.jp/service/position_notification/",
+        "https://network.mobile.rakuten.co.jp/information/news/product/2475/"
+      ],
+      "official_checked_at": "2026-08-08"
+    }
+  ]
+}

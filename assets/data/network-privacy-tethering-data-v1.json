@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "official_checked_at": "2026-08-08",
+  "items": [
+    {
+      "slug": "icloud-private-relay-website-not-opening-ip-address-reveal",
+      "title": "iCloudプライベートリレーで特定サイトだけ開かない時｜「IPアドレスを公開」で切り分ける",
+      "sources": [
+        "https://support.apple.com/ja-jp/102022",
+        "https://support.apple.com/ja-jp/102602"
+      ]
+    },
+    {
+      "slug": "icloud-private-relay-not-working-specific-wifi-cellular-limit-ip-tracking",
+      "title": "iCloudプライベートリレーが特定Wi-Fi・モバイル回線だけ使えない時｜「IPアドレスのトラッキングを制限」を確認",
+      "sources": [
+        "https://support.apple.com/ja-jp/102022"
+      ]
+    },
+    {
+      "slug": "icloud-private-relay-speedtest-slower-than-browsing",
+      "title": "iCloudプライベートリレーで速度テストだけ遅く見える時｜実通信速度と測定値が違う理由",
+      "sources": [
+        "https://support.apple.com/ja-jp/102602"
+      ]
+    },
+    {
+      "slug": "pixel-google-vpn-app-not-working-exclude-app",
+      "title": "PixelでGoogle VPNをオンにすると特定アプリだけ動かない時｜VPN除外アプリを設定する",
+      "sources": [
+        "https://support.google.com/pixelphone/answer/2819573?hl=ja"
+      ]
+    },
+    {
+      "slug": "pixel-google-vpn-carrier-app-not-working-exclude-carrier-app",
+      "title": "PixelでキャリアアプリがGoogle VPN中だけ動かない時｜携帯通信会社アプリをVPNから除外する",
+      "sources": [
+        "https://support.google.com/pixelphone/answer/2819573?hl=ja"
+      ]
+    },
+    {
+      "slug": "android-always-on-vpn-blocks-internet-when-vpn-disconnected",
+      "title": "AndroidでVPNが切れるとインターネットも全部使えない時｜「VPN以外の接続をブロック」を確認",
+      "sources": [
+        "https://support.google.com/work/android/answer/9213914?hl=ja",
+        "https://support.google.com/android/answer/9089766?hl=ja"
+      ]
+    },
+    {
+      "slug": "android-private-dns-custom-hostname-no-internet",
+      "title": "AndroidでPrivate DNSを設定したらネットにつながらない時｜「自動」とプロバイダーホスト名を切り分ける",
+      "sources": [
+        "https://support.google.com/pixelphone/answer/2819583?hl=ja"
+      ]
+    },
+    {
+      "slug": "iphone-after-sim-esim-change-5g-wifi-calling-missing-carrier-settings",
+      "title": "iPhoneでSIM・eSIM変更後に5GやWi-Fi通話が出ない時｜キャリア設定アップデートを確認",
+      "sources": [
+        "https://support.apple.com/ja-jp/109324"
+      ]
+    },
+    {
+      "slug": "iphone-personal-hotspot-not-working-maximize-compatibility-carrier",
+      "title": "iPhoneのインターネット共有につながらない時｜「互換性を優先」とキャリア対応を確認",
+      "sources": [
+        "https://support.apple.com/ja-jp/111785",
+        "https://support.apple.com/ja-jp/119837"
+      ]
+    },
+    {
+      "slug": "pixel-hotspot-not-working-data-saver-carrier-restriction",
+      "title": "PixelのWi-Fiアクセスポイントが使えない時｜データセーバーとキャリア制限を確認",
+      "sources": [
+        "https://support.google.com/pixelphone/answer/2812516?hl=ja",
+        "https://support.google.com/pixelphone/answer/2819573?hl=ja"
+      ]
+    }
+  ]
+}

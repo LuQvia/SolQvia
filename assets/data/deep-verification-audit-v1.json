@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "release": "phase60",
+  "checked_at": "2026-08-08",
+  "purpose": "High-value article second-stage deep verification. Official source facts are refreshed only for the listed priority pages; real-device status is explicitly disclosed.",
+  "updated_articles": 9,
+  "records": [
+    {
+      "slug": "docomo-data-only-mnp-plan-change-guide",
+      "title": "ドコモのタブレット・データ専用回線でMNPする方法｜5Gデータプラス・Xiデータプラン・ahamoの注意点",
+      "deep_section": "深掘り検証｜「旧シェア」ではなく現在の契約種別からMNP可否を決める",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://www.docomo.ne.jp/faq/detail?faqId=492848",
+        "https://www.docomo.ne.jp/mydocomo/procedures/support/assist/changeplan/detail/13_02.html"
+      ]
+    },
+    {
+      "slug": "iijmio-mnp-number-reissue-sim-reissue-blocked",
+      "title": "IIJmioでMNP予約番号を再発行できない｜発行中・期限切れ・SIM再発行の競合を整理",
+      "deep_section": "深掘り検証｜IIJmioは「失効した瞬間」と「操作可能に戻る時刻」が同じではない",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://help.iijmio.jp/answer/611e0ef1b597a7001931d592/",
+        "https://help.iijmio.jp/answer/61135bf52b2265001db01ecd/"
+      ]
+    },
+    {
+      "slug": "mineo-mnp-number-delayed-cancel-packet-share",
+      "title": "mineoのMNP予約番号がすぐ出ない・キャンセルしたい｜受付時間とパケットシェアを確認",
+      "deep_section": "深掘り検証｜mineoは「番号が出ない」と「番号を見つけられない」を分ける",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://support.mineo.jp/usqa/use/change/quit/40014508_8885.html",
+        "https://support.mineo.jp/usqa/use/change/quit/40017277_8885.html"
+      ]
+    },
+    {
+      "slug": "biglobe-mobile-mnp-number-expired-reissue-cancellation",
+      "title": "BIGLOBEモバイルのMNP予約番号が期限切れ｜再発行と解約申込の扱い",
+      "deep_section": "深掘り検証｜BIGLOBEは「予約番号失効」と「解約申込キャンセル」が連動する",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://faq.support.biglobe.ne.jp/faq_detail.html?faq_id=11384",
+        "https://faq.support.biglobe.ne.jp/faq_detail.html?faq_id=12464"
+      ]
+    },
+    {
+      "slug": "bmobile-mnp-number-not-issued-unused-sim",
+      "title": "b-mobileでMNP予約番号を発行できない｜SIM未利用だと申請不可・4営業日前後",
+      "deep_section": "深掘り検証｜b-mobileは「契約済み」だけでは足りずSIMの利用実績を確認する",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://www.bmobile.ne.jp/startsim/support_faq_start.html",
+        "https://www.bmobile.ne.jp/startsim/support_mnp_start.html"
+      ]
+    },
+    {
+      "slug": "iphone-esim-quick-transfer-fails-japan-carriers",
+      "title": "iPhoneのeSIMクイック転送ができない時｜Apple条件と国内キャリア側手続きを切り分ける",
+      "deep_section": "深掘り検証｜iPhoneのeSIM転送は「Apple側条件」と「キャリア側許可」を二段階で判定する",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://support.apple.com/ja-jp/118669",
+        "https://support.apple.com/ja-jp/102478"
+      ]
+    },
+    {
+      "slug": "docomo-android-esim-transfer-physical-sim-disabled",
+      "title": "ドコモAndroid機種変更で誤ってeSIM転送すると物理SIMはどうなる？UIMが無効になるケース",
+      "deep_section": "深掘り検証｜ドコモAndroid eSIM転送は「便利な複製」ではなく回線の切替として扱う",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://www.docomo.ne.jp/support/uimcard/esim/android_transfer/"
+      ]
+    },
+    {
+      "slug": "pixel-10-pro-g4qur-docomo-5g-n79-limit",
+      "title": "米国版Pixel 10 Pro G4QURでドコモ5Gを掴まない時｜n79非対応は設定では直せない",
+      "deep_section": "深掘り検証｜Pixel 10 Proは「Pixel 10 Pro」という製品名ではなく型番と地域仕様で判定する",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://store.google.com/jp/product/pixel_10_pro_specs?hl=ja",
+        "https://store.google.com/product/pixel_10_pro_specs?hl=en-US",
+        "https://www.docomo.ne.jp/support/simcard_other/notice/"
+      ]
+    },
+    {
+      "slug": "rakuten-esim-reissue-otp-not-received-after-delete",
+      "title": "楽天モバイルでeSIM再発行前に旧eSIMを削除してSMS認証できない時｜別申請ルートを確認",
+      "deep_section": "深掘り検証｜楽天eSIMは「削除してから再発行」ではなくSMS受信経路を残して進める",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001406/",
+        "https://network.mobile.rakuten.co.jp/support/contract-detail/sim/"
+      ]
+    }
+  ]
+}

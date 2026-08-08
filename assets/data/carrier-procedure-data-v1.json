@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.3",
+  "schema_version": "1.7",
   "official_checked_at": "2026-08-08",
   "purpose": "SolQvia carrier/MVNO MNP procedure reference master",
   "records": [
@@ -170,7 +170,1221 @@
         "https://support.mineo.jp/usqa/use/change/quit/40014508_8885.html",
         "https://support.mineo.jp/usqa/apply/apply/mnp/40023313_8867.html"
       ]
+    },
+    {
+      "carrier_name": "BIGLOBEモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "mnp_one_stop": "対応。乗り換え先がワンストップ対応なら予約番号なしで転出可能。",
+      "estimated_issue_time": "手続き完了後、翌日までに登録メールアドレスへ通知。",
+      "validity": "15日間",
+      "blocking_conditions": [
+        "予約番号発行後は「解約予約状態」となり、プラン変更など一部手続きができない",
+        "主SIMを転出する場合はシェアSIMの削除またはMNP転出を先に行う必要がある",
+        "システムメンテナンスで通知が遅れる場合がある"
+      ],
+      "official_source_urls": [
+        "https://support.biglobe.ne.jp/mobile/kaiyaku/mnp.html"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "biglobe-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "NUROモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "mnp_one_stop": "対応。乗り換え先が対応している場合は予約番号不要。",
+      "estimated_issue_time": "申請後1〜2日。即日発行は不可。",
+      "validity": "発行番号に記載された期限を確認",
+      "blocking_conditions": [
+        "予約番号の即日発行はできない",
+        "有効期限の延長・発行済み番号の再発行はできず、期限切れ後に再手続き",
+        "複数SIMでは通知メールだけで対象番号を判別しにくい場合がある"
+      ],
+      "official_source_urls": [
+        "https://support.sonynetwork.co.jp/faqsupport/nuromobile/web/knowledge2750.html",
+        "https://support.sonynetwork.co.jp/faqsupport/nuromobile/web/knowledge10899.html",
+        "https://mobile.nuro.jp/mnp/onestop/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "nuro-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "日本通信SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "mnp_one_stop": "対応。乗り換え先が対応していれば予約番号不要。",
+      "estimated_issue_time": "申し込みから2日かかる場合がある。",
+      "validity": "発行日を含め15日間",
+      "blocking_conditions": [
+        "氏名・生年月日など登録内容が転入先申込情報と不一致だと転出できない場合がある",
+        "ワンストップでも手続きに2日かかる場合がある"
+      ],
+      "official_source_urls": [
+        "https://www.nihontsushin.com/support/support_mnp_portout.html",
+        "https://www.nihontsushin.com/support/support_mnp_onestop.html"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "nihontsushin-sim-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "HISモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "対応。対象事業者への転出では予約番号不要で進められる場合がある。",
+      "estimated_issue_time": "ドコモ回線は通常当日〜2日程度、ソフトバンク回線は4日程度かかる場合がある。",
+      "validity": "15日間",
+      "blocking_conditions": [
+        "すでに解約手続きをした場合はMNP予約番号取得ボタンが利用できない",
+        "データ専用/SMSデータSIMはMNP転出対象外",
+        "再発行前に既存番号の取消・待機が必要な場合がある"
+      ],
+      "official_source_urls": [
+        "https://support.his-mobile.com/hc/ja/articles/7739305431567",
+        "https://support.his-mobile.com/hc/ja/articles/7739292394127"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "his-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "QTモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "乗り換え先の対応状況を確認。予約番号方式も利用可能。",
+      "estimated_issue_time": "Dタイプは2〜5日程度、A/Sタイプは翌日以降。",
+      "validity": "発行日を含め14日間",
+      "blocking_conditions": [
+        "有効期限内のMNP予約番号がある間は新しい番号を発行できない",
+        "電話手続きは有料（公式FAQ掲載の手数料を申請時に再確認）"
+      ],
+      "official_source_urls": [
+        "https://faq.qtmobile.jp/faq_detail.html?id=900409"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "qtmobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "BB.exciteモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "mnp_one_stop": "乗り換え先の対応状況により利用。ツーストップでは予約番号を発行。",
+      "estimated_issue_time": "申し込みから2〜5日程度。",
+      "validity": "発行日を含め15日間",
+      "blocking_conditions": [
+        "MNP予約番号の申請はキャンセルできない",
+        "MNP転出申請中はSIM変更や契約内容変更が制限される",
+        "再発行は「転出確認日」の翌日以降"
+      ],
+      "official_source_urls": [
+        "https://bb.excite.co.jp/exmb/sim/mnpno/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "bb-excite-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "LinksMate",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "mnp_one_stop": "転入側では対応。転出時は乗り換え先の対応状況を確認。",
+      "estimated_issue_time": "公式サポートでは発行に1〜2日程度の案内あり。",
+      "validity": "15日間",
+      "blocking_conditions": [
+        "同一契約グループに複数SIMがある場合、1枚目の転出完了後でないと次のSIMの予約番号を発行できない場合がある",
+        "期限切れ後、再発行可能になるまで最大3日程度かかる場合がある",
+        "SIM発行当日は予約番号を発行できない"
+      ],
+      "official_source_urls": [
+        "https://linksmate.jp/support/help/?id=391",
+        "https://linksmate.jp/support/help/?id=15",
+        "https://linksmate.jp/support/help/?id=389"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "linksmate-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "y.u mobile",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "mnp_one_stop": "乗り換え先の対応状況を確認。予約番号方式も利用可能。",
+      "estimated_issue_time": "発行には最大2日かかる場合があります。",
+      "validity": "マイページに表示される有効期限を確認",
+      "blocking_conditions": [
+        "支払い方法が無効だと発行できない",
+        "発行後に支払い方法が無効になると予約番号がキャンセルされる",
+        "シェアプランの追加SIM契約者による発行はカスタマーセンター対応"
+      ],
+      "official_source_urls": [
+        "https://help.yumobile.jp/troubleshooting/detail/issue-mnp-reservation-number",
+        "https://help.yumobile.jp/manual/share-sim"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "yu-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "NifMo",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "対応事業者として案内あり。乗り換え先のワンストップ対応を確認。",
+      "estimated_issue_time": "公式ページで一律の発行日数の明記は確認できないため、申請画面の案内を優先。",
+      "validity": "発行された予約番号の有効期限を確認",
+      "blocking_conditions": [
+        "データ通信専用SIM・SMS対応SIMはMNP転出不可",
+        "NifMo回線の解除取消はできないため、単純解約とMNP転出を取り違えない"
+      ],
+      "official_source_urls": [
+        "https://nifmo.nifty.com/cancel/",
+        "https://nifmo.nifty.com/navi/mnp/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "nifmo-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "OCN モバイル ONE",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "mnp_one_stop": "対応。乗り換え先が対応し予約番号未発行ならワンストップで手続き可能。",
+      "estimated_issue_time": "申し込みから3営業日程度。",
+      "validity": "発行画面で有効期限を確認",
+      "blocking_conditions": [
+        "MNP予約番号をすでに発行している場合はワンストップではなく発行済み番号を使う手順になる場合がある",
+        "対象は音声対応SIM"
+      ],
+      "official_source_urls": [
+        "https://support.ocn.ne.jp/personal/purpose/detail/pid2900001fiq/",
+        "https://support.ocn.ne.jp/personal/purpose/detail/pid2900001k6s/",
+        "https://support.ocn.ne.jp/personal/purpose/detail/pid2900001k6t/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "ocn-mobile-one-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "LIBMO",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "mnp_one_stop": "乗り換え先の対応状況を確認。予約番号方式も利用可能。",
+      "estimated_issue_time": "公式公開ページでは一律の日数を確認できないため、申請時の案内を優先。",
+      "validity": "発行された番号の期限を確認",
+      "blocking_conditions": [
+        "複数回線は1回線ごとにMNPのりかえ申請",
+        "セット割やキャンペーン条件、端末分割残額がある場合は転出後の影響を確認"
+      ],
+      "official_source_urls": [
+        "https://www.libmo.jp/mnporderintroduction/",
+        "https://www.libmo.jp/pdf/terms/jyuyo_jiko.pdf"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "libmo-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "イオンモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "mnp_one_stop": "対応事業者として案内あり。乗り換え先が対応なら予約番号不要。",
+      "estimated_issue_time": "当日8:00までの申請は同日23:00、8:00以降は翌日23:00の案内。",
+      "validity": "発行日を含め15日間",
+      "blocking_conditions": [
+        "SIM再発行・追加などの手続き中",
+        "すでに解約申込済み",
+        "未払いがある場合",
+        "有効期限切れの翌日は再発行申請できない"
+      ],
+      "official_source_urls": [
+        "https://faq.aeonmobile.jp/faq/show/1272?category_id=39&site_domain=default",
+        "https://faq.aeonmobile.jp/faq/show/1329?category_id=1&site_domain=default",
+        "https://faq.aeonmobile.jp/faq/show/1330?category_id=39&site_domain=default"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "aeon-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "KABU&モバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "mnp_one_stop": "MNPワンストップ対応事業者として案内あり。",
+      "estimated_issue_time": "公式公開ページでは一律の発行日数を確認できないため、マイページの表示を優先。",
+      "validity": "発行された予約番号の有効期限を確認",
+      "blocking_conditions": [
+        "発行日数や細かな受付条件はマイページの現行表示を確認",
+        "予約番号を使う方式とワンストップ方式を重複して進めない"
+      ],
+      "official_source_urls": [
+        "https://kabuand.com/support/contact-mobile",
+        "https://www.nihontsushin.com/support/support_mnp_onestop.html"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "kabuand-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "メルカリモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "mnp_one_stop": "対応。乗り換え先が対応していれば予約番号不要。",
+      "estimated_issue_time": "通常、受付完了の1〜4日後。",
+      "validity": "15日間",
+      "blocking_conditions": [
+        "初期設定未完了",
+        "SIM再発行中",
+        "予約番号申請/発行中または有効期限内",
+        "期限切れ翌日（再申請は2日後から）",
+        "回線停止中・解約予約中",
+        "ギガ出品中"
+      ],
+      "official_source_urls": [
+        "https://help.jp.mercari.com/guide/articles/1935/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "mercari-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "Smiles Connect",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "対応。ワンストップで転入できる案内もあり。",
+      "estimated_issue_time": "公式ガイドでは一律の発行日数を明示していないため、申請後の通知を確認。",
+      "validity": "発行時の案内を確認",
+      "blocking_conditions": [
+        "未払いがある場合は解約処理されない",
+        "SMS認証コードを受け取れる状態が必要"
+      ],
+      "official_source_urls": [
+        "https://smilesconnect.com/guides/cancel/",
+        "https://smilesconnect.com/mnp-one-stop-guide-in-japan/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "smiles-connect-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "b-mobile",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "mnp_one_stop": "対応。乗り換え先が対応している場合はMNP予約番号を発行せずに転出可能。",
+      "estimated_issue_time": "通常の一律発行日数は公式FAQで明記されていないため、マイページの発行状況を確認します。",
+      "validity": "発行日を含め15日間",
+      "blocking_conditions": [
+        "契約したSIMでデータ通信または音声発信などの利用実績がない場合、MNP予約番号を発行できない",
+        "有効期限内はMNP予約番号を再発行できない",
+        "日本通信SIMとb-mobile間は通常のMNPではなくサービス変更扱いになる場合がある"
+      ],
+      "official_source_urls": [
+        "https://www.bmobile.ne.jp/jfsimx/support_faq_voice.html",
+        "https://www.bmobile.ne.jp/my_bmobile/index.html",
+        "https://www.bmobile.ne.jp/support/support_mnp_onestop.html"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "b-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "TONEモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "乗り換え先の対応状況を確認。予約番号方式も利用できます。",
+      "estimated_issue_time": "公式の現行案内で一律の発行日数は明記されていないため、MY TONEの申請画面・通知を確認します。",
+      "validity": "発行日を含め15日間",
+      "blocking_conditions": [
+        "MNP予約番号発行後のサービス・090音声オプションの扱いを確認する必要がある",
+        "予約番号の有効期限内に転入を完了しなければMNP予約手続きは取り消され契約が継続する",
+        "端末分割残金がある場合、転出後も支払いが継続する"
+      ],
+      "official_source_urls": [
+        "https://tone.ne.jp/login.html",
+        "https://tone.ne.jp/terms/mnpcancellation.html"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "tone-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "ANAモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "mnp_one_stop": "対応。転出先がワンストップ対応ならANAモバイルで予約番号を発行せず転出可能。",
+      "estimated_issue_time": "発行まで1〜4日。",
+      "validity": "発行日を含め15日間",
+      "blocking_conditions": [
+        "MNP転出できるのは「音声・SMS・データ」SIMタイプ",
+        "「データ」SIMタイプはMNP転出不可",
+        "転出先がワンストップ非対応の場合は予約番号の発行が必要"
+      ],
+      "official_source_urls": [
+        "https://faq.ana-x.co.jp/faq/anamobile/web/knowledge2474.html"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "ana-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "BIC SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "対応。転出先がMNPワンストップ対応なら予約番号発行は不要です。",
+      "estimated_issue_time": "IIJmioの予約番号発行は即時とは限らず、発行完了まで最短1日〜最大4日程度かかる場合があります。",
+      "validity": "発行された予約番号の有効期限を確認",
+      "blocking_conditions": [
+        "BIC SIM店頭で契約していても、契約後の回線管理はIIJmio側の会員情報を使う",
+        "音声通話SIM／音声eSIM以外はMNP転出対象にならない",
+        "予約番号発行中に別の手続きを重ねると進行状況を確認しにくくなるため、会員ページの状態を優先する"
+      ],
+      "official_source_urls": [
+        "https://help.iijmio.jp/answer/611768d52b2265001db0590e/",
+        "https://help.iijmio.jp/answer/6045d1dc33f57500138d5804",
+        "https://www.biccamera.com/bc/c/service/sim/qa.jsp"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "bic-sim-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "J:COM MOBILE",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "対応。J:COM MOBILEはMNPワンストップ対応事業者として公式案内されています。",
+      "estimated_issue_time": "ワンストップは予約番号の発行待ちが不要です。予約番号方式の個別発行時間は公開ページで一律の明記を確認できないため、申請画面の表示を優先します。",
+      "validity": "一般的なMNP予約番号は15日間。実際の発行画面の期限を確認",
+      "blocking_conditions": [
+        "ワンストップと予約番号方式を同時に進めない",
+        "店舗手続きではワンストップを利用できない場合がある",
+        "転出先によって予約番号の必要残日数が異なるため、予約番号方式では取得後すぐ申し込む"
+      ],
+      "official_source_urls": [
+        "https://www.jcom.co.jp/service/mobile/usage/mnp.html",
+        "https://www.jcom.co.jp/service/mobile/column/038.html"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "jcom-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "センターモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "MNPワンストップ対象事業者として案内されているため、転出先が対応していれば予約番号なしで進められる場合があります。",
+      "estimated_issue_time": "公開公式ページでは転出予約番号の一律発行日数を確認できません。申請時に表示される予定日を優先します。",
+      "validity": "発行された予約番号の期限を確認",
+      "blocking_conditions": [
+        "データ専用契約は電話番号ポータビリティ対象外になる",
+        "公開ページ上のMNP説明は転入向け情報も含むため、転出時は契約者画面の案内を優先する",
+        "ワンストップ非対応の転出先では予約番号方式が必要"
+      ],
+      "official_source_urls": [
+        "https://sim.centermobile.co.jp/",
+        "https://centermobile.co.jp/guide/mnp/",
+        "https://www.jcom.co.jp/service/mobile/usage/mnp.html"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "center-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "LPモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "対応。LP Mobileは公式にMNPワンストップ方式への対応開始を案内しています。",
+      "estimated_issue_time": "公開公式ページでは転出予約番号の一律発行日数を確認できません。サポートまたは申請画面の案内を優先します。",
+      "validity": "発行時に表示される有効期限を確認",
+      "blocking_conditions": [
+        "ワンストップ対応は転出先側も対応していることが前提",
+        "予約番号方式の詳細は公開ページで十分に明記されていないため、古い第三者情報だけで受付窓口を断定しない",
+        "本人確認・契約状態によって手続きが止まる場合はサポートへ確認する"
+      ],
+      "official_source_urls": [
+        "https://zeromobile.co.jp/news/mnp%E6%89%8B%E7%B6%9A%E3%81%8D%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%80%8C%E3%83%AF%E3%83%B3%E3%82%B9%E3%83%88%E3%83%83%E3%83%97%E6%96%B9%E5%BC%8F%E3%80%8D%E5%AF%BE%E5%BF%9C%E9%96%8B%E5%A7%8B/",
+        "https://zeromobile.co.jp/hotline/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "lp-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "RayL MOBILE",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "ワンストップの利用可否は転出先の対応一覧と申込画面で確認します。",
+      "estimated_issue_time": "公開公式ページではRayLからの転出予約番号の一律発行日数を確認できないため、申請画面またはサポート案内を優先します。",
+      "validity": "MNP予約番号は一般に取得日から15日間。RayL公式も15日間の有効期限を案内",
+      "blocking_conditions": [
+        "契約名義と本人確認書類・支払名義の不一致はMNP手続きで問題になる",
+        "キャンセル・再申込時はSIM発行日から15日経過後の再手続きが必要になる場合がある",
+        "予約番号の期限切れ時はサポート確認が必要"
+      ],
+      "official_source_urls": [
+        "https://rayl.jp/support/mobile/mnp/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "rayl-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "FLASH MOBILE",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "対応。FLASH MOBILEは2025年1月27日にMNPワンストップ運用開始を公式発表しています。",
+      "estimated_issue_time": "公開公式ページでは転出予約番号の一律発行日数を確認できません。予約番号方式では申請画面の予定日を確認します。",
+      "validity": "発行された予約番号の有効期限を確認",
+      "blocking_conditions": [
+        "ワンストップは転出先も対応している必要がある",
+        "予約番号方式とワンストップを同時に進めない",
+        "古いFLASH MOBILE案内ではワンストップ開始前の手順が残っている可能性があるため最新画面を優先する"
+      ],
+      "official_source_urls": [
+        "https://rayl.jp/news/news250127.html"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "flash-mobile-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "ジャパネットたかた通信サービス",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "対応事業者一覧に掲載。転出先側もワンストップ対応の場合に利用できます。",
+      "estimated_issue_time": "公開公式ページでは転出予約番号の一律発行日数を確認できません。ワンストップなら予約番号の発行待ちは不要です。",
+      "validity": "予約番号方式の場合は発行された番号の期限を確認",
+      "blocking_conditions": [
+        "ジャパネット通信サービスはワイモバイル通信サービスを利用する独自サービスで、通常のY!mobile契約と窓口を混同しない",
+        "契約・料金・通信状況はジャパネット ワイモバイル サポート窓口が案内",
+        "予約番号方式の公開手順が見つからない場合はサポートで確認してから転出する"
+      ],
+      "official_source_urls": [
+        "https://www.japanet.co.jp/shopping/smartphone/mobileservice.html",
+        "https://www.jcom.co.jp/service/mobile/usage/mnp.html"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "japanet-mobile-service-mnp-reservation-number-guide"
+    },
+    {
+      "carrier_name": "DTI SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "DTI SIM公式の公開MNPページでは予約番号方式を案内。ワンストップ利用可否は転出先申込画面で確認します。",
+      "estimated_issue_time": "公式ページでは申請から発行までの固定日数を明記していません。メールとMyDTIの通知を確認します。",
+      "validity": "発行された予約番号の有効期限を確認。DTIへの転入側ではMNP予約番号は取得日を含め15日間と案内。",
+      "blocking_conditions": [
+        "MNP対象は音声プランのみ。データプラン・データSMSプランは対象外",
+        "MNP転出予約番号は通常の単純解約ではなく、MyDTIの解約手続き内で申請する",
+        "発行前に現在の連絡先メールアドレスが受信できるか確認する"
+      ],
+      "official_source_urls": [
+        "https://dream.jp/mb/sim/step/mnp/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "dti-sim-mnp-reservation-number-guide",
+      "classification": "独立MVNO"
+    },
+    {
+      "carrier_name": "ロケットモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "公開公式FAQでは予約番号方式のトラブル案内を確認。ワンストップ可否は転出先の最新申込画面で確認します。",
+      "estimated_issue_time": "公開公式FAQで一律の発行日数は確認できません。発行が進まない場合は、翌月からのプラン変更予約や過去のMNP予約番号の状態を確認します。",
+      "validity": "発行されたMNP予約番号の画面に表示される有効期限を確認",
+      "blocking_conditions": [
+        "「来月からプラン変更」を予約していると予約番号が発行されない場合がある",
+        "過去にMNP予約番号を発行したものの他社へ転出しなかった場合、予約番号が発行されないことがある",
+        "上記条件では公式サポート側での変更が必要"
+      ],
+      "official_source_urls": [
+        "https://support.rokemoba.co.jp/hc/ja/articles/900006513703-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%8C%E4%B8%80%E5%90%91%E3%81%AB%E7%99%BA%E8%A1%8C%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84%E3%81%AE%E3%81%A7%E3%81%99%E3%81%8C%E3%81%AA%E3%81%9C%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B",
+        "https://support.rokemoba.co.jp/hc/ja/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "rocket-mobile-mnp-reservation-number-guide",
+      "classification": "独立MVNO"
+    },
+    {
+      "carrier_name": "Xmobile（シン・プラン／グリーンプラン）",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "Xmobile本体のシン・プラン／グリーンプラン",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "xmobile-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "HORIE MOBILE / HORIMO",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "HORIE MOBILE / HORIMOはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "horie-mobile-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "D-lab SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "D-lab SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "d-lab-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "livedoor MOBILE SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "livedoor MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "livedoor-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "幻冬舎MOBILE SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "幻冬舎MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "gentosha-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "Tackle Berry SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "Tackle Berry SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "tackle-berry-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "マジモバ SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "マジモバ SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "maji-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "クリモバSIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "クリモバSIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "kurimoba-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "ハピモバSIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "ハピモバSIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "hapimoba-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "ベルモバ SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "ベルモバ SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "bell-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "FFBC SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "FFBC SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "ffbc-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "REDX MOBILE SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "REDX MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "redx-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "SHINGO MOBILE SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "SHINGO MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "shingo-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "レリモバSIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "レリモバSIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "rerimoba-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "グリーン plus ♥ Ai",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "グリーン plus ♥ AiはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "green-plus-ai-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "たかみーモバイル SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "たかみーモバイル SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "takami-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "MetaKozo MOBILE SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "MetaKozo MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "metakozo-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "DAVE MOBILE SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "DAVE MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "dave-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "Dstyle MOBILE SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "Dstyle MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "dstyle-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "ミュゼモバイル SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "ミュゼモバイル SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "musee-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "AVA MOBILE SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "AVA MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "ava-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "CR MOBILE SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "CR MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "cr-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "BTC モバイル SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "BTC モバイル SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "btc-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "Cool girlモバイル SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "Cool girlモバイル SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "cool-girl-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "BUZZモバイル SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "BUZZモバイル SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "buzz-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "井川MOBILE SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "Xmobile公式の当該サポートページでは予約番号発行方式を案内しています。転出先でワンストップが提示される場合は、その最新画面を優先してください。",
+      "estimated_issue_time": "Xmobile公式では、申請受付の約4日後に登録メールアドレスへMNP予約番号を通知すると案内しています。",
+      "validity": "Xmobile公式案内では発行から14日間。",
+      "blocking_conditions": [
+        "井川MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "official_source_urls": [
+        "https://support.xmobile.ne.jp/hc/ja/articles/30277723170841-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%81%AE%E7%99%BA%E8%A1%8C%E7%94%B3%E8%AB%8B",
+        "https://xmobile.ne.jp/news/22958/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "ikawa-mobile-sim-mnp-reservation-number-guide",
+      "classification": "Xmobile系モバイルサービス"
+    },
+    {
+      "carrier_name": "誰でもスマホ",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "公式FAQはMNP予約番号を発行して転出する方法を案内しています。ワンストップ可否は転出先の最新画面で確認します。",
+      "estimated_issue_time": "公開公式FAQではMNP予約番号の固定発行日数は明記していません。ヘルプデスク申請時に確認します。",
+      "validity": "発行された予約番号の期限を確認。誰でもスマホへの転入時は発行日を含め15日、有効期限12日以上残っていることを案内。",
+      "blocking_conditions": [
+        "Web自己発行ではなくヘルプデスクへの連絡が公式FAQの転出方法",
+        "発行日数を第三者サイトから推測しない",
+        "転出完了後は元回線が終了するため、必要なSMS認証やデータ移行を先に確認する"
+      ],
+      "official_source_urls": [
+        "https://www.a-sas.ne.jp/faq/category/procedure/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "daredemo-smartphone-mnp-reservation-number-guide",
+      "classification": "支援型モバイルサービス"
+    },
+    {
+      "carrier_name": "JALモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "基盤がahamoかIIJmioかで手続きを分け、転出先がワンストップ対応ならその申込フローを優先します。",
+      "estimated_issue_time": "powered by ahamoとpowered by IIJmioで異なります。JAL公式は契約・解約等の問い合わせ先をそれぞれahamo公式、IIJmioサポートへ分けています。",
+      "validity": "基盤サービス側で発行された予約番号の有効期限を確認",
+      "blocking_conditions": [
+        "まず自分の契約がpowered by ahamoかpowered by IIJmioか確認する",
+        "JALのマイル・特典窓口と通信契約の解約・MNP窓口を混同しない",
+        "IIJmio版は音声プランがMNP対象で、データeSIM等は電話番号MNPの対象外"
+      ],
+      "official_source_urls": [
+        "https://www.jalmilelife.jal.co.jp/mobile/support/",
+        "https://help.iijmio.jp/answer/611768d52b2265001db0590e/",
+        "https://ahamo.com/support/mnp/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "jal-mobile-mnp-reservation-number-guide",
+      "classification": "提携モバイルサービス"
+    },
+    {
+      "carrier_name": "ピカラモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "公式の転出ページは予約番号方式を案内しています。転出先がワンストップに対応している場合は、転出先の最新申込画面を優先します。",
+      "estimated_issue_time": "公開公式ページでは固定の発行日数を明記していません。Myページまたはサービスセンターの案内を確認します。",
+      "validity": "取得日を含め15日間。期限内に転出しなければ予約番号は失効し、契約は継続します。",
+      "blocking_conditions": [
+        "MNP予約番号を取得しただけでは解約にならない",
+        "有効期限内に転出先でMNP転入を完了しなければ予約番号は失効する",
+        "通常解約とMNP転出を混同しない"
+      ],
+      "official_source_urls": [
+        "https://www.pikara.jp/mobile/support/mnp-tenshutsu.html"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "pikara-mobile-mnp-reservation-number-guide",
+      "classification": "地域系MVNO"
+    },
+    {
+      "carrier_name": "ヤマダニューモバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "公式FAQでは予約番号方式を案内しています。新規申込受付は終了しているため、既存契約者の転出手続きとして確認します。",
+      "estimated_issue_time": "公式FAQでは固定の発行日数を明記していません。マイページの受付状態・通知を確認します。",
+      "validity": "転出先で必要な残日数を確認。ヤマダニューモバイルへの転入時は10日以上必要と案内されています。",
+      "blocking_conditions": [
+        "新規申込受付は終了しているが、既存契約者向けFAQは公開されている",
+        "MNP予約番号はマイページから発行する",
+        "通常解約では電話番号を引き継げないため、MNP希望時は予約番号発行を選ぶ"
+      ],
+      "official_source_urls": [
+        "https://www.ynmobile.jp/faq"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "yamada-new-mobile-mnp-reservation-number-guide",
+      "classification": "受付終了・既存契約者向けMVNO"
+    },
+    {
+      "carrier_name": "Tikimo SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "公式MNPページでは予約番号方式を案内しています。転出先がワンストップを提示する場合は最新画面を確認します。",
+      "estimated_issue_time": "公式案内では発行まで5営業日程度かかる場合があります。",
+      "validity": "予約番号には有効期限があります。有効期限が残り少ない、または切れた場合は先の番号が失効してから改めて申し込みます。",
+      "blocking_conditions": [
+        "通話機能付きSIMカードがMNP転出対象",
+        "有効期限が残り少ない予約番号は、先の番号失効後に再申請する",
+        "MNP転入しなかった場合、Tikimo SIM契約は自動解約されず継続する"
+      ],
+      "official_source_urls": [
+        "https://www.tiki.ne.jp/mobile/tikimo/mnp.html",
+        "https://www.tiki.ne.jp/mobile/tikimo/members.html"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "tikimo-sim-mnp-reservation-number-guide",
+      "classification": "ISP系MVNO"
+    },
+    {
+      "carrier_name": "ASAHIネット LTE ANSIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "公式FAQではマイページで予約番号を発行する方式を案内しています。",
+      "estimated_issue_time": "公開FAQでは固定の発行日数を明記していません。マイページの発行状況を確認します。",
+      "validity": "発行された予約番号の有効期限を確認し、転出先が求める残日数内で申し込みます。ANSIMへの転入時は申込日から10日以上の残日数が必要と案内されています。",
+      "blocking_conditions": [
+        "MNP転出の対象は電話番号を持つ通話SIM",
+        "他社への転出完了日が利用最終日となり、数日以内にサービス解約処理される",
+        "単純解約を先に行わずMNP予約番号を発行する"
+      ],
+      "official_source_urls": [
+        "https://faq.asahi-net.jp/faq_detail.html?id=2180",
+        "https://asahi-net.jp/support/service/lte/application.html"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "asahi-net-ansim-mnp-reservation-number-guide",
+      "classification": "ISP系MVNO"
+    },
+    {
+      "carrier_name": "hi-ho LTE typeD",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "公式FAQは予約番号方式を案内しています。",
+      "estimated_issue_time": "公式FAQでは発行まで4日程度と案内しています。",
+      "validity": "予約日を含め15日間。発行申込のキャンセルや発行済み番号の解除はできず、未使用なら期限切れ後数日以内に発行中状態が解除されます。",
+      "blocking_conditions": [
+        "解約申し込みを入れている場合はMNP予約番号を発行できない",
+        "MNP予約番号発行中は解約申し込みができない",
+        "SIMカード削除・SIMカード交換の際にMNP転出できない",
+        "発行申込のキャンセル・発行済み番号の解除はできない"
+      ],
+      "official_source_urls": [
+        "https://hi-ho.jp/support/faq/ans/mnp-6.php"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "hiho-lte-typed-mnp-reservation-number-guide",
+      "classification": "ISP系MVNO"
+    },
+    {
+      "carrier_name": "G-Call SIM",
+      "procedure": "MNP転出・予約番号",
+      "web_available": null,
+      "mnp_one_stop": "確認した公式ページは予約番号方式を案内しています。",
+      "estimated_issue_time": "公式ページでは2〜3日後に発行されると案内しており、発番通知は行わないため自分でマイG-Callを再確認します。",
+      "validity": "公式ページでは予約番号の有効期限を14日間と案内しています。転入先の必要残日数も確認します。",
+      "blocking_conditions": [
+        "発行された通知は届かないため、申込後2〜3日でマイG-Callを再確認する",
+        "旧G-Call SIMから新プランへの切替でも一度MNP転出・MNP申込を行う特殊手順が案内されている",
+        "公式ページ本文に2021年4月1日時点の注記があるため、実行直前にマイG-Callの現行表示も確認する"
+      ],
+      "official_source_urls": [
+        "https://www.g-call.com/sim2/norikae/"
+      ],
+      "official_checked_at": "2026-08-08",
+      "article_slug": "g-call-sim-mnp-reservation-number-guide",
+      "classification": "専門系MVNO"
     }
   ],
-  "release": "phase45"
+  "release": "phase56"
 }

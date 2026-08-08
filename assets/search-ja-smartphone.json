@@ -1,10 +1,234 @@
 [
   {
+    "title": "通信・VPN・Private Relay・テザリングの深掘り",
+    "description": "Private Relay、Google VPN、常時接続VPN、Private DNS、キャリア設定、テザリングで起きる分かりにくい通信不具合を症状別に解決します。",
+    "url": "/ja/technology/smartphone/network-privacy-tethering/",
+    "category": "スマートフォン",
+    "text": "Private Relay VPN Google VPN Private DNS テザリング キャリア設定 通信"
+  },
+  {
+    "title": "iCloudプライベートリレーで特定サイトだけ開かない時｜「IPアドレスを公開」で切り分ける",
+    "description": "iCloudプライベートリレー利用中に特定のWebサイトだけログインできない・表示を拒否される場合に、Safariの「IPアドレスを公開」で一時的に切り分ける方法を解説します。",
+    "url": "/ja/technology/smartphone/icloud-private-relay-website-not-opening-ip-address-reveal/",
+    "category": "スマートフォン",
+    "text": "iCloud Private Relay・特定サイトだけ開かない iCloudプライベートリレーで特定サイトだけ開かない時｜「IPアドレスを公開」で切り分ける"
+  },
+  {
+    "title": "iCloudプライベートリレーが特定Wi-Fi・モバイル回線だけ使えない時｜「IPアドレスのトラッキングを制限」を確認",
+    "description": "Private Relayが自宅Wi-Fiでは使えるのに会社Wi-Fiや特定SIMでは使えない場合に、ネットワーク単位の「IPアドレスのトラッキングを制限」を確認する方法を解説します。",
+    "url": "/ja/technology/smartphone/icloud-private-relay-not-working-specific-wifi-cellular-limit-ip-tracking/",
+    "category": "スマートフォン",
+    "text": "Private Relay・Wi-Fi/モバイル回線別設定 iCloudプライベートリレーが特定Wi-Fi・モバイル回線だけ使えない時｜「IPアドレスのトラッキングを制限」を確認"
+  },
+  {
+    "title": "iCloudプライベートリレーで速度テストだけ遅く見える時｜実通信速度と測定値が違う理由",
+    "description": "iCloudプライベートリレーをオンにすると速度測定サイトの結果だけ低く見える場合がある理由と、実際のブラウズ体感との違いをApple公式仕様から整理します。",
+    "url": "/ja/technology/smartphone/icloud-private-relay-speedtest-slower-than-browsing/",
+    "category": "スマートフォン",
+    "text": "Private Relay・速度テスト iCloudプライベートリレーで速度テストだけ遅く見える時｜実通信速度と測定値が違う理由"
+  },
+  {
+    "title": "PixelでGoogle VPNをオンにすると特定アプリだけ動かない時｜VPN除外アプリを設定する",
+    "description": "PixelのGoogle VPN利用中にゲーム・動画・業務アプリなど特定アプリだけ通信できない場合に、そのアプリをVPNから除外して切り分ける方法を解説します。",
+    "url": "/ja/technology/smartphone/pixel-google-vpn-app-not-working-exclude-app/",
+    "category": "スマートフォン",
+    "text": "Pixel Google VPN・特定アプリだけ動かない PixelでGoogle VPNをオンにすると特定アプリだけ動かない時｜VPN除外アプリを設定する"
+  },
+  {
+    "title": "PixelでキャリアアプリがGoogle VPN中だけ動かない時｜携帯通信会社アプリをVPNから除外する",
+    "description": "Pixelで通信会社のアプリがGoogle VPN利用中だけ認証・契約確認できない場合に、キャリアアプリをVPNから除外する公式設定を解説します。",
+    "url": "/ja/technology/smartphone/pixel-google-vpn-carrier-app-not-working-exclude-carrier-app/",
+    "category": "スマートフォン",
+    "text": "Pixel Google VPN・キャリアアプリ PixelでキャリアアプリがGoogle VPN中だけ動かない時｜携帯通信会社アプリをVPNから除外する"
+  },
+  {
+    "title": "AndroidでVPNが切れるとインターネットも全部使えない時｜「VPN以外の接続をブロック」を確認",
+    "description": "AndroidでVPN切断後にWi-Fi・モバイル通信まで使えなくなる場合に、常時接続VPNと「VPN以外の接続をブロック」の設定を確認する方法を解説します。",
+    "url": "/ja/technology/smartphone/android-always-on-vpn-blocks-internet-when-vpn-disconnected/",
+    "category": "スマートフォン",
+    "text": "Android常時接続VPN・通信全断 AndroidでVPNが切れるとインターネットも全部使えない時｜「VPN以外の接続をブロック」を確認"
+  },
+  {
+    "title": "AndroidでPrivate DNSを設定したらネットにつながらない時｜「自動」とプロバイダーホスト名を切り分ける",
+    "description": "Android・PixelでPrivate DNSのプロバイダーホスト名を設定後に通信できなくなった場合に、「自動」へ戻してDNS設定を切り分ける方法を解説します。",
+    "url": "/ja/technology/smartphone/android-private-dns-custom-hostname-no-internet/",
+    "category": "スマートフォン",
+    "text": "Android Private DNS・カスタムDNS AndroidでPrivate DNSを設定したらネットにつながらない時｜「自動」とプロバイダーホスト名を切り分ける"
+  },
+  {
+    "title": "iPhoneでSIM・eSIM変更後に5GやWi-Fi通話が出ない時｜キャリア設定アップデートを確認",
+    "description": "iPhoneでSIMカードやeSIMを変更後、5G・Wi-Fi通話などの項目や通信状態がおかしい場合に、キャリア設定アップデートを確認する方法を解説します。",
+    "url": "/ja/technology/smartphone/iphone-after-sim-esim-change-5g-wifi-calling-missing-carrier-settings/",
+    "category": "スマートフォン",
+    "text": "iPhone・SIM変更後キャリア設定 iPhoneでSIM・eSIM変更後に5GやWi-Fi通話が出ない時｜キャリア設定アップデートを確認"
+  },
+  {
+    "title": "iPhoneのインターネット共有につながらない時｜「互換性を優先」とキャリア対応を確認",
+    "description": "iPhoneのインターネット共有が表示されない・接続できない場合に、モバイルデータ、再起動、「互換性を優先」、通信事業者の対応条件を確認します。",
+    "url": "/ja/technology/smartphone/iphone-personal-hotspot-not-working-maximize-compatibility-carrier/",
+    "category": "スマートフォン",
+    "text": "iPhoneインターネット共有・接続不可 iPhoneのインターネット共有につながらない時｜「互換性を優先」とキャリア対応を確認"
+  },
+  {
+    "title": "PixelのWi-Fiアクセスポイントが使えない時｜データセーバーとキャリア制限を確認",
+    "description": "Google PixelでWi-Fiテザリングをオンにできない・接続しても通信できない場合に、データセーバー、モバイル通信、通信会社の制限を確認します。",
+    "url": "/ja/technology/smartphone/pixel-hotspot-not-working-data-saver-carrier-restriction/",
+    "category": "スマートフォン",
+    "text": "Pixelテザリング・アクセスポイント PixelのWi-Fiアクセスポイントが使えない時｜データセーバーとキャリア制限を確認"
+  },
+  {
+    "title": "SIM移行・eSIM再発行・本人認証トラブル",
+    "description": "SIM差し替え、eSIM転送・再発行、SMS認証、機種変更後の開通で止まる原因を深掘りします。",
+    "url": "/ja/technology/smartphone/sim-migration-auth/",
+    "category": "スマートフォン",
+    "text": "SIM eSIM 移行 再発行 SMS 認証 機種変更 開通"
+  },
+  {
+    "title": "auのeSIM再発行で「SMSが未契約のため本サイトでお手続きをお受けできません」と出る時",
+    "description": "auでeSIM再発行・転送時に「SMSが未契約」と表示される場合に、SMSオプションが必要な理由、チャットでの加入、再手続きまでを整理します。",
+    "url": "/ja/technology/smartphone/au-esim-reissue-sms-option-not-subscribed-error/",
+    "category": "スマートフォン",
+    "text": "auのeSIM再発行で「SMSが未契約のため本サイトでお手続きをお受けできません」と出る時 auでeSIM再発行・転送時に「SMSが未契約」と表示される場合に、SMSオプションが必要な理由、チャットでの加入、再手続きまでを整理します。 au eSIM再発行・SMS未契約エラー"
+  },
+  {
+    "title": "auのeSIM転送ができない時｜法人・窓口払い・契約直後・5G SAなど対象外条件を確認",
+    "description": "auでiPhoneやAndroidのeSIM転送が使えない場合に、法人契約、窓口払い、契約直後、5G SA非対応端末、回線種別変更など公式の対象外条件を確認します。",
+    "url": "/ja/technology/smartphone/au-esim-transfer-unavailable-contract-payment-5gsa/",
+    "category": "スマートフォン",
+    "text": "auのeSIM転送ができない時｜法人・窓口払い・契約直後・5G SAなど対象外条件を確認 auでiPhoneやAndroidのeSIM転送が使えない場合に、法人契約、窓口払い、契約直後、5G SA非対応端末、回線種別変更など公式の対象外条件を確認します。 au eSIM転送・契約条件"
+  },
+  {
+    "title": "SoftBankのeSIMを設定したのに通信できない時｜「回線を開通させてください」メールも確認",
+    "description": "SoftBankのeSIMが端末に表示されるのに通信できない場合に、再起動、eSIM登録状態、回線開通メール、削除済みeSIMの再発行を確認します。",
+    "url": "/ja/technology/smartphone/softbank-esim-installed-but-line-not-opened/",
+    "category": "スマートフォン",
+    "text": "SoftBankのeSIMを設定したのに通信できない時｜「回線を開通させてください」メールも確認 SoftBankのeSIMが端末に表示されるのに通信できない場合に、再起動、eSIM登録状態、回線開通メール、削除済みeSIMの再発行を確認します。 SoftBank eSIM・開通未完了"
+  },
+  {
+    "title": "楽天モバイルでeSIM再発行前に旧eSIMを削除してSMS認証できない時｜別申請ルートを確認",
+    "description": "楽天モバイルのeSIM再発行前に旧eSIMを削除してしまいワンタイムパスワードSMSを受け取れない場合の、公式の再発行申請フォーム経路を整理します。",
+    "url": "/ja/technology/smartphone/rakuten-esim-reissue-otp-not-received-after-delete/",
+    "category": "スマートフォン",
+    "text": "楽天モバイルでeSIM再発行前に旧eSIMを削除してSMS認証できない時｜別申請ルートを確認 楽天モバイルのeSIM再発行前に旧eSIMを削除してしまいワンタイムパスワードSMSを受け取れない場合の、公式の再発行申請フォーム経路を整理します。 楽天モバイル eSIM再発行・OTP未着"
+  },
+  {
+    "title": "楽天モバイルのデータタイプ・タブレットでSMSを受け取れずSIM再発行できない時",
+    "description": "Rakuten最強プラン（データタイプ）やタブレット・Wi-FiルーターなどSMSを受信できない端末で、SIM/eSIM再発行の認証を進められない場合の公式手順を整理します。",
+    "url": "/ja/technology/smartphone/rakuten-data-type-tablet-sim-reissue-no-sms/",
+    "category": "スマートフォン",
+    "text": "楽天モバイルのデータタイプ・タブレットでSMSを受け取れずSIM再発行できない時 Rakuten最強プラン（データタイプ）やタブレット・Wi-FiルーターなどSMSを受信できない端末で、SIM/eSIM再発行の認証を進められない場合の公式手順を整理します。 楽天モバイル データタイプ・SMSなし端末"
+  },
+  {
+    "title": "ドコモAndroid機種変更で誤ってeSIM転送すると物理SIMはどうなる？UIMが無効になるケース",
+    "description": "ドコモのAndroid eSIM転送機能で、物理SIMのまま使う予定だったのにeSIMへ切り替えてしまった場合に、旧UIMが無効になる仕様と戻す手続きを整理します。",
+    "url": "/ja/technology/smartphone/docomo-android-esim-transfer-physical-sim-disabled/",
+    "category": "スマートフォン",
+    "text": "ドコモAndroid機種変更で誤ってeSIM転送すると物理SIMはどうなる？UIMが無効になるケース ドコモのAndroid eSIM転送機能で、物理SIMのまま使う予定だったのにeSIMへ切り替えてしまった場合に、旧UIMが無効になる仕様と戻す手続きを整理します。 ドコモ Android eSIM転送・物理SIM無効化"
+  },
+  {
+    "title": "ドコモAndroidでeSIM転送の項目が出ない時｜Android 14・対応機種・副回線サービスを確認",
+    "description": "ドコモのAndroid eSIM転送機能が表示されない・使えない場合に、Android 14以上、対応機種、最新ソフトウェア、副回線サービスなど公式条件を確認します。",
+    "url": "/ja/technology/smartphone/docomo-android-esim-transfer-not-showing-android14/",
+    "category": "スマートフォン",
+    "text": "ドコモAndroidでeSIM転送の項目が出ない時｜Android 14・対応機種・副回線サービスを確認 ドコモのAndroid eSIM転送機能が表示されない・使えない場合に、Android 14以上、対応機種、最新ソフトウェア、副回線サービスなど公式条件を確認します。 ドコモ Android eSIM転送・項目が出ない"
+  },
+  {
+    "title": "Pixelで物理SIMをeSIMへ変換すると元のSIMカードは使える？変換前後の注意点",
+    "description": "Google Pixel 7以降などで物理SIMをeSIMへ変換する機能について、対応キャリア、Wi-Fi、変換後に元の物理SIMが使えなくなる点を整理します。",
+    "url": "/ja/technology/smartphone/pixel-physical-sim-to-esim-convert-old-sim-invalid/",
+    "category": "スマートフォン",
+    "text": "Pixelで物理SIMをeSIMへ変換すると元のSIMカードは使える？変換前後の注意点 Google Pixel 7以降などで物理SIMをeSIMへ変換する機能について、対応キャリア、Wi-Fi、変換後に元の物理SIMが使えなくなる点を整理します。 Pixel 物理SIM→eSIM変換"
+  },
+  {
+    "title": "iOS 26でiMessageが電話番号認証できない時｜同じ番号の古いSIM・eSIMが残っていないか確認",
+    "description": "iOS 26で同じ電話番号のアクティブSIMと非アクティブSIMがiPhone内に残り、iMessageを電話番号でアクティベートできない問題と解決方法を解説します。",
+    "url": "/ja/technology/smartphone/iphone-ios26-duplicate-same-number-sim-imessage-not-activating/",
+    "category": "スマートフォン",
+    "text": "iOS 26でiMessageが電話番号認証できない時｜同じ番号の古いSIM・eSIMが残っていないか確認 iOS 26で同じ電話番号のアクティブSIMと非アクティブSIMがiPhone内に残り、iMessageを電話番号でアクティベートできない問題と解決方法を解説します。 iOS 26・同一番号SIM重複・iMessage"
+  },
+  {
+    "title": "SIMフリーAndroidへドコモSIMを差し替えたらネットにつながらない時｜spmode.ne.jpのAPN設定",
+    "description": "SIMフリー・他社購入AndroidへドコモSIMを差し替えた後に通話やアンテナ表示はあるのにデータ通信できない場合のAPN「spmode.ne.jp」設定を整理します。",
+    "url": "/ja/technology/smartphone/docomo-simfree-android-apn-spmode-no-data-after-sim-swap/",
+    "category": "スマートフォン",
+    "text": "SIMフリーAndroidへドコモSIMを差し替えたらネットにつながらない時｜spmode.ne.jpのAPN設定 SIMフリー・他社購入AndroidへドコモSIMを差し替えた後に通話やアンテナ表示はあるのにデータ通信できない場合のAPN「spmode.ne.jp」設定を整理します。 ドコモ持ち込みAndroid・APN"
+  },
+  {
     "title": "スマートフォン操作・不具合解決",
     "description": "基本操作、検索、通信、再起動、バックアップ、初期化を安全な順序で解説します。",
     "url": "/ja/technology/smartphone/",
     "category": "スマートフォン",
     "text": "スマートフォン 操作 検索 不具合 Wi-Fi Bluetooth 充電 再起動 初期化 バックアップ"
+  },
+  {
+    "title": "ドコモ・au・SoftBank・楽天モバイルの端末相性をどう見る？Band・VoLTE・eSIMの判定方法",
+    "description": "スマホと国内4キャリアの相性を、対応BandだけでなくVoLTE/IMS、eSIM、公式販売・動作確認、技適まで分けて判断するSolQviaの基準を解説します。",
+    "url": "/ja/technology/smartphone/japan-carrier-band-compatibility-guide-2026/",
+    "category": "スマートフォン",
+    "text": "ドコモ・au・SoftBank・楽天モバイルの端末相性をどう見る？Band・VoLTE・eSIMの判定方法 スマホと国内4キャリアの相性を、対応BandだけでなくVoLTE/IMS、eSIM、公式販売・動作確認、技適まで分けて判断するSolQviaの基準を解説します。 評価 意味 典型例 ◎ 国内向け仕様で主要帯が揃い、同一機種または同系統がキャリア公式販売・確認対象 日本版iPhone / Pixelなど ○ 周波数上は主要帯を広くカバーするが、海外版・メーカーSIMフリー等でキャリア保証を別確認 米国版iPhone、香港版Galaxyなど △ 主要帯の一部欠落、VoLTE/IMS不確定、eSIM条件など日本利用上の注意が大きい 一部海外版Pixelなど 「○」でも利用できないという意味ではなく、キャリア公式保証と周波数上の相性を分離している点が重要です。 ドコモではB19に加えてB1/B3/B21等、auではB18/26を軸にB1/B3等、SoftBankではB8を軸にB1/B3等、楽天モバイルでは自社帯を中心に確認します。端末側が補助帯まで持つほど、混雑時や場所による差を小さくできる可能性があります。 国内の5Gは事業者ごとに使う帯域が異なるため、n77だけ対応していてもドコモのn79を使えない端末があります。海外版の評価ではn79欠落を独立した注意点として扱います。 音声通話はLTE/5Gの周波数対応だけでなく、端末のIMS実装、キャリア設定、ソフトウェア、動作確認条件に左右されます。特に海外版Androidは「データ通信はできるが通話できない」というケースを想定して確認します。 eSIM専用端末ではキャリア側のeSIM発行対応が必須です。Androidの持ち込み端末ではAPN設定が必要な場合があり、海外端末では技適も確認します。 正確な型番を確認 製品名だけでなくA番号、GN番号、SM番号などを確認します。 主要Bandを照合 LTEと5Gをキャリア別に確認します。 VoLTE/IMSを確認 公式動作確認や同一モデルの販売状況を確認します。 SIM/eSIMを確認 物理SIM、eSIM、デュアルSIMの条件を確認します。 技適・保証を確認 海外版は日本国内利用条件と修理・保証も確認します。"
+  },
+  {
+    "title": "日本版iPhone 17 A3519はどのキャリアと相性がいい？ドコモ・au・SoftBank・楽天を比較",
+    "description": "日本版iPhone 17 A3519の国内4キャリア適性を、eSIM、LTE/5G対応Band、n79、公式販売状況から比較します。",
+    "url": "/ja/technology/smartphone/iphone-17-a3519-japan-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "日本版iPhone 17 A3519はどのキャリアと相性がいい？ドコモ・au・SoftBank・楽天を比較 日本版iPhone 17 A3519の国内4キャリア適性を、eSIM、LTE/5G対応Band、n79、公式販売状況から比較します。 キャリア 評価 周波数・機能面 公式確認の扱い ドコモ ◎ B19・B21、5G n79を含む。ドコモでiPhone 17を公式販売 公式販売あり／eSIM専用 au ◎ au系主要帯を広くカバー。iPhone 17のeSIM移行案内あり 公式販売・eSIM案内あり SoftBank ◎ B8を含む主要帯と5G帯をカバー 公式販売・eSIMサポートあり 楽天モバイル ◎ 楽天回線向け主要帯をカバー iPhone 17を公式販売 A3519はApple日本仕様でLTE B1/B3/B8/B18/B19/B21/B28/B42、5G n77/n78/n79など国内主要帯を広くカバーします。キャリア選びではBand差より料金・エリア・混雑状況の方が実利用差になりやすい端末です。 同じ製品名でも地域版で通信仕様が変わります。詳しくは 地域版比較記事 を先に確認してください。 端末の型番 設定画面または箱で正確な型番を確認します。 契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。 SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。 VoLTE/IMS 海外版Androidは特に通話可否を確認します。 開通後テスト 発信・着信・SMS・モバイルデータ・5G表示を個別に確認します。"
+  },
+  {
+    "title": "米国版iPhone 17 A3258は日本で使える？4キャリアのBand・n79・eSIM相性を比較",
+    "description": "米国版iPhone 17 A3258を日本のドコモ・au・SoftBank・楽天モバイルで使う場合の周波数適性、n79、mmWave、eSIM、公式保証の考え方を整理します。",
+    "url": "/ja/technology/smartphone/iphone-17-a3258-us-japan-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "米国版iPhone 17 A3258は日本で使える？4キャリアのBand・n79・eSIM相性を比較 米国版iPhone 17 A3258を日本のドコモ・au・SoftBank・楽天モバイルで使う場合の周波数適性、n79、mmWave、eSIM、公式保証の考え方を整理します。 キャリア 評価 周波数・機能面 公式確認の扱い ドコモ ○ B1/B3/B19/B42、5G n78/n79を持つがB21は非対応 輸入端末として公式保証は別確認 au ○ B1/B18/B26、n77/n78など主要帯を広くカバー 持ち込み端末は動作保証対象外の扱いを確認 SoftBank ○ B1/B3/B8/B42、n77などをカバー 持ち込み端末として確認 楽天モバイル ○ B3やn77等をカバー BYOD確認ページで現行条件を確認 米国版A3258は日本向けA3519より対応Bandが極端に少ないモデルではなく、むしろmmWaveを追加しています。一方、ドコモの補助帯B21など地域固有差があるため「完全上位互換」とは扱いません。 同じ製品名でも地域版で通信仕様が変わります。詳しくは 地域版比較記事 を先に確認してください。 端末の型番 設定画面または箱で正確な型番を確認します。 契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。 SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。 VoLTE/IMS 海外版Androidは特に通話可否を確認します。 開通後テスト 発信・着信・SMS・モバイルデータ・5G表示を個別に確認します。"
+  },
+  {
+    "title": "日本版Pixel 10 Pro GN4F5は4キャリアで使いやすい？Band・n79・eSIMを比較",
+    "description": "Pixel 10 Pro日本版GN4F5のドコモ・au・SoftBank・楽天モバイル適性を、B19/B21/B42、n79、nanoSIM/eSIM、公式販売状況から比較します。",
+    "url": "/ja/technology/smartphone/pixel-10-pro-gn4f5-japan-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "日本版Pixel 10 Pro GN4F5は4キャリアで使いやすい？Band・n79・eSIMを比較 Pixel 10 Pro日本版GN4F5のドコモ・au・SoftBank・楽天モバイル適性を、B19/B21/B42、n79、nanoSIM/eSIM、公式販売状況から比較します。 キャリア 評価 周波数・機能面 公式確認の扱い ドコモ ◎ B19/B21とn79を含む。Pixel 10 Proをドコモが公式販売 公式製品あり au ◎ B18/26系を含む主要LTE/5G帯に対応 公式製品あり SoftBank ◎ B8/B42、n77など主要帯をカバー 公式製品あり 楽天モバイル ◎ 楽天主要帯をカバー Pixel 10 Proを公式販売 GN4F5は日本向け追加帯を含むため、国内利用でBand面の欠落を気にしにくい構成です。物理nanoSIMを残せる点も、eSIM専用の米国版G4QURとの大きな違いです。 同じ製品名でも地域版で通信仕様が変わります。詳しくは 地域版比較記事 を先に確認してください。 端末の型番 設定画面または箱で正確な型番を確認します。 契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。 SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。 VoLTE/IMS 海外版Androidは特に通話可否を確認します。 開通後テスト 発信・着信・SMS・モバイルデータ・5G表示を個別に確認します。"
+  },
+  {
+    "title": "米国版Pixel 10 Pro G4QURは日本で使える？ドコモn79・B21/B42欠落と4キャリア相性",
+    "description": "米国版Pixel 10 Pro G4QURの日本利用を検証。ドコモn79、LTE B21/B42、mmWave、デュアルeSIM、4キャリア適性を整理します。",
+    "url": "/ja/technology/smartphone/pixel-10-pro-g4qur-us-japan-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "米国版Pixel 10 Pro G4QURは日本で使える？ドコモn79・B21/B42欠落と4キャリア相性 米国版Pixel 10 Pro G4QURの日本利用を検証。ドコモn79、LTE B21/B42、mmWave、デュアルeSIM、4キャリア適性を整理します。 キャリア 評価 周波数・機能面 公式確認の扱い ドコモ △ B19は対応するがB21と5G n79が非掲載。国内版より不利 輸入端末・VoLTE等を別確認 au ○ B18/26とn77/n78を含み周波数上の主要条件は良好 持ち込み端末保証は別 SoftBank ○ B8とn77を含むがB42は非掲載 持ち込み端末保証は別 楽天モバイル ○ B3・n77等をカバー BYOD現行条件を確認 G4QURの最大の地域差は「mmWaveがある」ことより、日本版GN4F5にあるn79・B21/B42がないことです。特にドコモ利用ではn79欠落を無視しない方がよいです。 同じ製品名でも地域版で通信仕様が変わります。詳しくは 地域版比較記事 を先に確認してください。 端末の型番 設定画面または箱で正確な型番を確認します。 契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。 SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。 VoLTE/IMS 海外版Androidは特に通話可否を確認します。 開通後テスト 発信・着信・SMS・モバイルデータ・5G表示を個別に確認します。"
+  },
+  {
+    "title": "Galaxy Z Flip7日本SIMフリー版SM-F766Qは4キャリアで使える？Band・n79・FeliCaを比較",
+    "description": "Galaxy Z Flip7日本正規SIMフリー版SM-F766Qのドコモ・au・SoftBank・楽天モバイル適性を、B19/B21/B42、n79、VoLTE、FeliCaから整理します。",
+    "url": "/ja/technology/smartphone/galaxy-z-flip7-sm-f766q-japan-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "Galaxy Z Flip7日本SIMフリー版SM-F766Qは4キャリアで使える？Band・n79・FeliCaを比較 Galaxy Z Flip7日本正規SIMフリー版SM-F766Qのドコモ・au・SoftBank・楽天モバイル適性を、B19/B21/B42、n79、VoLTE、FeliCaから整理します。 キャリア 評価 周波数・機能面 公式確認の扱い ドコモ ◎ B19/B21、n79に対応。同世代SC-55Fを公式販売 同世代公式製品あり au ◎ au主要帯を広くカバー。同世代モデルを公式販売 同世代公式製品あり SoftBank ◎ B8/B42、n77をカバー。同世代モデルを公式販売 同世代公式製品あり 楽天モバイル ○ 主要周波数上の適性は高い SM-F766Q exact SKUの現行BYOD確認を推奨 日本正規モデルは海外版と違い、Samsung JapanがFeliCa/おサイフケータイ対応を明示している点も大きな利点です。キャリアを移る可能性がある人はSM-F766Qのような日本向け周波数構成を選びやすいです。 同じ製品名でも地域版で通信仕様が変わります。詳しくは 地域版比較記事 を先に確認してください。 端末の型番 設定画面または箱で正確な型番を確認します。 契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。 SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。 VoLTE/IMS 海外版Androidは特に通話可否を確認します。 開通後テスト 発信・着信・SMS・モバイルデータ・5G表示を個別に確認します。"
+  },
+  {
+    "title": "香港版Galaxy Z Flip7 SM-F7660は日本で使える？4キャリアBand・VoLTE・FeliCa注意点",
+    "description": "香港版Galaxy Z Flip7 SM-F7660を日本で使う場合のドコモ・au・SoftBank・楽天モバイル適性を、B19/n79、B21/B42欠落、VoLTE/IMS、FeliCaから整理します。",
+    "url": "/ja/technology/smartphone/galaxy-z-flip7-sm-f7660-hk-japan-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "香港版Galaxy Z Flip7 SM-F7660は日本で使える？4キャリアBand・VoLTE・FeliCa注意点 香港版Galaxy Z Flip7 SM-F7660を日本で使う場合のドコモ・au・SoftBank・楽天モバイル適性を、B19/n79、B21/B42欠落、VoLTE/IMS、FeliCaから整理します。 キャリア 評価 周波数・機能面 公式確認の扱い ドコモ ○ B19・n79は対応するがB21/B42は非掲載 海外版としてVoLTE/IMSを別確認 au ○ 主要LTE/5G帯の周波数適性は高い 他社端末は動作保証なし SoftBank ○ B8・n77等を持つがB42非掲載 海外版として確認 楽天モバイル ○ B3・n77等を持ち周波数上は良好 BYOD確認を推奨 SM-F7660は「n79がない海外版」ではありません。ドコモ利用でn79を持つ点は強い一方、B21/B42やFeliCa、キャリア保証が日本版と異なるため、安さだけで日本版と同等扱いしないのが安全です。 同じ製品名でも地域版で通信仕様が変わります。詳しくは 地域版比較記事 を先に確認してください。 端末の型番 設定画面または箱で正確な型番を確認します。 契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。 SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。 VoLTE/IMS 海外版Androidは特に通話可否を確認します。 開通後テスト 発信・着信・SMS・モバイルデータ・5G表示を個別に確認します。"
+  },
+  {
+    "title": "Galaxy Z Fold7日本SIMフリー版SM-F966Qの4キャリア相性｜n79・n257・FeliCaまで比較",
+    "description": "Galaxy Z Fold7日本正規SIMフリー版SM-F966Qのドコモ・au・SoftBank・楽天モバイル適性を、LTE/5G、n79、mmWave n257、eSIM、FeliCaから整理します。",
+    "url": "/ja/technology/smartphone/galaxy-z-fold7-sm-f966q-japan-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "Galaxy Z Fold7日本SIMフリー版SM-F966Qの4キャリア相性｜n79・n257・FeliCaまで比較 Galaxy Z Fold7日本正規SIMフリー版SM-F966Qのドコモ・au・SoftBank・楽天モバイル適性を、LTE/5G、n79、mmWave n257、eSIM、FeliCaから整理します。 キャリア 評価 周波数・機能面 公式確認の扱い ドコモ ◎ B19/B21・n79に加えn257を搭載。同世代SC-56Fを公式販売 公式製品で5G SA・ミリ波対応を案内 au ◎ 主要LTE/5G帯を広くカバー。同世代モデルを公式販売 同世代公式製品あり SoftBank ◎ B8/B42・n77等をカバー。同世代モデルを公式販売 同世代公式製品あり 楽天モバイル ○ 主要周波数上の適性は高い SM-F966Q exact SKUのBYOD確認を推奨 Fold7は高額端末なので、周波数だけでなくFeliCa、国内保証、修理受付、eSIM、キャリア固有機能まで含めると日本正規版のメリットが大きくなります。 同じ製品名でも地域版で通信仕様が変わります。詳しくは 地域版比較記事 を先に確認してください。 端末の型番 設定画面または箱で正確な型番を確認します。 契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。 SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。 VoLTE/IMS 海外版Androidは特に通話可否を確認します。 開通後テスト 発信・着信・SMS・モバイルデータ・5G表示を個別に確認します。"
+  },
+  {
+    "title": "香港版Galaxy Z Fold7 SM-F9660の日本4キャリア相性｜n79・VoLTE・FeliCa・保証を確認",
+    "description": "香港版Galaxy Z Fold7 SM-F9660を日本で使う場合のドコモ・au・SoftBank・楽天モバイル適性を、B19/n79、VoLTE/IMS、FeliCa、保証から整理します。",
+    "url": "/ja/technology/smartphone/galaxy-z-fold7-sm-f9660-hk-japan-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "香港版Galaxy Z Fold7 SM-F9660の日本4キャリア相性｜n79・VoLTE・FeliCa・保証を確認 香港版Galaxy Z Fold7 SM-F9660を日本で使う場合のドコモ・au・SoftBank・楽天モバイル適性を、B19/n79、VoLTE/IMS、FeliCa、保証から整理します。 キャリア 評価 周波数・機能面 公式確認の扱い ドコモ ○ B19・n79は持つがB21/B42は日本版と差がある VoLTE/IMS・保証を別確認 au ○ 主要帯は広く対応 持ち込み端末は動作保証なし SoftBank ○ 主要帯の周波数適性は高い 海外版として別確認 楽天モバイル ○ B3・n77等を含む BYOD確認を推奨 SM-F9660のn79対応は海外版として重要ですが、Samsung Japanは海外モデルのおサイフケータイ非対応を明記しています。高額なFoldでは国内保証の価値も含めて判断します。 同じ製品名でも地域版で通信仕様が変わります。詳しくは 地域版比較記事 を先に確認してください。 端末の型番 設定画面または箱で正確な型番を確認します。 契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。 SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。 VoLTE/IMS 海外版Androidは特に通話可否を確認します。 開通後テスト 発信・着信・SMS・モバイルデータ・5G表示を個別に確認します。"
+  },
+  {
+    "title": "Xperia 1 VIII SIMフリー版は4キャリアで使える？ドコモ・au・SoftBank・楽天のBand相性",
+    "description": "Xperia 1 VIII日本SIMフリー版の国内4キャリア適性を、B19/B21/B42、n79/n257、nanoSIM/eSIM、公式販売状況から比較します。",
+    "url": "/ja/technology/smartphone/xperia-1-viii-simfree-japan-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "Xperia 1 VIII SIMフリー版は4キャリアで使える？ドコモ・au・SoftBank・楽天のBand相性 Xperia 1 VIII日本SIMフリー版の国内4キャリア適性を、B19/B21/B42、n79/n257、nanoSIM/eSIM、公式販売状況から比較します。 キャリア 評価 周波数・機能面 公式確認の扱い ドコモ ◎ B19/B21・n79/n257を含む。SO-51Gを公式販売 公式製品あり au ◎ 主要帯を広くカバー。auで公式販売 公式製品あり SoftBank ◎ B8/B42・n77等をカバー。SoftBankで公式販売 公式製品あり 楽天モバイル ○ 主要周波数上の適性は高い 現行BYOD確認を推奨 Xperia 1 VIIIは日本市場を強く意識した周波数構成で、キャリアを跨いで使う用途に向きます。nanoSIMとeSIMを使えるため、eSIM専用iPhone 17よりSIM移行の自由度も高いです。 端末の型番 設定画面または箱で正確な型番を確認します。 契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。 SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。 VoLTE/IMS 海外版Androidは特に通話可否を確認します。 開通後テスト 発信・着信・SMS・モバイルデータ・5G表示を個別に確認します。"
   },
   {
     "title": "iPhone 17の日本版・米国版・海外版の違い｜A3519/A3258/A3520とeSIM・対応バンド",
@@ -1160,5 +1384,936 @@
     "url": "/ja/technology/smartphone/docomo-data-only-mnp-plan-change-guide/",
     "category": "キャリア・MVNO手続き",
     "text": "ドコモのタブレット・データ専用回線でMNPする方法｜5Gデータプラス・Xiデータプラン・ahamoの注意点 ドコモのタブレット・5Gデータプラス・Xiデータプランなどデータ専用契約でMNP予約番号を発行したい場合の考え方を整理。ドコモ miniへの音声プラン変更、ahamoへ直接変更できない条件、ネットワーク暗証番号不明時の公式手順、旧シェア回線の音声契約との違いを解説します。 ドコモ タブレット 5Gデータプラス Xiデータプラン シェアパック 音声契約 データ契約 ドコモ mini ahamo MNP 予約番号 ネットワーク暗証番号"
+  },
+  {
+    "title": "通信・SIM・eSIMトラブル｜キャリア別・機種別の深掘り解決",
+    "description": "5Gを掴まない、データは使えるのに通話できない、eSIMを追加できない、APNやVoLTEで詰まる症状を、キャリア・型番・地域版ごとに切り分けます。",
+    "url": "/ja/technology/smartphone/network-sim-troubleshooting/",
+    "category": "通信・SIM・eSIMトラブル",
+    "text": "通信・SIM・eSIMトラブル｜キャリア別・機種別の深掘り解決 5Gを掴まない、データは使えるのに通話できない、eSIMを追加できない、APNやVoLTEで詰まる症状を、キャリア・型番・地域版ごとに切り分けます。 5G eSIM APN VoLTE IMS キャリア 海外版"
+  },
+  {
+    "title": "ドコモSIMでデータ通信はできるのに電話できない時｜VoLTE・IMS・3G終了後の確認順",
+    "description": "SIMフリー・海外版Androidでドコモのデータ通信はできるのに音声通話だけできない場合を、VoLTE、IMS、優先ネットワーク、対応端末、3G終了後の条件から切り分けます。",
+    "url": "/ja/technology/smartphone/docomo-simfree-phone-data-ok-calls-fail-volte-ims/",
+    "category": "通信・SIM・eSIMトラブル",
+    "text": "ドコモSIMでデータ通信はできるのに電話できない時｜VoLTE・IMS・3G終了後の確認順 SIMフリー・海外版Androidでドコモのデータ通信はできるのに音声通話だけできない場合を、VoLTE、IMS、優先ネットワーク、対応端末、3G終了後の条件から切り分けます。 ドコモ SIMフリー 海外版 データ通信 電話できない VoLTE IMS spmode APN FOMA 3G終了"
+  },
+  {
+    "title": "ドコモの5G契約SIMを4G端末に入れて通信できない時｜対応機種・SIM情報更新の注意点",
+    "description": "ドコモの5G契約UIMカード・eSIMを4G端末へ入れた後に圏外や通信不可になる場合を、公式の5G契約注意事項、端末対応、SIM情報更新から整理します。",
+    "url": "/ja/technology/smartphone/docomo-5g-sim-4g-phone-communication-failure/",
+    "category": "通信・SIM・eSIMトラブル",
+    "text": "ドコモの5G契約SIMを4G端末に入れて通信できない時｜対応機種・SIM情報更新の注意点 ドコモの5G契約UIMカード・eSIMを4G端末へ入れた後に圏外や通信不可になる場合を、公式の5G契約注意事項、端末対応、SIM情報更新から整理します。 ドコモ 5G SIM 4G端末 通信できない 圏外 UIM eSIM 対応機種"
+  },
+  {
+    "title": "auのeSIMを開通したのにデータ通信できない時｜他社APN構成プロファイル・回線設定の確認",
+    "description": "au eSIMのプロファイルをダウンロードして開通したのに通信できない場合を、他社APN構成プロファイル、使用回線、モバイルデータ、5G/5G SA対応から確認します。",
+    "url": "/ja/technology/smartphone/au-esim-activated-no-data-apn-profile-troubleshooting/",
+    "category": "通信・SIM・eSIMトラブル",
+    "text": "auのeSIMを開通したのにデータ通信できない時｜他社APN構成プロファイル・回線設定の確認 au eSIMのプロファイルをダウンロードして開通したのに通信できない場合を、他社APN構成プロファイル、使用回線、モバイルデータ、5G/5G SA対応から確認します。 au eSIM 開通 通信できない APN 構成プロファイル 5G SA デュアルSIM"
+  },
+  {
+    "title": "auで「電話番号をこのiPhoneに転送できませんでした」と出る時｜5G SA eSIMと端末対応を確認",
+    "description": "iPhoneのeSIM転送で「電話番号をこのiPhoneに転送できませんでした」と表示される場合に、auの5G SA eSIM、端末対応、転送前後の確認事項を整理します。",
+    "url": "/ja/technology/smartphone/au-esim-phone-number-transfer-failed-5g-sa/",
+    "category": "通信・SIM・eSIMトラブル",
+    "text": "auで「電話番号をこのiPhoneに転送できませんでした」と出る時｜5G SA eSIMと端末対応を確認 iPhoneのeSIM転送で「電話番号をこのiPhoneに転送できませんでした」と表示される場合に、auの5G SA eSIM、端末対応、転送前後の確認事項を整理します。 au eSIM 電話番号 転送できません 5G SA iPhone クイック転送"
+  },
+  {
+    "title": "SoftBankのeSIMを設定したのに通信できない時｜回線選択・再起動・プロファイル確認の順番",
+    "description": "SoftBankでeSIM設定後にアンテナが立たない、データ通信できない場合を、eSIM設定状態、モバイル回線選択、再起動、端末側設定から安全に切り分けます。",
+    "url": "/ja/technology/smartphone/softbank-esim-set-no-data-troubleshooting/",
+    "category": "通信・SIM・eSIMトラブル",
+    "text": "SoftBankのeSIMを設定したのに通信できない時｜回線選択・再起動・プロファイル確認の順番 SoftBankでeSIM設定後にアンテナが立たない、データ通信できない場合を、eSIM設定状態、モバイル回線選択、再起動、端末側設定から安全に切り分けます。 SoftBank eSIM 設定 通信できない 圏外 再発行 デュアルSIM Android iPhone"
+  },
+  {
+    "title": "他社購入スマホをSoftBankで使って通信・通話できない時｜APNとVoLTEを3G終了後基準で確認",
+    "description": "SIMロック解除済みの他社購入AndroidをSoftBankで使う際にデータ通信や通話ができない場合を、APN、VoLTE、優先ネットワーク、3G終了後の条件から確認します。",
+    "url": "/ja/technology/smartphone/softbank-other-carrier-phone-apn-volte-after-3g-end/",
+    "category": "通信・SIM・eSIMトラブル",
+    "text": "他社購入スマホをSoftBankで使って通信・通話できない時｜APNとVoLTEを3G終了後基準で確認 SIMロック解除済みの他社購入AndroidをSoftBankで使う際にデータ通信や通話ができない場合を、APN、VoLTE、優先ネットワーク、3G終了後の条件から確認します。 SoftBank 他社端末 SIMフリー APN VoLTE 通話できない 3G終了"
+  },
+  {
+    "title": "他社で使っていたスマホが楽天モバイルで通信できない時｜対応製品・APN・SIMロックの確認順",
+    "description": "他社購入・海外版・SIMフリースマホを楽天モバイルへ持ち込んで通信できない場合を、楽天回線対応製品、APN設定、SIMロック、回線選択から確認します。",
+    "url": "/ja/technology/smartphone/rakuten-other-carrier-phone-apn-no-data/",
+    "category": "通信・SIM・eSIMトラブル",
+    "text": "他社で使っていたスマホが楽天モバイルで通信できない時｜対応製品・APN・SIMロックの確認順 他社購入・海外版・SIMフリースマホを楽天モバイルへ持ち込んで通信できない場合を、楽天回線対応製品、APN設定、SIMロック、回線選択から確認します。 楽天モバイル 他社端末 海外版 APN 通信できない SIMロック 対応製品"
+  },
+  {
+    "title": "iPhoneのeSIMクイック転送ができない時｜Apple条件と国内キャリア側手続きを切り分ける",
+    "description": "iPhoneからiPhoneへeSIMをクイック転送できない場合に、Apple Account、パスコード、Bluetooth、iOS、キャリア対応、再発行への切り替えを確認します。",
+    "url": "/ja/technology/smartphone/iphone-esim-quick-transfer-fails-japan-carriers/",
+    "category": "通信・SIM・eSIMトラブル",
+    "text": "iPhoneのeSIMクイック転送ができない時｜Apple条件と国内キャリア側手続きを切り分ける iPhoneからiPhoneへeSIMをクイック転送できない場合に、Apple Account、パスコード、Bluetooth、iOS、キャリア対応、再発行への切り替えを確認します。 iPhone eSIM クイック転送 できない Apple Account Bluetooth iOS 再発行"
+  },
+  {
+    "title": "米国版Pixel 10 Pro G4QURでドコモ5Gを掴まない時｜n79非対応は設定では直せない",
+    "description": "米国版Pixel 10 Pro G4QURをドコモで使い5G表示にならない場合に、G4QURのn77/n78対応とn79非対応、エリア・設定・国内版GN4F5との差を整理します。",
+    "url": "/ja/technology/smartphone/pixel-10-pro-g4qur-docomo-5g-n79-limit/",
+    "category": "通信・SIM・eSIMトラブル",
+    "text": "米国版Pixel 10 Pro G4QURでドコモ5Gを掴まない時｜n79非対応は設定では直せない 米国版Pixel 10 Pro G4QURをドコモで使い5G表示にならない場合に、G4QURのn77/n78対応とn79非対応、エリア・設定・国内版GN4F5との差を整理します。 Pixel 10 Pro G4QUR ドコモ 5G n79 掴まない n77 n78 米国版"
+  },
+  {
+    "title": "香港版Galaxy Z Flip7 SM-F7660でドコモのデータは使えるのに電話できない時｜VoLTE・IMSを確認",
+    "description": "香港版Galaxy Z Flip7 SM-F7660をドコモSIMで使い、データ通信はできるのに発着信できない場合を、Band、VoLTE/IMS、地域版、持ち込み端末の注意点から切り分けます。",
+    "url": "/ja/technology/smartphone/galaxy-z-flip7-sm-f7660-docomo-data-ok-calls-fail-volte-ims/",
+    "category": "通信・SIM・eSIMトラブル",
+    "text": "香港版Galaxy Z Flip7 SM-F7660でドコモのデータは使えるのに電話できない時｜VoLTE・IMSを確認 香港版Galaxy Z Flip7 SM-F7660をドコモSIMで使い、データ通信はできるのに発着信できない場合を、Band、VoLTE/IMS、地域版、持ち込み端末の注意点から切り分けます。 Galaxy Z Flip7 SM-F7660 香港版 ドコモ 通話できない VoLTE IMS B19 APN"
+  },
+  {
+    "title": "iPhone 17でeSIMを追加・開通できない時｜国内キャリア共通の確認順と削除前の注意点",
+    "description": "eSIM専用のiPhone 17で回線を追加できない、アクティベート中から進まない場合を、Apple側条件、キャリア発行、Wi-Fi、キャリア設定、eSIM削除前の注意点から整理します。",
+    "url": "/ja/technology/smartphone/iphone-17-esim-activation-fails-japan-carriers/",
+    "category": "通信・SIM・eSIMトラブル",
+    "text": "iPhone 17でeSIMを追加・開通できない時｜国内キャリア共通の確認順と削除前の注意点 eSIM専用のiPhone 17で回線を追加できない、アクティベート中から進まない場合を、Apple側条件、キャリア発行、Wi-Fi、キャリア設定、eSIM削除前の注意点から整理します。 iPhone 17 eSIM 追加できない 開通できない アクティベート中 クイック転送 再発行"
+  },
+  {
+    "title": "デュアルSIM・通話・SMS/RCSトラブル｜iPhone・Pixel・eSIMの深掘り解決",
+    "description": "デュアルSIMで別回線の着信を逃す、SMSが違う番号から送信される、Pixelで音声利用不可が出る、RCSが機種変更後に届かない、旅行eSIMと日本番号を併用したい、といった症状を深掘りします。",
+    "url": "/ja/technology/smartphone/dual-sim-messaging/",
+    "category": "デュアルSIM・通話・SMS/RCS",
+    "text": "デュアルSIM・通話・SMS/RCSトラブル｜iPhone・Pixel・eSIMの深掘り解決 デュアルSIMで別回線の着信を逃す、SMSが違う番号から送信される、Pixelで音声利用不可が出る、RCSが機種変更後に届かない、旅行eSIMと日本番号を併用したい、といった症状を深掘りします。 デュアルSIM DSDS SMS RCS eSIM 通話 旅行"
+  },
+  {
+    "title": "iPhoneのデュアルSIMで通話中にもう片方の回線へ着信しない時｜Wi-Fi通話とデータ切替を確認",
+    "description": "iPhoneで2回線を使い、一方で通話中にもう一方の番号へ着信しない・不在着信通知も出ない場合を、Wi-Fi通話、モバイルデータ通信の切替、留守番電話の条件から整理します。",
+    "url": "/ja/technology/smartphone/iphone-dual-sim-other-line-calls-missed-during-call/",
+    "category": "デュアルSIM・通話・SMS/RCS",
+    "text": "iPhoneのデュアルSIMで通話中にもう片方の回線へ着信しない時｜Wi-Fi通話とデータ切替を確認 iPhoneで2回線を使い、一方で通話中にもう一方の番号へ着信しない・不在着信通知も出ない場合を、Wi-Fi通話、モバイルデータ通信の切替、留守番電話の条件から整理します。 iPhone デュアルSIM 通話中 もう片方 着信しない 不在着信 Wi-Fi通話 モバイルデータ切替"
+  },
+  {
+    "title": "iPhoneのデュアルSIMでSMS・RCSが違う番号から送られる時｜送信回線を会話ごとに確認",
+    "description": "iPhoneにeSIMを追加した後、SMS・MMS・RCSが意図しない電話番号から送信される場合に、デフォルト番号、会話で使用中の回線、モバイルデータ回線を確認する方法を整理します。",
+    "url": "/ja/technology/smartphone/iphone-dual-sim-sms-rcs-wrong-number-after-esim/",
+    "category": "デュアルSIM・通話・SMS/RCS",
+    "text": "iPhoneのデュアルSIMでSMS・RCSが違う番号から送られる時｜送信回線を会話ごとに確認 iPhoneにeSIMを追加した後、SMS・MMS・RCSが意図しない電話番号から送信される場合に、デフォルト番号、会話で使用中の回線、モバイルデータ回線を確認する方法を整理します。 iPhone デュアルSIM SMS RCS 違う番号 eSIM 送信回線 メッセージ デフォルト回線"
+  },
+  {
+    "title": "PixelのデュアルSIMで「音声が利用できません」「音声割り込み」と出る時｜SIM組み合わせを切り分ける",
+    "description": "Google Pixelで2回線を有効にした後、「音声が利用できません」「音声割り込み」などの通知が出る場合に、DSDS、キャリア組み合わせ、自動データ切替、通話設定を確認します。",
+    "url": "/ja/technology/smartphone/pixel-dual-sim-voice-unavailable-interruption-notification/",
+    "category": "デュアルSIM・通話・SMS/RCS",
+    "text": "PixelのデュアルSIMで「音声が利用できません」「音声割り込み」と出る時｜SIM組み合わせを切り分ける Google Pixelで2回線を有効にした後、「音声が利用できません」「音声割り込み」などの通知が出る場合に、DSDS、キャリア組み合わせ、自動データ切替、通話設定を確認します。 Pixel デュアルSIM 音声が利用できません 音声割り込み DSDS 自動データ切替 Wi-Fi通話"
+  },
+  {
+    "title": "PixelでデュアルSIMにしたら5Gを掴まない時｜データSIM・5G設定・キャリア条件を確認",
+    "description": "Google Pixelで2回線を有効にした後に5G表示にならない場合を、データ通信のデフォルトSIM、5G対応、DSDS、キャリア・プラン・エリアの順で切り分けます。",
+    "url": "/ja/technology/smartphone/pixel-dual-sim-5g-not-showing-data-sim-check/",
+    "category": "デュアルSIM・通話・SMS/RCS",
+    "text": "PixelでデュアルSIMにしたら5Gを掴まない時｜データSIM・5G設定・キャリア条件を確認 Google Pixelで2回線を有効にした後に5G表示にならない場合を、データ通信のデフォルトSIM、5G対応、DSDS、キャリア・プラン・エリアの順で切り分けます。 Pixel デュアルSIM 5G 掴まない DSDS データSIM 5G表示 eSIM"
+  },
+  {
+    "title": "PixelのデュアルSIMでSMSが違うSIMから送信される時｜「テキストメッセージ」のプライマリSIMを確認",
+    "description": "Google Pixelで物理SIM＋eSIMや2つのeSIMを使い、SMSが意図しない番号から送信される場合に、通話・テキストメッセージ・モバイルデータのプライマリSIMを確認します。",
+    "url": "/ja/technology/smartphone/pixel-dual-sim-sms-wrong-sim-default-text/",
+    "category": "デュアルSIM・通話・SMS/RCS",
+    "text": "PixelのデュアルSIMでSMSが違うSIMから送信される時｜「テキストメッセージ」のプライマリSIMを確認 Google Pixelで物理SIM＋eSIMや2つのeSIMを使い、SMSが意図しない番号から送信される場合に、通話・テキストメッセージ・モバイルデータのプライマリSIMを確認します。 Pixel デュアルSIM SMS 違うSIM 送信 プライマリSIM テキストメッセージ eSIM"
+  },
+  {
+    "title": "Androidへ機種変更後にメッセージが届かない時｜旧端末のRCS登録を解除して電話番号を再確認",
+    "description": "Androidスマホへ機種変更した後、SMSは届くのにRCSメッセージが届かない、または一部の相手からメッセージが来ない場合に、旧端末のRCS登録、電話番号確認、無効化ポータルを確認します。",
+    "url": "/ja/technology/smartphone/android-new-phone-rcs-not-receiving-old-device-disable/",
+    "category": "デュアルSIM・通話・SMS/RCS",
+    "text": "Androidへ機種変更後にメッセージが届かない時｜旧端末のRCS登録を解除して電話番号を再確認 Androidスマホへ機種変更した後、SMSは届くのにRCSメッセージが届かない、または一部の相手からメッセージが来ない場合に、旧端末のRCS登録、電話番号確認、無効化ポータルを確認します。 Android 機種変更 RCS メッセージ 届かない 旧端末 登録解除 電話番号 接続中 SMS"
+  },
+  {
+    "title": "auのeSIM開通後にMMS・auメールが使えない時｜再起動とデュアルSIMの優先回線を確認",
+    "description": "auのeSIM開通後、iPhoneのメッセージアプリのMMSやAndroidのauメールが利用できない場合に、開通後再起動、モバイルデータ、デュアルSIMの優先SIM設定を確認します。",
+    "url": "/ja/technology/smartphone/au-esim-after-activation-mms-au-mail-not-working/",
+    "category": "デュアルSIM・通話・SMS/RCS",
+    "text": "auのeSIM開通後にMMS・auメールが使えない時｜再起動とデュアルSIMの優先回線を確認 auのeSIM開通後、iPhoneのメッセージアプリのMMSやAndroidのauメールが利用できない場合に、開通後再起動、モバイルデータ、デュアルSIMの優先SIM設定を確認します。 au eSIM 開通後 MMS auメール 使えない デュアルSIM 優先SIM 再起動"
+  },
+  {
+    "title": "海外旅行でデータeSIMを使いながら日本の電話番号でSMSを受ける方法｜iPhoneデュアルSIM設定",
+    "description": "海外旅行中に旅行用データeSIMで通信しつつ、日本の電話番号をオンにしてSMS・着信を受けたい場合のiPhoneデュアルSIM設定とローミング料金の注意点を整理します。",
+    "url": "/ja/technology/smartphone/iphone-travel-esim-keep-japan-number-sms/",
+    "category": "デュアルSIM・通話・SMS/RCS",
+    "text": "海外旅行でデータeSIMを使いながら日本の電話番号でSMSを受ける方法｜iPhoneデュアルSIM設定 海外旅行中に旅行用データeSIMで通信しつつ、日本の電話番号をオンにしてSMS・着信を受けたい場合のiPhoneデュアルSIM設定とローミング料金の注意点を整理します。 iPhone 海外旅行 eSIM 日本番号 SMS 受信 デュアルSIM 旅行eSIM ローミング"
+  },
+  {
+    "title": "Pixelで旅行eSIMを使いながら日本のSIMでSMSを受ける方法｜データ・通話・テキストの回線を分ける",
+    "description": "海外旅行でGoogle Pixelに旅行eSIMを追加し、日本のSIM/eSIMはSMS受信や電話番号維持に使いたい場合に、モバイルデータ・通話・テキストメッセージのプライマリSIMを分けて設定します。",
+    "url": "/ja/technology/smartphone/pixel-travel-esim-keep-japan-sim-sms/",
+    "category": "デュアルSIM・通話・SMS/RCS",
+    "text": "Pixelで旅行eSIMを使いながら日本のSIMでSMSを受ける方法｜データ・通話・テキストの回線を分ける 海外旅行でGoogle Pixelに旅行eSIMを追加し、日本のSIM/eSIMはSMS受信や電話番号維持に使いたい場合に、モバイルデータ・通話・テキストメッセージのプライマリSIMを分けて設定します。 Pixel 海外旅行 eSIM 日本SIM SMS 受信 デュアルSIM プライマリSIM 旅行eSIM"
+  },
+  {
+    "title": "海外版スマホで110・119は使える？日本で緊急通報を前提にする前に通信方式・VoLTE・動作保証を確認",
+    "description": "海外版・並行輸入スマホを日本のSIMで使う際に、通常のデータ通信ができても110・118・119の緊急通報まで使えると断定できない理由を、通信方式・VoLTE・キャリア動作保証から整理します。",
+    "url": "/ja/technology/smartphone/overseas-smartphone-emergency-call-not-guaranteed-japan/",
+    "category": "デュアルSIM・通話・SMS/RCS",
+    "text": "海外版スマホで110・119は使える？日本で緊急通報を前提にする前に通信方式・VoLTE・動作保証を確認 海外版・並行輸入スマホを日本のSIMで使う際に、通常のデータ通信ができても110・118・119の緊急通報まで使えると断定できない理由を、通信方式・VoLTE・キャリア動作保証から整理します。 海外版 スマホ 緊急通報 110 119 118 VoLTE IMS 日本 キャリア 動作保証 Band"
+  },
+  {
+    "title": "iPhoneで写真を削除するとiCloudからも消える？iCloud写真の「同期」と削除範囲を確認",
+    "description": "iCloud写真をオンにしたiPhoneで写真を削除した時、iCloudや他のApple製デバイスからも消える理由と、「最近削除した項目」から復元できる期間を整理します。",
+    "url": "/ja/technology/smartphone/icloud-photos-delete-iphone-also-deletes-cloud-all-devices/",
+    "category": "クラウド・ストレージ",
+    "text": "iPhoneで写真を削除するとiCloudからも消える？iCloud写真の「同期」と削除範囲を確認 iCloud写真をオンにしたiPhoneで写真を削除した時、iCloudや他のApple製デバイスからも消える理由と、「最近削除した項目」から復元できる期間を整理します。 クラウド ストレージ 同期 バックアップ 削除 容量 iCloud Googleフォト Google Drive Google One OneDrive"
+  },
+  {
+    "title": "iCloudストレージがいっぱいになると何が止まる？バックアップ・写真同期を切り分ける",
+    "description": "iCloudの空き容量がなくなった時に、iCloudバックアップや同期が完了しない理由と、iPhone本体ストレージ不足との違いを整理します。",
+    "url": "/ja/technology/smartphone/icloud-storage-full-backup-sync-stops/",
+    "category": "クラウド・ストレージ",
+    "text": "iCloudストレージがいっぱいになると何が止まる？バックアップ・写真同期を切り分ける iCloudの空き容量がなくなった時に、iCloudバックアップや同期が完了しない理由と、iPhone本体ストレージ不足との違いを整理します。 クラウド ストレージ 同期 バックアップ 削除 容量 iCloud Googleフォト Google Drive Google One OneDrive"
+  },
+  {
+    "title": "iCloud+を容量不足のままダウングレードするとどうなる？同期・バックアップ停止条件を確認",
+    "description": "iCloud+を現在の使用量より小さいプランへダウングレード・解約した場合に、容量変更のタイミングと同期・バックアップへの影響を整理します。",
+    "url": "/ja/technology/smartphone/icloud-plus-downgrade-storage-over-quota-what-happens/",
+    "category": "クラウド・ストレージ",
+    "text": "iCloud+を容量不足のままダウングレードするとどうなる？同期・バックアップ停止条件を確認 iCloud+を現在の使用量より小さいプランへダウングレード・解約した場合に、容量変更のタイミングと同期・バックアップへの影響を整理します。 クラウド ストレージ 同期 バックアップ 削除 容量 iCloud Googleフォト Google Drive Google One OneDrive"
+  },
+  {
+    "title": "Googleフォトで写真を削除するとスマホ本体からも消える？削除とバックアップの違い",
+    "description": "Googleフォトアプリから写真・動画を削除した場合に、クラウドだけでなく端末上の同じ写真も削除される動作と、安全に整理する考え方を解説します。",
+    "url": "/ja/technology/smartphone/google-photos-delete-app-also-deletes-device-photo/",
+    "category": "クラウド・ストレージ",
+    "text": "Googleフォトで写真を削除するとスマホ本体からも消える？削除とバックアップの違い Googleフォトアプリから写真・動画を削除した場合に、クラウドだけでなく端末上の同じ写真も削除される動作と、安全に整理する考え方を解説します。 クラウド ストレージ 同期 バックアップ 削除 容量 iCloud Googleフォト Google Drive Google One OneDrive"
+  },
+  {
+    "title": "Googleフォトの「このデバイスの空き容量を増やす」で写真は消える？クラウドと端末の残り方",
+    "description": "Googleフォトの「このデバイスの空き容量を増やす」を使った時、端末内コピーは削除されてもバックアップ済み写真はGoogleフォトに残る仕組みと確認手順を解説します。",
+    "url": "/ja/technology/smartphone/google-photos-free-up-space-cloud-remains-device-removed/",
+    "category": "クラウド・ストレージ",
+    "text": "Googleフォトの「このデバイスの空き容量を増やす」で写真は消える？クラウドと端末の残り方 Googleフォトの「このデバイスの空き容量を増やす」を使った時、端末内コピーは削除されてもバックアップ済み写真はGoogleフォトに残る仕組みと確認手順を解説します。 クラウド ストレージ 同期 バックアップ 削除 容量 iCloud Googleフォト Google Drive Google One OneDrive"
+  },
+  {
+    "title": "Googleの保存容量がいっぱいになると何が止まる？Drive・フォト・Gmailへの影響",
+    "description": "Googleアカウントの保存容量を使い切った場合に、Google Drive、Googleフォト、Gmailでできなくなる操作と、容量を確認・整理する順序をまとめます。",
+    "url": "/ja/technology/smartphone/google-account-storage-full-drive-photos-gmail-effects/",
+    "category": "クラウド・ストレージ",
+    "text": "Googleの保存容量がいっぱいになると何が止まる？Drive・フォト・Gmailへの影響 Googleアカウントの保存容量を使い切った場合に、Google Drive、Googleフォト、Gmailでできなくなる操作と、容量を確認・整理する順序をまとめます。 クラウド ストレージ 同期 バックアップ 削除 容量 iCloud Googleフォト Google Drive Google One OneDrive"
+  },
+  {
+    "title": "Google Driveでファイルを削除したのに容量が減らない時｜ゴミ箱・オーナー権限を確認",
+    "description": "Google Driveで大容量ファイルを削除したのに保存容量が減らない場合に、ゴミ箱内ファイルの容量計上、30日後の完全削除、オーナー権限を確認します。",
+    "url": "/ja/technology/smartphone/google-drive-deleted-files-storage-not-decreasing-trash-owner/",
+    "category": "クラウド・ストレージ",
+    "text": "Google Driveでファイルを削除したのに容量が減らない時｜ゴミ箱・オーナー権限を確認 Google Driveで大容量ファイルを削除したのに保存容量が減らない場合に、ゴミ箱内ファイルの容量計上、30日後の完全削除、オーナー権限を確認します。 クラウド ストレージ 同期 バックアップ 削除 容量 iCloud Googleフォト Google Drive Google One OneDrive"
+  },
+  {
+    "title": "Google Oneをダウングレード・解約すると保存データはどうなる？容量超過前に確認すること",
+    "description": "Google Oneのストレージプランを小さくする・解約する前に、現在の使用量、更新停止、保存容量超過時の影響を確認する手順を整理します。",
+    "url": "/ja/technology/smartphone/google-one-downgrade-cancel-over-storage-limit/",
+    "category": "クラウド・ストレージ",
+    "text": "Google Oneをダウングレード・解約すると保存データはどうなる？容量超過前に確認すること Google Oneのストレージプランを小さくする・解約する前に、現在の使用量、更新停止、保存容量超過時の影響を確認する手順を整理します。 クラウド ストレージ 同期 バックアップ 削除 容量 iCloud Googleフォト Google Drive Google One OneDrive"
+  },
+  {
+    "title": "OneDriveへ写真をバックアップ後、スマホ本体から削除しても大丈夫？カメラアップロードの仕組み",
+    "description": "OneDriveのカメラアップロードは双方向同期ではないため、バックアップ済み写真をiPhoneやAndroid本体から削除してもOneDrive側コピーは影響を受けない仕様を解説します。",
+    "url": "/ja/technology/smartphone/onedrive-camera-upload-delete-phone-photo-cloud-copy-remains/",
+    "category": "クラウド・ストレージ",
+    "text": "OneDriveへ写真をバックアップ後、スマホ本体から削除しても大丈夫？カメラアップロードの仕組み OneDriveのカメラアップロードは双方向同期ではないため、バックアップ済み写真をiPhoneやAndroid本体から削除してもOneDrive側コピーは影響を受けない仕様を解説します。 クラウド ストレージ 同期 バックアップ 削除 容量 iCloud Googleフォト Google Drive Google One OneDrive"
+  },
+  {
+    "title": "OneDriveが「いっぱい」になるとどうなる？読み取り専用・同期停止から戻す方法",
+    "description": "OneDriveのストレージ容量を超過した場合に、ファイルが読み取り専用になる状態、削除・ダウンロード、容量を上限内へ戻す手順を整理します。",
+    "url": "/ja/technology/smartphone/onedrive-full-read-only-storage-quota-recovery/",
+    "category": "クラウド・ストレージ",
+    "text": "OneDriveが「いっぱい」になるとどうなる？読み取り専用・同期停止から戻す方法 OneDriveのストレージ容量を超過した場合に、ファイルが読み取り専用になる状態、削除・ダウンロード、容量を上限内へ戻す手順を整理します。 クラウド ストレージ 同期 バックアップ 削除 容量 iCloud Googleフォト Google Drive Google One OneDrive"
+  },
+  {
+    "title": "MVNOのMNP予約番号発行方法一覧｜主要・コアな格安SIMをまとめて確認",
+    "description": "MVNO・格安SIMのMNP予約番号発行方法を一覧化。27サービスについて、発行窓口、発行日数、MNPワンストップ対応、個別解説へのリンクを整理します。",
+    "url": "/ja/technology/smartphone/mvno-mnp-reservation-number-directory/",
+    "category": "MVNO MNP一覧",
+    "text": "MVNOのMNP予約番号発行方法一覧｜主要・コアな格安SIMをまとめて確認 MVNO・格安SIMのMNP予約番号発行方法を一覧化。27サービスについて、発行窓口、発行日数、MNPワンストップ対応、個別解説へのリンクを整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "BIGLOBEモバイルのMNP予約番号発行方法｜Web申請・翌日までの通知・シェアSIMの注意",
+    "description": "BIGLOBEモバイルから他社へMNP転出する際の予約番号発行手順を解説。Web申請後の通知時期、15日間の有効期限、解約予約状態、シェアSIMの注意点も整理します。",
+    "url": "/ja/technology/smartphone/biglobe-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "BIGLOBEモバイルのMNP予約番号発行方法｜Web申請・翌日までの通知・シェアSIMの注意 BIGLOBEモバイルから他社へMNP転出する際の予約番号発行手順を解説。Web申請後の通知時期、15日間の有効期限、解約予約状態、シェアSIMの注意点も整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "NUROモバイルのMNP予約番号発行方法｜即日不可・1〜2日・再発行の注意",
+    "description": "NUROモバイルのMNP予約番号は即日発行ではなく、MNP転出による解約申請後1〜2日かかります。My Pageの流れ、ワンストップ、有効期限切れ後の扱いを整理します。",
+    "url": "/ja/technology/smartphone/nuro-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "NUROモバイルのMNP予約番号発行方法｜即日不可・1〜2日・再発行の注意 NUROモバイルのMNP予約番号は即日発行ではなく、MNP転出による解約申請後1〜2日かかります。My Pageの流れ、ワンストップ、有効期限切れ後の扱いを整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "日本通信SIMのMNP予約番号発行方法｜マイページ・最大2日・ワンストップ対応",
+    "description": "日本通信SIMからMNP転出する方法を解説。マイページのMNP予約番号取得、発行に2日かかる場合、有効期限15日、登録情報不一致の注意点を整理します。",
+    "url": "/ja/technology/smartphone/nihontsushin-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "日本通信SIMのMNP予約番号発行方法｜マイページ・最大2日・ワンストップ対応 日本通信SIMからMNP転出する方法を解説。マイページのMNP予約番号取得、発行に2日かかる場合、有効期限15日、登録情報不一致の注意点を整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "HISモバイルのMNP予約番号発行方法｜My HISモバイル・発行日数・取得できない時",
+    "description": "HISモバイルのMNP予約番号をMy HISモバイルから取得する方法と、回線種別による発行目安、取得ボタンが押せないケース、ワンストップ対応を整理します。",
+    "url": "/ja/technology/smartphone/his-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "HISモバイルのMNP予約番号発行方法｜My HISモバイル・発行日数・取得できない時 HISモバイルのMNP予約番号をMy HISモバイルから取得する方法と、回線種別による発行目安、取得ボタンが押せないケース、ワンストップ対応を整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "QTモバイルのMNP予約番号発行方法｜Dタイプ2〜5日・A/Sタイプ翌日以降",
+    "description": "QTモバイルのMNP予約番号をQTnet会員専用ページまたは電話で発行する方法を解説。回線タイプ別の発行日数、14日間の有効期限、再発行条件を整理します。",
+    "url": "/ja/technology/smartphone/qtmobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "QTモバイルのMNP予約番号発行方法｜Dタイプ2〜5日・A/Sタイプ翌日以降 QTモバイルのMNP予約番号をQTnet会員専用ページまたは電話で発行する方法を解説。回線タイプ別の発行日数、14日間の有効期限、再発行条件を整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "BB.exciteモバイルのMNP予約番号発行方法｜2〜5日・キャンセル不可・再発行時期",
+    "description": "BB.exciteモバイルからMNP転出する際の予約番号発行方法を解説。発行に2〜5日、15日間の有効期限、申請キャンセル不可、手続き中の契約変更制限も整理します。",
+    "url": "/ja/technology/smartphone/bb-excite-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "BB.exciteモバイルのMNP予約番号発行方法｜2〜5日・キャンセル不可・再発行時期 BB.exciteモバイルからMNP転出する際の予約番号発行方法を解説。発行に2〜5日、15日間の有効期限、申請キャンセル不可、手続き中の契約変更制限も整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "LinksMateのMNP予約番号発行方法｜マイページ・複数SIM・再発行の待ち時間",
+    "description": "LinksMateのMNP予約番号はマイページの「MNP予約番号発行・確認」から申請できます。複数SIM契約時の順序、期限切れ後の再発行待ちも整理します。",
+    "url": "/ja/technology/smartphone/linksmate-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "LinksMateのMNP予約番号発行方法｜マイページ・複数SIM・再発行の待ち時間 LinksMateのMNP予約番号はマイページの「MNP予約番号発行・確認」から申請できます。複数SIM契約時の順序、期限切れ後の再発行待ちも整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "y.u mobileのMNP予約番号発行方法｜支払い方法エラー・シェア追加SIMの注意",
+    "description": "y.u mobileのMNP予約番号をマイページから発行する手順を解説。支払い方法が無効な場合、発行準備中表示、シェア追加SIMの手続きも整理します。",
+    "url": "/ja/technology/smartphone/yu-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "y.u mobileのMNP予約番号発行方法｜支払い方法エラー・シェア追加SIMの注意 y.u mobileのMNP予約番号をマイページから発行する手順を解説。支払い方法が無効な場合、発行準備中表示、シェア追加SIMの手続きも整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "NifMoのMNP予約番号発行方法｜音声SIMのみ・データ/SMS SIMは転出不可",
+    "description": "NifMoから他社へMNP転出する際の予約番号発行と解約の関係を解説。音声SIMが対象で、データ専用SIM・SMS対応SIMはMNP転出できない点も整理します。",
+    "url": "/ja/technology/smartphone/nifmo-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "NifMoのMNP予約番号発行方法｜音声SIMのみ・データ/SMS SIMは転出不可 NifMoから他社へMNP転出する際の予約番号発行と解約の関係を解説。音声SIMが対象で、データ専用SIM・SMS対応SIMはMNP転出できない点も整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "OCN モバイル ONEのMNP予約番号発行方法｜OCNマイページ・3営業日程度",
+    "description": "新規受付終了後も契約中のOCN モバイル ONEからMNP転出する方法を解説。OCNマイページでの予約番号発行、3営業日程度の所要時間、ワンストップを整理します。",
+    "url": "/ja/technology/smartphone/ocn-mobile-one-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "OCN モバイル ONEのMNP予約番号発行方法｜OCNマイページ・3営業日程度 新規受付終了後も契約中のOCN モバイル ONEからMNP転出する方法を解説。OCNマイページでの予約番号発行、3営業日程度の所要時間、ワンストップを整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "LIBMOのMNP予約番号発行方法｜マイページ・複数回線は1回線ずつ手続き",
+    "description": "LIBMOから他社へMNP転出する際の予約番号発行方法を解説。LIBMOマイページ、複数回線の1回線ずつの申請、割引・端末残債などの注意点を整理します。",
+    "url": "/ja/technology/smartphone/libmo-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "LIBMOのMNP予約番号発行方法｜マイページ・複数回線は1回線ずつ手続き LIBMOから他社へMNP転出する際の予約番号発行方法を解説。LIBMOマイページ、複数回線の1回線ずつの申請、割引・端末残債などの注意点を整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "イオンモバイルのMNP予約番号発行方法｜8時までなら当日23時・電話/店舗にも対応",
+    "description": "イオンモバイルのMNP予約番号をマイページ・電話・店舗で発行する方法を解説。当日8時までの申請時刻、15日間の有効期限、発行できない条件も整理します。",
+    "url": "/ja/technology/smartphone/aeon-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "イオンモバイルのMNP予約番号発行方法｜8時までなら当日23時・電話/店舗にも対応 イオンモバイルのMNP予約番号をマイページ・電話・店舗で発行する方法を解説。当日8時までの申請時刻、15日間の有効期限、発行できない条件も整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "KABU&モバイルのMNP予約番号発行方法｜マイページ手続き・ワンストップ対応",
+    "description": "KABU&モバイルから他社へ乗り換える際のMNP予約番号発行方法を解説。マイページでの手続き、ワンストップ利用時の考え方、発行前の確認事項を整理します。",
+    "url": "/ja/technology/smartphone/kabuand-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "KABU&モバイルのMNP予約番号発行方法｜マイページ手続き・ワンストップ対応 KABU&モバイルから他社へ乗り換える際のMNP予約番号発行方法を解説。マイページでの手続き、ワンストップ利用時の考え方、発行前の確認事項を整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "メルカリモバイルのMNP予約番号発行方法｜1〜4日・ギガ出品中は手続き不可",
+    "description": "メルカリモバイルから他社へMNP転出する手順を解説。アプリ内での予約番号申請、通常1〜4日、15日間の有効期限、SIM再発行中やギガ出品中などの制限を整理します。",
+    "url": "/ja/technology/smartphone/mercari-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "メルカリモバイルのMNP予約番号発行方法｜1〜4日・ギガ出品中は手続き不可 メルカリモバイルから他社へMNP転出する手順を解説。アプリ内での予約番号申請、通常1〜4日、15日間の有効期限、SIM再発行中やギガ出品中などの制限を整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "Smiles ConnectのMNP予約番号発行方法｜アプリでSMS認証してRequest MNP number",
+    "description": "Smiles Connectから他社へMNP転出する際の予約番号申請手順を解説。Planタブ、解約申請、MNP選択、SMS認証、「Request MNP number」まで整理します。",
+    "url": "/ja/technology/smartphone/smiles-connect-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "Smiles ConnectのMNP予約番号発行方法｜アプリでSMS認証してRequest MNP number Smiles Connectから他社へMNP転出する際の予約番号申請手順を解説。Planタブ、解約申請、MNP選択、SMS認証、「Request MNP number」まで整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "b-mobileのMNP予約番号発行方法｜マイページ・未利用SIMは発行不可・15日間",
+    "description": "b-mobileから他社へMNP転出する際の予約番号発行方法を解説。マイページでの申請、未利用SIMでは発行できない条件、有効期限15日、ワンストップ対応を整理します。",
+    "url": "/ja/technology/smartphone/b-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "b-mobileのMNP予約番号発行方法｜マイページ・未利用SIMは発行不可・15日間 b-mobileから他社へMNP転出する際の予約番号発行方法を解説。マイページでの申請、未利用SIMでは発行できない条件、有効期限15日、ワンストップ対応を整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "TONEモバイルのMNP予約番号発行方法｜MY TONE・15日間・090音声オプションの注意",
+    "description": "TONEモバイルから他社へMNP転出する際の予約番号発行方法を解説。MY TONEからの手続き、有効期限15日、090音声オプションや基本サービスへの影響を整理します。",
+    "url": "/ja/technology/smartphone/tone-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "TONEモバイルのMNP予約番号発行方法｜MY TONE・15日間・090音声オプションの注意 TONEモバイルから他社へMNP転出する際の予約番号発行方法を解説。MY TONEからの手続き、有効期限15日、090音声オプションや基本サービスへの影響を整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "ANAモバイルのMNP予約番号発行方法｜マイページ・1〜4日・データSIMは転出不可",
+    "description": "ANAモバイルから他社へMNP転出する方法を解説。マイページでの予約番号発行、1〜4日の発行目安、15日間の有効期限、データSIMはMNP転出不可という条件を整理します。",
+    "url": "/ja/technology/smartphone/ana-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "ANAモバイルのMNP予約番号発行方法｜マイページ・1〜4日・データSIMは転出不可 ANAモバイルから他社へMNP転出する方法を解説。マイページでの予約番号発行、1〜4日の発行目安、15日間の有効期限、データSIMはMNP転出不可という条件を整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
+  },
+  {
+    "title": "BIC SIMのMNP予約番号発行方法｜実質IIJmio手続き・ワンストップ・発行待ちの注意",
+    "description": "BIC SIMから他社へMNP転出する方法を解説。BIC SIMはIIJmio基盤のため、契約後の転出手続きはIIJmio会員専用ページを基準に確認し、MNPワンストップと予約番号方式の違いも整理します。",
+    "url": "/ja/technology/smartphone/bic-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "BIC SIMのMNP予約番号発行方法｜実質IIJmio手続き・ワンストップ・発行待ちの注意 BIC SIMから他社へMNP転出する方法を解説。BIC SIMはIIJmio基盤のため、契約後の転出手続きはIIJmio会員専用ページを基準に確認し、MNPワンストップと予約番号方式の違いも整理します。 MNP 予約番号 ワンストップ 格安SIM 転出"
+  },
+  {
+    "title": "J:COM MOBILEのMNP予約番号・転出方法｜ワンストップ対応・予約番号が必要な場合",
+    "description": "J:COM MOBILEから他社へ電話番号を引き継ぐ際の考え方を解説。MNPワンストップ、予約番号方式、有効期限15日の基本、Web・電話・店頭を使う場合の注意を整理します。",
+    "url": "/ja/technology/smartphone/jcom-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "J:COM MOBILEのMNP予約番号・転出方法｜ワンストップ対応・予約番号が必要な場合 J:COM MOBILEから他社へ電話番号を引き継ぐ際の考え方を解説。MNPワンストップ、予約番号方式、有効期限15日の基本、Web・電話・店頭を使う場合の注意を整理します。 MNP 予約番号 ワンストップ 格安SIM 転出"
+  },
+  {
+    "title": "センターモバイルのMNP転出・予約番号確認方法｜ワンストップと契約者窓口の使い分け",
+    "description": "センターモバイルから他社へMNP転出する場合の確認手順を整理。ワンストップを使う場合と予約番号方式を使う場合を分け、公開公式情報で確認できる範囲と確認が必要な項目を明示します。",
+    "url": "/ja/technology/smartphone/center-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "センターモバイルのMNP転出・予約番号確認方法｜ワンストップと契約者窓口の使い分け センターモバイルから他社へMNP転出する場合の確認手順を整理。ワンストップを使う場合と予約番号方式を使う場合を分け、公開公式情報で確認できる範囲と確認が必要な項目を明示します。 MNP 予約番号 ワンストップ 格安SIM 転出"
+  },
+  {
+    "title": "LPモバイルのMNP転出方法｜ワンストップ対応・予約番号方式はサポート確認",
+    "description": "LPモバイルから他社へMNPする際の手順を整理。MNPワンストップ対応、予約番号方式を使う場合の確認先、公開情報で発行日数が明記されていない場合の判断方法を解説します。",
+    "url": "/ja/technology/smartphone/lp-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "LPモバイルのMNP転出方法｜ワンストップ対応・予約番号方式はサポート確認 LPモバイルから他社へMNPする際の手順を整理。MNPワンストップ対応、予約番号方式を使う場合の確認先、公開情報で発行日数が明記されていない場合の判断方法を解説します。 MNP 予約番号 ワンストップ 格安SIM 転出"
+  },
+  {
+    "title": "RayL MOBILEのMNP転出・予約番号確認方法｜15日有効・名義一致・再申込の注意",
+    "description": "RayL MOBILEのMNP関連手続きを解説。MNP予約番号の15日有効、名義一致、キャンセル後の再申込、サポート窓口など、公式ページで確認できる注意点を整理します。",
+    "url": "/ja/technology/smartphone/rayl-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "RayL MOBILEのMNP転出・予約番号確認方法｜15日有効・名義一致・再申込の注意 RayL MOBILEのMNP関連手続きを解説。MNP予約番号の15日有効、名義一致、キャンセル後の再申込、サポート窓口など、公式ページで確認できる注意点を整理します。 MNP 予約番号 ワンストップ 格安SIM 転出"
+  },
+  {
+    "title": "FLASH MOBILEのMNP転出方法｜ワンストップ対応・予約番号が必要な場合の確認手順",
+    "description": "FLASH MOBILEのMNP転出を整理。2025年からのMNPワンストップ対応、予約番号方式が必要な場合の確認先、公開公式情報で発行日数を断定しない理由を解説します。",
+    "url": "/ja/technology/smartphone/flash-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "FLASH MOBILEのMNP転出方法｜ワンストップ対応・予約番号が必要な場合の確認手順 FLASH MOBILEのMNP転出を整理。2025年からのMNPワンストップ対応、予約番号方式が必要な場合の確認先、公開公式情報で発行日数を断定しない理由を解説します。 MNP 予約番号 ワンストップ 格安SIM 転出"
+  },
+  {
+    "title": "ジャパネットたかた通信サービスのMNP転出方法｜ワイモバイル基盤・ワンストップ・問い合わせ先",
+    "description": "ジャパネットたかた通信サービスから他社へMNPする場合の確認方法を解説。ワイモバイル通信サービス基盤、MNPワンストップ対象、契約内容の問い合わせ先を整理します。",
+    "url": "/ja/technology/smartphone/japanet-mobile-service-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "ジャパネットたかた通信サービスのMNP転出方法｜ワイモバイル基盤・ワンストップ・問い合わせ先 ジャパネットたかた通信サービスから他社へMNPする場合の確認方法を解説。ワイモバイル通信サービス基盤、MNPワンストップ対象、契約内容の問い合わせ先を整理します。 MNP 予約番号 ワンストップ 格安SIM 転出"
+  },
+  {
+    "title": "DTI SIMのMNP予約番号発行方法｜MyDTIで解約手続きと同時に申請",
+    "description": "DTI SIMから他社へMNP転出する方法を解説。MyDTIから対象契約の解約手続きへ進み、その中でMNP転出予約番号を申請する公式手順と、音声プランのみMNP対象となる点を整理します。",
+    "url": "/ja/technology/smartphone/dti-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "DTI SIMのMNP予約番号発行方法｜MyDTIで解約手続きと同時に申請 DTI SIMから他社へMNP転出する方法を解説。MyDTIから対象契約の解約手続きへ進み、その中でMNP転出予約番号を申請する公式手順と、音声プランのみMNP対象となる点を整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 独立MVNO"
+  },
+  {
+    "title": "ロケットモバイルのMNP予約番号発行方法｜発行されない時のプラン変更予約・旧番号残存を確認",
+    "description": "ロケットモバイルからMNP転出する際の予約番号発行と、予約番号が発行されない時の原因を解説。翌月プラン変更予約や過去に発行した予約番号が残っている場合の公式対処も整理します。",
+    "url": "/ja/technology/smartphone/rocket-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "ロケットモバイルのMNP予約番号発行方法｜発行されない時のプラン変更予約・旧番号残存を確認 ロケットモバイルからMNP転出する際の予約番号発行と、予約番号が発行されない時の原因を解説。翌月プラン変更予約や過去に発行した予約番号が残っている場合の公式対処も整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 独立MVNO"
+  },
+  {
+    "title": "Xmobile（シン・プラン／グリーンプラン）のMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "Xmobile（シン・プラン／グリーンプラン）から他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/xmobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "Xmobile（シン・プラン／グリーンプラン）のMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 Xmobile（シン・プラン／グリーンプラン）から他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "HORIE MOBILE / HORIMOのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "HORIE MOBILE / HORIMOから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/horie-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "HORIE MOBILE / HORIMOのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 HORIE MOBILE / HORIMOから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "D-lab SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "D-lab SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/d-lab-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "D-lab SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 D-lab SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "livedoor MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "livedoor MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/livedoor-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "livedoor MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 livedoor MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "幻冬舎MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "幻冬舎MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/gentosha-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "幻冬舎MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 幻冬舎MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "Tackle Berry SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "Tackle Berry SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/tackle-berry-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "Tackle Berry SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 Tackle Berry SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "マジモバ SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "マジモバ SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/maji-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "マジモバ SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 マジモバ SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "クリモバSIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "クリモバSIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/kurimoba-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "クリモバSIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 クリモバSIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "ハピモバSIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "ハピモバSIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/hapimoba-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "ハピモバSIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 ハピモバSIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "ベルモバ SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "ベルモバ SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/bell-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "ベルモバ SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 ベルモバ SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "FFBC SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "FFBC SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/ffbc-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "FFBC SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 FFBC SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "REDX MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "REDX MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/redx-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "REDX MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 REDX MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "SHINGO MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "SHINGO MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/shingo-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "SHINGO MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 SHINGO MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "レリモバSIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "レリモバSIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/rerimoba-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "レリモバSIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 レリモバSIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "グリーン plus ♥ AiのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "グリーン plus ♥ Aiから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/green-plus-ai-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "グリーン plus ♥ AiのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 グリーン plus ♥ Aiから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "たかみーモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "たかみーモバイル SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/takami-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "たかみーモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 たかみーモバイル SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "MetaKozo MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "MetaKozo MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/metakozo-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "MetaKozo MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 MetaKozo MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "DAVE MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "DAVE MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/dave-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "DAVE MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 DAVE MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "Dstyle MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "Dstyle MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/dstyle-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "Dstyle MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 Dstyle MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "ミュゼモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "ミュゼモバイル SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/musee-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "ミュゼモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 ミュゼモバイル SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "AVA MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "AVA MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/ava-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "AVA MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 AVA MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "CR MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "CR MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/cr-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "CR MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 CR MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "BTC モバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "BTC モバイル SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/btc-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "BTC モバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 BTC モバイル SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "Cool girlモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "Cool girlモバイル SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/cool-girl-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "Cool girlモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 Cool girlモバイル SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "BUZZモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "BUZZモバイル SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/buzz-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "BUZZモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 BUZZモバイル SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "井川MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "井川MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/ikawa-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "井川MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 井川MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
+    "title": "誰でもスマホのMNP予約番号発行方法｜ヘルプデスクへ連絡して転出",
+    "description": "誰でもスマホから他社へMNP転出する方法を解説。公式FAQで案内されているヘルプデスクでのMNP予約番号発行と、転入時の有効期限条件を整理します。",
+    "url": "/ja/technology/smartphone/daredemo-smartphone-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "誰でもスマホのMNP予約番号発行方法｜ヘルプデスクへ連絡して転出 誰でもスマホから他社へMNP転出する方法を解説。公式FAQで案内されているヘルプデスクでのMNP予約番号発行と、転入時の有効期限条件を整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 支援型モバイルサービス"
+  },
+  {
+    "title": "JALモバイルのMNP転出方法｜powered by ahamoとIIJmioで手続き先が違う",
+    "description": "JALモバイルから他社へMNPする際の手続きを、powered by ahamoとpowered by IIJmioに分けて解説。JAL特典窓口ではなく基盤サービス側で契約・解約手続きを確認する点を整理します。",
+    "url": "/ja/technology/smartphone/jal-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "JALモバイルのMNP転出方法｜powered by ahamoとIIJmioで手続き先が違う JALモバイルから他社へMNPする際の手続きを、powered by ahamoとpowered by IIJmioに分けて解説。JAL特典窓口ではなく基盤サービス側で契約・解約手続きを確認する点を整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 提携モバイルサービス"
+  },
+  {
+    "title": "ピカラモバイルのMNP予約番号発行方法｜Myページ・サービスセンターと有効期限15日",
+    "description": "ピカラモバイルから他社へMNP転出する方法を、Myページとサービスセンターの公式手順で解説。予約番号の有効期限15日、転出完了まで契約が継続する点も整理します。",
+    "url": "/ja/technology/smartphone/pikara-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "ピカラモバイルのMNP予約番号発行方法｜Myページ・サービスセンターと有効期限15日 ピカラモバイルから他社へMNP転出する方法を、Myページとサービスセンターの公式手順で解説。予約番号の有効期限15日、転出完了まで契約が継続する点も整理します。 MNP 予約番号 発行できない 格安SIM MVNO 転出"
+  },
+  {
+    "title": "ヤマダニューモバイルのMNP予約番号発行方法｜新規受付終了後の既存契約者向け手順",
+    "description": "ヤマダニューモバイル既存契約者が他社へMNP転出する方法を解説。新規申込受付終了後も、公式FAQでMNP予約番号をマイページから発行する手順が案内されています。",
+    "url": "/ja/technology/smartphone/yamada-new-mobile-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "ヤマダニューモバイルのMNP予約番号発行方法｜新規受付終了後の既存契約者向け手順 ヤマダニューモバイル既存契約者が他社へMNP転出する方法を解説。新規申込受付終了後も、公式FAQでMNP予約番号をマイページから発行する手順が案内されています。 MNP 予約番号 発行できない 格安SIM MVNO 転出"
+  },
+  {
+    "title": "Tikimo SIMのMNP予約番号発行方法｜会員サービスメニュー・約5営業日",
+    "description": "Tikimo SIMからMNP転出する方法を解説。会員サービスメニューから予約番号を申請し、TikiTikiメールへ通知される公式手順、発行まで5営業日程度、有効期限切れ後の再申請を整理します。",
+    "url": "/ja/technology/smartphone/tikimo-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "Tikimo SIMのMNP予約番号発行方法｜会員サービスメニュー・約5営業日 Tikimo SIMからMNP転出する方法を解説。会員サービスメニューから予約番号を申請し、TikiTikiメールへ通知される公式手順、発行まで5営業日程度、有効期限切れ後の再申請を整理します。 MNP 予約番号 発行できない 格安SIM MVNO 転出"
+  },
+  {
+    "title": "ASAHIネット LTE ANSIMのMNP予約番号発行方法｜マイページから通話SIMを転出",
+    "description": "ASAHIネット LTE ANSIMの通話SIMから他社へMNP転出する方法を解説。マイページでの予約番号発行、転出完了日が最終利用日になる公式ルールを整理します。",
+    "url": "/ja/technology/smartphone/asahi-net-ansim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "ASAHIネット LTE ANSIMのMNP予約番号発行方法｜マイページから通話SIMを転出 ASAHIネット LTE ANSIMの通話SIMから他社へMNP転出する方法を解説。マイページでの予約番号発行、転出完了日が最終利用日になる公式ルールを整理します。 MNP 予約番号 発行できない 格安SIM MVNO 転出"
+  },
+  {
+    "title": "hi-ho LTE typeDのMNP予約番号発行方法｜Myサポート・約4日・発行できない条件",
+    "description": "hi-ho LTE typeDの音声通話対応SIMからMNP転出する方法を解説。Myサポートからの予約番号発行、約4日、有効期限15日、解約申込中やSIM削除・交換時に発行できない条件を整理します。",
+    "url": "/ja/technology/smartphone/hiho-lte-typed-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "hi-ho LTE typeDのMNP予約番号発行方法｜Myサポート・約4日・発行できない条件 hi-ho LTE typeDの音声通話対応SIMからMNP転出する方法を解説。Myサポートからの予約番号発行、約4日、有効期限15日、解約申込中やSIM削除・交換時に発行できない条件を整理します。 MNP 予約番号 発行できない 格安SIM MVNO 転出"
+  },
+  {
+    "title": "G-Call SIMのMNP予約番号発行方法｜マイG-Call・2〜3日・発行通知なし",
+    "description": "G-Call SIMのMNP予約番号発行方法を解説。マイG-Callからの申請手順、2〜3日後の確認、発行通知がない点、旧プランから新プラン移行時にもMNPを使う特殊手順を整理します。",
+    "url": "/ja/technology/smartphone/g-call-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "G-Call SIMのMNP予約番号発行方法｜マイG-Call・2〜3日・発行通知なし G-Call SIMのMNP予約番号発行方法を解説。マイG-Callからの申請手順、2〜3日後の確認、発行通知がない点、旧プランから新プラン移行時にもMNPを使う特殊手順を整理します。 MNP 予約番号 発行できない 格安SIM MVNO 転出"
+  },
+  {
+    "title": "MVNOでMNP予約番号が発行されない原因一覧｜解約申込・SIM変更・プラン変更・旧番号残存を切り分け",
+    "description": "MVNOでMNP予約番号が発行されない時の原因を、解約申込中、SIM削除・交換中、翌月プラン変更予約、過去の予約番号残存、データ専用SIMなどに分けて切り分けます。",
+    "url": "/ja/technology/smartphone/mvno-mnp-number-not-issued-causes/",
+    "category": "MVNO MNPトラブル",
+    "text": "MVNOでMNP予約番号が発行されない原因一覧｜解約申込・SIM変更・プラン変更・旧番号残存を切り分け MVNOでMNP予約番号が発行されない時の原因を、解約申込中、SIM削除・交換中、翌月プラン変更予約、過去の予約番号残存、データ専用SIMなどに分けて切り分けます。 MNP 予約番号 発行できない 格安SIM MVNO 転出"
+  },
+  {
+    "title": "MVNOのMNP予約番号が期限切れ｜再発行できない時に確認する順番",
+    "description": "MNP予約番号の有効期限が切れた場合の再発行を解説。旧予約番号が失効するまで再申請できない事業者、発行中状態が数日残る事業者、転出先が求める残日数の違いを整理します。",
+    "url": "/ja/technology/smartphone/mvno-mnp-number-expired-reissue-guide/",
+    "category": "MVNO MNPトラブル",
+    "text": "MVNOのMNP予約番号が期限切れ｜再発行できない時に確認する順番 MNP予約番号の有効期限が切れた場合の再発行を解説。旧予約番号が失効するまで再申請できない事業者、発行中状態が数日残る事業者、転出先が求める残日数の違いを整理します。 MNP 予約番号 発行できない 格安SIM MVNO 転出"
+  },
+  {
+    "title": "SIM再発行・サイズ変更・プラン変更中にMNPできない？MVNOの競合手続きを確認",
+    "description": "SIM再発行、SIM交換、サイズ変更、プラン変更予約とMNP予約番号発行が競合するケースを整理。先にどちらを完了すべきかを公式事例から判断します。",
+    "url": "/ja/technology/smartphone/mvno-mnp-during-sim-reissue-plan-change/",
+    "category": "MVNO MNPトラブル",
+    "text": "SIM再発行・サイズ変更・プラン変更中にMNPできない？MVNOの競合手続きを確認 SIM再発行、SIM交換、サイズ変更、プラン変更予約とMNP予約番号発行が競合するケースを整理。先にどちらを完了すべきかを公式事例から判断します。 MNP 予約番号 発行できない 格安SIM MVNO 転出"
+  },
+  {
+    "title": "MVNOのMNP予約番号は何日かかる？即時ではない事業者の発行日数比較",
+    "description": "MVNOのMNP予約番号発行日数を公式情報ベースで比較。IIJmio、BB.excite、Tikimo SIM、hi-ho、G-Call SIMなど、即時発行ではない事業者を中心に手続き開始日を逆算します。",
+    "url": "/ja/technology/smartphone/mvno-mnp-issue-time-comparison-longtail/",
+    "category": "MVNO MNPトラブル",
+    "text": "MVNOのMNP予約番号は何日かかる？即時ではない事業者の発行日数比較 MVNOのMNP予約番号発行日数を公式情報ベースで比較。IIJmio、BB.excite、Tikimo SIM、hi-ho、G-Call SIMなど、即時発行ではない事業者を中心に手続き開始日を逆算します。 MNP 予約番号 発行できない 格安SIM MVNO 転出"
+  },
+  {
+    "title": "データ専用SIMはMNPできない？音声SIM・SMS付きSIMとの違いを整理",
+    "description": "MVNOのデータ専用SIMやSMS付きデータSIMがMNP対象になるかを整理。電話番号が表示されていても、音声通話番号としてMNPできるとは限らない理由と確認方法を解説します。",
+    "url": "/ja/technology/smartphone/mvno-data-sim-mnp-not-eligible-guide/",
+    "category": "MVNO MNPトラブル",
+    "text": "データ専用SIMはMNPできない？音声SIM・SMS付きSIMとの違いを整理 MVNOのデータ専用SIMやSMS付きデータSIMがMNP対象になるかを整理。電話番号が表示されていても、音声通話番号としてMNPできるとは限らない理由と確認方法を解説します。 MNP 予約番号 発行できない 格安SIM MVNO 転出"
+  },
+  {
+    "title": "新規受付終了したMVNOからMNPする方法｜既存契約者ページ・マイページを探す",
+    "description": "新規受付を終了したMVNOでも既存契約が残っている場合のMNP転出方法を解説。サービスTOPではなく既存契約者FAQ・マイページ・運営会社サポートを探す手順を整理します。",
+    "url": "/ja/technology/smartphone/mvno-mnp-old-service-existing-users-guide/",
+    "category": "MVNO MNPトラブル",
+    "text": "新規受付終了したMVNOからMNPする方法｜既存契約者ページ・マイページを探す 新規受付を終了したMVNOでも既存契約が残っている場合のMNP転出方法を解説。サービスTOPではなく既存契約者FAQ・マイページ・運営会社サポートを探す手順を整理します。 MNP 予約番号 発行できない 格安SIM MVNO 転出"
+  },
+  {
+    "title": "IIJmioでMNP予約番号を再発行できない｜発行中・期限切れ・SIM再発行の競合を整理",
+    "description": "IIJmioでMNP予約番号の再発行やSIM再発行ができない時の原因を解説。予約番号発行中、有効期限内、期限切れ後の解除時刻、SIM再発行との競合を公式FAQベースで整理します。",
+    "url": "/ja/technology/smartphone/iijmio-mnp-number-reissue-sim-reissue-blocked/",
+    "category": "MVNO MNPトラブル",
+    "text": "IIJmioでMNP予約番号を再発行できない｜発行中・期限切れ・SIM再発行の競合を整理 IIJmioでMNP予約番号の再発行やSIM再発行ができない時の原因を解説。予約番号発行中、有効期限内、期限切れ後の解除時刻、SIM再発行との競合を公式FAQベースで整理します。 MNP 予約番号 発行できない 再発行 解約 SIM 名義 ワンストップ"
+  },
+  {
+    "title": "mineoのMNP予約番号がすぐ出ない・キャンセルしたい｜受付時間とパケットシェアを確認",
+    "description": "mineoでMNP予約番号がすぐ表示されない時やキャンセルしたい時の確認ポイントを解説。24時間受付と時間外の順次対応、パケットシェアとの関係を公式情報で整理します。",
+    "url": "/ja/technology/smartphone/mineo-mnp-number-delayed-cancel-packet-share/",
+    "category": "MVNO MNPトラブル",
+    "text": "mineoのMNP予約番号がすぐ出ない・キャンセルしたい｜受付時間とパケットシェアを確認 mineoでMNP予約番号がすぐ表示されない時やキャンセルしたい時の確認ポイントを解説。24時間受付と時間外の順次対応、パケットシェアとの関係を公式情報で整理します。 MNP 予約番号 発行できない 再発行 解約 SIM 名義 ワンストップ"
+  },
+  {
+    "title": "BIGLOBEモバイルのMNP予約番号が期限切れ｜再発行と解約申込の扱い",
+    "description": "BIGLOBEモバイルでMNP予約番号を使わず期限切れになった場合の再発行方法を解説。先に行った解約申込が失効時にキャンセルされる公式ルールも整理します。",
+    "url": "/ja/technology/smartphone/biglobe-mobile-mnp-number-expired-reissue-cancellation/",
+    "category": "MVNO MNPトラブル",
+    "text": "BIGLOBEモバイルのMNP予約番号が期限切れ｜再発行と解約申込の扱い BIGLOBEモバイルでMNP予約番号を使わず期限切れになった場合の再発行方法を解説。先に行った解約申込が失効時にキャンセルされる公式ルールも整理します。 MNP 予約番号 発行できない 再発行 解約 SIM 名義 ワンストップ"
+  },
+  {
+    "title": "日本通信SIMからMNPできない｜名義・生年月日不一致と「最大2日」を確認",
+    "description": "日本通信SIMから他社へMNPできない場合を解説。契約者氏名・生年月日の不一致、MNP予約番号やワンストップに最大2日かかる場合、マイページログインを確認します。",
+    "url": "/ja/technology/smartphone/nihontsushin-sim-mnp-name-mismatch-two-days/",
+    "category": "MVNO MNPトラブル",
+    "text": "日本通信SIMからMNPできない｜名義・生年月日不一致と「最大2日」を確認 日本通信SIMから他社へMNPできない場合を解説。契約者氏名・生年月日の不一致、MNP予約番号やワンストップに最大2日かかる場合、マイページログインを確認します。 MNP 予約番号 発行できない 再発行 解約 SIM 名義 ワンストップ"
+  },
+  {
+    "title": "HISモバイルでMNP予約番号取得ボタンが押せない｜解約申込後は要注意",
+    "description": "HISモバイルで「MNP予約番号取得」ボタンが押せない時の原因を解説。先に解約を申し込んだ場合、ドコモ/ソフトバンク回線の発行日数、データSIM対象外まで整理します。",
+    "url": "/ja/technology/smartphone/his-mobile-mnp-button-disabled-after-cancellation/",
+    "category": "MVNO MNPトラブル",
+    "text": "HISモバイルでMNP予約番号取得ボタンが押せない｜解約申込後は要注意 HISモバイルで「MNP予約番号取得」ボタンが押せない時の原因を解説。先に解約を申し込んだ場合、ドコモ/ソフトバンク回線の発行日数、データSIM対象外まで整理します。 MNP 予約番号 発行できない 再発行 解約 SIM 名義 ワンストップ"
+  },
+  {
+    "title": "b-mobileでMNP予約番号を発行できない｜SIM未利用だと申請不可・4営業日前後",
+    "description": "b-mobileからMNP転出できない時の代表原因を解説。SIMカードの利用実績がない場合はMNP予約番号を申請できない公式条件、発行4営業日前後、有効期限15日を整理します。",
+    "url": "/ja/technology/smartphone/bmobile-mnp-number-not-issued-unused-sim/",
+    "category": "MVNO MNPトラブル",
+    "text": "b-mobileでMNP予約番号を発行できない｜SIM未利用だと申請不可・4営業日前後 b-mobileからMNP転出できない時の代表原因を解説。SIMカードの利用実績がない場合はMNP予約番号を申請できない公式条件、発行4営業日前後、有効期限15日を整理します。 MNP 予約番号 発行できない 再発行 解約 SIM 名義 ワンストップ"
+  },
+  {
+    "title": "DTI SIMでMNPできない｜データ・SMSプラン対象外とMyDTIの解約手順",
+    "description": "DTI SIMからMNPできない場合を解説。MNP対象は音声プランのみで、データプラン・データSMSプランは対象外。MyDTIの解約手続き内で予約番号を申請する流れも整理します。",
+    "url": "/ja/technology/smartphone/dti-sim-mnp-data-sms-not-eligible-cancellation-flow/",
+    "category": "MVNO MNPトラブル",
+    "text": "DTI SIMでMNPできない｜データ・SMSプラン対象外とMyDTIの解約手順 DTI SIMからMNPできない場合を解説。MNP対象は音声プランのみで、データプラン・データSMSプランは対象外。MyDTIの解約手続き内で予約番号を申請する流れも整理します。 MNP 予約番号 発行できない 再発行 解約 SIM 名義 ワンストップ"
+  },
+  {
+    "title": "hi-hoでMNP予約番号を発行できない｜解約申込・SIM交換・発行中が競合",
+    "description": "hi-ho LTE typeDでMNP予約番号を発行できない時の条件を深掘り。解約申込中、SIM削除・交換、予約番号発行中、有効期限切れ後の解除待ちを整理します。",
+    "url": "/ja/technology/smartphone/hiho-mnp-number-blocked-sim-exchange-cancel/",
+    "category": "MVNO MNPトラブル",
+    "text": "hi-hoでMNP予約番号を発行できない｜解約申込・SIM交換・発行中が競合 hi-ho LTE typeDでMNP予約番号を発行できない時の条件を深掘り。解約申込中、SIM削除・交換、予約番号発行中、有効期限切れ後の解除待ちを整理します。 MNP 予約番号 発行できない 再発行 解約 SIM 名義 ワンストップ"
+  },
+  {
+    "title": "ロケットモバイルでMNP転出ボタンが出ない・予約番号が発行されない原因",
+    "description": "ロケットモバイルでMNP転出ボタンが表示されない、予約番号が発行されない時の原因を解説。データプラン、翌月プラン変更予約、旧MNP予約番号の残存を切り分けます。",
+    "url": "/ja/technology/smartphone/rocket-mobile-mnp-button-not-shown-plan-change-old-number/",
+    "category": "MVNO MNPトラブル",
+    "text": "ロケットモバイルでMNP転出ボタンが出ない・予約番号が発行されない原因 ロケットモバイルでMNP転出ボタンが表示されない、予約番号が発行されない時の原因を解説。データプラン、翌月プラン変更予約、旧MNP予約番号の残存を切り分けます。 MNP 予約番号 発行できない 再発行 解約 SIM 名義 ワンストップ"
+  },
+  {
+    "title": "LIBMOで1回線だけMNPしたら残りはどうなる？複数回線・データシェアの注意点",
+    "description": "LIBMOで複数回線やデータシェア利用中にMNPする時の注意点を解説。MNP申請は1回線ずつで、残り回線は自動解約されない公式ルールを整理します。",
+    "url": "/ja/technology/smartphone/libmo-mnp-multiple-lines-data-share-left-behind/",
+    "category": "MVNO MNPトラブル",
+    "text": "LIBMOで1回線だけMNPしたら残りはどうなる？複数回線・データシェアの注意点 LIBMOで複数回線やデータシェア利用中にMNPする時の注意点を解説。MNP申請は1回線ずつで、残り回線は自動解約されない公式ルールを整理します。 MNP 予約番号 発行できない 再発行 解約 SIM 名義 ワンストップ"
+  },
+  {
+    "title": "イオンモバイルのMNPで名義が違う・ワンストップできない｜WEB申込条件を整理",
+    "description": "イオンモバイルへMNPする際の名義違い、MNPワンストップ、予約番号残日数、WEB開通期限を解説。店舗とWEBで名義変更対応や必要条件が異なる点を整理します。",
+    "url": "/ja/technology/smartphone/aeon-mobile-mnp-onestop-name-change-web-deadline/",
+    "category": "MVNO MNPトラブル",
+    "text": "イオンモバイルのMNPで名義が違う・ワンストップできない｜WEB申込条件を整理 イオンモバイルへMNPする際の名義違い、MNPワンストップ、予約番号残日数、WEB開通期限を解説。店舗とWEBで名義変更対応や必要条件が異なる点を整理します。 MNP 予約番号 発行できない 再発行 解約 SIM 名義 ワンストップ"
+  },
+  {
+    "title": "MVNOのMNPワンストップで先に進めない｜ログイン・名義・対象事業者を切り分け",
+    "description": "MNPワンストップで転出元サイトへ進めない、認証できない、名義不一致になる場合の確認手順を解説。対象事業者、マイページログイン、契約名義を順番に確認します。",
+    "url": "/ja/technology/smartphone/mvno-mnp-onestop-login-name-mismatch-troubleshooting/",
+    "category": "MVNO MNPトラブル",
+    "text": "MVNOのMNPワンストップで先に進めない｜ログイン・名義・対象事業者を切り分け MNPワンストップで転出元サイトへ進めない、認証できない、名義不一致になる場合の確認手順を解説。対象事業者、マイページログイン、契約名義を順番に確認します。 MNP 予約番号 発行できない 再発行 解約 SIM 名義 ワンストップ"
+  },
+  {
+    "title": "NUROモバイルのMNP予約番号が出ない｜即日不可・再発行・複数SIMの見分け方",
+    "description": "NUROモバイルのMNP予約番号が出ない｜即日不可・再発行・複数SIMの見分け方。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/nuro-mobile-mnp-not-issued-reissue-multiple-sim/",
+    "category": "MVNO MNPトラブル",
+    "text": "NUROモバイルのMNP予約番号が出ない｜即日不可・再発行・複数SIMの見分け方 NUROモバイルのMNP予約番号が出ない｜即日不可・再発行・複数SIMの見分け方。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "QTモバイルでMNP予約番号を再発行できない｜有効期限・翌々日・手続きロックを確認",
+    "description": "QTモバイルでMNP予約番号を再発行できない｜有効期限・翌々日・手続きロックを確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/qtmobile-mnp-reissue-expired-procedure-lock/",
+    "category": "MVNO MNPトラブル",
+    "text": "QTモバイルでMNP予約番号を再発行できない｜有効期限・翌々日・手続きロックを確認 QTモバイルでMNP予約番号を再発行できない｜有効期限・翌々日・手続きロックを確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "BB.exciteモバイルのMNP予約番号をキャンセル・再発行できない時｜2〜5日と手続き制限",
+    "description": "BB.exciteモバイルのMNP予約番号をキャンセル・再発行できない時｜2〜5日と手続き制限。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/bb-excite-mnp-cancel-reissue-procedure-restrictions/",
+    "category": "MVNO MNPトラブル",
+    "text": "BB.exciteモバイルのMNP予約番号をキャンセル・再発行できない時｜2〜5日と手続き制限 BB.exciteモバイルのMNP予約番号をキャンセル・再発行できない時｜2〜5日と手続き制限。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "LinksMateで複数SIMのMNP予約番号が出ない｜1枚ずつ・期限切れ後最大3日を確認",
+    "description": "LinksMateで複数SIMのMNP予約番号が出ない｜1枚ずつ・期限切れ後最大3日を確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/linksmate-mnp-multiple-sim-reissue-delay/",
+    "category": "MVNO MNPトラブル",
+    "text": "LinksMateで複数SIMのMNP予約番号が出ない｜1枚ずつ・期限切れ後最大3日を確認 LinksMateで複数SIMのMNP予約番号が出ない｜1枚ずつ・期限切れ後最大3日を確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "y.u mobileでMNP予約番号が取り消された｜支払方法無効・追加SIM名義を確認",
+    "description": "y.u mobileでMNP予約番号が取り消された｜支払方法無効・追加SIM名義を確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/yu-mobile-mnp-payment-invalid-share-sim/",
+    "category": "MVNO MNPトラブル",
+    "text": "y.u mobileでMNP予約番号が取り消された｜支払方法無効・追加SIM名義を確認 y.u mobileでMNP予約番号が取り消された｜支払方法無効・追加SIM名義を確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "NifMoでMNPできない｜データSIM・SMS SIM対象外と「解除」の取り違え",
+    "description": "NifMoでMNPできない｜データSIM・SMS SIM対象外と「解除」の取り違え。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/nifmo-mnp-data-sms-cancel-mistake/",
+    "category": "MVNO MNPトラブル",
+    "text": "NifMoでMNPできない｜データSIM・SMS SIM対象外と「解除」の取り違え NifMoでMNPできない｜データSIM・SMS SIM対象外と「解除」の取り違え。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "OCN モバイル ONEのMNP予約番号が届かない｜3営業日・発行済み番号とワンストップ",
+    "description": "OCN モバイル ONEのMNP予約番号が届かない｜3営業日・発行済み番号とワンストップ。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/ocn-mobile-one-mnp-three-business-days-onestop-existing-number/",
+    "category": "MVNO MNPトラブル",
+    "text": "OCN モバイル ONEのMNP予約番号が届かない｜3営業日・発行済み番号とワンストップ OCN モバイル ONEのMNP予約番号が届かない｜3営業日・発行済み番号とワンストップ。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "TONEモバイルのMNP予約番号が期限切れ｜解約取消・090音声オプションの扱い",
+    "description": "TONEモバイルのMNP予約番号が期限切れ｜解約取消・090音声オプションの扱い。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/tone-mobile-mnp-expired-cancellation-voice-option/",
+    "category": "MVNO MNPトラブル",
+    "text": "TONEモバイルのMNP予約番号が期限切れ｜解約取消・090音声オプションの扱い TONEモバイルのMNP予約番号が期限切れ｜解約取消・090音声オプションの扱い。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "KABU&モバイルのMNPで進めない｜ワンストップと予約番号方式の切り分け",
+    "description": "KABU&モバイルのMNPで進めない｜ワンストップと予約番号方式の切り分け。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/kabuand-mobile-mnp-onestop-twostop-conflict/",
+    "category": "MVNO MNPトラブル",
+    "text": "KABU&モバイルのMNPで進めない｜ワンストップと予約番号方式の切り分け KABU&モバイルのMNPで進めない｜ワンストップと予約番号方式の切り分け。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "Smiles ConnectでMNP手続きが進まない｜SMS認証コード・未払いを確認",
+    "description": "Smiles ConnectでMNP手続きが進まない｜SMS認証コード・未払いを確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/smiles-connect-mnp-sms-code-unpaid-cancellation/",
+    "category": "MVNO MNPトラブル",
+    "text": "Smiles ConnectでMNP手続きが進まない｜SMS認証コード・未払いを確認 Smiles ConnectでMNP手続きが進まない｜SMS認証コード・未払いを確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "BIC SIMでMNP予約番号が出ない｜IIJmio会員ページ・SIM再発行中を確認",
+    "description": "BIC SIMでMNP予約番号が出ない｜IIJmio会員ページ・SIM再発行中を確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/bic-sim-mnp-iijmio-account-sim-reissue/",
+    "category": "MVNO MNPトラブル",
+    "text": "BIC SIMでMNP予約番号が出ない｜IIJmio会員ページ・SIM再発行中を確認 BIC SIMでMNP予約番号が出ない｜IIJmio会員ページ・SIM再発行中を確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "J:COM MOBILEのMNPワンストップで進めない｜ログイン不可・予約番号方式への切替",
+    "description": "J:COM MOBILEのMNPワンストップで進めない｜ログイン不可・予約番号方式への切替。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/jcom-mobile-mnp-onestop-login-reservation-number/",
+    "category": "MVNO MNPトラブル",
+    "text": "J:COM MOBILEのMNPワンストップで進めない｜ログイン不可・予約番号方式への切替 J:COM MOBILEのMNPワンストップで進めない｜ログイン不可・予約番号方式への切替。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "ピカラモバイルのMNP予約番号が失効した｜契約継続・再発行・通常解約との違い",
+    "description": "ピカラモバイルのMNP予約番号が失効した｜契約継続・再発行・通常解約との違い。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/pikara-mobile-mnp-expired-contract-continues/",
+    "category": "MVNO MNPトラブル",
+    "text": "ピカラモバイルのMNP予約番号が失効した｜契約継続・再発行・通常解約との違い ピカラモバイルのMNP予約番号が失効した｜契約継続・再発行・通常解約との違い。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "ヤマダニューモバイルからMNPできない｜新規受付終了後の既存契約・シェアグループ",
+    "description": "ヤマダニューモバイルからMNPできない｜新規受付終了後の既存契約・シェアグループ。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/yamada-new-mobile-mnp-existing-user-share-group/",
+    "category": "MVNO MNPトラブル",
+    "text": "ヤマダニューモバイルからMNPできない｜新規受付終了後の既存契約・シェアグループ ヤマダニューモバイルからMNPできない｜新規受付終了後の既存契約・シェアグループ。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "Tikimo SIMのMNP予約番号が出ない｜5営業日・発行後の変更手続き停止を確認",
+    "description": "Tikimo SIMのMNP予約番号が出ない｜5営業日・発行後の変更手続き停止を確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/tikimo-sim-mnp-five-business-days-procedure-freeze/",
+    "category": "MVNO MNPトラブル",
+    "text": "Tikimo SIMのMNP予約番号が出ない｜5営業日・発行後の変更手続き停止を確認 Tikimo SIMのMNP予約番号が出ない｜5営業日・発行後の変更手続き停止を確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "G-Call SIMのMNP予約番号が届かない｜通知なし・2〜3日後にMy G-Callを確認",
+    "description": "G-Call SIMのMNP予約番号が届かない｜通知なし・2〜3日後にMy G-Callを確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/gcall-sim-mnp-no-notification-check-mygcall/",
+    "category": "MVNO MNPトラブル",
+    "text": "G-Call SIMのMNP予約番号が届かない｜通知なし・2〜3日後にMy G-Callを確認 G-Call SIMのMNP予約番号が届かない｜通知なし・2〜3日後にMy G-Callを確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "RayL MobileのMNPで進めない｜予約番号残り13日・データ専用SIM・ワンストップ",
+    "description": "RayL MobileのMNPで進めない｜予約番号残り13日・データ専用SIM・ワンストップ。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/rayl-mobile-mnp-13-days-data-sim-not-eligible/",
+    "category": "MVNO MNPトラブル",
+    "text": "RayL MobileのMNPで進めない｜予約番号残り13日・データ専用SIM・ワンストップ RayL MobileのMNPで進めない｜予約番号残り13日・データ専用SIM・ワンストップ。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "FLASH MOBILEのMNPで迷う｜ワンストップ開始後と旧予約番号手順の違い",
+    "description": "FLASH MOBILEのMNPで迷う｜ワンストップ開始後と旧予約番号手順の違い。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/flash-mobile-mnp-onestop-old-guide-conflict/",
+    "category": "MVNO MNPトラブル",
+    "text": "FLASH MOBILEのMNPで迷う｜ワンストップ開始後と旧予約番号手順の違い FLASH MOBILEのMNPで迷う｜ワンストップ開始後と旧予約番号手順の違い。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "LP MobileのMNPで進めない｜ワンストップ対応と予約番号方式・サポート確認",
+    "description": "LP MobileのMNPで進めない｜ワンストップ対応と予約番号方式・サポート確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/lp-mobile-mnp-onestop-support-route/",
+    "category": "MVNO MNPトラブル",
+    "text": "LP MobileのMNPで進めない｜ワンストップ対応と予約番号方式・サポート確認 LP MobileのMNPで進めない｜ワンストップ対応と予約番号方式・サポート確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
+  },
+  {
+    "title": "センターモバイルのMNPで進めない｜ワンストップ・名義一致・データSIMを確認",
+    "description": "センターモバイルのMNPで進めない｜ワンストップ・名義一致・データSIMを確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。",
+    "url": "/ja/technology/smartphone/center-mobile-mnp-onestop-name-match-data-sim/",
+    "category": "MVNO MNPトラブル",
+    "text": "センターモバイルのMNPで進めない｜ワンストップ・名義一致・データSIMを確認 センターモバイルのMNPで進めない｜ワンストップ・名義一致・データSIMを確認。発行方法だけでなく、予約番号が出ない・再発行できない・ワンストップで止まる条件を公式情報ベースで切り分けます。 MNP 予約番号 発行できない 再発行 ワンストップ SIM 解約 名義 SMS 支払い"
   }
 ]

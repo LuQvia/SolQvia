@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "official_checked_at": "2026-08-08",
-  "purpose": "SolQvia device regional variant and carrier-frequency reference master (Phase46 expanded current-model dataset)",
+  "purpose": "SolQvia device regional variant and carrier-frequency reference master (Phase47 carrier compatibility linked)",
   "records": [
     {
       "manufacturer": "Apple",

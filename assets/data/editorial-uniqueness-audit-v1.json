@@ -1,0 +1,4219 @@
+{
+  "schema_version": "1.0",
+  "checked_at": "2026-08-08",
+  "processed_articles": 324,
+  "records": [
+    {
+      "slug": "aeon-mobile-mnp-onestop-name-change-web-deadline",
+      "title": "イオンモバイルのMNPで名義が違う・ワンストップできない｜WEB申込条件を整理",
+      "category": "mnp",
+      "axes": [
+        "転出元がワンストップ対象か申込画面で確認する",
+        "予約番号方式なら残り10日以上あるか確認する",
+        "名義が違う場合は同一住所条件と双方の本人確認書類を準備する",
+        "SIM到着後は切替受付時間内に開通手続きを行う"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "aeon-mobile-mnp-reservation-number-guide",
+      "title": "イオンモバイルのMNP予約番号発行方法｜8時までなら当日23時・電話/店舗にも対応",
+      "category": "mnp",
+      "axes": [
+        "SIM再発行・追加などの手続き中",
+        "すでに解約申込済み",
+        "未払いがある場合",
+        "有効期限切れの翌日は再発行申請できない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "ahamo-network-pin-forgotten-mnp-guide",
+      "title": "ahamoでネットワーク暗証番号が分からずMNPできない時｜確認窓口・ロック・プラン変更の順番",
+      "category": "mnp",
+      "axes": [
+        "現在の料金プランと回線種別を確認",
+        "暗証番号を思い出せない場合は推測入力を止める",
+        "公式のahamo担当窓口で暗証番号を確認",
+        "登録住所が古い場合は店頭で再設定"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "ana-mobile-mnp-reservation-number-guide",
+      "title": "ANAモバイルのMNP予約番号発行方法｜マイページ・1〜4日・データSIMは転出不可",
+      "category": "mnp",
+      "axes": [
+        "MNP転出できるのは「音声・SMS・データ」SIMタイプ",
+        "「データ」SIMタイプはMNP転出不可",
+        "転出先がワンストップ非対応の場合は予約番号の発行が必要",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "android-always-on-vpn-blocks-internet-when-vpn-disconnected",
+      "title": "AndroidでVPNが切れるとインターネットも全部使えない時｜「VPN以外の接続をブロック」を確認",
+      "category": "privacy",
+      "axes": [
+        "Google「AndroidデバイスでVPNを設定する」 （確認日: 2026-08-08）",
+        "Google「AndroidでVPNに接続する」 （確認日: 2026-08-08）",
+        "端末故障と決めつけず、回線・VPN/DNS・ネットワーク単位設定を分けて確認します",
+        "症状"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "android-app-links-not-opening",
+      "title": "Androidの対応リンクがアプリで開かずブラウザになる時の確認",
+      "category": "app",
+      "axes": [
+        "対応リンクを開く許可",
+        "ドメイン検証状態",
+        "同じURLを扱う複数アプリ",
+        "ブラウザ側のアプリ起動制限"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "android-battery-optimization-app-stops",
+      "title": "Androidのバッテリー最適化でアプリが停止する時の設定",
+      "category": "app",
+      "axes": [
+        "最適化・制限・無制限の違い",
+        "バックグラウンド使用量",
+        "自動起動とメーカー独自省電力",
+        "発熱・電池消費への影響"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "android-device-admin-profile-check",
+      "title": "Androidの端末管理アプリ・管理プロファイルを確認する方法",
+      "category": "app",
+      "axes": [
+        "端末管理アプリ・デバイス管理者",
+        "仕事用プロファイルと管理組織",
+        "VPN・ユーザー証明書・構成設定",
+        "保護者による使用制限・紛失対策"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "android-factory-reset",
+      "title": "Androidスマートフォンを工場出荷状態に初期化する方法｜データ消去前の準備",
+      "category": "general",
+      "axes": [
+        "工場出荷状態への初期化では端末内データが消去される",
+        "Googleアカウントのメールアドレスとパスワードを確認する",
+        "最近パスワードを変更した場合は公式案内の待機条件を確認する",
+        "不具合対処が目的なら、再起動、更新、容量整理、問題アプリ、ネットワーク設定リセットを先に試します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 8
+    },
+    {
+      "slug": "android-force-restart",
+      "title": "Androidスマートフォンを強制再起動する方法｜反応しない時の基本",
+      "category": "general",
+      "axes": [
+        "強制再起動は通常、保存データを消す工場出荷状態への初期化ではない",
+        "メーカーと機種でボタン操作が異なる",
+        "ブートメニューが出た場合は消去項目を選ばない",
+        "まず電源ボタンを約30秒押し続け、再起動するか確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 8
+    },
+    {
+      "slug": "android-new-phone-rcs-not-receiving-old-device-disable",
+      "title": "Androidへ機種変更後にメッセージが届かない時｜旧端末のRCS登録を解除して電話番号を再確認",
+      "category": "messaging",
+      "axes": [
+        "旧端末でGoogleメッセージを開く メッセージの設定→RCSチャットを確認します。",
+        "RCSをオフ 機種変更後に旧端末へ配送される状態を解除します。",
+        "新端末でRCS状態を確認 「接続済み」になるまで電話番号確認を待ちます。",
+        "SMSでも受信テスト RCSだけの問題かを分けます。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "android-notification-channel-missing",
+      "title": "Androidで特定種類の通知設定が見つからない時の確認",
+      "category": "app",
+      "axes": [
+        "アプリが作成した通知チャネル",
+        "通知カテゴリが生成される条件",
+        "会話・サイレント通知の分類",
+        "アプリ再インストール時の初期化"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "android-notification-history-guide",
+      "title": "Android通知履歴の有効化・確認・表示されない時の仕組み",
+      "category": "app",
+      "axes": [
+        "通知履歴の事前有効化",
+        "保存期間と表示対象",
+        "通知を出したアプリ・チャネル",
+        "メーカー独自の履歴画面"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "android-play-protect-blocks-app",
+      "title": "Google Play Protectがアプリをブロック・無効化する時の確認",
+      "category": "app",
+      "axes": [
+        "アプリの公式な入手元と署名",
+        "Play Protectの警告内容",
+        "アプリ・Android・Google Playシステム更新",
+        "仕事用端末・保護者・管理ポリシー"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "android-private-dns-custom-hostname-no-internet",
+      "title": "AndroidでPrivate DNSを設定したらネットにつながらない時｜「自動」とプロバイダーホスト名を切り分ける",
+      "category": "privacy",
+      "axes": [
+        "Google「機内モード、プライベートDNS、その他のネットワーク設定を管理する」 （確認日: 2026-08-08）",
+        "端末故障と決めつけず、回線・VPN/DNS・ネットワーク単位設定を分けて確認します",
+        "まず確認",
+        "切り分け"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "android-private-dns-not-working",
+      "title": "AndroidのプライベートDNSで通信できない時の確認方法",
+      "category": "privacy",
+      "axes": [
+        "プライベートDNSのモードとホスト名",
+        "DNS over TLSの到達性",
+        "VPN・広告ブロッカーとの競合",
+        "Wi-Fi側のポート・フィルタ制限"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "android-safe-mode-guide",
+      "title": "Androidのセーフモードで不具合アプリを切り分ける方法",
+      "category": "app",
+      "axes": [
+        "症状が特定アプリの導入後に始まったか確認する",
+        "Googleアカウントや重要アプリのログイン情報を確認する",
+        "機種ごとのセーフモード起動・終了手順を公式サイトで確認する",
+        "現在の症状、発生条件、最近追加・更新したアプリをメモします。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "android-stuck-boot-loop",
+      "title": "Androidスマートフォンが再起動を繰り返す・ロゴから進まない時の対処法",
+      "category": "general",
+      "axes": [
+        "ケースが電源・音量ボタンを押し続けていないか確認する",
+        "直前にアプリ・OS更新・落下・水濡れがなかったか確認する",
+        "Googleバックアップと写真同期の最終状態を確認する",
+        "ケースとケーブルを外し、ボタンが引っ掛かっていないか確認してから、正常な充電器で30分ほど充電します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "android-system-webview-app-crashes",
+      "title": "Android System WebViewが原因でアプリが落ちる時の確認",
+      "category": "app",
+      "axes": [
+        "Android System WebViewとChromeの版",
+        "Playストアの更新・ベータ参加",
+        "Webコンテンツを使う複数アプリの共通症状",
+        "WebView・対象アプリのキャッシュ"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "android-time-date-certificate-errors",
+      "title": "Androidの日付・時刻ずれで証明書エラーが出る時の確認",
+      "category": "general",
+      "axes": [
+        "ネットワーク提供の自動日時",
+        "タイムゾーンと位置情報",
+        "再起動後に時刻を保持できるか",
+        "証明書の期限・発行者・接続先"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "android-to-android-data-transfer",
+      "title": "Androidから新しいAndroidへデータ移行する方法｜ケーブル・クラウド対応",
+      "category": "cloud",
+      "axes": [
+        "Googleアカウント、画面ロック、バックアップ日時を確認する",
+        "新旧端末を充電し、対応するUSBケーブルや変換アダプターを用意する",
+        "メーカー独自アプリとGoogle標準転送のどちらを使うか決める",
+        "旧端末でGoogleバックアップ、Googleフォト同期、連絡先同期を実行し、完了日時を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "android-to-iphone-data-transfer",
+      "title": "AndroidからiPhoneへデータ移行する方法｜「iOSに移行」の使い方",
+      "category": "device",
+      "axes": [
+        "Androidと新しいiPhoneを充電し、安定したWi-Fiを用意する",
+        "iPhoneの容量がAndroidから移すデータ量以上か確認する",
+        "認証アプリ、LINE、WhatsApp、eSIM等の個別条件を確認する",
+        "Androidをバックアップし、写真・連絡先・メッセージ等の容量と同期状態を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "android-usb-otg-storage-not-mounted",
+      "title": "AndroidでUSB OTGメモリが認識・マウントされない時の確認",
+      "category": "general",
+      "axes": [
+        "端末とアダプタのUSB OTG対応",
+        "周辺機器への給電不足",
+        "FAT32・exFAT・NTFS等の形式",
+        "ファイルアプリ・USBモード・暗号化"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "android-work-profile-paused",
+      "title": "Androidの仕事用プロファイルが一時停止・同期しない時の確認",
+      "category": "cloud",
+      "axes": [
+        "仕事用プロファイルのオン・オフ",
+        "勤務時間スケジュール・集中モード",
+        "Device Policy等の管理アプリ",
+        "会社ポリシーとコンプライアンス状態"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "asahi-net-ansim-mnp-reservation-number-guide",
+      "title": "ASAHIネット LTE ANSIMのMNP予約番号発行方法｜マイページから通話SIMを転出",
+      "category": "mnp",
+      "axes": [
+        "MNP転出の対象は電話番号を持つ通話SIM",
+        "他社への転出完了日が利用最終日となり、数日以内にサービス解約処理される",
+        "単純解約を先に行わずMNP予約番号を発行する",
+        "現在のプランが音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "au-esim-activated-no-data-apn-profile-troubleshooting",
+      "title": "auのeSIMを開通したのにデータ通信できない時｜他社APN構成プロファイル・回線設定の確認",
+      "category": "esim",
+      "axes": [
+        "au回線がオンか デュアルSIMでは対象のau回線が無効になっていないか確認します。",
+        "モバイルデータの使用回線 別のSIMがデータ回線に選ばれていないか確認します。",
+        "他社APN構成プロファイル iPhoneでは過去のMVNO等の構成プロファイルが残っていないか確認します。",
+        "端末と回線種別 5G／5G SAなど端末ごとに利用可能な回線種別が異なります。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "au-esim-after-activation-mms-au-mail-not-working",
+      "title": "auのeSIM開通後にMMS・auメールが使えない時｜再起動とデュアルSIMの優先回線を確認",
+      "category": "esim",
+      "axes": [
+        "Wi-Fiを一時オフ モバイルデータ通信でアプリを確認します。",
+        "au回線をオン デュアルSIMで無効になっていないか確認します。",
+        "優先SIMをauへ 初期設定中は通話・メッセージ・データをau側へ揃えます。",
+        "端末再起動 回線情報の書き込み後に再起動します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "au-esim-phone-number-transfer-failed-5g-sa",
+      "title": "auで「電話番号をこのiPhoneに転送できませんでした」と出る時｜5G SA eSIMと端末対応を確認",
+      "category": "esim",
+      "axes": [
+        "移行先iPhoneが利用中のeSIM種別に対応しているか",
+        "5G SA契約／eSIMを利用していないか",
+        "Wi-Fi・Bluetooth・iOS更新などApple側の転送条件",
+        "au側で回線切替や再発行手続きが途中になっていないか"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "au-esim-reissue-sms-option-not-subscribed-error",
+      "title": "auのeSIM再発行で「SMSが未契約のため本サイトでお手続きをお受けできません」と出る時",
+      "category": "esim",
+      "axes": [
+        "My auで対象回線と契約状態を確認する",
+        "表示されるエラーが「SMSが未契約」であることを確認する",
+        "auチャットサポートでSMSオプション加入を相談する",
+        "加入反映後にeSIM再発行・転送をやり直す"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "au-esim-transfer-unavailable-contract-payment-5gsa",
+      "title": "auのeSIM転送ができない時｜法人・窓口払い・契約直後・5G SAなど対象外条件を確認",
+      "category": "esim",
+      "axes": [
+        "新規契約から一定期間内",
+        "支払方法が窓口払い",
+        "一部専用プラン",
+        "転送先端末がeSIM転送非対応"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "au-uq-mnp-reservation-number-guide",
+      "title": "au・UQ mobileのMNP予約番号発行方法｜確認・キャンセル・進めない時の切り分け",
+      "category": "mnp",
+      "axes": [
+        "auはMy au等の案内に従ってMNP転出手続きを進めます。",
+        "発行済みの予約番号はMy au（Web）で確認・キャンセルできます。公式FAQではMy UQ mobileでも同様の手順と案内されています。",
+        "auからUQ mobile、UQ mobileからauへの番号移行では、お客さま自身でのMNP予約番号取得は不要と案内されています。",
+        "乗り換え先がMNPワンストップ対応か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 1
+    },
+    {
+      "slug": "authenticator-app-transfer-before-reset",
+      "title": "初期化前に認証アプリを新端末へ移行する手順と注意点",
+      "category": "security",
+      "axes": [
+        "認証アプリの同期・エクスポート機能",
+        "各アカウントのバックアップコード",
+        "旧端末と新端末の時刻同期",
+        "移行後のログインテストと旧登録削除"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "ava-mobile-sim-mnp-reservation-number-guide",
+      "title": "AVA MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "AVA MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "b-mobile-mnp-reservation-number-guide",
+      "title": "b-mobileのMNP予約番号発行方法｜マイページ・未利用SIMは発行不可・15日間",
+      "category": "mnp",
+      "axes": [
+        "契約したSIMでデータ通信または音声発信などの利用実績がない場合、MNP予約番号を発行できない",
+        "有効期限内はMNP予約番号を再発行できない",
+        "日本通信SIMとb-mobile間は通常のMNPではなくサービス変更扱いになる場合がある",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "bb-excite-mnp-cancel-reissue-procedure-restrictions",
+      "title": "BB.exciteモバイルのMNP予約番号をキャンセル・再発行できない時｜2〜5日と手続き制限",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "bb-excite-mobile-mnp-reservation-number-guide",
+      "title": "BB.exciteモバイルのMNP予約番号発行方法｜2〜5日・キャンセル不可・再発行時期",
+      "category": "mnp",
+      "axes": [
+        "MNP予約番号の申請はキャンセルできない",
+        "MNP転出申請中はSIM変更や契約内容変更が制限される",
+        "再発行は「転出確認日」の翌日以降",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "bell-mobile-sim-mnp-reservation-number-guide",
+      "title": "ベルモバ SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "ベルモバ SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "bic-sim-mnp-iijmio-account-sim-reissue",
+      "title": "BIC SIMでMNP予約番号が出ない｜IIJmio会員ページ・SIM再発行中を確認",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "bic-sim-mnp-reservation-number-guide",
+      "title": "BIC SIMのMNP予約番号発行方法｜実質IIJmio手続き・ワンストップ・発行待ちの注意",
+      "category": "mnp",
+      "axes": [
+        "BIC SIM店頭で契約していても、契約後の回線管理はIIJmio側の会員情報を使う",
+        "音声通話SIM／音声eSIM以外はMNP転出対象にならない",
+        "予約番号発行中に別の手続きを重ねると進行状況を確認しにくくなるため、会員ページの状態を優先する",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "biglobe-mobile-mnp-number-expired-reissue-cancellation",
+      "title": "BIGLOBEモバイルのMNP予約番号が期限切れ｜再発行と解約申込の扱い",
+      "category": "mnp",
+      "axes": [
+        "予約番号の有効期限を確認する",
+        "期限内なら転出先の申込条件を確認し、使えなければ失効を待つ",
+        "失効後にBIGLOBE側の契約状態を確認する",
+        "必要なら新しいMNP予約番号を再発行する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "biglobe-mobile-mnp-reservation-number-guide",
+      "title": "BIGLOBEモバイルのMNP予約番号発行方法｜Web申請・翌日までの通知・シェアSIMの注意",
+      "category": "mnp",
+      "axes": [
+        "予約番号発行後は「解約予約状態」となり、プラン変更など一部手続きができない",
+        "主SIMを転出する場合はシェアSIMの削除またはMNP転出を先に行う必要がある",
+        "システムメンテナンスで通知が遅れる場合がある",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "bmobile-mnp-number-not-issued-unused-sim",
+      "title": "b-mobileでMNP予約番号を発行できない｜SIM未利用だと申請不可・4営業日前後",
+      "category": "mnp",
+      "axes": [
+        "契約SIMでデータ通信または通常発信の利用実績があるか確認する",
+        "未利用なら利用可能状態を確認してから実利用する",
+        "4営業日前後を見込んで申請する",
+        "予約番号発行メールと有効期限を確認して転出先へ申し込む"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "btc-mobile-sim-mnp-reservation-number-guide",
+      "title": "BTC モバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "BTC モバイル SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "buzz-mobile-sim-mnp-reservation-number-guide",
+      "title": "BUZZモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "BUZZモバイル SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "carrier-mvno",
+      "title": "キャリア・MVNO手続き",
+      "category": "general",
+      "axes": [
+        "35本の詳細記事",
+        "再現条件",
+        "端末/OS",
+        "接続先または対象機能"
+      ],
+      "section_added": false,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "center-mobile-mnp-onestop-name-match-data-sim",
+      "title": "センターモバイルのMNPで進めない｜ワンストップ・名義一致・データSIMを確認",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "center-mobile-mnp-reservation-number-guide",
+      "title": "センターモバイルのMNP転出・予約番号確認方法｜ワンストップと契約者窓口の使い分け",
+      "category": "mnp",
+      "axes": [
+        "データ専用契約は電話番号ポータビリティ対象外になる",
+        "公開ページ上のMNP説明は転入向け情報も含むため、転出時は契約者画面の案内を優先する",
+        "ワンストップ非対応の転出先では予約番号方式が必要",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "cloud-privacy",
+      "title": "クラウド・VPN・プライバシー",
+      "category": "cloud",
+      "axes": [
+        "12本の詳細記事",
+        "同期対象",
+        "端末とクラウドの保存場所",
+        "使用容量"
+      ],
+      "section_added": false,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "cool-girl-mobile-sim-mnp-reservation-number-guide",
+      "title": "Cool girlモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "Cool girlモバイル SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "cr-mobile-sim-mnp-reservation-number-guide",
+      "title": "CR MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "CR MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "d-lab-sim-mnp-reservation-number-guide",
+      "title": "D-lab SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "D-lab SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "daredemo-smartphone-mnp-reservation-number-guide",
+      "title": "誰でもスマホのMNP予約番号発行方法｜ヘルプデスクへ連絡して転出",
+      "category": "mnp",
+      "axes": [
+        "Web自己発行ではなくヘルプデスクへの連絡が公式FAQの転出方法",
+        "発行日数を第三者サイトから推測しない",
+        "転出完了後は元回線が終了するため、必要なSMS認証やデータ移行を先に確認する",
+        "現在のサービス名・プラン名・契約基盤を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "data-only-sim-mnp-voice-plan-conversion",
+      "title": "データ専用SIM・タブレット回線はMNPできる？直接対象外と「音声プランへ変更してから転出」の違い",
+      "category": "mnp",
+      "axes": [
+        "現在のプラン名を契約画面で確認",
+        "音声通話可能な契約か確認",
+        "データ専用ならMNP対象か公式情報で確認",
+        "音声プランへの変更可否を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "dave-mobile-sim-mnp-reservation-number-guide",
+      "title": "DAVE MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "DAVE MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "device-compatibility",
+      "title": "端末仕様・国内版/海外版・キャリア互換性",
+      "category": "device",
+      "axes": [
+        "28本の基礎・実機種リファレンス",
+        "正確な型番と販売地域",
+        "SIM/eSIM構成",
+        "LTE/5G対応バンド"
+      ],
+      "section_added": false,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "docomo-5g-sim-4g-phone-communication-failure",
+      "title": "ドコモの5G契約SIMを4G端末に入れて通信できない時｜対応機種・SIM情報更新の注意点",
+      "category": "network",
+      "axes": [
+        "元端末に戻して回線を確認 SIM自体が利用可能か確認します。",
+        "4G端末の型番を確認 製品名ではなく型番で公式仕様を確認します。",
+        "5G契約SIMとの利用可否を確認 ドコモの5G注意事項と製品サポートを確認します。",
+        "圏外・電源OFF状態が続いていなかったか ドコモはSIM情報更新時に圏外や電源OFFだと通信できなくなる場合があると案内しています。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "docomo-android-esim-transfer-not-showing-android14",
+      "title": "ドコモAndroidでeSIM転送の項目が出ない時｜Android 14・対応機種・副回線サービスを確認",
+      "category": "esim",
+      "axes": [
+        "新端末・旧端末が対応機種",
+        "Android 14以上へのアップデート",
+        "最新ソフトウェア",
+        "良好な通信環境"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "docomo-android-esim-transfer-physical-sim-disabled",
+      "title": "ドコモAndroid機種変更で誤ってeSIM転送すると物理SIMはどうなる？UIMが無効になるケース",
+      "category": "esim",
+      "axes": [
+        "NTTドコモ「Android eSIM転送機能」 （確認日: 2026-08-08）",
+        "「SIMカードの差し替え」と「eSIM転送」は同じではありません。物理SIM維持を希望する場合は転送確定前に止めます",
+        "eSIM転送すると何が変わる？",
+        "物理SIMのまま使いたかった場合"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "docomo-data-only-mnp-plan-change-guide",
+      "title": "ドコモのタブレット・データ専用回線でMNPする方法｜5Gデータプラス・Xiデータプラン・ahamoの注意点",
+      "category": "mnp",
+      "axes": [
+        "My docomo等で現在の料金プラン名を確認",
+        "音声契約か、5Gデータプラス・Xiデータプラン等のデータ契約かを判定",
+        "音声契約なら、シェア・一括請求・ファミリー割引等の代表／主回線か確認",
+        "データ契約なら、ドコモ mini等の音声契約へ変更可能か公式条件を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "docomo-esim-reissue-device-change-troubleshooting",
+      "title": "ドコモeSIMの機種変更・再発行で開通できない時｜クイック転送・プロファイル削除・再発行の違い",
+      "category": "esim",
+      "axes": [
+        "新端末がドコモeSIM対応機種か確認",
+        "eSIMクイック転送／Android転送の対象か確認",
+        "対象外ならオンライン再発行または店頭手続きを選択",
+        "Wi-Fi接続のままプロファイルをダウンロード"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "docomo-mnp-preprocedure-mainline-billing-pair-line",
+      "title": "ドコモMNPで「事前手続きが必要」と出る時｜主回線・一括請求・ドコモ光・シェア代表の確認順",
+      "category": "mnp",
+      "axes": [
+        "現在の料金プランが音声契約かデータ契約か確認",
+        "ファミリー主回線・一括請求代表・シェア代表か確認",
+        "ドコモ光・でんき・ガスのペア回線か確認",
+        "2台目プラスなど旧サービスの代表役割を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "docomo-mnp-reservation-number-not-issued",
+      "title": "ドコモでMNP予約番号を発行できない時の確認手順｜主回線・代表回線・ペア回線",
+      "category": "mnp",
+      "axes": [
+        "My docomoで現在の契約内容を確認する",
+        "MNPワンストップで予約番号自体が不要か確認する",
+        "ファミリー割引の主回線か確認する",
+        "一括請求・シェア等の代表回線か確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "docomo-simfree-android-apn-spmode-no-data-after-sim-swap",
+      "title": "SIMフリーAndroidへドコモSIMを差し替えたらネットにつながらない時｜spmode.ne.jpのAPN設定",
+      "category": "network",
+      "axes": [
+        "APN：spmode.ne.jp",
+        "認証タイプ：未設定またはなし",
+        "APNプロトコル：IPv4/IPv6",
+        "NTTドコモ「アクセスポイント（APN）設定について」 （確認日: 2026-08-08）"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "docomo-simfree-overseas-phone-apn-spmode-guide",
+      "title": "SIMフリー・海外版スマホをドコモSIMで使う設定｜spmode.ne.jp・対応周波数・動作保証の確認",
+      "category": "network",
+      "axes": [
+        "型番・販売地域を確認",
+        "SIMロック状態を確認",
+        "LTE/5G対応バンドを確認",
+        "APNをspmode.ne.jpへ設定"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "docomo-simfree-phone-data-ok-calls-fail-volte-ims",
+      "title": "ドコモSIMでデータ通信はできるのに電話できない時｜VoLTE・IMS・3G終了後の確認順",
+      "category": "network",
+      "axes": [
+        "優先ネットワークを4G/5Gへ VoLTEを使うにはLTE/5G系のネットワークが有効である必要があります。",
+        "VoLTE／4G回線による通話を確認 端末に設定項目がある場合は有効化します。項目自体がない場合は地域版ファームウェアやキャリアプロファイル差も疑います。",
+        "APNはspmode.ne.jp データ通信が不安定な場合はドコモ公式APNを確認します。ただしAPNだけでVoLTE互換性は解決しません。",
+        "端末の通信方式・対応Bandを確認 ドコモの持ち込み端末注意事項では、通信方式が異なる端末やSIMロック端末は利用できないとされています。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "dstyle-mobile-sim-mnp-reservation-number-guide",
+      "title": "Dstyle MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "Dstyle MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "dti-sim-mnp-data-sms-not-eligible-cancellation-flow",
+      "title": "DTI SIMでMNPできない｜データ・SMSプラン対象外とMyDTIの解約手順",
+      "category": "mnp",
+      "axes": [
+        "MyDTIで対象回線のプラン名を確認する",
+        "音声プランなら解約手続き内のMNP転出予約番号申請へ進む",
+        "データ/SMSプランなら電話番号持ち運びはできない前提で契約変更可否を確認する",
+        "通知メールとMyDTIで予約番号を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "dti-sim-mnp-reservation-number-guide",
+      "title": "DTI SIMのMNP予約番号発行方法｜MyDTIで解約手続きと同時に申請",
+      "category": "mnp",
+      "axes": [
+        "MNP対象は音声プランのみ。データプラン・データSMSプランは対象外",
+        "MNP転出予約番号は通常の単純解約ではなく、MyDTIの解約手続き内で申請する",
+        "発行前に現在の連絡先メールアドレスが受信できるか確認する",
+        "現在のサービス名・プラン名・契約基盤を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "dual-sim-messaging",
+      "title": "デュアルSIM・通話・SMS/RCSトラブル｜iPhone・Pixel・eSIMの深掘り解決",
+      "category": "esim",
+      "axes": [
+        "14本のデュアルSIM・通話・SMS/RCS記事",
+        "現在有効なSIM/eSIM",
+        "転送または再発行の対応条件",
+        "SMS本人確認の受信可否"
+      ],
+      "section_added": false,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "ffbc-sim-mnp-reservation-number-guide",
+      "title": "FFBC SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "FFBC SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "find-text-on-web-page-smartphone",
+      "title": "スマートフォンのWebページ内で文字を検索する方法｜Chrome・Safari",
+      "category": "app",
+      "axes": [
+        "検索欄ではなくブラウザメニューの「ページ内検索」を使う",
+        "表記ゆれや全角・半角を変えて試す",
+        "ページが最後まで読み込まれているか確認する",
+        "Chromeではメニューを開き「ページ内検索」または「Find in page」を選びます。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 7
+    },
+    {
+      "slug": "flash-mobile-mnp-onestop-old-guide-conflict",
+      "title": "FLASH MOBILEのMNPで迷う｜ワンストップ開始後と旧予約番号手順の違い",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "flash-mobile-mnp-reservation-number-guide",
+      "title": "FLASH MOBILEのMNP転出方法｜ワンストップ対応・予約番号が必要な場合の確認手順",
+      "category": "mnp",
+      "axes": [
+        "ワンストップは転出先も対応している必要がある",
+        "予約番号方式とワンストップを同時に進めない",
+        "古いFLASH MOBILE案内ではワンストップ開始前の手順が残っている可能性があるため最新画面を優先する",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "g-call-sim-mnp-reservation-number-guide",
+      "title": "G-Call SIMのMNP予約番号発行方法｜マイG-Call・2〜3日・発行通知なし",
+      "category": "mnp",
+      "axes": [
+        "発行された通知は届かないため、申込後2〜3日でマイG-Callを再確認する",
+        "旧G-Call SIMから新プランへの切替でも一度MNP転出・MNP申込を行う特殊手順が案内されている",
+        "公式ページ本文に2021年4月1日時点の注記があるため、実行直前にマイG-Callの現行表示も確認する",
+        "現在のプランが音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "galaxy-maintenance-mode-guide",
+      "title": "Galaxyメンテナンスモードの使い方と修理前の準備",
+      "category": "device",
+      "axes": [
+        "対応Galaxy・One UI・空き容量",
+        "Samsung Cloud等へのバックアップ",
+        "システムログ作成の選択",
+        "修理後の終了と画面ロック認証"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "galaxy-s25-japan-overseas-felica-esim-bands",
+      "title": "Galaxy S25の日本版と海外版の違い｜おサイフケータイ・eSIM・対応バンドの確認ポイント",
+      "category": "esim",
+      "axes": [
+        "NFC対応＝おサイフケータイ対応、ではない。",
+        "Snapdragon 8 Elite搭載が同じでも通信バンドまで同じとは限らない。",
+        "eSIM対応でも、物理SIMと同時利用できる構成は地域版で確認する。",
+        "キャリア周波数に対応してもVoLTE/IMSやキャリア機能の動作保証とは別。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "galaxy-secure-folder-notifications",
+      "title": "Galaxyセキュアフォルダの通知が出ない・内容を隠す設定",
+      "category": "device",
+      "axes": [
+        "セキュアフォルダのロック状態",
+        "通知内容の表示・非表示",
+        "フォルダ内アプリの通知チャネル",
+        "省電力・バックグラウンド制限"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "galaxy-z-flip7-japan-hongkong-model-differences",
+      "title": "Galaxy Z Flip7日本版と香港版の違い｜SM-F766Q/SM-F7660・FeliCa・B21/B42・n79",
+      "category": "device",
+      "axes": [
+        "Samsung Japan「Galaxy Z Flip7 256GB」 （確認日: 2026-08-08）",
+        "Samsung Japan「Galaxy Z Flip7 スペック」 （確認日: 2026-08-08）",
+        "Samsung Hong Kong「Galaxy Z Flip7 SM-F7660」 （確認日: 2026-08-08）",
+        "Galaxyは「海外版」という一括りをやめて型番で比較する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "galaxy-z-flip7-sm-f7660-docomo-data-ok-calls-fail-volte-ims",
+      "title": "香港版Galaxy Z Flip7 SM-F7660でドコモのデータは使えるのに電話できない時｜VoLTE・IMSを確認",
+      "category": "network",
+      "axes": [
+        "端末型番をSM-F7660と確認 日本版SM-F766Qと混同しません。",
+        "ソフトウェア更新 最新の地域版ファームウェアへ更新します。",
+        "優先ネットワークとVoLTE表示 SIM設定で4G/5GとVoLTE関連項目を確認します。",
+        "発信・着信・SMSを分離 IMS系機能のどこで失敗するか記録します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "galaxy-z-flip7-sm-f7660-hk-japan-carrier-compatibility",
+      "title": "香港版Galaxy Z Flip7 SM-F7660は日本で使える？4キャリアBand・VoLTE・FeliCa注意点",
+      "category": "network",
+      "axes": [
+        "端末の型番 設定画面または箱で正確な型番を確認します。",
+        "契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。",
+        "SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。",
+        "VoLTE/IMS 海外版Androidは特に通話可否を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "galaxy-z-flip7-sm-f766q-japan-carrier-compatibility",
+      "title": "Galaxy Z Flip7日本SIMフリー版SM-F766Qは4キャリアで使える？Band・n79・FeliCaを比較",
+      "category": "device",
+      "axes": [
+        "端末の型番 設定画面または箱で正確な型番を確認します。",
+        "契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。",
+        "SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。",
+        "VoLTE/IMS 海外版Androidは特に通話可否を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "galaxy-z-fold7-japan-hongkong-model-differences",
+      "title": "Galaxy Z Fold7日本版と香港版の違い｜SM-F966Q/SM-F9660・FeliCa・B21/B42・n257",
+      "category": "device",
+      "axes": [
+        "型番 SM-F966Q / SM-F9660などを確認",
+        "SIM 物理SIM・eSIM・デュアルSIM構成を確認",
+        "通信 B19/B21/B42、n77/n78/n79/n257などを利用キャリアと照合",
+        "国内機能 おサイフケータイと必要な決済を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "galaxy-z-fold7-sm-f9660-hk-japan-carrier-compatibility",
+      "title": "香港版Galaxy Z Fold7 SM-F9660の日本4キャリア相性｜n79・VoLTE・FeliCa・保証を確認",
+      "category": "network",
+      "axes": [
+        "端末の型番 設定画面または箱で正確な型番を確認します。",
+        "契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。",
+        "SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。",
+        "VoLTE/IMS 海外版Androidは特に通話可否を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "galaxy-z-fold7-sm-f966q-japan-carrier-compatibility",
+      "title": "Galaxy Z Fold7日本SIMフリー版SM-F966Qの4キャリア相性｜n79・n257・FeliCaまで比較",
+      "category": "device",
+      "axes": [
+        "端末の型番 設定画面または箱で正確な型番を確認します。",
+        "契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。",
+        "SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。",
+        "VoLTE/IMS 海外版Androidは特に通話可否を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "gcall-sim-mnp-no-notification-check-mygcall",
+      "title": "G-Call SIMのMNP予約番号が届かない｜通知なし・2〜3日後にMy G-Callを確認",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "gentosha-mobile-sim-mnp-reservation-number-guide",
+      "title": "幻冬舎MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "幻冬舎MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "google-account-storage-full-drive-photos-gmail-effects",
+      "title": "Googleの保存容量がいっぱいになると何が止まる？Drive・フォト・Gmailへの影響",
+      "category": "general",
+      "axes": [
+        "Google フォト：ストレージを管理する （確認日: 2026-08-08）",
+        "Googleフォトだけ削除する前に、サービス別の保存容量内訳を見る",
+        "Googleの保存容量は複数サービスで使う",
+        "上限到達時の主な影響"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "google-drive-deleted-files-storage-not-decreasing-trash-owner",
+      "title": "Google Driveでファイルを削除したのに容量が減らない時｜ゴミ箱・オーナー権限を確認",
+      "category": "cloud",
+      "axes": [
+        "Google Drive：Google ドライブ内のファイルを削除する （確認日: 2026-08-08）",
+        "容量を空ける目的なら、ゴミ箱への移動だけで終わらせない",
+        "ゴミ箱内ファイルも容量にカウント",
+        "ゴミ箱のファイルは30日後に完全削除"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "google-lens-image-search",
+      "title": "Googleレンズで画像検索する方法｜写真・商品・文字を調べる",
+      "category": "app",
+      "axes": [
+        "人物の顔や住所が写る画像を不用意に送信しない",
+        "商品名・型番は認識結果を公式情報で確認する",
+        "医療・安全判断を画像検索だけで行わない",
+        "Googleアプリ、Googleフォト、Chrome等からレンズを開きます。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 7
+    },
+    {
+      "slug": "google-one-downgrade-cancel-over-storage-limit",
+      "title": "Google Oneをダウングレード・解約すると保存データはどうなる？容量超過前に確認すること",
+      "category": "general",
+      "axes": [
+        "Google One：ストレージ プランの変更または解約 （確認日: 2026-08-08）",
+        "Google フォト：ストレージを管理する （確認日: 2026-08-08）",
+        "ダウングレード前にGoogle Oneのストレージ管理で現在使用量を確認する",
+        "新しい容量へ収まるか確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "google-photos-delete-app-also-deletes-device-photo",
+      "title": "Googleフォトで写真を削除するとスマホ本体からも消える？削除とバックアップの違い",
+      "category": "cloud",
+      "axes": [
+        "Google フォト：写真や動画を削除する （確認日: 2026-08-08）",
+        "Google フォト：デバイスの空き容量を増やす （確認日: 2026-08-08）",
+        "Googleフォトアプリの通常削除を「クラウドだけ削除」と考えない",
+        "Googleフォトアプリの削除は端末側にも影響"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "google-photos-free-up-space-cloud-remains-device-removed",
+      "title": "Googleフォトの「このデバイスの空き容量を増やす」で写真は消える？クラウドと端末の残り方",
+      "category": "cloud",
+      "axes": [
+        "Google フォト：デバイスの空き容量を増やす （確認日: 2026-08-08）",
+        "空き容量確保を使う前に「バックアップ済み」を必ず確認する",
+        "端末から消えてもGoogleフォト側には残る",
+        "端末ギャラリーやオフラインでは見えなくなる"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "google-search-on-smartphone",
+      "title": "スマートフォンでGoogle検索する方法｜欲しい情報を早く見つけるコツ",
+      "category": "general",
+      "axes": [
+        "目的を「調べたい事実」「行いたい操作」「解決したい症状」に分ける",
+        "機種名やOS名を検索語へ入れる",
+        "広告表示と通常結果を区別する",
+        "検索欄へ、対象と目的を具体的に入力します。例：「Pixel 充電できない」「iPhone Wi-Fi 設定」。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 7
+    },
+    {
+      "slug": "green-plus-ai-mnp-reservation-number-guide",
+      "title": "グリーン plus ♥ AiのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "グリーン plus ♥ AiはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "hapimoba-sim-mnp-reservation-number-guide",
+      "title": "ハピモバSIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "ハピモバSIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "hiho-lte-typed-mnp-reservation-number-guide",
+      "title": "hi-ho LTE typeDのMNP予約番号発行方法｜Myサポート・約4日・発行できない条件",
+      "category": "mnp",
+      "axes": [
+        "解約申し込みを入れている場合はMNP予約番号を発行できない",
+        "MNP予約番号発行中は解約申し込みができない",
+        "SIMカード削除・SIMカード交換の際にMNP転出できない",
+        "発行申込のキャンセル・発行済み番号の解除はできない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "hiho-mnp-number-blocked-sim-exchange-cancel",
+      "title": "hi-hoでMNP予約番号を発行できない｜解約申込・SIM交換・発行中が競合",
+      "category": "mnp",
+      "axes": [
+        "Myサポートで解約・SIM交換・MNPの進行状態を確認する",
+        "競合中の手続きが完了・解除されるまで新しい操作を重ねない",
+        "MNP予約番号が期限切れなら発行中状態の解除を待つ",
+        "解除後にMNPを再申請する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "his-mobile-mnp-button-disabled-after-cancellation",
+      "title": "HISモバイルでMNP予約番号取得ボタンが押せない｜解約申込後は要注意",
+      "category": "mnp",
+      "axes": [
+        "解約申込済みかMy HISモバイルで確認する",
+        "まだ解約処理前ならヘルプデスクへ取消し可否を相談する",
+        "音声通話付きプランか確認する",
+        "再申請できる状態になったらMNP予約番号取得を行う"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "his-mobile-mnp-reservation-number-guide",
+      "title": "HISモバイルのMNP予約番号発行方法｜My HISモバイル・発行日数・取得できない時",
+      "category": "mnp",
+      "axes": [
+        "すでに解約手続きをした場合はMNP予約番号取得ボタンが利用できない",
+        "データ専用/SMSデータSIMはMNP転出対象外",
+        "再発行前に既存番号の取消・待機が必要な場合がある",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "horie-mobile-mnp-reservation-number-guide",
+      "title": "HORIE MOBILE / HORIMOのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "HORIE MOBILE / HORIMOはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "icloud-photos-delete-iphone-also-deletes-cloud-all-devices",
+      "title": "iPhoneで写真を削除するとiCloudからも消える？iCloud写真の「同期」と削除範囲を確認",
+      "category": "cloud",
+      "axes": [
+        "Apple：iCloud.comで写真とビデオを削除/復元する （確認日: 2026-08-08）",
+        "Apple：写真とビデオが占有するストレージを管理する （確認日: 2026-08-08）",
+        "iCloud写真がオンなら「iPhoneだけから削除」のつもりで通常の削除をしない",
+        "iCloud写真は削除も同期される"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "icloud-plus-downgrade-storage-over-quota-what-happens",
+      "title": "iCloud+を容量不足のままダウングレードするとどうなる？同期・バックアップ停止条件を確認",
+      "category": "cloud",
+      "axes": [
+        "Apple：iCloud+プランをダウングレードまたは解約する （確認日: 2026-08-08）",
+        "現在使用量が新プラン上限を超えるなら、ダウングレード前にデータをコピー・削減する",
+        "容量変更は請求期間終了後",
+        "新しい上限を超えている場合"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "icloud-private-relay-not-working-specific-wifi-cellular-limit-ip-tracking",
+      "title": "iCloudプライベートリレーが特定Wi-Fi・モバイル回線だけ使えない時｜「IPアドレスのトラッキングを制限」を確認",
+      "category": "cloud",
+      "axes": [
+        "Apple「特定のWebサイト、ネットワーク、システム設定についてiCloudプライベートリレーを管理する」 （確認日: 2026-08-08）",
+        "端末故障と決めつけず、回線・VPN/DNS・ネットワーク単位設定を分けて確認します",
+        "症状",
+        "確認手順"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "icloud-private-relay-speedtest-slower-than-browsing",
+      "title": "iCloudプライベートリレーで速度テストだけ遅く見える時｜実通信速度と測定値が違う理由",
+      "category": "cloud",
+      "axes": [
+        "Apple「iCloudプライベートリレーについて」 （確認日: 2026-08-08）",
+        "端末故障と決めつけず、回線・VPN/DNS・ネットワーク単位設定を分けて確認します",
+        "なぜ数値が変わるか",
+        "切り分け"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "icloud-private-relay-website-not-opening-ip-address-reveal",
+      "title": "iCloudプライベートリレーで特定サイトだけ開かない時｜「IPアドレスを公開」で切り分ける",
+      "category": "cloud",
+      "axes": [
+        "Apple「特定のWebサイト、ネットワーク、システム設定についてiCloudプライベートリレーを管理する」 （確認日: 2026-08-08）",
+        "Apple「iCloudプライベートリレーについて」 （確認日: 2026-08-08）",
+        "端末故障と決めつけず、回線・VPN/DNS・ネットワーク単位設定を分けて確認します",
+        "症状"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "icloud-storage-full-backup-sync-stops",
+      "title": "iCloudストレージがいっぱいになると何が止まる？バックアップ・写真同期を切り分ける",
+      "category": "cloud",
+      "axes": [
+        "Apple：写真とビデオが占有するストレージを管理する （確認日: 2026-08-08）",
+        "Apple：iCloud+プランをダウングレードまたは解約する （確認日: 2026-08-08）",
+        "容量不足表示を見たら、まず「iPhoneストレージ」と「iCloudストレージ」のどちらかを確認する",
+        "本体ストレージとiCloudストレージは別"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iijmio-mnp-number-reissue-sim-reissue-blocked",
+      "title": "IIJmioでMNP予約番号を再発行できない｜発行中・期限切れ・SIM再発行の競合を整理",
+      "category": "mnp",
+      "axes": [
+        "会員ページで現在のMNP予約番号状態と有効期限を確認する",
+        "発行中なら新規申請を重ねず、発行完了または失効を待つ",
+        "SIM再発行が必要なら、MNP番号発行後はサポートへ取消し可否を相談する",
+        "期限切れ後はタイプD/Aの解除目安を過ぎてから再申請する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iijmio-mnp-reservation-number-guide",
+      "title": "IIJmioのMNP予約番号発行方法｜最短1日〜最大4日・発行できない条件",
+      "category": "mnp",
+      "axes": [
+        "すでに解約申し込みを入れている場合はMNP予約番号を発行できません。",
+        "データSIM、SMS SIMはMNP転出の対象外です。",
+        "MNP予約番号発行中はプラン変更や解約など一部手続きができません。",
+        "音声通話SIM対象回線か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "ikawa-mobile-sim-mnp-reservation-number-guide",
+      "title": "井川MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "井川MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-16-japan-us-model-differences",
+      "title": "iPhone 16の日本版と米国版は何が違う？物理SIM・eSIM・対応バンドを型番別に比較",
+      "category": "esim",
+      "axes": [
+        "物理SIMを使う可能性があるなら日本版が扱いやすい。",
+        "eSIMだけで運用できるなら米国版でもSIM面の制約は小さくなる。",
+        "周波数だけでなくVoLTE、キャリア側の動作確認、技術基準適合表示、保証を別途確認する。",
+        "「海外版＝必ず電波が弱い」「対応Bandが多い＝完全対応」とは判断しない。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-17-a3258-us-japan-carrier-compatibility",
+      "title": "米国版iPhone 17 A3258は日本で使える？4キャリアのBand・n79・eSIM相性を比較",
+      "category": "esim",
+      "axes": [
+        "端末の型番 設定画面または箱で正確な型番を確認します。",
+        "契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。",
+        "SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。",
+        "VoLTE/IMS 海外版Androidは特に通話可否を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-17-a3519-japan-carrier-compatibility",
+      "title": "日本版iPhone 17 A3519はどのキャリアと相性がいい？ドコモ・au・SoftBank・楽天を比較",
+      "category": "device",
+      "axes": [
+        "端末の型番 設定画面または箱で正確な型番を確認します。",
+        "契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。",
+        "SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。",
+        "VoLTE/IMS 海外版Androidは特に通話可否を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-17-esim-activation-fails-japan-carriers",
+      "title": "iPhone 17でeSIMを追加・開通できない時｜国内キャリア共通の確認順と削除前の注意点",
+      "category": "esim",
+      "axes": [
+        "Wi-Fi/インターネット接続 eSIMダウンロードに必要な通信経路を確保します。",
+        "iOS更新 最新の安定版へ更新します。",
+        "キャリア側の発行完了 再発行・回線切替が未完了でないか確認します。",
+        "設定→モバイル通信 回線が追加済みか、アクティベート中かを確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 1
+    },
+    {
+      "slug": "iphone-17-japan-esim-only-migration-checklist",
+      "title": "iPhone 17日本版は物理SIM非対応｜機種変更前のeSIM移行チェックリスト",
+      "category": "esim",
+      "axes": [
+        "契約中キャリアがeSIM対応か 料金プラン・回線種別を含めて確認します。",
+        "移行方式 eSIMクイック転送、オンライン再発行、QRコード発行など事業者ごとの方式を確認します。",
+        "認証手段 ネットワーク暗証番号、ID、パスワード、SMS、本人確認書類を準備します。",
+        "EID/IMEI 申込画面で要求される場合に備え、新iPhoneの端末情報を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-17-japan-us-global-sim-band-differences",
+      "title": "iPhone 17の日本版・米国版・海外版の違い｜A3519/A3258/A3520とeSIM・対応バンド",
+      "category": "esim",
+      "axes": [
+        "モデル番号 A3519 / A3258 / A3520 / A3521のどれかを確認します。",
+        "物理SIM要否 物理SIMが必要ならeSIM専用モデルを避けます。",
+        "対応Band 利用予定キャリアの主要帯、特に地域差が出る帯を確認します。",
+        "決済・保証 FeliCa表記、Apple Pay、国内保証や修理条件を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-17e-japan-global-sim-c1x-band-differences",
+      "title": "iPhone 17eの日本版と海外版の違い｜A3575/A3634・物理SIM・C1X・n79を確認",
+      "category": "esim",
+      "axes": [
+        "モデル番号 A3575/A3634/A3635を確認",
+        "SIM運用 物理SIM必須かeSIM運用可能か確認",
+        "Band 国内4キャリアの主要帯との一致を確認",
+        "FeliCa おサイフ系を使うなら地域仕様を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-accessory-not-supported",
+      "title": "iPhoneで「このアクセサリは使用できない可能性があります」と出る時の確認",
+      "category": "device",
+      "axes": [
+        "ケーブル・アダプタの認証と仕様",
+        "Lightning・USB-C端子の汚れや損傷",
+        "必要電力とハブ・変換アダプタ",
+        "液体検出・iOS・アクセサリファームウェア"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "iphone-after-sim-esim-change-5g-wifi-calling-missing-carrier-settings",
+      "title": "iPhoneでSIM・eSIM変更後に5GやWi-Fi通話が出ない時｜キャリア設定アップデートを確認",
+      "category": "esim",
+      "axes": [
+        "Apple「iPhoneやiPadでキャリア設定を手動でアップデートする」 （確認日: 2026-08-08）",
+        "端末故障と決めつけず、回線・VPN/DNS・ネットワーク単位設定を分けて確認します",
+        "確認手順",
+        "キャリア設定で変わるもの"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-airdrop-stuck-waiting",
+      "title": "AirDropが待機中のまま送れない時の詳細確認",
+      "category": "device",
+      "axes": [
+        "AirDrop受信設定と時間制限",
+        "連絡先のApple Account情報",
+        "Wi-Fi・Bluetooth・距離・画面ロック",
+        "インターネット共有・VPN・ファイルサイズ"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "iphone-app-offloaded-cloud-icon",
+      "title": "iPhoneアプリに雲マークが出て開けない時の再ダウンロード確認",
+      "category": "device",
+      "axes": [
+        "非使用のAppを取り除く設定",
+        "App Storeでの提供・地域・互換性",
+        "アプリ本体と書類データの違い",
+        "Apple Accountと購入履歴"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "iphone-background-app-refresh-not-working",
+      "title": "iPhoneのAppのバックグラウンド更新が機能しない時の確認",
+      "category": "device",
+      "axes": [
+        "Appのバックグラウンド更新の全体・個別設定",
+        "低電力モードと電池状態",
+        "モバイルデータ・低データモード",
+        "スクリーンタイム・管理制限"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "iphone-dual-sim-other-line-calls-missed-during-call",
+      "title": "iPhoneのデュアルSIMで通話中にもう片方の回線へ着信しない時｜Wi-Fi通話とデータ切替を確認",
+      "category": "messaging",
+      "axes": [
+        "2回線ともオンか 設定→モバイル通信で対象回線が有効か確認します。",
+        "副回線のWi-Fi通話 通信事業者が対応している場合は設定を確認します。",
+        "モバイルデータ通信の切替を許可 通話中に別回線の着信を成立させる条件になる場合があります。",
+        "留守番電話の設定 着信が留守番電話へ転送されていないか確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-dual-sim-sms-rcs-wrong-number-after-esim",
+      "title": "iPhoneのデュアルSIMでSMS・RCSが違う番号から送られる時｜送信回線を会話ごとに確認",
+      "category": "esim",
+      "axes": [
+        "設定→モバイル通信 2回線の名称と電話番号を確認します。",
+        "デフォルトの音声回線 新規連絡先への通話で使う回線を確認します。",
+        "メッセージの会話画面 使用中の番号を確認し、必要なら送信前または会話中に切り替えます。",
+        "iMessage/RCS/SMSを区別 青/緑表示だけに頼らず、送信方式と電話番号を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-esim-quick-transfer-fails-japan-carriers",
+      "title": "iPhoneのeSIMクイック転送ができない時｜Apple条件と国内キャリア側手続きを切り分ける",
+      "category": "esim",
+      "axes": [
+        "両方のiPhoneで同じApple Accountにサインイン",
+        "旧iPhoneをパスコードでロック解除できる",
+        "2台が近くにありBluetoothがオン",
+        "両方が対応するiOSへ更新済み"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-factory-reset",
+      "title": "iPhoneを工場出荷状態に初期化する方法｜データ消去前の確認",
+      "category": "device",
+      "axes": [
+        "この操作では端末内の個人データ、アプリ、設定が消去される",
+        "バックアップから復元できることを確認する",
+        "売却・譲渡か、同じ本人が再利用するかでeSIM判断が変わる",
+        "初期化の目的を確認します。不具合対処なら再起動、更新、容量、設定リセットを先に試します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 8
+    },
+    {
+      "slug": "iphone-focus-blocking-notifications",
+      "title": "iPhoneの集中モードで必要な通知だけ届かない時の詳細確認",
+      "category": "device",
+      "axes": [
+        "許可した人・アプリと通知オプション",
+        "時間・場所・アプリによる自動起動",
+        "集中モードフィルタとホーム画面",
+        "デバイス間共有・緊急時の例外"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "iphone-force-restart",
+      "title": "iPhoneを強制再起動する方法｜機種別ボタン操作と注意点",
+      "category": "device",
+      "axes": [
+        "強制再起動は工場出荷状態への初期化ではない",
+        "通常再起動できる場合は通常操作を優先する",
+        "充電不足の可能性がある場合は安全な充電器へ接続する",
+        "iPhone 8以降およびFace ID機種は、音量上ボタンを短く押して離し、音量下ボタンを短く押して離します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 8
+    },
+    {
+      "slug": "iphone-icloud-backup-stuck",
+      "title": "iPhoneのiCloudバックアップが進まない・残り時間計算中の対処法",
+      "category": "cloud",
+      "axes": [
+        "iCloud空き容量と次回バックアップ容量",
+        "Wi-Fi速度・電源・画面ロック",
+        "バックアップ対象アプリの大容量データ",
+        "Apple Account・暗号化・サービス状態"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "iphone-ios26-duplicate-same-number-sim-imessage-not-activating",
+      "title": "iOS 26でiMessageが電話番号認証できない時｜同じ番号の古いSIM・eSIMが残っていないか確認",
+      "category": "esim",
+      "axes": [
+        "iMessageが「未配信」になる",
+        "SMS/RCSだけで送受信される",
+        "電話番号ではなくメールアドレスから送られる",
+        "「送受信」に同じ電話番号が2回表示される"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-personal-hotspot-not-working-maximize-compatibility-carrier",
+      "title": "iPhoneのインターネット共有につながらない時｜「互換性を優先」とキャリア対応を確認",
+      "category": "device",
+      "axes": [
+        "Apple「iPhoneやiPadのインターネット共有に接続する」 （確認日: 2026-08-08）",
+        "Apple「インターネット共有が機能しない場合」 （確認日: 2026-08-08）",
+        "端末故障と決めつけず、回線・VPN/DNS・ネットワーク単位設定を分けて確認します",
+        "基本確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-private-relay-network-problem",
+      "title": "iCloudプライベートリレーでサイトやWi-Fiが使えない時の確認",
+      "category": "cloud",
+      "axes": [
+        "プライベートリレーの全体設定",
+        "Wi-Fi・モバイル回線別のIP追跡制限",
+        "VPN・フィルタリングアプリとの競合",
+        "ネットワーク側の互換性警告"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "iphone-private-relay-vs-vpn",
+      "title": "iCloudプライベートリレーとVPNの違い｜iPhoneで何が保護される？",
+      "category": "cloud",
+      "axes": [
+        "設定からApple Accountを開く",
+        "iCloud関連の設定でプライベートリレーの状態を確認する",
+        "特定Wi-Fi/モバイル回線で「IPアドレスのトラッキングを制限」の状態を確認する",
+        "VPNアプリや構成プロファイルが有効なら一時的な切り分けを検討する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-recovery-mode-guide",
+      "title": "iPhoneのリカバリーモードの使い方｜更新と復元の違い",
+      "category": "device",
+      "axes": [
+        "MacまたはWindowsパソコンと正常なケーブルを用意する",
+        "Finder・Apple Devices・iTunesを最新にする",
+        "バックアップ、Apple Account、二段階認証の回復手段を確認する",
+        "パソコンのOSとApple関連ソフトを更新し、安定したインターネットへ接続します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "iphone-stolen-device-protection-delay",
+      "title": "iPhone盗難デバイスの保護で設定変更に待機時間が出る理由",
+      "category": "device",
+      "axes": [
+        "盗難デバイスの保護の有効状態",
+        "よく知っている場所の判定",
+        "Face ID・Touch IDの再認証",
+        "保護対象操作とセキュリティ遅延"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "iphone-stuck-apple-logo",
+      "title": "iPhoneがAppleロゴから進まない時の復旧手順",
+      "category": "device",
+      "axes": [
+        "進行バーが1時間以上動いていないか、変化を記録する",
+        "更新・復元・データ移行の直後に始まったか確認する",
+        "バックアップの最終日時とApple Account情報を確認する",
+        "更新直後で進行バーが表示されている場合は、電源へ接続して十分に待ち、わずかな進行変化がないか確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "iphone-system-data-storage-large",
+      "title": "iPhoneのシステムデータが大きい時の原因と減らし方",
+      "category": "device",
+      "axes": [
+        "ストレージ表示の再計算",
+        "Safari・ストリーミングのキャッシュ",
+        "iOS更新ファイルとログ",
+        "iCloud同期・写真解析の進行"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "iphone-to-android-data-transfer",
+      "title": "iPhoneからAndroidへデータ移行する方法｜写真・連絡先・メッセージの確認",
+      "category": "messaging",
+      "axes": [
+        "Apple AccountとGoogleアカウントへログインできるか確認する",
+        "新Android端末に合うケーブルと変換アダプターを用意する",
+        "iMessage、FaceTime、eSIM、認証アプリの移行手順を確認する",
+        "iPhoneをバックアップし、写真・連絡先・カレンダーの同期状態を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "iphone-to-iphone-data-transfer",
+      "title": "iPhoneから新しいiPhoneへデータ移行する方法｜クイックスタート完全手順",
+      "category": "device",
+      "axes": [
+        "旧iPhoneのApple Account、パスコード、バックアップを確認する",
+        "両端末を充電し、Wi-FiとBluetoothをオンにする",
+        "eSIM、認証アプリ、金融アプリ、メッセージアプリの個別移行条件を確認する",
+        "旧iPhoneを最新の安定したiOSへ更新し、iCloudまたは暗号化したパソコンバックアップを作成します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "iphone-travel-esim-keep-japan-number-sms",
+      "title": "海外旅行でデータeSIMを使いながら日本の電話番号でSMSを受ける方法｜iPhoneデュアルSIM設定",
+      "category": "esim",
+      "axes": [
+        "日本回線：電話番号・SMS・必要な着信",
+        "旅行eSIM：モバイルデータ通信",
+        "データローミング：利用する旅行eSIM側の条件を確認",
+        "2回線をオン 設定→モバイル通信で日本回線と旅行eSIMを確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "iphone-unavailable-security-lockout",
+      "title": "iPhone使用できません・セキュリティロックアウト表示時の正しい対応",
+      "category": "device",
+      "axes": [
+        "表示された待機時間と通信状態",
+        "以前のパスコードを使える条件",
+        "端末消去前のバックアップ確認",
+        "Apple Account・アクティベーションロック"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "jal-mobile-mnp-reservation-number-guide",
+      "title": "JALモバイルのMNP転出方法｜powered by ahamoとIIJmioで手続き先が違う",
+      "category": "mnp",
+      "axes": [
+        "まず自分の契約がpowered by ahamoかpowered by IIJmioか確認する",
+        "JALのマイル・特典窓口と通信契約の解約・MNP窓口を混同しない",
+        "IIJmio版は音声プランがMNP対象で、データeSIM等は電話番号MNPの対象外",
+        "現在のサービス名・プラン名・契約基盤を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "japan-carrier-band-compatibility-guide-2026",
+      "title": "ドコモ・au・SoftBank・楽天モバイルの端末相性をどう見る？Band・VoLTE・eSIMの判定方法",
+      "category": "esim",
+      "axes": [
+        "正確な型番を確認 製品名だけでなくA番号、GN番号、SM番号などを確認します。",
+        "主要Bandを照合 LTEと5Gをキャリア別に確認します。",
+        "VoLTE/IMSを確認 公式動作確認や同一モデルの販売状況を確認します。",
+        "SIM/eSIMを確認 物理SIM、eSIM、デュアルSIMの条件を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "japanet-mobile-service-mnp-reservation-number-guide",
+      "title": "ジャパネットたかた通信サービスのMNP転出方法｜ワイモバイル基盤・ワンストップ・問い合わせ先",
+      "category": "mnp",
+      "axes": [
+        "ジャパネット通信サービスはワイモバイル通信サービスを利用する独自サービスで、通常のY!mobile契約と窓口を混同しない",
+        "契約・料金・通信状況はジャパネット ワイモバイル サポート窓口が案内",
+        "予約番号方式の公開手順が見つからない場合はサポートで確認してから転出する",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "jcom-mobile-mnp-onestop-login-reservation-number",
+      "title": "J:COM MOBILEのMNPワンストップで進めない｜ログイン不可・予約番号方式への切替",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "jcom-mobile-mnp-reservation-number-guide",
+      "title": "J:COM MOBILEのMNP予約番号・転出方法｜ワンストップ対応・予約番号が必要な場合",
+      "category": "mnp",
+      "axes": [
+        "ワンストップと予約番号方式を同時に進めない",
+        "店舗手続きではワンストップを利用できない場合がある",
+        "転出先によって予約番号の必要残日数が異なるため、予約番号方式では取得後すぐ申し込む",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "kabuand-mobile-mnp-onestop-twostop-conflict",
+      "title": "KABU&モバイルのMNPで進めない｜ワンストップと予約番号方式の切り分け",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "kabuand-mobile-mnp-reservation-number-guide",
+      "title": "KABU&モバイルのMNP予約番号発行方法｜マイページ手続き・ワンストップ対応",
+      "category": "mnp",
+      "axes": [
+        "発行日数や細かな受付条件はマイページの現行表示を確認",
+        "予約番号を使う方式とワンストップ方式を重複して進めない",
+        "対象回線が音声通話付きでMNP対象か確認",
+        "未払い・SIM再発行・解約予約など進行中手続きがないか確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "kurimoba-sim-mnp-reservation-number-guide",
+      "title": "クリモバSIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "クリモバSIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "libmo-mnp-multiple-lines-data-share-left-behind",
+      "title": "LIBMOで1回線だけMNPしたら残りはどうなる？複数回線・データシェアの注意点",
+      "category": "mnp",
+      "axes": [
+        "マイページで契約中の全回線を一覧確認する",
+        "今回MNPする電話番号だけを特定する",
+        "残す回線・不要な回線を分ける",
+        "残り回線が不要なら別途MNPまたは解約手続きを行う"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "libmo-mnp-reservation-number-guide",
+      "title": "LIBMOのMNP予約番号発行方法｜マイページ・複数回線は1回線ずつ手続き",
+      "category": "mnp",
+      "axes": [
+        "複数回線は1回線ごとにMNPのりかえ申請",
+        "セット割やキャンペーン条件、端末分割残額がある場合は転出後の影響を確認",
+        "対象回線が音声通話付きでMNP対象か確認",
+        "未払い・SIM再発行・解約予約など進行中手続きがないか確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "linksmate-mnp-multiple-sim-reissue-delay",
+      "title": "LinksMateで複数SIMのMNP予約番号が出ない｜1枚ずつ・期限切れ後最大3日を確認",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "linksmate-mnp-reservation-number-guide",
+      "title": "LinksMateのMNP予約番号発行方法｜マイページ・複数SIM・再発行の待ち時間",
+      "category": "mnp",
+      "axes": [
+        "同一契約グループに複数SIMがある場合、1枚目の転出完了後でないと次のSIMの予約番号を発行できない場合がある",
+        "期限切れ後、再発行可能になるまで最大3日程度かかる場合がある",
+        "SIM発行当日は予約番号を発行できない",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "livedoor-mobile-sim-mnp-reservation-number-guide",
+      "title": "livedoor MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "livedoor MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "lost-smartphone-find-lock-erase",
+      "title": "スマートフォンを紛失した時に探す・ロック・消去する手順",
+      "category": "general",
+      "axes": [
+        "自分で危険な場所へ取りに行かない",
+        "遠隔消去すると位置追跡が制限・停止される場合がある",
+        "警察・施設・通信事業者へ必要な情報を残す",
+        "別端末からAppleの「探す」またはGoogleのFind Hubへ公式URLからアクセスします。検索広告や非公式追跡サイトは使いません。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 8
+    },
+    {
+      "slug": "lp-mobile-mnp-onestop-support-route",
+      "title": "LP MobileのMNPで進めない｜ワンストップ対応と予約番号方式・サポート確認",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "lp-mobile-mnp-reservation-number-guide",
+      "title": "LPモバイルのMNP転出方法｜ワンストップ対応・予約番号方式はサポート確認",
+      "category": "mnp",
+      "axes": [
+        "ワンストップ対応は転出先側も対応していることが前提",
+        "予約番号方式の詳細は公開ページで十分に明記されていないため、古い第三者情報だけで受付窓口を断定しない",
+        "本人確認・契約状態によって手続きが止まる場合はサポートへ確認する",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "maji-mobile-sim-mnp-reservation-number-guide",
+      "title": "マジモバ SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "マジモバ SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "mercari-mobile-mnp-reservation-number-guide",
+      "title": "メルカリモバイルのMNP予約番号発行方法｜1〜4日・ギガ出品中は手続き不可",
+      "category": "mnp",
+      "axes": [
+        "初期設定未完了",
+        "SIM再発行中",
+        "予約番号申請/発行中または有効期限内",
+        "期限切れ翌日（再申請は2日後から）"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "metakozo-mobile-sim-mnp-reservation-number-guide",
+      "title": "MetaKozo MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "MetaKozo MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "mineo-mnp-number-delayed-cancel-packet-share",
+      "title": "mineoのMNP予約番号がすぐ出ない・キャンセルしたい｜受付時間とパケットシェアを確認",
+      "category": "mnp",
+      "axes": [
+        "申請時刻を確認し、時間外なら翌日9:30以降まで待つ",
+        "マイページの「解約・MNP予約番号発行」からMNP側を選び直す",
+        "通常解約を先に入れない",
+        "複数回線の場合は対象番号を1回線ずつ確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "mineo-mnp-reservation-number-guide",
+      "title": "mineoのMNP予約番号発行方法｜マイページの操作とワンストップ時の注意点",
+      "category": "mnp",
+      "axes": [
+        "mineoマイページへログイン",
+        "「解約・MNP予約番号発行」を開く",
+        "対象回線を選択",
+        "注意事項へ同意"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "mnp-one-stop-not-working-checklist",
+      "title": "MNPワンストップなのに手続きできない時｜予約番号が不要でも止まる原因と切り分け",
+      "category": "mnp",
+      "axes": [
+        "NTTドコモ「MNP予約番号の発行をしたい」 （確認日: 2026-08-08）",
+        "ahamo「他社からの乗り換え」 （確認日: 2026-08-08）",
+        "au「他社から乗りかえ（MNP）の準備」 （確認日: 2026-08-08）",
+        "SoftBank「のりかえ・解約」 （確認日: 2026-08-08）"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "mnp-reservation-number-issue-time-comparison",
+      "title": "MNP予約番号は何日で発行される？主要キャリア・MVNOの発行時間比較",
+      "category": "mnp",
+      "axes": [
+        "au・UQ mobile",
+        "SoftBank",
+        "Y!mobile",
+        "楽天モバイル"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "mnp-reservation-number-not-issued",
+      "title": "MNP予約番号を発行できない時の原因と確認順｜代表回線・契約状態・ワンストップ",
+      "category": "mnp",
+      "axes": [
+        "ファミリー・シェア等で主回線や代表回線になっている",
+        "一括請求などの代表回線になっている",
+        "光回線・電気・ガス等のペア回線になっている",
+        "旧料金プランのシェア代表や付帯契約が残っている"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "musee-mobile-sim-mnp-reservation-number-guide",
+      "title": "ミュゼモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "ミュゼモバイル SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "mvno-data-sim-mnp-not-eligible-guide",
+      "title": "データ専用SIMはMNPできない？音声SIM・SMS付きSIMとの違いを整理",
+      "category": "mnp",
+      "axes": [
+        "音声通話契約か確認",
+        "解約・SIM再発行・SIM交換・プラン変更の進行状態を確認",
+        "以前のMNP予約番号が失効済みか確認",
+        "転出先のワンストップ対応・必要残日数を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "mvno-mnp-during-sim-reissue-plan-change",
+      "title": "SIM再発行・サイズ変更・プラン変更中にMNPできない？MVNOの競合手続きを確認",
+      "category": "mnp",
+      "axes": [
+        "音声通話契約か確認",
+        "解約・SIM再発行・SIM交換・プラン変更の進行状態を確認",
+        "以前のMNP予約番号が失効済みか確認",
+        "転出先のワンストップ対応・必要残日数を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "mvno-mnp-issue-time-comparison-longtail",
+      "title": "MVNOのMNP予約番号は何日かかる？即時ではない事業者の発行日数比較",
+      "category": "mnp",
+      "axes": [
+        "音声通話契約か確認",
+        "解約・SIM再発行・SIM交換・プラン変更の進行状態を確認",
+        "以前のMNP予約番号が失効済みか確認",
+        "転出先のワンストップ対応・必要残日数を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "mvno-mnp-number-expired-reissue-guide",
+      "title": "MVNOのMNP予約番号が期限切れ｜再発行できない時に確認する順番",
+      "category": "mnp",
+      "axes": [
+        "音声通話契約か確認",
+        "解約・SIM再発行・SIM交換・プラン変更の進行状態を確認",
+        "以前のMNP予約番号が失効済みか確認",
+        "転出先のワンストップ対応・必要残日数を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "mvno-mnp-number-not-issued-causes",
+      "title": "MVNOでMNP予約番号が発行されない原因一覧｜解約申込・SIM変更・プラン変更・旧番号残存を切り分け",
+      "category": "mnp",
+      "axes": [
+        "音声通話契約か確認",
+        "解約・SIM再発行・SIM交換・プラン変更の進行状態を確認",
+        "以前のMNP予約番号が失効済みか確認",
+        "転出先のワンストップ対応・必要残日数を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "mvno-mnp-old-service-existing-users-guide",
+      "title": "新規受付終了したMVNOからMNPする方法｜既存契約者ページ・マイページを探す",
+      "category": "mnp",
+      "axes": [
+        "音声通話契約か確認",
+        "解約・SIM再発行・SIM交換・プラン変更の進行状態を確認",
+        "以前のMNP予約番号が失効済みか確認",
+        "転出先のワンストップ対応・必要残日数を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "mvno-mnp-onestop-login-name-mismatch-troubleshooting",
+      "title": "MVNOのMNPワンストップで先に進めない｜ログイン・名義・対象事業者を切り分け",
+      "category": "mnp",
+      "axes": [
+        "転入先の現行ワンストップ対象一覧で転出元を確認する",
+        "転出元マイページへ単独でログインできるか試す",
+        "契約者氏名・生年月日・電話番号を確認する",
+        "名義相違がある場合は転出元で変更可否を確認してから再試行する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "mvno-mnp-reservation-number-directory",
+      "title": "MVNO・格安モバイルのMNP予約番号発行方法一覧｜63サービスを個別解説",
+      "category": "mnp",
+      "axes": [
+        "日本通信SIM：MNPワンストップ対応事業者一覧 （2026年3月時点の掲載、確認日: 2026-08-08）",
+        "NUROモバイル：MNPワンストップ対象事業者 （確認日: 2026-08-08）",
+        "MVNO MNP予約番号・ワンストップ一覧",
+        "一覧に載せる基準"
+      ],
+      "section_added": false,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "network-privacy-tethering",
+      "title": "通信・VPN・Private Relay・テザリングの深掘り",
+      "category": "privacy",
+      "axes": [
+        "10本の通信・プライバシー・テザリング記事",
+        "Wi-Fiとモバイル回線の差",
+        "VPN/DNS/Private Relay",
+        "問題が出るアプリやサイト"
+      ],
+      "section_added": false,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "network-sim-troubleshooting",
+      "title": "通信・SIM・eSIMトラブル｜キャリア別・機種別の深掘り解決",
+      "category": "esim",
+      "axes": [
+        "16本の通信・SIM・eSIMトラブル記事",
+        "現在有効なSIM/eSIM",
+        "転送または再発行の対応条件",
+        "SMS本人確認の受信可否"
+      ],
+      "section_added": false,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "nifmo-mnp-data-sms-cancel-mistake",
+      "title": "NifMoでMNPできない｜データSIM・SMS SIM対象外と「解除」の取り違え",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "nifmo-mnp-reservation-number-guide",
+      "title": "NifMoのMNP予約番号発行方法｜音声SIMのみ・データ/SMS SIMは転出不可",
+      "category": "mnp",
+      "axes": [
+        "データ通信専用SIM・SMS対応SIMはMNP転出不可",
+        "NifMo回線の解除取消はできないため、単純解約とMNP転出を取り違えない",
+        "対象回線が音声通話付きでMNP対象か確認",
+        "未払い・SIM再発行・解約予約など進行中手続きがないか確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "nihontsushin-sim-mnp-name-mismatch-two-days",
+      "title": "日本通信SIMからMNPできない｜名義・生年月日不一致と「最大2日」を確認",
+      "category": "mnp",
+      "axes": [
+        "日本通信マイページの登録氏名・生年月日を確認する",
+        "転出先の申込名義と一致させる",
+        "申請直後なら最大2日程度かかる可能性を考慮する",
+        "ワンストップ利用時はマイページのログイン情報を先に確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "nihontsushin-sim-mnp-reservation-number-guide",
+      "title": "日本通信SIMのMNP予約番号発行方法｜マイページ・最大2日・ワンストップ対応",
+      "category": "mnp",
+      "axes": [
+        "氏名・生年月日など登録内容が転入先申込情報と不一致だと転出できない場合がある",
+        "ワンストップでも手続きに2日かかる場合がある",
+        "対象回線が音声通話付きでMNP対象か確認",
+        "未払い・SIM再発行・解約予約など進行中手続きがないか確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "nuro-mobile-mnp-not-issued-reissue-multiple-sim",
+      "title": "NUROモバイルのMNP予約番号が出ない｜即日不可・再発行・複数SIMの見分け方",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "nuro-mobile-mnp-reservation-number-guide",
+      "title": "NUROモバイルのMNP予約番号発行方法｜即日不可・1〜2日・再発行の注意",
+      "category": "mnp",
+      "axes": [
+        "予約番号の即日発行はできない",
+        "有効期限の延長・発行済み番号の再発行はできず、期限切れ後に再手続き",
+        "複数SIMでは通知メールだけで対象番号を判別しにくい場合がある",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "ocn-mobile-one-mnp-reservation-number-guide",
+      "title": "OCN モバイル ONEのMNP予約番号発行方法｜OCNマイページ・3営業日程度",
+      "category": "mnp",
+      "axes": [
+        "MNP予約番号をすでに発行している場合はワンストップではなく発行済み番号を使う手順になる場合がある",
+        "対象は音声対応SIM",
+        "対象回線が音声通話付きでMNP対象か確認",
+        "未払い・SIM再発行・解約予約など進行中手続きがないか確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "ocn-mobile-one-mnp-three-business-days-onestop-existing-number",
+      "title": "OCN モバイル ONEのMNP予約番号が届かない｜3営業日・発行済み番号とワンストップ",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "onedrive-camera-upload-delete-phone-photo-cloud-copy-remains",
+      "title": "OneDriveへ写真をバックアップ後、スマホ本体から削除しても大丈夫？カメラアップロードの仕組み",
+      "category": "cloud",
+      "axes": [
+        "Microsoft：iOSで写真やビデオをOneDriveに自動保存 （確認日: 2026-08-08）",
+        "Microsoft：Androidで写真やビデオをOneDriveに自動保存 （確認日: 2026-08-08）",
+        "OneDriveカメラアップロードは、まずクラウド側へのアップロード完了を確認してから端末を整理する",
+        "カメラロールはOneDriveへ一方向にアップロード"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "onedrive-full-read-only-storage-quota-recovery",
+      "title": "OneDriveが「いっぱい」になるとどうなる？読み取り専用・同期停止から戻す方法",
+      "category": "cloud",
+      "axes": [
+        "Microsoft：OneDriveがいっぱいだと表示される （確認日: 2026-08-08）",
+        "Microsoft：OneDriveでファイルまたはフォルダーを削除する （確認日: 2026-08-08）",
+        "容量超過時は新規同期を繰り返すより、先にクォータを上限内へ戻す",
+        "容量上限を超えると利用制限"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "overseas-smartphone-bands-match-volte-ims-calls-fail",
+      "title": "海外版スマホは対応バンドが合っていても通話できない？VoLTE・IMS・キャリア動作確認まで見る理由",
+      "category": "messaging",
+      "axes": [
+        "型番・販売地域を特定",
+        "国内キャリアの主要LTE/5Gバンドと照合",
+        "VoLTE/IMSの実績・公式動作確認を確認",
+        "物理SIM/eSIM構成を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "overseas-smartphone-emergency-call-not-guaranteed-japan",
+      "title": "海外版スマホで110・119は使える？日本で緊急通報を前提にする前に通信方式・VoLTE・動作保証を確認",
+      "category": "network",
+      "axes": [
+        "正確な型番・販売地域 製品名だけではなくSKUを確認します。",
+        "国内キャリアの通信方式・Band LTE/5Gの主要帯を確認します。",
+        "VoLTE/IMS 一般通話が4G/5G上で成立するか確認します。",
+        "キャリア動作確認・保証 持ち込み端末の注意事項を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "overseas-smartphone-giteki-japan-use-check",
+      "title": "海外版スマホを日本で使う前に技適を確認｜「90日なら誰でもOK」とは限らない理由",
+      "category": "device",
+      "axes": [
+        "正確な型番・販売地域を確認",
+        "端末の設定画面・筐体・公式仕様で技適表示を確認",
+        "技適がない場合は利用形態が90日特例等に該当するか確認",
+        "国内キャリアの周波数・VoLTE・動作確認も別途確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "overseas-smartphone-japan-carrier-fit-examples",
+      "title": "海外版スマホを日本で使う時のキャリア相性実例｜iPhone 16米国版・Pixel 10米国版で比較",
+      "category": "device",
+      "axes": [
+        "製品名ではなく型番/SKUを確定",
+        "物理SIM・eSIM構成を確認",
+        "LTEの低周波数帯を確認",
+        "5G n77/n78/n79等を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "phishing-sms-smartphone-safety",
+      "title": "怪しいSMS・偽サイトを見分ける方法｜スマートフォンの詐欺対策",
+      "category": "messaging",
+      "axes": [
+        "SMSのリンクからログインや支払いをしない",
+        "送信者名だけで本物と判断しない",
+        "急がせる文面、短縮URL、添付アプリを警戒する",
+        "メッセージ内のリンクは押さず、サービスの公式アプリまたは自分で登録したブックマークから状況を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 7
+    },
+    {
+      "slug": "pikara-mobile-mnp-expired-contract-continues",
+      "title": "ピカラモバイルのMNP予約番号が失効した｜契約継続・再発行・通常解約との違い",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "pikara-mobile-mnp-reservation-number-guide",
+      "title": "ピカラモバイルのMNP予約番号発行方法｜Myページ・サービスセンターと有効期限15日",
+      "category": "mnp",
+      "axes": [
+        "MNP予約番号を取得しただけでは解約にならない",
+        "有効期限内に転出先でMNP転入を完了しなければ予約番号は失効する",
+        "通常解約とMNP転出を混同しない",
+        "現在のプランが音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "pixel-10-japan-us-model-differences",
+      "title": "Pixel 10の日本版と米国版は何が違う？GL066とGLBW0のSIM・n79・mmWaveを比較",
+      "category": "device",
+      "axes": [
+        "モデル番号がGL066かGLBW0か確認",
+        "物理SIMが必要か確認",
+        "n79・B21・B42が必要な運用か確認",
+        "FeliCa/おサイフ系機能の要件を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "pixel-10-pro-g4qur-docomo-5g-n79-limit",
+      "title": "米国版Pixel 10 Pro G4QURでドコモ5Gを掴まない時｜n79非対応は設定では直せない",
+      "category": "network",
+      "axes": [
+        "型番がG4QURか Pixel 10 Proは地域版で仕様が違います。",
+        "優先ネットワークを5Gへ 端末設定で5Gが有効か確認します。",
+        "同じ場所で国内5G端末と比較 エリア側の問題かを切り分けます。",
+        "n79だけを期待していないか G4QURにないBandは設定変更では追加できません。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "pixel-10-pro-g4qur-us-japan-carrier-compatibility",
+      "title": "米国版Pixel 10 Pro G4QURは日本で使える？ドコモn79・B21/B42欠落と4キャリア相性",
+      "category": "device",
+      "axes": [
+        "端末の型番 設定画面または箱で正確な型番を確認します。",
+        "契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。",
+        "SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。",
+        "VoLTE/IMS 海外版Androidは特に通話可否を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "pixel-10-pro-gn4f5-japan-carrier-compatibility",
+      "title": "日本版Pixel 10 Pro GN4F5は4キャリアで使いやすい？Band・n79・eSIMを比較",
+      "category": "esim",
+      "axes": [
+        "端末の型番 設定画面または箱で正確な型番を確認します。",
+        "契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。",
+        "SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。",
+        "VoLTE/IMS 海外版Androidは特に通話可否を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "pixel-10-pro-japan-us-model-differences",
+      "title": "Pixel 10 Proの日本版と米国版の違い｜GN4F5/G4QUR・物理SIM・n79・mmWave",
+      "category": "esim",
+      "axes": [
+        "Google Store「Pixel 10 Pro / 10 Pro XL 技術仕様」（日本） （確認日: 2026-08-08）",
+        "Google Store「Pixel 10 Pro Specs」（米国） （確認日: 2026-08-08）",
+        "Google Pixel ヘルプ「ハードウェア仕様」 （確認日: 2026-08-08）",
+        "日本で使うならGN4F5の方が地域仕様を読みやすい"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "pixel-adaptive-connectivity-5g",
+      "title": "Pixelの自動調整接続で5G・Wi-Fiが切り替わる仕組み",
+      "category": "network",
+      "axes": [
+        "自動調整接続の有効状態",
+        "5G・LTEの利用パターン",
+        "Wi-Fiからモバイル通信への自動切替",
+        "電池消費と通信品質の比較"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "pixel-device-health-diagnostics",
+      "title": "Pixelのデバイス診断・バッテリー診断を使う方法",
+      "category": "device",
+      "axes": [
+        "Pixel診断機能の対応機種・OS",
+        "バッテリー健康状態と充電回数",
+        "接続・センサーのテスト",
+        "診断結果と修理前バックアップ"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "pixel-dual-sim-5g-not-showing-data-sim-check",
+      "title": "PixelでデュアルSIMにしたら5Gを掴まない時｜データSIM・5G設定・キャリア条件を確認",
+      "category": "network",
+      "axes": [
+        "データ通信に使うSIM 設定→ネットワークとインターネット→SIMでモバイルデータのプライマリSIMを確認します。",
+        "対象SIMの5G設定 優先ネットワークが5Gを許可しているか確認します。",
+        "5Gプランとキャリア対応 回線契約と端末の組み合わせを確認します。",
+        "同じ場所で1回線だけにする 副回線を一時オフにして表示差を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "pixel-dual-sim-sms-wrong-sim-default-text",
+      "title": "PixelのデュアルSIMでSMSが違うSIMから送信される時｜「テキストメッセージ」のプライマリSIMを確認",
+      "category": "messaging",
+      "axes": [
+        "設定→ネットワークとインターネット→SIM 2回線の名前を確認します。",
+        "プライマリSIM→テキストメッセージ SMSに使いたいSIMを選びます。",
+        "通話の既定SIMも確認 電話とSMSを同じ番号にしたい場合は合わせます。",
+        "Googleメッセージの送信状態 RCSかSMSかも確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "pixel-dual-sim-voice-unavailable-interruption-notification",
+      "title": "PixelのデュアルSIMで「音声が利用できません」「音声割り込み」と出る時｜SIM組み合わせを切り分ける",
+      "category": "device",
+      "axes": [
+        "SIM Aだけオン 発着信・SMS・データを確認します。",
+        "SIM Bだけオン 同じテストを行います。",
+        "2回線を同時にオン 通知が再現するか確認します。",
+        "通話・SMS・データのデフォルトSIM 用途ごとのプライマリSIMを確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "pixel-google-vpn-app-not-working-exclude-app",
+      "title": "PixelでGoogle VPNをオンにすると特定アプリだけ動かない時｜VPN除外アプリを設定する",
+      "category": "privacy",
+      "axes": [
+        "Google「Google PixelでGoogle VPNに接続する」 （確認日: 2026-08-08）",
+        "端末故障と決めつけず、回線・VPN/DNS・ネットワーク単位設定を分けて確認します",
+        "症状",
+        "設定"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "pixel-google-vpn-carrier-app-not-working-exclude-carrier-app",
+      "title": "PixelでキャリアアプリがGoogle VPN中だけ動かない時｜携帯通信会社アプリをVPNから除外する",
+      "category": "privacy",
+      "axes": [
+        "Google「Google PixelでGoogle VPNに接続する」 （確認日: 2026-08-08）",
+        "端末故障と決めつけず、回線・VPN/DNS・ネットワーク単位設定を分けて確認します",
+        "なぜ起きるか",
+        "設定"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "pixel-hotspot-not-working-data-saver-carrier-restriction",
+      "title": "PixelのWi-Fiアクセスポイントが使えない時｜データセーバーとキャリア制限を確認",
+      "category": "network",
+      "axes": [
+        "Google「Pixelでテザリングやアクセス ポイントを使用してモバイル接続を共有する」 （確認日: 2026-08-08）",
+        "Google「Google PixelでGoogle VPNに接続する」 （確認日: 2026-08-08）",
+        "端末故障と決めつけず、回線・VPN/DNS・ネットワーク単位設定を分けて確認します",
+        "最初の確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "pixel-physical-sim-to-esim-convert-old-sim-invalid",
+      "title": "Pixelで物理SIMをeSIMへ変換すると元のSIMカードは使える？変換前後の注意点",
+      "category": "esim",
+      "axes": [
+        "Google Pixel ヘルプ「物理的なSIMカードをeSIMに変換する」 （確認日: 2026-08-08）",
+        "Google Pixel ヘルプ「新しいスマートフォンにSIMを移行する」 （確認日: 2026-08-08）",
+        "物理SIM→eSIM変換は「コピー」ではなくSIM形態の変更として扱います",
+        "変換の主な条件"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "pixel-repair-mode-guide",
+      "title": "Pixelの修理モードを使う前後の準備と注意点",
+      "category": "device",
+      "axes": [
+        "修理モード対応機種・空き容量",
+        "バックアップと画面ロックPIN",
+        "修理中に利用できる診断領域",
+        "修理後の終了とデータ確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "pixel-travel-esim-keep-japan-sim-sms",
+      "title": "Pixelで旅行eSIMを使いながら日本のSIMでSMSを受ける方法｜データ・通話・テキストの回線を分ける",
+      "category": "esim",
+      "axes": [
+        "旅行eSIM：モバイルデータ",
+        "日本SIM/eSIM：テキストメッセージ・必要に応じ通話",
+        "旅行eSIMを追加 目的地で有効化する前にプロファイルを準備します。",
+        "モバイルデータを旅行eSIMへ データ通信の既定SIMは1つです。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "qtmobile-mnp-reissue-expired-procedure-lock",
+      "title": "QTモバイルでMNP予約番号を再発行できない｜有効期限・翌々日・手続きロックを確認",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "qtmobile-mnp-reservation-number-guide",
+      "title": "QTモバイルのMNP予約番号発行方法｜Dタイプ2〜5日・A/Sタイプ翌日以降",
+      "category": "mnp",
+      "axes": [
+        "有効期限内のMNP予約番号がある間は新しい番号を発行できない",
+        "電話手続きは有料（公式FAQ掲載の手数料を申請時に再確認）",
+        "対象回線が音声通話付きでMNP対象か確認",
+        "未払い・SIM再発行・解約予約など進行中手続きがないか確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "rakuten-data-type-tablet-sim-reissue-no-sms",
+      "title": "楽天モバイルのデータタイプ・タブレットでSMSを受け取れずSIM再発行できない時",
+      "category": "esim",
+      "axes": [
+        "Rakuten WiFi PocketなどSMSを受信できない製品",
+        "タブレットなどSMS受信が困難な利用形態",
+        "公式が指定するRakuten最強プラン（データタイプ）の対象契約",
+        "旧端末の紛失・故障・eSIM誤削除"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "rakuten-esim-reissue-otp-not-received-after-delete",
+      "title": "楽天モバイルでeSIM再発行前に旧eSIMを削除してSMS認証できない時｜別申請ルートを確認",
+      "category": "esim",
+      "axes": [
+        "旧eSIMを削除していないならそのまま維持",
+        "旧端末でmy 楽天モバイルを開く",
+        "SMS認証を受けて再発行申請",
+        "旧回線でSMSを受けられない場合は専用フォーム条件を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "rakuten-mobile-mnp-reservation-number-guide",
+      "title": "楽天モバイルのMNP予約番号発行方法｜即日発行・有効期限・番号を確認できない時",
+      "category": "mnp",
+      "axes": [
+        "MNPワンストップで予約番号不要か確認",
+        "my 楽天モバイルへ正しい楽天IDでログイン",
+        "複数回線なら転出対象番号を選択",
+        "発行済み番号の有効期限を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "rakuten-other-carrier-phone-apn-no-data",
+      "title": "他社で使っていたスマホが楽天モバイルで通信できない時｜対応製品・APN・SIMロックの確認順",
+      "category": "network",
+      "axes": [
+        "正確な型番を確認 設定画面や箱で型番を確認します。",
+        "楽天回線の対応状況 楽天モバイルの製品対応状況を確認します。",
+        "SIMロック 他社購入端末はSIMロック状態を確認します。",
+        "APN 自動設定されない端末のみ、楽天公式案内に従って設定します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "rayl-mobile-mnp-13-days-data-sim-not-eligible",
+      "title": "RayL MobileのMNPで進めない｜予約番号残り13日・データ専用SIM・ワンストップ",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "rayl-mobile-mnp-reservation-number-guide",
+      "title": "RayL MOBILEのMNP転出・予約番号確認方法｜15日有効・名義一致・再申込の注意",
+      "category": "mnp",
+      "axes": [
+        "契約名義と本人確認書類・支払名義の不一致はMNP手続きで問題になる",
+        "キャンセル・再申込時はSIM発行日から15日経過後の再手続きが必要になる場合がある",
+        "予約番号の期限切れ時はサポート確認が必要",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "redx-mobile-sim-mnp-reservation-number-guide",
+      "title": "REDX MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "REDX MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "rerimoba-sim-mnp-reservation-number-guide",
+      "title": "レリモバSIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "レリモバSIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "rocket-mobile-mnp-button-not-shown-plan-change-old-number",
+      "title": "ロケットモバイルでMNP転出ボタンが出ない・予約番号が発行されない原因",
+      "category": "mnp",
+      "axes": [
+        "通話プラン契約か確認する",
+        "翌月プラン変更予約の有無を確認する",
+        "以前発行したMNP予約番号の状態を確認する",
+        "競合状態が解消したら日付指定なしで再度MNP転出を申し込む"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "rocket-mobile-mnp-reservation-number-guide",
+      "title": "ロケットモバイルのMNP予約番号発行方法｜発行されない時のプラン変更予約・旧番号残存を確認",
+      "category": "mnp",
+      "axes": [
+        "「来月からプラン変更」を予約していると予約番号が発行されない場合がある",
+        "過去にMNP予約番号を発行したものの他社へ転出しなかった場合、予約番号が発行されないことがある",
+        "上記条件では公式サポート側での変更が必要",
+        "現在のサービス名・プラン名・契約基盤を確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "shingo-mobile-sim-mnp-reservation-number-guide",
+      "title": "SHINGO MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "SHINGO MOBILE SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "sim-migration-auth",
+      "title": "SIM移行・eSIM再発行・本人認証トラブル",
+      "category": "esim",
+      "axes": [
+        "10本のSIM移行・再発行・認証記事",
+        "現在有効なSIM/eSIM",
+        "転送または再発行の対応条件",
+        "SMS本人確認の受信可否"
+      ],
+      "section_added": false,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "smartphone-5g-not-showing",
+      "title": "5G対応スマートフォンで5G表示にならない時の切り分け",
+      "category": "network",
+      "axes": [
+        "対応周波数帯と端末モデル",
+        "5G SA/NSAと優先ネットワーク",
+        "省電力・デュアルSIM制限",
+        "SIM契約と基地局エリア"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-alarm-not-ringing",
+      "title": "スマートフォンのアラームが鳴らない・音が小さい時の対処法",
+      "category": "general",
+      "axes": [
+        "アラーム時刻の午前・午後と曜日を確認する",
+        "アラーム音が「なし」になっていないか確認する",
+        "1〜2分後のテストアラームを作って実際に鳴るか確認する",
+        "アラームの時刻、繰り返し曜日、サウンド、振動、名称を開いて保存状態を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-android-auto-disconnects",
+      "title": "Android Autoが切断・起動しない時の詳細確認",
+      "category": "general",
+      "axes": [
+        "データ対応USBケーブルと端子",
+        "ワイヤレスAndroid Autoの要件",
+        "位置情報・電話・通知等の権限",
+        "省電力・アプリ更新・車載機互換性"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-apn-settings-not-working",
+      "title": "スマートフォンのAPN設定が保存できない・通信できない時の詳細確認",
+      "category": "network",
+      "axes": [
+        "APN名・APNタイプ・プロトコル",
+        "ユーザー名・認証方式",
+        "MCC/MNCとSIM情報",
+        "キャリア構成と編集制限"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-app-crashes",
+      "title": "スマートフォンのアプリが開かない・すぐ落ちる時の対処法",
+      "category": "app",
+      "axes": [
+        "サービス全体の障害情報を確認する",
+        "アプリ内データが端末だけに保存されていないか確認する",
+        "ログイン情報や二段階認証手段を確保する",
+        "アプリを完全に終了し、もう一度開きます。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 8
+    },
+    {
+      "slug": "smartphone-app-permissions-guide",
+      "title": "スマートフォンのアプリ権限を確認・変更する方法｜安全な判断基準",
+      "category": "app",
+      "axes": [
+        "アプリの主な機能に本当に必要な権限か考える",
+        "常時・使用中のみ・今回のみの選択肢を確認する",
+        "カメラ、マイク、位置情報、写真、連絡先、Bluetooth、通知等を一項目ずつ確認します。",
+        "機能に必要な場合でも、位置情報は「使用中のみ」、写真は「選択した写真」など最小限の選択肢を優先します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-app-tracking-permission-missing",
+      "title": "アプリのトラッキング許可が表示されない・変更できない時の確認",
+      "category": "app",
+      "axes": [
+        "トラッキング要求を許可の全体設定",
+        "年齢・子ども・管理対象アカウント",
+        "構成プロファイル・スクリーンタイム",
+        "Apple Account変更直後等の制限"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-auto-rotate-not-working",
+      "title": "スマートフォンの画面が自動回転しない時の設定と対処法",
+      "category": "general",
+      "axes": [
+        "回転ロックまたは縦向き固定が有効でないか確認する",
+        "ホーム画面ではなく写真・動画アプリでも試す",
+        "端末を机に置いたままではなく手に持って回転させる",
+        "コントロールセンターまたはクイック設定を開き、回転ロック・縦向き固定を解除します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-background-app-delayed-notifications",
+      "title": "アプリを閉じると通知が遅れる時のバックグラウンド設定",
+      "category": "app",
+      "axes": [
+        "バックグラウンドデータ通信",
+        "バッテリー最適化・自動起動",
+        "データセーバー・低電力モード",
+        "プッシュ通知用の常時接続"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-backup-before-reset",
+      "title": "スマートフォン初期化前のバックアップ完全チェックリスト",
+      "category": "cloud",
+      "axes": [
+        "バックアップ作成だけでなく復元可能か確認する",
+        "Apple・GoogleアカウントのIDとパスワードを確認する",
+        "認証アプリ、銀行、決済、LINE等の個別引継ぎを確認する",
+        "写真・動画がiCloud、Googleフォト、PC等へ同期済みか、最新の数件を別端末またはWebから開いて確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 8
+    },
+    {
+      "slug": "smartphone-basic-touch-gestures",
+      "title": "スマートフォンのタップ・長押し・スワイプ操作｜初心者向け基本ガイド",
+      "category": "general",
+      "axes": [
+        "画面が濡れていないか、保護フィルムが浮いていないか確認する",
+        "指先ではなく指の腹で軽く触れる",
+        "反応しない場合は別の場所や別のアプリでも同じか確認する",
+        "タップは項目を一度だけ軽く触れます。強く押す必要はありません。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 7
+    },
+    {
+      "slug": "smartphone-battery-drains-fast",
+      "title": "スマートフォンのバッテリー減りが早い時の確認と改善方法",
+      "category": "general",
+      "axes": [
+        "設定のバッテリー使用量で消費の多いアプリを確認する",
+        "高温・低温環境や電波の弱い場所での使用を振り返る",
+        "購入直後や大型更新直後は一時的処理がないか確認する",
+        "端末を再起動し、OSとアプリを更新します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 8
+    },
+    {
+      "slug": "smartphone-biometric-unavailable-after-restart",
+      "title": "再起動後に指紋・顔認証が使えずパスコードを求められる理由",
+      "category": "security",
+      "axes": [
+        "再起動後の初回ロック解除条件",
+        "一定時間・失敗回数による再認証",
+        "生体情報・パスコード変更の影響",
+        "正規のアカウント・端末復旧手順"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-bluetooth-audio-stutters",
+      "title": "Bluetooth音声が途切れる・遅延する時のコーデック確認",
+      "category": "general",
+      "axes": [
+        "Bluetoothコーデックと対応プロファイル",
+        "4GHz Wi-Fi・周辺機器の干渉",
+        "マルチポイント・複数端末接続",
+        "イヤホン電池・ファームウェア・開発者設定"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-bluetooth-not-connecting",
+      "title": "Bluetooth機器がスマートフォンにつながらない時の対処法",
+      "category": "general",
+      "axes": [
+        "接続先機器をペアリングモードにする",
+        "別の端末へ接続中でないか確認する",
+        "十分に充電され、通信距離内にあるか確認する",
+        "Bluetoothをオフにし、数秒待ってオンへ戻します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 8
+    },
+    {
+      "slug": "smartphone-browser-popups-redirects",
+      "title": "スマートフォンのブラウザで広告・警告・リダイレクトが止まらない時の対処法",
+      "category": "app",
+      "axes": [
+        "警告がブラウザ内だけか、ホーム画面や他アプリにも出るか確認する",
+        "表示された電話番号やインストールボタンを押していないか確認する",
+        "ブラウザ通知を許可したサイトを確認する",
+        "警告内のボタンや電話番号を使わず、ブラウザのタブ一覧から該当タブを閉じます。閉じられない場合はアプリを終了します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-camera-mic-indicator-stays-on",
+      "title": "カメラ・マイク使用中の表示が消えない時の確認",
+      "category": "general",
+      "axes": [
+        "カメラ・マイクを使用したアプリ履歴",
+        "通話・録音・音声アシスタント",
+        "アクセシビリティ・管理アプリ・再起動",
+        "症状が発生した日時、場所、接続先、表示された警告やエラーコードをスクリーンショットまたはメモで残します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-camera-not-working",
+      "title": "スマートフォンのカメラが起動しない・真っ暗・ピントが合わない時の対処法",
+      "category": "general",
+      "axes": [
+        "標準カメラと別のカメラ対応アプリで結果を比較する",
+        "前面カメラと背面カメラを切り替えて確認する",
+        "レンズの汚れ、ケース、保護ガラス、磁石付きアクセサリーを確認する",
+        "カメラアプリを終了し、数秒待って開き直します。他のビデオ通話・QRコードアプリも終了します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "smartphone-cannot-make-calls",
+      "title": "スマートフォンから電話をかけられない時の確認手順",
+      "category": "general",
+      "axes": [
+        "別の番号にも発信できないか確認する",
+        "圏外、緊急通話のみ、機内モード等の表示を確認する",
+        "未払い・利用停止・海外ローミング条件を通信会社で確認する",
+        "機内モードを約10秒オンにしてオフへ戻し、電波を再取得します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "smartphone-cannot-receive-calls",
+      "title": "スマートフォンに電話がかかってこない・着信しない時の対処法",
+      "category": "messaging",
+      "axes": [
+        "すべての相手から着信しないか、特定番号だけか確認する",
+        "集中モード、サイレント、不明な発信者の消音を確認する",
+        "別の電話から実際にテスト着信する",
+        "機内モードをオン・オフし、端末を再起動してネットワークへ再登録します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "smartphone-captive-portal-login-not-opening",
+      "title": "ホテル・空港Wi-Fiのログイン画面が出ない時の対処法",
+      "category": "network",
+      "axes": [
+        "HTTPページへのリダイレクト",
+        "VPN・Private DNSの一時停止",
+        "ランダムMACと端末登録",
+        "ブラウザCookieと期限切れセッション"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-carplay-disconnects",
+      "title": "CarPlayが頻繁に切断・再接続する時の確認",
+      "category": "general",
+      "axes": [
+        "有線ケーブル・車両USB端子",
+        "ワイヤレスCarPlayのWi-Fi・Bluetooth",
+        "車両登録の削除と再ペアリング",
+        "iOS・車載機ファームウェア・VPN"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-charging-slow",
+      "title": "スマートフォンの充電が遅い時の原因と改善方法",
+      "category": "general",
+      "axes": [
+        "充電器とケーブルの出力・規格が端末に合うか確認する",
+        "充電中にゲーム、動画、ナビ、テザリングをしていないか確認する",
+        "本体が高温または低温になっていないか確認する",
+        "壁のコンセントと端末対応の充電器へ直接接続し、パソコンUSBや出力の低い充電器と比較します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "smartphone-clipboard-not-working",
+      "title": "コピーした文字を貼り付けできない・消える時の確認",
+      "category": "general",
+      "axes": [
+        "クリップボード履歴と固定",
+        "機密情報の自動消去",
+        "キーボードアプリの履歴機能",
+        "個人・仕事用プロファイル間の制限"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-cloud-backup-storage-basics",
+      "title": "スマホのクラウドストレージとバックアップは何が違う？写真・端末データ・同期を整理",
+      "category": "cloud",
+      "axes": [
+        "現在使っているクラウドサービスとアカウントを列挙する",
+        "写真・連絡先・ファイル・端末バックアップの保存先を分けて確認する",
+        "旧端末で同期完了を確認する",
+        "新端末で同じアカウントへサインインする"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "smartphone-copy-paste-text",
+      "title": "スマートフォンで文字をコピー・貼り付けする方法｜選択範囲の調整も解説",
+      "category": "general",
+      "axes": [
+        "パスワードやカード番号をクリップボードへ残さない",
+        "コピーしたい文字が画像ではないか確認する",
+        "アプリ側がコピーを禁止していないか確認する",
+        "コピーしたい文字付近を長押しします。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 7
+    },
+    {
+      "slug": "smartphone-default-app-opens-wrong-app",
+      "title": "リンクやファイルが違うアプリで開く時の既定アプリ設定",
+      "category": "app",
+      "axes": [
+        "既定のブラウザ・電話・SMSアプリ",
+        "ファイル種類と対応アプリ",
+        "対応リンク・ユニバーサルリンク",
+        "既定値の消去と再選択"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-domestic-overseas-model-differences",
+      "title": "同じスマホでも日本版と海外版は何が違う？型番・SIM・FeliCa・通信仕様の確認方法",
+      "category": "device",
+      "axes": [
+        "物理SIMスロットの数とeSIM対応の有無",
+        "LTE/5Gの対応バンド、SA/NSAなどの通信仕様",
+        "VoLTE・IMSやキャリア側の動作確認状況",
+        "FeliCa・おサイフケータイ等の地域向け機能"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "smartphone-dual-sim-wrong-line",
+      "title": "デュアルSIMで違う回線から発信・通信される時の設定",
+      "category": "general",
+      "axes": [
+        "既定の音声・SMS・データ回線",
+        "連絡先ごとの優先SIM",
+        "自動データ切替・バックアップ回線",
+        "ローミングと回線ラベル"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-emergency-sos-accidental-trigger",
+      "title": "緊急SOSが誤作動・カウントダウンする時の設定確認",
+      "category": "general",
+      "axes": [
+        "緊急SOSのボタン操作・ジェスチャー",
+        "カウントダウン音と自動通報",
+        "緊急連絡先・位置情報共有",
+        "ケースの干渉・地域・機種差"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-esim-not-activating",
+      "title": "eSIMを追加・有効化できない時の確認手順｜機種変更・QRコード対応",
+      "category": "esim",
+      "axes": [
+        "端末と通信会社がeSIMに対応しているか確認する",
+        "安定したWi-Fiへ接続しているか確認する",
+        "QRコードが一度限りか、旧端末で使用済みでないか確認する",
+        "端末のOSを更新し、日付と時刻を自動設定にして、安定したWi-Fiへ接続します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "smartphone-esim-region-model-differences",
+      "title": "eSIM対応は同じ機種でも違う？地域・型番・物理SIM構成の確認方法",
+      "category": "esim",
+      "axes": [
+        "型番と販売地域を確認する",
+        "メーカー公式でeSIM対応を確認する",
+        "契約中の通信事業者がその端末のeSIMを扱えるか確認する",
+        "EID・IMEIなど事業者が求める端末情報を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "smartphone-external-microphone-not-recognized",
+      "title": "スマートフォンが外部マイクを認識しない時の詳細確認",
+      "category": "general",
+      "axes": [
+        "TRRSのCTIA規格・端子配線",
+        "USBオーディオ対応と必要電力",
+        "変換アダプタのDAC・認証",
+        "録音アプリの入力先と権限"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-find-device-offline",
+      "title": "端末を探すでオフライン表示になる時の仕組みと対策",
+      "category": "general",
+      "axes": [
+        "端末の電源・通信・機内モード",
+        "位置情報と端末探索機能の事前設定",
+        "オフライン探索ネットワーク・Bluetooth",
+        "最終位置と遠隔ロック・消去命令"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-gps-location-not-working",
+      "title": "スマートフォンのGPS・位置情報がずれる、取得できない時の対処法",
+      "category": "general",
+      "axes": [
+        "屋内ではなく空が見える場所でも位置がずれるか確認する",
+        "標準地図と別の位置情報アプリで比較する",
+        "対象アプリの位置情報権限が許可されているか確認する",
+        "位置情報サービスを一度オフ・オンし、端末を再起動します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-hdr-photo-colors-change",
+      "title": "HDR写真の色が他の端末やSNSで変わる理由と対処法",
+      "category": "general",
+      "axes": [
+        "HDR対応ディスプレイと明るさ",
+        "色空間・広色域・トーンマッピング",
+        "編集アプリのHDR対応",
+        "SNS・メッセージアプリの再圧縮"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-heic-heif-not-opening",
+      "title": "HEIC・HEIF写真が開けない・共有できない時の対処法",
+      "category": "general",
+      "axes": [
+        "HEIC・HEIFとJPEGの違い",
+        "受信側OS・アプリの対応",
+        "共有・転送時の自動変換",
+        "メタデータ・HDR・画質の保持"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-hotspot-not-working",
+      "title": "スマートフォンのテザリング・モバイルホットスポットが使えない時の対処法",
+      "category": "network",
+      "axes": [
+        "スマートフォン自体がモバイル通信できるか確認する",
+        "契約プランでテザリングが利用可能か確認する",
+        "接続台数上限とバッテリー残量を確認する",
+        "Wi-Fiを切り、スマートフォン単体のモバイルデータ通信が正常か確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "smartphone-keyboard-not-showing",
+      "title": "スマートフォンのキーボードが出ない・文字入力できない時の対処法",
+      "category": "general",
+      "axes": [
+        "別のアプリの入力欄でもキーボードが出ないか確認する",
+        "Bluetoothキーボードが接続中でないか確認する",
+        "音声入力や手書き入力へ切り替わっていないか確認する",
+        "入力欄をもう一度タップし、画面下部のキーボード切替アイコンが表示されるか確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-lte-5g-band-carrier-compatibility",
+      "title": "スマホのLTE・5G対応バンドから相性のいいキャリアを調べる方法",
+      "category": "network",
+      "axes": [
+        "端末の正確な型番・販売地域を特定する",
+        "メーカーまたは販売キャリアの公式対応Band表を取得する",
+        "利用予定キャリアの使用周波数と照合する",
+        "LTEと5Gを別々に評価する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "smartphone-microphone-not-working",
+      "title": "スマートフォンのマイクが使えない・声が届かない時の対処法",
+      "category": "general",
+      "axes": [
+        "標準の録音アプリで自分の声を録音して再生する",
+        "通常通話、スピーカー通話、動画撮影で結果を比較する",
+        "ケースや保護フィルムがマイク穴を塞いでいないか確認する",
+        "Bluetoothイヤホンを外し、音声入力先を本体マイクへ戻します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "smartphone-mobile-data-not-working",
+      "title": "スマートフォンのモバイルデータ通信ができない時の確認手順",
+      "category": "network",
+      "axes": [
+        "契約のデータ容量・支払状況・障害情報を確認する",
+        "モバイルデータが対象SIMでオンか確認する",
+        "海外ではローミング設定と契約対象国を確認する",
+        "機内モードをオンにして約10秒後にオフへ戻し、ネットワークを再取得します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 8
+    },
+    {
+      "slug": "smartphone-network-settings-reset",
+      "title": "スマートフォンのネットワーク設定をリセットする方法｜消える設定を確認",
+      "category": "network",
+      "axes": [
+        "自宅・職場Wi-Fiのパスワードを確認する",
+        "Bluetooth機器の再ペアリング方法を確認する",
+        "VPN、APN、デュアルSIM等の設定を記録する",
+        "再起動、機内モード、Wi-Fiの登録解除など、影響の小さい対処を先に試します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 7
+    },
+    {
+      "slug": "smartphone-nfc-contactless-not-working",
+      "title": "スマートフォンのNFC・タッチ決済が反応しない時の確認手順",
+      "category": "general",
+      "axes": [
+        "NFC機能とタッチ決済が端末・地域で対応しているか確認する",
+        "決済カードの期限・利用停止・本人確認状態を確認する",
+        "ケースやカード収納が読み取り位置を妨げていないか確認する",
+        "AndroidではNFCと非接触型決済をオンにし、既定の支払いアプリを確認します。iPhoneではWalletのカード状態を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-no-sound",
+      "title": "スマートフォンから音が出ない時の対処法｜着信・動画・通話を切り分ける",
+      "category": "messaging",
+      "axes": [
+        "着信音、動画、アラーム、通話のどれが無音か確認する",
+        "音量ボタンを押し、変更している音量の種類を確認する",
+        "Bluetoothイヤホンや車載機器へ音が出ていないか確認する",
+        "消音モード、集中モード、着信音量、メディア音量を個別に確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "smartphone-not-charging",
+      "title": "スマートフォンが充電できない時の対処法｜ケーブル・端子・本体の切り分け",
+      "category": "general",
+      "axes": [
+        "濡れている、焦げ臭い、膨張している場合は使用を止める",
+        "別の安全なケーブル・アダプター・コンセントで比較する",
+        "充電端子へ金属製の物を差し込まない",
+        "ケーブル、アダプター、コンセントを目視し、破損や変色があれば使用を止めます。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 8
+    },
+    {
+      "slug": "smartphone-notifications-not-working",
+      "title": "スマートフォンの通知が来ない・遅れる時の確認手順",
+      "category": "app",
+      "axes": [
+        "通知されないのが一つのアプリだけか全アプリか確認する",
+        "集中モード・おやすみモード・サイレント設定を確認する",
+        "アプリを開くとまとめて通知されるか確認する",
+        "設定の通知一覧から対象アプリを開き、通知許可、ロック画面、音、バナー、通知カテゴリを確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "smartphone-overheating",
+      "title": "スマートフォンが熱い・高温警告が出る時の安全な対処法",
+      "category": "general",
+      "axes": [
+        "高負荷アプリ、急速充電、直射日光、車内利用の直後か確認する",
+        "高温警告、膨らみ、異臭、煙、液漏れがないか確認する",
+        "特定アプリだけで毎回発熱するか確認する",
+        "高温警告、異臭、煙、膨らみがある場合は使用と充電を中止し、可燃物から離れた安全な場所へ置きます。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "smartphone-passkey-signin-fails",
+      "title": "スマートフォンのパスキーでログインできない時の確認",
+      "category": "security",
+      "axes": [
+        "パスキーの保存先と資格情報プロバイダ",
+        "端末ロック・生体認証・同期アカウント",
+        "別端末認証のBluetoothとQRコード",
+        "正しいドメイン・アプリ・ユーザーID"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-physical-sim-esim-current-model-comparison-2026",
+      "title": "2026年の現行スマホは物理SIMが使える？iPhone 17・17e・Pixel 10 Pro・Galaxy Z Flip7/Fold7を比較",
+      "category": "esim",
+      "axes": [
+        "物理SIMを差し替えたい Pixel 10 ProやGalaxy日本版のようにnanoSIMを残す機種を選ぶ",
+        "複数eSIMを使いたい 各機種のdual eSIM対応と通信事業者側対応を確認",
+        "海外版を輸入したい 型番・SIMトレイ・Band・FeliCa・保証を別々に確認",
+        "MNP予定がある 移行当日にeSIM再発行で詰まらないよう、認証情報とWi‑Fiを準備"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "smartphone-picture-in-picture-not-working",
+      "title": "動画のピクチャーインピクチャーが使えない時の確認",
+      "category": "general",
+      "axes": [
+        "ピクチャーインピクチャー権限",
+        "アプリ・契約プランの対応",
+        "ホームへ戻る操作方法",
+        "著作権・管理プロファイルの制限"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-public-wifi-certificate-warning",
+      "title": "公衆Wi-Fiで証明書警告が出た時に接続を続けるべきか",
+      "category": "network",
+      "axes": [
+        "SSIDと施設公式案内の一致",
+        "認証画面のURL・証明書・日時",
+        "同名の偽アクセスポイントの可能性",
+        "重要なログイン・決済・VPN利用判断"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-quick-share-nearby-not-working",
+      "title": "Quick Share・近距離共有で相手が見つからない時の確認",
+      "category": "general",
+      "axes": [
+        "公開範囲・一時的な全員公開",
+        "Googleアカウント・連絡先照合",
+        "Bluetooth・Wi-Fi・位置情報",
+        "画面ロック・距離・ファイル数"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-random-mac-wifi-problem",
+      "title": "ランダムMACアドレスでWi-Fi認証できない時の確認",
+      "category": "network",
+      "axes": [
+        "ランダムMAC・プライベートアドレス",
+        "ネットワーク側の端末登録方式",
+        "固定MACへ変更する影響",
+        "SSIDごとの設定保存"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-rcs-chat-not-verifying",
+      "title": "RCSチャット機能の電話番号確認が終わらない時の対処法",
+      "category": "messaging",
+      "axes": [
+        "電話番号と既定のSMS SIM",
+        "キャリアサービス・メッセージアプリ",
+        "旧端末のRCS登録解除",
+        "VPN・デュアルSIM・認証SMS"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-remove-suspicious-app",
+      "title": "スマートフォンの怪しいアプリを安全に確認・削除する方法",
+      "category": "app",
+      "axes": [
+        "アプリ名、アイコン、インストール元、導入日を記録する",
+        "銀行・メール・SNS等へ不審なログインがないか別の安全な端末で確認する",
+        "端末管理、アクセシビリティ、VPN、プロファイル権限を持つか確認する",
+        "不審な画面、アプリ情報、権限、請求、エラーをスクリーンショット等で記録します。個人情報は共有しません。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-repair-privacy-checklist",
+      "title": "スマートフォンを修理に出す前のプライバシー保護チェックリスト",
+      "category": "general",
+      "axes": [
+        "完全なバックアップと復元テスト",
+        "修理モード・メンテナンスモード",
+        "SIM/eSIM・決済カード・個人書類",
+        "端末探索・画面ロック・修理受付条件"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-roaming-connected-no-data",
+      "title": "海外ローミングでアンテナ表示はあるのに通信できない時の確認",
+      "category": "network",
+      "axes": [
+        "データローミングと対象回線",
+        "提携事業者・手動ネットワーク選択",
+        "APNとキャリア設定",
+        "海外利用上限・利用停止状態"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-scan-qr-code",
+      "title": "スマートフォンでQRコードを読み取る方法｜開けない・怪しい場合の対処",
+      "category": "general",
+      "axes": [
+        "コード全体を明るい場所で画面内に収める",
+        "開く前に表示されたドメイン名を読む",
+        "支払い・ログインを求めるリンクは公式アプリから開き直す",
+        "標準カメラを開き、QRコード全体へピントを合わせます。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 7
+    },
+    {
+      "slug": "smartphone-screen-black-but-phone-on",
+      "title": "スマートフォンの画面が真っ暗なのに電源は入っている時の対処法",
+      "category": "general",
+      "axes": [
+        "着信音、振動、通知音が鳴るか確認する",
+        "画面保護フィルムやケースがセンサーやボタンを妨げていないか確認する",
+        "落下、水濡れ、高温・低温の直後ではないか確認する",
+        "暗い場所へ移動し、明るさが最低になっていないか、音声アシスタントやコントロール画面から調整できるか試します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "smartphone-screen-flickering-lines",
+      "title": "スマートフォン画面のちらつき・線・色がおかしい時の確認手順",
+      "category": "general",
+      "axes": [
+        "スクリーンショットにも異常が写るか確認する",
+        "画面の明るさや色補正を変更した直後ではないか確認する",
+        "落下、圧迫、発熱の後に始まったか確認する",
+        "端末を再起動し、一時的な描画エラーか確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-screen-recording-no-audio",
+      "title": "スマートフォンの画面録画で音が入らない時の設定",
+      "category": "general",
+      "axes": [
+        "内部音声・マイク・両方の選択",
+        "通話・著作権保護コンテンツ",
+        "Bluetooth・イヤホンへの音声経路",
+        "症状が発生した日時、場所、接続先、表示された警告やエラーコードをスクリーンショットまたはメモで残します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-sim-not-detected",
+      "title": "スマートフォンがSIMカードを認識しない時の確認と対処法",
+      "category": "general",
+      "axes": [
+        "SIMなし・無効なSIM・圏外など正確な表示を記録する",
+        "同じSIMが以前は使えていたか、機種変更直後か確認する",
+        "端末が特定通信会社へSIMロックされていないか確認する",
+        "機内モードをオン・オフし、端末を再起動します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "smartphone-slow-or-freezing",
+      "title": "スマートフォンが重い・フリーズする時の対処法｜初期化前に試すこと",
+      "category": "general",
+      "axes": [
+        "端末が熱い場合は充電や高負荷操作を止めて冷ます",
+        "空き容量が極端に少なくないか確認する",
+        "直前に追加・更新したアプリを確認する",
+        "画面が操作できる場合は通常再起動します。反応しない場合は機種に合った強制再起動を行います。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 8
+    },
+    {
+      "slug": "smartphone-sms-not-received",
+      "title": "スマートフォンでSMSを受信できない・認証コードが届かない時の対処法",
+      "category": "messaging",
+      "axes": [
+        "通常のSMSと認証コードのどちらが届かないか分ける",
+        "電話番号の国番号・先頭の0・登録番号が正しいか確認する",
+        "迷惑メッセージ、ブロック済み送信者、別タブを確認する",
+        "機内モードを約10秒オン・オフし、端末を再起動して回線へ再登録します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "smartphone-software-update-failed",
+      "title": "スマートフォンのOSアップデートに失敗する時の対処法",
+      "category": "general",
+      "axes": [
+        "対応機種と配信対象のOSか確認する",
+        "十分な空き容量とバッテリー残量があるか確認する",
+        "安定したWi-Fiと充電器を用意する",
+        "重要データをバックアップし、端末を充電器へ接続します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-storage-full",
+      "title": "スマートフォンのストレージ容量が足りない時の安全な整理方法",
+      "category": "general",
+      "axes": [
+        "バックアップやクラウド同期が完了しているか確認する",
+        "「端末から削除」がクラウド側にも反映される仕様か確認する",
+        "メッセージ添付やダウンロードも対象にする",
+        "設定のストレージ画面で、容量を多く使う分類を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 8
+    },
+    {
+      "slug": "smartphone-take-screenshot",
+      "title": "スマートフォンでスクリーンショットを撮る方法｜iPhone・Android対応",
+      "category": "device",
+      "axes": [
+        "個人情報、通知、位置情報が写り込んでいないか確認する",
+        "動画配信・金融・社内アプリなどは撮影を制限する場合がある",
+        "保存前に画像の不要部分を切り取る",
+        "Face ID搭載iPhoneはサイドボタンと音量上ボタンを同時に短く押します。ホームボタン搭載機はサイドまたはトップボタンとホームボタンを同時に押します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 7
+    },
+    {
+      "slug": "smartphone-touchscreen-not-responding",
+      "title": "スマートフォンのタッチパネルが反応しない・勝手に動く時の対処法",
+      "category": "general",
+      "axes": [
+        "画面と指が乾いており、油分や水滴がないか確認する",
+        "ケースや保護フィルムを一時的に外して変化を見る",
+        "充電中だけ症状が出るか確認する",
+        "画面を柔らかい乾いた布で拭き、手袋、水滴、汚れを除いてから再度操作します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 11
+    },
+    {
+      "slug": "smartphone-unknown-certificate-warning",
+      "title": "スマートフォンで不明な証明書・安全でない接続警告が出る時の確認",
+      "category": "general",
+      "axes": [
+        "URL・証明書の発行先と期限",
+        "端末の日付・時刻・タイムゾーン",
+        "公衆Wi-Fi・VPN・組織の通信検査",
+        "インストール済みユーザー証明書"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-update-stuck-progress",
+      "title": "スマートフォンのアップデートが途中で止まった時の安全な対処法",
+      "category": "general",
+      "axes": [
+        "更新開始からの経過時間と進行表示を記録する",
+        "充電器と安定した電源へ接続されているか確認する",
+        "本体が異常発熱、膨張、異臭を起こしていないか確認する",
+        "まず充電器へ接続したまま十分に待ちます。大規模更新や容量不足では表示が長時間止まって見えることがあります。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-usb-c-display-output-not-working",
+      "title": "スマートフォンのUSB-C映像出力ができない時の規格確認",
+      "category": "general",
+      "axes": [
+        "端末のDisplayPort Alt Mode対応",
+        "映像対応USB-Cケーブル・変換器",
+        "ハブ・モニターの給電と入力選択",
+        "ミラーリング・デスクトップモード"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-usb-computer-not-recognized",
+      "title": "スマートフォンをUSB接続してもパソコンに認識されない時の対処法",
+      "category": "general",
+      "axes": [
+        "ケーブルが充電専用ではなくデータ通信対応か確認する",
+        "端末のロックを解除した状態で接続する",
+        "別のUSBポート・ケーブル・パソコンで比較する",
+        "端末とパソコンを再起動し、USBハブを外して本体ポートへ直接接続します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-video-too-large-to-send",
+      "title": "スマートフォン動画が容量超過で送れない時の最適な方法",
+      "category": "general",
+      "axes": [
+        "動画の長さ・解像度・フレームレート",
+        "HEVC・H.264等のコーデック",
+        "アプリの添付上限と再圧縮",
+        "クラウドリンクと公開範囲"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-voice-search",
+      "title": "スマートフォンで音声検索する方法｜認識しない時の確認事項",
+      "category": "general",
+      "axes": [
+        "周囲へ聞かれて困る内容を話さない",
+        "検索アプリのマイク権限を確認する",
+        "入力言語が話す言語と一致しているか確認する",
+        "Googleアプリ、ブラウザ、または検索ウィジェットのマイクアイコンを押します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 7
+    },
+    {
+      "slug": "smartphone-volte-calls-drop-data",
+      "title": "通話中に4G・5G通信が切れる時のVoLTE確認",
+      "category": "messaging",
+      "axes": [
+        "VoLTEまたは4G通話の有効化",
+        "IMS登録とキャリア設定",
+        "音声回線とデータ回線の組合せ",
+        "端末・SIM・エリアのVoLTE対応"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-vpn-connected-no-internet",
+      "title": "VPN接続済みなのにインターネットが使えない時の詳細確認",
+      "category": "privacy",
+      "axes": [
+        "VPNプロトコルと接続先",
+        "常時接続・VPNなし通信をブロック",
+        "DNS・Private DNSの競合",
+        "MTU・IPv6・他のVPNプロファイル"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-water-damage-first-aid",
+      "title": "スマートフォンを水に落とした・濡らした直後に行うこと",
+      "category": "general",
+      "axes": [
+        "海水、飲料、洗剤など真水以外に濡れたか確認する",
+        "本体が発熱、膨張、異臭、煙を出していないか確認する",
+        "端末メーカーの耐水条件と保証範囲を確認する",
+        "安全に触れられる場合は水から取り出し、充電ケーブルとアクセサリーを外します。発熱・煙・異臭があれば触り続けません。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-wifi-calling-not-working",
+      "title": "Wi-Fi通話が有効にならない・発着信できない時の確認",
+      "category": "messaging",
+      "axes": [
+        "通信事業者と契約の対応",
+        "緊急連絡先住所の登録",
+        "ルーターのNAT・ファイアウォール",
+        "VPN・Private DNS・海外利用条件"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smartphone-wifi-not-connecting",
+      "title": "スマートフォンがWi-Fiにつながらない時の対処法｜iPhone・Android",
+      "category": "network",
+      "axes": [
+        "他の端末も同じWi-Fiで通信できないか確認する",
+        "機内モードがオンになっていないか確認する",
+        "会社・学校・ホテルでは利用規約画面が出ていないか確認する",
+        "Wi-Fiを一度オフにし、10秒ほど待ってオンに戻します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 8
+    },
+    {
+      "slug": "smartphone-wireless-charging-not-working",
+      "title": "スマートフォンのワイヤレス充電ができない・途中で止まる時の対処法",
+      "category": "general",
+      "axes": [
+        "端末と充電器が同じワイヤレス充電規格に対応しているか確認する",
+        "ケース内に金属板、磁石、カードが入っていないか確認する",
+        "有線充電では正常に充電できるか確認する",
+        "充電パッドの電源アダプターとケーブルを確認し、メーカー推奨の出力へ接続します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 10
+    },
+    {
+      "slug": "smiles-connect-mnp-reservation-number-guide",
+      "title": "Smiles ConnectのMNP予約番号発行方法｜アプリでSMS認証してRequest MNP number",
+      "category": "mnp",
+      "axes": [
+        "未払いがある場合は解約処理されない",
+        "SMS認証コードを受け取れる状態が必要",
+        "対象回線が音声通話付きでMNP対象か確認",
+        "未払い・SIM再発行・解約予約など進行中手続きがないか確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "smiles-connect-mnp-sms-code-unpaid-cancellation",
+      "title": "Smiles ConnectでMNP手続きが進まない｜SMS認証コード・未払いを確認",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "softbank-esim-installed-but-line-not-opened",
+      "title": "SoftBankのeSIMを設定したのに通信できない時｜「回線を開通させてください」メールも確認",
+      "category": "esim",
+      "axes": [
+        "SoftBank「eSIM設定後に通信できない場合」 （確認日: 2026-08-08）",
+        "SoftBank「eSIMの設定方法」 （確認日: 2026-08-08）",
+        "「eSIMが入っているか」と「回線が開通済みか」を別々に確認します",
+        "まずeSIMが端末に入っているか確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "softbank-esim-set-no-data-troubleshooting",
+      "title": "SoftBankのeSIMを設定したのに通信できない時｜回線選択・再起動・プロファイル確認の順番",
+      "category": "esim",
+      "axes": [
+        "eSIMが端末に表示されているか iPhone/AndroidのSIM設定でSoftBank回線を確認します。",
+        "回線がオンか デュアルSIMではSoftBank回線が無効になっていないか確認します。",
+        "モバイルデータ回線 データ通信にSoftBankが選ばれているか確認します。",
+        "機内モードON/OFF・再起動 回線の再登録を促します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "softbank-mnp-reservation-number-guide",
+      "title": "SoftBankのMNP予約番号発行方法｜20時以降・修理中・SMSが届かない時の対処",
+      "category": "mnp",
+      "axes": [
+        "MNPワンストップ対象か確認",
+        "20時以降なら翌朝のSMS通知を待つ",
+        "修理受付中か確認",
+        "SMS受信可能か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "softbank-other-carrier-phone-apn-volte-after-3g-end",
+      "title": "他社購入スマホをSoftBankで使って通信・通話できない時｜APNとVoLTEを3G終了後基準で確認",
+      "category": "messaging",
+      "axes": [
+        "SIMロック状態 他社端末は解除済みか確認します。",
+        "APN SoftBankの契約/USIMに合う公式設定を確認します。",
+        "4G/5G優先 優先ネットワークがLTE/5G系になっているか確認します。",
+        "VoLTE 「4G回線による通話」等を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "softbank-tablet-nonvoice-mnp-web-unavailable",
+      "title": "SoftBankのタブレット・非音声端末でMNP／解約をWeb手続きできない時｜店頭確認が必要な条件",
+      "category": "mnp",
+      "axes": [
+        "契約中の端末がスマホ音声回線か非音声端末か確認",
+        "非音声端末ならWeb対象外として店頭経路を確認",
+        "その番号がMNP対象か、解約のみの契約か確認",
+        "音声回線でSMS受信不可ならショップ手続きを検討"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "tackle-berry-sim-mnp-reservation-number-guide",
+      "title": "Tackle Berry SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "Tackle Berry SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "takami-mobile-sim-mnp-reservation-number-guide",
+      "title": "たかみーモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "たかみーモバイル SIMはXmobile公式MNP発行ページの対象サービス一覧に掲載されています",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "tikimo-sim-mnp-five-business-days-procedure-freeze",
+      "title": "Tikimo SIMのMNP予約番号が出ない｜5営業日・発行後の変更手続き停止を確認",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "tikimo-sim-mnp-reservation-number-guide",
+      "title": "Tikimo SIMのMNP予約番号発行方法｜会員サービスメニュー・約5営業日",
+      "category": "mnp",
+      "axes": [
+        "通話機能付きSIMカードがMNP転出対象",
+        "有効期限が残り少ない予約番号は、先の番号失効後に再申請する",
+        "MNP転入しなかった場合、Tikimo SIM契約は自動解約されず継続する",
+        "現在のプランが音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "tone-mobile-mnp-expired-cancellation-voice-option",
+      "title": "TONEモバイルのMNP予約番号が期限切れ｜解約取消・090音声オプションの扱い",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "tone-mobile-mnp-reservation-number-guide",
+      "title": "TONEモバイルのMNP予約番号発行方法｜MY TONE・15日間・090音声オプションの注意",
+      "category": "mnp",
+      "axes": [
+        "MNP予約番号発行後のサービス・090音声オプションの扱いを確認する必要がある",
+        "予約番号の有効期限内に転入を完了しなければMNP予約手続きは取り消され契約が継続する",
+        "端末分割残金がある場合、転出後も支払いが継続する",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "xmobile-mnp-reservation-number-guide",
+      "title": "Xmobile（シン・プラン／グリーンプラン）のMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+      "category": "mnp",
+      "axes": [
+        "Xmobile本体のシン・プラン／グリーンプラン",
+        "MNP転出が完了した時点で元回線が解約となる",
+        "月途中で転出しても月額料金は日割りされないと公式案内されている",
+        "予約番号発行と通常解約を混同しない"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "xperia-1-viii-simfree-esim-bands-carrier-fit",
+      "title": "Xperia 1 VIII SIMフリーのeSIM・対応バンドを解説｜n79・n257と4キャリア適性の見方",
+      "category": "esim",
+      "axes": [
+        "Sony「SIMフリーモデルSIM仕様/通信バンド」 （確認日: 2026-08-08）",
+        "NTTドコモ「5G」 （確認日: 2026-08-08）",
+        "楽天モバイル「取り扱い製品の対応周波数帯一覧」 （確認日: 2026-08-08）",
+        "Xperia 1 VIII SIMフリーは国内利用向けの周波数構成が非常に広い"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "xperia-1-viii-simfree-japan-carrier-compatibility",
+      "title": "Xperia 1 VIII SIMフリー版は4キャリアで使える？ドコモ・au・SoftBank・楽天のBand相性",
+      "category": "device",
+      "axes": [
+        "端末の型番 設定画面または箱で正確な型番を確認します。",
+        "契約回線 ドコモ/au/SoftBank/楽天のどの回線かを確定します。",
+        "SIM・eSIM 端末側とキャリア側の発行方式が一致するか確認します。",
+        "VoLTE/IMS 海外版Androidは特に通話可否を確認します。"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "yamada-new-mobile-mnp-existing-user-share-group",
+      "title": "ヤマダニューモバイルからMNPできない｜新規受付終了後の既存契約・シェアグループ",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "yamada-new-mobile-mnp-reservation-number-guide",
+      "title": "ヤマダニューモバイルのMNP予約番号発行方法｜新規受付終了後の既存契約者向け手順",
+      "category": "mnp",
+      "axes": [
+        "新規申込受付は終了しているが、既存契約者向けFAQは公開されている",
+        "MNP予約番号はマイページから発行する",
+        "通常解約では電話番号を引き継げないため、MNP希望時は予約番号発行を選ぶ",
+        "現在のプランが音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "ymobile-mnp-reservation-number-guide",
+      "title": "Y!mobileのMNP予約番号発行方法｜通知が届かない・修理中・20時以降の注意点",
+      "category": "mnp",
+      "axes": [
+        "SoftBank／LINEMOへの番号移行か確認",
+        "20時以降の受付なら翌朝通知を確認",
+        "SMS受信可否を確認",
+        "修理・貸出機利用中でないか確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "yu-mobile-mnp-payment-invalid-share-sim",
+      "title": "y.u mobileでMNP予約番号が取り消された｜支払方法無効・追加SIM名義を確認",
+      "category": "mnp",
+      "axes": [
+        "契約者マイページで対象回線・契約種別・現在進行中の手続きを確認する",
+        "MNPワンストップと予約番号方式のどちらを使うか一つに決める",
+        "予約番号方式では発行状態・有効期限・再発行可能日を確認する",
+        "SIM再発行、解約、プラン変更、支払い・本人確認など競合する処理があれば先に状態を確認する"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    },
+    {
+      "slug": "yu-mobile-mnp-reservation-number-guide",
+      "title": "y.u mobileのMNP予約番号発行方法｜支払い方法エラー・シェア追加SIMの注意",
+      "category": "mnp",
+      "axes": [
+        "支払い方法が無効だと発行できない",
+        "発行後に支払い方法が無効になると予約番号がキャンセルされる",
+        "シェアプランの追加SIM契約者による発行はカスタマーセンター対応",
+        "対象回線が音声通話付きでMNP対象か確認"
+      ],
+      "section_added": true,
+      "generic_rewrites": 0
+    }
+  ]
+}

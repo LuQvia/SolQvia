@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "official_checked_at": "2026-08-08",
+  "purpose": "SolQvia per-device domestic carrier compatibility reference. Ratings are editorial assessments, not carrier operation guarantees.",
+  "rating_scale": {
+    "◎": "Japan-oriented specification and strong official/carrier evidence",
+    "○": "frequency fit is good but imported/exact-SKU carrier guarantee requires confirmation",
+    "△": "material band/feature gaps or higher interoperability uncertainty"
+  },
+  "records": [
+    {
+      "article_slug": "iphone-17-a3519-japan-carrier-compatibility",
+      "title": "日本版iPhone 17 A3519はどのキャリアと相性がいい？ドコモ・au・SoftBank・楽天を比較",
+      "official_checked_at": "2026-08-08",
+      "methodology": "frequency_bands + VoLTE/IMS caveat + SIM/eSIM + official sales/BYOD status; rating is not carrier guarantee",
+      "source_urls": [
+        "https://www.apple.com/jp/iphone-17/specs/",
+        "https://www.docomo.ne.jp/iphone/17/",
+        "https://www.au.com/support/faq/details/00/0000/000030/pg00003022/",
+        "https://www.softbank.jp/mobile/special/esim-support/",
+        "https://network.mobile.rakuten.co.jp/product/iphone/iphone-17/",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf"
+      ]
+    },
+    {
+      "article_slug": "iphone-17-a3258-us-japan-carrier-compatibility",
+      "title": "米国版iPhone 17 A3258は日本で使える？4キャリアのBand・n79・eSIM相性を比較",
+      "official_checked_at": "2026-08-08",
+      "methodology": "frequency_bands + VoLTE/IMS caveat + SIM/eSIM + official sales/BYOD status; rating is not carrier guarantee",
+      "source_urls": [
+        "https://www.apple.com/iphone-17/specs/",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/simcard_other/notice/",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlocked/",
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://network.mobile.rakuten.co.jp/product/frequency-band/",
+        "https://network.mobile.rakuten.co.jp/product/byod/"
+      ]
+    },
+    {
+      "article_slug": "pixel-10-pro-gn4f5-japan-carrier-compatibility",
+      "title": "日本版Pixel 10 Pro GN4F5は4キャリアで使いやすい？Band・n79・eSIMを比較",
+      "official_checked_at": "2026-08-08",
+      "methodology": "frequency_bands + VoLTE/IMS caveat + SIM/eSIM + official sales/BYOD status; rating is not carrier guarantee",
+      "source_urls": [
+        "https://store.google.com/jp/product/pixel_10_pro_specs?hl=ja",
+        "https://www.docomo.ne.jp/support/product/pixel10pro/spec.html",
+        "https://www.au.com/mobile/product/smartphone/pixel10p/spec/",
+        "https://www.softbank.jp/mobile/products/google-pixel/google-pixel-10-pro/",
+        "https://network.mobile.rakuten.co.jp/product/smartphone/google-pixel-10-pro/"
+      ]
+    },
+    {
+      "article_slug": "pixel-10-pro-g4qur-us-japan-carrier-compatibility",
+      "title": "米国版Pixel 10 Pro G4QURは日本で使える？ドコモn79・B21/B42欠落と4キャリア相性",
+      "official_checked_at": "2026-08-08",
+      "methodology": "frequency_bands + VoLTE/IMS caveat + SIM/eSIM + official sales/BYOD status; rating is not carrier guarantee",
+      "source_urls": [
+        "https://store.google.com/product/pixel_10_pro_specs?hl=en-US",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/simcard_other/notice/",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlocked/",
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://network.mobile.rakuten.co.jp/product/frequency-band/",
+        "https://network.mobile.rakuten.co.jp/product/byod/"
+      ]
+    },
+    {
+      "article_slug": "galaxy-z-flip7-sm-f766q-japan-carrier-compatibility",
+      "title": "Galaxy Z Flip7日本SIMフリー版SM-F766Qは4キャリアで使える？Band・n79・FeliCaを比較",
+      "official_checked_at": "2026-08-08",
+      "methodology": "frequency_bands + VoLTE/IMS caveat + SIM/eSIM + official sales/BYOD status; rating is not carrier guarantee",
+      "source_urls": [
+        "https://www.samsung.com/jp/smartphones/galaxy-z-flip7/specs/",
+        "https://www.docomo.ne.jp/product/sc55f/",
+        "https://www.au.com/mobile/product/smartphone/galaxy_z_flip7/",
+        "https://www.softbank.jp/mobile/products/samsung-galaxy/samsung-galaxy-z-flip7/",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/simcard_other/notice/",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlocked/",
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://network.mobile.rakuten.co.jp/product/frequency-band/",
+        "https://network.mobile.rakuten.co.jp/product/byod/"
+      ]
+    },
+    {
+      "article_slug": "galaxy-z-flip7-sm-f7660-hk-japan-carrier-compatibility",
+      "title": "香港版Galaxy Z Flip7 SM-F7660は日本で使える？4キャリアBand・VoLTE・FeliCa注意点",
+      "official_checked_at": "2026-08-08",
+      "methodology": "frequency_bands + VoLTE/IMS caveat + SIM/eSIM + official sales/BYOD status; rating is not carrier guarantee",
+      "source_urls": [
+        "https://www.samsung.com/hk_en/business/smartphones/galaxy-z/galaxy-z-flip7-jetblack-256gb-sm-f7660zkatgy/",
+        "https://www.samsung.com/jp/smartphones/galaxy-z-flip7/specs/",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/simcard_other/notice/",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlocked/",
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://network.mobile.rakuten.co.jp/product/frequency-band/",
+        "https://network.mobile.rakuten.co.jp/product/byod/"
+      ]
+    },
+    {
+      "article_slug": "galaxy-z-fold7-sm-f966q-japan-carrier-compatibility",
+      "title": "Galaxy Z Fold7日本SIMフリー版SM-F966Qの4キャリア相性｜n79・n257・FeliCaまで比較",
+      "official_checked_at": "2026-08-08",
+      "methodology": "frequency_bands + VoLTE/IMS caveat + SIM/eSIM + official sales/BYOD status; rating is not carrier guarantee",
+      "source_urls": [
+        "https://www.samsung.com/jp/smartphones/galaxy-z-fold7/specs/",
+        "https://www.docomo.ne.jp/product/sc56f/",
+        "https://www.au.com/mobile/product/smartphone/galaxy_z_fold7/",
+        "https://www.softbank.jp/mobile/products/samsung-galaxy/samsung-galaxy-z-fold7/",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/simcard_other/notice/",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlocked/",
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://network.mobile.rakuten.co.jp/product/frequency-band/",
+        "https://network.mobile.rakuten.co.jp/product/byod/"
+      ]
+    },
+    {
+      "article_slug": "galaxy-z-fold7-sm-f9660-hk-japan-carrier-compatibility",
+      "title": "香港版Galaxy Z Fold7 SM-F9660の日本4キャリア相性｜n79・VoLTE・FeliCa・保証を確認",
+      "official_checked_at": "2026-08-08",
+      "methodology": "frequency_bands + VoLTE/IMS caveat + SIM/eSIM + official sales/BYOD status; rating is not carrier guarantee",
+      "source_urls": [
+        "https://www.samsung.com/hk_en/business/smartphones/galaxy-z/galaxy-z-fold7-silver-shadow-256gb-sm-f9660zsdtgy/",
+        "https://www.samsung.com/jp/smartphones/galaxy-z-fold7/specs/",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/simcard_other/notice/",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlocked/",
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://network.mobile.rakuten.co.jp/product/frequency-band/",
+        "https://network.mobile.rakuten.co.jp/product/byod/"
+      ]
+    },
+    {
+      "article_slug": "xperia-1-viii-simfree-japan-carrier-compatibility",
+      "title": "Xperia 1 VIII SIMフリー版は4キャリアで使える？ドコモ・au・SoftBank・楽天のBand相性",
+      "official_checked_at": "2026-08-08",
+      "methodology": "frequency_bands + VoLTE/IMS caveat + SIM/eSIM + official sales/BYOD status; rating is not carrier guarantee",
+      "source_urls": [
+        "https://www.sony.jp/xperia/products/xperia1m8/",
+        "https://www.docomo.ne.jp/product/so51g/",
+        "https://www.au.com/mobile/product/smartphone/xperia_1_viii/",
+        "https://www.softbank.jp/mobile/products/smartphone/xperia1m8/",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/simcard_other/notice/",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlocked/",
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://network.mobile.rakuten.co.jp/product/frequency-band/",
+        "https://network.mobile.rakuten.co.jp/product/byod/"
+      ]
+    }
+  ]
+}
