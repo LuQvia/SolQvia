@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.3",
+  "official_checked_at": "2026-08-08",
+  "purpose": "SolQvia carrier/MVNO MNP procedure reference master",
+  "records": [
+    {
+      "carrier_name": "NTTドコモ",
+      "procedure": "MNP転出・予約番号（音声/データ契約の切り分け）",
+      "web_available": true,
+      "app_available": null,
+      "phone_available": true,
+      "store_available": true,
+      "mnp_one_stop": "乗り換え先条件による",
+      "estimated_issue_time": "通常のWeb発行は手続き完了画面で確認。契約状態によって事前手続きあり",
+      "validity_days": 15,
+      "blocking_conditions": [
+        "ファミリー割引の主回線",
+        "一括請求グループの代表回線",
+        "シェアグループの代表回線",
+        "ドコモ光等のペア回線",
+        "2台目プラス代表回線",
+        "未払い・法人名義等のWeb対象外条件",
+        "5Gデータプラス/Xiデータプラン等のデータ契約は音声契約への変更経路を確認",
+        "ドコモでんき／ガスのペア回線",
+        "Web対象外：機種仕様上パスキー認証不可、未払い、法人名義等"
+      ],
+      "representative_line_conditions": "旧シェア系でも音声子回線等は旧シェアであること自体を理由に音声化不要。シェア代表回線は代表変更または全解除など事前手続きが必要。",
+      "special_plan_conversion_notes": "ドコモ mini提供条件書では5Gデータプラス・Xiデータプランからドコモ miniへの変更が即時適用対象。",
+      "official_source_urls": [
+        "https://www.docomo.ne.jp/faq/detail?faqId=492848",
+        "https://www.docomo.ne.jp/charge/docomo_mini/",
+        "https://www.docomo.ne.jp/binary/pdf/support/utilization_notice/document/docomo_mini.pdf"
+      ],
+      "official_checked_at": "2026-08-08",
+      "preprocedure_notes": "ファミリー割引主回線、一括請求代表、ドコモ光ペア、2台目プラス代表、シェア代表、ドコモでんき／ガスペアはMNP予約番号／ワンストップ前に役割変更・解除を確認。"
+    },
+    {
+      "carrier_name": "ahamo",
+      "procedure": "MNP転出・データ契約からの変更前処理",
+      "web_available": true,
+      "app_available": null,
+      "phone_available": "ネットワーク暗証番号確認専用窓口あり。MNP/プラン変更の一般案内窓口としては扱わない",
+      "store_available": "暗証番号再設定等、一部はドコモショップ/d garden",
+      "mnp_one_stop": "乗り換え先条件による",
+      "estimated_issue_time": "契約状態による",
+      "validity_days": 15,
+      "blocking_conditions": [
+        "5Gデータプラス・データプラス・データプラン等のデータ契約からahamoへ直接変更不可",
+        "ネットワーク暗証番号不明/ロック",
+        "登録住所が最新でない場合は電話で暗証番号確認不可"
+      ],
+      "special_plan_conversion_notes": "ahamo提供条件書ではデータ契約から直接変更できず、事前に音声契約への変更が必要。ネットワーク暗証番号不明時は公式専用窓口で確認後、公式に案内された手続き経路で進める。",
+      "official_source_urls": [
+        "https://www.docomo.ne.jp/binary/pdf/support/utilization_notice/document/ahamo.pdf",
+        "https://ahamo.com/support/network-pin/index.html"
+      ],
+      "official_checked_at": "2026-08-08",
+      "network_pin_notes": "暗証番号確認はahamo公式専用窓口。確認以外の案内不可。ロックは翌日0時以降順次解除。登録住所が最新でない場合は店頭再設定。"
+    },
+    {
+      "carrier_name": "au / UQ mobile",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "app_available": null,
+      "phone_available": null,
+      "store_available": true,
+      "mnp_one_stop": "乗り換え先条件による",
+      "estimated_issue_time": "公式FAQで一律時間の明示を確認できず",
+      "validity_days": 15,
+      "blocking_conditions": [
+        "誤ったau IDでログイン",
+        "他社側でMNP手続き中は予約番号キャンセル不可"
+      ],
+      "official_source_urls": [
+        "https://www.au.com/support/faq/details/00/0000/000026/pg00002640/",
+        "https://www.au.com/support/faq/details/00/0000/000030/pg00003025/",
+        "https://www.au.com/support/faq/details/00/0000/000028/pg00002831/",
+        "https://www.au.com/support/faq/details/00/0000/000031/pg00003116/"
+      ]
+    },
+    {
+      "carrier_name": "SoftBank",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "phone_available": true,
+      "store_available": true,
+      "mnp_one_stop": "乗り換え先条件による",
+      "estimated_issue_time": "My SoftBankは24時間受付。20時以降は翌朝9時以降に順次SMS通知",
+      "validity_days": 15,
+      "blocking_conditions": [
+        "修理受付中",
+        "シンプルスタイルはショップのみ",
+        "SMS受信不可時はショップ推奨"
+      ],
+      "official_source_urls": [
+        "https://www.softbank.jp/support/faq/view/10068",
+        "https://www.softbank.jp/support/faq/view/10704"
+      ],
+      "nonvoice_web_notes": "非音声端末（タブレット、モバイルデータ端末等）はWebのMNP／解約手続き対象外。MNP対象契約かも別途確認。"
+    },
+    {
+      "carrier_name": "Y!mobile",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "phone_available": true,
+      "store_available": true,
+      "mnp_one_stop": "乗り換え先条件による",
+      "estimated_issue_time": "My Y!mobileは24時間受付。20時以降は翌朝9時以降に順次SMS通知",
+      "validity_days": 15,
+      "blocking_conditions": [
+        "修理受付中",
+        "代替機貸出中",
+        "SMS通知未着時はショップ"
+      ],
+      "official_source_urls": [
+        "https://www.ymobile.jp/support/faq/view/21461"
+      ]
+    },
+    {
+      "carrier_name": "楽天モバイル",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "app_available": true,
+      "phone_available": null,
+      "store_available": null,
+      "mnp_one_stop": "対応",
+      "estimated_issue_time": "即日発行",
+      "validity_days": 15,
+      "blocking_conditions": [
+        "複数回線時の対象番号取り違えに注意",
+        "my 楽天モバイルへログインできない場合は先にログイン問題を解消"
+      ],
+      "official_source_urls": [
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001409/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/10001148/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/10001161/"
+      ]
+    },
+    {
+      "carrier_name": "IIJmio",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "phone_available": false,
+      "store_available": false,
+      "mnp_one_stop": "別途対象確認",
+      "estimated_issue_time": "最短1日（翌日23時以降）〜最大4日程度",
+      "validity_days": 15,
+      "blocking_conditions": [
+        "解約申込済み",
+        "データSIM",
+        "SMS SIM"
+      ],
+      "official_source_urls": [
+        "https://help.iijmio.jp/answer/679b0e44c5dfe042a1dd30a6/"
+      ]
+    },
+    {
+      "carrier_name": "mineo",
+      "procedure": "MNP転出・予約番号",
+      "web_available": true,
+      "phone_available": null,
+      "store_available": null,
+      "mnp_one_stop": "対応事業者間で利用可",
+      "estimated_issue_time": "完了画面で番号確認。公式手順ページに一律日数の明示なし",
+      "validity_days": null,
+      "blocking_conditions": [
+        "ワンストップ時に既発行予約番号等で転出元手続き不可の場合は予約番号方式へ切替"
+      ],
+      "official_source_urls": [
+        "https://support.mineo.jp/usqa/use/change/quit/40014508_8885.html",
+        "https://support.mineo.jp/usqa/apply/apply/mnp/40023313_8867.html"
+      ]
+    }
+  ],
+  "release": "phase45"
+}

@@ -10,5 +10,7 @@
   "personal_data": "none",
   "free_text": "not collected",
   "retention": "controlled by configured analytics account",
-  "use": "article quality prioritization and troubleshooting coverage improvement"
+  "use": "article quality prioritization and troubleshooting coverage improvement",
+  "last_updated": "2026-08-08",
+  "release": "phase44"
 }

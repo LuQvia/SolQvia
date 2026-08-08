@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "purpose": "SolQvia carrier/MVNO procedure master template",
+  "fields": [
+    "carrier_name",
+    "procedure",
+    "web_available",
+    "app_available",
+    "phone_available",
+    "store_available",
+    "mnp_one_stop",
+    "reservation_number_required_conditions",
+    "estimated_issue_time",
+    "validity_days",
+    "blocking_conditions",
+    "representative_line_conditions",
+    "paired_service_conditions",
+    "identity_requirements",
+    "unpaid_bill_conditions",
+    "maintenance_notes",
+    "official_source_urls",
+    "official_checked_at"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": "1.1",
+  "release": "phase45",
+  "updated": "2026-08-08",
+  "principles": [
+    "Separate product name from model number/SKU and sales region.",
+    "Separate frequency compatibility from carrier official operation guarantee.",
+    "Separate official specification verification from hands-on testing.",
+    "For carrier/MVNO procedures, verify current official instructions and display confirmation date.",
+    "Cover failure paths and blocking conditions, not only normal procedures.",
+    "Do not prioritize affiliate conversion during the AdSense/search growth stage.",
+    "For imported devices, separate radio-band compatibility, VoLTE/IMS interoperability, carrier operation confirmation, and Japanese technical conformity (Giteki).",
+    "Do not generalize the 90-day radio-equipment exception beyond its statutory inbound-device conditions.",
+    "For eSIM troubleshooting, separate transfer, reissue, profile deletion, and contract cancellation."
+  ],
+  "last_updated": "2026-08-08"
+}
