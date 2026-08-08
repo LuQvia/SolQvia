@@ -1,0 +1,20 @@
+{
+  "release": "phase101-device-field-report-intake-2026-08-08",
+  "checked_at": "2026-08-08",
+  "base_release": "phase100-device-verification-ledger-2026-08-08",
+  "new_pages": [
+    "/ja/technology/smartphone/device-field-report/",
+    "/en/technology/smartphone/device-field-report/"
+  ],
+  "new_assets": [
+    "/assets/phase101-field-report.css",
+    "/assets/phase101-field-report.js",
+    "/assets/data/phase101-device-field-report-schema-v1.json"
+  ],
+  "policy": [
+    "User reports never become SolQvia real-device evidence automatically.",
+    "Function-level results are mandatory; untested items remain not_tested.",
+    "No persistent public queue or personal/device identifiers are created by the static site."
+  ],
+  "phase100_ledger_records": 550
+}

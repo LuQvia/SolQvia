@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "phase": "88",
+  "verified_at": "2026-08-08",
+  "scope": "current major cellular smartwatches in Japan",
+  "methodology": "carrier provisioning/service compatibility prioritized over raw RF bands",
+  "devices": [
+    {
+      "name": "Apple Watch Series 11 GPS + Cellular",
+      "model": "A3335 / A3337",
+      "sim": "内蔵eSIM",
+      "radio": "5G RedCap + LTE",
+      "lte": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B12 / B13 / B14 / B17 / B18 / B19 / B20 / B25 / B26 / B28 / B38 / B39 / B40 / B41 / B66 / B71",
+      "nr": "n1 / n2 / n3 / n5 / n7 / n8 / n12 / n14 / n20 / n25 / n26 / n28 / n38 / n40 / n41 / n66 / n71",
+      "docomo": "○",
+      "au": "○",
+      "softbank": "○",
+      "rakuten": "○",
+      "note": "4社とも現行番号共有サービスの対象。通常は親iPhoneと同じキャリアで設定。",
+      "source": "https://www.apple.com/jp/apple-watch-series-11/specs/"
+    },
+    {
+      "name": "Apple Watch SE 3 GPS + Cellular",
+      "model": "A3326 / A3328",
+      "sim": "内蔵eSIM",
+      "radio": "5G RedCap + LTE",
+      "lte": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B12 / B13 / B14 / B17 / B18 / B19 / B20 / B25 / B26 / B28 / B38 / B39 / B40 / B41 / B66 / B71",
+      "nr": "n1 / n2 / n3 / n5 / n7 / n8 / n12 / n14 / n20 / n25 / n26 / n28 / n38 / n40 / n41 / n66 / n71",
+      "docomo": "○",
+      "au": "○",
+      "softbank": "○",
+      "rakuten": "○",
+      "note": "4社の番号共有対象。Apple Watchの子ども向け設定にも対応。",
+      "source": "https://www.apple.com/jp/apple-watch-se-3/specs/"
+    },
+    {
+      "name": "Apple Watch Ultra 3",
+      "model": "A3281",
+      "sim": "内蔵eSIM",
+      "radio": "5G RedCap + LTE",
+      "lte": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B12 / B13 / B14 / B17 / B18 / B19 / B20 / B25 / B26 / B28 / B38 / B39 / B40 / B41 / B66 / B71 / B53",
+      "nr": "n1 / n2 / n3 / n5 / n7 / n8 / n12 / n14 / n20 / n25 / n26 / n28 / n38 / n40 / n41 / n66 / n71 / n53",
+      "docomo": "○",
+      "au": "○",
+      "softbank": "○",
+      "rakuten": "○",
+      "note": "4社の番号共有対象。Ultra 3はn53/B53も追加。",
+      "source": "https://www.apple.com/jp/apple-watch-ultra-3/specs/"
+    },
+    {
+      "name": "Google Pixel Watch 4 LTE",
+      "model": "GWSQ2 / G1KAW（ドコモ対応型番）",
+      "sim": "内蔵eSIM",
+      "radio": "4G LTE / UMTS",
+      "lte": "Google日本仕様ページは個別Band一覧を明示せず",
+      "nr": "5G非対応（公式仕様は4G LTE/UMTS）",
+      "docomo": "○",
+      "au": "○",
+      "softbank": "○",
+      "rakuten": "未確認",
+      "note": "docomo/au/SoftBankで公式番号共有・ウェアラブル通信対象。楽天の電話番号シェア公式案内はApple Watch向け。",
+      "source": "https://store.google.com/jp/product/pixel_watch_4_specs?hl=ja"
+    },
+    {
+      "name": "Samsung Galaxy Watch9 LTE",
+      "model": "SM-L345F / SM-L355F",
+      "sim": "eSIM",
+      "radio": "4G LTE / WCDMA",
+      "lte": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B12 / B13 / B14 / B18 / B19 / B20 / B25 / B26 / B28 / B34 / B38 / B39 / B40 / B41 / B66 / B71",
+      "nr": "5G非対応（Samsung日本仕様は4G LTE）",
+      "docomo": "○",
+      "au": "○",
+      "softbank": "○",
+      "rakuten": "未確認",
+      "note": "Samsung公式がWatch9 LTEの対応事業者をau・NTTドコモ・SoftBankと明記。楽天は公式対象確認できず。",
+      "source": "https://www.samsung.com/jp/watches/galaxy-watch/galaxy-watch9-44mm-graphite-lte-sm-l355fzkjsjp/"
+    }
+  ],
+  "article_urls": [
+    "/ja/technology/smartphone/smartwatch-lte-number-share-carrier-comparison/",
+    "/ja/technology/smartphone/apple-watch-cellular-carrier-comparison/",
+    "/ja/technology/smartphone/apple-watch-5g-redcap-band-comparison/",
+    "/ja/technology/smartphone/pixel-watch-lte-carrier-number-share/",
+    "/ja/technology/smartphone/galaxy-watch-lte-carrier-number-share/",
+    "/ja/technology/smartphone/smartwatch-esim-number-share-troubleshooting/",
+    "/ja/technology/smartphone/smartwatch-used-carrier-switch-reuse/",
+    "/ja/technology/smartphone/apple-watch-child-family-number-service-comparison/"
+  ]
+}

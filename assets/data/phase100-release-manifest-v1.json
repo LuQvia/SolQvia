@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "release": "phase100-real-device-verification-ledger-2026-08-08",
+  "checked_at": "2026-08-08",
+  "base_release": "phase99-cross-brand-revenue-attribution-2026-08-08",
+  "new_pages": [
+    "/ja/technology/smartphone/real-device-verification-ledger/",
+    "/en/technology/smartphone/real-device-verification-ledger/"
+  ],
+  "new_assets": [
+    "/assets/phase100-verification-ledger.css",
+    "/assets/phase100-verification-ledger.js",
+    "/assets/data/phase100-device-verification-ledger-v1.json",
+    "/assets/data/phase100-release-manifest-v1.json"
+  ],
+  "ledger_counts": {
+    "records": 550,
+    "unique_article_urls": 421,
+    "real_device_records": 1,
+    "real_device_carrier_observations": 2,
+    "official_source_records": 490,
+    "technical_assessment_records": 475,
+    "unverified_records": 60,
+    "evidence_breakdown": {
+      "official_assessment": 20,
+      "official_only": 14,
+      "real_device_plus_official": 1,
+      "official_spec_assessment": 455,
+      "unverified": 60
+    }
+  },
+  "article_evidence_strips": 842,
+  "safety_assertions": {
+    "ky41c_real_device_scope": "Y!mobile / SoftBank eSIM profile setup and device-side recognition only",
+    "ky41c_apn_confirmed": false,
+    "ky41c_packet_data_confirmed": false,
+    "ky41c_voice_confirmed": false,
+    "ky41c_sms_confirmed": false,
+    "public_device_identifiers_stored": false,
+    "direct_a8_links_expected": 0,
+    "phase98_adsense_approval_state_preserved": true
+  },
+  "qa": {
+    "html_files": 1684,
+    "jsonld_blocks": 1686,
+    "json_files": 80,
+    "canonical_urls": 1684,
+    "internal_local_references": 85766,
+    "broken_internal_references": 0,
+    "search_ja_smartphone": 825,
+    "search_en_smartphone": 825,
+    "sitemap_urls": 1683,
+    "evidence_strip_pages": 842,
+    "ledger_records": 550,
+    "unique_ledger_article_urls": 421,
+    "real_device_records": 1,
+    "real_device_carrier_observations": 2,
+    "phase99_bridge_pages": 124,
+    "direct_a8_links": 0,
+    "errors": 0,
+    "warnings": 0,
+    "node_syntax_phase100_js": "PASS",
+    "node_syntax_phase91_js": "PASS",
+    "chromium_runtime": "NOT_COMPLETED_ENVIRONMENT_TIMEOUT"
+  }
+}

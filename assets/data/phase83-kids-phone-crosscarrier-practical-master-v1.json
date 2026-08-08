@@ -2,13 +2,14 @@
   "schema_version": "1.0",
   "release": "phase83",
   "official_checked_at": "2026-08-08",
-  "scope": "主要キッズ端末をBandだけでなくAPN、音声、データ、SMS、見守り依存まで横断比較。Band一致は動作保証とみなさない。",
+  "scope": "主要キッズ端末をBandだけでなくeSIM/SIMプロファイル、APN、音声、データ、SMS、見守り依存まで横断比較。プロファイル認識やBand一致は動作保証とみなさない。",
   "real_device_observation": {
     "device_family": "NTTドコモ キッズケータイ",
-    "exact_model": "未特定",
-    "ymobile_sim_information_recognized": true,
-    "softbank_sim_information_recognized": true,
-    "verified_scope": "SIM/回線情報認識のみ。通話・データ・SMS・見守りは未検証。"
+    "exact_model": "KY-41C",
+    "ymobile_esim_profile_setup_recognized": true,
+    "softbank_esim_profile_setup_recognized": true,
+    "verified_scope": "eSIMプロファイル（SIM情報）の設定・認識のみ。APN・通話・データ・SMS・見守りは未検証。",
+    "phase89_correction": "旧「SIM認識/APN中心」表現を、KY-41CのeSIMプロファイル設定・認識へ訂正"
   },
   "devices": [
     {
@@ -31,7 +32,8 @@
         "https://www.docomo.ne.jp/product/sk41d/spec.html",
         "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf",
         "https://www.docomo.ne.jp/charge/kidskeitaiplan-3/"
-      ]
+      ],
+      "esim_provisioning": "機種固有の公式設定手順を優先。KY-41Cの接続サーバー直接入力手順を他機種へ推測で流用しない"
     },
     {
       "carrier": "NTTドコモ",
@@ -48,12 +50,13 @@
       "sms": "ドコモ契約で利用",
       "monitoring": "イマドコサーチ等のドコモ側サービスと連携",
       "other_network": "ドコモ公式表：au 通話○※/データ-、SoftBank 通話○※/データ-、楽天 通話-/データ-",
-      "practical": "APNを設定できても他社データ通信可とは判定しない",
+      "practical": "実機ではY!mobile/SoftBank eSIMプロファイル設定・認識まで確認。APNや他社データ通信可とは判定しない",
       "sources": [
         "https://www.docomo.ne.jp/product/ky41c/spec.html",
         "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf",
         "https://www.docomo.ne.jp/charge/kidskeitaiplan-3/"
-      ]
+      ],
+      "esim_provisioning": "公式取説: SIM情報設定、QRコード、接続サーバーアドレスの直接入力、インストール後の有効化を確認"
     },
     {
       "carrier": "NTTドコモ",
@@ -75,7 +78,8 @@
         "https://www.docomo.ne.jp/support/product/sh03m/spec.html",
         "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf",
         "https://www.docomo.ne.jp/charge/kidskeitaiplan-3/"
-      ]
+      ],
+      "esim_provisioning": "機種固有の公式設定手順を優先。KY-41Cの接続サーバー直接入力手順を他機種へ推測で流用しない"
     },
     {
       "carrier": "au",
@@ -97,7 +101,8 @@
       "sources": [
         "https://www.au.com/mobile/product/featurephone/mamorino6/spec/",
         "https://www.au.com/content/dam/au-com/mobile/product/featurephone/mamorino6/pdf/mamorino6_syuuhasu.pdf"
-      ]
+      ],
+      "esim_provisioning": "機種固有の公式設定手順を優先。KY-41Cの接続サーバー直接入力手順を他機種へ推測で流用しない"
     },
     {
       "carrier": "SoftBank",
@@ -122,7 +127,8 @@
         "https://www.softbank.jp/mobile/set/common/pdf/products/kids-phone4/spectrum.pdf",
         "https://www.softbank.jp/mobile/support/manual/mimamori-keitai/kids-phone4/detail/191826/",
         "https://www.softbank.jp/mobile/service/security/ichinavi/"
-      ]
+      ],
+      "esim_provisioning": "機種固有の公式設定手順を優先。KY-41Cの接続サーバー直接入力手順を他機種へ推測で流用しない"
     },
     {
       "carrier": "SoftBank",
@@ -147,7 +153,8 @@
         "https://www.softbank.jp/mobile/set/common/pdf/products/kids-phone3/spectrum.pdf",
         "https://www.softbank.jp/mobile/support/manual/mimamori-keitai/kids-phone3/detail/67586/",
         "https://www.softbank.jp/mobile/service/security/ichinavi/"
-      ]
+      ],
+      "esim_provisioning": "機種固有の公式設定手順を優先。KY-41Cの接続サーバー直接入力手順を他機種へ推測で流用しない"
     }
   ],
   "rakuten_positioning": {
@@ -161,6 +168,7 @@
     "voice": "VoLTE/IMSを別判定",
     "data": "APN＋回線側接続を別判定",
     "monitoring": "販売元サービス/契約依存を別判定",
-    "guarantee": "販売元公式の他社動作保証がない場合は保証なしと明示"
+    "guarantee": "販売元公式の他社動作保証がない場合は保証なしと明示",
+    "esim_profile": "eSIMプロファイルの追加・有効化・認識をAPNとは別判定"
   }
 }

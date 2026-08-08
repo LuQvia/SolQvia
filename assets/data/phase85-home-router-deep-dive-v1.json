@@ -1,0 +1,121 @@
+{
+  "schema_version": "1.0",
+  "release": "phase85",
+  "official_checked_at": "2026-08-08",
+  "device_tested": false,
+  "scope_note": "home 5G HR02、Speed Wi-Fi HOME 5G L13、Airターミナル6、Rakuten Turbo 5Gを、RF Bandとサービス契約条件を分離して比較。Band一致・SIMロックなしだけでは他社SIM実用可としない。",
+  "rating_policy": {
+    "rf_fit": "主要LTE/5G Bandの重なりだけを技術評価。動作保証ではない。",
+    "service_fit": "専用プラン、設置住所、SIM/APN、持ち込み契約可否を優先。",
+    "unknown": "公式手順を確認できない項目は未確認とし、推測で可否を補完しない。"
+  },
+  "routers": [
+    {
+      "carrier": "NTTドコモ",
+      "model": "home 5G HR02",
+      "sim": "nanoSIM",
+      "sim_lock": "なし（公式取説）",
+      "lte": [
+        "B1",
+        "B3",
+        "B19",
+        "B21",
+        "B42"
+      ],
+      "nr": [
+        "n28",
+        "n78",
+        "n79"
+      ],
+      "5g_mode": "NSA対応 / SA非対応",
+      "apn_edit": "任意APN新規作成手順は公式取説で確認できず",
+      "address": "契約時の設置場所住所のみ。変更手続きが必要",
+      "used_reuse": "home 5G利用はHR01/HR02購入とhome 5Gプラン契約が公式導線。中古本体だけでSIMのみ新規契約できるとは案内されていない",
+      "cross_sim": "SIMロックなしでも他社SIM運用を公式保証する記載なし",
+      "sources": [
+        "https://www.docomo.ne.jp/home_5g/hr02/spec.html",
+        "https://www.docomo.ne.jp/binary/pdf/support/manual/HR02_J_syousai.pdf",
+        "https://www.docomo.ne.jp/home_5g/flow/",
+        "https://www.docomo.ne.jp/faq/detail?faqId=286775"
+      ]
+    },
+    {
+      "carrier": "au / UQ WiMAX",
+      "model": "Speed Wi-Fi HOME 5G L13 ZTR02",
+      "sim": "nanoSIM",
+      "sim_lock": "なし",
+      "lte": [
+        "B1",
+        "B3",
+        "B18",
+        "B41"
+      ],
+      "nr": [
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78"
+      ],
+      "5g_mode": "5G SA対応",
+      "apn_edit": "設定ツールから最大10件の追加プロファイルを新規作成可",
+      "address": "auホームルータープラン5Gは契約住所のみ。変更時は手続き必要",
+      "used_reuse": "auホームルータープラン5Gは持ち込み契約対象外。端末単体購入可否と回線契約条件は別",
+      "cross_sim": "他社SIMを挿した場合の動作をauは一切保証しない",
+      "sources": [
+        "https://www.au.com/mobile/product/data/ztr02/spec/",
+        "https://www.au.com/content/dam/au-com/mobile/product/data/ztr02/pdf/ztr02_syuuhasu.pdf",
+        "https://www.au.com/content/dam/au-com/support/service/mobile/guide/manual/ztr02/pdf/l13_torisetsu_shousai.pdf",
+        "https://www.au.com/mobile/charge/data/plan/homerouterplan-5g/"
+      ]
+    },
+    {
+      "carrier": "SoftBank",
+      "model": "Airターミナル6",
+      "sim": "本体内部にUSIMを搭載するサービス一体型",
+      "sim_lock": "スマホ型のSIMフリー流用判定を適用しない",
+      "lte": [
+        "FDD-LTE 2.1GHz（B1相当）",
+        "AXGP 2.5GHz",
+        "TDD-LTE 3.5GHz"
+      ],
+      "nr": [
+        "n77"
+      ],
+      "5g_mode": "5G n77 / ミリ波非対応",
+      "apn_edit": "一般利用者向けの任意APN差し替え運用を公式案内していない",
+      "address": "登録住所以外では利用不可。異なる住所で利用すると通知後に停止",
+      "used_reuse": "手持ちAirターミナルで再契約相談可能。新規受付センターへ問い合わせ",
+      "cross_sim": "SoftBank Air専用サービスとして扱い、一般的な他社SIMルーター流用を想定しない",
+      "sources": [
+        "https://www.softbank.jp/support/faq/view/195409",
+        "https://www.softbank.jp/support/faq/view/26104",
+        "https://www.softbank.jp/support/faq/view/20681",
+        "https://www.softbank.jp/internet/special/how-to-choose/wifi-contract/"
+      ]
+    },
+    {
+      "carrier": "楽天モバイル",
+      "model": "Rakuten Turbo 5G",
+      "sim": "nanoSIM",
+      "sim_lock": "一般SIMフリー流用を前提としない専用サービス",
+      "lte": [
+        "B3"
+      ],
+      "nr": [
+        "n77"
+      ],
+      "5g_mode": "5G NSA",
+      "apn_edit": "公式管理画面にはモバイルネットワーク設定があるが、他社APN利用を保証する案内ではない",
+      "address": "設置先住所以外では利用不可。住所変更後30日以内は再変更不可",
+      "used_reuse": "解約済み本体を持っていてもSIMのみ新規契約不可。新たな契約は製品購入とセット",
+      "cross_sim": "Rakuten Turbo用として提供・動作検証された製品以外は通信保証なし",
+      "sources": [
+        "https://network.mobile.rakuten.co.jp/internet/turbo/product/",
+        "https://network.mobile.rakuten.co.jp/internet/turbo/area/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/10000655/",
+        "https://network.mobile.rakuten.co.jp/internet/turbo/support/setting/howtouse/"
+      ]
+    }
+  ]
+}

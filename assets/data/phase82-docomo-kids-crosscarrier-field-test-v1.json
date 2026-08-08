@@ -5,10 +5,8 @@
   "scope": "Docomo kids phone Y!mobile / SoftBank cross-carrier real-device verification ledger",
   "user_provided_real_device_observation": {
     "device_family": "NTTドコモ キッズケータイ",
-    "exact_model": "未特定",
-    "exact_model_required_for_final_claim": true,
-    "ymobile_sim_information_recognized": true,
-    "softbank_sim_information_recognized": true,
+    "exact_model": "KY-41C",
+    "exact_model_required_for_final_claim": false,
     "packet_data_verified": false,
     "voice_outgoing_verified": false,
     "voice_incoming_verified": false,
@@ -16,7 +14,11 @@
     "sms_receive_verified": false,
     "reboot_persistence_verified": false,
     "monitoring_location_features_verified": false,
-    "privacy_note": "IMEI/EID等の個体識別情報は公開データへ保存しない"
+    "privacy_note": "IMEI/EID等の個体識別情報は公開データへ保存しない",
+    "ymobile_esim_profile_setup_recognized": true,
+    "softbank_esim_profile_setup_recognized": true,
+    "apn_setup_verified": false,
+    "note": "Phase89 correction: confirmed operation is KY-41C eSIM profile setup/recognition, not APN setup."
   },
   "docomo_official_mno_check": {
     "source": "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf",
@@ -92,7 +94,19 @@
     "sources": [
       "https://www.docomo.ne.jp/product/ky41c/spec.html",
       "https://www.docomo.ne.jp/binary/pdf/support/manual/KY-41C_J_syousai.pdf"
-    ]
+    ],
+    "esim_profile_setup": {
+      "menu_path": [
+        "保護者メニュー",
+        "その他の設定",
+        "ネットワーク",
+        "SIM情報設定"
+      ],
+      "qr": true,
+      "manual_direct_input": "接続サーバーアドレス",
+      "enable_after_install": true,
+      "warning": "SIM情報初期化は全eSIM情報と接続サーバーアドレスを削除するため通常の追加手順として実行しない"
+    }
   },
   "apn": {
     "ymobile": {
@@ -112,5 +126,5 @@
       "source": "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
     }
   },
-  "result_policy": "SIM認識、通話、データ、SMS、VoLTE/IMS、見守りを独立判定し、未実機確認項目を推測で○にしない"
+  "result_policy": "eSIM profile setup/recognition, network registration, APN, data, voice/VoLTE/IMS, SMS and monitoring are independent stages; never infer later-stage success from profile recognition."
 }

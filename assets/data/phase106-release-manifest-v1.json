@@ -1,0 +1,76 @@
+{
+  "release": "phase106-os-update-carrier-issue-database-2026-08-09",
+  "checked_at": "2026-08-09",
+  "base_release": "phase105-device-migration-reset-safety-diagnosis-2026-08-09",
+  "new_pages": [
+    "/ja/technology/smartphone/os-update-carrier-issue-database/",
+    "/en/technology/smartphone/os-update-carrier-issue-database/"
+  ],
+  "new_assets": [
+    "/assets/phase106-os-update-issue.css",
+    "/assets/phase106-os-update-issue.js",
+    "/assets/data/phase106-os-update-carrier-issue-database-v1.json"
+  ],
+  "device_records": 550,
+  "smartphone_records": 515,
+  "tracked_functions": 18,
+  "submission_policy": "pending_user_report_only_no_auto_publish_no_auto_real_device_promotion",
+  "official_sources": [
+    {
+      "ja": "https://support.apple.com/ja-jp/guide/iphone/iph3e504502/ios",
+      "en": "https://support.apple.com/en-us/guide/iphone/iph3e504502/ios"
+    },
+    {
+      "ja": "https://support.apple.com/ja-jp/109324",
+      "en": "https://support.apple.com/en-us/109324"
+    },
+    {
+      "ja": "https://support.google.com/android/answer/7680439?hl=ja",
+      "en": "https://support.google.com/android/answer/7680439?hl=en"
+    },
+    {
+      "ja": "https://support.google.com/pixelphone/answer/4457705?hl=ja",
+      "en": "https://support.google.com/pixelphone/answer/4457705?hl=en"
+    },
+    {
+      "ja": "https://www.samsung.com/jp/support/mobile-devices/how-to-update-latest-software-for-your-galaxy-mobile-device/",
+      "en": "https://www.samsung.com/us/support/answer/ANS10002027/"
+    }
+  ],
+  "revenue_invariants": {
+    "solqvia_direct_a8_links": 0,
+    "luqevora_bridge_pages": 124,
+    "adsense_site_approved": false,
+    "adsense_auto_ads_enabled": false,
+    "adsense_manual_ads_enabled": false
+  },
+  "article_os_update_links_ja": 421,
+  "article_os_update_links_en": 421,
+  "ecosystem_breakdown": {
+    "android_other": 229,
+    "samsung_galaxy": 103,
+    "google_pixel": 62,
+    "apple_ios": 121
+  },
+  "qa": {
+    "html": 1696,
+    "json": 92,
+    "xml": 3,
+    "json_ld": 1698,
+    "canonical": 1696,
+    "local_refs": 91167,
+    "broken_local_refs": 0,
+    "search_ja_smartphone": 831,
+    "search_en_smartphone": 831,
+    "sitemap_urls": 1695,
+    "phase106_article_links": 842,
+    "phase105_article_links_preserved": 842,
+    "phase104_article_links_preserved": 842,
+    "phase103_article_links_preserved": 842,
+    "phase102_article_links_preserved": 842,
+    "errors": 0,
+    "warnings": 0,
+    "js_logic_cases": 6,
+    "browser_smoke": "timeout_exit_124_environment_dbus_zygote"
+  }
+}

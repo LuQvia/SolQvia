@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0.0",
+  "release": "phase101-device-field-report-intake-2026-08-08",
+  "checked_at": "2026-08-08",
+  "title_ja": "SolQvia 実機結果報告スキーマ",
+  "title_en": "SolQvia Device Field Report Schema",
+  "intake": {
+    "url_ja": "/ja/technology/smartphone/device-field-report/",
+    "url_en": "/en/technology/smartphone/device-field-report/",
+    "contact_email": "info@solqvia.com",
+    "auto_publish": false,
+    "default_review_status": "pending_user_report"
+  },
+  "evidence_policy": {
+    "submitted_reports_are_solqvia_real_device_evidence": false,
+    "accepted_label_ja": "審査済みユーザー報告",
+    "accepted_label_en": "Reviewed user report",
+    "pending_label_ja": "未審査ユーザー報告",
+    "pending_label_en": "Pending user report",
+    "publication_requires_editorial_review": true,
+    "function_scoped_only": true
+  },
+  "review_statuses": [
+    {
+      "code": "pending_user_report",
+      "ja": "未審査ユーザー報告",
+      "en": "Pending user report"
+    },
+    {
+      "code": "needs_followup",
+      "ja": "追加確認待ち",
+      "en": "Needs follow-up"
+    },
+    {
+      "code": "accepted_user_report",
+      "ja": "審査済みユーザー報告",
+      "en": "Reviewed user report"
+    },
+    {
+      "code": "rejected",
+      "ja": "採用せず",
+      "en": "Not accepted"
+    },
+    {
+      "code": "superseded",
+      "ja": "新しい報告で更新",
+      "en": "Superseded"
+    }
+  ],
+  "result_statuses": [
+    {
+      "code": "confirmed_ok",
+      "ja": "確認できた",
+      "en": "Confirmed working"
+    },
+    {
+      "code": "confirmed_fail",
+      "ja": "確認したが動かなかった",
+      "en": "Tested but did not work"
+    },
+    {
+      "code": "not_tested",
+      "ja": "未確認",
+      "en": "Not tested"
+    },
+    {
+      "code": "unknown",
+      "ja": "判断できない",
+      "en": "Unknown"
+    }
+  ],
+  "functions": [
+    {
+      "id": "profile_or_sim_setup",
+      "ja": "SIM/eSIMの設定・装着",
+      "en": "SIM/eSIM setup or insertion"
+    },
+    {
+      "id": "device_recognition",
+      "ja": "端末側SIM/eSIM認識",
+      "en": "Device-side SIM/eSIM recognition"
+    },
+    {
+      "id": "mobile_data",
+      "ja": "モバイルデータ通信",
+      "en": "Mobile data"
+    },
+    {
+      "id": "voice_outgoing",
+      "ja": "音声発信",
+      "en": "Outgoing voice call"
+    },
+    {
+      "id": "voice_incoming",
+      "ja": "音声着信",
+      "en": "Incoming voice call"
+    },
+    {
+      "id": "sms_send",
+      "ja": "SMS送信",
+      "en": "SMS sending"
+    },
+    {
+      "id": "sms_receive",
+      "ja": "SMS受信",
+      "en": "SMS receiving"
+    },
+    {
+      "id": "5g",
+      "ja": "5G表示・5G通信",
+      "en": "5G indicator / data"
+    },
+    {
+      "id": "tethering",
+      "ja": "テザリング",
+      "en": "Tethering"
+    },
+    {
+      "id": "monitoring_location",
+      "ja": "見守り・位置情報（対象端末のみ）",
+      "en": "Monitoring/location (supported devices only)"
+    }
+  ],
+  "sim_modes": [
+    {
+      "code": "physical",
+      "ja": "物理SIM",
+      "en": "Physical SIM"
+    },
+    {
+      "code": "esim",
+      "ja": "eSIM",
+      "en": "eSIM"
+    },
+    {
+      "code": "dual",
+      "ja": "物理SIM＋eSIM",
+      "en": "Physical SIM + eSIM"
+    },
+    {
+      "code": "unknown",
+      "ja": "不明",
+      "en": "Unknown"
+    }
+  ],
+  "privacy": {
+    "never_request": [
+      "IMEI",
+      "IMEI2",
+      "EID",
+      "ICCID",
+      "電話番号 / phone number",
+      "契約者氏名 / subscriber name",
+      "住所 / street address",
+      "ログインID・パスワード / login credentials",
+      "eSIM QRコード / eSIM QR code",
+      "activation code / confirmation code"
+    ],
+    "public_report_contains_identifiers": false,
+    "precise_location_requested": false,
+    "note_ja": "IMEI/EID/ICCID/電話番号/氏名/住所/認証情報/eSIM QRやアクティベーションコードは入力しないでください。",
+    "note_en": "Do not enter IMEI, EID, ICCID, phone numbers, names, street addresses, credentials, eSIM QR data or activation codes."
+  },
+  "fields": [
+    "record_id",
+    "article_slug",
+    "test_date",
+    "os_version",
+    "target_carrier_or_mvno",
+    "sim_mode",
+    "apn_configured_state",
+    "function_results",
+    "notes"
+  ],
+  "public_queue": false
+}

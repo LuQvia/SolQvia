@@ -1,0 +1,19 @@
+{
+  "release": "SolQvia Phase98 AdSense Revenue UX Optimization",
+  "date": "2026-08-08",
+  "baseline": "SolQvia Phase97 Luqevora Comparison Receiver Routing",
+  "changed_assets": [
+    "assets/platform-config.js",
+    "assets/platform-loader.js",
+    "assets/styles.css",
+    "assets/data/phase98-adsense-revenue-ux-v1.json",
+    "assets/data/phase98-release-manifest-v1.json"
+  ],
+  "changed_pages": [
+    "ja/advertising/index.html",
+    "en/advertising/index.html"
+  ],
+  "site_wide_meta": "solqvia-ad-layout=phase98-controlled-adsense-layout-2026-08-08",
+  "direct_a8_policy": "0 direct A8 links in SolQvia",
+  "activation": "After AdSense Ready: set siteApproved=true, manualAdsEnabled=true, and real articleTop/articleMid/articleBottom slot IDs. Do not invent IDs."
+}

@@ -1,0 +1,1418 @@
+{
+  "schema_version": "1.0",
+  "release": "phase93",
+  "checked_at": "2026-08-08",
+  "baseline": "Phase92 cumulative FULL_REPLACE / ROOT_READY",
+  "title": "SolQvia SIM/eSIMエラー文・症状逆引きDB",
+  "purpose": "入力されたエラー文・症状を正規化し、近い問題群、原因候補、安全な初動、既存記事、Phase92復旧ナビへ接続する。",
+  "counts": {
+    "issue_groups": 32,
+    "aliases": 167,
+    "stages": 18
+  },
+  "safety_rules": [
+    "表示文言はOS/機種/キャリア/バージョンで変わるため完全一致だけで判定しない",
+    "現在使えているeSIMは再発行・転送経路を確保する前に削除しない",
+    "eSIMプロファイル設定とAPN設定を混同しない",
+    "Band一致だけで音声・SMS・5G・キャリア保証まで○にしない",
+    "未確認情報は推測しない"
+  ],
+  "issues": [
+    {
+      "id": "esim_activate_fail",
+      "title": "eSIMをアクティベートできない",
+      "stage": "eSIMプロビジョニング",
+      "aliases": [
+        "eSIMをアクティベートできません",
+        "eSIMをアクティベートできない",
+        "eSIM アクティベーション 失敗",
+        "eSIM 有効化 できない",
+        "eSIM activation failed",
+        "eSIM activation error"
+      ],
+      "recovery_symptom": "esim_add",
+      "sim_mode": "esim",
+      "carriers": [],
+      "platforms": [
+        "iPhone/iPad",
+        "Android"
+      ],
+      "risk": "削除注意",
+      "summary": "端末側にeSIMを追加できても、キャリア側の発行・開通・端末登録が完了していないと有効化で止まることがあります。",
+      "causes": [
+        "回線側のeSIM発行・開通が未完了",
+        "Wi-Fi/通信環境が不安定",
+        "EID/IMEIや発行先端末の不一致",
+        "端末・OS・キャリア側の一時的な登録失敗"
+      ],
+      "first_steps": [
+        "安定したWi-Fiへ接続",
+        "回線が端末設定に表示されるか確認",
+        "機内モードON/OFF→再起動",
+        "EID/IMEIと申込端末を確認",
+        "削除せずキャリア側の発行状態を確認"
+      ],
+      "dont": [
+        "現在使えているeSIMを先に削除しない",
+        "APN値をSM-DP+やアクティベーションコード欄へ入力しない"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/smartphone-esim-not-activating/",
+          "label": "eSIMを追加・有効化できない時"
+        },
+        {
+          "url": "/ja/technology/smartphone/iphone-17-esim-activation-fails-japan-carriers/",
+          "label": "iPhone 17でeSIMを追加・開通できない時"
+        }
+      ],
+      "official_sources": [
+        {
+          "url": "https://support.apple.com/ja-jp/102478",
+          "label": "Apple：iPhoneでeSIMを設定できない場合"
+        },
+        {
+          "url": "https://support.google.com/pixelphone/answer/16115470?hl=ja",
+          "label": "Google Pixel：新しいeSIMを設定する"
+        }
+      ]
+    },
+    {
+      "id": "esim_add_fail",
+      "title": "eSIMを追加できない",
+      "stage": "eSIMプロビジョニング",
+      "aliases": [
+        "eSIMを追加できません",
+        "eSIMを追加できない",
+        "モバイル通信プランを追加できません",
+        "SIMを追加できない",
+        "eSIM追加 エラー"
+      ],
+      "recovery_symptom": "esim_add",
+      "sim_mode": "esim",
+      "carriers": [],
+      "platforms": [],
+      "risk": "削除注意",
+      "summary": "「追加」段階の失敗は、対応機種・発行状態・QR/コード・端末登録を先に確認します。",
+      "causes": [
+        "端末がeSIM非対応または地域型番差",
+        "キャリア側のeSIM発行前",
+        "QR/コードの期限・利用状態",
+        "EID/IMEI不一致"
+      ],
+      "first_steps": [
+        "機種のeSIM対応を確認",
+        "発行完了メール/マイページ状態を確認",
+        "QRまたはキャリアアプリを再確認",
+        "手動入力対応なら公式発行値だけ使用"
+      ],
+      "dont": [
+        "eSIM非対応機種でAPN設定を試してもeSIM追加はできません"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/esim-manual-input-smdp-activation-code-guide/",
+          "label": "QRなし・eSIM手動入力ガイド"
+        },
+        {
+          "url": "/ja/technology/smartphone/smartphone-esim-region-model-differences/",
+          "label": "地域・型番によるeSIM差"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "esim_download_fail",
+      "title": "eSIMをダウンロードできない",
+      "stage": "eSIMプロビジョニング",
+      "aliases": [
+        "eSIMをダウンロードできません",
+        "eSIMをダウンロードできない",
+        "SIMをダウンロードできません",
+        "モバイルプランをダウンロードできない",
+        "eSIM download failed"
+      ],
+      "recovery_symptom": "esim_add",
+      "sim_mode": "esim",
+      "carriers": [],
+      "platforms": [],
+      "risk": "削除注意",
+      "summary": "ダウンロード失敗では、インターネット接続とキャリア側の発行状態を先に切り分けます。",
+      "causes": [
+        "Wi-Fi/インターネット接続不良",
+        "キャリア側でeSIMがまだ発行されていない",
+        "発行対象端末が異なる",
+        "コードが既に処理済み"
+      ],
+      "first_steps": [
+        "別の安定したWi-Fiで再試行",
+        "キャリアの申込履歴/発行状態を確認",
+        "発行先のEID/IMEIを確認",
+        "同じQRを無制限に再試行しない"
+      ],
+      "dont": [
+        "旧eSIMを削除してから試す手順には進まない"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/esim-delete-reissue-transfer-safety-guide/",
+          "label": "eSIM削除・再発行・転送の安全ガイド"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "qr_invalid",
+      "title": "QRコードが無効・読み取れない",
+      "stage": "eSIMプロビジョニング",
+      "aliases": [
+        "QRコードが無効です",
+        "QRコードが無効",
+        "QRコードを読み取れません",
+        "QRコードを読み取れない",
+        "QRコード エラー eSIM",
+        "eSIM QR 無効"
+      ],
+      "recovery_symptom": "esim_add",
+      "sim_mode": "esim",
+      "carriers": [],
+      "platforms": [],
+      "risk": "削除注意",
+      "summary": "QR自体の問題か、発行済みコードの状態かを分けます。QRを読めないだけなら、対応端末・キャリアでは手動入力経路が使える場合があります。",
+      "causes": [
+        "QR表示の解像度・明るさ・カメラ認識",
+        "QRが別端末/別回線向け",
+        "コードが期限切れ・既処理",
+        "キャリアがアプリ方式を指定"
+      ],
+      "first_steps": [
+        "QRを別画面に大きく表示",
+        "QR発行先の電話番号/端末を確認",
+        "キャリアが案内する標準方式を優先",
+        "手動入力欄が公式にある場合だけSM-DP+等を入力"
+      ],
+      "dont": [
+        "APNの文字列をeSIM手動入力欄へ入れない"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/esim-manual-input-smdp-activation-code-guide/",
+          "label": "eSIM手動入力の完全ガイド"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "qr_used",
+      "title": "QRコードが使用済み・再利用できない",
+      "stage": "eSIMプロビジョニング",
+      "aliases": [
+        "QRコードは使用済みです",
+        "QRコード 使用済み",
+        "このコードは使用できません",
+        "アクティベーションコード 使用済み",
+        "eSIM QR 再利用 できない"
+      ],
+      "recovery_symptom": "esim_add",
+      "sim_mode": "esim",
+      "carriers": [],
+      "platforms": [],
+      "risk": "再発行確認",
+      "summary": "eSIM用QRやコードは再利用できない場合があります。既に別端末へ登録した可能性も含め、再発行条件を確認します。",
+      "causes": [
+        "別端末にダウンロード済み",
+        "一度処理したQR/コードの再利用不可",
+        "キャリア側で新しい発行処理が必要"
+      ],
+      "first_steps": [
+        "旧端末側に同じ回線が残っていないか確認",
+        "キャリアの申込/再発行履歴を確認",
+        "必要なら公式の再発行経路へ進む"
+      ],
+      "dont": [
+        "旧端末の回線を消してから再発行を始めない"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/esim-delete-reissue-transfer-safety-guide/",
+          "label": "削除・再発行前の確認"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "esim_transfer_fail",
+      "title": "eSIM転送・クイック転送が失敗する",
+      "stage": "eSIM移行",
+      "aliases": [
+        "eSIMを転送できません",
+        "eSIM 転送 できない",
+        "eSIMクイック転送 できない",
+        "電話番号を転送できません",
+        "SIMを転送できません",
+        "transfer esim failed"
+      ],
+      "recovery_symptom": "esim_add",
+      "sim_mode": "esim",
+      "carriers": [],
+      "platforms": [],
+      "risk": "旧回線保持",
+      "summary": "端末間転送は端末OSだけでなく、キャリア側の対応・契約状態・旧端末の状態に依存します。",
+      "causes": [
+        "キャリアが端末間転送に非対応",
+        "旧端末/新端末のOS条件不足",
+        "契約・支払・回線種別が転送対象外",
+        "5G SA等のSIM種別条件"
+      ],
+      "first_steps": [
+        "旧端末のeSIMを残す",
+        "両端末のOS/ネット接続を確認",
+        "キャリアの転送対象条件を確認",
+        "転送不可なら通常の再発行方式へ切り替える"
+      ],
+      "dont": [
+        "転送が失敗しただけで旧eSIMを消さない"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/iphone-esim-quick-transfer-fails-japan-carriers/",
+          "label": "iPhoneのeSIMクイック転送ができない時"
+        },
+        {
+          "url": "/ja/technology/smartphone/au-esim-transfer-unavailable-contract-payment-5gsa/",
+          "label": "au eSIM転送の対象外条件"
+        }
+      ],
+      "official_sources": [
+        {
+          "url": "https://support.google.com/pixelphone/answer/16115951?hl=ja",
+          "label": "Google Pixel：新しいスマートフォンにSIMを移行する"
+        }
+      ]
+    },
+    {
+      "id": "transfer_option_missing",
+      "title": "eSIM転送の項目が表示されない",
+      "stage": "eSIM移行",
+      "aliases": [
+        "eSIM転送 項目がない",
+        "eSIM転送 表示されない",
+        "SIM転送が表示されない",
+        "Android eSIM 転送 ない",
+        "eSIM クイック転送 出てこない"
+      ],
+      "recovery_symptom": "esim_add",
+      "sim_mode": "esim",
+      "carriers": [],
+      "platforms": [],
+      "risk": "通常",
+      "summary": "設定項目が出ない場合は、OSバージョン・機種・キャリア側対応のいずれかが条件を満たしていない可能性があります。",
+      "causes": [
+        "OS/Google Play開発者サービス等が古い",
+        "端末が転送機能の対象外",
+        "キャリアが端末間転送を提供していない"
+      ],
+      "first_steps": [
+        "OS/システムサービスを更新",
+        "機種とキャリアの対応表を確認",
+        "QR/アプリ/再発行など別の公式経路を使う"
+      ],
+      "dont": [],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/docomo-android-esim-transfer-not-showing-android14/",
+          "label": "ドコモAndroidでeSIM転送項目が出ない時"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "manual_code_invalid",
+      "title": "SM-DP+・アクティベーションコードを受け付けない",
+      "stage": "eSIM手動入力",
+      "aliases": [
+        "アクティベーションコードが無効",
+        "アクティベーションコード 無効",
+        "SM-DP+ エラー",
+        "SM-DP+ アドレス 無効",
+        "確認コード 無効",
+        "接続サーバーアドレス エラー"
+      ],
+      "recovery_symptom": "esim_add",
+      "sim_mode": "esim",
+      "carriers": [],
+      "platforms": [],
+      "risk": "入力注意",
+      "summary": "手動入力欄へは、キャリアが発行したeSIM用の値だけを入力します。APN、ユーザー名、パスワードとは別物です。",
+      "causes": [
+        "APN値との取り違え",
+        "文字列の転記ミス",
+        "発行対象端末/回線の不一致",
+        "コードの期限・利用済み状態"
+      ],
+      "first_steps": [
+        "SM-DP+等の各欄を発行案内と照合",
+        "全角/半角・不要な空白を確認",
+        "APN設定値でないことを確認",
+        "再入力でも不可なら再発行可否を確認"
+      ],
+      "dont": [
+        "APN値をSM-DP+欄へ入れない"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/esim-manual-input-smdp-activation-code-guide/",
+          "label": "SM-DP+・アクティベーションコードの入力方法"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "activating_stuck",
+      "title": "eSIMが「アクティベート中」のまま進まない",
+      "stage": "eSIMプロビジョニング",
+      "aliases": [
+        "アクティベート中 進まない",
+        "アクティベーション中 終わらない",
+        "eSIM 有効化中 終わらない",
+        "eSIM activating stuck",
+        "eSIM 処理中 進まない"
+      ],
+      "recovery_symptom": "esim_add",
+      "sim_mode": "esim",
+      "carriers": [],
+      "platforms": [],
+      "risk": "削除注意",
+      "summary": "処理中のままなら、回線が端末へ追加済みか、キャリア側開通待ちかを先に確認します。",
+      "causes": [
+        "キャリア側の回線切替/登録待ち",
+        "端末のネットワーク再登録待ち",
+        "一時的な通信・サーバー不調"
+      ],
+      "first_steps": [
+        "回線が設定画面に表示されるか確認",
+        "機内モードON/OFF",
+        "端末再起動",
+        "キャリアの開通状態・障害情報を確認"
+      ],
+      "dont": [
+        "処理中を理由にeSIMを削除して入れ直さない"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/smartphone-esim-not-activating/",
+          "label": "eSIM有効化で止まる時の確認"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "au_phone_number_transfer",
+      "title": "auで電話番号をiPhoneへ転送できない",
+      "stage": "eSIM移行",
+      "aliases": [
+        "電話番号をこのiPhoneに転送できませんでした",
+        "電話番号を転送できませんでした au",
+        "au eSIM 電話番号 転送 できない",
+        "5G SA eSIM 転送 できない"
+      ],
+      "recovery_symptom": "esim_add",
+      "sim_mode": "esim",
+      "carriers": [
+        "au"
+      ],
+      "platforms": [
+        "iPhone/iPad"
+      ],
+      "risk": "条件確認",
+      "summary": "auのeSIM転送では契約種別や5G SAなど条件差があるため、Apple側エラーだけでなくau側の対象条件を確認します。",
+      "causes": [
+        "契約/支払方法など転送対象外条件",
+        "5G SA eSIMと端末対応条件",
+        "旧端末/新端末の設定条件"
+      ],
+      "first_steps": [
+        "auの転送対象条件を確認",
+        "5G SA契約/端末条件を確認",
+        "転送不可ならeSIM再発行へ切り替える"
+      ],
+      "dont": [],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/au-esim-phone-number-transfer-failed-5g-sa/",
+          "label": "auで電話番号を転送できない時"
+        },
+        {
+          "url": "/ja/technology/smartphone/au-esim-transfer-unavailable-contract-payment-5gsa/",
+          "label": "au eSIM転送対象外条件"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "au_sms_not_subscribed",
+      "title": "au eSIM再発行でSMS未契約エラー",
+      "stage": "eSIM再発行",
+      "aliases": [
+        "SMSが未契約のため本サイトでお手続きをお受けできません",
+        "SMS 未契約 eSIM 再発行 au",
+        "au eSIM 再発行 SMS 未契約"
+      ],
+      "recovery_symptom": "delete_reissue",
+      "sim_mode": "esim",
+      "carriers": [
+        "au"
+      ],
+      "platforms": [],
+      "risk": "別経路必要",
+      "summary": "Webでの本人確認・再発行にSMS受信が必要な条件では、SMSを受け取れない契約や端末は別経路が必要です。",
+      "causes": [
+        "SMS非対応契約/端末",
+        "Web再発行の認証条件を満たさない"
+      ],
+      "first_steps": [
+        "SMSを受信できる回線/端末か確認",
+        "My au以外の公式再発行経路を確認",
+        "旧eSIMが使える場合は削除しない"
+      ],
+      "dont": [],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/au-esim-reissue-sms-option-not-subscribed-error/",
+          "label": "au eSIM再発行のSMS未契約エラー"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "softbank_line_not_open",
+      "title": "SoftBankでeSIM設定後も回線が開通していない",
+      "stage": "回線開通",
+      "aliases": [
+        "回線を開通させてください",
+        "SoftBank eSIM 設定したのに通信できない",
+        "eSIM インストール済み 開通していない SoftBank",
+        "SoftBank 回線開通 メール"
+      ],
+      "recovery_symptom": "recognized_no_data",
+      "sim_mode": "esim",
+      "carriers": [
+        "SoftBank"
+      ],
+      "platforms": [],
+      "risk": "削除不要",
+      "summary": "eSIMプロファイルが端末に入っていても、SoftBank側の回線開通処理が別に必要なケースがあります。",
+      "causes": [
+        "回線切替/開通処理が未完了",
+        "eSIMは設定済みだが利用回線がOFF",
+        "再起動/ネットワーク再登録が未実施"
+      ],
+      "first_steps": [
+        "開通案内メール/申込状況を確認",
+        "対象eSIMをON",
+        "機内モードON/OFF→再起動",
+        "APNを触る前に回線開通状態を確認"
+      ],
+      "dont": [],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/softbank-esim-installed-but-line-not-opened/",
+          "label": "SoftBankでeSIM設定後に通信できない時"
+        },
+        {
+          "url": "/ja/technology/smartphone/softbank-esim-set-no-data-troubleshooting/",
+          "label": "SoftBank eSIM通信不可の切り分け"
+        }
+      ],
+      "official_sources": [
+        {
+          "url": "https://www.softbank.jp/mobile/support/product/sim/esim/",
+          "label": "SoftBank：eSIMの設定方法"
+        }
+      ]
+    },
+    {
+      "id": "rakuten_otp_after_delete",
+      "title": "楽天モバイルの再発行でSMS認証コードが受け取れない",
+      "stage": "eSIM再発行",
+      "aliases": [
+        "楽天 eSIM 削除 SMS 届かない",
+        "ワンタイムパスワード 届かない eSIM 楽天",
+        "eSIM再発行 OTP 届かない 楽天",
+        "楽天モバイル eSIM 再発行 SMS認証 できない"
+      ],
+      "recovery_symptom": "delete_reissue",
+      "sim_mode": "esim",
+      "carriers": [
+        "楽天モバイル"
+      ],
+      "platforms": [],
+      "risk": "別申請経路",
+      "summary": "楽天モバイルでは、再発行前に利用中eSIMを削除するとSMS認証を受け取れなくなるため、通常のmy 楽天モバイル手続きが難しくなる場合があります。",
+      "causes": [
+        "再発行前に旧eSIMを削除",
+        "旧端末が故障/紛失",
+        "SMSを受信できないデータ端末"
+      ],
+      "first_steps": [
+        "旧回線が残っているなら削除しない",
+        "SMSを受け取れない場合の公式申請フォーム/サポート経路を確認",
+        "新しいeSIM発行後に開通手順へ進む"
+      ],
+      "dont": [],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/rakuten-esim-reissue-otp-not-received-after-delete/",
+          "label": "楽天eSIM削除後にSMS認証できない時"
+        },
+        {
+          "url": "/ja/technology/smartphone/rakuten-data-type-tablet-sim-reissue-no-sms/",
+          "label": "SMSを受け取れない端末での再発行"
+        }
+      ],
+      "official_sources": [
+        {
+          "url": "https://network.mobile.rakuten.co.jp/faq/detail/00001406/",
+          "label": "楽天モバイル：SIM/eSIM交換・再発行"
+        }
+      ]
+    },
+    {
+      "id": "esim_deleted",
+      "title": "eSIMを誤って削除・初期化した",
+      "stage": "eSIM再発行",
+      "aliases": [
+        "eSIMを削除してしまった",
+        "eSIM 誤削除",
+        "eSIM 初期化してしまった",
+        "モバイル通信プランを削除した",
+        "SIM情報初期化 してしまった"
+      ],
+      "recovery_symptom": "delete_reissue",
+      "sim_mode": "esim",
+      "carriers": [],
+      "platforms": [],
+      "risk": "再発行必要の可能性",
+      "summary": "削除済みプロファイルを端末操作だけで戻せないキャリアがあります。再ダウンロード可否を推測せず、キャリア別の再発行条件を確認します。",
+      "causes": [
+        "eSIMプロファイルの削除",
+        "端末初期化時にeSIMも消去",
+        "SIM情報初期化"
+      ],
+      "first_steps": [
+        "別端末/Wi-Fiを確保",
+        "キャリアの再発行ページを確認",
+        "電話番号・EID/IMEI・本人確認情報を準備",
+        "新しいプロファイル発行後に設定"
+      ],
+      "dont": [
+        "古いQRを使えば必ず戻るとは考えない"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/esim-delete-reissue-transfer-safety-guide/",
+          "label": "eSIM削除・再発行・転送ガイド"
+        }
+      ],
+      "official_sources": [
+        {
+          "url": "https://support.apple.com/ja-jp/102421",
+          "label": "Apple：eSIMを消去する方法"
+        },
+        {
+          "url": "https://www.docomo.ne.jp/support/uimcard/setting/",
+          "label": "ドコモ：SIM情報設定方法"
+        },
+        {
+          "url": "https://www.softbank.jp/support/faq/view/53126",
+          "label": "SoftBank：eSIMを誤削除した場合"
+        }
+      ]
+    },
+    {
+      "id": "no_sim",
+      "title": "「SIMなし」・SIMを認識しない",
+      "stage": "SIM認識",
+      "aliases": [
+        "SIMなし",
+        "SIMがありません",
+        "SIMを認識しない",
+        "SIMカードがありません",
+        "No SIM",
+        "SIM未挿入"
+      ],
+      "recovery_symptom": "no_signal",
+      "sim_mode": "physical",
+      "carriers": [],
+      "platforms": [],
+      "risk": "装着/回線確認",
+      "summary": "物理SIMの「SIMなし」はAPNより前の認識段階です。装着、SIM状態、端末ロック、カード故障を先に確認します。",
+      "causes": [
+        "SIMの接触/装着不良",
+        "SIMカード故障",
+        "端末側SIMスロット不具合",
+        "SIMロック/利用制限",
+        "回線切替で旧SIMが無効化"
+      ],
+      "first_steps": [
+        "電源を切ってSIMを入れ直す",
+        "別端末/別SIMで切り分ける",
+        "SIMロック/利用制限を確認",
+        "再発行直後なら旧SIM無効化タイミングを確認"
+      ],
+      "dont": [
+        "SIMを認識していない段階でAPNを編集しない"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/smartphone-sim-not-detected/",
+          "label": "SIMカードを認識しない時の確認"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "invalid_sim",
+      "title": "「無効なSIM」「サポートされていないSIM」",
+      "stage": "SIM認識",
+      "aliases": [
+        "無効なSIM",
+        "サポートされていないSIM",
+        "SIMがサポートされていません",
+        "SIM not supported",
+        "invalid SIM",
+        "このSIMは使用できません"
+      ],
+      "recovery_symptom": "no_signal",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [],
+      "risk": "契約/ロック確認",
+      "summary": "SIM方式が認識されても、その端末・契約・ロック状態で利用できない可能性があります。",
+      "causes": [
+        "SIMロック/ネットワークロック",
+        "端末が回線種別に非対応",
+        "キャリア側利用制限",
+        "eSIM発行先端末の不一致"
+      ],
+      "first_steps": [
+        "SIMロック状態を確認",
+        "端末型番と回線対応を確認",
+        "キャリア側の利用制限/開通状態を確認"
+      ],
+      "dont": [],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/sim-esim-compatibility-diagnosis/",
+          "label": "SIM/eSIM互換性診断"
+        },
+        {
+          "url": "/ja/technology/smartphone/smartphone-sim-not-detected/",
+          "label": "SIM認識トラブル"
+        }
+      ],
+      "official_sources": [
+        {
+          "url": "https://support.apple.com/ja-jp/109326",
+          "label": "Apple：アクティベーションできない場合"
+        }
+      ]
+    },
+    {
+      "id": "sim_not_provisioned",
+      "title": "「SIMはプロビジョニングされていません」",
+      "stage": "回線開通",
+      "aliases": [
+        "SIMはプロビジョニングされていません",
+        "SIM not provisioned",
+        "SIMがプロビジョニングされていない",
+        "SIM プロビジョニング エラー"
+      ],
+      "recovery_symptom": "no_signal",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [],
+      "risk": "キャリア確認",
+      "summary": "SIM自体の装着より、回線開通・SIM/eSIM発行・キャリア側登録を確認するエラーです。",
+      "causes": [
+        "回線開通前",
+        "SIM/eSIM再発行処理中",
+        "キャリア側の加入者情報登録不整合"
+      ],
+      "first_steps": [
+        "申込/回線開通状態を確認",
+        "再発行直後なら新旧SIMの切替状態を確認",
+        "改善しなければキャリアへエラー文をそのまま伝える"
+      ],
+      "dont": [],
+      "related_articles": [],
+      "official_sources": []
+    },
+    {
+      "id": "no_signal",
+      "title": "圏外・緊急通報のみ",
+      "stage": "ネットワーク登録",
+      "aliases": [
+        "圏外",
+        "緊急通報のみ",
+        "緊急電話のみ",
+        "サービスなし",
+        "No Service",
+        "SOSのみ",
+        "SOS only",
+        "ネットワークに接続されていません"
+      ],
+      "recovery_symptom": "no_signal",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [],
+      "risk": "広域切り分け",
+      "summary": "SIM/eSIM認識、回線開通、ネットワーク選択、Band、障害を順番に分けます。",
+      "causes": [
+        "SIM/eSIMが無効",
+        "回線開通/利用停止",
+        "ネットワーク選択が固定",
+        "主要Band不足/エリア外",
+        "キャリア障害"
+      ],
+      "first_steps": [
+        "SIM/eSIMがONか確認",
+        "機内モードON/OFF→再起動",
+        "ネットワーク選択を自動へ戻す",
+        "同じ回線の障害/エリアを確認",
+        "端末型番のBand/公式動作確認を確認"
+      ],
+      "dont": [],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/sim-esim-compatibility-diagnosis/",
+          "label": "端末×回線互換性診断"
+        },
+        {
+          "url": "/ja/technology/smartphone/simfree-android-apn-volte-band-troubleshooting/",
+          "label": "SIMフリーAndroidの通信切り分け"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "recognized_no_data",
+      "title": "SIM/eSIMは認識するがデータ通信できない",
+      "stage": "データ通信",
+      "aliases": [
+        "SIMは認識するが通信できない",
+        "eSIMは認識するが通信できない",
+        "アンテナは立つがネットにつながらない",
+        "モバイルデータ通信できない",
+        "データ通信できない",
+        "4G 表示 通信できない"
+      ],
+      "recovery_symptom": "recognized_no_data",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [],
+      "risk": "APN/回線確認",
+      "summary": "認識済みならeSIM再発行を急がず、データ用回線→APN→回線開通→Bandの順で確認します。",
+      "causes": [
+        "データ用SIMの選択違い",
+        "モバイルデータOFF",
+        "APN不足/誤設定",
+        "回線開通未完了",
+        "Band/エリア条件"
+      ],
+      "first_steps": [
+        "モバイルデータに使う回線を確認",
+        "契約先がAPNを指定する場合だけ公式値を確認",
+        "機内モードON/OFF→再起動",
+        "回線開通状態を確認",
+        "Band/エリアを確認"
+      ],
+      "dont": [
+        "認識済みeSIMを最初に削除しない"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/carrier-apn-sim-troubleshooting/",
+          "label": "4キャリアAPN・SIM設定比較"
+        },
+        {
+          "url": "/ja/technology/smartphone/au-esim-activated-no-data-apn-profile-troubleshooting/",
+          "label": "au eSIM開通後のデータ通信不可"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "pdp_failure",
+      "title": "PDP認証・モバイルデータネットワークのエラー",
+      "stage": "データ通信",
+      "aliases": [
+        "PDP認証に失敗しました",
+        "PDP authentication failure",
+        "モバイルデータ通信ネットワークを起動できません",
+        "モバイルデータ通信ネットワーク エラー",
+        "could not activate cellular data network"
+      ],
+      "recovery_symptom": "recognized_no_data",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [],
+      "risk": "APN/契約確認",
+      "summary": "モバイルデータ側の認証・APN・契約状態を優先して確認します。eSIM追加そのものとは別レイヤーです。",
+      "causes": [
+        "APN設定の不一致",
+        "データ契約/開通状態",
+        "キャリア側認証・障害",
+        "デュアルSIMのデータ回線違い"
+      ],
+      "first_steps": [
+        "データ用回線を確認",
+        "APNを公式値と照合",
+        "再起動/機内モード切替",
+        "キャリア側の開通・障害を確認"
+      ],
+      "dont": [
+        "eSIMプロファイルの再発行を最初にしない"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/smartphone-apn-settings-not-working/",
+          "label": "APN設定が保存できない・通信できない時"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "apn_save_fail",
+      "title": "APNを保存できない・選択できない",
+      "stage": "APN",
+      "aliases": [
+        "APNを保存できない",
+        "APN 保存 できない",
+        "アクセスポイント名 追加できない",
+        "APNが消える",
+        "APN 選択できない",
+        "APN 設定 反映されない"
+      ],
+      "recovery_symptom": "recognized_no_data",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [],
+      "risk": "APN確認",
+      "summary": "APN編集権限、SIM種別、キャリア構成、必須項目を確認します。端末によってAPN追加自体が制限されます。",
+      "causes": [
+        "キャリア構成/端末側でAPN編集不可",
+        "必須項目不足",
+        "SIM種別とAPNの組合せ違い",
+        "保存操作/選択操作漏れ"
+      ],
+      "first_steps": [
+        "契約先が手動APNを必要とするか確認",
+        "端末のAPN追加可否を確認",
+        "公式値を再入力",
+        "保存後に対象APNを選択→再起動"
+      ],
+      "dont": [],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/smartphone-apn-settings-not-working/",
+          "label": "APN設定が保存できない時"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "data_ok_calls_fail",
+      "title": "データ通信できるが電話できない",
+      "stage": "VoLTE/IMS",
+      "aliases": [
+        "データ通信できるが電話できない",
+        "ネットは使えるが通話できない",
+        "発信できない データ通信できる",
+        "着信できない データ通信できる",
+        "VoLTE 通話できない"
+      ],
+      "recovery_symptom": "data_ok_calls_fail",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [],
+      "risk": "VoLTE/IMS確認",
+      "summary": "データ通信が成立しているなら、APNより音声契約・VoLTE/IMS・持ち込み端末音声対応を確認します。",
+      "causes": [
+        "データ専用契約",
+        "VoLTE/IMS非対応/未登録",
+        "他社/海外版端末の音声非対応",
+        "デュアルSIMの発信回線違い"
+      ],
+      "first_steps": [
+        "音声通話対応契約か確認",
+        "デフォルト音声回線を確認",
+        "VoLTE/IMS/公式動作確認を確認",
+        "キャリア側の音声開通状態を確認"
+      ],
+      "dont": [],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/docomo-simfree-phone-data-ok-calls-fail-volte-ims/",
+          "label": "ドコモでデータ可・通話不可の切り分け"
+        },
+        {
+          "url": "/ja/technology/smartphone/overseas-smartphone-bands-match-volte-ims-calls-fail/",
+          "label": "海外版のBand一致でも通話できない理由"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "calls_drop_data",
+      "title": "通話中だけ4G/5G・データ通信が切れる",
+      "stage": "VoLTE/IMS",
+      "aliases": [
+        "通話中 データ通信 切れる",
+        "電話すると4Gが切れる",
+        "通話中 5G 消える",
+        "通話中 ネット 使えない",
+        "VoLTE 使えない 通話中"
+      ],
+      "recovery_symptom": "data_ok_calls_fail",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [],
+      "risk": "VoLTE確認",
+      "summary": "通話時にデータが落ちる場合は、VoLTE/IMS登録や優先回線を確認します。",
+      "causes": [
+        "VoLTE/IMS未登録",
+        "デュアルSIMの音声/データ回線構成",
+        "キャリア・端末組合せの制約"
+      ],
+      "first_steps": [
+        "VoLTE/IMS状態を確認",
+        "音声とデータの優先回線を確認",
+        "持ち込み端末の音声対応を確認"
+      ],
+      "dont": [],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/smartphone-volte-calls-drop-data/",
+          "label": "通話中に4G・5G通信が切れる時"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "sms_not_received",
+      "title": "SMSを受信できない・認証コードが届かない",
+      "stage": "SMS",
+      "aliases": [
+        "SMSが届かない",
+        "SMS 受信できない",
+        "認証コードが届かない",
+        "SMS認証コード 届かない",
+        "OTP 届かない",
+        "ワンタイムパスワード 届かない"
+      ],
+      "recovery_symptom": "sms_fail",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [],
+      "risk": "認証依存確認",
+      "summary": "SMS全般が使えないのか、特定サービスの認証SMSだけ届かないのかを分けます。",
+      "causes": [
+        "SMS非対応契約",
+        "回線未開通/圏外",
+        "迷惑SMSブロック",
+        "デュアルSIMの番号取り違え",
+        "海外/短縮番号/国際SMS条件"
+      ],
+      "first_steps": [
+        "通常SMSの送受信をテスト",
+        "対象電話番号/回線を確認",
+        "迷惑SMS設定を確認",
+        "再発行/MNP手続き中なら旧回線の状態を確認"
+      ],
+      "dont": [
+        "認証に必要な旧eSIMを先に削除しない"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/smartphone-sms-not-received/",
+          "label": "SMS・認証コードが届かない時"
+        },
+        {
+          "url": "/ja/technology/smartphone/rakuten-esim-reissue-otp-not-received-after-delete/",
+          "label": "楽天eSIM再発行のSMS認証"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "sms_wrong_sim",
+      "title": "SMSが違うSIM・番号から送信される",
+      "stage": "デュアルSIM",
+      "aliases": [
+        "SMSが違う番号から送信される",
+        "SMS 違うSIMから送信",
+        "メッセージ 送信回線 違う",
+        "デュアルSIM SMS 違う回線",
+        "RCS 違う番号"
+      ],
+      "recovery_symptom": "sms_fail",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [],
+      "risk": "回線選択確認",
+      "summary": "デュアルSIMでは、モバイルデータ回線とSMS/メッセージの送信回線が別設定になっている場合があります。",
+      "causes": [
+        "会話ごとの送信回線が別SIM",
+        "既定のSMS回線が違う",
+        "RCS/iMessageの番号登録が旧回線"
+      ],
+      "first_steps": [
+        "SMS/テキストの既定回線を確認",
+        "対象会話の送信回線を確認",
+        "iMessage/RCSの番号登録を確認"
+      ],
+      "dont": [],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/iphone-dual-sim-sms-rcs-wrong-number-after-esim/",
+          "label": "iPhoneデュアルSIMで違う番号から送られる時"
+        },
+        {
+          "url": "/ja/technology/smartphone/pixel-dual-sim-sms-wrong-sim-default-text/",
+          "label": "PixelのSMS送信SIM確認"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "5g_not_showing",
+      "title": "5G表示にならない・4Gのまま",
+      "stage": "5G",
+      "aliases": [
+        "5Gにならない",
+        "5G 表示されない",
+        "5Gを掴まない",
+        "4Gのまま",
+        "5Gアイコン 出ない",
+        "5G 接続できない"
+      ],
+      "recovery_symptom": "5g_fail",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [],
+      "risk": "仕様/エリア確認",
+      "summary": "5G契約・端末設定・n77/n78/n79等・SA/NSA・エリアを分けます。4Gが使えるならeSIM再発行を優先しません。",
+      "causes": [
+        "5G設定OFF",
+        "5G契約/オプション条件",
+        "対象5G Band不足",
+        "SA/NSA条件",
+        "エリア/混雑でLTE接続"
+      ],
+      "first_steps": [
+        "5G設定を確認",
+        "契約/5G SA条件を確認",
+        "型番別5G Bandを確認",
+        "同じ場所で時間/端末を変えて比較"
+      ],
+      "dont": [],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/smartphone-5g-not-showing/",
+          "label": "5G表示にならない時"
+        },
+        {
+          "url": "/ja/technology/smartphone/pixel-dual-sim-5g-not-showing-data-sim-check/",
+          "label": "PixelデュアルSIMで5Gにならない時"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "carrier_settings_missing",
+      "title": "SIM/eSIM変更後に5G・Wi-Fi通話などの項目が出ない",
+      "stage": "キャリア設定",
+      "aliases": [
+        "キャリア設定アップデート 出ない",
+        "5G 項目がない SIM変更後",
+        "Wi-Fi通話 項目がない eSIM変更後",
+        "キャリア設定 反映されない",
+        "SIM変更後 5G 出ない"
+      ],
+      "recovery_symptom": "5g_fail",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [
+        "iPhone/iPad"
+      ],
+      "risk": "設定更新",
+      "summary": "iPhoneではSIM/eSIM変更後、キャリア設定アップデートが機能表示に影響する場合があります。",
+      "causes": [
+        "キャリア設定が未更新",
+        "回線開通/プロビジョニング未反映",
+        "プラン/端末が対象外"
+      ],
+      "first_steps": [
+        "設定→一般→情報でキャリア設定更新を確認",
+        "再起動",
+        "契約・端末対応を確認"
+      ],
+      "dont": [],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/iphone-after-sim-esim-change-5g-wifi-calling-missing-carrier-settings/",
+          "label": "SIM/eSIM変更後のキャリア設定確認"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "mnp_not_open",
+      "title": "MNP後に回線が開通しない",
+      "stage": "MNP/回線切替",
+      "aliases": [
+        "MNP 開通しない",
+        "MNP 回線切替 できない",
+        "MNP後 圏外",
+        "MNP後 eSIM 使えない",
+        "乗り換え 開通しない",
+        "回線切替 進まない"
+      ],
+      "recovery_symptom": "no_signal",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [],
+      "risk": "旧回線保持",
+      "summary": "MNPでは「申込完了」「回線切替」「SIM/eSIM設定」が別工程です。どの段階で止まったかを確認します。",
+      "causes": [
+        "MNP回線切替未実施/受付時間外",
+        "新SIM/eSIMが未開通",
+        "旧回線がまだ有効",
+        "eSIMプロファイル設定だけ先に実施"
+      ],
+      "first_steps": [
+        "MNP申込/回線切替ステータスを確認",
+        "新旧どちらが圏外/有効か確認",
+        "eSIMの場合は発行・開通後にプロファイル設定",
+        "キャリアの開通窓口を確認"
+      ],
+      "dont": [
+        "開通確認前に旧eSIMを削除しない"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/sim-esim-recovery-navigator/",
+          "label": "SIM/eSIM復旧ナビ"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "physical_disabled_after_transfer",
+      "title": "eSIM転送後に元の物理SIMが使えなくなった",
+      "stage": "SIM/eSIM移行",
+      "aliases": [
+        "eSIM転送したら物理SIMが使えない",
+        "eSIMにしたらSIMカードが無効",
+        "物理SIM 無効 eSIM転送",
+        "SIMカード 使えなくなった eSIM"
+      ],
+      "recovery_symptom": "delete_reissue",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [],
+      "risk": "仕様確認",
+      "summary": "物理SIMからeSIMへ切替・転送すると、元のSIMが無効になる手続きがあります。故障と決めつけず切替仕様を確認します。",
+      "causes": [
+        "物理SIM→eSIM切替により旧SIM無効化",
+        "端末間転送で旧SIM情報が失効",
+        "キャリア側で新SIMへ切替済み"
+      ],
+      "first_steps": [
+        "申込/転送履歴を確認",
+        "新eSIM側の開通状態を確認",
+        "元の物理SIMを戻す必要がある場合は再発行手続きを確認"
+      ],
+      "dont": [],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/docomo-android-esim-transfer-physical-sim-disabled/",
+          "label": "ドコモAndroidでeSIM転送後の物理SIM"
+        },
+        {
+          "url": "/ja/technology/smartphone/pixel-physical-sim-to-esim-convert-old-sim-invalid/",
+          "label": "Pixelで物理SIMをeSIMへ変換した後"
+        }
+      ],
+      "official_sources": []
+    },
+    {
+      "id": "network_locked",
+      "title": "SIMロック・ネットワークロック関連表示",
+      "stage": "SIM認識",
+      "aliases": [
+        "SIMロックされています",
+        "ネットワークロック",
+        "SIM network locked",
+        "ネットワークロック解除PIN",
+        "SIMロック 解除 必要",
+        "他社SIM 使えない ロック"
+      ],
+      "recovery_symptom": "no_signal",
+      "sim_mode": "physical",
+      "carriers": [],
+      "platforms": [],
+      "risk": "ロック確認",
+      "summary": "APNやBandの前に、SIMロック/ネットワークロックの状態を確認します。",
+      "causes": [
+        "旧端末のSIMロック",
+        "ネットワークロック解除コード要求",
+        "キャリア/地域版固有制限"
+      ],
+      "first_steps": [
+        "端末のSIMロック状態を確認",
+        "購入元キャリアの解除条件を確認",
+        "型番・地域版を確認"
+      ],
+      "dont": [],
+      "related_articles": [],
+      "official_sources": []
+    },
+    {
+      "id": "iphone_activation_server",
+      "title": "iPhone/iPad本体のアクティベーションが完了しない",
+      "stage": "端末アクティベーション",
+      "aliases": [
+        "アクティベーションサーバが利用できません",
+        "iPhoneをアクティベートできません",
+        "iPadをアクティベートできません",
+        "SIMカードまたはeSIMがサポートされていません"
+      ],
+      "recovery_symptom": "esim_add",
+      "sim_mode": "both",
+      "carriers": [],
+      "platforms": [
+        "iPhone/iPad"
+      ],
+      "risk": "端末/サーバー確認",
+      "summary": "これはeSIMプロファイルだけでなく、iPhone/iPad本体の初期アクティベーション問題を含みます。",
+      "causes": [
+        "Appleのアクティベーションサービス",
+        "Wi-Fi/ネットワーク",
+        "SIM/eSIM非対応・ロック",
+        "端末側ソフトウェア"
+      ],
+      "first_steps": [
+        "Appleシステム状況を確認",
+        "安定したWi-Fiで再試行",
+        "SIM/eSIM対応とロックを確認",
+        "必要ならMac/PC経由のアクティベーションを確認"
+      ],
+      "dont": [],
+      "related_articles": [],
+      "official_sources": [
+        {
+          "url": "https://support.apple.com/ja-jp/109326",
+          "label": "Apple：iPhone/iPadをアクティベーションできない場合"
+        }
+      ]
+    },
+    {
+      "id": "ky41c_profile_recognized",
+      "title": "KY-41Cで他社eSIMプロファイルは認識したが、その先が分からない",
+      "stage": "キッズ端末",
+      "aliases": [
+        "KY-41C eSIM 認識した 通信できない",
+        "KY-41C Ymobile eSIM",
+        "KY-41C SoftBank eSIM",
+        "キッズケータイ eSIM プロファイル 認識",
+        "KY-41C プロファイル 設定"
+      ],
+      "recovery_symptom": "recognized_no_data",
+      "sim_mode": "esim",
+      "carriers": [
+        "SoftBank"
+      ],
+      "platforms": [
+        "その他"
+      ],
+      "risk": "実機範囲限定",
+      "summary": "SolQvia実機確認はY!mobile/SoftBankのeSIMプロファイル設定・端末側認識までです。APN、データ、VoLTE、SMSは別判定します。",
+      "causes": [
+        "eSIMプロファイル認識とデータ通信を同一視している",
+        "APN/回線開通/Band/VoLTEを未確認"
+      ],
+      "first_steps": [
+        "追加したeSIMが有効か確認",
+        "データ通信はAPN/回線条件を別確認",
+        "音声はVoLTE/IMSを別確認",
+        "見守りサービスも別判定"
+      ],
+      "dont": [
+        "APN設定を実機確認済みとは扱わない"
+      ],
+      "related_articles": [
+        {
+          "url": "/ja/technology/smartphone/docomo-kids-phone-apn-ymobile-softbank-guide/",
+          "label": "KY-41CのeSIMプロファイル設定"
+        },
+        {
+          "url": "/ja/technology/smartphone/docomo-kids-phone-ymobile-softbank-field-test/",
+          "label": "KY-41C実機検証"
+        }
+      ],
+      "official_sources": []
+    }
+  ],
+  "primary_sources": [
+    {
+      "url": "https://support.apple.com/ja-jp/102478",
+      "label": "Apple：iPhoneでeSIMを設定できない場合"
+    },
+    {
+      "url": "https://support.apple.com/ja-jp/102421",
+      "label": "Apple：iPhone/iPadでeSIMを消去する方法"
+    },
+    {
+      "url": "https://support.apple.com/ja-jp/109326",
+      "label": "Apple：iPhone/iPadをアクティベーションできない場合"
+    },
+    {
+      "url": "https://support.google.com/pixelphone/answer/16115470?hl=ja",
+      "label": "Google Pixel：新しいeSIMを設定する"
+    },
+    {
+      "url": "https://support.google.com/pixelphone/answer/16115951?hl=ja",
+      "label": "Google Pixel：新しいスマートフォンにSIMを移行する"
+    },
+    {
+      "url": "https://www.docomo.ne.jp/support/uimcard/",
+      "label": "NTTドコモ：SIM/eSIMについて"
+    },
+    {
+      "url": "https://www.docomo.ne.jp/support/uimcard/setting/",
+      "label": "NTTドコモ：SIM情報設定方法"
+    },
+    {
+      "url": "https://www.au.com/mobile/product/sim/reissue/",
+      "label": "au：eSIM発行・再発行後の手続き"
+    },
+    {
+      "url": "https://www.au.com/mobile/product/sim/reissue/trouble/",
+      "label": "au：端末紛失・故障・eSIM誤削除"
+    },
+    {
+      "url": "https://www.softbank.jp/mobile/support/product/sim/esim/",
+      "label": "SoftBank：eSIMの設定方法"
+    },
+    {
+      "url": "https://www.softbank.jp/support/faq/view/53126",
+      "label": "SoftBank：eSIMを誤って削除した場合"
+    },
+    {
+      "url": "https://network.mobile.rakuten.co.jp/faq/detail/00001406/",
+      "label": "楽天モバイル：SIM/eSIM交換・再発行"
+    }
+  ]
+}

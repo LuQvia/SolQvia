@@ -1,0 +1,10 @@
+/* SolQvia Phase96: contextual bridge to Luqevora. AdSense remains the primary SolQvia monetization model. */
+.solqvia-revenue-bridge{margin:2rem 0;padding:1.15rem 1.2rem;border:1px solid var(--border,#d8dee9);border-radius:16px;background:linear-gradient(180deg,rgba(248,250,252,.96),rgba(255,255,255,.96));box-shadow:0 8px 24px rgba(15,23,42,.05)}
+.solqvia-revenue-bridge__eyebrow{margin:0 0 .35rem;font-size:.78rem;font-weight:700;letter-spacing:.06em;color:#52606d}
+.solqvia-revenue-bridge h2,.solqvia-revenue-bridge h3{margin:.1rem 0 .55rem;font-size:1.18rem;line-height:1.45}
+.solqvia-revenue-bridge p{margin:.45rem 0;line-height:1.75}
+.solqvia-revenue-bridge__actions{display:flex;flex-wrap:wrap;gap:.65rem;margin:.9rem 0 .35rem}
+.solqvia-revenue-bridge__link{display:inline-flex;align-items:center;min-height:44px;padding:.68rem .9rem;border:1px solid #1f4f82;border-radius:10px;text-decoration:none;font-weight:700;line-height:1.35;background:#fff;color:#123a63}
+.solqvia-revenue-bridge__link:hover,.solqvia-revenue-bridge__link:focus-visible{text-decoration:underline;outline:2px solid currentColor;outline-offset:2px}
+.solqvia-revenue-bridge__note{font-size:.82rem;color:#52606d}
+@media (max-width:640px){.solqvia-revenue-bridge{margin:1.5rem 0;padding:1rem;border-radius:13px}.solqvia-revenue-bridge__actions{display:grid;grid-template-columns:1fr}.solqvia-revenue-bridge__link{width:100%;justify-content:center;text-align:center}}

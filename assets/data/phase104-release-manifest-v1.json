@@ -1,0 +1,37 @@
+{
+  "release": "phase104-used-device-condition-diagnosis-2026-08-08",
+  "checked_at": "2026-08-08",
+  "base_release": "phase103-dual-sim-esim-combination-diagnosis-2026-08-08",
+  "new_pages": [
+    "/ja/technology/smartphone/used-device-condition-diagnosis/",
+    "/en/technology/smartphone/used-device-condition-diagnosis/"
+  ],
+  "new_assets": [
+    "/assets/phase104-used-device.css",
+    "/assets/phase104-used-device.js",
+    "/assets/data/phase104-used-device-condition-diagnosis-v1.json"
+  ],
+  "device_records": 550,
+  "apple_iphone_records": 125,
+  "google_pixel_records": 63,
+  "four_mno_network_check_records": 535,
+  "article_used_device_links_ja": 421,
+  "article_used_device_links_en": 421,
+  "official_sources": [
+    "https://support.apple.com/ja-jp/102658",
+    "https://support.apple.com/ja-jp/106348",
+    "https://support.apple.com/ja-jp/108794",
+    "https://support.google.com/android/answer/9459346?hl=ja",
+    "https://support.google.com/pixelphone/answer/14101646?hl=ja",
+    "https://nw-restriction.nttdocomo.co.jp/top.php",
+    "https://www.au.com/support/service/mobile/network-riyoseigen/",
+    "https://www.softbank.jp/mobile/support/3g/restriction/",
+    "https://network.mobile.rakuten.co.jp/restriction/"
+  ],
+  "privacy_note": "No IMEI/EID/ICCID or account credentials are collected by Phase104. Users enter only official carrier lookup results.",
+  "revenue_invariants": {
+    "solqvia_direct_a8_links": 0,
+    "luqevora_bridge_pages_expected": 124,
+    "adsense_site_approved": false
+  }
+}

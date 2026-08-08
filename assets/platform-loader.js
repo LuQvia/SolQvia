@@ -49,7 +49,7 @@
       if (/^https?:\/\//.test(href) && !href.startsWith(location.origin)) {
         let destination = ''; try { destination = new URL(href, location.href).hostname; } catch (_) {}
         if (/(^|\.)luqevora\.com$/.test(destination) || /(^|\.)luqvia\.com$/.test(destination)) {
-          track('cross_brand_click', { source_brand: 'solqvia', destination_brand: destination.includes('luqevora') ? 'luqevora' : 'luqvia', link_url: href, link_text: (a.textContent || '').trim().slice(0, 100) });
+          track('cross_brand_click', { source_brand: 'solqvia', destination_brand: destination.includes('luqevora') ? 'luqevora' : 'luqvia', bridge_id: a.dataset.bridgeId || '', route_id: a.dataset.luqevoraRoute || '', source_path: location.pathname, link_url: href, link_text: (a.textContent || '').trim().slice(0, 100) });
         } else {
           track(a.rel.includes('sponsored') ? 'affiliate_click' : 'outbound_click', { link_url: href, link_text: (a.textContent || '').trim().slice(0, 100) });
         }
@@ -88,6 +88,92 @@
     });
   };
 
+  // Phase98: controlled AdSense placement. The engine intentionally avoids interactive tools,
+  // short pages, and critical-action UI. Existing legacy placeholders are rebuilt at runtime.
+  const phase98AdPolicy = Object.freeze({
+    blockedContentTypes: new Set([
+      'interactive-device-variant-database', 'interactive-diagnosis', 'interactive-recovery',
+      'interactive-error-lookup', 'smartphone-troubleshooting-hub', 'smartphone-reference-hub',
+      'smartphone-sim-migration-auth-hub', 'smartphone-carrier-setup-hub'
+    ]),
+    sensitivePath: /(lost-smartphone|factory-reset|remote-erase|erase-before|stolen|suspicious-app|malware|browser-popups|security-warning|esim-delete-reissue|initialization)/i
+  });
+  const effectiveAdProfile = () => {
+    const body = document.body;
+    if (!body) return 'none';
+    if (body.dataset.adEligible === 'false') return 'none';
+    const contentType = body.dataset.contentType || '';
+    if (phase98AdPolicy.blockedContentTypes.has(contentType) || /^interactive-/.test(contentType)) return 'none';
+    if (body.dataset.adProfile === 'none') return 'none';
+    const explicitEligible = body.dataset.adEligible === 'true';
+    const inferredArticle = /^\/(ja|en)\/technology\/smartphone\//.test(location.pathname) && !!document.querySelector('.article-content');
+    if (!explicitEligible && !inferredArticle) return 'none';
+    if (body.dataset.adProfile === 'limited' || phase98AdPolicy.sensitivePath.test(location.pathname)) return 'limited';
+    return 'standard';
+  };
+  const makeAdSlot = position => {
+    const slot = document.createElement('div');
+    const isJa = document.documentElement.lang === 'ja';
+    slot.className = 'ad-slot phase98-ad-slot';
+    slot.dataset.adPosition = position;
+    slot.dataset.adState = 'inactive';
+    slot.dataset.label = isJa ? '広告' : 'Advertisement';
+    slot.dataset.adLayout = cfg.adLayoutVersion || 'phase98';
+    slot.hidden = true;
+    slot.setAttribute('aria-hidden', 'true');
+    return slot;
+  };
+  const prepareAdSlots = () => {
+    document.querySelectorAll('.ad-slot[data-ad-position]').forEach(el => el.remove());
+    const profile = effectiveAdProfile();
+    if (profile === 'none') { if (document.body) document.body.dataset.effectiveAdEligible = 'false'; return { profile, inserted: 0, chars: 0, sections: 0, eligible: false }; }
+    const content = document.querySelector('.article-content');
+    if (!content) { if (document.body) document.body.dataset.effectiveAdEligible = 'false'; return { profile: 'none', inserted: 0, chars: 0, sections: 0, eligible: false }; }
+    const chars = (content.textContent || '').replace(/\s+/g, '').length;
+    const minChars = Number(cfg.adMinArticleChars || 1800);
+    if (chars < minChars) { if (document.body) document.body.dataset.effectiveAdEligible = 'false'; return { profile: 'none', inserted: 0, chars, sections: 0, eligible: false }; }
+    const sections = [...content.children].filter(el => el.matches('section.article-section'));
+    if (!sections.length) { if (document.body) document.body.dataset.effectiveAdEligible = 'false'; return { profile: 'none', inserted: 0, chars, sections: 0, eligible: false }; }
+    let inserted = 0;
+    if (profile === 'standard') {
+      const topAnchor = sections[Math.min(1, sections.length - 1)];
+      topAnchor.insertAdjacentElement('afterend', makeAdSlot('articleTop')); inserted += 1;
+      if (chars >= Number(cfg.adMidArticleChars || 5200) && sections.length >= 6) {
+        const midIndex = Math.max(2, Math.min(sections.length - 2, Math.floor(sections.length / 2)));
+        sections[midIndex].insertAdjacentElement('afterend', makeAdSlot('articleMid')); inserted += 1;
+      }
+    }
+    const source = content.querySelector(':scope > section.sources, :scope > .sources');
+    const bottom = makeAdSlot('articleBottom');
+    if (source) source.insertAdjacentElement('afterend', bottom);
+    else content.appendChild(bottom);
+    inserted += 1;
+    document.body.dataset.effectiveAdProfile = profile;
+    document.body.dataset.effectiveAdEligible = 'true';
+    return { profile, inserted, chars, sections: sections.length, eligible: true };
+  };
+  const allowedPositionsFor = (profile, chars) => {
+    if (profile === 'none') return new Set();
+    if (profile === 'limited') return new Set(['articleBottom']);
+    if (cfg.manualAdDensity === 'minimal') return new Set(['articleBottom']);
+    if (cfg.manualAdDensity === 'full' && chars >= Number(cfg.adMidArticleChars || 5200)) return new Set(['articleTop', 'articleMid', 'articleBottom']);
+    return new Set(['articleTop', 'articleBottom']);
+  };
+  const observeAdSlots = () => {
+    if (!('IntersectionObserver' in window)) return;
+    const seen = new WeakSet();
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+      if (!entry.isIntersecting || seen.has(entry.target)) return;
+      seen.add(entry.target);
+      track('ad_slot_view', {
+        ad_position: entry.target.dataset.adPosition || '',
+        ad_profile: document.body?.dataset.effectiveAdProfile || '',
+        ad_layout: cfg.adLayoutVersion || 'phase98'
+      });
+    }), { threshold: 0.5 });
+    document.querySelectorAll('.ad-slot[data-ad-state="ready"]').forEach(slot => observer.observe(slot));
+  };
+
   let adsensePromise = null;
   const ensureAdSenseScript = () => {
     if (!valid.client(cfg.adsenseClient)) return Promise.resolve(false);
@@ -100,18 +186,13 @@
     if (!cfg.adsenseSiteReviewEnabled) return false;
     return ensureAdSenseScript();
   };
-  const selectedPositions = () => {
-    if (cfg.manualAdDensity === 'minimal') return new Set(['articleTop']);
-    if (cfg.manualAdDensity === 'full') return new Set(['articleTop', 'articleMid', 'articleBottom']);
-    return new Set(['articleTop', 'articleBottom']);
-  };
-  const enableManualAds = async () => {
+  const enableManualAds = async placement => {
     const body = document.body;
-    const eligible = body?.dataset.adEligible === 'true';
+    const eligible = !!placement?.eligible;
     const safe = cfg.siteApproved && cfg.manualAdsEnabled && cfg.certifiedCmpConfigured && valid.client(cfg.adsenseClient);
-    if (!safe || (cfg.adCoverage === 'eligible-only' && !eligible)) return false;
+    if (!safe || (cfg.adCoverage === 'eligible-only' && !eligible) || !placement || placement.profile === 'none') return false;
     if (!(await ensureAdSenseScript())) return false;
-    const allowed = selectedPositions();
+    const allowed = allowedPositionsFor(placement.profile, placement.chars);
     let rendered = 0;
     document.querySelectorAll('.ad-slot[data-ad-position]').forEach(container => {
       const position = container.dataset.adPosition;
@@ -124,9 +205,12 @@
       ins.setAttribute('data-ad-format', 'auto');
       ins.setAttribute('data-full-width-responsive', 'true');
       container.replaceChildren(ins); container.hidden = false; container.removeAttribute('aria-hidden'); container.dataset.adState = 'ready';
-      try { (window.adsbygoogle = window.adsbygoogle || []).push({}); rendered += 1; } catch (_) { container.hidden = true; container.dataset.adState = 'error'; }
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({}); rendered += 1;
+        track('ad_slot_ready', { ad_position: position, ad_profile: placement.profile, ad_layout: cfg.adLayoutVersion || 'phase98' });
+      } catch (_) { container.hidden = true; container.dataset.adState = 'error'; }
     });
-    if (rendered) document.documentElement.classList.add('ads-enabled');
+    if (rendered) { document.documentElement.classList.add('ads-enabled'); observeAdSlots(); }
     return rendered > 0;
   };
   const publishStatus = () => {
@@ -137,7 +221,9 @@
       cmpConfigured: !!cfg.certifiedCmpConfigured,
       manualAdsConfigured: !!cfg.manualAdsEnabled && Object.values(cfg.adsenseSlots || {}).some(valid.slot),
       autoAdsConfigured: !!cfg.autoAdsEnabled,
-      pageEligible: document.body?.dataset.adEligible === 'true'
+      pageEligible: document.body?.dataset.effectiveAdEligible === 'true',
+      effectiveAdProfile: document.body?.dataset.effectiveAdProfile || 'none',
+      adLayoutVersion: cfg.adLayoutVersion || 'legacy'
     });
     window.SOLQVIA_STATUS = status;
     document.dispatchEvent(new CustomEvent('solqvia:platform-status', { detail: status }));
@@ -146,8 +232,9 @@
     await enableAnalytics();
     attachEvents();
     attachLearningLoop();
+    const adPlacement = prepareAdSlots();
     await loadAdSenseForReview();
-    await enableManualAds();
+    await enableManualAds(adPlacement);
     publishStatus();
   });
 })();

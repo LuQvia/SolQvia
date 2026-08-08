@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "release": "phase89",
+  "checked_at": "2026-08-08",
+  "baseline": "Phase88 cumulative FULL_REPLACE / ROOT_READY",
+  "scope": "Correct KY-41C real-device observation from APN to eSIM profile setup/recognition; add detailed eSIM/manual provisioning guidance to device articles; improve desktop/mobile readability.",
+  "ky41c_correction": {
+    "model": "KY-41C",
+    "old_interpretation": "APN setup was real-device verified",
+    "corrected_observation": "Y!mobile and SoftBank eSIM profile setup / SIM information recognition on KY-41C was real-device verified; APN setup was not.",
+    "official_esim_methods": [
+      "SIM information add",
+      "QR code",
+      "direct input of connection server address",
+      "enable installed SIM information"
+    ],
+    "safety": "SIM information initialization deletes eSIM information; do not use as a routine add/switch step",
+    "sources": [
+      "https://www.docomo.ne.jp/binary/pdf/support/manual/KY-41C_J_syousai.pdf",
+      "https://www.docomo.ne.jp/support/uimcard/esim/",
+      "https://www.docomo.ne.jp/product/ky41c/spec.html",
+      "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf"
+    ]
+  },
+  "article_coverage": {
+    "articles": 398,
+    "supported": 76,
+    "physical_only": 50,
+    "unverified": 272
+  },
+  "device_inventory_unique_article_urls": 398,
+  "tablet_article_urls_checked": 10,
+  "smartwatch_article_urls_checked": 8,
+  "manual_entry_policy": [
+    "Never substitute APN values for eSIM activation/profile values.",
+    "Use only carrier-issued SM-DP+/server address, activation code, or confirmation code when the actual device UI asks for it.",
+    "If a manual entry control is not documented or displayed, do not infer a hidden/manual method; use carrier QR/app/provisioning.",
+    "Treat QR/activation information and EID/IMEI as sensitive operational data and do not publish them."
+  ],
+  "responsive_changes": [
+    "horizontal scrolling for wide tables",
+    "smaller mobile article headings and tighter padding",
+    "single-column eSIM cards/steps on narrow screens",
+    "mobile full-width CTA buttons",
+    "overflow-safe URLs/code/content",
+    "desktop article content widened to 800px while retaining readable measure"
+  ],
+  "brand_guidance_sources": {
+    "Apple iPhone": "https://support.apple.com/ja-jp/118669",
+    "Apple iPad": "https://support.apple.com/ja-jp/119592",
+    "Google Pixel": "https://support.google.com/pixelphone/answer/9449293?hl=ja",
+    "Samsung Galaxy": "https://www.samsung.com/jp/support/mobile-devices/how-to-use-an-esim-with-your-galaxy-phone/",
+    "Sony Xperia": "https://www.sony.jp/support/mobile/products/manual/xperia/esim/",
+    "Xiaomi/Redmi": "https://www.mi.com/jp/support/article/KA-36321/",
+    "OPPO": "https://support.oppo.com/jp/answer/?aid=neu15780",
+    "NTT Docomo/KY-41C": "https://www.docomo.ne.jp/support/uimcard/esim/"
+  },
+  "validation": {
+    "html_files": 979,
+    "jsonld_blocks": 981,
+    "local_refs_checked": 43841,
+    "json_files": 60,
+    "search_entries": 818,
+    "sitemap_urls": 974,
+    "canonical_urls": 979,
+    "phase89_esim_sections": 419,
+    "errors": 0,
+    "warnings": 0,
+    "responsive_smoke": "7 representative articles x desktop 1440px and mobile 390px; document scrollWidth == clientWidth on all 14 checks",
+    "visual_review": "KY-41C desktop and mobile render reviewed; table overflow remains inside table-wrap and page has no horizontal overflow"
+  }
+}

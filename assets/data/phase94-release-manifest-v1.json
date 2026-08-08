@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "release": "phase94",
+  "checked_at": "2026-08-08",
+  "baseline": "Phase93 cumulative FULL_REPLACE / ROOT_READY",
+  "new_pages": [
+    "/ja/technology/smartphone/device-model-region-variant-database/",
+    "/en/technology/smartphone/device-model-region-variant-database/"
+  ],
+  "new_assets": [
+    "/assets/phase94-model-variant.css",
+    "/assets/phase94-model-variant.js",
+    "/assets/data/phase94-device-model-region-variant-v1.json",
+    "/assets/data/phase94-english-coverage-audit-v1.json"
+  ],
+  "counts": {
+    "domestic_models": 246,
+    "domestic_carrier_sales": 515,
+    "open_market_japan": 28,
+    "iphone_regional_models": 19,
+    "iphone_regional_model_rows": 80,
+    "normalized_rows": 623,
+    "spotlight_families": 3,
+    "spotlight_variants": 9
+  },
+  "english_coverage": {
+    "ja_smartphone_pages": 824,
+    "en_smartphone_pages": 128,
+    "exact_path_pairs": 128,
+    "missing_en_counterparts": 696,
+    "coverage_percent": 15.53
+  },
+  "features": [
+    "model-number search",
+    "Japan carrier vs open-market comparison",
+    "iPhone regional A-number mapping",
+    "two-variant side-by-side compare",
+    "current official regional spotlights",
+    "bilingual Phase94 page"
+  ],
+  "safety": [
+    "No cross-region SIM support inference",
+    "No Band-match carrier guarantee",
+    "No overseas FeliCa inference",
+    "Imported-device regulatory conformity is a separate check"
+  ]
+}

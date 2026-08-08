@@ -1,0 +1,45 @@
+{
+  "schema_version": "1.0",
+  "release": "phase90",
+  "checked_at": "2026-08-08",
+  "baseline": "Phase89 cumulative FULL_REPLACE / ROOT_READY",
+  "scope": "Deepen eSIM manual provisioning, QR fallback, deletion/reissue/transfer safety and recovery links from verified eSIM device pages.",
+  "new_articles": [
+    "/ja/technology/smartphone/esim-manual-input-smdp-activation-code-guide/",
+    "/ja/technology/smartphone/esim-delete-reissue-transfer-safety-guide/"
+  ],
+  "supported_device_pages_linked": 76,
+  "core_pages_refreshed": [
+    "ja/technology/smartphone/iphone-17-esim-activation-fails-japan-carriers/index.html",
+    "ja/technology/smartphone/docomo-android-esim-transfer-not-showing-android14/index.html",
+    "ja/technology/smartphone/softbank-esim-set-no-data-troubleshooting/index.html",
+    "ja/technology/smartphone/tablet-esim-apn-troubleshooting/index.html",
+    "ja/technology/smartphone/docomo-kids-phone-apn-ymobile-softbank-guide/index.html"
+  ],
+  "manual_input_rules": [
+    "Never enter APN values into eSIM provisioning fields.",
+    "Use manual provisioning only when the device UI exposes the field and the carrier issued the required value.",
+    "SM-DP+/server address, activation code and confirmation code are carrier-issued operational credentials and may differ by workflow.",
+    "Do not publish eSIM QR codes, activation data, EID or IMEI."
+  ],
+  "deletion_safety_rules": [
+    "Do not delete the old eSIM before confirming the reissue/transfer path.",
+    "Preserve SMS/2FA access needed for reissue.",
+    "Verify Wi-Fi and carrier account access before migration.",
+    "Confirm new-line activation before erasing or factory-resetting the old device."
+  ],
+  "primary_sources": {
+    "Apple setup": "https://support.apple.com/ja-jp/118669",
+    "Apple trouble": "https://support.apple.com/ja-jp/102478",
+    "Google Pixel": "https://support.google.com/pixelphone/answer/16115470?hl=ja",
+    "Samsung Galaxy": "https://www.samsung.com/jp/support/mobile-devices/galaxy-esim-and-supported-network-carriers/",
+    "Docomo FAQ": "https://www.docomo.ne.jp/faq/detail?faqId=492181",
+    "Docomo eSIM": "https://www.docomo.ne.jp/support/uimcard/esim/",
+    "au download": "https://www.au.com/support/faq/details/00/0000/000020/pg00002061/",
+    "au manual": "https://www.au.com/support/faq/details/00/0000/000019/pg00001987/",
+    "SoftBank eSIM": "https://www.softbank.jp/mobile/support/product/sim/esim/",
+    "Rakuten opening": "https://network.mobile.rakuten.co.jp/guide/opening/",
+    "Rakuten registration": "https://network.mobile.rakuten.co.jp/guide/dual-esim/registration/",
+    "KY-41C manual": "https://www.docomo.ne.jp/binary/pdf/support/manual/KY-41C_J_syousai.pdf"
+  }
+}

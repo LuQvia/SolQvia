@@ -1,0 +1,52 @@
+{
+  "version": "phase98-adsense-revenue-ux-v1",
+  "verified_date": "2026-08-08",
+  "primary_monetization": "Google AdSense",
+  "affiliate_model": "SolQvia stays direct-A8-free; commercial comparison intent is routed contextually to Luqevora.",
+  "serving_state": {
+    "siteApproved": false,
+    "manualAdsEnabled": false,
+    "autoAdsEnabled": false,
+    "reason": "Do not enable serving until AdSense site status is Ready and real ad unit slot IDs are configured."
+  },
+  "profiles": {
+    "standard": {
+      "balanced": [
+        "articleTop",
+        "articleBottom"
+      ],
+      "full": [
+        "articleTop",
+        "articleMid",
+        "articleBottom"
+      ],
+      "minimum_chars": 1800,
+      "middle_minimum_chars": 5200
+    },
+    "limited": {
+      "positions": [
+        "articleBottom"
+      ],
+      "use": "sensitive or critical-operation topics; end-of-article only"
+    },
+    "none": {
+      "positions": [],
+      "use": "interactive tools, hubs, non-eligible pages"
+    }
+  },
+  "safety_rules": [
+    "No ads inside interactive diagnosis/recovery/error/model-search tools.",
+    "No ad is rendered without siteApproved + manualAdsEnabled + certified CMP + valid publisher ID + valid numeric slot ID.",
+    "Ads are labeled Advertisement/広告.",
+    "Avoid placement adjacent to navigation, forms, buttons, critical actions, and Luqevora referral CTAs.",
+    "Reserve ad area before rendering to reduce CLS.",
+    "Do not instrument or encourage ad clicks."
+  ],
+  "official_policy_basis": [
+    "Google AdSense ad placement policies: avoid implementations that can cause accidental clicks or resemble navigation/content.",
+    "Google Search page experience guidance: avoid excessive ads that distract from main content and avoid intrusive interstitials.",
+    "Google certified CMP requirement for EEA/UK/Switzerland.",
+    "Google ads.txt guidance."
+  ],
+  "eligibility_inference": "Within /ja|en/technology/smartphone/, structurally valid article-content pages can be treated as eligible when no explicit data-ad-eligible flag exists; explicit false/none always wins."
+}

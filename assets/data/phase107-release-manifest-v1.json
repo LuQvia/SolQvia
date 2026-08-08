@@ -1,0 +1,110 @@
+{
+  "release": "phase107-lost-stolen-account-recovery-navigator-2026-08-09",
+  "checked_at": "2026-08-09",
+  "base_release": "phase106-os-update-carrier-issue-database-2026-08-09",
+  "new_pages": [
+    "/ja/technology/smartphone/lost-stolen-account-recovery-navigator/",
+    "/en/technology/smartphone/lost-stolen-account-recovery-navigator/"
+  ],
+  "new_assets": [
+    "/assets/phase107-loss-recovery.css",
+    "/assets/phase107-loss-recovery.js",
+    "/assets/data/phase107-lost-stolen-account-recovery-v1.json"
+  ],
+  "device_records": 550,
+  "smartphone_records": 515,
+  "tracked_recovery_layers": 8,
+  "privacy_policy": "no_password_no_otp_no_recovery_code_no_device_identifier_storage",
+  "official_sources": [
+    {
+      "ja": "https://support.apple.com/ja-jp/120837",
+      "en": "https://support.apple.com/en-us/120837"
+    },
+    {
+      "ja": "https://support.apple.com/ja-jp/120340",
+      "en": "https://support.apple.com/en-us/120340"
+    },
+    {
+      "ja": "https://support.apple.com/ja-jp/102560",
+      "en": "https://support.apple.com/en-us/102560"
+    },
+    {
+      "ja": "https://support.google.com/android/answer/6160491?hl=ja-JP",
+      "en": "https://support.google.com/android/answer/6160491?hl=en"
+    },
+    {
+      "ja": "https://support.google.com/accounts/answer/7177579?hl=ja",
+      "en": "https://support.google.com/accounts/answer/7177579?hl=en"
+    },
+    {
+      "ja": "https://support.google.com/accounts/answer/185834?hl=ja",
+      "en": "https://support.google.com/accounts/answer/185834?hl=en"
+    },
+    {
+      "ja": "https://www.docomo.ne.jp/support/discontinuance/",
+      "en": "https://www.docomo.ne.jp/support/discontinuance/"
+    },
+    {
+      "ja": "https://ahamo.com/support/theft-and-loss/index.html",
+      "en": "https://ahamo.com/support/theft-and-loss/index.html"
+    },
+    {
+      "ja": "https://www.au.com/support/service/mobile/procedure/service/stopping/",
+      "en": "https://www.au.com/support/service/mobile/procedure/service/stopping/"
+    },
+    {
+      "ja": "https://povo.jp/support/help/",
+      "en": "https://povo.jp/support/help/"
+    },
+    {
+      "ja": "https://www.softbank.jp/mobile/support/lost/",
+      "en": "https://www.softbank.jp/mobile/support/lost/"
+    },
+    {
+      "ja": "https://www.ymobile.jp/support/online/relief/",
+      "en": "https://www.ymobile.jp/support/online/relief/"
+    },
+    {
+      "ja": "https://www.linemo.jp/support/faq/view/27274",
+      "en": "https://www.linemo.jp/support/faq/view/27274"
+    },
+    {
+      "ja": "https://network.mobile.rakuten.co.jp/support/suspension/suspension/",
+      "en": "https://network.mobile.rakuten.co.jp/support/suspension/suspension/"
+    }
+  ],
+  "revenue_invariants": {
+    "solqvia_direct_a8_links": 0,
+    "luqevora_bridge_pages": 124,
+    "adsense_site_approved": false,
+    "adsense_auto_ads_enabled": false,
+    "adsense_manual_ads_enabled": false
+  },
+  "article_phase107_links_ja": 421,
+  "article_phase107_links_en": 421,
+  "qa": {
+    "html": 1698,
+    "json": 94,
+    "xml": 3,
+    "json_ld": 1700,
+    "canonical": 1698,
+    "local_refs": 92065,
+    "broken_local_refs": 0,
+    "search_ja_smartphone": 832,
+    "search_en_smartphone": 832,
+    "sitemap_urls": 1697,
+    "phase107_article_links": 842,
+    "phase106_article_links_preserved": 842,
+    "phase105_article_links_preserved": 842,
+    "phase104_article_links_preserved": 842,
+    "phase103_article_links_preserved": 842,
+    "phase102_article_links_preserved": 842,
+    "luqevora_bridge_pages": 124,
+    "solqvia_direct_a8_links": 0,
+    "errors": 0,
+    "warnings": 0,
+    "js_logic_cases": 7,
+    "case_key_deterministic": true,
+    "browser_smoke": "timeout_exit_124_environment_dbus_zygote"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "release": "phase99",
+  "date": "2026-08-08",
+  "name": "Cross Brand Revenue Attribution",
+  "baseline": "Phase98 AdSense Revenue / UX Optimization",
+  "changed_assets": [
+    "assets/phase96-revenue-bridge.js",
+    "assets/platform-loader.js",
+    "assets/platform-config.js",
+    "assets/data/phase96-luqevora-revenue-bridge-v1.json",
+    "assets/data/phase99-cross-brand-revenue-attribution-v1.json",
+    "assets/data/phase99-release-manifest-v1.json"
+  ],
+  "bridge_pages_marked": 124,
+  "direct_a8_policy": "0 direct A8 links in SolQvia",
+  "notes": [
+    "AdSense Phase98 serving flags remain unchanged and OFF until approval/configuration.",
+    "Phase99 bridge IDs are route/article identifiers, not person identifiers."
+  ]
+}

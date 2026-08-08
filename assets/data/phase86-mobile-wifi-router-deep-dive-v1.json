@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "release": "phase86",
+  "official_checked_at": "2026-08-08",
+  "device_tested": false,
+  "scope_note": "国内4MNOの代表的な現行/近年モバイルWi-Fiルーターを、SIM/eSIM、APN設定、LTE/5G Band、5G SA/NSA、他社回線での公式動作確認、中古流用の観点で比較。Band一致だけで利用可と断定しない。",
+  "rating_policy": {
+    "official_test": "キャリア自身の他社回線動作確認結果がある場合のみ「公式テスト」と明記。○でもサービス保証ではない。",
+    "rf_fit": "主要LTE/NR Bandの重なりだけを技術評価。APN・SIM認証・契約可否・動作保証とは別。",
+    "unknown": "公式資料で確認できないAPN/他社eSIM等は未確認のまま残す。"
+  },
+  "devices": [
+    {
+      "carrier": "NTTドコモ",
+      "model": "Wi-Fi STATION SH-54C",
+      "maker": "SHARP",
+      "sim": "nanoSIM",
+      "sim_lock": "公式仕様上SIMロック欄の明示なし。ドコモ公式他社回線試験あり",
+      "lte": [
+        "B1",
+        "B3",
+        "B19",
+        "B21",
+        "B42"
+      ],
+      "nr": [
+        "n1",
+        "n28",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "5g_mode": "SA / NSA対応（SA: n78/n79/n257）",
+      "apn": "管理画面→モバイルネットワーク設定→APN/DNNプロファイル設定→新規。初期docomoを含め最大10プロファイル。",
+      "official_other_network": "au データ○※ / SoftBank データ○※ / 楽天モバイル データ○。○でもサービス保証なし、○※は主要カバー周波数の一部非対応。",
+      "rf_fit": {
+        "docomo": "◎",
+        "au": "△",
+        "softbank": "△",
+        "rakuten": "○"
+      },
+      "practical": "ドコモ公式の他社データ通信試験結果あり。利用先のAPN・契約・サービス保証は別確認。",
+      "used": "中古本体ではバッテリー劣化、残債/利用制限、APNプロファイル初期化状態を確認。",
+      "sources": [
+        "https://www.docomo.ne.jp/product/sh54c/spec.html",
+        "https://www.docomo.ne.jp/binary/pdf/support/manual/SH-54C_J_syousai.pdf",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf"
+      ]
+    },
+    {
+      "carrier": "au / UQ WiMAX",
+      "model": "Speed Wi-Fi 5G X12 NAR03",
+      "maker": "NECプラットフォームズ",
+      "sim": "nanoSIM",
+      "sim_lock": "SIMロックなし",
+      "lte": [
+        "B1",
+        "B3",
+        "B18",
+        "B41"
+      ],
+      "nr": [
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78"
+      ],
+      "5g_mode": "5G SA対応 / NSA対応",
+      "apn": "WebUIのプロファイル設定で新規登録可。APN・ユーザー名・パスワード・CHAP/PAP・IPタイプを設定。",
+      "official_other_network": "auは他社SIMカード使用時の動作やサービス内容を一切保証しない。",
+      "rf_fit": {
+        "docomo": "△",
+        "au": "◎",
+        "softbank": "△",
+        "rakuten": "○"
+      },
+      "practical": "SIMロックなし＋APN追加可で設定余地はあるが、他社SIM動作保証なし。",
+      "used": "中古流用候補。ただし契約SIMのAPN、Band、端末状態、ファームウェアを確認。",
+      "sources": [
+        "https://www.au.com/mobile/product/data/nar03/spec/",
+        "https://www.au.com/content/dam/au-com/mobile/product/data/nar03/pdf/nar03_syuuhasu.pdf",
+        "https://www.uqwimax.jp/mobile/products/sar/speed_wi-fi_5g_x12_5/x12_torisetsu_shousai.pdf"
+      ]
+    },
+    {
+      "carrier": "SoftBank",
+      "model": "Pocket WiFi 5G A503SH",
+      "maker": "SHARP",
+      "sim": "nanoSIM",
+      "sim_lock": "SIMロックなし（2021年6月以降発売のSoftBank機種は原則SIMロックなし）",
+      "lte": [
+        "B1",
+        "B3",
+        "B8",
+        "B18",
+        "B19",
+        "B28",
+        "B41",
+        "B42"
+      ],
+      "nr": [
+        "n3",
+        "n28",
+        "n77",
+        "n78"
+      ],
+      "5g_mode": "5G SA設定あり / NSA利用可",
+      "apn": "WebUI→モバイルネットワーク設定→APNプロファイル設定。最大10プロファイルを作成可。変更適用時に再起動。",
+      "official_other_network": "SoftBank周波数資料は他社ネットワークでの動作を保証しないと明記。",
+      "rf_fit": {
+        "docomo": "○",
+        "au": "○",
+        "softbank": "◎",
+        "rakuten": "◎"
+      },
+      "practical": "Bandの横断性は高いが、他社回線のAPN/認証/契約/保証は別。",
+      "used": "中古購入時はSIMロック/ネットワーク利用制限、APNプロファイル、バッテリーを確認。",
+      "sources": [
+        "https://www.softbank.jp/business/service/mobile/lineup/data/a503sh/",
+        "https://tm.softbank.jp/content/dam/common/services/mobile/lineup/data/pdf/pocket-wifi-5g-a503sh.pdf",
+        "https://faq.api.softbank.jp/olm_images/sb/520/PDF/a503sh_userguide.pdf",
+        "https://www.softbank.jp/support/faq/view/10614"
+      ]
+    },
+    {
+      "carrier": "楽天モバイル",
+      "model": "Rakuten WiFi Pocket 5G",
+      "maker": "Rakuten Mobile",
+      "sim": "eSIM専用",
+      "sim_lock": "物理SIMスロットなし。eSIMプロファイル方式",
+      "lte": [
+        "B1",
+        "B3",
+        "B4",
+        "B7",
+        "B12",
+        "B17",
+        "B18",
+        "B19",
+        "B26",
+        "B28",
+        "B38",
+        "B41"
+      ],
+      "nr": [
+        "n77",
+        "n78"
+      ],
+      "5g_mode": "5G Sub6（公式取説ではn77/n78）",
+      "apn": "公式取説はeSIMプロファイル追加を案内。任意の第三者APNを新規作成する一般手順は確認できず。",
+      "official_other_network": "楽天モバイルは他社回線での端末動作を保証しない。製品ページはeSIMのみ対応と明示。",
+      "rf_fit": {
+        "docomo": "○",
+        "au": "○",
+        "softbank": "△",
+        "rakuten": "◎"
+      },
+      "practical": "eSIM専用なので「物理SIMを差し替えて試す」は不可。第三者eSIM/APN運用は公式保証なし。",
+      "used": "中古入手時はeSIM初期化状態、楽天回線の再設定可否、アカウント紐付け、バッテリーを確認。",
+      "sources": [
+        "https://network.mobile.rakuten.co.jp/product/internet/rakuten-wifi-pocket-5g/",
+        "https://network.mobile.rakuten.co.jp/assets/pdf/product/Rakuten-WiFi-Pocket-5G-manual.pdf",
+        "https://network.mobile.rakuten.co.jp/product/frequency-band/"
+      ]
+    },
+    {
+      "carrier": "楽天モバイル",
+      "model": "Rakuten WiFi Pocket Platinum",
+      "maker": "Rakuten Mobile",
+      "sim": "nanoSIM",
+      "sim_lock": "nanoSIM対応。任意他社SIMの動作保証はなし",
+      "lte": [
+        "B1",
+        "B3",
+        "B7",
+        "B18",
+        "B19",
+        "B26",
+        "B28A",
+        "B38",
+        "B41"
+      ],
+      "nr": [],
+      "5g_mode": "4G LTEモデル（公式スペック通信方式はLTEのみ）",
+      "apn": "公式取説の管理画面に一般向け任意APN新規作成手順は確認できず。",
+      "official_other_network": "楽天モバイルは他社ネットワークでの端末動作を保証しない。",
+      "rf_fit": {
+        "docomo": "○",
+        "au": "○",
+        "softbank": "△",
+        "rakuten": "◎"
+      },
+      "practical": "nanoSIMなので物理差し替えは可能だが、Band一致だけで通信可とは判定しない。",
+      "used": "中古ではSIM差し替え前に初期化状態と管理画面、バッテリー、APN可否を確認。",
+      "sources": [
+        "https://network.mobile.rakuten.co.jp/product/internet/rakuten-wifi-pocket-platinum/",
+        "https://network.mobile.rakuten.co.jp/assets/pdf/product/Rakuten-WiFi-Pocket-Platinum-manual.pdf",
+        "https://network.mobile.rakuten.co.jp/product/frequency-band/"
+      ]
+    }
+  ]
+}

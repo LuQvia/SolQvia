@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "release": "phase99",
+  "checked_at": "2026-08-08",
+  "title": "SolQvia -> Luqevora cross-brand revenue attribution",
+  "privacy_rule": "No user-specific identifier is generated. bridge_id is deterministic from the SolQvia article identifier, route id and route group.",
+  "query_parameters": {
+    "sq_bridge": "Deterministic bridge ID such as sqb_1a2b3c4d",
+    "sq_source": "Source SolQvia path only",
+    "utm_source": "solqvia",
+    "utm_medium": "referral",
+    "utm_campaign": "revenue_bridge",
+    "utm_content": "route id"
+  },
+  "solqvia_events": {
+    "luqevora_bridge_view": [
+      "source_article",
+      "source_path",
+      "route_group",
+      "placement",
+      "bridge_version"
+    ],
+    "luqevora_referral": [
+      "bridge_id",
+      "route_id",
+      "source_article",
+      "source_path",
+      "destination_path",
+      "route_group",
+      "placement"
+    ],
+    "cross_brand_click": [
+      "bridge_id",
+      "route_id",
+      "source_path",
+      "destination_brand"
+    ]
+  },
+  "luqevora_expected_events": {
+    "cross_brand_entry": [
+      "bridge_id",
+      "source_path",
+      "source_route",
+      "landing_path"
+    ],
+    "affiliate_click": [
+      "inbound_bridge_id",
+      "inbound_source_path",
+      "inbound_route",
+      "affiliate_name",
+      "cta_position"
+    ],
+    "cross_brand_affiliate_click": [
+      "bridge_id",
+      "source_path",
+      "source_route",
+      "landing_path",
+      "affiliate_name",
+      "cta_position"
+    ]
+  },
+  "recommended_ga4_event_scoped_custom_dimensions": [
+    "bridge_id",
+    "route_id",
+    "source_path"
+  ],
+  "bridge_pages": 124,
+  "route_counts": {
+    "mobile_plan_compare": 112,
+    "vpn_compare": 12
+  },
+  "a8_attribution": {
+    "mechanism": "On Luqevora, if a session originated from SolQvia, A8.net links are enriched at click time with id5=<existingReleasePrefix><bridgeToken>.",
+    "bridge_token": "bridge_id with non-alphanumeric characters removed; ASCII alphanumeric only",
+    "max_bytes": 50,
+    "privacy": "No personal information is placed in A8 parameters.",
+    "normal_luqevora_sessions": "No A8 link rewrite is performed when the session did not originate from SolQvia."
+  }
+}

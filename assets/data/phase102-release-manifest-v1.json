@@ -1,0 +1,26 @@
+{
+  "release": "phase102-communication-compatibility-lab-2026-08-08",
+  "checked_at": "2026-08-08",
+  "base_release": "phase101-device-field-report-intake-2026-08-08",
+  "new_pages": [
+    "/ja/technology/smartphone/communication-compatibility-lab/",
+    "/en/technology/smartphone/communication-compatibility-lab/"
+  ],
+  "new_assets": [
+    "/assets/phase102-communication-lab.css",
+    "/assets/phase102-communication-lab.js",
+    "/assets/data/phase102-communication-compatibility-lab-v1.json"
+  ],
+  "device_records": 550,
+  "communication_functions": 14,
+  "related_guides": 38,
+  "real_device_communication_confirmed_records": 0,
+  "evidence_note": "KY-41C Phase100 observations do not confirm APN, packet data, voice/VoLTE/IMS or SMS. Phase102 preserves that scope.",
+  "revenue_invariants": {
+    "solqvia_direct_a8_links": 0,
+    "luqevora_bridge_pages_expected": 124,
+    "adsense_site_approved": false
+  },
+  "article_communication_links_ja": 421,
+  "article_communication_links_en": 421
+}

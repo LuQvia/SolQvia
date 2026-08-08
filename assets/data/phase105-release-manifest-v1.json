@@ -1,0 +1,42 @@
+{
+  "release": "phase105-device-migration-reset-safety-diagnosis-2026-08-09",
+  "checked_at": "2026-08-09",
+  "base_release": "phase104-used-device-condition-diagnosis-2026-08-08",
+  "new_pages": [
+    "/ja/technology/smartphone/device-migration-reset-safety-diagnosis/",
+    "/en/technology/smartphone/device-migration-reset-safety-diagnosis/"
+  ],
+  "new_assets": [
+    "/assets/phase105-migration-safety.css",
+    "/assets/phase105-migration-safety.js",
+    "/assets/data/phase105-device-migration-safety-v1.json"
+  ],
+  "device_records": 550,
+  "smartphone_records": 515,
+  "ios_records": 121,
+  "android_records": 394,
+  "esim_confirmed_records": 152,
+  "article_migration_links_ja": 421,
+  "article_migration_links_en": 421,
+  "official_sources": [
+    "https://support.apple.com/ja-jp/HT210216",
+    "https://support.apple.com/ja-jp/118669",
+    "https://support.apple.com/guide/iphone/erase-iphone-iph7a2a9399b/ios",
+    "https://support.apple.com/ja-jp/109016",
+    "https://support.google.com/android/answer/2819582?hl=ja",
+    "https://support.google.com/pixelphone/answer/16115951?hl=ja-JP",
+    "https://support.google.com/accounts/answer/6197437?hl=ja",
+    "https://support.google.com/accounts/answer/1066447?hl=ja",
+    "https://guide.line.me/ja/signup-and-migration/account-transfer.html",
+    "https://www.docomo.ne.jp/faq/detail?faqId=492182",
+    "https://www.au.com/mobile/product/sim/esim/",
+    "https://www.softbank.jp/mobile/special/esim-support/data-transfer/",
+    "https://network.mobile.rakuten.co.jp/faq/detail/00001406/"
+  ],
+  "privacy_note": "No phone number, IMEI/EID/ICCID, password, passkey secret, SMS/2FA/recovery code or eSIM QR is collected by Phase105.",
+  "revenue_invariants": {
+    "solqvia_direct_a8_links": 0,
+    "luqevora_bridge_pages_expected": 124,
+    "adsense_site_approved": false
+  }
+}

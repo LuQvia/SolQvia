@@ -1,0 +1,688 @@
+{
+  "phase": "99",
+  "generated_at": "2026-08-08",
+  "strategy": {
+    "solqvia_primary_monetization": "Google AdSense",
+    "affiliate_execution": "Luqevora",
+    "rule": "Only add contextual Luqevora links after problem-solving; Phase99 adds a non-personal bridge_id and source path for revenue attribution.",
+    "english_bridge": "deferred until language-matched Luqevora monetized landing pages are verified",
+    "attribution": "Deterministic bridge_id + source path are passed to Luqevora; no email, phone, account ID, IMEI, EID or other user identifiers are collected."
+  },
+  "destinations": {
+    "mobile_plan_compare": {
+      "url": "https://luqevora.com/ja/mobile-connectivity/smartphone-line-selection-after-troubleshooting/",
+      "downstream_programs": [
+        "s00000022488001"
+      ],
+      "label": "通信トラブル解決後の回線選び",
+      "intent": "mobile-switching-comparison"
+    },
+    "vpn_compare": {
+      "url": "https://luqevora.com/ja/hosting-security/millenvpn-vs-suika-vpn/",
+      "downstream_programs": [
+        "s00000016565003",
+        "s00000022174001"
+      ],
+      "label": "MillenVPNとスイカVPN比較",
+      "intent": "vpn-comparison"
+    }
+  },
+  "route_counts": {
+    "mobile_plan_compare": 112,
+    "vpn_compare": 12
+  },
+  "eligible_pages": [
+    {
+      "path": "/ja/technology/smartphone/rocket-mobile-mnp-button-not-shown-plan-change-old-number/",
+      "route": "mnp_ahamo",
+      "title": "ロケットモバイルでMNP転出ボタンが出ない・予約番号が発行されない原因 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/pixel-google-vpn-carrier-app-not-working-exclude-carrier-app/",
+      "route": "vpn_bridge",
+      "title": "PixelでキャリアアプリがGoogle VPN中だけ動かない時｜携帯通信会社アプリをVPNから除外する | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/kabuand-mobile-mnp-onestop-twostop-conflict/",
+      "route": "mnp_ahamo",
+      "title": "KABU&モバイルのMNPで進めない｜ワンストップと予約番号方式の切り分け | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/mnp-reservation-number-not-issued/",
+      "route": "mnp_ahamo",
+      "title": "MNP予約番号を発行できない時の原因と確認順｜代表回線・契約状態・ワンストップ | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/livedoor-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "livedoor MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/icloud-private-relay-speedtest-slower-than-browsing/",
+      "route": "vpn_bridge",
+      "title": "iCloudプライベートリレーで速度テストだけ遅く見える時｜実通信速度と測定値が違う理由 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/linksmate-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "LinksMateのMNP予約番号発行方法｜マイページ・複数SIM・再発行の待ち時間 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/daredemo-smartphone-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "誰でもスマホのMNP予約番号発行方法｜ヘルプデスクへ連絡して転出 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/mvno-mnp-onestop-login-name-mismatch-troubleshooting/",
+      "route": "mnp_ahamo",
+      "title": "MVNOのMNPワンストップで先に進めない｜ログイン・名義・対象事業者を切り分け | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/gcall-sim-mnp-no-notification-check-mygcall/",
+      "route": "mnp_ahamo",
+      "title": "G-Call SIMのMNP予約番号が届かない｜通知なし・2〜3日後にMy G-Callを確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/b-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "b-mobileのMNP予約番号発行方法｜マイページ・未利用SIMは発行不可・15日間 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/qtmobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "QTモバイルのMNP予約番号発行方法｜Dタイプ2〜5日・A/Sタイプ翌日以降 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/hiho-lte-typed-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "hi-ho LTE typeDのMNP予約番号発行方法｜Myサポート・約4日・発行できない条件 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/nuro-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "NUROモバイルのMNP予約番号発行方法｜即日不可・1〜2日・再発行の注意 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/bell-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "ベルモバ SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/pikara-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "ピカラモバイルのMNP予約番号発行方法｜Myページ・サービスセンターと有効期限15日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/btc-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "BTC モバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/data-only-sim-mnp-voice-plan-conversion/",
+      "route": "mnp_ahamo",
+      "title": "データ専用SIM・タブレット回線はMNPできる？直接対象外と「音声プランへ変更してから転出」の違い | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/metakozo-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "MetaKozo MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/icloud-private-relay-not-working-specific-wifi-cellular-limit-ip-tracking/",
+      "route": "vpn_bridge",
+      "title": "iCloudプライベートリレーが特定Wi-Fi・モバイル回線だけ使えない時｜「IPアドレスのトラッキングを制限」を確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/hiho-mnp-number-blocked-sim-exchange-cancel/",
+      "route": "mnp_ahamo",
+      "title": "hi-hoでMNP予約番号を発行できない｜解約申込・SIM交換・発行中が競合 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/tikimo-sim-mnp-five-business-days-procedure-freeze/",
+      "route": "mnp_ahamo",
+      "title": "Tikimo SIMのMNP予約番号が出ない｜5営業日・発行後の変更手続き停止を確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/aeon-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "イオンモバイルのMNP予約番号発行方法｜8時までなら当日23時・電話/店舗にも対応 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/gentosha-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "幻冬舎MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/cr-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "CR MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/green-plus-ai-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "グリーン plus ♥ AiのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/dti-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "DTI SIMのMNP予約番号発行方法｜MyDTIで解約手続きと同時に申請 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/libmo-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "LIBMOのMNP予約番号発行方法｜マイページ・複数回線は1回線ずつ手続き | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/ocn-mobile-one-mnp-three-business-days-onestop-existing-number/",
+      "route": "mnp_ahamo",
+      "title": "OCN モバイル ONEのMNP予約番号が届かない｜3営業日・発行済み番号とワンストップ | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/yu-mobile-mnp-payment-invalid-share-sim/",
+      "route": "mnp_ahamo",
+      "title": "y.u mobileでMNP予約番号が取り消された｜支払方法無効・追加SIM名義を確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/icloud-private-relay-website-not-opening-ip-address-reveal/",
+      "route": "vpn_bridge",
+      "title": "iCloudプライベートリレーで特定サイトだけ開かない時｜「IPアドレスを公開」で切り分ける | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/mvno-mnp-issue-time-comparison-longtail/",
+      "route": "mnp_ahamo",
+      "title": "MVNOのMNP予約番号は何日かかる？即時ではない事業者の発行日数比較 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/docomo-mnp-reservation-number-not-issued/",
+      "route": "mnp_ahamo",
+      "title": "ドコモでMNP予約番号を発行できない時の確認手順｜主回線・代表回線・ペア回線 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/asahi-net-ansim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "ASAHIネット LTE ANSIMのMNP予約番号発行方法｜マイページから通話SIMを転出 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/mvno-mnp-during-sim-reissue-plan-change/",
+      "route": "mnp_ahamo",
+      "title": "SIM再発行・サイズ変更・プラン変更中にMNPできない？MVNOの競合手続きを確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/mvno-data-sim-mnp-not-eligible-guide/",
+      "route": "mnp_ahamo",
+      "title": "データ専用SIMはMNPできない？音声SIM・SMS付きSIMとの違いを整理 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/musee-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "ミュゼモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/flash-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "FLASH MOBILEのMNP転出方法｜ワンストップ対応・予約番号が必要な場合の確認手順 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/ava-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "AVA MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/rayl-mobile-mnp-13-days-data-sim-not-eligible/",
+      "route": "mnp_ahamo",
+      "title": "RayL MobileのMNPで進めない｜予約番号残り13日・データ専用SIM・ワンストップ | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/dti-sim-mnp-data-sms-not-eligible-cancellation-flow/",
+      "route": "mnp_ahamo",
+      "title": "DTI SIMでMNPできない｜データ・SMSプラン対象外とMyDTIの解約手順 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/nifmo-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "NifMoのMNP予約番号発行方法｜音声SIMのみ・データ/SMS SIMは転出不可 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/dave-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "DAVE MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/lp-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "LPモバイルのMNP転出方法｜ワンストップ対応・予約番号方式はサポート確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/mvno-mnp-number-expired-reissue-guide/",
+      "route": "mnp_ahamo",
+      "title": "MVNOのMNP予約番号が期限切れ｜再発行できない時に確認する順番 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/flash-mobile-mnp-onestop-old-guide-conflict/",
+      "route": "mnp_ahamo",
+      "title": "FLASH MOBILEのMNPで迷う｜ワンストップ開始後と旧予約番号手順の違い | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/japanet-mobile-service-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "ジャパネットたかた通信サービスのMNP転出方法｜ワイモバイル基盤・ワンストップ・問い合わせ先 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/horie-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "HORIE MOBILE / HORIMOのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/mvno-mnp-reservation-number-directory/",
+      "route": "mnp_ahamo",
+      "title": "MVNOのMNP予約番号発行方法一覧｜主要・コアな格安SIMをまとめて確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/libmo-mnp-multiple-lines-data-share-left-behind/",
+      "route": "mnp_ahamo",
+      "title": "LIBMOで1回線だけMNPしたら残りはどうなる？複数回線・データシェアの注意点 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/docomo-mnp-preprocedure-mainline-billing-pair-line/",
+      "route": "mnp_ahamo",
+      "title": "ドコモMNPで「事前手続きが必要」と出る時｜主回線・一括請求・ドコモ光・シェア代表の確認順 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/his-mobile-mnp-button-disabled-after-cancellation/",
+      "route": "mnp_ahamo",
+      "title": "HISモバイルでMNP予約番号取得ボタンが押せない｜解約申込後は要注意 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/yamada-new-mobile-mnp-existing-user-share-group/",
+      "route": "mnp_ahamo",
+      "title": "ヤマダニューモバイルからMNPできない｜新規受付終了後の既存契約・シェアグループ | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/nifmo-mnp-data-sms-cancel-mistake/",
+      "route": "mnp_ahamo",
+      "title": "NifMoでMNPできない｜データSIM・SMS SIM対象外と「解除」の取り違え | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/lp-mobile-mnp-onestop-support-route/",
+      "route": "mnp_ahamo",
+      "title": "LP MobileのMNPで進めない｜ワンストップ対応と予約番号方式・サポート確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/center-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "センターモバイルのMNP転出・予約番号確認方法｜ワンストップと契約者窓口の使い分け | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/mineo-mnp-number-delayed-cancel-packet-share/",
+      "route": "mnp_ahamo",
+      "title": "mineoのMNP予約番号がすぐ出ない・キャンセルしたい｜受付時間とパケットシェアを確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/redx-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "REDX MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/ana-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "ANAモバイルのMNP予約番号発行方法｜マイページ・1〜4日・データSIMは転出不可 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/tone-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "TONEモバイルのMNP予約番号発行方法｜MY TONE・15日間・090音声オプションの注意 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/android-always-on-vpn-blocks-internet-when-vpn-disconnected/",
+      "route": "vpn_bridge",
+      "title": "AndroidでVPNが切れるとインターネットも全部使えない時｜「VPN以外の接続をブロック」を確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/cool-girl-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "Cool girlモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/tackle-berry-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "Tackle Berry SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/ffbc-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "FFBC SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/his-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "HISモバイルのMNP予約番号発行方法｜My HISモバイル・発行日数・取得できない時 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/tone-mobile-mnp-expired-cancellation-voice-option/",
+      "route": "mnp_ahamo",
+      "title": "TONEモバイルのMNP予約番号が期限切れ｜解約取消・090音声オプションの扱い | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/nihontsushin-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "日本通信SIMのMNP予約番号発行方法｜マイページ・最大2日・ワンストップ対応 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/yu-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "y.u mobileのMNP予約番号発行方法｜支払い方法エラー・シェア追加SIMの注意 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/tikimo-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "Tikimo SIMのMNP予約番号発行方法｜会員サービスメニュー・約5営業日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/mvno-mnp-old-service-existing-users-guide/",
+      "route": "mnp_ahamo",
+      "title": "新規受付終了したMVNOからMNPする方法｜既存契約者ページ・マイページを探す | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/mineo-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "mineoのMNP予約番号発行方法｜マイページの操作とワンストップ時の注意点 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/d-lab-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "D-lab SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/bic-sim-mnp-iijmio-account-sim-reissue/",
+      "route": "mnp_ahamo",
+      "title": "BIC SIMでMNP予約番号が出ない｜IIJmio会員ページ・SIM再発行中を確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/mvno-mnp-number-not-issued-causes/",
+      "route": "mnp_ahamo",
+      "title": "MVNOでMNP予約番号が発行されない原因一覧｜解約申込・SIM変更・プラン変更・旧番号残存を切り分け | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/qtmobile-mnp-reissue-expired-procedure-lock/",
+      "route": "mnp_ahamo",
+      "title": "QTモバイルでMNP予約番号を再発行できない｜有効期限・翌々日・手続きロックを確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/yamada-new-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "ヤマダニューモバイルのMNP予約番号発行方法｜新規受付終了後の既存契約者向け手順 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/takami-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "たかみーモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/pixel-google-vpn-app-not-working-exclude-app/",
+      "route": "vpn_bridge",
+      "title": "PixelでGoogle VPNをオンにすると特定アプリだけ動かない時｜VPN除外アプリを設定する | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/center-mobile-mnp-onestop-name-match-data-sim/",
+      "route": "mnp_ahamo",
+      "title": "センターモバイルのMNPで進めない｜ワンストップ・名義一致・データSIMを確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/rayl-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "RayL MOBILEのMNP転出・予約番号確認方法｜15日有効・名義一致・再申込の注意 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/pikara-mobile-mnp-expired-contract-continues/",
+      "route": "mnp_ahamo",
+      "title": "ピカラモバイルのMNP予約番号が失効した｜契約継続・再発行・通常解約との違い | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/ocn-mobile-one-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "OCN モバイル ONEのMNP予約番号発行方法｜OCNマイページ・3営業日程度 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/iijmio-mnp-number-reissue-sim-reissue-blocked/",
+      "route": "mnp_ahamo",
+      "title": "IIJmioでMNP予約番号を再発行できない｜発行中・期限切れ・SIM再発行の競合を整理 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/kurimoba-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "クリモバSIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/g-call-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "G-Call SIMのMNP予約番号発行方法｜マイG-Call・2〜3日・発行通知なし | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/mnp-one-stop-not-working-checklist/",
+      "route": "mnp_ahamo",
+      "title": "MNPワンストップなのに手続きできない時｜予約番号が不要でも止まる原因と切り分け | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/softbank-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "SoftBankのMNP予約番号発行方法｜20時以降・修理中・SMSが届かない時の対処 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/dstyle-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "Dstyle MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/ymobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "Y!mobileのMNP予約番号発行方法｜通知が届かない・修理中・20時以降の注意点 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/cloud-privacy/",
+      "route": "vpn_bridge",
+      "title": "クラウド・VPN・プライバシー | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/jcom-mobile-mnp-onestop-login-reservation-number/",
+      "route": "mnp_ahamo",
+      "title": "J:COM MOBILEのMNPワンストップで進めない｜ログイン不可・予約番号方式への切替 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/biglobe-mobile-mnp-number-expired-reissue-cancellation/",
+      "route": "mnp_ahamo",
+      "title": "BIGLOBEモバイルのMNP予約番号が期限切れ｜再発行と解約申込の扱い | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/xmobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "Xmobile（シン・プラン／グリーンプラン）のMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/iphone-private-relay-vs-vpn/",
+      "route": "vpn_bridge",
+      "title": "iCloudプライベートリレーとVPNの違い｜iPhoneで何が保護される？ | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/bmobile-mnp-number-not-issued-unused-sim/",
+      "route": "mnp_ahamo",
+      "title": "b-mobileでMNP予約番号を発行できない｜SIM未利用だと申請不可・4営業日前後 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/buzz-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "BUZZモバイル SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/mnp-reservation-number-issue-time-comparison/",
+      "route": "mnp_ahamo",
+      "title": "MNP予約番号は何日で発行される？主要キャリア・MVNOの発行時間比較 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/maji-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "マジモバ SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/iijmio-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "IIJmioのMNP予約番号発行方法｜最短1日〜最大4日・発行できない条件 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/smartphone-public-wifi-certificate-warning/",
+      "route": "vpn_bridge",
+      "title": "公衆Wi-Fiで証明書警告が出た時に接続を続けるべきか | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/aeon-mobile-mnp-onestop-name-change-web-deadline/",
+      "route": "mnp_ahamo",
+      "title": "イオンモバイルのMNPで名義が違う・ワンストップできない｜WEB申込条件を整理 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/shingo-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "SHINGO MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/ikawa-mobile-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "井川MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/bic-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "BIC SIMのMNP予約番号発行方法｜実質IIJmio手続き・ワンストップ・発行待ちの注意 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/iphone-private-relay-network-problem/",
+      "route": "vpn_bridge",
+      "title": "iCloudプライベートリレーでサイトやWi-Fiが使えない時の確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/rakuten-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "楽天モバイルのMNP予約番号発行方法｜即日発行・有効期限・番号を確認できない時 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/nihontsushin-sim-mnp-name-mismatch-two-days/",
+      "route": "mnp_ahamo",
+      "title": "日本通信SIMからMNPできない｜名義・生年月日不一致と「最大2日」を確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/nuro-mobile-mnp-not-issued-reissue-multiple-sim/",
+      "route": "mnp_ahamo",
+      "title": "NUROモバイルのMNP予約番号が出ない｜即日不可・再発行・複数SIMの見分け方 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/smartphone-vpn-connected-no-internet/",
+      "route": "vpn_bridge",
+      "title": "VPN接続済みなのにインターネットが使えない時の詳細確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/rocket-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "ロケットモバイルのMNP予約番号発行方法｜発行されない時のプラン変更予約・旧番号残存を確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/hapimoba-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "ハピモバSIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/mercari-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "メルカリモバイルのMNP予約番号発行方法｜1〜4日・ギガ出品中は手続き不可 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/au-uq-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "au・UQ mobileのMNP予約番号発行方法｜確認・キャンセル・進めない時の切り分け | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/biglobe-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "BIGLOBEモバイルのMNP予約番号発行方法｜Web申請・翌日までの通知・シェアSIMの注意 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/bb-excite-mnp-cancel-reissue-procedure-restrictions/",
+      "route": "mnp_ahamo",
+      "title": "BB.exciteモバイルのMNP予約番号をキャンセル・再発行できない時｜2〜5日と手続き制限 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/network-privacy-tethering/",
+      "route": "vpn_bridge",
+      "title": "通信・VPN・Private Relay・テザリングの深掘り | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/kabuand-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "KABU&モバイルのMNP予約番号発行方法｜マイページ手続き・ワンストップ対応 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/bb-excite-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "BB.exciteモバイルのMNP予約番号発行方法｜2〜5日・キャンセル不可・再発行時期 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/smiles-connect-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "Smiles ConnectのMNP予約番号発行方法｜アプリでSMS認証してRequest MNP number | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/linksmate-mnp-multiple-sim-reissue-delay/",
+      "route": "mnp_ahamo",
+      "title": "LinksMateで複数SIMのMNP予約番号が出ない｜1枚ずつ・期限切れ後最大3日を確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/smiles-connect-mnp-sms-code-unpaid-cancellation/",
+      "route": "mnp_ahamo",
+      "title": "Smiles ConnectでMNP手続きが進まない｜SMS認証コード・未払いを確認 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/rerimoba-sim-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "レリモバSIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/softbank-tablet-nonvoice-mnp-web-unavailable/",
+      "route": "mnp_ahamo",
+      "title": "SoftBankのタブレット・非音声端末でMNP／解約をWeb手続きできない時｜店頭確認が必要な条件 | SolQvia.com"
+    },
+    {
+      "path": "/ja/technology/smartphone/jcom-mobile-mnp-reservation-number-guide/",
+      "route": "mnp_ahamo",
+      "title": "J:COM MOBILEのMNP予約番号・転出方法｜ワンストップ対応・予約番号が必要な場合 | SolQvia.com"
+    }
+  ],
+  "excluded_pages": [
+    {
+      "path": "ja/technology/smartphone/jal-mobile-mnp-reservation-number-guide/index.html",
+      "reason": "source article is about ahamo; avoid self-return/bias"
+    },
+    {
+      "path": "ja/technology/smartphone/ahamo-network-pin-forgotten-mnp-guide/index.html",
+      "reason": "source article is about ahamo; avoid self-return/bias"
+    },
+    {
+      "path": "ja/technology/smartphone/docomo-data-only-mnp-plan-change-guide/index.html",
+      "reason": "source article is about ahamo; avoid self-return/bias"
+    }
+  ],
+  "deferred_routes": [
+    {
+      "topic": "generic device/carrier compatibility",
+      "reason": "No neutral multi-carrier Luqevora monetized receiving page verified; avoid biasing 4-carrier compatibility articles to one carrier."
+    },
+    {
+      "topic": "consumer cloud backup/storage",
+      "reason": "Current monetized ABLENET Storage receiving page is business/team-oriented; audience intent mismatch."
+    },
+    {
+      "topic": "travel eSIM",
+      "reason": "No confirmed Luqevora affiliate receiving page mapped in the current revenue master."
+    },
+    {
+      "topic": "home/mobile router",
+      "reason": "No confirmed matching monetized Luqevora receiving page mapped in the current revenue master."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "release": "phase103-dual-sim-esim-combination-diagnosis-2026-08-08",
+  "checked_at": "2026-08-08",
+  "base_release": "phase102-communication-compatibility-lab-2026-08-08",
+  "new_pages": [
+    "/ja/technology/smartphone/dual-sim-esim-combination-diagnosis/",
+    "/en/technology/smartphone/dual-sim-esim-combination-diagnosis/"
+  ],
+  "new_assets": [
+    "/assets/phase103-dual-sim.css",
+    "/assets/phase103-dual-sim.js",
+    "/assets/data/phase103-dual-sim-combination-v1.json"
+  ],
+  "device_records": 550,
+  "exact_dual_inventory_records": 116,
+  "exact_dual_esim_text_records": 84,
+  "exact_dual_physical_text_records": 12,
+  "platform_conditional_dual_esim_records": 80,
+  "real_device_dual_combination_confirmed_records": 0,
+  "combination_test_functions": 12,
+  "official_sources": [
+    "https://support.apple.com/en-us/109317",
+    "https://support.google.com/pixelphone/answer/9449293?hl=ja",
+    "https://support.google.com/messages/answer/7189714?hl=ja"
+  ],
+  "evidence_note": "Phase103 does not promote any Dual SIM combination to SolQvia real-device confirmed. KY-41C remains limited to Phase100 eSIM profile setup/device-side recognition evidence only.",
+  "revenue_invariants": {
+    "solqvia_direct_a8_links": 0,
+    "luqevora_bridge_pages_expected": 124,
+    "adsense_site_approved": false
+  },
+  "article_dual_sim_links_ja": 421,
+  "article_dual_sim_links_en": 421
+}

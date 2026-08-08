@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0",
+  "release": "phase95",
+  "checked_at": "2026-08-08",
+  "baseline": "Phase94 cumulative FULL_REPLACE / ROOT_READY",
+  "scope": "English counterpart expansion for all Japanese smartphone pages; hreflang, English search, article index, RSS and sitemap integration.",
+  "counts": {
+    "ja_smartphone_pages": 824,
+    "en_smartphone_pages": 824,
+    "created_english_pages": 696,
+    "missing_en_counterparts": 0,
+    "coverage_percent": 100.0
+  },
+  "artifacts": [
+    "assets/data/phase95-english-full-coverage-audit-v1.json"
+  ],
+  "safety_rules": [
+    "Band overlap is not a carrier operation guarantee.",
+    "eSIM provisioning values are not APN values.",
+    "Do not delete a working eSIM before confirming reissue/transfer and SMS/2FA recovery.",
+    "MNP and carrier procedures must be checked against current official screens."
+  ]
+}

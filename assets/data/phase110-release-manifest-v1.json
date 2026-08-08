@@ -1,0 +1,42 @@
+{
+  "release": "Phase110 Integrated Device Passport",
+  "checked_at": "2026-08-09",
+  "base_release": "Phase109 USB-C / Display / Storage / Peripheral Compatibility Lab",
+  "new_pages": [
+    "/ja/technology/smartphone/device-passport/",
+    "/en/technology/smartphone/device-passport/"
+  ],
+  "new_assets": [
+    "/assets/data/phase110-device-passport-v1.json",
+    "/assets/data/phase110-release-manifest-v1.json",
+    "/assets/phase110-device-passport.js",
+    "/assets/phase110-device-passport.css"
+  ],
+  "device_records": 550,
+  "smartphone_records": 515,
+  "article_phase110_links_ja": 421,
+  "article_phase110_links_en": 421,
+  "integrated_layers": [
+    "Phase91 SIM/eSIM",
+    "Phase100 evidence",
+    "Phase102 communication",
+    "Phase103 dual SIM",
+    "Phase104 used device",
+    "Phase105 migration",
+    "Phase106 OS update",
+    "Phase107 loss recovery",
+    "Phase108 satellite",
+    "Phase109 USB/peripherals"
+  ],
+  "seo_boundary": "One searchable WebApplication; no mass generation of 550 thin passport pages.",
+  "evidence_boundary": "No combined device quality/compatibility score. Unknown and conditional items remain explicit.",
+  "revenue_invariants": {
+    "direct_a8_links_expected": 0,
+    "phase99_bridge_pages_expected": 124,
+    "adsense_expected": {
+      "siteApproved": false,
+      "autoAdsEnabled": false,
+      "manualAdsEnabled": false
+    }
+  }
+}

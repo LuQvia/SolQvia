@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "release": "phase81",
   "checked_at": "2026-08-08",
-  "scope": "docomo kids phone cross-carrier APN field guide",
+  "scope": "docomo KY-41C cross-carrier eSIM profile field guide (APN is a separate downstream layer)",
   "official_manual_verification": {
     "model": "KY-41C",
     "apn_menu_confirmed": true,
@@ -16,21 +16,36 @@
     ],
     "esim_add_menu_confirmed": true,
     "warning": "SIM情報初期化は全SIM情報を削除するため初手で実行しない",
-    "source": "https://www.docomo.ne.jp/binary/pdf/support/manual/KY-41C_J_syousai.pdf"
+    "source": "https://www.docomo.ne.jp/binary/pdf/support/manual/KY-41C_J_syousai.pdf",
+    "esim_profile_menu_confirmed": true,
+    "esim_menu_path": [
+      "保護者メニュー",
+      "その他の設定",
+      "ネットワーク",
+      "SIM情報設定"
+    ],
+    "esim_qr_add_confirmed": true,
+    "esim_manual_direct_input_confirmed": true,
+    "esim_manual_direct_input_field": "接続サーバーアドレス",
+    "esim_enable_after_install_confirmed": true,
+    "apn_note": "APN画面の存在は公式取説で確認できるが、2026-08-08の実機観察はAPN操作ではない"
   },
   "user_provided_real_device_observation": {
-    "device_scope": "ドコモのキッズケータイ（対象機種の厳密な型番は今回の記録では固定しない）",
-    "ymobile_sim_information_recognized": true,
-    "softbank_sim_information_recognized": true,
+    "device_scope": "NTTドコモ キッズケータイ KY-41C",
+    "exact_model": "KY-41C",
+    "ymobile_esim_profile_setup_recognized": true,
+    "softbank_esim_profile_setup_recognized": true,
+    "apn_setup_verified": false,
     "packet_data_verified": false,
     "voice_volte_verified": false,
     "sms_verified": false,
-    "note": "SIM認識と実用通信を分離して記録。データ・VoLTE・SMSは追加実機確認が必要。"
+    "note": "実機確認はeSIMプロファイル（SIM情報）の設定・認識。旧APN実機確認扱いをPhase89で訂正。"
   },
   "apn_sources": {
     "ymobile": "https://www.ymobile.jp/yservice/howto/simfree_android/apn/",
     "softbank": "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
   },
   "superseded_by_phase82_note": "Phase82でドコモ公式他事業者動作可否を追加。KY-41CはSoftBank通話○※・データ通信-。APN保存可否とデータ通信可否は別判定。",
-  "phase82_official_mno_check_source": "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf"
+  "phase82_official_mno_check_source": "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf",
+  "phase89_correction": "2026-08-08: user clarification. Real-device operation was eSIM profile setup/recognition on KY-41C, not APN setup. eSIM provisioning precedes APN."
 }

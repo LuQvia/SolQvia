@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "release": "phase93",
+  "checked_at": "2026-08-08",
+  "baseline": "Phase92 cumulative FULL_REPLACE / ROOT_READY",
+  "new_pages": [
+    "/ja/technology/smartphone/sim-esim-error-lookup/"
+  ],
+  "new_assets": [
+    "/assets/phase93-error-lookup.css",
+    "/assets/phase93-error-lookup.js",
+    "/assets/data/phase93-sim-esim-error-lookup-v1.json"
+  ],
+  "modified": [
+    "/assets/phase92-recovery.js",
+    "/ja/technology/smartphone/sim-esim-recovery-navigator/",
+    "/ja/technology/smartphone/sim-esim-compatibility-diagnosis/",
+    "/ja/technology/smartphone/",
+    "/ja/articles/",
+    "/assets/search-ja-smartphone.json",
+    "/sitemap.xml",
+    "/rss-ja.xml"
+  ],
+  "counts": {
+    "issue_groups": 32,
+    "aliases": 167,
+    "stages": 18
+  },
+  "safety": [
+    "Apple: carrier instruction absent -> do not delete eSIM just for troubleshooting",
+    "Docomo: deleted eSIM profiles from Jan 2026 onward cannot be redownloaded per current support page",
+    "SoftBank: deleted eSIM requires reissue",
+    "Rakuten Mobile: do not delete current eSIM before reissue because OTP SMS may become unavailable"
+  ]
+}
