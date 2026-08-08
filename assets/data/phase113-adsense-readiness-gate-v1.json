@@ -1,0 +1,64 @@
+{
+  "phase": 113,
+  "date": "2026-08-09",
+  "gate": "AdSense pre-review static readiness",
+  "result": "static_pass_live_checks_pending",
+  "scope": "completed Phase113 artifact",
+  "counts": {
+    "html": 1708,
+    "indexable_html": 1496,
+    "noindex_html": 212,
+    "sitemap_urls": 1496,
+    "json": 105,
+    "xml": 3,
+    "jsonld_blocks": 1710,
+    "local_refs": 119820,
+    "broken_local_refs": 0,
+    "phase112_quality_hold_en": 207,
+    "ja_html": 853,
+    "en_html": 853,
+    "ja_transparency_linked_pages": 852,
+    "en_transparency_linked_pages": 852,
+    "direct_a8_refs": 0
+  },
+  "adsense_flags": {
+    "siteApproved": false,
+    "autoAdsEnabled": false,
+    "manualAdsEnabled": false,
+    "certifiedCmpConfigured": true,
+    "adsenseSiteReviewEnabled": true
+  },
+  "checks": {
+    "ads_txt_pub_id_matches": true,
+    "adsense_crawler_allowed": true,
+    "adsense_review_enabled": true,
+    "certified_cmp_configured": true,
+    "site_approval_flag_remains_false_until_ready": true,
+    "auto_ads_disabled_preapproval": true,
+    "manual_ads_disabled_preapproval": true,
+    "privacy_disclosure_google_cookie_beacon_ip": true,
+    "required_trust_pages_exist": true,
+    "publisher_transparency_reachable_sitewide": true,
+    "english_about_current_scope_and_no_unverified_etymology": true,
+    "sitemap_equals_indexable_html": true,
+    "no_noindex_url_in_sitemap": true,
+    "no_broken_local_references": true,
+    "no_duplicate_titles": true,
+    "no_duplicate_descriptions": true,
+    "no_duplicate_canonicals": true,
+    "dynamic_adsense_review_loader_present": true,
+    "homepage_adsense_ownership_signal_present": true,
+    "direct_a8_links_zero": true
+  },
+  "live_checks_required": [
+    "HTTPS certificate and HTTP to HTTPS redirect after deployment",
+    "AdSense Sites status must be Ready before enabling ads",
+    "ads.txt status in AdSense account after deployment",
+    "Google-certified CMP live rendering in covered regions"
+  ],
+  "notes": [
+    "This gate is a SolQvia internal release check and is not a Google or AdSense approval score.",
+    "The siteApproved flag must remain false until the AdSense Sites page reports Ready.",
+    "Phase112 quality-review hold remains in force for 207 English carrier-compatibility pages."
+  ]
+}

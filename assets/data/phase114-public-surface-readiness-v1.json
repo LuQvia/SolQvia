@@ -1,0 +1,83 @@
+{
+  "phase": 114,
+  "date": "2026-08-09",
+  "name": "AdSense application candidate public-surface optimization",
+  "baseline": "Phase113 Publisher Trust & AdSense Readiness Gate",
+  "principles": [
+    "no feature expansion",
+    "purpose-first public surfaces",
+    "exact-model differentiation",
+    "evidence separation",
+    "no approval claim before live AdSense status"
+  ],
+  "changed_public_surfaces": [
+    "/",
+    "/ja/",
+    "/en/",
+    "/ja/technology/smartphone/",
+    "/en/technology/smartphone/",
+    "/ja/about/",
+    "/en/about/",
+    "/ja/about/publisher-transparency/",
+    "/en/about/publisher-transparency/"
+  ],
+  "static_expectations": {
+    "smartphone_hub_h1_before_h2": true,
+    "home_unique_method_section": true,
+    "home_four_starting_points": true,
+    "trust_pages_link_core_tools": true,
+    "root_landing_scope_explicit": true,
+    "phase112_quality_hold_maintained": 207,
+    "siteApproved": false,
+    "autoAdsEnabled": false,
+    "manualAdsEnabled": false
+  },
+  "live_checks_still_required": [
+    "HTTPS certificate and HTTP to HTTPS redirect after deployment",
+    "AdSense Sites status must be Ready before enabling ads",
+    "ads.txt status in AdSense account after deployment",
+    "Google-certified CMP live rendering in covered regions"
+  ],
+  "note": "This is an internal release gate, not a Google or AdSense approval score.",
+  "result": "static_pass_live_checks_pending",
+  "completed_artifact_counts": {
+    "html": 1708,
+    "indexable_html": 1496,
+    "noindex_html": 212,
+    "sitemap_urls": 1496,
+    "json": 108,
+    "xml": 3,
+    "jsonld_blocks": 1710,
+    "local_refs": 121477,
+    "broken_local_refs": 0,
+    "phase112_quality_hold_en": 207,
+    "direct_a8_refs": 0,
+    "phase114_public_surfaces": 9
+  },
+  "checks": {
+    "root_landing_scope_explicit": true,
+    "ja_home_exact_model_evidence_value_prop": true,
+    "en_home_exact_model_evidence_value_prop": true,
+    "ja_smartphone_hub_h1_before_h2": true,
+    "en_smartphone_hub_h1_before_h2": true,
+    "home_four_starting_points": true,
+    "trust_pages_link_core_tools": true,
+    "phase112_quality_hold_maintained": true,
+    "sitemap_equals_indexable_html": true,
+    "no_noindex_url_in_sitemap": true,
+    "no_duplicate_titles": true,
+    "no_duplicate_descriptions": true,
+    "no_duplicate_canonicals": true,
+    "no_broken_local_references": true,
+    "direct_a8_links_zero": true,
+    "site_approval_flag_remains_false": true,
+    "auto_ads_disabled_preapproval": true,
+    "manual_ads_disabled_preapproval": true
+  },
+  "official_basis": [
+    "https://support.google.com/adsense/answer/7299563?hl=ja",
+    "https://support.google.com/adsense/answer/7584263?hl=en",
+    "https://support.google.com/adsense/answer/12171612?hl=ja",
+    "https://support.google.com/adsense/answer/13554116?hl=en"
+  ]
+}

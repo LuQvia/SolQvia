@@ -1,0 +1,30 @@
+{
+  "phase": "113",
+  "name": "Publisher Trust & AdSense Readiness Gate",
+  "date": "2026-08-09",
+  "baseline": "Phase112 Final-Artifact Quality Remediation",
+  "new_pages": [
+    "/ja/about/publisher-transparency/",
+    "/en/about/publisher-transparency/"
+  ],
+  "principles": [
+    "no feature expansion",
+    "publisher transparency",
+    "privacy disclosure alignment",
+    "completed-artifact readiness gate",
+    "no approval claim before AdSense Ready status"
+  ],
+  "static_gate_result": "static_pass_live_checks_pending",
+  "quality_hold_en": 207,
+  "adsense_serving_flags": {
+    "siteApproved": false,
+    "autoAdsEnabled": false,
+    "manualAdsEnabled": false
+  },
+  "live_checks_required": [
+    "HTTPS certificate and HTTP to HTTPS redirect after deployment",
+    "AdSense Sites status must be Ready before enabling ads",
+    "ads.txt status in AdSense account after deployment",
+    "Google-certified CMP live rendering in covered regions"
+  ]
+}

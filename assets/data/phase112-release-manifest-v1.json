@@ -1,0 +1,26 @@
+{
+  "release": "Phase112 Final-Artifact Quality Remediation",
+  "checked_at": "2026-08-09",
+  "base_release": "Phase111 AdSense Pre-Review Quality Audit",
+  "new_pages": [],
+  "new_assets": [
+    "/assets/data/phase112-b-queue-remediation-v1.json",
+    "/assets/data/phase112-release-manifest-v1.json"
+  ],
+  "phase111_final_artifact_en_gte_0_98": 233,
+  "phase112_after_addenda_en_gte_0_98": 207,
+  "ja_b_pages_deepened": 10,
+  "en_record_addenda": 83,
+  "en_noindex_review_hold": 207,
+  "sitemap_urls_expected": 1494,
+  "adsense_boundary": {
+    "siteApproved": false,
+    "autoAdsEnabled": false,
+    "manualAdsEnabled": false
+  },
+  "revenue_invariants": {
+    "solqvia_direct_a8": 0,
+    "luqevora_bridge_pages": 124
+  },
+  "seo_boundary": "No held page is deleted. High-template English pages remain accessible with noindex,follow until individually deepened and re-audited."
+}

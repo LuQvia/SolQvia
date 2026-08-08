@@ -1,0 +1,28 @@
+{
+  "phase": "114",
+  "name": "AdSense Application Candidate Public Surface Optimization",
+  "date": "2026-08-09",
+  "baseline": "Phase113",
+  "new_public_html_pages": [],
+  "new_assets": [
+    "/assets/data/phase114-public-surface-readiness-v1.json",
+    "/assets/data/phase114-release-manifest-v1.json"
+  ],
+  "changed_surfaces": [
+    "/",
+    "/ja/",
+    "/en/",
+    "/ja/technology/smartphone/",
+    "/en/technology/smartphone/",
+    "/ja/about/",
+    "/en/about/",
+    "/ja/about/publisher-transparency/",
+    "/en/about/publisher-transparency/"
+  ],
+  "live_checks_required": [
+    "HTTPS certificate and HTTP to HTTPS redirect after deployment",
+    "AdSense Sites status must be Ready before enabling ads",
+    "ads.txt status in AdSense account after deployment",
+    "Google-certified CMP live rendering in covered regions"
+  ]
+}
