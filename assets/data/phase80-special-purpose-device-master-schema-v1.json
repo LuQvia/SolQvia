@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SolQvia Phase80 Special Purpose Device Master",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "official_checked_at",
+    "kids_devices",
+    "feature_phones",
+    "home_routers"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "official_checked_at": {
+      "type": "string"
+    },
+    "device_tested": {
+      "type": "boolean"
+    },
+    "kids_devices": {
+      "type": "array"
+    },
+    "feature_phones": {
+      "type": "array"
+    },
+    "home_routers": {
+      "type": "array"
+    },
+    "rating_policy": {
+      "type": "object"
+    }
+  }
+}

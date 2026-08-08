@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "official_checked_at": "2026-08-08",
+  "records": [
+    {
+      "service": "mineo Aプラン",
+      "apn": "mineo.jp",
+      "username": "mineo@k-opti.com",
+      "password": "mineo",
+      "auth": "CHAP",
+      "apn_type": "default,supl,ia",
+      "source": "https://support.mineo.jp/business/setup/guide/android_network.html"
+    },
+    {
+      "service": "mineo Dプラン",
+      "apn": "mineo-d.jp",
+      "username": "mineo@k-opti.com",
+      "password": "mineo",
+      "auth": "CHAP",
+      "apn_type": "default,supl,ia",
+      "source": "https://support.mineo.jp/business/setup/guide/android_network.html"
+    },
+    {
+      "service": "mineo Sプラン",
+      "apn": "mineo-s.jp",
+      "username": "mineo@k-opti.com",
+      "password": "mineo",
+      "auth": "CHAP",
+      "apn_type": "default,supl,ia",
+      "source": "https://support.mineo.jp/business/setup/guide/android_network.html"
+    },
+    {
+      "service": "IIJmio",
+      "apn": "iijmio.jp",
+      "username": "mio@iij",
+      "password": "iij",
+      "auth": "PAPまたはCHAP",
+      "apn_type": "未指定（公式案内に従う）",
+      "source": "https://help.iijmio.jp/answer/65040a69b9c92533ed09d7c7/"
+    },
+    {
+      "service": "UQ mobile",
+      "apn": "uqmobile.jp",
+      "username": "uq@uqmobile.jp",
+      "password": "uq",
+      "auth": "CHAP",
+      "apn_type": "default,mms,supl,hipri,dun",
+      "source": "https://shop.uqmobile.jp/shop/guide/setting/common/pdf/setting_android.pdf"
+    },
+    {
+      "service": "Y!mobile",
+      "apn": "plus.acs.jp.v6",
+      "username": "ym",
+      "password": "ym",
+      "auth": "CHAP",
+      "apn_type": "default,ia,mms,supl,hipri",
+      "source": "https://www.ymobile.jp/yservice/howto/simfree_android/apn/"
+    },
+    {
+      "service": "日本通信SIM",
+      "apn": "dm.jplat.net",
+      "username": "jci@jci",
+      "password": "jci",
+      "auth": "PAPまたはCHAP",
+      "apn_type": "指定項目以外は変更しない。接続不可時MVNO種類SPNを試す",
+      "source": "https://www.nihontsushin.com/support/support_apn_setting-android.html"
+    }
+  ],
+  "warning": "APN values depend on service/plan/SIM. Use provider official instructions; APN cannot fix missing bands or unsupported VoLTE/IMS."
+}

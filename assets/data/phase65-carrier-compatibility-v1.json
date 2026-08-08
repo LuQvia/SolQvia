@@ -1,0 +1,804 @@
+{
+  "schema_version": "1.0",
+  "checked_at": "2026-08-08",
+  "records": [
+    {
+      "slug": "fcg01-au-carrier-compatibility",
+      "device": "arrows We FCG01",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B3 / B1 / B42",
+      "nr_bands": "n28 / n3 / n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "arrows-we-softbank-carrier-compatibility",
+      "device": "arrows We",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B8 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "△",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "oppo-a55s-5g-softbank-carrier-compatibility",
+      "device": "OPPO A55s 5G",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "balmuda-phone-softbank-carrier-compatibility",
+      "device": "BALMUDA Phone",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "sog05-au-carrier-compatibility",
+      "device": "Xperia 5 III SOG05",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B11 / B3 / B1 / B42",
+      "nr_bands": "n28 / n3 / n41 / n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "xperia-5-iii-softbank-carrier-compatibility",
+      "device": "Xperia 5 III",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B8 / B11 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "△",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "shg05-au-carrier-compatibility",
+      "device": "AQUOS sense6 SHG05",
+      "original_carrier": "au",
+      "lte_bands": "B18/26 / B19 / B3 / B1 / B42",
+      "nr_bands": "n28 / n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "google-pixel-6-pro-softbank-carrier-compatibility",
+      "device": "Google Pixel 6 Pro",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77 / n78 / n257",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "google-pixel-6-softbank-carrier-compatibility",
+      "device": "Google Pixel 6",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "aquos-zero6-softbank-carrier-compatibility",
+      "device": "AQUOS zero6",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B18/26 / B8 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77 / n78 / n257",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "scg11-au-carrier-compatibility",
+      "device": "Galaxy Z Fold3 5G SCG11",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B3 / B1 / B42",
+      "nr_bands": "n28 / n78 / n77 / n78 / n257",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "scg12-au-carrier-compatibility",
+      "device": "Galaxy Z Flip3 5G SCG12",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B3 / B1 / B42",
+      "nr_bands": "n28 / n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "google-pixel-5a-5g-softbank-carrier-compatibility",
+      "device": "Google Pixel 5a (5G)",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "leitz-phone-1-softbank-carrier-compatibility",
+      "device": "LEITZ PHONE 1",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B11 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "sog03-au-carrier-compatibility",
+      "device": "Xperia 1 III SOG03",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B11 / B3 / B1 / B42",
+      "nr_bands": "n28 / n78 / n77 / n78 / n257",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "xperia-1-iii-softbank-carrier-compatibility",
+      "device": "Xperia 1 III",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B8 / B11 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77 / n78 / n257",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "△",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "opg03-au-carrier-compatibility",
+      "device": "OPPO Find X3 Pro OPG03",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n28 / n78 / n77 / n78 / n79",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "○",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "aquos-r6-softbank-carrier-compatibility",
+      "device": "AQUOS R6",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B11 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "sog04-au-carrier-compatibility",
+      "device": "Xperia 10 III SOG04",
+      "original_carrier": "au",
+      "lte_bands": "B18/26 / B3 / B1",
+      "nr_bands": "n28 / n77 / n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "opg02-au-carrier-compatibility",
+      "device": "OPPO A54 5G OPG02",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n28 / n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "○",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "scg10-au-carrier-compatibility",
+      "device": "Galaxy S21+ 5G SCG10",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B3 / B1 / B42",
+      "nr_bands": "n28 / n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "scg09-au-carrier-compatibility",
+      "device": "Galaxy S21 5G SCG09",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B3 / B1 / B42",
+      "nr_bands": "n28 / n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "razr-5g-softbank-carrier-compatibility",
+      "device": "razr 5G",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77 / n78 / n79",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "redmi-note-9t-softbank-carrier-compatibility",
+      "device": "Redmi Note 9T",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "shg03-au-carrier-compatibility",
+      "device": "AQUOS sense5G SHG03",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n28 / n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "○",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "aquos-sense5g-softbank-carrier-compatibility",
+      "device": "AQUOS sense5G",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "scg07-au-carrier-compatibility",
+      "device": "Galaxy A51 5G SCG07",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B3 / B1 / B42",
+      "nr_bands": "n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "sog02-au-carrier-compatibility",
+      "device": "Xperia 5 II SOG02",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B11 / B3 / B1 / B42",
+      "nr_bands": "n28 / n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "xperia-5-ii-softbank-carrier-compatibility",
+      "device": "Xperia 5 II",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B8 / B11 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "△",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "scg06-au-carrier-compatibility",
+      "device": "Galaxy Note20 Ultra 5G SCG06",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B3 / B1 / B42",
+      "nr_bands": "n28 / n78 / n77 / n78 / n257",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "google-pixel-5-softbank-carrier-compatibility",
+      "device": "Google Pixel 5",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "google-pixel-4a-5g-softbank-carrier-compatibility",
+      "device": "Google Pixel 4a (5G)",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "aquos-zero5g-basic-softbank-carrier-compatibility",
+      "device": "AQUOS zero5G basic",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "kyv48-au-carrier-compatibility",
+      "device": "GRATINA KYV48",
+      "original_carrier": "au",
+      "lte_bands": "B18/26 / B3 / B1",
+      "nr_bands": "非対応または公式表で対象Bandなし",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "5-softbank-carrier-compatibility",
+      "device": "シンプルスマホ5",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B18/26 / B19 / B8 / B3 / B1",
+      "nr_bands": "非対応または公式表で対象Bandなし",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "google-pixel-4a-softbank-carrier-compatibility",
+      "device": "Google Pixel 4a",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "非対応または公式表で対象Bandなし",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "ztg01-au-carrier-compatibility",
+      "device": "ZTE a1 ZTG01",
+      "original_carrier": "au",
+      "lte_bands": "B18/26 / B3 / B1 / B42",
+      "nr_bands": "n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "oppo-reno3-5g-softbank-carrier-compatibility",
+      "device": "OPPO Reno3 5G",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "opg01-au-carrier-compatibility",
+      "device": "OPPO Find X2 Pro OPG01",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B3 / B1 / B42",
+      "nr_bands": "n78 / n77 / n78 / n79",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "○",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "scg02-au-carrier-compatibility",
+      "device": "Galaxy S20+ 5G SCG02",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B3 / B1 / B42",
+      "nr_bands": "n78 / n77 / n78 / n257",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "sog01-au-carrier-compatibility",
+      "device": "Xperia 1 II SOG01",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B11 / B3 / B1 / B42",
+      "nr_bands": "n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "lg-v60-thinq-5g-softbank-carrier-compatibility",
+      "device": "LG V60 ThinQ 5G",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B8 / B11 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "△",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "shg01-au-carrier-compatibility",
+      "device": "AQUOS R5G SHG01",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B11 / B3 / B1 / B42",
+      "nr_bands": "n28 / n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "○",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "zte-axon-10-pro-5g-softbank-carrier-compatibility",
+      "device": "ZTE Axon 10 Pro 5G",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B8 / B3 / B1 / B42",
+      "nr_bands": "n77",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "△",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "aquos-r5g-softbank-carrier-compatibility",
+      "device": "AQUOS R5G",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B11 / B3 / B1 / B42",
+      "nr_bands": "n3 / n28 / n77 / n77",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "scg01-au-carrier-compatibility",
+      "device": "Galaxy S20 5G SCG01",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B3 / B1 / B42",
+      "nr_bands": "n78 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "kyv47-au-carrier-compatibility",
+      "device": "BASIO4 KYV47",
+      "original_carrier": "au",
+      "lte_bands": "B18/26 / B3 / B1",
+      "nr_bands": "非対応または公式表で対象Bandなし",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "△",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "shv47-au-carrier-compatibility",
+      "device": "AQUOS zero2 SHV47",
+      "original_carrier": "au",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B11 / B3 / B1 / B42",
+      "nr_bands": "非対応または公式表で対象Bandなし",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "◎",
+        "SoftBank": "○",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+    },
+    {
+      "slug": "aquos-zero2-softbank-carrier-compatibility",
+      "device": "AQUOS zero2",
+      "original_carrier": "SoftBank",
+      "lte_bands": "B28 / B18/26 / B19 / B8 / B11 / B3 / B1 / B42",
+      "nr_bands": "非対応または公式表で対象Bandなし",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "◎",
+        "楽天モバイル": "○"
+      },
+      "source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "slug": "rakuten-hand-rakuten-carrier-compatibility",
+      "device": "Rakuten Hand",
+      "original_carrier": "楽天モバイル",
+      "lte_bands": "B1 / B2 / B3 / B4 / B5 / B7 / B18 / B19 / B26 / B28 / B38 / B41 / B42",
+      "nr_bands": "非対応",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "△",
+        "SoftBank": "△",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/rakuten-hand/spec.html"
+    },
+    {
+      "slug": "rakuten-mini-rakuten-carrier-compatibility",
+      "device": "Rakuten Mini",
+      "original_carrier": "楽天モバイル",
+      "lte_bands": "B1 / B3 / B18 / B19 / B26 / B28 / B41（IMEI世代で構成差あり）",
+      "nr_bands": "非対応",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "△",
+        "SoftBank": "△",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/rakuten-mini/spec.html"
+    },
+    {
+      "slug": "rakuten-big-rakuten-carrier-compatibility",
+      "device": "Rakuten BIG",
+      "original_carrier": "楽天モバイル",
+      "lte_bands": "公式スペック詳細参照",
+      "nr_bands": "Sub6＋n257",
+      "fit": {
+        "NTTドコモ": "△",
+        "au": "△",
+        "SoftBank": "△",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/rakuten-big/"
+    },
+    {
+      "slug": "oppo-a55s-5g-rakuten-carrier-compatibility",
+      "device": "OPPO A55s 5G",
+      "original_carrier": "楽天モバイル",
+      "lte_bands": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B18 / B19 / B26 / B28 / B38 / B40 / B41 / B42",
+      "nr_bands": "n3 / n28 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "△",
+        "SoftBank": "○",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/a55s-5g/spec.html"
+    },
+    {
+      "slug": "aquos-zero6-rakuten-carrier-compatibility",
+      "device": "AQUOS zero6",
+      "original_carrier": "楽天モバイル",
+      "lte_bands": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B12 / B17 / B18 / B38 / B41 / B42",
+      "nr_bands": "n3 / n28 / n77 / n78 / n257",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "△",
+        "SoftBank": "○",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/aquos-zero6/spec.html"
+    },
+    {
+      "slug": "xperia-10-iii-lite-rakuten-carrier-compatibility",
+      "device": "Xperia 10 III Lite",
+      "original_carrier": "楽天モバイル",
+      "lte_bands": "B1 / B3 / B4 / B12 / B18 / B19 / B38 / B41",
+      "nr_bands": "n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "△",
+        "SoftBank": "△",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/xperia-10m3-lite/spec.html"
+    },
+    {
+      "slug": "oppo-reno5-a-rakuten-carrier-compatibility",
+      "device": "OPPO Reno5 A",
+      "original_carrier": "楽天モバイル",
+      "lte_bands": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B12 / B17 / B18 / B19 / B26 / B28 / B38 / B39 / B40 / B41 / B42",
+      "nr_bands": "n3 / n28 / n77 / n78",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "△",
+        "SoftBank": "○",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/reno5-a/spec.html"
+    },
+    {
+      "slug": "aquos-sense4-lite-rakuten-carrier-compatibility",
+      "device": "AQUOS sense4 lite",
+      "original_carrier": "楽天モバイル",
+      "lte_bands": "B1 / B2 / B3 / B5 / B8 / B12 / B17 / B18 / B19 / B39 / B41",
+      "nr_bands": "非対応",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "△",
+        "SoftBank": "○",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/aquos-sense4-lite/spec.html"
+    }
+  ]
+}

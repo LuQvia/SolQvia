@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "release": "phase81",
+  "checked_at": "2026-08-08",
+  "scope": "docomo kids phone cross-carrier APN field guide",
+  "official_manual_verification": {
+    "model": "KY-41C",
+    "apn_menu_confirmed": true,
+    "menu_path": [
+      "保護者メニュー",
+      "その他の設定",
+      "ネットワーク",
+      "モバイルネットワーク",
+      "詳細設定",
+      "アクセスポイント名"
+    ],
+    "esim_add_menu_confirmed": true,
+    "warning": "SIM情報初期化は全SIM情報を削除するため初手で実行しない",
+    "source": "https://www.docomo.ne.jp/binary/pdf/support/manual/KY-41C_J_syousai.pdf"
+  },
+  "user_provided_real_device_observation": {
+    "device_scope": "ドコモのキッズケータイ（対象機種の厳密な型番は今回の記録では固定しない）",
+    "ymobile_sim_information_recognized": true,
+    "softbank_sim_information_recognized": true,
+    "packet_data_verified": false,
+    "voice_volte_verified": false,
+    "sms_verified": false,
+    "note": "SIM認識と実用通信を分離して記録。データ・VoLTE・SMSは追加実機確認が必要。"
+  },
+  "apn_sources": {
+    "ymobile": "https://www.ymobile.jp/yservice/howto/simfree_android/apn/",
+    "softbank": "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+  },
+  "superseded_by_phase82_note": "Phase82でドコモ公式他事業者動作可否を追加。KY-41CはSoftBank通話○※・データ通信-。APN保存可否とデータ通信可否は別判定。",
+  "phase82_official_mno_check_source": "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf"
+}

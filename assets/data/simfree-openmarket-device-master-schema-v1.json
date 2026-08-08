@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "official_checked_at",
+    "records"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "official_checked_at": {
+      "type": "string"
+    },
+    "records": {
+      "type": "array"
+    }
+  }
+}

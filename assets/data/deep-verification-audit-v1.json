@@ -1,9 +1,9 @@
 {
-  "schema_version": "1.0",
-  "release": "phase60",
+  "schema_version": "1.1",
+  "release": "phase61",
   "checked_at": "2026-08-08",
-  "purpose": "High-value article second-stage deep verification. Official source facts are refreshed only for the listed priority pages; real-device status is explicitly disclosed.",
-  "updated_articles": 9,
+  "purpose": "High-value article second-stage deep verification wave 2. Official source facts are refreshed for priority pages; real-device status is explicitly disclosed.",
+  "updated_articles": 21,
   "records": [
     {
       "slug": "docomo-data-only-mnp-plan-change-guide",
@@ -103,6 +103,136 @@
         "https://network.mobile.rakuten.co.jp/faq/detail/00001406/",
         "https://network.mobile.rakuten.co.jp/support/contract-detail/sim/"
       ]
+    },
+    {
+      "slug": "docomo-simfree-phone-data-ok-calls-fail-volte-ims",
+      "title": "ドコモSIMでデータ通信はできるのに電話できない時｜VoLTE・IMS・3G終了後の確認順",
+      "deep_section": "深掘り検証｜「データOK・通話NG」はAPNより先にVoLTE/IMSの成立条件を見る",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://www.docomo.ne.jp/faq/detail?faqId=480958",
+        "https://www.docomo.ne.jp/area/technology/5g/notice.html"
+      ]
+    },
+    {
+      "slug": "overseas-smartphone-bands-match-volte-ims-calls-fail",
+      "title": "海外版スマホは対応バンドが合っていても通話できない？VoLTE・IMS・キャリア動作確認まで見る理由",
+      "deep_section": "深掘り検証｜海外版は「Band表」だけでなく音声・SMS・緊急通報を別々に判定する",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://www.docomo.ne.jp/support/simcard_other/notice/",
+        "https://network.mobile.rakuten.co.jp/product/byod/"
+      ]
+    },
+    {
+      "slug": "au-esim-phone-number-transfer-failed-5g-sa",
+      "title": "auで「電話番号をこのiPhoneに転送できませんでした」と出る時｜5G SA eSIMと端末対応を確認",
+      "deep_section": "深掘り検証｜au eSIM転送エラーは「5G SA回線種別」と端末対応を最初に照合する",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://www.au.com/support/faq/details/00/0000/000031/pg00003184/",
+        "https://www.au.com/support/faq/details/00/0000/000022/pg00002281/"
+      ]
+    },
+    {
+      "slug": "iphone-17-esim-activation-fails-japan-carriers",
+      "title": "iPhone 17でeSIMを追加・開通できない時｜国内キャリア共通の確認順と削除前の注意点",
+      "deep_section": "深掘り検証｜iPhone 17のeSIM不具合は「端末側転送」と「キャリア側再発行」を混ぜない",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://support.apple.com/ja-jp/118669",
+        "https://www.au.com/support/faq/details/00/0000/000022/pg00002281/"
+      ]
+    },
+    {
+      "slug": "pixel-dual-sim-5g-not-showing-data-sim-check",
+      "title": "PixelでデュアルSIMにしたら5Gを掴まない時｜データSIM・5G設定・キャリア条件を確認",
+      "deep_section": "深掘り検証｜PixelのデュアルSIM 5Gは「デュアルSIMだから4G固定」と決めつけない",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://support.google.com/pixelphone/answer/9449293?hl=ja",
+        "https://support.google.com/pixelphone/answer/14116080?hl=ja-jp"
+      ]
+    },
+    {
+      "slug": "pixel-dual-sim-voice-unavailable-interruption-notification",
+      "title": "PixelのデュアルSIMで「音声が利用できません」「音声割り込み」と出る時｜SIM組み合わせを切り分ける",
+      "deep_section": "深掘り検証｜Pixelの「音声が利用できません」は端末世代とSIM組み合わせで挙動を分ける",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://support.google.com/pixelphone/answer/9449293?hl=ja"
+      ]
+    },
+    {
+      "slug": "softbank-other-carrier-phone-apn-volte-after-3g-end",
+      "title": "他社購入スマホをSoftBankで使って通信・通話できない時｜APNとVoLTEを3G終了後基準で確認",
+      "deep_section": "深掘り検証｜SoftBank持ち込み端末はAPNとVoLTEを別々に確認する",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://www.softbank.jp/mobile/info/personal/news/service/20240418b/",
+        "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+      ]
+    },
+    {
+      "slug": "rakuten-other-carrier-phone-apn-no-data",
+      "title": "他社で使っていたスマホが楽天モバイルで通信できない時｜対応製品・APN・SIMロックの確認順",
+      "deep_section": "深掘り検証｜楽天モバイルはAPN入力前に「楽天回線対応製品か」を確認する",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/",
+        "https://network.mobile.rakuten.co.jp/product/byod/"
+      ]
+    },
+    {
+      "slug": "ahamo-network-pin-forgotten-mnp-guide",
+      "title": "ahamoでネットワーク暗証番号が分からずMNPできない時｜確認窓口・ロック・プラン変更の順番",
+      "deep_section": "深掘り検証｜ahamoの暗証番号窓口は「番号確認専用」でMNP代行窓口ではない",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://ahamo.com/support/network-pin/index.html"
+      ]
+    },
+    {
+      "slug": "nihontsushin-sim-mnp-name-mismatch-two-days",
+      "title": "日本通信SIMからMNPできない｜名義・生年月日不一致と「最大2日」を確認",
+      "deep_section": "深掘り検証｜日本通信SIMは「即時発行前提」を捨て、登録情報一致と最大2日を先に見る",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://www.nihontsushin.com/support/support_mnp_portout.html"
+      ]
+    },
+    {
+      "slug": "his-mobile-mnp-button-disabled-after-cancellation",
+      "title": "HISモバイルでMNP予約番号取得ボタンが押せない｜解約申込後は要注意",
+      "deep_section": "深掘り検証｜HISモバイルは「先に通常解約」をしないことが最重要",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://support.his-mobile.com/hc/ja/articles/7739292394127-MNP%E4%BA%88%E7%B4%84%E7%95%AA%E5%8F%B7%E3%82%92%E5%8F%96%E5%BE%97%E3%81%97%E3%81%9F%E3%81%84%E3%81%AE%E3%81%A7%E3%81%99%E3%81%8C-%E5%8F%96%E5%BE%97%E3%83%9C%E3%82%BF%E3%83%B3%E3%81%8C%E3%82%AF%E3%83%AA%E3%83%83%E3%82%AF%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%9B%E3%82%93",
+        "https://support.his-mobile.com/hc/ja/articles/7739305431567-MNP%E8%BB%A2%E5%87%BA%E6%96%B9%E6%B3%95-%E8%A9%B3%E7%B4%B0%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E6%95%99%E3%81%88%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84"
+      ]
+    },
+    {
+      "slug": "yu-mobile-mnp-payment-invalid-share-sim",
+      "title": "y.u mobileでMNP予約番号が取り消された｜支払方法無効・追加SIM名義を確認",
+      "deep_section": "深掘り検証｜y.u mobileは「支払い方法が有効か」を予約番号より先に確認する",
+      "official_reverified": "2026-08-08",
+      "device_status": "実機未検証（公式仕様＋再現チェック手順）",
+      "sources": [
+        "https://help.yumobile.jp/troubleshooting/detail/issue-mnp-reservation-number",
+        "https://help.yumobile.jp/manual/mnp"
+      ]
     }
-  ]
+  ],
+  "phase61_newly_updated": 12
 }

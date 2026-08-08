@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "release": "phase83",
+  "official_checked_at": "2026-08-08",
+  "scope": "主要キッズ端末をBandだけでなくAPN、音声、データ、SMS、見守り依存まで横断比較。Band一致は動作保証とみなさない。",
+  "real_device_observation": {
+    "device_family": "NTTドコモ キッズケータイ",
+    "exact_model": "未特定",
+    "ymobile_sim_information_recognized": true,
+    "softbank_sim_information_recognized": true,
+    "verified_scope": "SIM/回線情報認識のみ。通話・データ・SMS・見守りは未検証。"
+  },
+  "devices": [
+    {
+      "carrier": "NTTドコモ",
+      "model": "キッズケータイ コンパクト SK-41D",
+      "model_number": "SK-41D",
+      "release_date": "2024-07-12",
+      "sim": "eSIM",
+      "lte": [
+        "B1",
+        "B19"
+      ],
+      "apn_edit": "公式資料で一般向け手動APN画面を再確認できず／未確認",
+      "native_voice": "ドコモ回線向け",
+      "sms": "ドコモ契約で利用",
+      "monitoring": "イマドコサーチ等のドコモ側サービスと連携",
+      "other_network": "ドコモ公式表：au 通話○※/データ-、SoftBank 通話○※/データ-、楽天 通話-/データ-",
+      "practical": "他社データ用途は非対応扱い。通話も保証ではない",
+      "sources": [
+        "https://www.docomo.ne.jp/product/sk41d/spec.html",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf",
+        "https://www.docomo.ne.jp/charge/kidskeitaiplan-3/"
+      ]
+    },
+    {
+      "carrier": "NTTドコモ",
+      "model": "キッズケータイ KY-41C",
+      "model_number": "KY-41C",
+      "release_date": "2023-02-24",
+      "sim": "eSIM",
+      "lte": [
+        "B1",
+        "B19"
+      ],
+      "apn_edit": "確認済み（公式取説にAPN画面あり）",
+      "native_voice": "ドコモ回線向け",
+      "sms": "ドコモ契約で利用",
+      "monitoring": "イマドコサーチ等のドコモ側サービスと連携",
+      "other_network": "ドコモ公式表：au 通話○※/データ-、SoftBank 通話○※/データ-、楽天 通話-/データ-",
+      "practical": "APNを設定できても他社データ通信可とは判定しない",
+      "sources": [
+        "https://www.docomo.ne.jp/product/ky41c/spec.html",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf",
+        "https://www.docomo.ne.jp/charge/kidskeitaiplan-3/"
+      ]
+    },
+    {
+      "carrier": "NTTドコモ",
+      "model": "キッズケータイ SH-03M",
+      "model_number": "SH-03M",
+      "release_date": "2020-01-17",
+      "sim": "eSIM",
+      "lte": [
+        "B1",
+        "B19"
+      ],
+      "apn_edit": "公式資料で一般向け手動APN画面を再確認できず／未確認",
+      "native_voice": "VoLTE対応（ドコモ）",
+      "sms": "SMS対応",
+      "monitoring": "イマドコサーチ等のドコモ側サービスと連携",
+      "other_network": "ドコモ公式表：au 通話○※/データ-、SoftBank 通話○※/データ-、楽天 通話-/データ-",
+      "practical": "旧世代も他社データ用途は非対応扱い",
+      "sources": [
+        "https://www.docomo.ne.jp/support/product/sh03m/spec.html",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf",
+        "https://www.docomo.ne.jp/charge/kidskeitaiplan-3/"
+      ]
+    },
+    {
+      "carrier": "au",
+      "model": "mamorino6",
+      "model_number": "mamorino6",
+      "release_date": "2023-02-10",
+      "sim": "nanoSIM / eSIM（同時利用不可）",
+      "lte": [
+        "B1",
+        "B3",
+        "B18"
+      ],
+      "apn_edit": "一般利用者向け手動APN画面は公式資料で未確認",
+      "native_voice": "au VoLTE対応",
+      "sms": "SMS / ＋メッセージ対応",
+      "monitoring": "auの位置確認・登録連絡先などのキッズ機能前提",
+      "other_network": "SIMロックなし。ただしauは他社SIMの動作・サービスを保証しない",
+      "practical": "Bandが重なっても他社利用は原則非推奨",
+      "sources": [
+        "https://www.au.com/mobile/product/featurephone/mamorino6/spec/",
+        "https://www.au.com/content/dam/au-com/mobile/product/featurephone/mamorino6/pdf/mamorino6_syuuhasu.pdf"
+      ]
+    },
+    {
+      "carrier": "SoftBank",
+      "model": "キッズフォン4",
+      "model_number": "Kids Phone 4",
+      "release_date": "2026-02-20",
+      "sim": "eSIM",
+      "lte": [
+        "B1",
+        "B3",
+        "B8",
+        "B41"
+      ],
+      "apn_edit": "確認済み（管理者設定 → ネットワーク → APN設定）",
+      "native_voice": "VoLTE対応",
+      "sms": "SoftBank契約下のメール/SMS機能",
+      "monitoring": "位置ナビ、登録済み宛先などSoftBankサービスと強く連携",
+      "other_network": "公式Band表は他社ネットワークの動作保証をしない",
+      "practical": "APN編集は可能だが他社eSIM/IMS/見守りの成立は別問題",
+      "sources": [
+        "https://www.softbank.jp/mobile/products/mimamorimobile/kids-phone4/",
+        "https://www.softbank.jp/mobile/set/common/pdf/products/kids-phone4/spectrum.pdf",
+        "https://www.softbank.jp/mobile/support/manual/mimamori-keitai/kids-phone4/detail/191826/",
+        "https://www.softbank.jp/mobile/service/security/ichinavi/"
+      ]
+    },
+    {
+      "carrier": "SoftBank",
+      "model": "キッズフォン3",
+      "model_number": "Kids Phone 3",
+      "release_date": "2023-01-27",
+      "sim": "eSIM",
+      "lte": [
+        "B1",
+        "B3",
+        "B8",
+        "B41"
+      ],
+      "apn_edit": "確認済み（管理者設定 → 本体設定 → APN設定）",
+      "native_voice": "VoLTE / VoLTE（HD+）対応",
+      "sms": "SMS対応",
+      "monitoring": "位置ナビ。保護者側の契約/設定条件あり",
+      "other_network": "公式Band表は他社ネットワークの動作保証をしない",
+      "practical": "APN編集は可能だが他社eSIM/IMS/見守りの成立は別問題",
+      "sources": [
+        "https://www.softbank.jp/mobile/products/mimamorimobile/kids-phone3/",
+        "https://www.softbank.jp/mobile/set/common/pdf/products/kids-phone3/spectrum.pdf",
+        "https://www.softbank.jp/mobile/support/manual/mimamori-keitai/kids-phone3/detail/67586/",
+        "https://www.softbank.jp/mobile/service/security/ichinavi/"
+      ]
+    }
+  ],
+  "rakuten_positioning": {
+    "device_strategy": "通常の楽天回線対応スマートフォン＋最強こども割/フィルタリング/位置確認",
+    "dedicated_kids_phone_band_table": "該当なし（端末ごとに楽天回線対応を確認）",
+    "source": "https://network.mobile.rakuten.co.jp/fee/kids/"
+  },
+  "rating_policy": {
+    "band": "周波数の技術適合",
+    "apn": "設定UI有無/保存可否",
+    "voice": "VoLTE/IMSを別判定",
+    "data": "APN＋回線側接続を別判定",
+    "monitoring": "販売元サービス/契約依存を別判定",
+    "guarantee": "販売元公式の他社動作保証がない場合は保証なしと明示"
+  }
+}

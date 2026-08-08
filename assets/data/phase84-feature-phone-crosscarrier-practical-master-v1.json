@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "release": "phase84",
+  "official_checked_at": "2026-08-08",
+  "device_tested": false,
+  "scope_note": "Phase80の主要7機種を、BandだけでなくAPN編集、VoLTE/IMS、各キャリア公式の他社動作確認・サポート方針まで再監査した実用性マスター。Band一致は動作保証を意味しない。",
+  "legend": {
+    "◎": "販売元/主要Band適合",
+    "○※": "元キャリア公式の他社回線技術確認は○だが主要カバーBand不足注記あり",
+    "○*": "端末販売元の技術確認は○だが利用先キャリア側のサポート対象外",
+    "△": "Bandの一部は重なるが実用保証なし",
+    "×": "公式非対応または重要条件不一致"
+  },
+  "devices": [
+    {
+      "slug": "f-41f-feature-phone-other-carrier-sim-apn-volte",
+      "carrier": "NTTドコモ",
+      "model": "らくらくホン F-41F",
+      "model_number": "F-41F",
+      "bands": "B1 / B3 / B19",
+      "sim": "nanoSIM",
+      "volte": "ドコモVoLTE対応",
+      "apn": "端末マニュアルで個別の新規APN追加手順を今回確認できていないため、他社APN投入可否は要実機/取説確認",
+      "official_other": "ドコモの現行「他事業者での動作可否」PDFには未掲載。Bandだけで推定しない。",
+      "fits": {
+        "docomo": "◎",
+        "au": "△",
+        "softbank": "△",
+        "rakuten": "△"
+      },
+      "practical": "元回線推奨。B3は楽天、B1はau/SoftBankとも重なるが、au B18/26・SoftBank B8を欠く。",
+      "sources": [
+        "https://www.docomo.ne.jp/product/f41f/spec.html",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf"
+      ]
+    },
+    {
+      "slug": "ky-42c-feature-phone-other-carrier-sim-apn-volte",
+      "carrier": "NTTドコモ",
+      "model": "DIGNO ケータイ KY-42C",
+      "model_number": "KY-42C",
+      "bands": "B1 / B3 / B19",
+      "sim": "nanoSIM",
+      "volte": "VoLTE対応。端末側に通話モード設定あり",
+      "apn": "待受→設定→無線・ネットワーク→モバイルネットワーク→アクセスポイント名→メニュー→新しいAPN。必要項目を入力して保存。",
+      "official_other": "ドコモ公式: au 通話○※/データ○※、SoftBank 通話○※/データ○※、楽天 通話○/データ○。ただし利用保証ではない。",
+      "fits": {
+        "docomo": "◎",
+        "au": "○※",
+        "softbank": "○※",
+        "rakuten": "○*"
+      },
+      "practical": "7機種中、他社回線の公式技術確認が最も具体的。ただし楽天側はガラケー非対応と案内しており、サポート対象とは解釈しない。",
+      "sources": [
+        "https://www.docomo.ne.jp/product/ky42c/spec.html",
+        "https://www.docomo.ne.jp/binary/pdf/support/manual/KY-42C_J_syousai.pdf",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf",
+        "https://network.mobile.rakuten.co.jp/faq/detail/10001147/"
+      ]
+    },
+    {
+      "slug": "f-41c-feature-phone-other-carrier-sim-apn-volte",
+      "carrier": "NTTドコモ",
+      "model": "arrows ケータイ ベーシック F-41C",
+      "model_number": "F-41C",
+      "bands": "B1 / B19",
+      "sim": "nanoSIM",
+      "volte": "ドコモVoLTE対応",
+      "apn": "待受→設定→通信・機内モード→モバイルネットワーク→アクセスポイント名→サブメニュー→新しいAPN。必要項目を入力し保存。",
+      "official_other": "ドコモ公式: au 通話○※/データ○※、SoftBank 通話○※/データ○※、楽天 通話×/データ×。",
+      "fits": {
+        "docomo": "◎",
+        "au": "○※",
+        "softbank": "○※",
+        "rakuten": "×"
+      },
+      "practical": "楽天の主要LTE B3を持たず、ドコモ公式でも楽天は通話・データとも×。au/SoftBankは○※だが重要プラチナBand非対応。",
+      "sources": [
+        "https://www.docomo.ne.jp/support/product/f41c/spec.html",
+        "https://www.docomo.ne.jp/binary/pdf/support/manual/F-41C_J_syousai.pdf",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf"
+      ]
+    },
+    {
+      "slug": "kyf43-feature-phone-other-carrier-sim-apn-volte",
+      "carrier": "au",
+      "model": "かんたんケータイ ライト KYF43",
+      "model_number": "KYF43",
+      "bands": "B1 / B3 / B18",
+      "sim": "nanoSIM系",
+      "volte": "au VoLTE系",
+      "apn": "公式詳細取説ではLTE NETが組み込み済みで「モバイルネットワーク」の項目はあるが、新しいAPNを追加する手順は確認できない。手動追加可能とは断定しない。",
+      "official_other": "au周波数資料は他社ネットワークでの動作保証を行わないと明記。",
+      "fits": {
+        "docomo": "△",
+        "au": "◎",
+        "softbank": "△",
+        "rakuten": "△"
+      },
+      "practical": "au B18に対応。B3は楽天と重なるが楽天はガラケー非対応案内。ドコモB19・SoftBank B8を欠く。",
+      "sources": [
+        "https://www.au.com/mobile/product/featurephone/kyf43/spec/",
+        "https://www.au.com/content/dam/au-com/mobile/product/featurephone/kyf43/pdf/kyf43_syuuhasu.pdf",
+        "https://www.au.com/content/dam/au-com/support/service/mobile/guide/manual/kyf43/pdf/kyf43_torisetsu_shousai.pdf",
+        "https://network.mobile.rakuten.co.jp/faq/detail/10001147/"
+      ]
+    },
+    {
+      "slug": "gzone-type-xx-feature-phone-other-carrier-sim-apn-volte",
+      "carrier": "au",
+      "model": "G’zOne TYPE-XX",
+      "model_number": "KYY31",
+      "bands": "B1 / B3 / B18",
+      "sim": "au ICカード系",
+      "volte": "au VoLTE系",
+      "apn": "待受→設定→無線・ネットワーク→モバイルネットワーク→アクセスポイント名からLTE NET for DATAを選択可能。新規APN追加手順は公式取説で確認できない。",
+      "official_other": "au周波数資料は他社ネットワークでの動作保証を行わないと明記。",
+      "fits": {
+        "docomo": "△",
+        "au": "◎",
+        "softbank": "△",
+        "rakuten": "△"
+      },
+      "practical": "KYF43同様B1/B3/B18。APN選択画面は確認できるが、任意の他社APNを追加できるとは断定しない。",
+      "sources": [
+        "https://www.au.com/content/dam/au-com/mobile/product/featurephone/gzone_type_xx/pdf/gzone_type_xx_syuuhasu.pdf",
+        "https://www.au.com/content/dam/au-com/support/service/mobile/guide/manual/gzone_type_xx/gzone_type_xx_torisetsu_shousai.pdf",
+        "https://network.mobile.rakuten.co.jp/faq/detail/10001147/"
+      ]
+    },
+    {
+      "slug": "digno-keitai4-feature-phone-other-carrier-sim-apn-volte",
+      "carrier": "SoftBank",
+      "model": "DIGNO ケータイ4",
+      "model_number": "DIGNO Keitai 4",
+      "bands": "B1 / B3 / B8",
+      "sim": "nanoUSIM系",
+      "volte": "SoftBank 4G音声系。VoLTE/IMSは他社側で別確認",
+      "apn": "設定→無線・ネットワーク→モバイルネットワーク→アクセスポイント名→メニュー→新しいAPN→各項目を設定→保存。",
+      "official_other": "SoftBankの周波数資料は、他社ネットワークで利用する場合の動作保証を行わない。",
+      "fits": {
+        "docomo": "△",
+        "au": "△",
+        "softbank": "◎",
+        "rakuten": "△"
+      },
+      "practical": "他社APNを追加できる点は強み。ただしドコモB19・au B18/26を欠き、楽天もガラケー非対応案内。",
+      "sources": [
+        "https://www.softbank.jp/mobile/support/manual/keitai/digno-keitai4/detail/63318/",
+        "https://tm.softbank.jp/content/dam/common/services/mobile/lineup/keitai/digno-keitai4-for-biz/pdf/digno-keitai4-for-biz.pdf",
+        "https://network.mobile.rakuten.co.jp/faq/detail/10001147/"
+      ]
+    },
+    {
+      "slug": "aquos-keitai4-feature-phone-other-carrier-sim-apn-volte",
+      "carrier": "SoftBank",
+      "model": "AQUOS ケータイ4",
+      "model_number": "AQUOS Keitai 4",
+      "bands": "B1 / B3 / B8",
+      "sim": "nanoUSIM系",
+      "volte": "4G拡張モード（音声通話にLTEを利用）を設定可能",
+      "apn": "設定→ネットワーク→モバイルネットワーク→アクセスポイント名→メニュー→新しいAPN→項目を入力→メニュー→保存。",
+      "official_other": "SoftBankの対応周波数資料はBand一致があっても他社ネットワークでの動作保証ではない。",
+      "fits": {
+        "docomo": "△",
+        "au": "△",
+        "softbank": "◎",
+        "rakuten": "△"
+      },
+      "practical": "DIGNOケータイ4同様に新規APN追加が可能。B8を持つSoftBank向け構成で、他社プラチナBandは不足。",
+      "sources": [
+        "https://www.softbank.jp/mobile/support/manual/keitai/aquos-keitai4/detail/65343/",
+        "https://www.softbank.jp/mobile/set/common/pdf/products/aquos-keitai4/spectrum.pdf",
+        "https://network.mobile.rakuten.co.jp/faq/detail/10001147/"
+      ]
+    }
+  ],
+  "cross_carrier_policy": {
+    "docomo_test_pdf": "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf",
+    "rakuten_feature_phone_policy": "https://network.mobile.rakuten.co.jp/faq/detail/10001147/",
+    "note": "ドコモ端末の技術試験○と、楽天モバイル側の「ガラケー非対応」は両立し得る。前者は端末技術試験、後者はサービス側の公式サポート方針として別評価する。"
+  }
+}

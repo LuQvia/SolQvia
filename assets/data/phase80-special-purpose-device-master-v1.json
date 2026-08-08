@@ -1,0 +1,542 @@
+{
+  "schema_version": "1.2",
+  "release": "phase83",
+  "official_checked_at": "2026-08-08",
+  "device_tested": false,
+  "scope_note": "Smartphone carrier inventory remains separate. This master covers special-purpose kids devices, 4G feature phones and carrier home routers.",
+  "rating_policy": {
+    "◎": "native carrier or strong technical fit",
+    "○": "major bands line up well at band level only",
+    "△": "partial band overlap and/or missing key low band; practical operation unresolved",
+    "×": "critical band absent or service/SIM/profile/address binding makes generic reuse impractical",
+    "warning": "Band fit is not an operation guarantee. APN, VoLTE/IMS, dedicated service, SIM/eSIM profile, location/monitoring functions and registered-address restrictions are evaluated separately."
+  },
+  "kids_devices": [
+    {
+      "carrier": "NTTドコモ",
+      "model": "キッズケータイ KY-41C",
+      "model_number": "KY-41C",
+      "release_date": "2023-02-24",
+      "sim": "eSIM",
+      "lte_bands": [
+        "B1",
+        "B19"
+      ],
+      "nr_bands": [],
+      "native_fit": "◎",
+      "fits": {
+        "docomo": "◎",
+        "au": "△",
+        "softbank": "△",
+        "rakuten": "×"
+      },
+      "practical_cross_carrier_use": "通話のみ成立余地あり／データ用途は非対応扱い。実機ではSIM認識と通信可否を分離して検証",
+      "notes": "ドコモ向けのB19を備える一方、auのB18/26、SoftBankのB8、楽天のB3を欠く。見守り・位置情報・連絡先制限もドコモのキッズ向けサービス前提。",
+      "sources": [
+        "https://www.docomo.ne.jp/product/ky41c/spec.html",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf",
+        "https://www.docomo.ne.jp/charge/kidskeitaiplan-3/"
+      ],
+      "docomo_official_other_mno_check": {
+        "au": {
+          "voice": "○※",
+          "data": "-"
+        },
+        "softbank": {
+          "voice": "○※",
+          "data": "-"
+        },
+        "rakuten": {
+          "voice": "-",
+          "data": "-"
+        },
+        "source": "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf"
+      },
+      "apn_edit": "確認済み（公式取説にAPN画面あり）",
+      "cross_carrier_practical_status": "APNを設定できても他社データ通信可とは判定しない",
+      "monitoring_dependency": "イマドコサーチ等のドコモ側サービスと連携"
+    },
+    {
+      "carrier": "NTTドコモ",
+      "model": "キッズケータイ コンパクト SK-41D",
+      "model_number": "SK-41D",
+      "release_date": "2024-07-12",
+      "sim": "eSIM",
+      "lte_bands": [
+        "B1",
+        "B19"
+      ],
+      "nr_bands": [],
+      "native_fit": "◎",
+      "fits": {
+        "docomo": "◎",
+        "au": "△",
+        "softbank": "△",
+        "rakuten": "×"
+      },
+      "practical_cross_carrier_use": "通話のみ成立余地あり／データ用途は非対応扱い。実機ではSIM認識と通信可否を分離して検証",
+      "notes": "LTE B1/B19のドコモ向け構成。位置情報・＋メッセージ・Web/SNS制限など端末機能もドコモの見守り利用を前提に設計。",
+      "sources": [
+        "https://www.docomo.ne.jp/product/sk41d/",
+        "https://www.docomo.ne.jp/product/sk41d/spec.html",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf",
+        "https://www.docomo.ne.jp/charge/kidskeitaiplan-3/"
+      ],
+      "docomo_official_other_mno_check": {
+        "au": {
+          "voice": "○※",
+          "data": "-"
+        },
+        "softbank": {
+          "voice": "○※",
+          "data": "-"
+        },
+        "rakuten": {
+          "voice": "-",
+          "data": "-"
+        },
+        "source": "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf"
+      },
+      "apn_edit": "公式資料で一般向け手動APN画面を再確認できず／未確認",
+      "cross_carrier_practical_status": "他社データ用途は非対応扱い。通話も保証ではない",
+      "monitoring_dependency": "イマドコサーチ等のドコモ側サービスと連携"
+    },
+    {
+      "carrier": "au",
+      "model": "mamorino6",
+      "model_number": "mamorino6",
+      "release_date": "2023-02-10",
+      "sim": "nanoSIM / eSIM（どちらか一方）",
+      "lte_bands": [
+        "B1",
+        "B3",
+        "B18"
+      ],
+      "nr_bands": [],
+      "native_fit": "◎",
+      "fits": {
+        "docomo": "△",
+        "au": "◎",
+        "softbank": "△",
+        "rakuten": "△"
+      },
+      "practical_cross_carrier_use": "原則非推奨",
+      "notes": "auの重要Band B18を含む。B3は楽天と重なるが、位置情報・登録連絡先・＋メッセージ等のキッズ機能はauサービス前提で、他社SIM動作は保証されない。",
+      "sources": [
+        "https://www.au.com/mobile/product/featurephone/mamorino6/spec/",
+        "https://www.au.com/content/dam/au-com/mobile/product/featurephone/mamorino6/pdf/mamorino6_syuuhasu.pdf"
+      ],
+      "apn_edit": "一般利用者向け手動APN画面は公式資料で未確認",
+      "cross_carrier_practical_status": "Bandが重なっても他社利用は原則非推奨",
+      "monitoring_dependency": "auの位置確認・登録連絡先などのキッズ機能前提"
+    },
+    {
+      "carrier": "SoftBank",
+      "model": "キッズフォン4",
+      "model_number": "Kids Phone 4",
+      "release_date": "2026-02-20",
+      "sim": "eSIM",
+      "lte_bands": [
+        "B1",
+        "B3",
+        "B8",
+        "B41"
+      ],
+      "nr_bands": [],
+      "native_fit": "◎",
+      "fits": {
+        "docomo": "△",
+        "au": "△",
+        "softbank": "◎",
+        "rakuten": "△"
+      },
+      "practical_cross_carrier_use": "原則非推奨",
+      "notes": "SoftBankの重要Band B8とB41を含む。B3は楽天と重なるが、専用プラン・位置ナビ・登録先制限・Web/アプリ制限を含めSoftBank運用前提。",
+      "sources": [
+        "https://www.softbank.jp/mobile/products/mimamorimobile/kids-phone4/",
+        "https://www.softbank.jp/mobile/set/common/pdf/products/kids-phone4/spectrum.pdf",
+        "https://www.softbank.jp/mobile/support/manual/mimamori-keitai/kids-phone4/detail/191826/",
+        "https://www.softbank.jp/mobile/service/security/ichinavi/"
+      ],
+      "apn_edit": "確認済み（管理者設定 → ネットワーク → APN設定）",
+      "cross_carrier_practical_status": "APN編集は可能だが他社eSIM/IMS/見守りの成立は別問題",
+      "monitoring_dependency": "位置ナビ、登録済み宛先などSoftBankサービスと強く連携"
+    },
+    {
+      "carrier": "SoftBank",
+      "model": "キッズフォン3",
+      "model_number": "Kids Phone 3",
+      "release_date": "2023-01-27",
+      "sim": "eSIM",
+      "lte_bands": [
+        "B1",
+        "B3",
+        "B8",
+        "B41"
+      ],
+      "nr_bands": [],
+      "native_fit": "◎",
+      "fits": {
+        "docomo": "△",
+        "au": "△",
+        "softbank": "◎",
+        "rakuten": "△"
+      },
+      "practical_cross_carrier_use": "原則非推奨",
+      "notes": "LTE B1/B3/B8/B41。周波数上の重なりだけでは、位置情報・通話先制限・専用サービスが他社で使えることを意味しない。",
+      "sources": [
+        "https://www.softbank.jp/corp/news/press/sbkk/2022/20221215_01/",
+        "https://www.softbank.jp/mobile/set/common/pdf/products/kids-phone3/spectrum.pdf",
+        "https://www.softbank.jp/mobile/products/mimamorimobile/kids-phone3/",
+        "https://www.softbank.jp/mobile/support/manual/mimamori-keitai/kids-phone3/detail/67586/",
+        "https://www.softbank.jp/mobile/service/security/ichinavi/"
+      ],
+      "apn_edit": "確認済み（管理者設定 → 本体設定 → APN設定）",
+      "cross_carrier_practical_status": "APN編集は可能だが他社eSIM/IMS/見守りの成立は別問題",
+      "monitoring_dependency": "位置ナビ。保護者側の契約/設定条件あり"
+    },
+    {
+      "carrier": "NTTドコモ",
+      "model": "キッズケータイ SH-03M",
+      "model_number": "SH-03M",
+      "release_date": "2020-01-17",
+      "sim": "eSIM",
+      "lte_bands": [
+        "B1",
+        "B19"
+      ],
+      "nr_bands": [],
+      "native_fit": "◎",
+      "fits": {
+        "docomo": "◎",
+        "au": "△",
+        "softbank": "△",
+        "rakuten": "×"
+      },
+      "practical_cross_carrier_use": "旧世代も他社データ用途は非対応扱い",
+      "notes": "ドコモ公式の他事業者動作表ではau/SoftBank通話○※・データ-、楽天は通話/データ-。",
+      "apn_edit": "公式資料で一般向け手動APN画面を再確認できず／未確認",
+      "monitoring_dependency": "イマドコサーチ等のドコモ側サービスと連携",
+      "sources": [
+        "https://www.docomo.ne.jp/support/product/sh03m/spec.html",
+        "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf",
+        "https://www.docomo.ne.jp/charge/kidskeitaiplan-3/"
+      ],
+      "docomo_official_other_mno_check": {
+        "au": {
+          "voice": "○※",
+          "data": "-"
+        },
+        "softbank": {
+          "voice": "○※",
+          "data": "-"
+        },
+        "rakuten": {
+          "voice": "-",
+          "data": "-"
+        },
+        "source": "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf"
+      },
+      "cross_carrier_practical_status": "旧世代も他社データ用途は非対応扱い"
+    }
+  ],
+  "feature_phones": [
+    {
+      "carrier": "NTTドコモ",
+      "model": "らくらくホン F-41F",
+      "model_number": "F-41F",
+      "release_date": "2025-08-07",
+      "sim": "nanoSIM",
+      "lte_bands": [
+        "B1",
+        "B3",
+        "B19"
+      ],
+      "nr_bands": [],
+      "fits": {
+        "docomo": "◎",
+        "au": "△",
+        "softbank": "△",
+        "rakuten": "△"
+      },
+      "practical_cross_carrier_use": "原則非推奨",
+      "notes": "ドコモB19対応。au B18/26とSoftBank B8は非対応。楽天B3は周波数上重なるがVoLTE/IMS・APN・動作確認は別条件。",
+      "sources": [
+        "https://www.docomo.ne.jp/product/f41f/spec.html"
+      ]
+    },
+    {
+      "carrier": "NTTドコモ",
+      "model": "DIGNO ケータイ KY-42C",
+      "model_number": "KY-42C",
+      "release_date": "2023-03-10",
+      "sim": "nanoSIM",
+      "lte_bands": [
+        "B1",
+        "B3",
+        "B19"
+      ],
+      "nr_bands": [],
+      "fits": {
+        "docomo": "◎",
+        "au": "△",
+        "softbank": "△",
+        "rakuten": "△"
+      },
+      "practical_cross_carrier_use": "原則非推奨",
+      "notes": "LTE B1/B3/B19、VoLTE。B3だけ見れば楽天と重なるが、通話にはIMS/VoLTE条件があり、他社SIM利用を保証しない。",
+      "sources": [
+        "https://www.docomo.ne.jp/product/ky42c/spec.html"
+      ]
+    },
+    {
+      "carrier": "NTTドコモ",
+      "model": "arrows ケータイ ベーシック F-41C",
+      "model_number": "F-41C",
+      "release_date": "2022-05-13",
+      "sim": "nanoSIM",
+      "lte_bands": [
+        "B1",
+        "B19"
+      ],
+      "nr_bands": [],
+      "fits": {
+        "docomo": "◎",
+        "au": "△",
+        "softbank": "△",
+        "rakuten": "×"
+      },
+      "practical_cross_carrier_use": "原則非推奨",
+      "notes": "LTE B1/B19。楽天の主要LTE B3を欠く。3G表記があっても、現在の他社相性はLTE/VoLTEを中心に判断する。",
+      "sources": [
+        "https://www.docomo.ne.jp/support/product/f41c/spec.html"
+      ]
+    },
+    {
+      "carrier": "au",
+      "model": "かんたんケータイ ライト KYF43",
+      "model_number": "KYF43",
+      "release_date": "2021-11-19",
+      "sim": "nanoSIM系（契約SIM仕様を確認）",
+      "lte_bands": [
+        "B1",
+        "B3",
+        "B18"
+      ],
+      "nr_bands": [],
+      "fits": {
+        "docomo": "△",
+        "au": "◎",
+        "softbank": "△",
+        "rakuten": "△"
+      },
+      "practical_cross_carrier_use": "原則非推奨",
+      "notes": "auの重要LTE B18に対応。ドコモB19、SoftBank B8は非対応。B3は楽天と重なるが通話・APN・サービス動作は別。",
+      "sources": [
+        "https://www.au.com/content/dam/au-com/mobile/product/featurephone/kyf43/pdf/kyf43_syuuhasu.pdf"
+      ]
+    },
+    {
+      "carrier": "au",
+      "model": "G’zOne TYPE-XX",
+      "model_number": "KYY31",
+      "release_date": "2021-12-10",
+      "sim": "au ICカード系",
+      "lte_bands": [
+        "B1",
+        "B3",
+        "B18"
+      ],
+      "nr_bands": [],
+      "fits": {
+        "docomo": "△",
+        "au": "◎",
+        "softbank": "△",
+        "rakuten": "△"
+      },
+      "practical_cross_carrier_use": "原則非推奨",
+      "notes": "LTE B1/B3/B18。Bandが重なる他社でも、VoLTE/IMS・APN・キャリア独自機能を含む実用性は別確認が必要。",
+      "sources": [
+        "https://www.au.com/content/dam/au-com/mobile/product/featurephone/gzone_type_xx/pdf/gzone_type_xx_syuuhasu.pdf"
+      ]
+    },
+    {
+      "carrier": "SoftBank",
+      "model": "DIGNO ケータイ4",
+      "model_number": "DIGNO Keitai 4",
+      "release_date": "2022",
+      "sim": "nanoUSIM系",
+      "lte_bands": [
+        "B1",
+        "B3",
+        "B8"
+      ],
+      "nr_bands": [],
+      "fits": {
+        "docomo": "△",
+        "au": "△",
+        "softbank": "◎",
+        "rakuten": "△"
+      },
+      "practical_cross_carrier_use": "原則非推奨",
+      "notes": "SoftBankの重要LTE B8に対応。ドコモB19、au B18/26を欠く。楽天B3は重なるがVoLTE/IMS等は別条件。",
+      "sources": [
+        "https://www.softbank.jp/mobile/set/common/pdf/products/digno-keitai4/spectrum.pdf"
+      ]
+    },
+    {
+      "carrier": "SoftBank",
+      "model": "AQUOS ケータイ4",
+      "model_number": "AQUOS Keitai 4",
+      "release_date": "2022",
+      "sim": "nanoUSIM系",
+      "lte_bands": [
+        "B1",
+        "B3",
+        "B8"
+      ],
+      "nr_bands": [],
+      "fits": {
+        "docomo": "△",
+        "au": "△",
+        "softbank": "◎",
+        "rakuten": "△"
+      },
+      "practical_cross_carrier_use": "原則非推奨",
+      "notes": "SoftBank向けB8を備える4Gケータイ。Band一致だけで他社音声通話・SMS・APN動作を保証しない。",
+      "sources": [
+        "https://www.softbank.jp/mobile/set/common/pdf/products/aquos-keitai4/spectrum.pdf"
+      ]
+    }
+  ],
+  "rakuten_positioning": {
+    "kids": "Current official kids offer is smartphone-based: Rakuten-compatible iPhone/Android plus 最強こども割 and filtering/location features.",
+    "garakei": "Rakuten official FAQ states conventional garakei are not compatible with Rakuten network as-is.",
+    "sources": [
+      "https://network.mobile.rakuten.co.jp/fee/kids/",
+      "https://network.mobile.rakuten.co.jp/faq/detail/10001147/"
+    ]
+  },
+  "home_routers": [
+    {
+      "carrier": "NTTドコモ",
+      "model": "home 5G HR02",
+      "model_number": "HR02",
+      "release_date": "2023-03-07",
+      "sim": "nanoSIM",
+      "lte_bands": [
+        "B1",
+        "B3",
+        "B19",
+        "B21",
+        "B42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n78",
+        "n79"
+      ],
+      "fits": {
+        "docomo": "◎",
+        "au": "△",
+        "softbank": "△",
+        "rakuten": "△"
+      },
+      "practical_cross_carrier_use": "×（home 5G契約・登録住所前提）",
+      "service_binding": "home 5Gプランが必要。登録設置場所住所での利用が前提。",
+      "notes": "ドコモB19/B21とn79を含む。Bandが他社と一部重なっても、一般的なSIMフリールーターとしての他社SIM運用を想定しない。",
+      "sources": [
+        "https://www.docomo.ne.jp/home_5g/hr02/spec.html",
+        "https://www.docomo.ne.jp/home_5g/",
+        "https://www.docomo.ne.jp/english/home_5g/"
+      ]
+    },
+    {
+      "carrier": "au / UQ WiMAX",
+      "model": "Speed Wi-Fi HOME 5G L13",
+      "model_number": "ZTR02",
+      "release_date": "2023",
+      "sim": "nanoSIM・SIMロックなし",
+      "lte_bands": [
+        "B1",
+        "B3",
+        "B18",
+        "B41"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78"
+      ],
+      "fits": {
+        "docomo": "△",
+        "au": "◎",
+        "softbank": "△",
+        "rakuten": "○"
+      },
+      "practical_cross_carrier_use": "△（Bandは重なるが他社SIM動作保証なし）",
+      "service_binding": "auは他社SIM利用時の動作・サービスを保証しない。契約/APN/プロファイルを個別確認。",
+      "notes": "楽天B3/n77とはBandレベルで相性が良いが、au公式は他社SIMの動作を保証していない。ドコモB19/n79、SoftBank B8は非対応。",
+      "sources": [
+        "https://www.au.com/mobile/product/data/ztr02/spec/",
+        "https://www.au.com/content/dam/au-com/mobile/product/data/ztr02/pdf/ztr02_syuuhasu.pdf"
+      ]
+    },
+    {
+      "carrier": "SoftBank",
+      "model": "Airターミナル6",
+      "model_number": "Air Terminal 6",
+      "release_date": "2024",
+      "sim": "SoftBank Air専用サービス",
+      "lte_bands": [
+        "B1",
+        "B41相当（AXGP 2.5GHz）",
+        "B42相当（TDD-LTE 3.5GHz）"
+      ],
+      "nr_bands": [
+        "n77"
+      ],
+      "fits": {
+        "docomo": "△",
+        "au": "△",
+        "softbank": "◎",
+        "rakuten": "△"
+      },
+      "practical_cross_carrier_use": "×（SoftBank Air専用・登録住所前提）",
+      "service_binding": "SoftBank Air契約と登録設置場所住所での利用が前提。登録住所以外は利用停止対象。",
+      "notes": "5G n77、4GはAXGP 2.5GHz・TDD-LTE 3.5GHz・FDD-LTE 2.1GHz。一般的な他社SIM差し替え運用ではなくサービス一体型。",
+      "sources": [
+        "https://www.softbank.jp/support/faq/view/195409",
+        "https://www.softbank.jp/support/faq/view/20635"
+      ]
+    },
+    {
+      "carrier": "楽天モバイル",
+      "model": "Rakuten Turbo 5G",
+      "model_number": "Rakuten Turbo 5G",
+      "release_date": "2023",
+      "sim": "nanoSIM",
+      "lte_bands": [
+        "B3"
+      ],
+      "nr_bands": [
+        "n77"
+      ],
+      "fits": {
+        "docomo": "△",
+        "au": "○",
+        "softbank": "○",
+        "rakuten": "◎"
+      },
+      "practical_cross_carrier_use": "×（Rakuten Turbo専用・登録住所前提）",
+      "service_binding": "Rakuten Turbo契約・登録設置先住所での利用が前提。設置先以外では利用できない。",
+      "notes": "B3+n77という絞った構成。au/SoftBankと一部Bandは重なるが、専用ホームルーターサービスとしての利用条件が優先。",
+      "sources": [
+        "https://network.mobile.rakuten.co.jp/internet/turbo/product/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/10000673/"
+      ]
+    }
+  ]
+}

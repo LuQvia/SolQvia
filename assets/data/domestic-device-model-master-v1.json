@@ -1,0 +1,5383 @@
+{
+  "schema_version": "2.1",
+  "checked_at": "2026-08-08",
+  "counts": {
+    "unique_device_models": 246,
+    "carrier_sale_records": 515
+  },
+  "models": [
+    {
+      "id": "281173a07a84",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold8 Ultra",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-56G",
+          "release_date": "2026-08-07"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2026-08-07"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2026-08-07"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2026-08-07"
+        }
+      ],
+      "first_release_date": "2026-08-07",
+      "detail_status": "phase75_2026_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/galaxy-z-fold8-ultra-au-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-z-fold8-ultra-rakuten-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-z-fold8-ultra-softbank-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/sc-56g-docomo-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "01c2f35a1210",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold8",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-57G",
+          "release_date": "2026-08-07"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2026-08-07"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2026-08-07"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2026-08-07"
+        }
+      ],
+      "first_release_date": "2026-08-07",
+      "detail_status": "phase75_2026_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/galaxy-z-fold8-au-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-z-fold8-rakuten-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-z-fold8-softbank-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/sc-57g-docomo-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "f501b3e82b15",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Flip8",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-55G",
+          "release_date": "2026-08-07"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2026-08-07"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2026-08-07"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2026-08-07"
+        }
+      ],
+      "first_release_date": "2026-08-07",
+      "detail_status": "phase75_2026_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/galaxy-z-flip8-au-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-z-flip8-rakuten-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-z-flip8-softbank-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/sc-55g-docomo-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "6dbfe732d066",
+      "brand": "Motorola",
+      "model_name": "moto g37j",
+      "detail_status": "phase75_2026_android_band_verified",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2026-07-31"
+        }
+      ],
+      "first_release_date": "2026-07-31",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/moto-g37j-rakuten-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "8aac495b7d29",
+      "brand": "Motorola",
+      "model_name": "moto g37",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2026-07-31"
+        }
+      ],
+      "first_release_date": "2026-07-31",
+      "detail_status": "phase75_2026_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/moto-g37-softbank-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "3ff2ed38051e",
+      "brand": "SHARP",
+      "model_name": "AQUOS R11",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-51G",
+          "release_date": "2026-07-09"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2026-07-09"
+        }
+      ],
+      "first_release_date": "2026-07-09",
+      "detail_status": "phase75_2026_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/aquos-r11-softbank-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/sh-51g-docomo-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "1bf5a8d9db00",
+      "brand": "OPPO",
+      "model_name": "OPPO Reno15 A",
+      "detail_status": "phase75_2026_android_band_verified",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2026-06-25"
+        }
+      ],
+      "first_release_date": "2026-06-25",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/oppo-reno15-a-rakuten-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "5ef5a6a85668",
+      "brand": "FCNT",
+      "model_name": "arrows We3",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "F-52G",
+          "release_date": "2026-06-25"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2026-06-25"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2026-06-25"
+        }
+      ],
+      "first_release_date": "2026-06-25",
+      "detail_status": "phase75_2026_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/arrows-we3-au-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/arrows-we3-rakuten-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/f-52g-docomo-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "49dab4045934",
+      "brand": "Sony",
+      "model_name": "Xperia 1 VIII",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-51G",
+          "release_date": "2026-06-11"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2026-06-11"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2026-06-11"
+        }
+      ],
+      "first_release_date": "2026-06-11",
+      "detail_status": "phase75_2026_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/so-51g-docomo-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/xperia-1-viii-au-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/xperia-1-viii-softbank-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "4d32f2bca0dc",
+      "brand": "Brain AI Japan",
+      "model_name": "Natural AI Phone",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2026-04-24"
+        }
+      ],
+      "first_release_date": "2026-04-24",
+      "detail_status": "phase75_2026_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/natural-ai-phone-softbank-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "5835c88d6680",
+      "brand": "Samsung",
+      "model_name": "Galaxy A57 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-54G",
+          "release_date": "2026-04-23"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2026-04-23"
+        }
+      ],
+      "first_release_date": "2026-04-23",
+      "detail_status": "phase75_2026_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/galaxy-a57-5g-softbank-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/sc-54g-docomo-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "f4bae3e36cc4",
+      "brand": "Nothing",
+      "model_name": "Phone (4a) Pro",
+      "detail_status": "phase75_2026_android_band_verified",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2026-04-22"
+        }
+      ],
+      "first_release_date": "2026-04-22",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/phone-4a-pro-rakuten-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "84b82275637b",
+      "brand": "Google",
+      "model_name": "Google Pixel 10a",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2026-04-14"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2026-04-14"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2026-04-14"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2026-04-14"
+        }
+      ],
+      "first_release_date": "2026-04-14",
+      "detail_status": "phase75_2026_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-10a-au-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-10a-docomo-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-10a-rakuten-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-10a-softbank-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "b6568cb5c3ec",
+      "brand": "KYOCERA",
+      "model_name": "TORQUE G07",
+      "detail_status": "phase75_2026_android_band_verified",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2026-03-18"
+        }
+      ],
+      "first_release_date": "2026-03-18",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/torque-g07-au-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "cc69525a4963",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26+",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-52G",
+          "release_date": "2026-03-12"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2026-03-12"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2026-03-12"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2026-03-12"
+        }
+      ],
+      "first_release_date": "2026-03-12",
+      "detail_status": "phase75_2026_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/galaxy-s26-plus-au-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-s26-plus-rakuten-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-s26-plus-softbank-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/sc-52g-docomo-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "7261fd8baa3f",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26 Ultra",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-53G",
+          "release_date": "2026-03-12"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2026-03-12"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2026-03-12"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2026-03-12"
+        }
+      ],
+      "first_release_date": "2026-03-12",
+      "detail_status": "phase75_2026_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/galaxy-s26-ultra-au-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-s26-ultra-rakuten-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-s26-ultra-softbank-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/sc-53g-docomo-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "a526c3bf1ad8",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-51G",
+          "release_date": "2026-03-12"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2026-03-12"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2026-03-12"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2026-03-12"
+        }
+      ],
+      "first_release_date": "2026-03-12",
+      "detail_status": "phase75_2026_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/galaxy-s26-au-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-s26-rakuten-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-s26-softbank-2026-carrier-compatibility/",
+        "/ja/technology/smartphone/sc-51g-docomo-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "b15d36fa7ad3",
+      "brand": "Apple",
+      "model_name": "iPhone 17e",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2026-03-11"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2026-03-11"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2026-03-11"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2026-03-11"
+        }
+      ],
+      "first_release_date": "2026-03-11",
+      "detail_status": "phase76_2026_iphone17e_region_band_verified",
+      "japan_model_number": "A3575",
+      "compatibility_article": "/ja/technology/smartphone/iphone-17e-2026-japan-region-esim-band-carrier-compatibility/",
+      "compatibility_hub": "/ja/technology/smartphone/device-compatibility/"
+    },
+    {
+      "id": "de0eba6515dd",
+      "brand": "FCNT",
+      "model_name": "らくらくスマートフォン Lite",
+      "detail_status": "phase75_2026_android_band_verified",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2026-01-23"
+        }
+      ],
+      "first_release_date": "2026-01-23",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/rakuraku-smartphone-lite-au-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "bb51a6952765",
+      "brand": "Nothing",
+      "model_name": "Phone (3a) Lite",
+      "detail_status": "phase75_2026_android_band_verified",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2026-01-15"
+        }
+      ],
+      "first_release_date": "2026-01-15",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/phone-3a-lite-rakuten-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "4dd590cad0c3",
+      "brand": "OPPO",
+      "model_name": "OPPO Find X9",
+      "detail_status": "phase73_2025_android_band_verified",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-12-23"
+        }
+      ],
+      "first_release_date": "2025-12-23",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/oppo-find-x9-au-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "aceffd51a429",
+      "brand": "Xiaomi",
+      "model_name": "REDMI 15 5G",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-12-19"
+        }
+      ],
+      "first_release_date": "2025-12-19",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/redmi-15-5g-softbank-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "36ee412990d5",
+      "brand": "KYOCERA",
+      "model_name": "DIGNO BX3 カメラレス",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-12-18"
+        }
+      ],
+      "first_release_date": "2025-12-18",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/digno-bx3-softbank-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "406725af577e",
+      "brand": "Motorola",
+      "model_name": "motorola razr 60 ultra",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-12-12"
+        }
+      ],
+      "first_release_date": "2025-12-12",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/motorola-razr-60-ultra-au-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "cfe6cdae2137",
+      "brand": "ZTE",
+      "model_name": "nubia S2R",
+      "detail_status": "phase73_2025_android_band_verified",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-12-04"
+        }
+      ],
+      "first_release_date": "2025-12-04",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/nubia-s2r-rakuten-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "fc802c77cd5d",
+      "brand": "OPPO",
+      "model_name": "OPPO A5 5G",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-12-04"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-12-04"
+        }
+      ],
+      "first_release_date": "2025-12-04",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/oppo-a5-5g-au-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/oppo-a5-5g-rakuten-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "d963b70120aa",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense10",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-53F",
+          "release_date": "2025-11-13"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-11-13"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-11-13"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-11-13"
+        }
+      ],
+      "first_release_date": "2025-11-13",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/aquos-sense10-au-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/aquos-sense10-rakuten-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/aquos-sense10-softbank-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/sh-53f-docomo-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "24156e54eed8",
+      "brand": "Motorola",
+      "model_name": "motorola razr 60s",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-10-10"
+        }
+      ],
+      "first_release_date": "2025-10-10",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/motorola-razr-60s-softbank-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "8228d582885f",
+      "brand": "Motorola",
+      "model_name": "motorola razr 60d",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "M-51F",
+          "release_date": "2025-10-10"
+        }
+      ],
+      "first_release_date": "2025-10-10",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/m-51f-docomo-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "fd0d5ccd1bd1",
+      "brand": "Sony",
+      "model_name": "Xperia 10 VII",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-52F",
+          "release_date": "2025-10-09"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-10-09"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-10-09"
+        }
+      ],
+      "first_release_date": "2025-10-09",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/so-52f-docomo-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/xperia-10-vii-au-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/xperia-10-vii-softbank-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "c6aa969fe2c9",
+      "brand": "Google",
+      "model_name": "Google Pixel 10 Pro Fold",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2025-10-09"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-10-09"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-10-09"
+        }
+      ],
+      "first_release_date": "2025-10-09",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-10-pro-fold-au-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-10-pro-fold-docomo-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-10-pro-fold-softbank-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "d6a9feb8a4fb",
+      "brand": "Apple",
+      "model_name": "iPhone Air",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        }
+      ],
+      "first_release_date": "2025-09-19",
+      "detail_status": "phase74_2025_iphone_region_band_verified",
+      "japan_model_number": "A3516",
+      "compatibility_article": "/ja/technology/smartphone/iphone-air-2025-japan-region-esim-band-carrier-compatibility/",
+      "compatibility_hub": "/ja/technology/smartphone/2025-iphone-region-esim-band-compatibility/"
+    },
+    {
+      "id": "a14b8628bd96",
+      "brand": "Apple",
+      "model_name": "iPhone 17 Pro Max",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        }
+      ],
+      "first_release_date": "2025-09-19",
+      "detail_status": "phase74_2025_iphone_region_band_verified",
+      "japan_model_number": "A3525",
+      "compatibility_article": "/ja/technology/smartphone/iphone-17-pro-max-2025-japan-region-esim-band-carrier-compatibility/",
+      "compatibility_hub": "/ja/technology/smartphone/2025-iphone-region-esim-band-compatibility/"
+    },
+    {
+      "id": "1cbc3072a901",
+      "brand": "Apple",
+      "model_name": "iPhone 17 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        }
+      ],
+      "first_release_date": "2025-09-19",
+      "detail_status": "phase74_2025_iphone_region_band_verified",
+      "japan_model_number": "A3522",
+      "compatibility_article": "/ja/technology/smartphone/iphone-17-pro-2025-japan-region-esim-band-carrier-compatibility/",
+      "compatibility_hub": "/ja/technology/smartphone/2025-iphone-region-esim-band-compatibility/"
+    },
+    {
+      "id": "8c6ef4e9593d",
+      "brand": "Apple",
+      "model_name": "iPhone 17",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-09-19"
+        }
+      ],
+      "first_release_date": "2025-09-19",
+      "detail_status": "phase74_2025_iphone_region_band_verified",
+      "japan_model_number": "A3519",
+      "compatibility_article": "/ja/technology/smartphone/iphone-17-2025-japan-region-esim-band-carrier-compatibility/",
+      "compatibility_hub": "/ja/technology/smartphone/2025-iphone-region-esim-band-compatibility/"
+    },
+    {
+      "id": "882e10309d9d",
+      "brand": "Nothing",
+      "model_name": "Phone (3)",
+      "detail_status": "phase73_2025_android_band_verified",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-08-28"
+        }
+      ],
+      "first_release_date": "2025-08-28",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/phone-3-rakuten-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "e3e33b93873f",
+      "brand": "Google",
+      "model_name": "Google Pixel 10 Pro XL",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2025-08-28"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-08-28"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-08-28"
+        }
+      ],
+      "first_release_date": "2025-08-28",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-10-pro-xl-au-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-10-pro-xl-docomo-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-10-pro-xl-softbank-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "a0705974bdf2",
+      "brand": "Google",
+      "model_name": "Google Pixel 10 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2025-08-28"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-08-28"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-08-28"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-08-28"
+        }
+      ],
+      "first_release_date": "2025-08-28",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-10-pro-au-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-10-pro-docomo-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-10-pro-rakuten-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-10-pro-softbank-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "9bcfc3897a42",
+      "brand": "Google",
+      "model_name": "Google Pixel 10",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2025-08-28"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-08-28"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-08-28"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-08-28"
+        }
+      ],
+      "first_release_date": "2025-08-28",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-10-au-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-10-docomo-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-10-rakuten-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-10-softbank-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "742312df7495",
+      "brand": "FCNT",
+      "model_name": "arrows Alpha",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "F-51F",
+          "release_date": "2025-08-28"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-11-21"
+        }
+      ],
+      "first_release_date": "2025-08-28",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/arrows-alpha-rakuten-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/f-51f-docomo-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "c96061f9a879",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold7",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-56F",
+          "release_date": "2025-08-01"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-08-01"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-08-01"
+        }
+      ],
+      "first_release_date": "2025-08-01",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/galaxy-z-fold7-au-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-z-fold7-softbank-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/sc-56f-docomo-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "9f5c55a0fec2",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Flip7",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-55F",
+          "release_date": "2025-08-01"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-08-01"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-08-01"
+        }
+      ],
+      "first_release_date": "2025-08-01",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/galaxy-z-flip7-au-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-z-flip7-softbank-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/sc-55f-docomo-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "4e8f0fdd7607",
+      "brand": "Nothing",
+      "model_name": "CMF Phone 2 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-07-24"
+        }
+      ],
+      "first_release_date": "2025-07-24",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/cmf-phone-2-pro-rakuten-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "a6b3bb710951",
+      "brand": "Motorola",
+      "model_name": "motorola edge 60s pro",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-07-11"
+        }
+      ],
+      "first_release_date": "2025-07-11",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/motorola-edge-60s-pro-softbank-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "397373539bae",
+      "brand": "SHARP",
+      "model_name": "AQUOS R10",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-51F",
+          "release_date": "2025-07-10"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-07-10"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2026-01-23"
+        }
+      ],
+      "first_release_date": "2025-07-10",
+      "detail_status": "phase75_2026_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/aquos-r10-rakuten-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "4a9db1b28d9f",
+      "brand": "Samsung",
+      "model_name": "Galaxy A36 5G",
+      "detail_status": "phase73_2025_android_band_verified",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-54F",
+          "release_date": "2025-06-26"
+        }
+      ],
+      "first_release_date": "2025-06-26",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/sc-54f-docomo-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "f3a3f9851504",
+      "brand": "SHARP",
+      "model_name": "AQUOS wish5",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-52F",
+          "release_date": "2025-06-26"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-06-26"
+        }
+      ],
+      "first_release_date": "2025-06-26",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/aquos-wish5-rakuten-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/sh-52f-docomo-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "3bf8da232d71",
+      "brand": "OPPO",
+      "model_name": "OPPO Reno13 A",
+      "detail_status": "phase75_2026_android_band_verified",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-06-26"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2026-07-17"
+        }
+      ],
+      "first_release_date": "2025-06-26",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/oppo-reno13-a-au-2026-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2026-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "4450bb16ec40",
+      "brand": "Sony",
+      "model_name": "Xperia 1 VII",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-51F",
+          "release_date": "2025-06-05"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-06-05"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-06-05"
+        }
+      ],
+      "first_release_date": "2025-06-05",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/so-51f-docomo-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/xperia-1-vii-au-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/xperia-1-vii-softbank-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "1e7525881e39",
+      "brand": "KYOCERA",
+      "model_name": "BASIO active3",
+      "detail_status": "phase73_2025_android_band_verified",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-04-18"
+        }
+      ],
+      "first_release_date": "2025-04-18",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/basio-active3-au-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "8015d8f19cc6",
+      "brand": "Google",
+      "model_name": "Google Pixel 9a",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2025-04-16"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-04-16"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-04-16"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-04-16"
+        }
+      ],
+      "first_release_date": "2025-04-16",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-9a-au-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-9a-docomo-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-9a-rakuten-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-9a-softbank-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "b913a178adcb",
+      "brand": "Nothing",
+      "model_name": "Phone (3a)",
+      "detail_status": "phase73_2025_android_band_verified",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-04-15"
+        }
+      ],
+      "first_release_date": "2025-04-15",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/phone-3a-rakuten-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "0c1d77422c57",
+      "brand": "Apple",
+      "model_name": "iPhone 16e",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2025-02-28"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-02-28"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-02-28"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-02-28"
+        }
+      ],
+      "first_release_date": "2025-02-28",
+      "detail_status": "phase74_2025_iphone_region_band_verified",
+      "japan_model_number": "A3409",
+      "compatibility_article": "/ja/technology/smartphone/iphone-16e-2025-japan-region-esim-band-carrier-compatibility/",
+      "compatibility_hub": "/ja/technology/smartphone/2025-iphone-region-esim-band-compatibility/"
+    },
+    {
+      "id": "82dc1de0dd8b",
+      "brand": "Samsung",
+      "model_name": "Galaxy A25 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-53F",
+          "release_date": "2025-02-27"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-02-27"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-02-27"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2025-11-20"
+        }
+      ],
+      "first_release_date": "2025-02-27",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/galaxy-a25-5g-au-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-a25-5g-rakuten-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-a25-5g-softbank-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/sc-53f-docomo-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "75080cb3713d",
+      "brand": "Samsung",
+      "model_name": "Galaxy S25 Ultra",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-52F",
+          "release_date": "2025-02-14"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-02-14"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-02-14"
+        }
+      ],
+      "first_release_date": "2025-02-14",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/galaxy-s25-ultra-au-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-s25-ultra-softbank-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/sc-52f-docomo-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "d98f9dea181c",
+      "brand": "Samsung",
+      "model_name": "Galaxy S25",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-51F",
+          "release_date": "2025-02-14"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-02-14"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2025-02-14"
+        }
+      ],
+      "first_release_date": "2025-02-14",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/galaxy-s25-au-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/galaxy-s25-softbank-2025-carrier-compatibility/",
+        "/ja/technology/smartphone/sc-51f-docomo-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "65aa5736c000",
+      "brand": "FCNT",
+      "model_name": "らくらくスマートフォン",
+      "detail_status": "phase73_2025_android_band_verified",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "F-53E",
+          "release_date": "2025-01-30"
+        }
+      ],
+      "first_release_date": "2025-01-30",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/f-53e-docomo-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "86e7031ca272",
+      "brand": "Xiaomi",
+      "model_name": "Xiaomi 14T",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "XIG06",
+          "release_date": "2024-12-12"
+        }
+      ],
+      "first_release_date": "2024-12-12",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/xig06-au-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "7235bd5abbfa",
+      "brand": "OPPO",
+      "model_name": "OPPO A3 5G",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2024-12-12"
+        }
+      ],
+      "first_release_date": "2024-12-12",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/oppo-a3-5g-rakuten-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "593445a365c8",
+      "brand": "Motorola",
+      "model_name": "motorola razr 50 ultra",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-12-06"
+        }
+      ],
+      "first_release_date": "2024-12-06",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/motorola-razr-50-ultra-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "ba30cb33a580",
+      "brand": "SHARP",
+      "model_name": "AQUOS R9 pro",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-54E",
+          "release_date": "2024-12-05"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2025-04-18"
+        }
+      ],
+      "first_release_date": "2024-12-05",
+      "detail_status": "phase73_2025_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/aquos-r9-pro-softbank-2025-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2025-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "6329bcb7a1b7",
+      "brand": "Xiaomi",
+      "model_name": "Xiaomi 14T Pro",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-11-29"
+        }
+      ],
+      "first_release_date": "2024-11-29",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/xiaomi-14t-pro-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "19d167e0d2f4",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense9",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-53E",
+          "release_date": "2024-11-07"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-11-07"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SHG14",
+          "release_date": "2024-11-07"
+        }
+      ],
+      "first_release_date": "2024-11-07",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/aquos-sense9-softbank-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/sh-53e-docomo-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/shg14-au-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "c48ccf18e054",
+      "brand": "Motorola",
+      "model_name": "motorola razr 50s",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-09-27"
+        }
+      ],
+      "first_release_date": "2024-09-27",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/motorola-razr-50s-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "94f1db8841da",
+      "brand": "Apple",
+      "model_name": "iPhone 16 Pro Max",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        }
+      ],
+      "first_release_date": "2024-09-20",
+      "detail_status": "phase72_2024_iphone_region_band_verified",
+      "japan_model_number": "A3295",
+      "compatibility_article": "/ja/technology/smartphone/iphone-16-pro-max-2024-japan-region-esim-band-carrier-compatibility/",
+      "compatibility_hub": "/ja/technology/smartphone/2024-iphone-region-esim-band-compatibility/"
+    },
+    {
+      "id": "68814fcf17f8",
+      "brand": "Apple",
+      "model_name": "iPhone 16 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        }
+      ],
+      "first_release_date": "2024-09-20",
+      "detail_status": "phase72_2024_iphone_region_band_verified",
+      "japan_model_number": "A3292",
+      "compatibility_article": "/ja/technology/smartphone/iphone-16-pro-2024-japan-region-esim-band-carrier-compatibility/",
+      "compatibility_hub": "/ja/technology/smartphone/2024-iphone-region-esim-band-compatibility/"
+    },
+    {
+      "id": "2f78862269ba",
+      "brand": "Apple",
+      "model_name": "iPhone 16 Plus",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        }
+      ],
+      "first_release_date": "2024-09-20",
+      "detail_status": "phase72_2024_iphone_region_band_verified",
+      "japan_model_number": "A3289",
+      "compatibility_article": "/ja/technology/smartphone/iphone-16-plus-2024-japan-region-esim-band-carrier-compatibility/",
+      "compatibility_hub": "/ja/technology/smartphone/2024-iphone-region-esim-band-compatibility/"
+    },
+    {
+      "id": "764deb8d4897",
+      "brand": "Apple",
+      "model_name": "iPhone 16",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2024-09-20"
+        }
+      ],
+      "first_release_date": "2024-09-20",
+      "detail_status": "phase72_2024_iphone_region_band_verified",
+      "japan_model_number": "A3286",
+      "compatibility_article": "/ja/technology/smartphone/iphone-16-2024-japan-region-esim-band-carrier-compatibility/",
+      "compatibility_hub": "/ja/technology/smartphone/2024-iphone-region-esim-band-compatibility/"
+    },
+    {
+      "id": "5370de0c7e8c",
+      "brand": "Google",
+      "model_name": "Google Pixel 9 Pro Fold",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2024-09-04"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-09-04"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2024-09-04"
+        }
+      ],
+      "first_release_date": "2024-09-04",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-9-pro-fold-au-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-9-pro-fold-docomo-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-9-pro-fold-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "2fe90ef03216",
+      "brand": "Google",
+      "model_name": "Google Pixel 9 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2024-09-04"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-09-04"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2024-09-04"
+        }
+      ],
+      "first_release_date": "2024-09-04",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-9-pro-au-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-9-pro-docomo-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-9-pro-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "cf1c25309bca",
+      "brand": "Google",
+      "model_name": "Google Pixel 9 Pro XL",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2024-08-22"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-08-22"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2024-08-22"
+        }
+      ],
+      "first_release_date": "2024-08-22",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-9-pro-xl-au-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-9-pro-xl-docomo-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-9-pro-xl-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "ba6e4c43f103",
+      "brand": "Google",
+      "model_name": "Google Pixel 9",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2024-08-22"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-08-22"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2024-08-22"
+        }
+      ],
+      "first_release_date": "2024-08-22",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-9-au-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-9-docomo-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-9-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "00c0e51a09aa",
+      "brand": "FCNT",
+      "model_name": "arrows We2 Plus",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "F-51E",
+          "release_date": "2024-08-16"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2024-10-15"
+        }
+      ],
+      "first_release_date": "2024-08-16",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/arrows-we2-plus-rakuten-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/f-51e-docomo-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "b70af565c9a1",
+      "brand": "FCNT",
+      "model_name": "arrows We2",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "F-52E",
+          "release_date": "2024-08-16"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "FCG02",
+          "release_date": "2024-08-16"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2024-10-15"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-12-06"
+        }
+      ],
+      "first_release_date": "2024-08-16",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/arrows-we2-rakuten-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/arrows-we2-softbank-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/f-52e-docomo-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/fcg02-au-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "921fa86c4e98",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold6",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-55E",
+          "release_date": "2024-07-31"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG28",
+          "release_date": "2024-07-31"
+        }
+      ],
+      "first_release_date": "2024-07-31",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/sc-55e-docomo-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/scg28-au-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "88dd6657e1b2",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Flip6",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-54E",
+          "release_date": "2024-07-31"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG29",
+          "release_date": "2024-07-31"
+        }
+      ],
+      "first_release_date": "2024-07-31",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/sc-54e-docomo-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/scg29-au-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "4774ff9d9c1e",
+      "brand": "SHARP",
+      "model_name": "AQUOS R9",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-51E",
+          "release_date": "2024-07-12"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-07-12"
+        }
+      ],
+      "first_release_date": "2024-07-12",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/aquos-r9-softbank-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/sh-51e-docomo-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "bf6eb85c9469",
+      "brand": "Motorola",
+      "model_name": "motorola edge 50s pro",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-07-12"
+        }
+      ],
+      "first_release_date": "2024-07-12",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/motorola-edge-50s-pro-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "7832f9a3a961",
+      "brand": "Sony",
+      "model_name": "Xperia 10 VI",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-52E",
+          "release_date": "2024-07-05"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-07-05"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SOG14",
+          "release_date": "2024-07-05"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2024-07-05"
+        }
+      ],
+      "first_release_date": "2024-07-05",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/so-52e-docomo-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/sog14-au-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/xperia-10-vi-rakuten-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/xperia-10-vi-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "c74ebdd36564",
+      "brand": "SHARP",
+      "model_name": "シンプルスマホ7",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-07-05"
+        }
+      ],
+      "first_release_date": "2024-07-05",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/simple-smartphone-7-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "4bae1ff554f7",
+      "brand": "SHARP",
+      "model_name": "AQUOS wish4",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-52E",
+          "release_date": "2024-07-04"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2024-07-04"
+        }
+      ],
+      "first_release_date": "2024-07-04",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/aquos-wish4-rakuten-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/sh-52e-docomo-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "e14428ea87fd",
+      "brand": "OPPO",
+      "model_name": "OPPO Reno11 A",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2024-06-27"
+        }
+      ],
+      "first_release_date": "2024-06-27",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/oppo-reno11-a-rakuten-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "12ba522022be",
+      "brand": "Sony",
+      "model_name": "Xperia 1 VI",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-51E",
+          "release_date": "2024-06-07"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-06-07"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SOG13",
+          "release_date": "2024-06-07"
+        }
+      ],
+      "first_release_date": "2024-06-07",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/so-51e-docomo-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/sog13-au-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/xperia-1-vi-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "e5d0f3f4f7fc",
+      "brand": "Samsung",
+      "model_name": "Galaxy A55 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-53E",
+          "release_date": "2024-05-30"
+        }
+      ],
+      "first_release_date": "2024-05-30",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/sc-53e-docomo-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "fd808a11cedf",
+      "brand": "Google",
+      "model_name": "Google Pixel 8a",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2024-05-14"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-05-14"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2024-05-14"
+        }
+      ],
+      "first_release_date": "2024-05-14",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-8a-au-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-8a-docomo-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-8a-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "a13bd1c7bb88",
+      "brand": "Xiaomi",
+      "model_name": "Redmi 12 5G",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-04-25"
+        }
+      ],
+      "first_release_date": "2024-04-25",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/redmi-12-5g-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "857c0e26ad18",
+      "brand": "Leica",
+      "model_name": "LEITZ PHONE 3",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-04-19"
+        }
+      ],
+      "first_release_date": "2024-04-19",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/leitz-phone-3-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "dd1e018df1ac",
+      "brand": "Samsung",
+      "model_name": "Galaxy S24 Ultra",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-52E",
+          "release_date": "2024-04-11"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG26",
+          "release_date": "2024-04-11"
+        }
+      ],
+      "first_release_date": "2024-04-11",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/sc-52e-docomo-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/scg26-au-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "d83103ccf026",
+      "brand": "Samsung",
+      "model_name": "Galaxy S24",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-51E",
+          "release_date": "2024-04-11"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG25",
+          "release_date": "2024-04-11"
+        }
+      ],
+      "first_release_date": "2024-04-11",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/sc-51e-docomo-2024-carrier-compatibility/",
+        "/ja/technology/smartphone/scg25-au-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "c00baefc3f91",
+      "brand": "SHARP",
+      "model_name": "すみっコぐらしスマホ",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-03-08"
+        }
+      ],
+      "first_release_date": "2024-03-08",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/sumikko-gurashi-smartphone-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "9bb5ae782761",
+      "brand": "KYOCERA",
+      "model_name": "DuraForce EX",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-03-01"
+        }
+      ],
+      "first_release_date": "2024-03-01",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/duraforce-ex-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "84b10f3d6afe",
+      "brand": "OPPO",
+      "model_name": "OPPO A79 5G",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2024-02-15"
+        }
+      ],
+      "first_release_date": "2024-02-15",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/oppo-a79-5g-rakuten-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "d8898af17d40",
+      "brand": "ZTE",
+      "model_name": "あんしんファミリースマホ",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2024-02-09"
+        }
+      ],
+      "first_release_date": "2024-02-09",
+      "detail_status": "phase71_2024_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/anshin-family-smartphone-softbank-2024-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2024-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "da1102d17250",
+      "brand": "Xiaomi",
+      "model_name": "Xiaomi 13T Pro",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-12-08"
+        }
+      ],
+      "first_release_date": "2023-12-08",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/xiaomi-13t-pro-softbank-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "ffa918db2889",
+      "brand": "Xiaomi",
+      "model_name": "Xiaomi 13T",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "XIG04",
+          "release_date": "2023-12-08"
+        }
+      ],
+      "first_release_date": "2023-12-08",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/xig04-au-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "4983ea735e77",
+      "brand": "Motorola",
+      "model_name": "motorola razr 40s",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-12-08"
+        }
+      ],
+      "first_release_date": "2023-12-08",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/motorola-razr-40s-softbank-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "9c0c00d755c3",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense8",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-54D",
+          "release_date": "2023-11-09"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SHG11",
+          "release_date": "2023-11-09"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2023-11-09"
+        }
+      ],
+      "first_release_date": "2023-11-09",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/aquos-sense8-rakuten-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/sh-54d-docomo-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/shg11-au-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "1e9dc4ff7124",
+      "brand": "Sony",
+      "model_name": "Xperia 5 V",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-53D",
+          "release_date": "2023-10-13"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2023-10-13"
+        }
+      ],
+      "first_release_date": "2023-10-13",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/so-53d-docomo-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/xperia-5-v-rakuten-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "79e4b4ead486",
+      "brand": "Google",
+      "model_name": "Google Pixel 8 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2023-10-12"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-10-12"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2023-10-12"
+        }
+      ],
+      "first_release_date": "2023-10-12",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-8-pro-au-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-8-pro-docomo-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-8-pro-softbank-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "03da88b4f688",
+      "brand": "Google",
+      "model_name": "Google Pixel 8",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2023-10-12"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-10-12"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2023-10-12"
+        }
+      ],
+      "first_release_date": "2023-10-12",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-8-au-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-8-docomo-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-8-softbank-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "7de73147c868",
+      "brand": "OPPO",
+      "model_name": "OPPO Reno10 Pro 5G",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-10-06"
+        }
+      ],
+      "first_release_date": "2023-10-06",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/oppo-reno10-pro-5g-softbank-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "aa507ef407d3",
+      "brand": "Apple",
+      "model_name": "iPhone 15 Pro Max",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        }
+      ],
+      "first_release_date": "2023-09-22",
+      "detail_status": "phase70_2023_iphone_region_band_verified",
+      "japan_model_number": "A3105",
+      "compatibility_article": "/ja/technology/smartphone/iphone-15-pro-max-2023-japan-region-esim-band-carrier-compatibility/",
+      "compatibility_hub": "/ja/technology/smartphone/2023-iphone-region-esim-band-compatibility/"
+    },
+    {
+      "id": "9a69c127f650",
+      "brand": "Apple",
+      "model_name": "iPhone 15 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        }
+      ],
+      "first_release_date": "2023-09-22",
+      "detail_status": "phase70_2023_iphone_region_band_verified",
+      "japan_model_number": "A3101",
+      "compatibility_article": "/ja/technology/smartphone/iphone-15-pro-2023-japan-region-esim-band-carrier-compatibility/",
+      "compatibility_hub": "/ja/technology/smartphone/2023-iphone-region-esim-band-compatibility/"
+    },
+    {
+      "id": "2183fb08700c",
+      "brand": "Apple",
+      "model_name": "iPhone 15 Plus",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        }
+      ],
+      "first_release_date": "2023-09-22",
+      "detail_status": "phase70_2023_iphone_region_band_verified",
+      "japan_model_number": "A3093",
+      "compatibility_article": "/ja/technology/smartphone/iphone-15-plus-2023-japan-region-esim-band-carrier-compatibility/",
+      "compatibility_hub": "/ja/technology/smartphone/2023-iphone-region-esim-band-compatibility/"
+    },
+    {
+      "id": "ac5951bba023",
+      "brand": "Apple",
+      "model_name": "iPhone 15",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2023-09-22"
+        }
+      ],
+      "first_release_date": "2023-09-22",
+      "detail_status": "phase70_2023_iphone_region_band_verified",
+      "japan_model_number": "A3089",
+      "compatibility_article": "/ja/technology/smartphone/iphone-15-2023-japan-region-esim-band-carrier-compatibility/",
+      "compatibility_hub": "/ja/technology/smartphone/2023-iphone-region-esim-band-compatibility/"
+    },
+    {
+      "id": "fd6e61bb5e5c",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold5",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-55D",
+          "release_date": "2023-09-01"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG22",
+          "release_date": "2023-09-01"
+        }
+      ],
+      "first_release_date": "2023-09-01",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/sc-55d-docomo-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/scg22-au-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "731d8d345e83",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Flip5",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-54D",
+          "release_date": "2023-09-01"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG23",
+          "release_date": "2023-09-01"
+        }
+      ],
+      "first_release_date": "2023-09-01",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/sc-54d-docomo-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/scg23-au-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "5fcc035e645e",
+      "brand": "SHARP",
+      "model_name": "AQUOS R8",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-52D",
+          "release_date": "2023-08-10"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2023-08-10"
+        }
+      ],
+      "first_release_date": "2023-08-10",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/aquos-r8-rakuten-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/sh-52d-docomo-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "5343a24c3fc5",
+      "brand": "Google",
+      "model_name": "Google Pixel Fold",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-07-27"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2023-07-27"
+        }
+      ],
+      "first_release_date": "2023-07-27",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-fold-au-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-fold-softbank-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "7befef1d1055",
+      "brand": "SHARP",
+      "model_name": "AQUOS R8 pro",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-51D",
+          "release_date": "2023-07-20"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-07-20"
+        }
+      ],
+      "first_release_date": "2023-07-20",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/aquos-r8-pro-softbank-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/sh-51d-docomo-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "d6dec023f619",
+      "brand": "Sony",
+      "model_name": "Xperia 10 V",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-52D",
+          "release_date": "2023-07-06"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-07-06"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SOG11",
+          "release_date": "2023-07-06"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2023-07-06"
+        }
+      ],
+      "first_release_date": "2023-07-06",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/so-52d-docomo-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/sog11-au-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/xperia-10-v-rakuten-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/xperia-10-v-softbank-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "998faa71c8da",
+      "brand": "SHARP",
+      "model_name": "AQUOS wish3",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2023-07-06"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-10-13"
+        }
+      ],
+      "first_release_date": "2023-07-06",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/aquos-wish3-rakuten-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/aquos-wish3-softbank-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "f818ab6c819e",
+      "brand": "OPPO",
+      "model_name": "OPPO Reno9 A",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2023-06-22"
+        }
+      ],
+      "first_release_date": "2023-06-22",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/oppo-reno9-a-rakuten-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "6abc6693c64a",
+      "brand": "Sony",
+      "model_name": "Xperia 1 V",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-51D",
+          "release_date": "2023-06-16"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-06-16"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SOG10",
+          "release_date": "2023-06-16"
+        }
+      ],
+      "first_release_date": "2023-06-16",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/so-51d-docomo-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/sog10-au-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/xperia-1-v-softbank-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "84ae12fe4fa4",
+      "brand": "Samsung",
+      "model_name": "Galaxy A54 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-53D",
+          "release_date": "2023-05-25"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG21",
+          "release_date": "2023-05-25"
+        }
+      ],
+      "first_release_date": "2023-05-25",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/sc-53d-docomo-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/scg21-au-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "061a76f2837a",
+      "brand": "Google",
+      "model_name": "Google Pixel 7a",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2023-05-11"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2023-05-11"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2023-05-11"
+        }
+      ],
+      "first_release_date": "2023-05-11",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/google-pixel-7a-au-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-7a-docomo-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/google-pixel-7a-softbank-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "84926e50982f",
+      "brand": "Samsung",
+      "model_name": "Galaxy S23 Ultra",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-52D",
+          "release_date": "2023-04-20"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG20",
+          "release_date": "2023-04-20"
+        }
+      ],
+      "first_release_date": "2023-04-20",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/sc-52d-docomo-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/scg20-au-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "3446c17578b5",
+      "brand": "Samsung",
+      "model_name": "Galaxy S23",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-51D",
+          "release_date": "2023-04-20"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG19",
+          "release_date": "2023-04-20"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2023-04-20"
+        }
+      ],
+      "first_release_date": "2023-04-20",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/galaxy-s23-rakuten-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/sc-51d-docomo-2023-carrier-compatibility/",
+        "/ja/technology/smartphone/scg19-au-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "e3cc10a5986b",
+      "brand": "FCNT",
+      "model_name": "arrows N",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "F-51C",
+          "release_date": "2023-02-10"
+        }
+      ],
+      "first_release_date": "2023-02-10",
+      "detail_status": "phase69_2023_android_band_verified",
+      "compatibility_articles": [
+        "/ja/technology/smartphone/f-51c-docomo-2023-carrier-compatibility/"
+      ],
+      "compatibility_hub": "/ja/technology/smartphone/2023-domestic-carrier-android-band-compatibility/"
+    },
+    {
+      "id": "2da5392775eb",
+      "brand": "Xiaomi",
+      "model_name": "Xiaomi 12T Pro",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-12-16"
+        }
+      ],
+      "first_release_date": "2022-12-16",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "a567c5b9543b",
+      "brand": "Leica",
+      "model_name": "LEITZ PHONE 2",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-11-18"
+        }
+      ],
+      "first_release_date": "2022-11-18",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "cdba699dd066",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense7",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-53C",
+          "release_date": "2022-11-04"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-11-04"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SHG10",
+          "release_date": "2022-11-11"
+        }
+      ],
+      "first_release_date": "2022-11-04",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "b3fc8c4709b3",
+      "brand": "SHARP",
+      "model_name": "BASIO active",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "SHG09",
+          "release_date": "2022-10-28"
+        }
+      ],
+      "first_release_date": "2022-10-28",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "71a9f55461e1",
+      "brand": "Samsung",
+      "model_name": "Galaxy A23 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-56C",
+          "release_date": "2022-10-27"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG18",
+          "release_date": "2022-10-27"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-11-22"
+        }
+      ],
+      "first_release_date": "2022-10-27",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "fa5cd62af9d5",
+      "brand": "Sony",
+      "model_name": "Xperia 5 IV",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-54C",
+          "release_date": "2022-10-21"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-10-21"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SOG09",
+          "release_date": "2022-10-21"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-10-21"
+        }
+      ],
+      "first_release_date": "2022-10-21",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "ca9831a40d0f",
+      "brand": "Google",
+      "model_name": "Google Pixel 7 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-10-13"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2022-10-13"
+        }
+      ],
+      "first_release_date": "2022-10-13",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "6217c799bc6c",
+      "brand": "Google",
+      "model_name": "Google Pixel 7",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-10-13"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2022-10-13"
+        }
+      ],
+      "first_release_date": "2022-10-13",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "40f1e88a0d28",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense7 plus",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-10-07"
+        }
+      ],
+      "first_release_date": "2022-10-07",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "70072533a842",
+      "brand": "Apple",
+      "model_name": "iPhone 14 Plus",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2022-10-07"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-10-07"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2022-10-07"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-10-07"
+        }
+      ],
+      "first_release_date": "2022-10-07",
+      "detail_status": "phase68_2022_iphone_region_band_verified",
+      "japan_model_number": "A2885",
+      "compatibility_article": "/ja/technology/smartphone/iphone-14-plus-2022-japan-region-esim-band-carrier-compatibility/"
+    },
+    {
+      "id": "1b6111649791",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold4",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-55C",
+          "release_date": "2022-09-29"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG16",
+          "release_date": "2022-09-29"
+        }
+      ],
+      "first_release_date": "2022-09-29",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "c2e49cd50a6b",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Flip4",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-54C",
+          "release_date": "2022-09-29"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG17",
+          "release_date": "2022-09-29"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-09-29"
+        }
+      ],
+      "first_release_date": "2022-09-29",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "0e34aafe1dc5",
+      "brand": "Apple",
+      "model_name": "iPhone 14 Pro Max",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2022-09-16"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-09-16"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2022-09-16"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-09-16"
+        }
+      ],
+      "first_release_date": "2022-09-16",
+      "detail_status": "phase68_2022_iphone_region_band_verified",
+      "japan_model_number": "A2893",
+      "compatibility_article": "/ja/technology/smartphone/iphone-14-pro-max-2022-japan-region-esim-band-carrier-compatibility/"
+    },
+    {
+      "id": "913cddd53e1c",
+      "brand": "Apple",
+      "model_name": "iPhone 14 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2022-09-16"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-09-16"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2022-09-16"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-09-16"
+        }
+      ],
+      "first_release_date": "2022-09-16",
+      "detail_status": "phase68_2022_iphone_region_band_verified",
+      "japan_model_number": "A2889",
+      "compatibility_article": "/ja/technology/smartphone/iphone-14-pro-2022-japan-region-esim-band-carrier-compatibility/"
+    },
+    {
+      "id": "80023c6a227c",
+      "brand": "Apple",
+      "model_name": "iPhone 14",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2022-09-16"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-09-16"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2022-09-16"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-09-16"
+        }
+      ],
+      "first_release_date": "2022-09-16",
+      "detail_status": "phase68_2022_iphone_region_band_verified",
+      "japan_model_number": "A2881",
+      "compatibility_article": "/ja/technology/smartphone/iphone-14-2022-japan-region-esim-band-carrier-compatibility/"
+    },
+    {
+      "id": "8c4ba046e765",
+      "brand": "Google",
+      "model_name": "Google Pixel 6a",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-07-28"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2022-07-28"
+        }
+      ],
+      "first_release_date": "2022-07-28",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "4dd7452e1b3d",
+      "brand": "Sony",
+      "model_name": "Xperia 10 IV",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-52C",
+          "release_date": "2022-07-08"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-07-08"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SOG07",
+          "release_date": "2022-07-08"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-07-08"
+        }
+      ],
+      "first_release_date": "2022-07-08",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "598bc99188ef",
+      "brand": "SHARP",
+      "model_name": "AQUOS R7",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-07-08"
+        },
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-52C",
+          "release_date": "2022-07-15"
+        }
+      ],
+      "first_release_date": "2022-07-08",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "9e5f9816d112",
+      "brand": "SHARP",
+      "model_name": "AQUOS wish2",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-51C",
+          "release_date": "2022-06-24"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SHG08",
+          "release_date": "2022-09-09"
+        }
+      ],
+      "first_release_date": "2022-06-24",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "56f78bf0b590",
+      "brand": "OPPO",
+      "model_name": "OPPO Reno7 A",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "OPG04",
+          "release_date": "2022-06-23"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-06-30"
+        }
+      ],
+      "first_release_date": "2022-06-23",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "2ef4f87bdab2",
+      "brand": "Sony",
+      "model_name": "Xperia Ace III",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-53C",
+          "release_date": "2022-06-10"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SOG08",
+          "release_date": "2022-06-10"
+        }
+      ],
+      "first_release_date": "2022-06-10",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "f5c8a758403f",
+      "brand": "Sony",
+      "model_name": "Xperia 1 IV",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-51C",
+          "release_date": "2022-06-03"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-06-03"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SOG06",
+          "release_date": "2022-06-03"
+        }
+      ],
+      "first_release_date": "2022-06-03",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "37137c23edd2",
+      "brand": "Xiaomi",
+      "model_name": "Redmi Note 11 Pro 5G",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-05-30"
+        }
+      ],
+      "first_release_date": "2022-05-30",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "4eb4a3228943",
+      "brand": "Samsung",
+      "model_name": "Galaxy A53 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-53C",
+          "release_date": "2022-05-27"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG15",
+          "release_date": "2022-05-27"
+        }
+      ],
+      "first_release_date": "2022-05-27",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "9e916a3837c7",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense6s",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "SHG07",
+          "release_date": "2022-04-28"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-04-28"
+        }
+      ],
+      "first_release_date": "2022-04-28",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "0e710c17a1db",
+      "brand": "Xiaomi",
+      "model_name": "Redmi Note 10T",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-04-22"
+        }
+      ],
+      "first_release_date": "2022-04-22",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "692228793937",
+      "brand": "Samsung",
+      "model_name": "Galaxy S22 Ultra",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-52C",
+          "release_date": "2022-04-21"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG14",
+          "release_date": "2022-04-21"
+        }
+      ],
+      "first_release_date": "2022-04-21",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "2e2c6406aa17",
+      "brand": "Samsung",
+      "model_name": "Galaxy S22",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-51C",
+          "release_date": "2022-04-21"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG13",
+          "release_date": "2022-04-21"
+        }
+      ],
+      "first_release_date": "2022-04-21",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "35e8955a318d",
+      "brand": "SHARP",
+      "model_name": "シンプルスマホ6",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-04-08"
+        }
+      ],
+      "first_release_date": "2022-04-08",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "1be8769c6624",
+      "brand": "Apple",
+      "model_name": "iPhone SE（第3世代）",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2022-03-18"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2022-03-18"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2022-03-18"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-03-18"
+        }
+      ],
+      "first_release_date": "2022-03-18",
+      "detail_status": "phase68_2022_iphone_region_band_verified",
+      "japan_model_number": "A2782",
+      "compatibility_article": "/ja/technology/smartphone/iphone-se-3rd-2022-japan-region-esim-band-carrier-compatibility/"
+    },
+    {
+      "id": "09a107f0cd59",
+      "brand": "Rakuten",
+      "model_name": "Rakuten Hand 5G",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-02-14"
+        }
+      ],
+      "first_release_date": "2022-02-14",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "dd99c6f3869c",
+      "brand": "SHARP",
+      "model_name": "AQUOS wish",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": "A103SH",
+          "release_date": "2022-01-14"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SHG06",
+          "release_date": "2022-01-14"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2022-01-21"
+        }
+      ],
+      "first_release_date": "2022-01-14",
+      "detail_status": "phase67_2022_android_band_verified"
+    },
+    {
+      "id": "10cde7401f20",
+      "brand": "FCNT",
+      "model_name": "arrows We",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "F-51B",
+          "release_date": "2021-12-03"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-12-03"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "FCG01",
+          "release_date": "2021-12-03"
+        }
+      ],
+      "first_release_date": "2021-12-03",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "b90d8b851726",
+      "brand": "Samsung",
+      "model_name": "Galaxy A22 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-56B",
+          "release_date": "2021-12-02"
+        }
+      ],
+      "first_release_date": "2021-12-02",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "1e341247a819",
+      "brand": "OPPO",
+      "model_name": "OPPO A55s 5G",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-11-26"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-11-26"
+        }
+      ],
+      "first_release_date": "2021-11-26",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "48acc7103ff7",
+      "brand": "BALMUDA",
+      "model_name": "BALMUDA Phone",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-11-26"
+        }
+      ],
+      "first_release_date": "2021-11-26",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "5cc973797f2f",
+      "brand": "Sony",
+      "model_name": "Xperia 5 III",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-53B",
+          "release_date": "2021-11-12"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-11-12"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SOG05",
+          "release_date": "2021-11-12"
+        }
+      ],
+      "first_release_date": "2021-11-12",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "e648087fd92d",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense6",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "SHG05",
+          "release_date": "2021-11-04"
+        },
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-54B",
+          "release_date": "2021-11-11"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-11-11"
+        }
+      ],
+      "first_release_date": "2021-11-04",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "d9b4d088c6ba",
+      "brand": "Google",
+      "model_name": "Google Pixel 6 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-10-28"
+        }
+      ],
+      "first_release_date": "2021-10-28",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "5885b98e0b9d",
+      "brand": "Google",
+      "model_name": "Google Pixel 6",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-10-28"
+        }
+      ],
+      "first_release_date": "2021-10-28",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "769932f838ca",
+      "brand": "SHARP",
+      "model_name": "AQUOS zero6",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-10-08"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-10-14"
+        }
+      ],
+      "first_release_date": "2021-10-08",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "1b5ed57da30f",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold3 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-55B",
+          "release_date": "2021-10-06"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG11",
+          "release_date": "2021-10-06"
+        }
+      ],
+      "first_release_date": "2021-10-06",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "a05b22f7cd17",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Flip3 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-54B",
+          "release_date": "2021-10-06"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG12",
+          "release_date": "2021-10-06"
+        }
+      ],
+      "first_release_date": "2021-10-06",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "9cb7cc824821",
+      "brand": "Apple",
+      "model_name": "iPhone 13 mini",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        }
+      ],
+      "first_release_date": "2021-09-24",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "b19976dcb9f4",
+      "brand": "Apple",
+      "model_name": "iPhone 13 Pro Max",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        }
+      ],
+      "first_release_date": "2021-09-24",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "8aad7f1b4087",
+      "brand": "Apple",
+      "model_name": "iPhone 13 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        }
+      ],
+      "first_release_date": "2021-09-24",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "0c99b65e8b97",
+      "brand": "Apple",
+      "model_name": "iPhone 13",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-09-24"
+        }
+      ],
+      "first_release_date": "2021-09-24",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "5c069cbe29fa",
+      "brand": "Sony",
+      "model_name": "Xperia 10 III Lite",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-08-27"
+        }
+      ],
+      "first_release_date": "2021-08-27",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "32662065a2bd",
+      "brand": "Google",
+      "model_name": "Google Pixel 5a (5G)",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-08-26"
+        }
+      ],
+      "first_release_date": "2021-08-26",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "81b0843f6205",
+      "brand": "Leica",
+      "model_name": "LEITZ PHONE 1",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-07-16"
+        }
+      ],
+      "first_release_date": "2021-07-16",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "3e185897aa97",
+      "brand": "Sony",
+      "model_name": "Xperia 1 III",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-51B",
+          "release_date": "2021-07-09"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-07-09"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SOG03",
+          "release_date": "2021-07-09"
+        }
+      ],
+      "first_release_date": "2021-07-09",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "3a3532868154",
+      "brand": "OPPO",
+      "model_name": "OPPO Find X3 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "OPG03",
+          "release_date": "2021-06-30"
+        }
+      ],
+      "first_release_date": "2021-06-30",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "fdcc8ea87a86",
+      "brand": "SHARP",
+      "model_name": "AQUOS R6",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-51B",
+          "release_date": "2021-06-25"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-06-25"
+        }
+      ],
+      "first_release_date": "2021-06-25",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "f9fbbcc200fa",
+      "brand": "Sony",
+      "model_name": "Xperia 10 III",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-52B",
+          "release_date": "2021-06-18"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SOG04",
+          "release_date": "2021-06-18"
+        }
+      ],
+      "first_release_date": "2021-06-18",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "2641dac0d3aa",
+      "brand": "OPPO",
+      "model_name": "OPPO Reno5 A",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-06-18"
+        }
+      ],
+      "first_release_date": "2021-06-18",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "aefaaea203d3",
+      "brand": "OPPO",
+      "model_name": "OPPO A54 5G",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "OPG02",
+          "release_date": "2021-06-04"
+        }
+      ],
+      "first_release_date": "2021-06-04",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "19f32f07f600",
+      "brand": "Samsung",
+      "model_name": "Galaxy A52 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-53B",
+          "release_date": "2021-06-03"
+        }
+      ],
+      "first_release_date": "2021-06-03",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "7d225523a83a",
+      "brand": "Sony",
+      "model_name": "Xperia Ace II",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-41B",
+          "release_date": "2021-05-28"
+        }
+      ],
+      "first_release_date": "2021-05-28",
+      "detail_status": "phase64_band_volte_verified"
+    },
+    {
+      "id": "ba6aa475b60e",
+      "brand": "FCNT",
+      "model_name": "arrows Be4 Plus",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "F-41B",
+          "release_date": "2021-05-28"
+        }
+      ],
+      "first_release_date": "2021-05-28",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "c37e2527951c",
+      "brand": "Samsung",
+      "model_name": "Galaxy S21+ 5G",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG10",
+          "release_date": "2021-04-22"
+        }
+      ],
+      "first_release_date": "2021-04-22",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "f7e25bb99b9e",
+      "brand": "Samsung",
+      "model_name": "Galaxy S21 Ultra 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-52B",
+          "release_date": "2021-04-22"
+        }
+      ],
+      "first_release_date": "2021-04-22",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "ef5f8d02b91d",
+      "brand": "Samsung",
+      "model_name": "Galaxy S21 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-51B",
+          "release_date": "2021-04-22"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG09",
+          "release_date": "2021-04-22"
+        }
+      ],
+      "first_release_date": "2021-04-22",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "867ce83f5cee",
+      "brand": "Rakuten",
+      "model_name": "Rakuten BIG s",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-04-21"
+        }
+      ],
+      "first_release_date": "2021-04-21",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "9b49cc6956be",
+      "brand": "Motorola",
+      "model_name": "razr 5G",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-03-26"
+        }
+      ],
+      "first_release_date": "2021-03-26",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "fe85a88dda78",
+      "brand": "Xiaomi",
+      "model_name": "Redmi Note 9T",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-02-26"
+        }
+      ],
+      "first_release_date": "2021-02-26",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "28d6461846e9",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense5G",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2021-02-10"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SHG03",
+          "release_date": "2021-02-10"
+        },
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-53A",
+          "release_date": "2021-02-12"
+        }
+      ],
+      "first_release_date": "2021-02-10",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "4b1fbe801064",
+      "brand": "LG",
+      "model_name": "LG VELVET",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "L-52A",
+          "release_date": "2020-12-18"
+        }
+      ],
+      "first_release_date": "2020-12-18",
+      "detail_status": "phase64_band_volte_verified"
+    },
+    {
+      "id": "5a2abcce0c4b",
+      "brand": "FCNT",
+      "model_name": "arrows NX9",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "F-52A",
+          "release_date": "2020-12-18"
+        }
+      ],
+      "first_release_date": "2020-12-18",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "7cea6a665676",
+      "brand": "Rakuten",
+      "model_name": "Rakuten Hand",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2020-12-08"
+        }
+      ],
+      "first_release_date": "2020-12-08",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "ec4cc964eee7",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense4 plus",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2020-11-25"
+        }
+      ],
+      "first_release_date": "2020-11-25",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "89211d3ef08e",
+      "brand": "Apple",
+      "model_name": "iPhone 12 mini",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2020-11-13"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-11-13"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2020-11-13"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-04-30"
+        }
+      ],
+      "first_release_date": "2020-11-13",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "d21c2d83cdbb",
+      "brand": "Apple",
+      "model_name": "iPhone 12 Pro Max",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2020-11-13"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-11-13"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2020-11-13"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-04-30"
+        }
+      ],
+      "first_release_date": "2020-11-13",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "d73c52f07069",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense4 lite",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2020-11-12"
+        }
+      ],
+      "first_release_date": "2020-11-12",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "b253a86a745b",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense4",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-41A",
+          "release_date": "2020-11-12"
+        }
+      ],
+      "first_release_date": "2020-11-12",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "8d80471f0eec",
+      "brand": "Samsung",
+      "model_name": "Galaxy A51 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-54A",
+          "release_date": "2020-11-06"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG07",
+          "release_date": "2020-11-07"
+        }
+      ],
+      "first_release_date": "2020-11-06",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "dde8dcf70626",
+      "brand": "OPPO",
+      "model_name": "OPPO A73",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2020-11-05"
+        }
+      ],
+      "first_release_date": "2020-11-05",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "dcbe33489b25",
+      "brand": "Samsung",
+      "model_name": "Galaxy A21",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-42A",
+          "release_date": "2020-10-23"
+        }
+      ],
+      "first_release_date": "2020-10-23",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "68719463895f",
+      "brand": "Apple",
+      "model_name": "iPhone 12 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2020-10-23"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-10-23"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2020-10-23"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-04-30"
+        }
+      ],
+      "first_release_date": "2020-10-23",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "b98bc3863741",
+      "brand": "Apple",
+      "model_name": "iPhone 12",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2020-10-23"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-10-23"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2020-10-23"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-04-30"
+        }
+      ],
+      "first_release_date": "2020-10-23",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "edb74be308f7",
+      "brand": "Sony",
+      "model_name": "Xperia 5 II",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-10-17"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SOG02",
+          "release_date": "2020-10-17"
+        },
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-52A",
+          "release_date": "2020-11-12"
+        }
+      ],
+      "first_release_date": "2020-10-17",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "3b662338e856",
+      "brand": "Samsung",
+      "model_name": "Galaxy Note20 Ultra 5G",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG06",
+          "release_date": "2020-10-15"
+        },
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-53A",
+          "release_date": "2020-11-06"
+        }
+      ],
+      "first_release_date": "2020-10-15",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "f21f08c260e6",
+      "brand": "Google",
+      "model_name": "Google Pixel 5",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-10-15"
+        }
+      ],
+      "first_release_date": "2020-10-15",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "59e1230104dc",
+      "brand": "Google",
+      "model_name": "Google Pixel 4a (5G)",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-10-15"
+        }
+      ],
+      "first_release_date": "2020-10-15",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "f2b74c9f853e",
+      "brand": "SHARP",
+      "model_name": "AQUOS zero5G basic",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-10-09"
+        }
+      ],
+      "first_release_date": "2020-10-09",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "8823655d0c46",
+      "brand": "Rakuten",
+      "model_name": "Rakuten BIG",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2020-09-30"
+        }
+      ],
+      "first_release_date": "2020-09-30",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "151f4af7ae09",
+      "brand": "SHARP",
+      "model_name": "シンプルスマホ5",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-09-04"
+        }
+      ],
+      "first_release_date": "2020-09-04",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "d5cba7ceb0a8",
+      "brand": "KYOCERA",
+      "model_name": "GRATINA",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "KYV48",
+          "release_date": "2020-09-04"
+        }
+      ],
+      "first_release_date": "2020-09-04",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "a47d9f863f92",
+      "brand": "Google",
+      "model_name": "Google Pixel 4a",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-08-20"
+        }
+      ],
+      "first_release_date": "2020-08-20",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "0132b520c6d3",
+      "brand": "ZTE",
+      "model_name": "ZTE a1",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "ZTG01",
+          "release_date": "2020-08-05"
+        }
+      ],
+      "first_release_date": "2020-08-05",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "849f0320f499",
+      "brand": "OPPO",
+      "model_name": "OPPO Reno3 5G",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-07-31"
+        }
+      ],
+      "first_release_date": "2020-07-31",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "e1b46dfdcad3",
+      "brand": "FCNT",
+      "model_name": "arrows 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "F-51A",
+          "release_date": "2020-07-30"
+        }
+      ],
+      "first_release_date": "2020-07-30",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "f59ae98da390",
+      "brand": "OPPO",
+      "model_name": "OPPO Find X2 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "OPG01",
+          "release_date": "2020-07-22"
+        }
+      ],
+      "first_release_date": "2020-07-22",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "b8ca62bef323",
+      "brand": "Sony",
+      "model_name": "Xperia 10 II",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-41A",
+          "release_date": "2020-06-25"
+        }
+      ],
+      "first_release_date": "2020-06-25",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "e92d089600e8",
+      "brand": "Samsung",
+      "model_name": "Galaxy A41",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-41A",
+          "release_date": "2020-06-25"
+        }
+      ],
+      "first_release_date": "2020-06-25",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "6825ea263db3",
+      "brand": "OPPO",
+      "model_name": "OPPO Reno3 A",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2020-06-25"
+        }
+      ],
+      "first_release_date": "2020-06-25",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "e0b92c931aee",
+      "brand": "LG",
+      "model_name": "LG style3",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "L-41A",
+          "release_date": "2020-06-25"
+        }
+      ],
+      "first_release_date": "2020-06-25",
+      "detail_status": "phase64_band_volte_verified"
+    },
+    {
+      "id": "37a2c3af5ee8",
+      "brand": "FCNT",
+      "model_name": "arrows Be4",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "F-41A",
+          "release_date": "2020-06-25"
+        }
+      ],
+      "first_release_date": "2020-06-25",
+      "detail_status": "phase64_band_volte_verified"
+    },
+    {
+      "id": "f34c3d1a3d51",
+      "brand": "Samsung",
+      "model_name": "Galaxy S20+ 5G",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG02",
+          "release_date": "2020-06-04"
+        },
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-52A",
+          "release_date": "2020-06-18"
+        }
+      ],
+      "first_release_date": "2020-06-04",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "1fd4620c87ef",
+      "brand": "Sony",
+      "model_name": "Xperia 1 II",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "SOG01",
+          "release_date": "2020-05-22"
+        },
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-51A",
+          "release_date": "2020-06-18"
+        }
+      ],
+      "first_release_date": "2020-05-22",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "87a453a836a9",
+      "brand": "LG",
+      "model_name": "LG V60 ThinQ 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "L-51A",
+          "release_date": "2020-05-11"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-05-11"
+        }
+      ],
+      "first_release_date": "2020-05-11",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "c001cc268725",
+      "brand": "Apple",
+      "model_name": "iPhone SE（第2世代）",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2020-04-24"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-04-24"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2020-04-24"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2021-04-30"
+        }
+      ],
+      "first_release_date": "2020-04-24",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "c6fee6fa228c",
+      "brand": "ZTE",
+      "model_name": "ZTE Axon 10 Pro 5G",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-03-27"
+        }
+      ],
+      "first_release_date": "2020-03-27",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "858bee772b3f",
+      "brand": "Samsung",
+      "model_name": "Galaxy S20 5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-51A",
+          "release_date": "2020-03-25"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCG01",
+          "release_date": "2020-03-26"
+        }
+      ],
+      "first_release_date": "2020-03-25",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "2085fb44606d",
+      "brand": "SHARP",
+      "model_name": "AQUOS R5G",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-51A",
+          "release_date": "2020-03-25"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-03-27"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SHG01",
+          "release_date": "2020-03-27"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2020-06-18"
+        }
+      ],
+      "first_release_date": "2020-03-25",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "61a6ee6135a9",
+      "brand": "OPPO",
+      "model_name": "OPPO A5 2020",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2020-03-03"
+        }
+      ],
+      "first_release_date": "2020-03-03",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "f2eb47e6732d",
+      "brand": "KYOCERA",
+      "model_name": "BASIO4",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "KYV47",
+          "release_date": "2020-02-07"
+        }
+      ],
+      "first_release_date": "2020-02-07",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "3be2b2a41f38",
+      "brand": "SHARP",
+      "model_name": "AQUOS zero2",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SH-01M",
+          "release_date": "2020-01-30"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2020-01-31"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SHV47",
+          "release_date": "2020-01-31"
+        }
+      ],
+      "first_release_date": "2020-01-30",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "011f5405a1fd",
+      "brand": "Rakuten",
+      "model_name": "Rakuten Mini",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2020-01-23"
+        }
+      ],
+      "first_release_date": "2020-01-23",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "31be50acd437",
+      "brand": "FCNT",
+      "model_name": "arrows RX",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2020-01-23"
+        }
+      ],
+      "first_release_date": "2020-01-23",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "a7568ccd17da",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense3 plus",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2019-12-13"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2019-12-20"
+        }
+      ],
+      "first_release_date": "2019-12-13",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "cef39570f2a6",
+      "brand": "LG",
+      "model_name": "LG G8X ThinQ",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2019-12-06"
+        }
+      ],
+      "first_release_date": "2019-12-06",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "80afabe7d810",
+      "brand": "Samsung",
+      "model_name": "Galaxy S10",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2019-12-03"
+        }
+      ],
+      "first_release_date": "2019-12-03",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "2ac3da6bc2a3",
+      "brand": "HUAWEI",
+      "model_name": "HUAWEI nova 5T",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2019-11-29"
+        }
+      ],
+      "first_release_date": "2019-11-29",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "2cfb9e0b667b",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense3",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "SHV45",
+          "release_date": "2019-11-02"
+        }
+      ],
+      "first_release_date": "2019-11-02",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "2b433d1da7c2",
+      "brand": "Samsung",
+      "model_name": "Galaxy A20",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-02M",
+          "release_date": "2019-11-01"
+        }
+      ],
+      "first_release_date": "2019-11-01",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "2c0a468d19c4",
+      "brand": "Sony",
+      "model_name": "Xperia 5",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2019-10-25"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SOV41",
+          "release_date": "2019-10-25"
+        },
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SO-01M",
+          "release_date": "2019-11-01"
+        }
+      ],
+      "first_release_date": "2019-10-25",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "794075581650",
+      "brand": "Google",
+      "model_name": "Google Pixel 4 XL",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2019-10-24"
+        }
+      ],
+      "first_release_date": "2019-10-24",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "1ee2b9e12883",
+      "brand": "Google",
+      "model_name": "Google Pixel 4",
+      "carrier_sales": [
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2019-10-24"
+        }
+      ],
+      "first_release_date": "2019-10-24",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "4fc8234b1454",
+      "brand": "Samsung",
+      "model_name": "Galaxy Note10+",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": "SC-01M",
+          "release_date": "2019-10-18"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": "SCV45",
+          "release_date": "2019-10-18"
+        },
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2019-12-03"
+        }
+      ],
+      "first_release_date": "2019-10-18",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "45d3bdd656df",
+      "brand": "OPPO",
+      "model_name": "OPPO Reno A 128GB",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2019-10-18"
+        }
+      ],
+      "first_release_date": "2019-10-18",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "3a2636747279",
+      "brand": "Samsung",
+      "model_name": "Galaxy A7",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2019-10-01"
+        }
+      ],
+      "first_release_date": "2019-10-01",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "fb1e02f41656",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense3 lite",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2019-10-01"
+        }
+      ],
+      "first_release_date": "2019-10-01",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "16e1c902b96f",
+      "brand": "Apple",
+      "model_name": "iPhone 11 Pro Max",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2019-09-20"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2019-09-20"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2019-09-20"
+        }
+      ],
+      "first_release_date": "2019-09-20",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "525823560cf8",
+      "brand": "Apple",
+      "model_name": "iPhone 11 Pro",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2019-09-20"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2019-09-20"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2019-09-20"
+        }
+      ],
+      "first_release_date": "2019-09-20",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "8b7cb206a3de",
+      "brand": "Apple",
+      "model_name": "iPhone 11",
+      "carrier_sales": [
+        {
+          "carrier": "NTTドコモ",
+          "carrier_model_number": null,
+          "release_date": "2019-09-20"
+        },
+        {
+          "carrier": "SoftBank",
+          "carrier_model_number": null,
+          "release_date": "2019-09-20"
+        },
+        {
+          "carrier": "au",
+          "carrier_model_number": null,
+          "release_date": "2019-09-20"
+        }
+      ],
+      "first_release_date": "2019-09-20",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "fb83987ab76b",
+      "brand": "KYOCERA",
+      "model_name": "TORQUE G04",
+      "carrier_sales": [
+        {
+          "carrier": "au",
+          "carrier_model_number": "KYV46",
+          "release_date": "2019-08-30"
+        }
+      ],
+      "first_release_date": "2019-08-30",
+      "detail_status": "inventory_only"
+    },
+    {
+      "id": "3cd6500c0c3c",
+      "brand": "HUAWEI",
+      "model_name": "HUAWEI P30 lite",
+      "carrier_sales": [
+        {
+          "carrier": "楽天モバイル",
+          "carrier_model_number": null,
+          "release_date": "2019-08-08"
+        }
+      ],
+      "first_release_date": "2019-08-08",
+      "detail_status": "inventory_only"
+    }
+  ]
+}

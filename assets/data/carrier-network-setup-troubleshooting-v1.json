@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "release": "phase78",
+  "official_checked_at": "2026-08-08",
+  "carriers": [
+    {
+      "carrier": "NTTドコモ",
+      "apn": "spmode.ne.jp",
+      "auth": "none_or_unset",
+      "protocol": "IPv4/IPv6",
+      "source": "https://www.docomo.ne.jp/support/for_simfree/apn.html",
+      "sim_lock_note": "2021-08-27以降に新たに発売された機種はSIMロックなし",
+      "unlock_source": "https://www.docomo.ne.jp/support/unlock_simcard/"
+    },
+    {
+      "carrier": "au",
+      "apn_4g": "uno.au-net.ne.jp",
+      "username_4g": "685840734641020@uno.au-net.ne.jp",
+      "password_4g": "KpyrR6BP",
+      "apn_5g": "uad5gn.au-net.ne.jp",
+      "username_5g": "au@uad5gn.au-net.ne.jp",
+      "password_5g": "au",
+      "auth": "CHAP",
+      "source": "https://www.au.com/support/service/mobile/procedure/sim/auic/",
+      "sim_lock_note": "2021-10-01以降に新たに発売された機種はSIMロックなし（iPhone 13シリーズ等は先行例外）",
+      "unlock_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/"
+    },
+    {
+      "carrier": "SoftBank",
+      "apn": "plus.4g",
+      "username": "plus",
+      "password": "4g",
+      "auth": "CHAP",
+      "apn_type": "default,ia,mms,supl,hipri",
+      "source": "https://www.softbank.jp/mobile/support/usim/portout_procedure/",
+      "sim_lock_note": "2021年6月以降発売の多くはSIMフリー（Xperia 1 III除く）",
+      "unlock_source": "https://www.softbank.jp/mobile/support/usim/unlock_procedure/"
+    },
+    {
+      "carrier": "楽天モバイル",
+      "apn": "rakuten.jp",
+      "mcc": "440",
+      "mnc": "11",
+      "apn_type": "default,supl",
+      "protocol": "IPv4/IPv6",
+      "tethering_note": "利用不可時は公式案内に従いdun追加を検討",
+      "source": "https://network.mobile.rakuten.co.jp/faq/detail/00001495/",
+      "sim_lock_note": "楽天モバイル販売製品はSIMフリー",
+      "unlock_source": "https://network.mobile.rakuten.co.jp/faq/detail/10000070/"
+    }
+  ],
+  "symptom_routes": [
+    {
+      "symptom": "sim_not_detected",
+      "path": "/ja/technology/smartphone/smartphone-sim-not-detected/",
+      "first_layer": "SIM/eSIM recognition / SIM lock / activation"
+    },
+    {
+      "symptom": "mobile_data_not_working",
+      "path": "/ja/technology/smartphone/smartphone-mobile-data-not-working/",
+      "first_layer": "data SIM / APN / old profile"
+    },
+    {
+      "symptom": "sms_not_received",
+      "path": "/ja/technology/smartphone/smartphone-sms-not-received/",
+      "first_layer": "default SMS SIM / line / service"
+    },
+    {
+      "symptom": "5g_not_showing",
+      "path": "/ja/technology/smartphone/smartphone-5g-not-showing/",
+      "first_layer": "n77/n78/n79 / plan / NSA-SA / area"
+    },
+    {
+      "symptom": "esim_not_activating",
+      "path": "/ja/technology/smartphone/smartphone-esim-not-activating/",
+      "first_layer": "device support / EID-IMEI / Wi-Fi / transfer eligibility"
+    },
+    {
+      "symptom": "volte_calls_drop_data",
+      "path": "/ja/technology/smartphone/smartphone-volte-calls-drop-data/",
+      "first_layer": "VoLTE / IMS / carrier support"
+    }
+  ]
+}

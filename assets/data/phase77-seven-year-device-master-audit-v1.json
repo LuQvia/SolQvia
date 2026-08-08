@@ -1,0 +1,583 @@
+{
+  "schema_version": "1.0",
+  "checked_at": "2026-08-08",
+  "scope": {
+    "from": "2019-08-08",
+    "through": "2026-08-08",
+    "carriers": [
+      "NTTドコモ",
+      "au",
+      "SoftBank",
+      "楽天モバイル"
+    ]
+  },
+  "inventory": {
+    "carrier_sale_records": 515,
+    "unique_device_models": 246,
+    "carrier_counts": {
+      "楽天モバイル": 102,
+      "au": 134,
+      "NTTドコモ": 143,
+      "SoftBank": 136
+    },
+    "year_counts": {
+      "2019": 29,
+      "2020": 66,
+      "2021": 68,
+      "2022": 75,
+      "2023": 62,
+      "2024": 75,
+      "2025": 88,
+      "2026": 52
+    }
+  },
+  "integrity": {
+    "duplicate_inventory_ids": 0,
+    "duplicate_sale_keys": 0,
+    "records_before_cutoff": 0,
+    "records_after_cutoff": 0
+  },
+  "deep_spec_coverage": {
+    "verified_or_populated": {
+      "sim_esim": 405,
+      "lte_bands": 455,
+      "nr_bands": 455,
+      "volte_ims": 438,
+      "felica": 405,
+      "four_carrier_fit": 455,
+      "domestic_overseas_difference": 297
+    },
+    "missing_or_pending": {
+      "sim_esim": 110,
+      "lte_bands": 60,
+      "nr_bands": 60,
+      "volte_ims": 77,
+      "felica": 110,
+      "four_carrier_fit": 60,
+      "domestic_overseas_difference": 218
+    },
+    "band_and_four_carrier_backlog_records": 60,
+    "band_backlog_by_year": {
+      "2019": 24,
+      "2020": 15,
+      "2021": 21
+    }
+  },
+  "release_date_status": {
+    "individual_date_crosscheck_pending": 245,
+    "japan_launch_reference": 117,
+    "official_support_list_verified": 108,
+    "official_support_release_date_verified": 7,
+    "official_release_news_verified": 5,
+    "official_product_page_verified": 33
+  },
+  "band_backlog_records": [
+    {
+      "id": "579be5311366",
+      "carrier": "楽天モバイル",
+      "brand": "HUAWEI",
+      "model_name": "HUAWEI P30 lite",
+      "release_date": "2019-08-08",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "3e56a7f22acc",
+      "carrier": "au",
+      "brand": "KYOCERA",
+      "model_name": "TORQUE G04",
+      "release_date": "2019-08-30",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "4ebce65eee66",
+      "carrier": "NTTドコモ",
+      "brand": "Apple",
+      "model_name": "iPhone 11",
+      "release_date": "2019-09-20",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "cab78a22a882",
+      "carrier": "NTTドコモ",
+      "brand": "Apple",
+      "model_name": "iPhone 11 Pro",
+      "release_date": "2019-09-20",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "1fe5dd921902",
+      "carrier": "NTTドコモ",
+      "brand": "Apple",
+      "model_name": "iPhone 11 Pro Max",
+      "release_date": "2019-09-20",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "dd28fe5ca105",
+      "carrier": "SoftBank",
+      "brand": "Apple",
+      "model_name": "iPhone 11",
+      "release_date": "2019-09-20",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "850d9ca3d1be",
+      "carrier": "SoftBank",
+      "brand": "Apple",
+      "model_name": "iPhone 11 Pro",
+      "release_date": "2019-09-20",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "26d7f808067e",
+      "carrier": "SoftBank",
+      "brand": "Apple",
+      "model_name": "iPhone 11 Pro Max",
+      "release_date": "2019-09-20",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "190947efe7b8",
+      "carrier": "au",
+      "brand": "Apple",
+      "model_name": "iPhone 11",
+      "release_date": "2019-09-20",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "b736e772b05e",
+      "carrier": "au",
+      "brand": "Apple",
+      "model_name": "iPhone 11 Pro",
+      "release_date": "2019-09-20",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "038ca7c008b5",
+      "carrier": "au",
+      "brand": "Apple",
+      "model_name": "iPhone 11 Pro Max",
+      "release_date": "2019-09-20",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "ad75bc55603f",
+      "carrier": "楽天モバイル",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense3 lite",
+      "release_date": "2019-10-01",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "141358f3bace",
+      "carrier": "楽天モバイル",
+      "brand": "Samsung",
+      "model_name": "Galaxy A7",
+      "release_date": "2019-10-01",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "812492b2bb0a",
+      "carrier": "楽天モバイル",
+      "brand": "OPPO",
+      "model_name": "OPPO Reno A 128GB",
+      "release_date": "2019-10-18",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "b21f2f580d76",
+      "carrier": "SoftBank",
+      "brand": "Google",
+      "model_name": "Google Pixel 4",
+      "release_date": "2019-10-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "d6cd3a88a700",
+      "carrier": "SoftBank",
+      "brand": "Google",
+      "model_name": "Google Pixel 4 XL",
+      "release_date": "2019-10-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "b124f2dc70bf",
+      "carrier": "NTTドコモ",
+      "brand": "Samsung",
+      "model_name": "Galaxy A20",
+      "release_date": "2019-11-01",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "96e7a982687a",
+      "carrier": "au",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense3",
+      "release_date": "2019-11-02",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "617c02f66957",
+      "carrier": "楽天モバイル",
+      "brand": "HUAWEI",
+      "model_name": "HUAWEI nova 5T",
+      "release_date": "2019-11-29",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "9f9faff154fb",
+      "carrier": "楽天モバイル",
+      "brand": "Samsung",
+      "model_name": "Galaxy Note10+",
+      "release_date": "2019-12-03",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "6123f42c8bc8",
+      "carrier": "楽天モバイル",
+      "brand": "Samsung",
+      "model_name": "Galaxy S10",
+      "release_date": "2019-12-03",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "8745f8f8089a",
+      "carrier": "SoftBank",
+      "brand": "LG",
+      "model_name": "LG G8X ThinQ",
+      "release_date": "2019-12-06",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "c9bf6c9c82f4",
+      "carrier": "楽天モバイル",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense3 plus",
+      "release_date": "2019-12-13",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "e89042f69b3a",
+      "carrier": "SoftBank",
+      "brand": "SHARP",
+      "model_name": "AQUOS sense3 plus",
+      "release_date": "2019-12-20",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "6e0944214db9",
+      "carrier": "NTTドコモ",
+      "brand": "Apple",
+      "model_name": "iPhone SE（第2世代）",
+      "release_date": "2020-04-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "0c0c9c04dd40",
+      "carrier": "SoftBank",
+      "brand": "Apple",
+      "model_name": "iPhone SE（第2世代）",
+      "release_date": "2020-04-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "d599b6b42352",
+      "carrier": "au",
+      "brand": "Apple",
+      "model_name": "iPhone SE（第2世代）",
+      "release_date": "2020-04-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "93afd4b98ffa",
+      "carrier": "NTTドコモ",
+      "brand": "Apple",
+      "model_name": "iPhone 12",
+      "release_date": "2020-10-23",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "49b12d6296a3",
+      "carrier": "NTTドコモ",
+      "brand": "Apple",
+      "model_name": "iPhone 12 Pro",
+      "release_date": "2020-10-23",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "f66d4a36bef7",
+      "carrier": "SoftBank",
+      "brand": "Apple",
+      "model_name": "iPhone 12",
+      "release_date": "2020-10-23",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "ba74249310a1",
+      "carrier": "SoftBank",
+      "brand": "Apple",
+      "model_name": "iPhone 12 Pro",
+      "release_date": "2020-10-23",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "48f3fd08dd01",
+      "carrier": "au",
+      "brand": "Apple",
+      "model_name": "iPhone 12",
+      "release_date": "2020-10-23",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "e67208a9862b",
+      "carrier": "au",
+      "brand": "Apple",
+      "model_name": "iPhone 12 Pro",
+      "release_date": "2020-10-23",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "a1abc38aa2d0",
+      "carrier": "NTTドコモ",
+      "brand": "Apple",
+      "model_name": "iPhone 12 Pro Max",
+      "release_date": "2020-11-13",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "b0ecc5c94a9a",
+      "carrier": "NTTドコモ",
+      "brand": "Apple",
+      "model_name": "iPhone 12 mini",
+      "release_date": "2020-11-13",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "928d90a622ed",
+      "carrier": "SoftBank",
+      "brand": "Apple",
+      "model_name": "iPhone 12 Pro Max",
+      "release_date": "2020-11-13",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "7e75073d4f8d",
+      "carrier": "SoftBank",
+      "brand": "Apple",
+      "model_name": "iPhone 12 mini",
+      "release_date": "2020-11-13",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "3f6749b53b16",
+      "carrier": "au",
+      "brand": "Apple",
+      "model_name": "iPhone 12 Pro Max",
+      "release_date": "2020-11-13",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "1ac616503632",
+      "carrier": "au",
+      "brand": "Apple",
+      "model_name": "iPhone 12 mini",
+      "release_date": "2020-11-13",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "4e7e4c2081d8",
+      "carrier": "楽天モバイル",
+      "brand": "Apple",
+      "model_name": "iPhone 12",
+      "release_date": "2021-04-30",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "7cc7d933c512",
+      "carrier": "楽天モバイル",
+      "brand": "Apple",
+      "model_name": "iPhone 12 Pro",
+      "release_date": "2021-04-30",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "2bd180e11bb0",
+      "carrier": "楽天モバイル",
+      "brand": "Apple",
+      "model_name": "iPhone 12 Pro Max",
+      "release_date": "2021-04-30",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "3b96b263b499",
+      "carrier": "楽天モバイル",
+      "brand": "Apple",
+      "model_name": "iPhone 12 mini",
+      "release_date": "2021-04-30",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "952ad137a648",
+      "carrier": "楽天モバイル",
+      "brand": "Apple",
+      "model_name": "iPhone SE（第2世代）",
+      "release_date": "2021-04-30",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "171b52a596e2",
+      "carrier": "NTTドコモ",
+      "brand": "Apple",
+      "model_name": "iPhone 13",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "713238f00fa8",
+      "carrier": "NTTドコモ",
+      "brand": "Apple",
+      "model_name": "iPhone 13 Pro",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "c45bd4ecdf66",
+      "carrier": "NTTドコモ",
+      "brand": "Apple",
+      "model_name": "iPhone 13 Pro Max",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "3c417f28ce3b",
+      "carrier": "NTTドコモ",
+      "brand": "Apple",
+      "model_name": "iPhone 13 mini",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "a3449225e240",
+      "carrier": "SoftBank",
+      "brand": "Apple",
+      "model_name": "iPhone 13",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "b3af53cc4a99",
+      "carrier": "SoftBank",
+      "brand": "Apple",
+      "model_name": "iPhone 13 Pro",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "3ad3c9a63617",
+      "carrier": "SoftBank",
+      "brand": "Apple",
+      "model_name": "iPhone 13 Pro Max",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "7396f2ed7b9d",
+      "carrier": "SoftBank",
+      "brand": "Apple",
+      "model_name": "iPhone 13 mini",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "37b02673e659",
+      "carrier": "au",
+      "brand": "Apple",
+      "model_name": "iPhone 13",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "81273b39df9f",
+      "carrier": "au",
+      "brand": "Apple",
+      "model_name": "iPhone 13 Pro",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "4d778774379f",
+      "carrier": "au",
+      "brand": "Apple",
+      "model_name": "iPhone 13 Pro Max",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "f809f54f0d94",
+      "carrier": "au",
+      "brand": "Apple",
+      "model_name": "iPhone 13 mini",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "2e082623c62d",
+      "carrier": "楽天モバイル",
+      "brand": "Apple",
+      "model_name": "iPhone 13",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "6174d5cd8807",
+      "carrier": "楽天モバイル",
+      "brand": "Apple",
+      "model_name": "iPhone 13 Pro",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "21ec4a5382e1",
+      "carrier": "楽天モバイル",
+      "brand": "Apple",
+      "model_name": "iPhone 13 Pro Max",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    },
+    {
+      "id": "b1af0b75bbba",
+      "carrier": "楽天モバイル",
+      "brand": "Apple",
+      "model_name": "iPhone 13 mini",
+      "release_date": "2021-09-24",
+      "detail_fields_status": "progressive_verification"
+    }
+  ],
+  "recommended_remediation_waves": [
+    {
+      "phase": "Phase78",
+      "scope": "2019-08-08以降の未深掘りAndroid＋iPhone 11世代",
+      "records": 24
+    },
+    {
+      "phase": "Phase79",
+      "scope": "2020年iPhone SE（第2世代）／iPhone 12シリーズ",
+      "records": 15
+    },
+    {
+      "phase": "Phase80",
+      "scope": "2021年iPhone 12楽天販売分＋iPhone 13シリーズ",
+      "records": 21
+    },
+    {
+      "phase": "Phase81",
+      "scope": "2020-2021年AndroidのSIM/eSIM・FeliCa・VoLTE/IMS欠損補完",
+      "records": "band確認済みレコードを対象にフィールド単位監査"
+    },
+    {
+      "phase": "Phase82",
+      "scope": "historical release-date individual cross-check",
+      "records": 245
+    }
+  ]
+}

@@ -1,0 +1,2799 @@
+{
+  "schema_version": "1.0",
+  "checked_at": "2026-08-08",
+  "scope": "2022年国内4キャリアAndroid（iPhone除外）",
+  "counts": {
+    "sale_records": 55,
+    "docomo": 13,
+    "au": 19,
+    "softbank": 13,
+    "rakuten": 10
+  },
+  "records": [
+    {
+      "inventory_id": "1b9159f154cd",
+      "carrier": "SoftBank",
+      "model_name": "Xiaomi 12T Pro",
+      "carrier_model_number": null,
+      "release_date": "2022-12-16",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B19あり / n79なし。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/xiaomi-12t-pro-softbank-2022-carrier-compatibility/",
+      "official_source": "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "1896fd83c395",
+      "carrier": "楽天モバイル",
+      "model_name": "Galaxy A23 5G",
+      "carrier_model_number": null,
+      "release_date": "2022-11-22",
+      "lte_bands": [
+        "1",
+        "3",
+        "5",
+        "8",
+        "12",
+        "18",
+        "19",
+        "21",
+        "26",
+        "28",
+        "38",
+        "39",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "sim_esim": "nanoSIM / eSIM",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-a23-5g-rakuten-2022-carrier-compatibility/",
+      "official_source": "https://network.mobile.rakuten.co.jp/product/smartphone/galaxy-a23-5g/spec.html",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "ffe0c633c844",
+      "carrier": "SoftBank",
+      "model_name": "LEITZ PHONE 2",
+      "carrier_model_number": null,
+      "release_date": "2022-11-18",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "8",
+        "11",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B19あり / n79あり。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/leitz-phone-2-softbank-2022-carrier-compatibility/",
+      "official_source": "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "20435475ece6",
+      "carrier": "au",
+      "model_name": "AQUOS sense7",
+      "carrier_model_number": "SHG10",
+      "release_date": "2022-11-11",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/shg10-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "34551f22931e",
+      "carrier": "楽天モバイル",
+      "model_name": "AQUOS sense7",
+      "carrier_model_number": null,
+      "release_date": "2022-11-04",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "8",
+        "12",
+        "17",
+        "18",
+        "19",
+        "21",
+        "38",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "sim_esim": "nanoSIM / eSIM",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/aquos-sense7-rakuten-2022-carrier-compatibility/",
+      "official_source": "https://network.mobile.rakuten.co.jp/product/smartphone/aquos-sense7/spec.html",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "387fa35a78f2",
+      "carrier": "NTTドコモ",
+      "model_name": "AQUOS sense7",
+      "carrier_model_number": "SH-53C",
+      "release_date": "2022-11-04",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B8あり。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sh-53c-docomo-2022-carrier-compatibility/",
+      "official_source": "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "f3902cfd26f5",
+      "carrier": "au",
+      "model_name": "BASIO active",
+      "carrier_model_number": "SHG09",
+      "release_date": "2022-10-28",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/shg09-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "f40fbe9fce65",
+      "carrier": "au",
+      "model_name": "Galaxy A23 5G",
+      "carrier_model_number": "SCG18",
+      "release_date": "2022-10-27",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/scg18-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "85bd69bdddff",
+      "carrier": "NTTドコモ",
+      "model_name": "Galaxy A23 5G",
+      "carrier_model_number": "SC-56C",
+      "release_date": "2022-10-27",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B8あり。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sc-56c-docomo-2022-carrier-compatibility/",
+      "official_source": "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "b437e1fea63a",
+      "carrier": "楽天モバイル",
+      "model_name": "Xperia 5 IV",
+      "carrier_model_number": null,
+      "release_date": "2022-10-21",
+      "lte_bands": [
+        "1",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "12",
+        "13",
+        "17",
+        "18",
+        "19",
+        "21",
+        "26",
+        "28",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "sim_esim": "nanoSIM / eSIM",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/xperia-5-iv-rakuten-2022-carrier-compatibility/",
+      "official_source": "https://network.mobile.rakuten.co.jp/product/smartphone/xperia-5m4/spec.html",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "ffd299609c4b",
+      "carrier": "au",
+      "model_name": "Xperia 5 IV",
+      "carrier_model_number": "SOG09",
+      "release_date": "2022-10-21",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "11",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n41",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sog09-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "da0246c4cf54",
+      "carrier": "SoftBank",
+      "model_name": "Xperia 5 IV",
+      "carrier_model_number": null,
+      "release_date": "2022-10-21",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "11",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B19あり / n79なし。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/xperia-5-iv-softbank-2022-carrier-compatibility/",
+      "official_source": "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "ba2eca8656e1",
+      "carrier": "NTTドコモ",
+      "model_name": "Xperia 5 IV",
+      "carrier_model_number": "SO-54C",
+      "release_date": "2022-10-21",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B8あり。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/so-54c-docomo-2022-carrier-compatibility/",
+      "official_source": "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "a74db28e21ca",
+      "carrier": "au",
+      "model_name": "Google Pixel 7 Pro",
+      "carrier_model_number": null,
+      "release_date": "2022-10-13",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n41",
+        "n77",
+        "n78",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/google-pixel-7-pro-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "c56d50960ff0",
+      "carrier": "au",
+      "model_name": "Google Pixel 7",
+      "carrier_model_number": null,
+      "release_date": "2022-10-13",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n41",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/google-pixel-7-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "3025c50d873f",
+      "carrier": "SoftBank",
+      "model_name": "Google Pixel 7 Pro",
+      "carrier_model_number": null,
+      "release_date": "2022-10-13",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n40",
+        "n77",
+        "n78",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B19あり / n79なし。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/google-pixel-7-pro-softbank-2022-carrier-compatibility/",
+      "official_source": "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "eccb4800f8eb",
+      "carrier": "SoftBank",
+      "model_name": "Google Pixel 7",
+      "carrier_model_number": null,
+      "release_date": "2022-10-13",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B19あり / n79なし。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/google-pixel-7-softbank-2022-carrier-compatibility/",
+      "official_source": "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "7a98d4d22c1f",
+      "carrier": "SoftBank",
+      "model_name": "AQUOS sense7 plus",
+      "carrier_model_number": null,
+      "release_date": "2022-10-07",
+      "lte_bands": [
+        "8",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "△",
+          "basis": "Band中心の技術判定",
+          "note": "B19なし / n79なし。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "△",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系なし。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/aquos-sense7-plus-softbank-2022-carrier-compatibility/",
+      "official_source": "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "f54e00501094",
+      "carrier": "楽天モバイル",
+      "model_name": "Galaxy Z Flip4",
+      "carrier_model_number": null,
+      "release_date": "2022-09-29",
+      "lte_bands": [
+        "1",
+        "3",
+        "5",
+        "8",
+        "12",
+        "18",
+        "19",
+        "21",
+        "26",
+        "28",
+        "38",
+        "39",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "sim_esim": "nanoSIM / eSIM",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-z-flip4-rakuten-2022-carrier-compatibility/",
+      "official_source": "https://network.mobile.rakuten.co.jp/product/smartphone/galaxy-z-flip4/spec.html",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "b8b73dc0f6ca",
+      "carrier": "au",
+      "model_name": "Galaxy Z Fold4",
+      "carrier_model_number": "SCG16",
+      "release_date": "2022-09-29",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n41",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/scg16-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "7a977d938ffa",
+      "carrier": "au",
+      "model_name": "Galaxy Z Flip4",
+      "carrier_model_number": "SCG17",
+      "release_date": "2022-09-29",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n41",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/scg17-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "d51722c9b1d4",
+      "carrier": "NTTドコモ",
+      "model_name": "Galaxy Z Fold4",
+      "carrier_model_number": "SC-55C",
+      "release_date": "2022-09-29",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B8あり。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sc-55c-docomo-2022-carrier-compatibility/",
+      "official_source": "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "08309caa98b0",
+      "carrier": "NTTドコモ",
+      "model_name": "Galaxy Z Flip4",
+      "carrier_model_number": "SC-54C",
+      "release_date": "2022-09-29",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B8あり。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sc-54c-docomo-2022-carrier-compatibility/",
+      "official_source": "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "f396cf2cdbff",
+      "carrier": "au",
+      "model_name": "AQUOS wish2",
+      "carrier_model_number": "SHG08",
+      "release_date": "2022-09-09",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1"
+      ],
+      "nr_bands": [
+        "n28",
+        "n78",
+        "n77"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B19あり / n79なし。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B8あり。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/shg08-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "ed98634b6052",
+      "carrier": "au",
+      "model_name": "Google Pixel 6a",
+      "carrier_model_number": null,
+      "release_date": "2022-07-28",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n41",
+        "n78",
+        "n77"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/google-pixel-6a-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "7e9f8376a37a",
+      "carrier": "SoftBank",
+      "model_name": "Google Pixel 6a",
+      "carrier_model_number": null,
+      "release_date": "2022-07-28",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B19あり / n79なし。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/google-pixel-6a-softbank-2022-carrier-compatibility/",
+      "official_source": "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "cdd53481bf5b",
+      "carrier": "NTTドコモ",
+      "model_name": "AQUOS R7",
+      "carrier_model_number": "SH-52C",
+      "release_date": "2022-07-15",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "8",
+        "11",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B8あり。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sh-52c-docomo-2022-carrier-compatibility/",
+      "official_source": "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "7e870fada79c",
+      "carrier": "楽天モバイル",
+      "model_name": "Xperia 10 IV",
+      "carrier_model_number": null,
+      "release_date": "2022-07-08",
+      "lte_bands": [
+        "1",
+        "3",
+        "4",
+        "5",
+        "8",
+        "12",
+        "18",
+        "19",
+        "21",
+        "38",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "sim_esim": "nanoSIM / eSIM",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/xperia-10-iv-rakuten-2022-carrier-compatibility/",
+      "official_source": "https://network.mobile.rakuten.co.jp/product/smartphone/xperia-10m4/spec.html",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "345fd3a1879c",
+      "carrier": "au",
+      "model_name": "Xperia 10 IV",
+      "carrier_model_number": "SOG07",
+      "release_date": "2022-07-08",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n41",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sog07-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "3c57ae278c53",
+      "carrier": "SoftBank",
+      "model_name": "Xperia 10 IV",
+      "carrier_model_number": null,
+      "release_date": "2022-07-08",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B19あり / n79なし。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/xperia-10-iv-softbank-2022-carrier-compatibility/",
+      "official_source": "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "87b6486fbd7f",
+      "carrier": "SoftBank",
+      "model_name": "AQUOS R7",
+      "carrier_model_number": null,
+      "release_date": "2022-07-08",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "8",
+        "11",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B19あり / n79あり。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/aquos-r7-softbank-2022-carrier-compatibility/",
+      "official_source": "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "b2225eaf468c",
+      "carrier": "NTTドコモ",
+      "model_name": "Xperia 10 IV",
+      "carrier_model_number": "SO-52C",
+      "release_date": "2022-07-08",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n79"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B8あり。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/so-52c-docomo-2022-carrier-compatibility/",
+      "official_source": "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "8a2e494e1e27",
+      "carrier": "楽天モバイル",
+      "model_name": "OPPO Reno7 A",
+      "carrier_model_number": null,
+      "release_date": "2022-06-30",
+      "lte_bands": [
+        "1",
+        "3",
+        "8",
+        "18",
+        "19",
+        "26",
+        "28",
+        "38",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "nanoSIM×2 / eSIM",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/oppo-reno7-a-rakuten-2022-carrier-compatibility/",
+      "official_source": "https://network.mobile.rakuten.co.jp/product/smartphone/reno7-a/spec.html",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "b550e7db4dbc",
+      "carrier": "NTTドコモ",
+      "model_name": "AQUOS wish2",
+      "carrier_model_number": "SH-51C",
+      "release_date": "2022-06-24",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1"
+      ],
+      "nr_bands": [
+        "n28",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B8あり。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sh-51c-docomo-2022-carrier-compatibility/",
+      "official_source": "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "efb9a8c6e31d",
+      "carrier": "au",
+      "model_name": "OPPO Reno7 A",
+      "carrier_model_number": "OPG04",
+      "release_date": "2022-06-23",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n41",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B19あり / n79なし。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B8あり。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/opg04-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "210298fd9397",
+      "carrier": "au",
+      "model_name": "Xperia Ace III",
+      "carrier_model_number": "SOG08",
+      "release_date": "2022-06-10",
+      "lte_bands": [
+        "18/26",
+        "3",
+        "1"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sog08-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "9027ffab0a06",
+      "carrier": "NTTドコモ",
+      "model_name": "Xperia Ace III",
+      "carrier_model_number": "SO-53C",
+      "release_date": "2022-06-10",
+      "lte_bands": [
+        "19",
+        "3",
+        "1"
+      ],
+      "nr_bands": [
+        "n78",
+        "n79"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "au": {
+          "rating": "△",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系なし。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "basis": "Band中心の技術判定",
+          "note": "B8なし。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/so-53c-docomo-2022-carrier-compatibility/",
+      "official_source": "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "c57bc39b47ad",
+      "carrier": "au",
+      "model_name": "Xperia 1 IV",
+      "carrier_model_number": "SOG06",
+      "release_date": "2022-06-03",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "11",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n41",
+        "n77",
+        "n78",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sog06-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "c33e0e6c59c2",
+      "carrier": "SoftBank",
+      "model_name": "Xperia 1 IV",
+      "carrier_model_number": null,
+      "release_date": "2022-06-03",
+      "lte_bands": [
+        "28",
+        "18",
+        "19",
+        "8",
+        "11",
+        "3",
+        "1",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n77",
+        "n78",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B19あり / n79なし。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/xperia-1-iv-softbank-2022-carrier-compatibility/",
+      "official_source": "https://www.softbank.jp/mobile/set/common/pdf/products/xperia1m4/spectrum.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "767ee17283c2",
+      "carrier": "NTTドコモ",
+      "model_name": "Xperia 1 IV",
+      "carrier_model_number": "SO-51C",
+      "release_date": "2022-06-03",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B8あり。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/so-51c-docomo-2022-carrier-compatibility/",
+      "official_source": "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "256a3b11cf4a",
+      "carrier": "楽天モバイル",
+      "model_name": "Redmi Note 11 Pro 5G",
+      "carrier_model_number": null,
+      "release_date": "2022-05-30",
+      "lte_bands": [
+        "1",
+        "3",
+        "8",
+        "18",
+        "19",
+        "26",
+        "28",
+        "38",
+        "40",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "nanoSIM / eSIM",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/redmi-note-11-pro-5g-rakuten-2022-carrier-compatibility/",
+      "official_source": "https://network.mobile.rakuten.co.jp/product/smartphone/redmi-note-11-pro-5g/spec.html",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "300d706bd6ae",
+      "carrier": "au",
+      "model_name": "Galaxy A53 5G",
+      "carrier_model_number": "SCG15",
+      "release_date": "2022-05-27",
+      "lte_bands": [
+        "18/26",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n41",
+        "n78",
+        "n77"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/scg15-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "4fe9b54d8b8a",
+      "carrier": "NTTドコモ",
+      "model_name": "Galaxy A53 5G",
+      "carrier_model_number": "SC-53C",
+      "release_date": "2022-05-27",
+      "lte_bands": [
+        "19",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n79"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "au": {
+          "rating": "△",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系なし。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "basis": "Band中心の技術判定",
+          "note": "B8なし。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sc-53c-docomo-2022-carrier-compatibility/",
+      "official_source": "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "7f41b27d8e2f",
+      "carrier": "楽天モバイル",
+      "model_name": "AQUOS sense6s",
+      "carrier_model_number": null,
+      "release_date": "2022-04-28",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "12",
+        "17",
+        "18",
+        "19",
+        "38",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "nanoSIM / eSIM",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/aquos-sense6s-rakuten-2022-carrier-compatibility/",
+      "official_source": "https://network.mobile.rakuten.co.jp/product/smartphone/aquos-sense6s/spec.html",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "937b7f987ceb",
+      "carrier": "au",
+      "model_name": "AQUOS sense6s",
+      "carrier_model_number": "SHG07",
+      "release_date": "2022-04-28",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n78",
+        "n77"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/shg07-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "f81e49c1b088",
+      "carrier": "SoftBank",
+      "model_name": "Redmi Note 10T",
+      "carrier_model_number": null,
+      "release_date": "2022-04-22",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "8",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "△",
+          "basis": "Band中心の技術判定",
+          "note": "B19なし / n79なし。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/redmi-note-10t-softbank-2022-carrier-compatibility/",
+      "official_source": "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "fded14577cf3",
+      "carrier": "au",
+      "model_name": "Galaxy S22 Ultra",
+      "carrier_model_number": "SCG14",
+      "release_date": "2022-04-21",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n41",
+        "n77",
+        "n78",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/scg14-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "63012686a85b",
+      "carrier": "au",
+      "model_name": "Galaxy S22",
+      "carrier_model_number": "SCG13",
+      "release_date": "2022-04-21",
+      "lte_bands": [
+        "28",
+        "18/26",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n41",
+        "n77",
+        "n78",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/scg13-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "b2b90a0c2d63",
+      "carrier": "NTTドコモ",
+      "model_name": "Galaxy S22 Ultra",
+      "carrier_model_number": "SC-52C",
+      "release_date": "2022-04-21",
+      "lte_bands": [
+        "28",
+        "19",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "au": {
+          "rating": "△",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系なし。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "basis": "Band中心の技術判定",
+          "note": "B8なし。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sc-52c-docomo-2022-carrier-compatibility/",
+      "official_source": "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "ce21b32a720b",
+      "carrier": "NTTドコモ",
+      "model_name": "Galaxy S22",
+      "carrier_model_number": "SC-51C",
+      "release_date": "2022-04-21",
+      "lte_bands": [
+        "28",
+        "19",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "au": {
+          "rating": "△",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系なし。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "basis": "Band中心の技術判定",
+          "note": "B8なし。VoLTE/IMSは別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sc-51c-docomo-2022-carrier-compatibility/",
+      "official_source": "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "1594b086817b",
+      "carrier": "SoftBank",
+      "model_name": "シンプルスマホ6",
+      "carrier_model_number": null,
+      "release_date": "2022-04-08",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B19あり / n79なし。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/6-softbank-2022-carrier-compatibility/",
+      "official_source": "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+      "official_cross_carrier_test": false
+    },
+    {
+      "inventory_id": "f60b63af2e08",
+      "carrier": "楽天モバイル",
+      "model_name": "Rakuten Hand 5G",
+      "carrier_model_number": null,
+      "release_date": "2022-02-14",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "12",
+        "17",
+        "18",
+        "19",
+        "26",
+        "28",
+        "38",
+        "40",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n77"
+      ],
+      "sim_esim": "eSIM×2（物理SIMなし）",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/rakuten-hand-5g-rakuten-2022-carrier-compatibility/",
+      "official_source": "https://network.mobile.rakuten.co.jp/product/smartphone/rakuten-hand-5g/spec.html",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "0c4d5c8a73f1",
+      "carrier": "楽天モバイル",
+      "model_name": "AQUOS wish",
+      "carrier_model_number": null,
+      "release_date": "2022-01-21",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "5",
+        "7",
+        "8",
+        "18",
+        "19",
+        "28",
+        "38",
+        "39",
+        "41"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "sim_esim": "nanoSIM / eSIM",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "楽天公式 他社回線対応確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/aquos-wish-rakuten-2022-carrier-compatibility/",
+      "official_source": "https://network.mobile.rakuten.co.jp/product/smartphone/aquos-wish/spec.html",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "9237ae23f82e",
+      "carrier": "au",
+      "model_name": "AQUOS wish",
+      "carrier_model_number": "SHG06",
+      "release_date": "2022-01-14",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1"
+      ],
+      "nr_bands": [
+        "n28",
+        "n78",
+        "n77"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "au公式 他社SIM動作確認",
+          "note": "通話・データ通信とも公式確認表で○。利用先の動作保証とは別"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/shg06-au-2022-carrier-compatibility/",
+      "official_source": "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/",
+      "official_cross_carrier_test": true
+    },
+    {
+      "inventory_id": "27f9aa3d7f2a",
+      "carrier": "SoftBank",
+      "model_name": "AQUOS wish",
+      "carrier_model_number": "A103SH",
+      "release_date": "2022-01-14",
+      "lte_bands": [
+        "18/26",
+        "19",
+        "8",
+        "3",
+        "1"
+      ],
+      "nr_bands": [
+        "n3",
+        "n28",
+        "n77",
+        "n78"
+      ],
+      "sim_esim": "個別機種の公式仕様ページで最終確認",
+      "felica": "個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B19あり / n79なし。VoLTE/IMSは別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B18/26系あり。VoLTE/IMSは別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "Band中心の技術判定",
+          "note": "B3あり。VoLTE/IMSは別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/a103sh-softbank-2022-carrier-compatibility/",
+      "official_source": "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+      "official_cross_carrier_test": false
+    }
+  ]
+}

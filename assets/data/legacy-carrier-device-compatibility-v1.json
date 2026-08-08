@@ -1,0 +1,1341 @@
+{
+  "schema_version": "1.1",
+  "checked_at": "2026-08-08",
+  "scope": "2019-2021 carrier model compatibility waves 1-2",
+  "records": [
+    {
+      "slug": "xperia-5-so01m-japan-carrier-compatibility",
+      "device": "Xperia 5 SO-01M",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2019,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "非対応",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19・B21を含むドコモ向け構成"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "B18/26が主要確認Bandにない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "B8が主要確認Bandにない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3を利用可能"
+        }
+      },
+      "source_url": "https://www.sony.jp/xperia/xperia/xperia5/spec_docomo.html"
+    },
+    {
+      "slug": "xperia-5-sov41-japan-carrier-compatibility",
+      "device": "Xperia 5 SOV41",
+      "original_carrier": "au",
+      "release_year": 2019,
+      "key_lte_bands": "B1 / B3 / B18/26 / B28（au公式表の主要確認帯）",
+      "key_5g_bands": "非対応",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "△",
+          "reason": "B19/B21を軸にしたドコモ向け構成ではない"
+        },
+        "au": {
+          "rating": "◎",
+          "reason": "B18/26を含むau向け構成"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "B8を主軸にする端末ではない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3を利用可能"
+        }
+      },
+      "source_url": "https://www.sony.jp/xperia/xperia/xperia5/spec_au.html"
+    },
+    {
+      "slug": "xperia-5-softbank-japan-carrier-compatibility",
+      "device": "Xperia 5 SoftBank版",
+      "original_carrier": "SoftBank",
+      "release_year": 2019,
+      "key_lte_bands": "B1 / B3 / B8 / B28 / B42（SoftBank公式表の主要確認帯）",
+      "key_5g_bands": "非対応",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "△",
+          "reason": "B19/B21が主軸ではない"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "B18/26が主軸ではない"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "reason": "B8を含むSoftBank向け構成"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3を利用可能"
+        }
+      },
+      "source_url": "https://www.sony.jp/xperia/xperia/xperia5/"
+    },
+    {
+      "slug": "galaxy-note10plus-sc01m-japan-carrier-compatibility",
+      "device": "Galaxy Note10+ SC-01M",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2019,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "非対応",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19/B21を含む"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "B18/26が主要確認帯にない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "B8が主要確認帯にない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3を利用可能"
+        }
+      },
+      "source_url": "https://www.samsung.com/jp/support/model/SM-N975DZWADCM/"
+    },
+    {
+      "slug": "galaxy-note10plus-scv45-japan-carrier-compatibility",
+      "device": "Galaxy Note10+ SCV45",
+      "original_carrier": "au",
+      "release_year": 2019,
+      "key_lte_bands": "B1 / B3 / B18/26 / B28（au公式表の主要確認帯）",
+      "key_5g_bands": "非対応",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "△",
+          "reason": "B19/B21が主軸ではない"
+        },
+        "au": {
+          "rating": "◎",
+          "reason": "B18/26を含む"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "B8が主軸ではない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3を利用可能"
+        }
+      },
+      "source_url": "https://www.samsung.com/jp/support/"
+    },
+    {
+      "slug": "aquos-r5g-sh51a-japan-carrier-compatibility",
+      "device": "AQUOS R5G SH-51A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 / B42 ほか（ドコモ公式表で広帯域）",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19/B21、n79を利用可能"
+        },
+        "au": {
+          "rating": "○",
+          "reason": "LTE対応帯は広い。au 5Gは世代/帯域差を確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "reason": "LTE対応帯は広い。5GはSoftBank側条件を確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3を含む。5Gはn77の有無を確認"
+        }
+      },
+      "source_url": "https://k-tai.sharp.co.jp/support/d/sh51a/index.html"
+    },
+    {
+      "slug": "aquos-r5g-shg01-japan-carrier-compatibility",
+      "device": "AQUOS R5G SHG01",
+      "original_carrier": "au",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B18/26 / B28 / B42 ほか（au公式表で広帯域）",
+      "key_5g_bands": "n77 / n78（ソフトウェア対応注記を含む）",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "○",
+          "reason": "LTEは広いがn79非対応に注意"
+        },
+        "au": {
+          "rating": "◎",
+          "reason": "B18/26・n77/n78を含む"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "reason": "主要LTE帯との重なりが多い"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3/n77系の適性あり"
+        }
+      },
+      "source_url": "https://k-tai.sharp.co.jp/support/a/shg01/"
+    },
+    {
+      "slug": "aquos-r5g-softbank-japan-carrier-compatibility",
+      "device": "AQUOS R5G SoftBank版",
+      "original_carrier": "SoftBank",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B8 / B28 / B42 ほか（SoftBank公式表で広帯域）",
+      "key_5g_bands": "n77中心",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "○",
+          "reason": "LTEは比較的広いがB19/n79等を要確認"
+        },
+        "au": {
+          "rating": "○",
+          "reason": "LTEの重なりは多い"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "reason": "B8・n77を軸に販売元最適"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3/n77を利用しやすい"
+        }
+      },
+      "source_url": "https://k-tai.sharp.co.jp/support/s/aquos-r5g/"
+    },
+    {
+      "slug": "xperia-1-ii-so51a-japan-carrier-compatibility",
+      "device": "Xperia 1 II SO-51A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19/B21・n79を含む"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "B18/26不足を重く見る"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "B8不足。5G n77も主軸ではない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3でLTE利用可能性"
+        }
+      },
+      "source_url": "https://www.sony.jp/xperia/xperia/xperia1m2/spec_docomo.html"
+    },
+    {
+      "slug": "xperia-1-ii-sog01-japan-carrier-compatibility",
+      "device": "Xperia 1 II SOG01",
+      "original_carrier": "au",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B18/26 / B28 / B42（au公式表の主要確認帯）",
+      "key_5g_bands": "n77 / n78",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "△",
+          "reason": "B19/B21/n79不足を重く見る"
+        },
+        "au": {
+          "rating": "◎",
+          "reason": "B18/26・n77/n78"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "B8不足。n77は相性あり"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3/n77を利用可能"
+        }
+      },
+      "source_url": "https://www.sony.jp/xperia/xperia/xperia1m2/spec_au.html"
+    },
+    {
+      "slug": "xperia-5-ii-so52a-japan-carrier-compatibility",
+      "device": "Xperia 5 II SO-52A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19/B21・n79を含む"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "B18/26不足"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "B8不足"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3は利用可能"
+        }
+      },
+      "source_url": "https://www.sony.jp/xperia/xperia/xperia5m2/spec_docomo.html"
+    },
+    {
+      "slug": "xperia-5-ii-sog02-japan-carrier-compatibility",
+      "device": "Xperia 5 II SOG02",
+      "original_carrier": "au",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B18/26 / B28 / B42（au公式表の主要確認帯）",
+      "key_5g_bands": "n77 / n78",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "△",
+          "reason": "B19/B21/n79不足"
+        },
+        "au": {
+          "rating": "◎",
+          "reason": "B18/26・n77/n78"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "B8不足。n77は利用余地"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3/n77を利用可能"
+        }
+      },
+      "source_url": "https://www.sony.jp/xperia/xperia/xperia5m2/spec_au.html"
+    },
+    {
+      "slug": "xperia-5-ii-softbank-japan-carrier-compatibility",
+      "device": "Xperia 5 II SoftBank版",
+      "original_carrier": "SoftBank",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B8 / B28 / B42（SoftBank公式表の主要確認帯）",
+      "key_5g_bands": "n77中心",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "△",
+          "reason": "B19/B21/n79不足"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "B18/26不足"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "reason": "B8・n77を含む"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3/n77を利用可能"
+        }
+      },
+      "source_url": "https://www.sony.jp/xperia/xperia/xperia5m2/spec_softbank.html"
+    },
+    {
+      "slug": "aquos-sense5g-sh53a-japan-carrier-compatibility",
+      "device": "AQUOS sense5G SH-53A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 ほか",
+      "key_5g_bands": "n78 / n79（ドコモ公式表）",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19/B21・n79を利用可能"
+        },
+        "au": {
+          "rating": "○",
+          "reason": "LTE対応帯は比較的広いがB18/26を要確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "reason": "B1/B3系は利用余地。B8を要確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3で利用可能性"
+        }
+      },
+      "source_url": "https://k-tai.sharp.co.jp/support/d/sh53a/index.html"
+    },
+    {
+      "slug": "aquos-sense5g-shg03-japan-carrier-compatibility",
+      "device": "AQUOS sense5G SHG03",
+      "original_carrier": "au",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B18/26 / B28 / B42 ほか",
+      "key_5g_bands": "n77 / n78",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "○",
+          "reason": "LTEは比較的広いがn79非対応"
+        },
+        "au": {
+          "rating": "◎",
+          "reason": "B18/26・n77/n78"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "reason": "LTE帯の重なりは多い"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3/n77系で相性あり"
+        }
+      },
+      "source_url": "https://k-tai.sharp.co.jp/support/a/shg03/"
+    },
+    {
+      "slug": "aquos-sense5g-softbank-japan-carrier-compatibility",
+      "device": "AQUOS sense5G SoftBank版",
+      "original_carrier": "SoftBank",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B8 / B28 / B42 ほか",
+      "key_5g_bands": "n77中心",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "○",
+          "reason": "B1/B3は利用余地。B19/n79を要確認"
+        },
+        "au": {
+          "rating": "○",
+          "reason": "LTE重なりはあるがB18/26を要確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "reason": "B8/n77を軸に最適"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "B3/n77を利用しやすい"
+        }
+      },
+      "source_url": "https://k-tai.sharp.co.jp/support/s/aquos-sense5g/"
+    },
+    {
+      "slug": "arrows-5g-f51a-japan-carrier-compatibility",
+      "device": "arrows 5G F-51A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B42",
+      "key_5g_bands": "n78 / n79 / n257",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/f51a/spec.html"
+    },
+    {
+      "slug": "arrows-nx9-f52a-japan-carrier-compatibility",
+      "device": "arrows NX9 F-52A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B42",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/f52a/spec.html"
+    },
+    {
+      "slug": "lg-v60-thinq-5g-l51a-japan-carrier-compatibility",
+      "device": "LG V60 ThinQ 5G L-51A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B42",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/l51a/spec.html"
+    },
+    {
+      "slug": "lg-velvet-l52a-japan-carrier-compatibility",
+      "device": "LG VELVET L-52A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B42",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/l52a/spec.html"
+    },
+    {
+      "slug": "galaxy-s20-5g-sc51a-japan-carrier-compatibility",
+      "device": "Galaxy S20 5G SC-51A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sc51a/spec.html"
+    },
+    {
+      "slug": "galaxy-s20plus-5g-sc52a-japan-carrier-compatibility",
+      "device": "Galaxy S20+ 5G SC-52A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "n78 / n79 / n257",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sc52a/spec.html"
+    },
+    {
+      "slug": "galaxy-note20-ultra-5g-sc53a-japan-carrier-compatibility",
+      "device": "Galaxy Note20 Ultra 5G SC-53A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "n78 / n79 / n257",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sc53a/spec.html"
+    },
+    {
+      "slug": "galaxy-a51-5g-sc54a-japan-carrier-compatibility",
+      "device": "Galaxy A51 5G SC-54A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B42",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sc54a/spec.html"
+    },
+    {
+      "slug": "aquos-zero2-sh01m-japan-carrier-compatibility",
+      "device": "AQUOS zero2 SH-01M",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B8 / B18/26 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "非対応",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "○",
+          "reason": "B18/26を含むためLTEの周波数面では比較的有利"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "reason": "SoftBankの主要プラチナ帯B8を含む"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sh01m/spec.html"
+    },
+    {
+      "slug": "aquos-sense4-sh41a-japan-carrier-compatibility",
+      "device": "AQUOS sense4 SH-41A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B8 / B18/26 / B19",
+      "key_5g_bands": "非対応",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "○",
+          "reason": "B18/26を含むためLTEの周波数面では比較的有利"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "reason": "SoftBankの主要プラチナ帯B8を含む"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sh41a/spec.html"
+    },
+    {
+      "slug": "xperia-10-ii-so41a-japan-carrier-compatibility",
+      "device": "Xperia 10 II SO-41A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19 / B21",
+      "key_5g_bands": "非対応",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/so41a/spec.html"
+    },
+    {
+      "slug": "arrows-be4-f41a-japan-carrier-compatibility",
+      "device": "arrows Be4 F-41A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19",
+      "key_5g_bands": "非対応",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/f41a/spec.html"
+    },
+    {
+      "slug": "lg-style3-l41a-japan-carrier-compatibility",
+      "device": "LG style3 L-41A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19 / B21",
+      "key_5g_bands": "非対応",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/l41a/spec.html"
+    },
+    {
+      "slug": "galaxy-a41-sc41a-japan-carrier-compatibility",
+      "device": "Galaxy A41 SC-41A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19 / B21",
+      "key_5g_bands": "非対応",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sc41a/spec.html"
+    },
+    {
+      "slug": "galaxy-a21-sc42a-japan-carrier-compatibility",
+      "device": "Galaxy A21 SC-42A",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2020,
+      "key_lte_bands": "B1 / B3 / B19",
+      "key_5g_bands": "非対応",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sc42a/spec.html"
+    },
+    {
+      "slug": "arrows-we-f51b-japan-carrier-compatibility",
+      "device": "arrows We F-51B",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B19 / B42",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/f51b/spec.html"
+    },
+    {
+      "slug": "galaxy-s21-5g-sc51b-japan-carrier-compatibility",
+      "device": "Galaxy S21 5G SC-51B",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sc51b/spec.html"
+    },
+    {
+      "slug": "galaxy-s21-ultra-5g-sc52b-japan-carrier-compatibility",
+      "device": "Galaxy S21 Ultra 5G SC-52B",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "n78 / n79 / n257",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sc52b/spec.html"
+    },
+    {
+      "slug": "galaxy-a52-5g-sc53b-japan-carrier-compatibility",
+      "device": "Galaxy A52 5G SC-53B",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B42",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sc53b/spec.html"
+    },
+    {
+      "slug": "galaxy-z-flip3-5g-sc54b-japan-carrier-compatibility",
+      "device": "Galaxy Z Flip3 5G SC-54B",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sc54b/spec.html"
+    },
+    {
+      "slug": "galaxy-z-fold3-5g-sc55b-japan-carrier-compatibility",
+      "device": "Galaxy Z Fold3 5G SC-55B",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "n78 / n79 / n257",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sc55b/spec.html"
+    },
+    {
+      "slug": "galaxy-a22-5g-sc56b-japan-carrier-compatibility",
+      "device": "Galaxy A22 5G SC-56B",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B42",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sc56b/spec.html"
+    },
+    {
+      "slug": "aquos-r6-sh51b-japan-carrier-compatibility",
+      "device": "AQUOS R6 SH-51B",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B8 / B18/26 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "n77 / n78 / n79",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "○",
+          "reason": "B18/26を含むためLTEの周波数面では比較的有利"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "reason": "SoftBankの主要プラチナ帯B8を含む"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能、5G n77にも対応"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sh51b/spec.html"
+    },
+    {
+      "slug": "aquos-sense6-sh54b-japan-carrier-compatibility",
+      "device": "AQUOS sense6 SH-54B",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B18/26 / B19 / B21 / B42",
+      "key_5g_bands": "n77 / n78 / n79",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "○",
+          "reason": "B18/26を含むためLTEの周波数面では比較的有利"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能、5G n77にも対応"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/sh54b/spec.html"
+    },
+    {
+      "slug": "xperia-1-iii-so51b-japan-carrier-compatibility",
+      "device": "Xperia 1 III SO-51B",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "n78 / n79 / n257",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/so51b/spec.html"
+    },
+    {
+      "slug": "xperia-10-iii-so52b-japan-carrier-compatibility",
+      "device": "Xperia 10 III SO-52B",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B42",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/so52b/spec.html"
+    },
+    {
+      "slug": "xperia-5-iii-so53b-japan-carrier-compatibility",
+      "device": "Xperia 5 III SO-53B",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B19 / B21 / B28 / B42",
+      "key_5g_bands": "n78 / n79",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/so53b/spec.html"
+    },
+    {
+      "slug": "arrows-be4-plus-f41b-japan-carrier-compatibility",
+      "device": "arrows Be4 Plus F-41B",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B19",
+      "key_5g_bands": "非対応",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/f41b/spec.html"
+    },
+    {
+      "slug": "xperia-ace-ii-so41b-japan-carrier-compatibility",
+      "device": "Xperia Ace II SO-41B",
+      "original_carrier": "NTTドコモ",
+      "release_year": 2021,
+      "key_lte_bands": "B1 / B3 / B19",
+      "key_5g_bands": "非対応",
+      "sim": "nanoUIM（物理SIM）",
+      "felica": "対応",
+      "volte_ims": "ドコモVoLTE対応。持ち込み先IMSは別確認",
+      "carrier_fit": {
+        "ドコモ": {
+          "rating": "◎",
+          "reason": "B19を含むドコモ販売モデル"
+        },
+        "au": {
+          "rating": "△",
+          "reason": "auの主要プラチナ帯B18/26を搭載しない"
+        },
+        "SoftBank": {
+          "rating": "△",
+          "reason": "SoftBankの主要プラチナ帯B8を搭載しない"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "reason": "楽天の主力LTE B3を利用可能"
+        }
+      },
+      "source_url": "https://www.docomo.ne.jp/support/product/so41b/spec.html"
+    }
+  ]
+}

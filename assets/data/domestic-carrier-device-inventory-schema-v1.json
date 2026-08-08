@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "description": "国内4キャリア販売端末台帳。販売レコードと端末モデルを分離。",
+  "carrier_sale_record_fields": [
+    "carrier",
+    "brand",
+    "model_name",
+    "carrier_model_number",
+    "release_date",
+    "release_year",
+    "inventory_status",
+    "source_url",
+    "sim_esim",
+    "lte_bands",
+    "nr_bands",
+    "volte_ims",
+    "felica",
+    "four_carrier_fit",
+    "domestic_overseas_difference"
+  ]
+}

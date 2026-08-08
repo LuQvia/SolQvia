@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "release": "phase82",
+  "checked_at": "2026-08-08",
+  "scope": "Docomo kids phone Y!mobile / SoftBank cross-carrier real-device verification ledger",
+  "user_provided_real_device_observation": {
+    "device_family": "NTTドコモ キッズケータイ",
+    "exact_model": "未特定",
+    "exact_model_required_for_final_claim": true,
+    "ymobile_sim_information_recognized": true,
+    "softbank_sim_information_recognized": true,
+    "packet_data_verified": false,
+    "voice_outgoing_verified": false,
+    "voice_incoming_verified": false,
+    "sms_send_verified": false,
+    "sms_receive_verified": false,
+    "reboot_persistence_verified": false,
+    "monitoring_location_features_verified": false,
+    "privacy_note": "IMEI/EID等の個体識別情報は公開データへ保存しない"
+  },
+  "docomo_official_mno_check": {
+    "source": "https://www.docomo.ne.jp/binary/pdf/support/product/mno-check.pdf",
+    "legend": {
+      "circle": "利用可。ただしサービス保証ではない",
+      "circle_note": "最も人口カバー率が高い周波数に非対応",
+      "dash": "対応していない"
+    },
+    "models": [
+      {
+        "model": "SK-41D",
+        "au": {
+          "voice": "○※",
+          "data": "-"
+        },
+        "softbank": {
+          "voice": "○※",
+          "data": "-"
+        },
+        "rakuten": {
+          "voice": "-",
+          "data": "-"
+        }
+      },
+      {
+        "model": "KY-41C",
+        "au": {
+          "voice": "○※",
+          "data": "-"
+        },
+        "softbank": {
+          "voice": "○※",
+          "data": "-"
+        },
+        "rakuten": {
+          "voice": "-",
+          "data": "-"
+        }
+      },
+      {
+        "model": "SH-03M",
+        "au": {
+          "voice": "○※",
+          "data": "-"
+        },
+        "softbank": {
+          "voice": "○※",
+          "data": "-"
+        },
+        "rakuten": {
+          "voice": "-",
+          "data": "-"
+        }
+      }
+    ],
+    "ymobile_note": "Y!mobileはドコモのMNO動作確認表の個別対象ではないため、SoftBank欄を公式保証として流用しない"
+  },
+  "ky41c_official": {
+    "sim": "eSIM",
+    "volte_docomo": true,
+    "lte_bands": [
+      "B1",
+      "B19"
+    ],
+    "apn_menu_path": [
+      "保護者メニュー",
+      "その他の設定",
+      "ネットワーク",
+      "モバイルネットワーク",
+      "詳細設定",
+      "アクセスポイント名"
+    ],
+    "sources": [
+      "https://www.docomo.ne.jp/product/ky41c/spec.html",
+      "https://www.docomo.ne.jp/binary/pdf/support/manual/KY-41C_J_syousai.pdf"
+    ]
+  },
+  "apn": {
+    "ymobile": {
+      "apn": "plus.acs.jp.v6",
+      "username": "ym",
+      "password": "ym",
+      "mcc": "440",
+      "mnc": "20",
+      "auth": "CHAP",
+      "source": "https://www.ymobile.jp/yservice/howto/simfree_android/apn/"
+    },
+    "softbank": {
+      "apn": "plus.4g",
+      "username": "plus",
+      "password": "4g",
+      "auth": "CHAP",
+      "source": "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+    }
+  },
+  "result_policy": "SIM認識、通話、データ、SMS、VoLTE/IMS、見守りを独立判定し、未実機確認項目を推測で○にしない"
+}

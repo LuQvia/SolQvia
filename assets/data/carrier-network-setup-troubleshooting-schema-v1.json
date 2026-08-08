@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SolQvia Carrier Network Setup Troubleshooting",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "release",
+    "official_checked_at",
+    "carriers",
+    "symptom_routes"
+  ],
+  "properties": {
+    "schema_version": {
+      "type": "string"
+    },
+    "release": {
+      "type": "string"
+    },
+    "official_checked_at": {
+      "type": "string"
+    },
+    "carriers": {
+      "type": "array"
+    },
+    "symptom_routes": {
+      "type": "array"
+    }
+  }
+}

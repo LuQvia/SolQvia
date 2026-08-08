@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "checked_at": "2026-08-08",
+  "records": [
+    {
+      "slug": "aquos-sense6-rakuten-carrier-compatibility",
+      "name": "AQUOS sense6",
+      "year": 2021,
+      "model_number": null,
+      "lte": "B1 / B2 / B3 / B5 / B12 / B17 / B18 / B19 / B38 / B41 / B42",
+      "nr": "n28 / n77 / n78",
+      "sim": "nanoSIM / eSIM",
+      "felica": "対応",
+      "volte": "Rakuten / docomo / au / SoftBank：すべて公式対応",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "△",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/aquos-sense6/spec.html"
+    },
+    {
+      "slug": "rakuten-big-s-rakuten-carrier-compatibility",
+      "name": "Rakuten BIG s",
+      "year": 2021,
+      "model_number": "3917JR",
+      "lte": "B1 / B3 / B4 / B5 / B7 / B12 / B17 / B18 / B19 / B26 / B38 / B41 / B42",
+      "nr": "n77 / n257",
+      "sim": "eSIM",
+      "felica": "対応",
+      "volte": "Rakuten：対応 / docomo・au・SoftBank：公式非対応",
+      "fit": {
+        "NTTドコモ": "△",
+        "au": "△",
+        "SoftBank": "△",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/rakuten-big-s/spec.html"
+    },
+    {
+      "slug": "aquos-sense4-plus-rakuten-carrier-compatibility",
+      "name": "AQUOS sense4 plus",
+      "year": 2020,
+      "model_number": null,
+      "lte": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B11 / B12 / B17 / B18 / B19 / B26 / B28 / B41",
+      "nr": "非対応",
+      "sim": "nanoSIM × 2",
+      "felica": "対応",
+      "volte": "Rakuten / docomo / au / SoftBank：すべて公式対応",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "○",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/aquos-sense4-plus/spec.html"
+    },
+    {
+      "slug": "oppo-a73-rakuten-carrier-compatibility",
+      "name": "OPPO A73",
+      "year": 2020,
+      "model_number": null,
+      "lte": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B18 / B19 / B26 / B28 / B38 / B41",
+      "nr": "非対応",
+      "sim": "nanoSIM / eSIM",
+      "felica": "非対応",
+      "volte": "Rakuten / docomo / au：公式対応、SoftBank：公式非対応",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "△",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/a73/spec.html"
+    },
+    {
+      "slug": "oppo-reno3-a-rakuten-carrier-compatibility",
+      "name": "OPPO Reno3 A",
+      "year": 2020,
+      "model_number": null,
+      "lte": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B18 / B19 / B20 / B26 / B28 / B38 / B39 / B40 / B41",
+      "nr": "非対応",
+      "sim": "nanoSIM × 2",
+      "felica": "対応",
+      "volte": "Rakuten / docomo / au：公式対応、SoftBank：公式非対応",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "△",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/reno3-a/spec.html"
+    },
+    {
+      "slug": "aquos-r5g-rakuten-carrier-compatibility",
+      "name": "AQUOS R5G",
+      "year": 2020,
+      "model_number": null,
+      "lte": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B11 / B12 / B13 / B17 / B18 / B19 / B20 / B28 / B38 / B39 / B40 / B41 / B42",
+      "nr": "n77",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "volte": "Rakuten / docomo / au / SoftBank：すべて公式対応",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "○",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/aquos-r5g/spec.html"
+    },
+    {
+      "slug": "oppo-a5-2020-rakuten-carrier-compatibility",
+      "name": "OPPO A5 2020",
+      "year": 2020,
+      "model_number": null,
+      "lte": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B18 / B19 / B20 / B26 / B28 / B38 / B39 / B40 / B41",
+      "nr": "非対応",
+      "sim": "nanoSIM × 2",
+      "felica": "非対応",
+      "volte": "Rakuten / docomo / au：公式対応、SoftBank：公式非対応",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "△",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/a5-2020/spec.html"
+    },
+    {
+      "slug": "arrows-rx-rakuten-carrier-compatibility",
+      "name": "arrows RX",
+      "year": 2020,
+      "model_number": null,
+      "lte": "B1 / B3 / B5 / B12 / B17 / B18 / B19 / B26",
+      "nr": "非対応",
+      "sim": "nanoSIM",
+      "felica": "対応",
+      "volte": "Rakuten / docomo / au / SoftBank：すべて公式対応",
+      "fit": {
+        "NTTドコモ": "○",
+        "au": "○",
+        "SoftBank": "△",
+        "楽天モバイル": "◎"
+      },
+      "source": "https://network.mobile.rakuten.co.jp/product/smartphone/arrows-rx/spec.html"
+    }
+  ]
+}

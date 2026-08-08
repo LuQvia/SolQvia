@@ -1,0 +1,3110 @@
+{
+  "schema_version": "1.0",
+  "checked_at": "2026-08-08",
+  "scope": "2026年1月1日から2026年8月8日までに国内4MNOの通常スマートフォン販売ラインで発売されたAndroid 48販売レコード。auの暫定誤収録2件を除外し、au4件・楽天モバイル13件を公式ラインアップ監査で補完。キャリア別Bandと4キャリア相性を一次資料で確認。",
+  "counts": {
+    "unique_models": 21,
+    "sale_records": 48,
+    "docomo": 11,
+    "au": 12,
+    "softbank": 12,
+    "rakuten": 13
+  },
+  "records": [
+    {
+      "inventory_id": "fd84879ba9af",
+      "carrier": "楽天モバイル",
+      "brand": "Nothing",
+      "model_name": "Phone (3a) Lite",
+      "carrier_model_number": null,
+      "release_date": "2026-01-15",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "12",
+        "17",
+        "18",
+        "19",
+        "20",
+        "26",
+        "28",
+        "38",
+        "40",
+        "41",
+        "42",
+        "66",
+        "71"
+      ],
+      "nr_bands": [
+        "n1",
+        "n2",
+        "n3",
+        "n5",
+        "n7",
+        "n8",
+        "n12",
+        "n20",
+        "n28",
+        "n38",
+        "n40",
+        "n41",
+        "n66",
+        "n71",
+        "n77",
+        "n78"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=なし/掲載なし。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B3=あり、n77=あり"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/phone-3a-lite-rakuten-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/phone-3a-lite/spec/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "76b7fc3c03e4",
+      "carrier": "au",
+      "brand": "FCNT",
+      "model_name": "らくらくスマートフォン Lite",
+      "carrier_model_number": null,
+      "release_date": "2026-01-23",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "3",
+        "1",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応（au公式仕様/製品機能）",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B18/B26=あり、n77/n78=あり"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/rakuraku-smartphone-lite-au-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.au.com/content/dam/au-com/support/service/mobile/procedure/simcard/unlock/compatible_network/images/compatible_network_91c035248a6a9544.pdf",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "b3285c0ac052",
+      "carrier": "楽天モバイル",
+      "brand": "SHARP",
+      "model_name": "AQUOS R10",
+      "carrier_model_number": null,
+      "release_date": "2026-01-23",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "11",
+        "12",
+        "13",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "28",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "66"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n5",
+        "n7",
+        "n8",
+        "n28",
+        "n38",
+        "n40",
+        "n41",
+        "n66",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B3=あり、n77=あり"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/aquos-r10-rakuten-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/aquos-r10/spec/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "2bea9c501e53",
+      "carrier": "NTTドコモ",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26",
+      "carrier_model_number": "SC-51G",
+      "release_date": "2026-03-12",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n77",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B19/B21=あり、n79=あり"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sc-51g-docomo-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/for_simfree/apn.html"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "7c754fc42e42",
+      "carrier": "NTTドコモ",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26 Ultra",
+      "carrier_model_number": "SC-53G",
+      "release_date": "2026-03-12",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n77",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B19/B21=あり、n79=あり"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sc-53g-docomo-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/for_simfree/apn.html"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "d8a2412e70bc",
+      "carrier": "NTTドコモ",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26+",
+      "carrier_model_number": "SC-52G",
+      "release_date": "2026-03-12",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n77",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B19/B21=あり、n79=あり"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sc-52g-docomo-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/for_simfree/apn.html"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "5f29c063af29",
+      "carrier": "SoftBank",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26",
+      "carrier_model_number": null,
+      "release_date": "2026-03-12",
+      "release_date_status": "official_support_list_verified",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n40",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B8=あり、n77=あり"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-s26-softbank-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "6024ac39a36b",
+      "carrier": "SoftBank",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26 Ultra",
+      "carrier_model_number": null,
+      "release_date": "2026-03-12",
+      "release_date_status": "official_support_list_verified",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n40",
+        "n41",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B8=あり、n77=あり"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-s26-ultra-softbank-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "392675890be5",
+      "carrier": "SoftBank",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26+",
+      "carrier_model_number": null,
+      "release_date": "2026-03-12",
+      "release_date_status": "official_support_list_verified",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n40",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B8=あり、n77=あり"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-s26-plus-softbank-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "d81e928aea24",
+      "carrier": "au",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26",
+      "carrier_model_number": null,
+      "release_date": "2026-03-12",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n40",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B18/B26=あり、n77/n78=あり"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-s26-au-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.au.com/content/dam/au-com/support/service/mobile/procedure/simcard/unlock/compatible_network/images/compatible_network_91c035248a6a9544.pdf",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "258795ce0865",
+      "carrier": "au",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26 Ultra",
+      "carrier_model_number": null,
+      "release_date": "2026-03-12",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n40",
+        "n41",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B18/B26=あり、n77/n78=あり"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-s26-ultra-au-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.au.com/content/dam/au-com/support/service/mobile/procedure/simcard/unlock/compatible_network/images/compatible_network_91c035248a6a9544.pdf",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "c1a89c87c390",
+      "carrier": "au",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26+",
+      "carrier_model_number": null,
+      "release_date": "2026-03-12",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n40",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B18/B26=あり、n77/n78=あり"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-s26-plus-au-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.au.com/content/dam/au-com/support/service/mobile/procedure/simcard/unlock/compatible_network/images/compatible_network_91c035248a6a9544.pdf",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "93cf43bd9492",
+      "carrier": "楽天モバイル",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26",
+      "carrier_model_number": null,
+      "release_date": "2026-03-12",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM（eSIM×2も可）",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "12",
+        "13",
+        "18",
+        "19",
+        "20",
+        "21",
+        "26",
+        "28",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "66"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n5",
+        "n28",
+        "n40",
+        "n41",
+        "n66",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B3=あり、n77=あり"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-s26-rakuten-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-s26/spec/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "6c330cbd9eeb",
+      "carrier": "楽天モバイル",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26 Ultra",
+      "carrier_model_number": null,
+      "release_date": "2026-03-12",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM（eSIM×2も可）",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "12",
+        "13",
+        "18",
+        "19",
+        "20",
+        "21",
+        "26",
+        "28",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "66"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n5",
+        "n28",
+        "n40",
+        "n41",
+        "n66",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B3=あり、n77=あり"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-s26-ultra-rakuten-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-s26-ultra/spec/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "06df6bb9ef93",
+      "carrier": "楽天モバイル",
+      "brand": "Samsung",
+      "model_name": "Galaxy S26+",
+      "carrier_model_number": null,
+      "release_date": "2026-03-12",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM（eSIM×2も可）",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "12",
+        "13",
+        "18",
+        "19",
+        "20",
+        "21",
+        "26",
+        "28",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "66"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n5",
+        "n28",
+        "n40",
+        "n41",
+        "n66",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B3=あり、n77=あり"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-s26-plus-rakuten-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-s26-plus/spec/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "122725dd0415",
+      "carrier": "au",
+      "brand": "KYOCERA",
+      "model_name": "TORQUE G07",
+      "carrier_model_number": null,
+      "release_date": "2026-03-18",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "3",
+        "1",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応（au公式仕様/製品機能）",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B18/B26=あり、n77/n78=あり"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/torque-g07-au-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.au.com/content/dam/au-com/support/service/mobile/procedure/simcard/unlock/compatible_network/images/compatible_network_91c035248a6a9544.pdf",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "bbaed71552a9",
+      "carrier": "NTTドコモ",
+      "brand": "Google",
+      "model_name": "Google Pixel 10a",
+      "carrier_model_number": null,
+      "release_date": "2026-04-14",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n77",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B19/B21=あり、n79=あり"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/google-pixel-10a-docomo-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/for_simfree/apn.html"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "866eac743971",
+      "carrier": "SoftBank",
+      "brand": "Google",
+      "model_name": "Google Pixel 10a",
+      "carrier_model_number": null,
+      "release_date": "2026-04-14",
+      "release_date_status": "official_support_list_verified",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n40",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B8=あり、n77=あり"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/google-pixel-10a-softbank-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "7b56837dd86e",
+      "carrier": "au",
+      "brand": "Google",
+      "model_name": "Google Pixel 10a",
+      "carrier_model_number": null,
+      "release_date": "2026-04-14",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n40",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B18/B26=あり、n77/n78=あり"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/google-pixel-10a-au-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.au.com/content/dam/au-com/support/service/mobile/procedure/simcard/unlock/compatible_network/images/compatible_network_91c035248a6a9544.pdf",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "f4e145abb04f",
+      "carrier": "楽天モバイル",
+      "brand": "Google",
+      "model_name": "Google Pixel 10a",
+      "carrier_model_number": null,
+      "release_date": "2026-04-14",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "12",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "26",
+        "28",
+        "32",
+        "38",
+        "40",
+        "41",
+        "42",
+        "66",
+        "75"
+      ],
+      "nr_bands": [
+        "n1",
+        "n2",
+        "n3",
+        "n5",
+        "n7",
+        "n8",
+        "n12",
+        "n20",
+        "n26",
+        "n28",
+        "n38",
+        "n40",
+        "n41",
+        "n66",
+        "n75",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B3=あり、n77=あり"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/google-pixel-10a-rakuten-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/google-pixel-10a/spec/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "4dc5d79c1d3a",
+      "carrier": "楽天モバイル",
+      "brand": "Nothing",
+      "model_name": "Phone (4a) Pro",
+      "carrier_model_number": null,
+      "release_date": "2026-04-22",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "12",
+        "17",
+        "18",
+        "19",
+        "20",
+        "25",
+        "26",
+        "28",
+        "38",
+        "40",
+        "41",
+        "42",
+        "48",
+        "66",
+        "71"
+      ],
+      "nr_bands": [
+        "n1",
+        "n2",
+        "n3",
+        "n5",
+        "n7",
+        "n8",
+        "n12",
+        "n20",
+        "n25",
+        "n28",
+        "n38",
+        "n40",
+        "n41",
+        "n42",
+        "n48",
+        "n66",
+        "n71",
+        "n77",
+        "n78"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=なし/掲載なし。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B3=あり、n77=あり"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/phone-4a-pro-rakuten-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/phone-4a-pro/spec/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "4c28a7ada73e",
+      "carrier": "NTTドコモ",
+      "brand": "Samsung",
+      "model_name": "Galaxy A57 5G",
+      "carrier_model_number": "SC-54G",
+      "release_date": "2026-04-23",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n77",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B19/B21=あり、n79=あり"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sc-54g-docomo-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/for_simfree/apn.html"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "26be0541a414",
+      "carrier": "SoftBank",
+      "brand": "Samsung",
+      "model_name": "Galaxy A57 5G",
+      "carrier_model_number": null,
+      "release_date": "2026-04-23",
+      "release_date_status": "official_support_list_verified",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B8=あり、n77=あり"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-a57-5g-softbank-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "317fe991611a",
+      "carrier": "SoftBank",
+      "brand": "Brain AI Japan",
+      "model_name": "Natural AI Phone",
+      "carrier_model_number": null,
+      "release_date": "2026-04-24",
+      "release_date_status": "official_support_list_verified",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=なし/掲載なし。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B8=あり、n77=あり"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/natural-ai-phone-softbank-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "4db40c6adf59",
+      "carrier": "NTTドコモ",
+      "brand": "Sony",
+      "model_name": "Xperia 1 VIII",
+      "carrier_model_number": "SO-51G",
+      "release_date": "2026-06-11",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "11",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n77",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B19/B21=あり、n79=あり"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/so-51g-docomo-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/for_simfree/apn.html"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "78af07f918f7",
+      "carrier": "SoftBank",
+      "brand": "Sony",
+      "model_name": "Xperia 1 VIII",
+      "carrier_model_number": null,
+      "release_date": "2026-06-11",
+      "release_date_status": "official_support_list_verified",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "11",
+        "3",
+        "1"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B8=あり、n77=あり"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/xperia-1-viii-softbank-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "fde7c59c8d84",
+      "carrier": "au",
+      "brand": "Sony",
+      "model_name": "Xperia 1 VIII",
+      "carrier_model_number": null,
+      "release_date": "2026-06-11",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "11",
+        "21",
+        "3",
+        "1",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n40",
+        "n41",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B18/B26=あり、n77/n78=あり"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/xperia-1-viii-au-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.au.com/content/dam/au-com/support/service/mobile/procedure/simcard/unlock/compatible_network/images/compatible_network_91c035248a6a9544.pdf",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "043b0bd76f8b",
+      "carrier": "NTTドコモ",
+      "brand": "FCNT",
+      "model_name": "arrows We3",
+      "carrier_model_number": "F-52G",
+      "release_date": "2026-06-25",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n77",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B19/B21=あり、n79=あり"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/f-52g-docomo-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/for_simfree/apn.html"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "bbe638456aa5",
+      "carrier": "au",
+      "brand": "FCNT",
+      "model_name": "arrows We3",
+      "carrier_model_number": null,
+      "release_date": "2026-06-25",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "3",
+        "1",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B18/B26=あり、n77/n78=あり"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/arrows-we3-au-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.au.com/content/dam/au-com/support/service/mobile/procedure/simcard/unlock/compatible_network/images/compatible_network_91c035248a6a9544.pdf",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "1db94ecf6897",
+      "carrier": "楽天モバイル",
+      "brand": "OPPO",
+      "model_name": "OPPO Reno15 A",
+      "carrier_model_number": null,
+      "release_date": "2026-06-25",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "12",
+        "17",
+        "18",
+        "19",
+        "20",
+        "26",
+        "28",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "48",
+        "66"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n40",
+        "n41",
+        "n77",
+        "n78"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=なし/掲載なし。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B3=あり、n77=あり"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/oppo-reno15-a-rakuten-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/reno15-a/spec/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "26105fe223ea",
+      "carrier": "楽天モバイル",
+      "brand": "FCNT",
+      "model_name": "arrows We3",
+      "carrier_model_number": null,
+      "release_date": "2026-06-25",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "8",
+        "12",
+        "18",
+        "19",
+        "28",
+        "38",
+        "39",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n40",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B3=あり、n77=あり"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/arrows-we3-rakuten-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/arrows-we3/spec/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "2d1018da795e",
+      "carrier": "NTTドコモ",
+      "brand": "SHARP",
+      "model_name": "AQUOS R11",
+      "carrier_model_number": "SH-51G",
+      "release_date": "2026-07-09",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "11",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n77",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B19/B21=あり、n79=あり"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sh-51g-docomo-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/for_simfree/apn.html"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "e0aa34d450a0",
+      "carrier": "SoftBank",
+      "brand": "SHARP",
+      "model_name": "AQUOS R11",
+      "carrier_model_number": null,
+      "release_date": "2026-07-09",
+      "release_date_status": "official_support_list_verified",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "11",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B8=あり、n77=あり"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/aquos-r11-softbank-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "ca4bc05eddf1",
+      "carrier": "au",
+      "brand": "OPPO",
+      "model_name": "OPPO Reno13 A",
+      "carrier_model_number": null,
+      "release_date": "2026-07-17",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "3",
+        "1",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n40",
+        "n41",
+        "n77",
+        "n78"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応（au公式仕様/製品機能）",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=なし/掲載なし。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B18/B26=あり、n77/n78=あり"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/oppo-reno13-a-au-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.au.com/content/dam/au-com/support/service/mobile/procedure/simcard/unlock/compatible_network/images/compatible_network_91c035248a6a9544.pdf",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "e7d7dfaf8dd8",
+      "carrier": "SoftBank",
+      "brand": "Motorola",
+      "model_name": "moto g37",
+      "carrier_model_number": null,
+      "release_date": "2026-07-31",
+      "release_date_status": "official_support_list_verified",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n77",
+        "n78"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=なし/掲載なし。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B8=掲載なし、n77=あり"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/moto-g37-softbank-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "427a97c87846",
+      "carrier": "楽天モバイル",
+      "brand": "Motorola",
+      "model_name": "moto g37j",
+      "carrier_model_number": null,
+      "release_date": "2026-07-31",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "12",
+        "17",
+        "18",
+        "19",
+        "26",
+        "28",
+        "38",
+        "40",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n40",
+        "n77",
+        "n78"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=なし/掲載なし。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B3=あり、n77=あり"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/moto-g37j-rakuten-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/moto-g37j/spec/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "52a818d08cc6",
+      "carrier": "NTTドコモ",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Flip8",
+      "carrier_model_number": "SC-55G",
+      "release_date": "2026-08-07",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n77",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B19/B21=あり、n79=あり"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sc-55g-docomo-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/for_simfree/apn.html"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "8b4a3b1183ce",
+      "carrier": "NTTドコモ",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold8",
+      "carrier_model_number": "SC-57G",
+      "release_date": "2026-08-07",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n77",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B19/B21=あり、n79=あり"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sc-57g-docomo-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/for_simfree/apn.html"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "f6a5085ec173",
+      "carrier": "NTTドコモ",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold8 Ultra",
+      "carrier_model_number": "SC-56G",
+      "release_date": "2026-08-07",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n28",
+        "n78",
+        "n77",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B19/B21=あり、n79=あり"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/sc-56g-docomo-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.docomo.ne.jp/binary/pdf/support/product/band.pdf",
+        "https://www.docomo.ne.jp/support/for_simfree/apn.html"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "74bd107ac207",
+      "carrier": "SoftBank",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Flip8",
+      "carrier_model_number": null,
+      "release_date": "2026-08-07",
+      "release_date_status": "official_support_list_verified",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B8=あり、n77=あり"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-z-flip8-softbank-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "073696959f1e",
+      "carrier": "SoftBank",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold8",
+      "carrier_model_number": null,
+      "release_date": "2026-08-07",
+      "release_date_status": "official_support_list_verified",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B8=あり、n77=あり"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-z-fold8-softbank-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "7a17b7589da1",
+      "carrier": "SoftBank",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold8 Ultra",
+      "carrier_model_number": null,
+      "release_date": "2026-08-07",
+      "release_date_status": "official_support_list_verified",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "42"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n28",
+        "n41",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B8=あり、n77=あり"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-z-fold8-ultra-softbank-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.softbank.jp/mobile/set/common/pdf/support/usim/unlock_procedure/frequency-band-list.pdf",
+        "https://www.softbank.jp/mobile/support/usim/portout_procedure/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "b024201756a4",
+      "carrier": "au",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Flip8",
+      "carrier_model_number": null,
+      "release_date": "2026-08-07",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n40",
+        "n41",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B18/B26=あり、n77/n78=あり"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-z-flip8-au-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.au.com/content/dam/au-com/support/service/mobile/procedure/simcard/unlock/compatible_network/images/compatible_network_91c035248a6a9544.pdf",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "63179203f5df",
+      "carrier": "au",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold8",
+      "carrier_model_number": null,
+      "release_date": "2026-08-07",
+      "release_date_status": "individual_date_crosscheck_pending",
+      "sim_esim": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n40",
+        "n41",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "周波数表では確認不可。個別機種の公式仕様ページで最終確認",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B18/B26=あり、n77/n78=あり"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-z-fold8-au-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.au.com/content/dam/au-com/support/service/mobile/procedure/simcard/unlock/compatible_network/images/compatible_network_91c035248a6a9544.pdf",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "5bd741df43c9",
+      "carrier": "au",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold8 Ultra",
+      "carrier_model_number": null,
+      "release_date": "2026-08-07",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM",
+      "lte_bands": [
+        "28",
+        "18",
+        "26",
+        "19",
+        "8",
+        "21",
+        "3",
+        "1",
+        "41",
+        "42"
+      ],
+      "nr_bands": [
+        "n28",
+        "n3",
+        "n1",
+        "n40",
+        "n41",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応（au公式仕様/製品機能）",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B18/B26=あり、n77/n78=あり"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B3あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-z-fold8-ultra-au-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://www.au.com/content/dam/au-com/support/service/mobile/procedure/simcard/unlock/compatible_network/images/compatible_network_91c035248a6a9544.pdf",
+        "https://www.au.com/support/service/mobile/procedure/simcard/unlock/compatible_network/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "a7f05fb4fe0c",
+      "carrier": "楽天モバイル",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Flip8",
+      "carrier_model_number": null,
+      "release_date": "2026-08-07",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM（eSIM×2も可）",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "12",
+        "13",
+        "18",
+        "19",
+        "20",
+        "21",
+        "25",
+        "26",
+        "28",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "66"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n5",
+        "n28",
+        "n40",
+        "n41",
+        "n66",
+        "n77",
+        "n78",
+        "n79"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B3=あり、n77=あり"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-z-flip8-rakuten-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-z-flip8/spec/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "63ccdc5c225e",
+      "carrier": "楽天モバイル",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold8",
+      "carrier_model_number": null,
+      "release_date": "2026-08-07",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM（eSIM×2も可）",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "12",
+        "13",
+        "18",
+        "19",
+        "20",
+        "21",
+        "25",
+        "26",
+        "28",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "66"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n5",
+        "n28",
+        "n40",
+        "n41",
+        "n66",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B3=あり、n77=あり"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-z-fold8-rakuten-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-z-fold8/spec/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/"
+      ],
+      "real_device_tested": false
+    },
+    {
+      "inventory_id": "c016005e7236",
+      "carrier": "楽天モバイル",
+      "brand": "Samsung",
+      "model_name": "Galaxy Z Fold8 Ultra",
+      "carrier_model_number": null,
+      "release_date": "2026-08-07",
+      "release_date_status": "official_product_page_verified",
+      "sim_esim": "nanoSIM / eSIM（eSIM×2も可）",
+      "lte_bands": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "7",
+        "8",
+        "12",
+        "13",
+        "18",
+        "19",
+        "20",
+        "21",
+        "25",
+        "26",
+        "28",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42",
+        "66"
+      ],
+      "nr_bands": [
+        "n1",
+        "n3",
+        "n5",
+        "n28",
+        "n40",
+        "n41",
+        "n66",
+        "n77",
+        "n78",
+        "n79",
+        "n257"
+      ],
+      "volte_ims": "販売元キャリアでの音声対応を基準。持ち込み先のVoLTE/IMSはBand一致とは別確認",
+      "felica": "対応",
+      "four_carrier_fit": {
+        "NTTドコモ": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B19/B21あり。n79=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "au": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B18/B26あり。n77/n78=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "SoftBank": {
+          "rating": "○",
+          "basis": "主要LTE Band適合による技術評価",
+          "note": "B8あり。n77=あり。VoLTE/IMS・動作保証は別確認"
+        },
+        "楽天モバイル": {
+          "rating": "◎",
+          "basis": "販売元キャリア",
+          "note": "販売元での公式対応を基準。B3=あり、n77=あり"
+        }
+      },
+      "compatibility_article": "/ja/technology/smartphone/galaxy-z-fold8-ultra-rakuten-2026-carrier-compatibility/",
+      "official_sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-z-fold8-ultra/spec/",
+        "https://network.mobile.rakuten.co.jp/faq/detail/00001495/"
+      ],
+      "real_device_tested": false
+    }
+  ]
+}
