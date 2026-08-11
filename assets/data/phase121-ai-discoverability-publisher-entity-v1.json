@@ -1,0 +1,18 @@
+{
+  "phase": 121,
+  "date": "2026-08-11",
+  "release": "AI DISCOVERABILITY / PUBLISHER ENTITY",
+  "organization_id": "https://solqvia.com/#organization",
+  "brand_id": "https://solqvia.com/#brand",
+  "website_id": "https://solqvia.com/#website",
+  "positioning_ja": "スマートフォンの操作・不具合・型番差・SIM/eSIM・回線適合・OS・修理・中古購入を、公式情報と証拠レベルを分けて検証する問題解決・技術検証メディア。",
+  "positioning_en": "A smartphone troubleshooting and technical verification publication that separates exact-model, SIM/eSIM, carrier, OS, repair and used-device evidence using primary sources and explicit evidence levels.",
+  "editorial_method_mismatch_targets": 2,
+  "principles": [
+    "primary sources",
+    "evidence-level separation",
+    "exact-model specificity",
+    "corrections and transparency",
+    "publisher entity consistency"
+  ]
+}
