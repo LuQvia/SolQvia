@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "release": "Phase118 Repair, Parts & Battery Service Route Check",
+  "checked_at": "2026-08-11",
+  "baseline": "Phase117 OS & Security Support Lifecycle Check",
+  "scope": "Repair acceptance lookup, manufacturer repair route, parts/service policy and battery-service routing for the same 515 smartphone records without auto-claiming current repair eligibility.",
+  "new_pages": [
+    "/ja/technology/smartphone/repair-parts-battery-service-route-check/",
+    "/en/technology/smartphone/repair-parts-battery-service-route-check/"
+  ],
+  "new_assets": [
+    "/assets/phase118-repair-service.css",
+    "/assets/phase118-repair-service.js",
+    "/assets/data/phase118-repair-parts-battery-service-v1.json",
+    "/assets/data/phase118-release-manifest-v1.json"
+  ],
+  "counts": {
+    "smartphone_records": 515,
+    "manufacturer_plus_carrier_records": 280,
+    "carrier_lookup_records": 235,
+    "apple_official_records": 121,
+    "pixel_google_jp_records": 56,
+    "pixel_exact_check_records": 6,
+    "samsung_official_records": 103,
+    "carrier_exact_check_records": 229,
+    "docomo_records": 143,
+    "au_records": 134,
+    "softbank_records": 136,
+    "rakuten_records": 102,
+    "exact_current_acceptance_check_required": 515
+  },
+  "safety": [
+    "Exact current repair acceptance remains check_required for all records",
+    "Carrier end-of-repair lists take priority over release-age inference",
+    "Manufacturer repair route does not guarantee exact-model acceptance",
+    "Battery replacement is not claimed available until exact-model flow confirms it"
+  ]
+}

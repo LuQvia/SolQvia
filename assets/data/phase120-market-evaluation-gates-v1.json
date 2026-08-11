@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "release": "Phase120 Market Evaluation Gates",
+  "checked_at": "2026-08-11",
+  "development_state": "large_feature_development_paused_after_phase120",
+  "resume_large_feature_development_only_if": [
+    "Search Console exposes a distinct unresolved query cluster not covered by current tools",
+    "Phase119 funnel data shows a material drop caused by a missing decision step rather than UX copy",
+    "A recurring support/compatibility data gap cannot be solved by improving existing datasets",
+    "A new monetization path requires a genuinely new user decision layer"
+  ],
+  "evaluate": [
+    "Search Console impressions, queries, average position and CTR",
+    "Phase119 flow entry → record open → step click → Phase115 diagnosis completion",
+    "Phase115 result mix: candidate / conditional / hold / stop",
+    "Luqevora bridge views and referrals after candidate/conditional results",
+    "AdSense site Ready status, ads.txt status and certified CMP behavior",
+    "Mobile/desktop visual QA and web-vital events"
+  ],
+  "do_not_do": [
+    "Do not add Phase121+ by default",
+    "Do not enable ads merely because Phase120 is deployed",
+    "Do not route hold/stop purchase results to Luqevora",
+    "Do not collect device identifiers or account data"
+  ]
+}

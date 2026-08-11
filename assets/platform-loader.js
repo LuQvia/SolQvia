@@ -54,6 +54,8 @@
           track(a.rel.includes('sponsored') ? 'affiliate_click' : 'outbound_click', { link_url: href, link_text: (a.textContent || '').trim().slice(0, 100) });
         }
       }
+      if (/\/used-smartphone-purchase-flow\//.test(href)) track('used_purchase_flow_entry', { source_path: location.pathname, link_url: href, market_evaluation_version: cfg.marketEvaluationVersion || '' });
+      if (/\/used-smartphone-purchase-safety-diagnosis\//.test(href)) track('used_purchase_safety_entry', { source_path: location.pathname, link_url: href, market_evaluation_version: cfg.marketEvaluationVersion || '' });
       if (a.closest('.section-muted') || a.closest('[class*=related]')) track('related_article_click', { link_url: href });
     });
     [25, 50, 75, 90].forEach(mark => {
@@ -64,7 +66,7 @@
 
   const attachLearningLoop = () => {
     const articleId = document.body?.dataset.articleId || location.pathname;
-    const pageContext = { article_id: articleId, content_type: document.body?.dataset.contentType || '', ad_eligible: document.body?.dataset.adEligible === 'true', release: document.body?.dataset.release || '' };
+    const pageContext = { article_id: articleId, content_type: document.body?.dataset.contentType || '', ad_eligible: document.body?.dataset.adEligible === 'true', release: document.body?.dataset.release || '', market_evaluation_version: cfg.marketEvaluationVersion || '' };
     track('article_context_view', pageContext);
     const decision = document.querySelector('.solqvia-editorial-decision');
     if (decision && 'IntersectionObserver' in window) {

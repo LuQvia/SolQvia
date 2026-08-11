@@ -1,0 +1,67 @@
+{
+  "schema_version": "1.0",
+  "release": "Phase120 Market Evaluation Ready / Large Feature Development Freeze",
+  "checked_at": "2026-08-11",
+  "baseline": "Phase119 Used Smartphone Purchase Flow Integration",
+  "scope": "Finalize the public used-smartphone journey, measurement taxonomy, Search Console/GA4 evaluation plan and AdSense readiness controls without adding another large decision database.",
+  "new_assets": [
+    "/assets/data/phase120-measurement-plan-v1.json",
+    "/assets/data/phase120-market-evaluation-gates-v1.json",
+    "/assets/data/phase120-release-manifest-v1.json"
+  ],
+  "changed_runtime": [
+    "/assets/platform-config.js",
+    "/assets/platform-loader.js"
+  ],
+  "public_surface": [
+    "Japanese/English top pages",
+    "Japanese/English smartphone hubs",
+    "Japanese/English article indexes",
+    "Phase119 integrated purchase flow",
+    "Phase115 final purchase-safety diagnosis"
+  ],
+  "ad_state": {
+    "adsenseSiteReviewEnabled": true,
+    "siteApproved": false,
+    "autoAdsEnabled": false,
+    "manualAdsEnabled": false,
+    "certifiedCmpConfigured": true
+  },
+  "development_policy": "Pause automatic Phase121+ feature creation; resume only when market/search/funnel evidence identifies a real gap.",
+  "qa": {
+    "files": 2154,
+    "html": 1718,
+    "json": 121,
+    "xml": 3,
+    "json_ld": 1720,
+    "local_refs": 91741,
+    "broken_refs": 0,
+    "duplicate_titles": 0,
+    "duplicate_canonicals": 0,
+    "indexable": 1506,
+    "noindex": 212,
+    "sitemap_urls": 1506,
+    "search_ja": 840,
+    "search_en": 840,
+    "phase119_records": 515,
+    "phase119_article_strip_ja": 421,
+    "phase119_article_strip_en": 421,
+    "direct_affiliate_links": 0,
+    "errors": 0,
+    "warnings": 0,
+    "chromium_visual_qa": "timeout_exit_124_dbus_zygote_environment"
+  },
+  "phase119_to_phase120_diff": {
+    "new_files": 3,
+    "deleted_files": 0,
+    "changed_files": 13
+  },
+  "external_post_deploy_checks": [
+    "AdSense Sites status is Ready before enabling ads",
+    "ads.txt status in AdSense UI",
+    "Google-certified CMP message on covered-region traffic",
+    "GA4 custom dimensions registered for selected Phase120 event parameters",
+    "Search Console sitemap/indexing and query/CTR data",
+    "PC/mobile visual QA of Phase119 and Phase115"
+  ]
+}

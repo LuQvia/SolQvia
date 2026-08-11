@@ -1,5 +1,36 @@
 [
   {
+    "title": "Used Smartphone Purchase Flow | Model, OS, Repair & Device Condition",
+    "description": "Use 515 exact variants to review model/network fit, OS lifecycle, repair routes and the individual used device before the final purchase-safety diagnosis.",
+    "url": "/en/technology/smartphone/used-smartphone-purchase-flow/",
+    "category": "Smartphones",
+    "date": "2026-08-11",
+    "text": "used smartphone purchase flow exact model OS security support repair battery network restriction ownership lock warranty"
+  },
+  {
+    "title": "Used Smartphone Repair, Parts & Battery Service Route Check",
+    "description": "Check 515 exact-model records for original-carrier repair status plus Apple, Pixel and Galaxy repair/battery service routes.",
+    "url": "/en/technology/smartphone/repair-parts-battery-service-route-check/",
+    "category": "Smartphones",
+    "date": "2026-08-11",
+    "text": "used smartphone repair battery replacement parts Apple Pixel Galaxy Docomo au SoftBank Rakuten repair acceptance"
+  },
+  {
+    "title": "Used Smartphone OS & Security Support Lifecycle Check",
+    "description": "Check 515 exact-model records against Apple iOS 26 compatibility, Pixel 7/5-year update policy, and Samsung current security-update scope.",
+    "url": "/en/technology/smartphone/os-security-support-lifecycle-check/",
+    "category": "Smartphones",
+    "date": "2026-08-11",
+    "text": "used smartphone OS security support update lifecycle iOS 26 Pixel 7 year 5 year Galaxy Samsung monthly quarterly"
+  },
+  {
+    "title": "Used Smartphone Purchase Safety Diagnosis | Variant, Carrier, Lock, Battery & Warranty",
+    "description": "Use 515 smartphone sales records to separate exact variant, carrier fit, SIM/eSIM, ownership lock, network restriction, battery, repair history, OS support and warranty before purchase.",
+    "url": "/en/technology/smartphone/used-smartphone-purchase-safety-diagnosis/",
+    "category": "Smartphones · used-phone purchase safety",
+    "text": "used smartphone purchase safety diagnosis model variant carrier SIM eSIM Activation Lock network restriction battery repair history OS support warranty FeliCa Japan"
+  },
+  {
     "title": "Integrated Device Passport | Model, Network, Safety, Peripherals & Evidence",
     "description": "Search 550 device/sales records across exact model, SIM/eSIM, bands, voice/SMS/RCS, Dual SIM, used-device checks, migration, OS updates, loss recovery, satellite, USB-C and evidence.",
     "url": "/en/technology/smartphone/device-passport/",
@@ -5847,5 +5878,13 @@
     "category": "Smartphones",
     "date": "2026-08-09",
     "text": "USB-C DisplayPort HDMI Alt Mode external SSD flash storage DAC microphone Ethernet PD PPS USB 2 USB 3 Samsung DeX cable hub power exact model"
+  },
+  {
+    "title": "Used Smartphone Model Check Database",
+    "description": "Search 515 exact-model smartphone sales records for carrier fit, SIM/eSIM, FeliCa, evidence and unresolved checks before purchase.",
+    "url": "/en/technology/smartphone/used-smartphone-model-check-database/",
+    "category": "Smartphones",
+    "date": "2026-08-11",
+    "text": "used smartphone exact model purchase checks carrier fit SIM eSIM FeliCa band VoLTE IMS evidence network restriction"
   }
 ]

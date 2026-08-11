@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "release": "Phase116 Used Smartphone Model Check Database",
+  "checked_at": "2026-08-11",
+  "baseline": "Phase115 Used Smartphone Purchase Safety Diagnosis",
+  "scope": "Searchable exact-model pre-purchase caution database for 515 smartphone sales records; model-level only, with handoff to Phase115 for individual-device diagnosis.",
+  "new_pages": [
+    "/ja/technology/smartphone/used-smartphone-model-check-database/",
+    "/en/technology/smartphone/used-smartphone-model-check-database/"
+  ],
+  "new_assets": [
+    "/assets/phase116-model-check.css",
+    "/assets/phase116-model-check.js",
+    "/assets/data/phase116-used-smartphone-model-check-v1.json",
+    "/assets/data/phase116-release-manifest-v1.json"
+  ],
+  "counts": {
+    "smartphone_records": 515,
+    "sim_verified_records": 183,
+    "esim_confirmed_records": 133,
+    "physical_sim_confirmed_records": 162,
+    "felica_source_matched_records": 352,
+    "felica_confirmed_records": 130,
+    "high_priority_records": 332,
+    "medium_priority_records": 53,
+    "standard_priority_records": 130,
+    "real_device_records": 0
+  },
+  "safety": [
+    "Verification priority is not a purchase score",
+    "No IMEI/EID/ICCID/phone/account data collected",
+    "Individual battery, lock, damage and warranty conditions remain Phase115 inputs",
+    "FeliCa imported only by exact compatibility-article slug match; unresolved values remain unverified"
+  ]
+}

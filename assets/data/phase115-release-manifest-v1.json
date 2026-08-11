@@ -1,0 +1,41 @@
+{
+  "phase": "115",
+  "name": "Used Smartphone Purchase Safety Diagnosis",
+  "date": "2026-08-11",
+  "baseline": "Phase114",
+  "new_public_html_pages": [
+    "/ja/technology/smartphone/used-smartphone-purchase-safety-diagnosis/",
+    "/en/technology/smartphone/used-smartphone-purchase-safety-diagnosis/"
+  ],
+  "new_assets": [
+    "/assets/phase115-purchase-safety.css",
+    "/assets/phase115-purchase-safety.js",
+    "/assets/data/phase115-used-smartphone-purchase-safety-v1.json",
+    "/assets/data/phase115-release-manifest-v1.json"
+  ],
+  "integrations": {
+    "smartphone_records": 515,
+    "phase100_article_strip_links": 842,
+    "device_passport_layer_count": 11,
+    "ja_luqevora_receiver": "https://luqevora.com/ja/mobile-connectivity/used-smartphone-buying-guide/",
+    "english_commerce_bridge_enabled": false,
+    "home_entry_ja": true,
+    "home_entry_en": true,
+    "phase104_deep_link": true,
+    "phase91_deep_link": true,
+    "phase110_deep_link": true
+  },
+  "privacy": [
+    "No IMEI/EID/ICCID/phone/account credential input",
+    "Network restriction status entered only as result",
+    "No persistent user identifier created"
+  ],
+  "adsense_state": "Retain Phase114 controlled serving state; new diagnostic page is ad-ineligible.",
+  "official_source_check_date": "2026-08-11",
+  "diagnosis_levels": [
+    "stop",
+    "hold",
+    "conditional",
+    "candidate"
+  ]
+}

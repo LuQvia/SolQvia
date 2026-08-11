@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "release": "Phase120 Market Evaluation Measurement Plan",
+  "checked_at": "2026-08-11",
+  "principles": [
+    "No IMEI/EID/ICCID/phone/account data",
+    "Use event-scoped custom dimensions only for parameters needed in analysis",
+    "Keep Search Console search performance separate from GA4 onsite behavior",
+    "Cross-brand referral remains independently attributable through bridge_id/route_id"
+  ],
+  "events": [
+    {
+      "event": "phase119_purchase_flow_view",
+      "purpose": "Integrated purchase-flow landing",
+      "parameters": [
+        "record_count"
+      ]
+    },
+    {
+      "event": "phase119_purchase_flow_search",
+      "purpose": "Model search/filter usage",
+      "parameters": [
+        "result_count"
+      ]
+    },
+    {
+      "event": "phase119_purchase_flow_record_open",
+      "purpose": "Selected exact model",
+      "parameters": [
+        "record_id",
+        "verification_priority",
+        "support_class",
+        "repair_class"
+      ]
+    },
+    {
+      "event": "phase119_purchase_flow_step_click",
+      "purpose": "Journey step transition",
+      "parameters": [
+        "record_id",
+        "flow_step"
+      ]
+    },
+    {
+      "event": "used_purchase_flow_entry",
+      "purpose": "Entry into integrated flow from another SolQvia page",
+      "parameters": [
+        "source_path",
+        "link_url"
+      ]
+    },
+    {
+      "event": "used_purchase_safety_entry",
+      "purpose": "Entry into final Phase115 diagnosis",
+      "parameters": [
+        "source_path",
+        "link_url"
+      ]
+    },
+    {
+      "event": "phase115_purchase_safety_diagnosis",
+      "purpose": "Final used-device purchase-safety result",
+      "parameters": [
+        "record_id",
+        "result_level",
+        "hard_stop_count",
+        "unknown_count",
+        "warning_count",
+        "intended_carrier"
+      ]
+    },
+    {
+      "event": "luqevora_bridge_view",
+      "purpose": "Eligible post-diagnosis comparison bridge viewed",
+      "parameters": [
+        "route_group",
+        "placement",
+        "source_path"
+      ]
+    },
+    {
+      "event": "luqevora_referral",
+      "purpose": "Eligible click to Luqevora comparison",
+      "parameters": [
+        "bridge_id",
+        "route_id",
+        "destination_path",
+        "source_path"
+      ]
+    },
+    {
+      "event": "cross_brand_click",
+      "purpose": "Generic cross-brand click",
+      "parameters": [
+        "destination_brand",
+        "bridge_id",
+        "route_id",
+        "source_path"
+      ]
+    },
+    {
+      "event": "web_vital",
+      "purpose": "Field browser performance signal",
+      "parameters": [
+        "metric",
+        "value"
+      ]
+    }
+  ],
+  "ga4_event_scoped_custom_dimensions_recommended": [
+    "record_id",
+    "flow_step",
+    "verification_priority",
+    "support_class",
+    "repair_class",
+    "result_level",
+    "intended_carrier",
+    "source_path",
+    "destination_brand",
+    "bridge_id",
+    "route_id"
+  ],
+  "search_console_views": [
+    "/ja/technology/smartphone/used-smartphone-purchase-flow/",
+    "/ja/technology/smartphone/used-smartphone-purchase-safety-diagnosis/",
+    "/ja/technology/smartphone/used-smartphone-model-check-database/",
+    "/ja/technology/smartphone/os-security-support-lifecycle-check/",
+    "/ja/technology/smartphone/repair-parts-battery-service-route-check/"
+  ]
+}

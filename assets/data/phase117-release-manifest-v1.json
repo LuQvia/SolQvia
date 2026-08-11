@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "release": "Phase117 OS & Security Support Lifecycle Check",
+  "checked_at": "2026-08-11",
+  "baseline": "Phase116 Used Smartphone Model Check Database",
+  "scope": "Model-level OS/security support evidence for 515 smartphone sales records using current official Apple, Google Pixel and Samsung signals without guessing exact remaining years.",
+  "new_pages": [
+    "/ja/technology/smartphone/os-security-support-lifecycle-check/",
+    "/en/technology/smartphone/os-security-support-lifecycle-check/"
+  ],
+  "new_assets": [
+    "/assets/phase117-support-lifecycle.css",
+    "/assets/phase117-support-lifecycle.js",
+    "/assets/data/phase117-os-security-support-lifecycle-v1.json",
+    "/assets/data/phase117-release-manifest-v1.json"
+  ],
+  "counts": {
+    "smartphone_records": 515,
+    "apple_ios26_records": 121,
+    "pixel_7y_records": 43,
+    "pixel_5y_records": 13,
+    "pixel_ended_records": 6,
+    "samsung_monthly_records": 63,
+    "samsung_quarterly_records": 18,
+    "samsung_not_listed_records": 22,
+    "exact_check_records": 229,
+    "current_official_signal_records": 202,
+    "policy_window_records": 56,
+    "ended_official_records": 6,
+    "not_listed_records": 22,
+    "unverified_records": 229
+  },
+  "safety": [
+    "No support end date inferred from Japanese carrier release date",
+    "Samsung not-listed is not automatically support-ended",
+    "Apple current major-OS compatibility is not a promised future support period",
+    "Individual used-unit safety remains Phase115 scope"
+  ]
+}

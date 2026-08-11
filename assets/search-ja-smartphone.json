@@ -1,5 +1,36 @@
 [
   {
+    "title": "中古スマホ購入フロー｜型番・OS・修理・個体状態を順番に確認",
+    "description": "515型番を入口に、型番・回線、OS寿命、修理ルート、実際の中古個体条件を順に確認して最終購入診断へ進みます。",
+    "url": "/ja/technology/smartphone/used-smartphone-purchase-flow/",
+    "category": "スマートフォン",
+    "date": "2026-08-11",
+    "text": "中古スマホ 購入 フロー 型番 OS セキュリティ 修理 バッテリー 利用制限 Activation Lock 保証"
+  },
+  {
+    "title": "中古スマホ 修理・部品・バッテリー交換ルート確認DB",
+    "description": "515型番について4キャリアの修理受付確認とApple・Pixel・Galaxyの公式修理/バッテリー交換ルートを分離して確認します。",
+    "url": "/ja/technology/smartphone/repair-parts-battery-service-route-check/",
+    "category": "スマートフォン",
+    "date": "2026-08-11",
+    "text": "中古スマホ 修理 バッテリー交換 部品 Apple Pixel Galaxy ドコモ au SoftBank 楽天モバイル 修理受付"
+  },
+  {
+    "title": "中古スマホ OS・セキュリティサポート確認DB",
+    "description": "515スマホ販売記録を、iOS 26互換、Pixelの7年/5年更新方針、Samsungの現行セキュリティ更新対象などの公式シグナルで確認します。",
+    "url": "/ja/technology/smartphone/os-security-support-lifecycle-check/",
+    "category": "スマートフォン",
+    "date": "2026-08-11",
+    "text": "中古スマホ OS セキュリティ サポート アップデート iOS 26 Pixel 7年 5年 Galaxy Samsung 月次 四半期"
+  },
+  {
+    "title": "中古スマホ購入安全診断｜型番・回線・ロック・バッテリー・保証を判定",
+    "description": "515スマホ販売記録を基に、型番、回線適合、SIM/eSIM、所有権ロック、ネットワーク利用制限、バッテリー、修理履歴、OSサポート、保証を分離して購入安全性を診断します。",
+    "url": "/ja/technology/smartphone/used-smartphone-purchase-safety-diagnosis/",
+    "category": "スマートフォン・中古スマホ・購入診断",
+    "text": "中古スマホ 購入 安全 診断 型番 回線 SIM eSIM Activation Lock ネットワーク利用制限 赤ロム バッテリー 修理履歴 OSサポート 保証 FeliCa 現在価格"
+  },
+  {
     "title": "統合端末パスポート｜型番・通信・安全・周辺機器・証拠を横断",
     "description": "550端末・販売記録を、型番、SIM/eSIM、Band、通話/SMS/RCS、Dual SIM、中古・移行・OS更新・盗難復旧・衛星・USB-C・証拠レベルまで1画面で横断します。",
     "url": "/ja/technology/smartphone/device-passport/",
@@ -5847,5 +5878,13 @@
     "category": "スマートフォン",
     "date": "2026-08-09",
     "text": "USB-C DisplayPort HDMI Alt Mode 外付けSSD USBメモリ DAC マイク Ethernet PD PPS USB 2 USB 3 Samsung DeX ケーブル ハブ 給電 型番"
+  },
+  {
+    "title": "中古スマホ型番別 購入注意点DB",
+    "description": "515スマホ販売記録を型番別に検索し、回線適合・SIM/eSIM・FeliCa・証拠レベル・未確認点を購入前に整理します。",
+    "url": "/ja/technology/smartphone/used-smartphone-model-check-database/",
+    "category": "スマートフォン",
+    "date": "2026-08-11",
+    "text": "中古スマホ 型番 購入 注意点 回線 SIM eSIM FeliCa Band VoLTE IMS 証拠 利用制限"
   }
 ]
