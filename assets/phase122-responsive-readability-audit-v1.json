@@ -1,0 +1,24 @@
+{
+  "phase": 122,
+  "title": "Responsive Readability Audit",
+  "date": "2026-08-13",
+  "baseline": "Phase121 AI Discoverability / Publisher Entity",
+  "scope": {
+    "html_files": 1718,
+    "css_files": 22,
+    "tables": 4531,
+    "phone_steps_pages": 1487,
+    "phone_steps_pages_with_legacy_structure_mismatch": 1176,
+    "phone_steps_items": 8216,
+    "phone_steps_items_affected_by_legacy_fixed_column_rule": 6251
+  },
+  "changes": [
+    "Make phone-steps readable across strong+span, strong-only, text-only, and span+div markup variants",
+    "Keep numbered span+div step cards as a two-column layout with a flexible content column",
+    "Stack title and description for strong+span step cards instead of forcing the title into a 42px/38px column",
+    "Replace source-link word-break:break-all with overflow-wrap:anywhere and word-break:normal"
+  ],
+  "content_changes": false,
+  "canonical_changes": false,
+  "sitemap_changes": false
+}
