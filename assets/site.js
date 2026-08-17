@@ -229,3 +229,17 @@
   });
   calculate();
 })();
+
+/* Phase123: keep the TOC compact on mobile while leaving it open on desktop. */
+(function(){
+  var mq=window.matchMedia('(max-width: 760px)');
+  function syncToc(){
+    document.querySelectorAll('details.toc-details').forEach(function(d){
+      if(mq.matches){ if(!d.dataset.userOpened)d.removeAttribute('open'); }
+      else d.setAttribute('open','');
+      if(!d.dataset.bound){d.addEventListener('toggle',function(){if(mq.matches&&d.open)d.dataset.userOpened='1';});d.dataset.bound='1';}
+    });
+  }
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',syncToc);else syncToc();
+  if(mq.addEventListener)mq.addEventListener('change',syncToc);else mq.addListener(syncToc);
+})();
