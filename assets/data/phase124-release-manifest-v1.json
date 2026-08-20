@@ -1,0 +1,26 @@
+{
+  "phase": 124,
+  "date": "2026-08-20",
+  "baseline": "Phase123",
+  "name": "AdSense Low-Value Content Remediation",
+  "indexable_target": 454,
+  "noindex_hold": 1264,
+  "boilerplate_removed": 436,
+  "gsc_clicks_retained": "72/72",
+  "gsc_impressions_retained": "4414/4826",
+  "siteApproved": false,
+  "autoAdsEnabled": false,
+  "manualAdsEnabled": false,
+  "static_context_enhanced_pages": [
+    "ja/technology/smartphone/device-passport/index.html",
+    "en/technology/smartphone/device-passport/index.html",
+    "ja/technology/smartphone/used-smartphone-purchase-flow/index.html",
+    "en/technology/smartphone/used-smartphone-purchase-flow/index.html",
+    "ja/technology/smartphone/used-smartphone-model-check-database/index.html",
+    "en/technology/smartphone/used-smartphone-model-check-database/index.html",
+    "ja/technology/smartphone/os-security-support-lifecycle-check/index.html",
+    "en/technology/smartphone/os-security-support-lifecycle-check/index.html",
+    "ja/technology/smartphone/real-device-verification-ledger/index.html",
+    "en/technology/smartphone/real-device-verification-ledger/index.html"
+  ]
+}
