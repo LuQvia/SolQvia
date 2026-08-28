@@ -1,13 +1,70 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0">
   <channel>
-    <item><title>Used Smartphone Purchase Flow | Model, OS, Repair &amp; Device Condition</title><link>https://solqvia.com/en/technology/smartphone/used-smartphone-purchase-flow/</link><guid>https://solqvia.com/en/technology/smartphone/used-smartphone-purchase-flow/</guid><description>Use 515 exact variants to review model/network fit, OS lifecycle, repair routes and the individual used device before the final purchase-safety diagnosis.</description><pubDate>Tue, 11 Aug 2026 11:50:00 +0900</pubDate></item><item><title>Used Smartphone Repair, Parts &amp; Battery Service Route Check</title><link>https://solqvia.com/en/technology/smartphone/repair-parts-battery-service-route-check/</link><guid>https://solqvia.com/en/technology/smartphone/repair-parts-battery-service-route-check/</guid><description>Check 515 records for original-carrier repair status and documented manufacturer repair/battery routes.</description><pubDate>Tue, 11 Aug 2026 11:39:00 +0900</pubDate></item>
-    <item><title>Used Smartphone OS &amp; Security Support Lifecycle Check</title><link>https://solqvia.com/en/technology/smartphone/os-security-support-lifecycle-check/</link><guid>https://solqvia.com/en/technology/smartphone/os-security-support-lifecycle-check/</guid><description>Check 515 model records using current-major-OS compatibility, long-term policy and current security-update scope as separate signals.</description><pubDate>Tue, 11 Aug 2026 11:26:00 +0900</pubDate></item>
-    <item><title>Used Smartphone Model Check Database</title><link>https://solqvia.com/en/technology/smartphone/used-smartphone-model-check-database/</link><guid>https://solqvia.com/en/technology/smartphone/used-smartphone-model-check-database/</guid><description>Search 515 smartphone sales records for exact-model purchase checks before evaluating the individual used unit.</description><pubDate>Tue, 11 Aug 2026 11:13:00 +0900</pubDate></item>
-    <item><title>Used Smartphone Purchase Safety Diagnosis</title><link>https://solqvia.com/en/technology/smartphone/used-smartphone-purchase-safety-diagnosis/</link><guid>https://solqvia.com/en/technology/smartphone/used-smartphone-purchase-safety-diagnosis/</guid><description>Use 515 smartphone sales records to separate exact variant, carrier fit, SIM/eSIM, network restriction, device condition and warranty before purchase.</description><pubDate>Tue, 11 Aug 2026 10:55:00 +0900</pubDate></item>
-    <item><title>Integrated Device Passport | Model, Network, Safety, Peripherals &amp; Evidence</title><link>https://solqvia.com/en/technology/smartphone/device-passport/</link><guid>https://solqvia.com/en/technology/smartphone/device-passport/</guid><description>Search 550 device records across network, safety, peripherals and evidence without a single compatibility score.</description><pubDate>Sun, 09 Aug 2026 02:15:00 +0900</pubDate></item>
-    <item><title>USB-C, Display, Storage &amp; Peripheral Compatibility Lab</title><link>https://solqvia.com/en/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/</link><guid>https://solqvia.com/en/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/</guid><description>Separate USB-C connector shape from display, data speed, charging and peripheral support by exact model.</description><pubDate>Sun, 09 Aug 2026 01:57:00 +0900</pubDate></item>
-    <item><title>Satellite, Emergency SOS &amp; Disaster Connectivity Diagnosis</title><link>https://solqvia.com/en/technology/smartphone/satellite-emergency-connectivity-diagnosis/</link><guid>https://solqvia.com/en/technology/smartphone/satellite-emergency-connectivity-diagnosis/</guid><description>Separate handset-native and carrier direct-to-device satellite paths.</description><pubDate>Sun, 09 Aug 2026 00:00:00 +0900</pubDate></item><item><title>Lost / Stolen Device &amp; Account Recovery Navigator</title><link>https://solqvia.com/en/technology/smartphone/lost-stolen-account-recovery-navigator/</link><guid>https://solqvia.com/en/technology/smartphone/lost-stolen-account-recovery-navigator/</guid><description>Prioritize tracking, lock, carrier suspension, Apple/Google account protection, SMS/2FA recovery, wallet checks, SIM/eSIM replacement and remote erase after phone loss or theft.</description><pubDate>Sun, 09 Aug 2026 00:51:00 +0900</pubDate></item><item>
+    <item>
+      <title>Used Smartphone Purchase Flow | Model, OS, Repair &amp; Device Condition</title>
+      <link>https://solqvia.com/en/technology/smartphone/used-smartphone-purchase-flow/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/used-smartphone-purchase-flow/</guid>
+      <description>Use 515 exact variants to review model/network fit, OS lifecycle, repair routes and the individual used device before the final purchase-safety diagnosis.</description>
+      <pubDate>Tue, 11 Aug 2026 11:50:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Used Smartphone Repair, Parts &amp; Battery Service Route Check</title>
+      <link>https://solqvia.com/en/technology/smartphone/repair-parts-battery-service-route-check/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/repair-parts-battery-service-route-check/</guid>
+      <description>Check 515 records for original-carrier repair status and documented manufacturer repair/battery routes.</description>
+      <pubDate>Tue, 11 Aug 2026 11:39:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Used Smartphone OS &amp; Security Support Lifecycle Check</title>
+      <link>https://solqvia.com/en/technology/smartphone/os-security-support-lifecycle-check/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/os-security-support-lifecycle-check/</guid>
+      <description>Check 515 model records using current-major-OS compatibility, long-term policy and current security-update scope as separate signals.</description>
+      <pubDate>Tue, 11 Aug 2026 11:26:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Used Smartphone Model Check Database</title>
+      <link>https://solqvia.com/en/technology/smartphone/used-smartphone-model-check-database/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/used-smartphone-model-check-database/</guid>
+      <description>Search 515 smartphone sales records for exact-model purchase checks before evaluating the individual used unit.</description>
+      <pubDate>Tue, 11 Aug 2026 11:13:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Used Smartphone Purchase Safety Diagnosis</title>
+      <link>https://solqvia.com/en/technology/smartphone/used-smartphone-purchase-safety-diagnosis/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/used-smartphone-purchase-safety-diagnosis/</guid>
+      <description>Use 515 smartphone sales records to separate exact variant, carrier fit, SIM/eSIM, network restriction, device condition and warranty before purchase.</description>
+      <pubDate>Tue, 11 Aug 2026 10:55:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Integrated Device Passport | Model, Network, Safety, Peripherals &amp; Evidence</title>
+      <link>https://solqvia.com/en/technology/smartphone/device-passport/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/device-passport/</guid>
+      <description>Search 550 device records across network, safety, peripherals and evidence without a single compatibility score.</description>
+      <pubDate>Sun, 09 Aug 2026 02:15:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>USB-C, Display, Storage &amp; Peripheral Compatibility Lab</title>
+      <link>https://solqvia.com/en/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/</guid>
+      <description>Separate USB-C connector shape from display, data speed, charging and peripheral support by exact model.</description>
+      <pubDate>Sun, 09 Aug 2026 01:57:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Satellite, Emergency SOS &amp; Disaster Connectivity Diagnosis</title>
+      <link>https://solqvia.com/en/technology/smartphone/satellite-emergency-connectivity-diagnosis/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/satellite-emergency-connectivity-diagnosis/</guid>
+      <description>Separate handset-native and carrier direct-to-device satellite paths.</description>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Lost / Stolen Device &amp; Account Recovery Navigator</title>
+      <link>https://solqvia.com/en/technology/smartphone/lost-stolen-account-recovery-navigator/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/lost-stolen-account-recovery-navigator/</guid>
+      <description>Prioritize tracking, lock, carrier suspension, Apple/Google account protection, SMS/2FA recovery, wallet checks, SIM/eSIM replacement and remote erase after phone loss or theft.</description>
+      <pubDate>Sun, 09 Aug 2026 00:51:00 +0900</pubDate>
+    </item>
+    <item>
       <title>OS Update × Device × Carrier Issue Database</title>
       <link>https://solqvia.com/en/technology/smartphone/os-update-carrier-issue-database/</link>
       <guid>https://solqvia.com/en/technology/smartphone/os-update-carrier-issue-database/</guid>
@@ -67,6 +124,12 @@
       <description>Diagnose APN, Private DNS, VoLTE, Wi-Fi calling, dual-SIM, VPN, and other network settings that basic restarts do not resolve.</description>
     </item>
     <item>
+      <title>Ahamo Network PIN Forgotten MNP: Guide</title>
+      <link>https://solqvia.com/en/technology/smartphone/ahamo-network-pin-forgotten-mnp-guide/</link>
+      <guid>https://solqvia.com/en/technology/smartphone/ahamo-network-pin-forgotten-mnp-guide/</guid>
+      <description>English guide to Ahamo Network PIN Forgotten MNP: Guide, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.</description>
+    </item>
+    <item>
       <title>AirDrop Is Stuck on Waiting</title>
       <link>https://solqvia.com/en/technology/smartphone/iphone-airdrop-stuck-waiting/</link>
       <guid>https://solqvia.com/en/technology/smartphone/iphone-airdrop-stuck-waiting/</guid>
@@ -108,5 +171,5 @@
       <guid>https://solqvia.com/en/technology/smartphone/android-work-profile-paused/</guid>
       <description>Fix grayed-out work apps or stopped notifications by checking the Work Profile toggle, schedules, management policy, and device-policy controller connectivity.</description>
     </item>
-    </channel>
+  </channel>
 </rss>

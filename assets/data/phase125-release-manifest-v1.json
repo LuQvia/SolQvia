@@ -1,0 +1,16 @@
+{
+  "phase": 125,
+  "date": "2026-08-28",
+  "baseline": "Phase124",
+  "name": "AdSense Selective Reindex / Search-Signal Quality Balance",
+  "indexable_target": 490,
+  "noindex_hold": 1228,
+  "reindexed_pages": 36,
+  "candidate_pages_reviewed": 50,
+  "candidate_pages_kept_noindex": 14,
+  "page_dimension_clicks_retained": "103/106",
+  "page_dimension_impressions_retained": "6777/7548",
+  "siteApproved": false,
+  "autoAdsEnabled": false,
+  "manualAdsEnabled": false
+}

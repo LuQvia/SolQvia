@@ -52,6 +52,13 @@
     "text": "Advanced Network and Carrier Settings Diagnose APN, Private DNS, VoLTE, Wi-Fi calling, dual-SIM, VPN, and other network settings that basic restarts do not resolve. advanced-network"
   },
   {
+    "title": "Ahamo Network PIN Forgotten MNP: Guide",
+    "description": "English guide to Ahamo Network PIN Forgotten MNP: Guide, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/ahamo-network-pin-forgotten-mnp-guide/",
+    "category": "Smartphones",
+    "text": "Ahamo Network PIN Forgotten MNP: Guide English guide to Ahamo Network PIN Forgotten MNP: Guide, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry. ahamo-network-pin-forgotten-mnp-guide"
+  },
+  {
     "title": "AirDrop Is Stuck on Waiting",
     "description": "Fix AirDrop stuck on waiting or unable to find the recipient by checking receiving mode, contact matching, Wi-Fi and Bluetooth, and Personal Hotspot.",
     "url": "/en/technology/smartphone/iphone-airdrop-stuck-waiting/",
@@ -136,6 +143,13 @@
     "text": "Complete Smartphone Backup Checklist Before a Factory Reset Check photos, contacts, messages, authenticator apps, eSIM and app-specific data before erasing a phone. smartphone-backup-before-reset"
   },
   {
+    "title": "Computer Does Not Recognize a Phone over USB: Data Connection Fixes",
+    "description": "When a phone charges but files do not appear, check the data cable, unlocked state, USB mode, trust prompt, computer software, and port condition.",
+    "url": "/en/technology/smartphone/smartphone-usb-computer-not-recognized/",
+    "category": "Smartphones",
+    "text": "Computer Does Not Recognize a Phone over USB: Data Connection Fixes When a phone charges but files do not appear, check the data cable, unlocked state, USB mode, trust prompt, computer software, and port condition. smartphone-usb-computer-not-recognized"
+  },
+  {
     "title": "Device Compatibility",
     "description": "English SolQvia technical guide to Device Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
     "url": "/en/technology/smartphone/device-compatibility/",
@@ -148,6 +162,13 @@
     "url": "/en/technology/smartphone/real-device-verification-ledger/",
     "category": "Device compatibility",
     "text": "device verification evidence ledger real device official sources unverified KY-41C Ymobile SoftBank eSIM profile recognition APN data VoLTE IMS SMS Japan carriers 550 records"
+  },
+  {
+    "title": "Docomo Dtab d51f Other Carrier SIM Band",
+    "description": "English SolQvia technical guide to Docomo Dtab d51f Other Carrier SIM Band, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/docomo-dtab-d51f-other-sim-band/",
+    "category": "Smartphones",
+    "text": "Docomo Dtab d51f Other Carrier SIM Band English SolQvia technical guide to Docomo Dtab d51f Other Carrier SIM Band, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. docomo-dtab-d51f-other-sim-band"
   },
   {
     "title": "Docomo SIMfree Overseas Phone APN Spmode Guide",
@@ -169,6 +190,13 @@
     "url": "/en/technology/smartphone/dual-sim-messaging/",
     "category": "Smartphones",
     "text": "Dual SIM, Calls, SMS and RCS English SolQvia technical guide to Dual SIM, Calls, SMS and RCS, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. dual-sim-messaging"
+  },
+  {
+    "title": "Dual-SIM Phone Uses the Wrong Line",
+    "description": "Stop a dual-SIM phone from using the wrong line for calls, texts, or data by checking defaults, per-contact choices, automatic switching, and roaming.",
+    "url": "/en/technology/smartphone/smartphone-dual-sim-wrong-line/",
+    "category": "Smartphones",
+    "text": "Dual-SIM Phone Uses the Wrong Line Stop a dual-SIM phone from using the wrong line for calls, texts, or data by checking defaults, per-contact choices, automatic switching, and roaming. smartphone-dual-sim-wrong-line"
   },
   {
     "title": "Find My Device Shows the Phone Offline",
@@ -330,6 +358,13 @@
     "url": "/en/technology/smartphone/iphone-accessory-not-supported/",
     "category": "Smartphones",
     "text": "iPhone Says This Accessory May Not Be Supported Resolve iPhone accessory-not-supported warnings by checking certification, debris, power requirements, liquid detection, and iOS compatibility. iphone-accessory-not-supported"
+  },
+  {
+    "title": "iPhone Unavailable or Security Lockout: What to Do",
+    "description": "Handle iPhone Unavailable or Security Lockout safely by understanding wait times, previous passcode options, device erase, and Apple Account requirements.",
+    "url": "/en/technology/smartphone/iphone-unavailable-security-lockout/",
+    "category": "Smartphones",
+    "text": "iPhone Unavailable or Security Lockout: What to Do Handle iPhone Unavailable or Security Lockout safely by understanding wait times, previous passcode options, device erase, and Apple Account requirements. iphone-unavailable-security-lockout"
   },
   {
     "title": "Japan / Overseas / Carrier Variant Database",
@@ -617,6 +652,13 @@
     "url": "/en/technology/smartphone/smartphone-random-mac-wifi-problem/",
     "category": "Smartphones",
     "text": "Randomized MAC Address Causing Wi-Fi Problems Resolve Wi-Fi registration failures caused by randomized MAC or private addresses while preserving privacy where fixed device registration is not required. smartphone-random-mac-wifi-problem"
+  },
+  {
+    "title": "RCS Chat Features Stuck on Verifying Your Number",
+    "description": "Fix RCS that remains on verifying or falls back to SMS by checking the number, default SIM, carrier services, VPN, and registration on an old phone.",
+    "url": "/en/technology/smartphone/smartphone-rcs-chat-not-verifying/",
+    "category": "Smartphones",
+    "text": "RCS Chat Features Stuck on Verifying Your Number Fix RCS that remains on verifying or falls back to SMS by checking the number, default SIM, carrier services, VPN, and registration on an old phone. smartphone-rcs-chat-not-verifying"
   },
   {
     "title": "Report a Device Test Result | Function-Scoped Carrier Compatibility",

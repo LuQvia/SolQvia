@@ -150,6 +150,13 @@
     "date": "2026-07-23"
   },
   {
+    "title": "AndroidでVPNが切れるとインターネットも全部使えない時｜「VPN以外の接続をブロック」を確認",
+    "description": "AndroidでVPN切断後にWi-Fi・モバイル通信まで使えなくなる場合に、常時接続VPNと「VPN以外の接続をブロック」の設定を確認する方法を解説します。",
+    "url": "/ja/technology/smartphone/android-always-on-vpn-blocks-internet-when-vpn-disconnected/",
+    "category": "スマートフォン",
+    "text": "Android常時接続VPN・通信全断 AndroidでVPNが切れるとインターネットも全部使えない時｜「VPN以外の接続をブロック」を確認"
+  },
+  {
     "title": "Androidのバッテリー最適化でアプリが停止する時の設定",
     "description": "位置記録・VPN・健康管理・自動同期などが止まる場合に、最適化除外の影響と、無制限設定にする前の確認項目を説明します。",
     "url": "/ja/technology/smartphone/android-battery-optimization-app-stops/",
@@ -211,6 +218,34 @@
     "url": "/ja/technology/smartphone/android-notification-history-guide/",
     "category": "スマートフォン",
     "date": "2026-07-23"
+  },
+  {
+    "title": "AQUOS R10 SH-51Fを4キャリアで使う相性｜2025年Band・VoLTE・APN・5G",
+    "description": "2025年にNTTドコモで発売されたAQUOS R10 SH-51Fについて、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
+    "url": "/ja/technology/smartphone/sh-51f-docomo-2025-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "AQUOS R10 SH-51Fを4キャリアで使う相性｜2025年Band・VoLTE・APN・5G 2025年にNTTドコモで発売されたAQUOS R10 SH-51Fについて、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2025 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
+    "title": "AQUOS R10（楽天モバイル販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G",
+    "description": "2026年8月8日までに楽天モバイルで発売されたAQUOS R10（楽天モバイル販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
+    "url": "/ja/technology/smartphone/aquos-r10-rakuten-2026-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "AQUOS R10（楽天モバイル販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G 2026年8月8日までに楽天モバイルで発売されたAQUOS R10（楽天モバイル販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2026 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
+    "title": "AQUOS R11（SoftBank販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G",
+    "description": "2026年8月8日までにSoftBankで発売されたAQUOS R11（SoftBank販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
+    "url": "/ja/technology/smartphone/aquos-r11-softbank-2026-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "AQUOS R11（SoftBank販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G 2026年8月8日までにSoftBankで発売されたAQUOS R11（SoftBank販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2026 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
+    "title": "AQUOS R8 pro（SoftBank販売）を4キャリアで使う相性｜2023年Band・VoLTE・APN・5G",
+    "description": "2023年にSoftBankで発売されたAQUOS R8 pro（SoftBank販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
+    "url": "/ja/technology/smartphone/aquos-r8-pro-softbank-2023-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "AQUOS R8 pro（SoftBank販売）を4キャリアで使う相性｜2023年Band・VoLTE・APN・5G 2023年にSoftBankで発売されたAQUOS R8 pro（SoftBank販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2023 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
   },
   {
     "title": "AQUOS R9 SH-51Eを4キャリアで使う相性｜2024年Band・VoLTE・APN・5G",
@@ -309,6 +344,13 @@
     "url": "/ja/technology/smartphone/arrows-we-softbank-carrier-compatibility/",
     "category": "スマートフォン",
     "text": "arrows Weを4キャリアで使う相性｜Band・VoLTE・APN・5G arrows Weの対応Bandと、ドコモ・au・SoftBank・楽天モバイルで使う場合の相性、VoLTE/IMS、APN、5G切り分けを公式仕様から確認します。 B8 / B3 / B1 / B42 n3 / n28 / n77 / n77 VoLTE IMS APN eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
+    "title": "ASAHIネット LTE ANSIMのMNP予約番号発行方法｜マイページから通話SIMを転出",
+    "description": "ASAHIネット LTE ANSIMの通話SIMから他社へMNP転出する方法を解説。マイページでの予約番号発行、転出完了日が最終利用日になる公式ルールを整理します。",
+    "url": "/ja/technology/smartphone/asahi-net-ansim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "ASAHIネット LTE ANSIMのMNP予約番号発行方法｜マイページから通話SIMを転出 ASAHIネット LTE ANSIMの通話SIMから他社へMNP転出する方法を解説。マイページでの予約番号発行、転出完了日が最終利用日になる公式ルールを整理します。 MNP 予約番号 発行できない 格安SIM MVNO 転出"
   },
   {
     "title": "au mamorino6を他社SIMで使える？B18・eSIM・見守り機能から相性を判断",
@@ -430,6 +472,13 @@
     "text": "DIGNO ケータイ4を他社SIMで使える？Band・APN・VoLTE・通話/データを切り分け DIGNO ケータイ4（DIGNO Keitai 4）の他社SIM実用性を、LTE Band、APN編集、VoLTE/IMS、通話・データ通信、4キャリア公式情報で切り分けます。 ガラケー 4Gケータイ 他社SIM APN VoLTE IMS 通話 SMS データ通信 Band SIMロック"
   },
   {
+    "title": "dtab d-51Fの他社SIM相性｜nanoSIM/eSIM・Band・5G SA・APNを確認",
+    "description": "ドコモ dtab d-51Fを他社SIM/eSIMで検討する際の、SIM構成、LTE/5G Band、5G SA、データ専用仕様、4キャリアRF相性を整理します。",
+    "url": "/ja/technology/smartphone/docomo-dtab-d51f-other-sim-band/",
+    "category": "タブレット・eSIM・Band",
+    "text": "dtab d-51Fの他社SIM相性｜nanoSIM/eSIM・Band・5G SA・APNを確認 ドコモ dtab d-51Fを他社SIM/eSIMで検討する際の、SIM構成、LTE/5G Band、5G SA、データ専用仕様、4キャリアRF相性を整理します。 タブレット iPad Android eSIM SIM APN LTE 5G Band ドコモ au SoftBank 楽天モバイル eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
     "title": "DTI SIMのMNP予約番号発行方法｜MyDTIで解約手続きと同時に申請",
     "description": "DTI SIMから他社へMNP転出する方法を解説。MyDTIから対象契約の解約手続きへ進み、その中でMNP転出予約番号を申請する公式手順と、音声プランのみMNP対象となる点を整理します。",
     "url": "/ja/technology/smartphone/dti-sim-mnp-reservation-number-guide/",
@@ -486,6 +535,13 @@
     "text": "Galaxy A22 5G SC-56Bを他社回線で使う相性｜Band・VoLTE・APN・5Gを型番別確認 Galaxy A22 5G SC-56Bのドコモ・au・SoftBank・楽天モバイル相性を、国内対応Band、VoLTE/IMS、SIMロック、APN、4G/5Gの切り分けまで型番単位で解説します。 B1 / B3 / B19 / B21 / B42 n78 / n79 VoLTE IMS APN ドコモ au SoftBank 楽天モバイル eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
   },
   {
+    "title": "Galaxy A23 5Gを4キャリアで使う相性｜Band・VoLTE・APN・5Gを2022年型番別確認",
+    "description": "楽天モバイル販売のGalaxy A23 5Gについて、国内LTE/5G Band、ドコモ・au・SoftBank・楽天モバイルでの相性、VoLTE/IMS、SIM差し替え後のAPN・通話・5G切り分けを公式情報から確認します。",
+    "url": "/ja/technology/smartphone/galaxy-a23-5g-rakuten-2022-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "Galaxy A23 5Gを4キャリアで使う相性｜Band・VoLTE・APN・5Gを2022年型番別確認 楽天モバイル販売のGalaxy A23 5Gについて、国内LTE/5G Band、ドコモ・au・SoftBank・楽天モバイルでの相性、VoLTE/IMS、SIM差し替え後のAPN・通話・5G切り分けを公式情報から確認します。 B1 / B3 / B5 / B8 / B12 / B18 / B19 / B21 / B26 / B28 / B38 / B39 / B41 / B42 n3 / n28 / n77 / n78 / n79 VoLTE IMS APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
     "title": "Galaxy A25 5G（au販売）を4キャリアで使う相性｜2025年Band・VoLTE・APN・5G",
     "description": "2025年にauで発売されたGalaxy A25 5G（au販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
     "url": "/ja/technology/smartphone/galaxy-a25-5g-au-2025-carrier-compatibility/",
@@ -519,6 +575,13 @@
     "url": "/ja/technology/smartphone/sc-53c-docomo-2022-carrier-compatibility/",
     "category": "スマートフォン",
     "text": "Galaxy A53 5G SC-53Cを4キャリアで使う相性｜Band・VoLTE・APN・5Gを2022年型番別確認 NTTドコモ販売のGalaxy A53 5G SC-53Cについて、国内LTE/5G Band、ドコモ・au・SoftBank・楽天モバイルでの相性、VoLTE/IMS、SIM差し替え後のAPN・通話・5G切り分けを公式情報から確認します。 B19 / B21 / B3 / B1 / B42 n1 / n28 / n78 / n79 VoLTE IMS APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
+    "title": "Galaxy A54 5G SCG21を4キャリアで使う相性｜2023年Band・VoLTE・APN・5G",
+    "description": "2023年にauで発売されたGalaxy A54 5G SCG21について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
+    "url": "/ja/technology/smartphone/scg21-au-2023-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "Galaxy A54 5G SCG21を4キャリアで使う相性｜2023年Band・VoLTE・APN・5G 2023年にauで発売されたGalaxy A54 5G SCG21について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2023 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
   },
   {
     "title": "Galaxy A57 5G SC-54Gを4キャリアで使う相性｜2026年Band・VoLTE・APN・5G",
@@ -647,6 +710,20 @@
     "text": "Galaxy Z Flip6 SCG29を4キャリアで使う相性｜2024年Band・VoLTE・APN・5G 2024年にauで発売されたGalaxy Z Flip6 SCG29について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2024 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
   },
   {
+    "title": "Galaxy Z Flip7日本版と香港版の違い｜SM-F766Q/SM-F7660・FeliCa・B21/B42・n79",
+    "description": "Galaxy Z Flip7の日本SIMフリー版SM-F766Q系と香港版SM-F7660を比較。おサイフケータイ、nanoSIM/eSIM、LTE B21/B42、5G n79の差を整理します。",
+    "url": "/ja/technology/smartphone/galaxy-z-flip7-japan-hongkong-model-differences/",
+    "category": "スマートフォン",
+    "text": "Galaxy Z Flip7日本版と香港版の違い｜SM-F766Q/SM-F7660・FeliCa・B21/B42・n79 Galaxy Z Flip7の日本SIMフリー版SM-F766Q系と香港版SM-F7660を比較。おサイフケータイ、nanoSIM/eSIM、LTE B21/B42、5G n79の差を整理します。 Samsung JapanのSIMフリー製品URLではSM-F766Qを含むSKU、Samsung Hong KongではSM-F7660を含むSKUが確認できます。末尾の色・容量コードまで違うため、販売名だけでなくベースモデル番号を見ます。 日本公式仕様ではデュアルSIM、Nano-SIM (4FF) とeSIM、SIM 1 + eSIM / デュアルeSIMを明記しています。香港版もモデル別仕様を確認し、実機のSIMスロット数とeSIM対応を購入前に確認します。 項目 日本版 SM-F766Q系 香港版 SM-F7660 LTE B19 対応 対応 LTE B21 対応 公式香港仕様では非掲載 LTE B42 対応 公式香港仕様では非掲載 LTE B25 非掲載 対応 5G n79 対応 対応 mmWave 非掲載 非掲載 香港版も日本で使いやすいBandを多く持ちますが、B21/B42のような差があるため「香港版なら日本版と同じ」とは扱いません。 Samsung Japanは、FeliCaマークの有無にかかわらず日本正規販売モデルはおサイフケータイ対応、並行輸入品を含む海外モデルはおサイフケータイ非対応と案内しています。モバイルSuica等を重視する場合は重要な選定条件です。 香港版SM-F7660はB1/B3/B8/B18/B19/B28やn77/n78/n79などを持ちますが、キャリア側のVoLTE/IMS・動作確認は別です。購入前に使うキャリアを1社決め、その事業者の持ち込み端末条件まで確認します。"
+  },
+  {
+    "title": "Galaxy Z Fold6 SC-55Eを4キャリアで使う相性｜2024年Band・VoLTE・APN・5G",
+    "description": "2024年にNTTドコモで発売されたGalaxy Z Fold6 SC-55Eについて、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
+    "url": "/ja/technology/smartphone/sc-55e-docomo-2024-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "Galaxy Z Fold6 SC-55Eを4キャリアで使う相性｜2024年Band・VoLTE・APN・5G 2024年にNTTドコモで発売されたGalaxy Z Fold6 SC-55Eについて、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2024 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
     "title": "Galaxy Z Fold7 SC-56Fを4キャリアで使う相性｜2025年Band・VoLTE・APN・5G",
     "description": "2025年にNTTドコモで発売されたGalaxy Z Fold7 SC-56Fについて、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
     "url": "/ja/technology/smartphone/sc-56f-docomo-2025-carrier-compatibility/",
@@ -659,6 +736,20 @@
     "url": "/ja/technology/smartphone/galaxy-z-fold7-japan-hongkong-model-differences/",
     "category": "スマートフォン",
     "text": "Galaxy Z Fold7日本版と香港版の違い｜SM-F966Q/SM-F9660・FeliCa・B21/B42・n257 Galaxy Z Fold7の日本SIMフリー版SM-F966Q系と香港版SM-F9660を比較。おサイフケータイ、nanoSIM/eSIM、LTE B21/B42、5G n79、mmWave n257を整理します。 Samsung JapanのSIMフリー版はSM-F966Qを含むSKU、香港公式はSM-F9660を含むSKUです。国・容量・カラーで末尾が変わるため、先頭のベースモデル番号を比較します。 日本公式仕様はLTE B21/B42、5G n79、さらに5G mmWave n257を掲載しています。Fold7では「日本版だからmmWaveがない」と決めつけず、機種別仕様を見る必要があります。 項目 日本版 SM-F966Q系 香港版 SM-F9660 物理SIM/eSIM Nano-SIM + eSIM / dual eSIM 地域版仕様を確認 LTE B19 対応 対応 LTE B21/B42 対応 香港公式では非掲載 5G n79 対応 対応 5G n257 対応 香港版は製品ページで個別確認 おサイフケータイ 日本正規モデル対応 海外モデル非対応（Samsung Japan案内） Samsung Japanは海外モデル（並行輸入品を含む）について、おサイフケータイ非対応と明記しています。交通系ICやiD/QUICPay等をスマホ中心で使う場合、スペック表のSoC・RAMより実用上の影響が大きい項目です。 型番 SM-F966Q / SM-F9660などを確認 SIM 物理SIM・eSIM・デュアルSIM構成を確認 通信 B19/B21/B42、n77/n78/n79/n257などを利用キャリアと照合 国内機能 おサイフケータイと必要な決済を確認 保証 Samsung Japanでの保証・修理対象を確認 キャリア VoLTE/IMS・動作確認端末情報を確認"
+  },
+  {
+    "title": "Galaxy Z Fold7（SoftBank販売）を4キャリアで使う相性｜2025年Band・VoLTE・APN・5G",
+    "description": "2025年にSoftBankで発売されたGalaxy Z Fold7（SoftBank販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
+    "url": "/ja/technology/smartphone/galaxy-z-fold7-softbank-2025-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "Galaxy Z Fold7（SoftBank販売）を4キャリアで使う相性｜2025年Band・VoLTE・APN・5G 2025年にSoftBankで発売されたGalaxy Z Fold7（SoftBank販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2025 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
+    "title": "Galaxy Z Fold8 SC-57Gを4キャリアで使う相性｜2026年Band・VoLTE・APN・5G",
+    "description": "2026年8月8日までにNTTドコモで発売されたGalaxy Z Fold8 SC-57Gについて、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
+    "url": "/ja/technology/smartphone/sc-57g-docomo-2026-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "Galaxy Z Fold8 SC-57Gを4キャリアで使う相性｜2026年Band・VoLTE・APN・5G 2026年8月8日までにNTTドコモで発売されたGalaxy Z Fold8 SC-57Gについて、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2026 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
   },
   {
     "title": "Galaxy Z Fold8（楽天モバイル販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G",
@@ -682,6 +773,13 @@
     "date": "2026-07-23"
   },
   {
+    "title": "Google Oneをダウングレード・解約すると保存データはどうなる？容量超過前に確認すること",
+    "description": "Google Oneのストレージプランを小さくする・解約する前に、現在の使用量、更新停止、保存容量超過時の影響を確認する手順を整理します。",
+    "url": "/ja/technology/smartphone/google-one-downgrade-cancel-over-storage-limit/",
+    "category": "クラウド・ストレージ",
+    "text": "Google Oneをダウングレード・解約すると保存データはどうなる？容量超過前に確認すること Google Oneのストレージプランを小さくする・解約する前に、現在の使用量、更新停止、保存容量超過時の影響を確認する手順を整理します。 クラウド ストレージ 同期 バックアップ 削除 容量 iCloud Googleフォト Google Drive Google One OneDrive"
+  },
+  {
     "title": "Google Pixel 10 Pro（au販売）を4キャリアで使う相性｜2025年Band・VoLTE・APN・5G",
     "description": "2025年にauで発売されたGoogle Pixel 10 Pro（au販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
     "url": "/ja/technology/smartphone/google-pixel-10-pro-au-2025-carrier-compatibility/",
@@ -696,11 +794,32 @@
     "text": "Google Pixel 10a（au販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G 2026年8月8日までにauで発売されたGoogle Pixel 10a（au販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2026 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
   },
   {
+    "title": "Google Pixel 10a（NTTドコモ販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G",
+    "description": "2026年8月8日までにNTTドコモで発売されたGoogle Pixel 10a（NTTドコモ販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
+    "url": "/ja/technology/smartphone/google-pixel-10a-docomo-2026-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "Google Pixel 10a（NTTドコモ販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G 2026年8月8日までにNTTドコモで発売されたGoogle Pixel 10a（NTTドコモ販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2026 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
+    "title": "Google Pixel 10a（SoftBank販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G",
+    "description": "2026年8月8日までにSoftBankで発売されたGoogle Pixel 10a（SoftBank販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
+    "url": "/ja/technology/smartphone/google-pixel-10a-softbank-2026-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "Google Pixel 10a（SoftBank販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G 2026年8月8日までにSoftBankで発売されたGoogle Pixel 10a（SoftBank販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2026 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
     "title": "Google Pixel 10（楽天モバイル販売）を4キャリアで使う相性｜2025年Band・VoLTE・APN・5G",
     "description": "2025年に楽天モバイルで発売されたGoogle Pixel 10（楽天モバイル販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
     "url": "/ja/technology/smartphone/google-pixel-10-rakuten-2025-carrier-compatibility/",
     "category": "スマートフォン",
     "text": "Google Pixel 10（楽天モバイル販売）を4キャリアで使う相性｜2025年Band・VoLTE・APN・5G 2025年に楽天モバイルで発売されたGoogle Pixel 10（楽天モバイル販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2025 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
+    "title": "Google Pixel 6aを4キャリアで使う相性｜Band・VoLTE・APN・5Gを2022年型番別確認",
+    "description": "au販売のGoogle Pixel 6aについて、国内LTE/5G Band、ドコモ・au・SoftBank・楽天モバイルでの相性、VoLTE/IMS、SIM差し替え後のAPN・通話・5G切り分けを公式情報から確認します。",
+    "url": "/ja/technology/smartphone/google-pixel-6a-au-2022-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "Google Pixel 6aを4キャリアで使う相性｜Band・VoLTE・APN・5Gを2022年型番別確認 au販売のGoogle Pixel 6aについて、国内LTE/5G Band、ドコモ・au・SoftBank・楽天モバイルでの相性、VoLTE/IMS、SIM差し替え後のAPN・通話・5G切り分けを公式情報から確認します。 B28 / B18/26 / B19 / B8 / B3 / B1 / B42 n28 / n3 / n41 / n78 / n77 VoLTE IMS APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
   },
   {
     "title": "Google Pixel 8 Pro（NTTドコモ販売）を4キャリアで使う相性｜2023年Band・VoLTE・APN・5G",
@@ -717,11 +836,25 @@
     "text": "Google Pixel 8a（au販売）を4キャリアで使う相性｜2024年Band・VoLTE・APN・5G 2024年にauで発売されたGoogle Pixel 8a（au販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2024 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
   },
   {
+    "title": "Google Pixel 9 Pro（au販売）を4キャリアで使う相性｜2024年Band・VoLTE・APN・5G",
+    "description": "2024年にauで発売されたGoogle Pixel 9 Pro（au販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
+    "url": "/ja/technology/smartphone/google-pixel-9-pro-au-2024-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "Google Pixel 9 Pro（au販売）を4キャリアで使う相性｜2024年Band・VoLTE・APN・5G 2024年にauで発売されたGoogle Pixel 9 Pro（au販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2024 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
     "title": "Google Pixel 9（NTTドコモ販売）を4キャリアで使う相性｜2024年Band・VoLTE・APN・5G",
     "description": "2024年にNTTドコモで発売されたGoogle Pixel 9（NTTドコモ販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
     "url": "/ja/technology/smartphone/google-pixel-9-docomo-2024-carrier-compatibility/",
     "category": "スマートフォン",
     "text": "Google Pixel 9（NTTドコモ販売）を4キャリアで使う相性｜2024年Band・VoLTE・APN・5G 2024年にNTTドコモで発売されたGoogle Pixel 9（NTTドコモ販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2024 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
+    "title": "Google Pixel Watch 4 LTEのキャリア相性｜docomo・au・SoftBankの番号共有と楽天の扱い",
+    "description": "Google Pixel Watch 4 LTEのeSIM/4G LTE仕様と、ドコモ・au・SoftBankの公式番号共有対応、楽天モバイルの現状を整理します。",
+    "url": "/ja/technology/smartphone/pixel-watch-lte-carrier-number-share/",
+    "category": "LTEスマートウォッチ・番号共有",
+    "text": "Google Pixel Watch 4 LTEのキャリア相性｜docomo・au・SoftBankの番号共有と楽天の扱い Google Pixel Watch 4 LTEのeSIM/4G LTE仕様と、ドコモ・au・SoftBankの公式番号共有対応、楽天モバイルの現状を整理します。 Apple Watch Pixel Watch Galaxy Watch eSIM LTE 5G RedCap ワンナンバー ナンバーシェア 電話番号シェア SoftBank eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
   },
   {
     "title": "Google Play Protectがアプリをブロック・無効化する時の確認",
@@ -792,6 +925,13 @@
     "url": "/ja/technology/smartphone/iphone-16-japan-us-model-differences/",
     "category": "端末仕様・地域版比較",
     "text": "iPhone 16の日本版と米国版は何が違う？物理SIM・eSIM・対応バンドを型番別に比較 iPhone 16の日本向けA3286と米国向けA3081を、物理SIM/eSIM、LTE・5G対応バンド、mmWave、日本で使う際の注意点に分けて比較します。 日本版 海外版 米国版 eSIM 対応バンド n79 mmWave FeliCa キャリア 相性"
+  },
+  {
+    "title": "iPhone 17 Pro日本版と海外版の違い｜A3522・eSIM・Band・4キャリア相性",
+    "description": "2025年発売のiPhone 17 Proについて、日本で販売されるA3522と海外A番号、SIM/eSIM、LTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性をApple公式情報から整理します。",
+    "url": "/ja/technology/smartphone/iphone-17-pro-2025-japan-region-esim-band-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "iPhone 17 Pro日本版と海外版の違い｜A3522・eSIM・Band・4キャリア相性 2025年発売のiPhone 17 Proについて、日本で販売されるA3522と海外A番号、SIM/eSIM、LTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性をApple公式情報から整理します。 A3522 eSIM Band eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
   },
   {
     "title": "iPhone 17eの日本版と海外版の違い｜A3575/A3634・物理SIM・C1X・n79を確認",
@@ -927,6 +1067,13 @@
     "text": "KY-41CでY!mobile・SoftBankのeSIMプロファイルは設定できる？実機確認と通信機能の切り分け ドコモ KY-41CでY!mobile・SoftBankのeSIMプロファイル設定・認識を実機確認。APN設定とは分離し、プロファイル追加、有効化、データ、VoLTE/IMS、SMS、見守り機能を順番に検証します。 KY-41C SK-41D SH-03M Y!mobile SoftBank APN VoLTE IMS SMS 通話 データ通信 SIM認識 他事業者 動作可否 eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
   },
   {
+    "title": "LG VELVET L-52Aを他社回線で使う相性｜Band・VoLTE・APN・5Gを型番別確認",
+    "description": "LG VELVET L-52Aのドコモ・au・SoftBank・楽天モバイル相性を、国内対応Band、VoLTE/IMS、SIMロック、APN、4G/5Gの切り分けまで型番単位で解説します。",
+    "url": "/ja/technology/smartphone/lg-velvet-l52a-japan-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "LG VELVET L-52Aを他社回線で使う相性｜Band・VoLTE・APN・5Gを型番別確認 LG VELVET L-52Aのドコモ・au・SoftBank・楽天モバイル相性を、国内対応Band、VoLTE/IMS、SIMロック、APN、4G/5Gの切り分けまで型番単位で解説します。 B1 / B3 / B19 / B21 / B42 n78 / n79 VoLTE IMS APN ドコモ au SoftBank 楽天モバイル eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
     "title": "LIBMOのMNP予約番号発行方法｜マイページ・複数回線は1回線ずつ手続き",
     "description": "LIBMOから他社へMNP転出する際の予約番号発行方法を解説。LIBMOマイページ、複数回線の1回線ずつの申請、割引・端末残債などの注意点を整理します。",
     "url": "/ja/technology/smartphone/libmo-mnp-reservation-number-guide/",
@@ -1004,6 +1151,13 @@
     "text": "MVNOのMNP予約番号発行方法一覧｜主要・コアな格安SIMをまとめて確認 MVNO・格安SIMのMNP予約番号発行方法を一覧化。27サービスについて、発行窓口、発行日数、MNPワンストップ対応、個別解説へのリンクを整理します。 MVNO MNP 予約番号 ワンストップ 発行 転出 格安SIM"
   },
   {
+    "title": "nubia S2R（楽天モバイル販売）を4キャリアで使う相性｜2025年Band・VoLTE・APN・5G",
+    "description": "2025年に楽天モバイルで発売されたnubia S2R（楽天モバイル販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
+    "url": "/ja/technology/smartphone/nubia-s2r-rakuten-2025-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "nubia S2R（楽天モバイル販売）を4キャリアで使う相性｜2025年Band・VoLTE・APN・5G 2025年に楽天モバイルで発売されたnubia S2R（楽天モバイル販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2025 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
     "title": "NUROモバイルのMNP予約番号発行方法｜即日不可・1〜2日・再発行の注意",
     "description": "NUROモバイルのMNP予約番号は即日発行ではなく、MNP転出による解約申請後1〜2日かかります。My Pageの流れ、ワンストップ、有効期限切れ後の扱いを整理します。",
     "url": "/ja/technology/smartphone/nuro-mobile-mnp-reservation-number-guide/",
@@ -1039,6 +1193,13 @@
     "text": "OPPO Find X3 Pro OPG03を4キャリアで使う相性｜Band・VoLTE・APN・5G OPPO Find X3 Pro OPG03の対応Bandと、ドコモ・au・SoftBank・楽天モバイルで使う場合の相性、VoLTE/IMS、APN、5G切り分けを公式仕様から確認します。 B28 / B18/26 / B19 / B8 / B3 / B1 / B42 n28 / n78 / n77 / n78 / n79 VoLTE IMS APN eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
   },
   {
+    "title": "OPPO Reno13 A（au販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G",
+    "description": "2026年8月8日までにauで発売されたOPPO Reno13 A（au販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。",
+    "url": "/ja/technology/smartphone/oppo-reno13-a-au-2026-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "OPPO Reno13 A（au販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G 2026年8月8日までにauで発売されたOPPO Reno13 A（au販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2026 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
     "title": "Pixel 10 Proの日本版と米国版の違い｜GN4F5/G4QUR・物理SIM・n79・mmWave",
     "description": "Pixel 10 Proの日本版GN4F5と米国版G4QURを比較。物理nanoSIM、デュアルeSIM、LTE B21/B42、5G n79、mmWave、FeliCaの差を整理します。",
     "url": "/ja/technology/smartphone/pixel-10-pro-japan-us-model-differences/",
@@ -1072,6 +1233,13 @@
     "url": "/ja/technology/smartphone/pixel-physical-sim-to-esim-convert-old-sim-invalid/",
     "category": "スマートフォン",
     "text": "Pixelで物理SIMをeSIMへ変換すると元のSIMカードは使える？変換前後の注意点 Google Pixel 7以降などで物理SIMをeSIMへ変換する機能について、対応キャリア、Wi-Fi、変換後に元の物理SIMが使えなくなる点を整理します。 Pixel 物理SIM→eSIM変換"
+  },
+  {
+    "title": "PixelのWi-Fiアクセスポイントが使えない時｜データセーバーとキャリア制限を確認",
+    "description": "Google PixelでWi-Fiテザリングをオンにできない・接続しても通信できない場合に、データセーバー、モバイル通信、通信会社の制限を確認します。",
+    "url": "/ja/technology/smartphone/pixel-hotspot-not-working-data-saver-carrier-restriction/",
+    "category": "スマートフォン",
+    "text": "Pixelテザリング・アクセスポイント PixelのWi-Fiアクセスポイントが使えない時｜データセーバーとキャリア制限を確認"
   },
   {
     "title": "Pixelのデバイス診断・バッテリー診断を使う方法",
@@ -1221,6 +1389,13 @@
     "text": "SIM eSIM 移行 再発行 SMS 認証 機種変更 開通"
   },
   {
+    "title": "SoftBank Lenovo TAB8の他社SIM相性｜nanoSIM/eSIM・Band・APNを確認",
+    "description": "SoftBank Lenovo TAB8のnanoSIM/eSIM、LTE/5G Bandとドコモ・au・SoftBank・楽天モバイル主要Bandの相性を整理します。",
+    "url": "/ja/technology/smartphone/softbank-lenovo-tab8-other-sim-band/",
+    "category": "タブレット・eSIM・Band",
+    "text": "SoftBank Lenovo TAB8の他社SIM相性｜nanoSIM/eSIM・Band・APNを確認 SoftBank Lenovo TAB8のnanoSIM/eSIM、LTE/5G Bandとドコモ・au・SoftBank・楽天モバイル主要Bandの相性を整理します。 タブレット iPad Android eSIM SIM APN LTE 5G Band ドコモ au SoftBank 楽天モバイル eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
     "title": "SoftBankのeSIMを設定したのに通信できない時｜「回線を開通させてください」メールも確認",
     "description": "SoftBankのeSIMが端末に表示されるのに通信できない場合に、再起動、eSIM登録状態、回線開通メール、削除済みeSIMの再発行を確認します。",
     "url": "/ja/technology/smartphone/softbank-esim-installed-but-line-not-opened/",
@@ -1331,6 +1506,13 @@
     "url": "/ja/technology/smartphone/so-52f-docomo-2025-carrier-compatibility/",
     "category": "スマートフォン",
     "text": "Xperia 10 VII SO-52Fを4キャリアで使う相性｜2025年Band・VoLTE・APN・5G 2025年にNTTドコモで発売されたXperia 10 VII SO-52Fについて、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。 Android 2025 Band 4キャリア VoLTE APN eSIM eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
+  },
+  {
+    "title": "Xperia 5 II SO-52Aを4キャリアで使う相性｜Band・VoLTE・APN・5G設定を確認",
+    "description": "Xperia 5 II SO-52Aのドコモ・au・SoftBank・楽天モバイル相性を、主要LTE/5G Band、VoLTE/IMS、SIM、APN設定と開通操作から型番単位で整理します。",
+    "url": "/ja/technology/smartphone/xperia-5-ii-so52a-japan-carrier-compatibility/",
+    "category": "スマートフォン",
+    "text": "Xperia 5 II SO-52Aを4キャリアで使う相性｜Band・VoLTE・APN・5G設定を確認 Xperia 5 II SO-52Aのドコモ・au・SoftBank・楽天モバイル相性を、主要LTE/5G Band、VoLTE/IMS、SIM、APN設定と開通操作から型番単位で整理します。 B1 / B3 / B19 / B21 / B28 / B42 n78 / n79 ドコモ ◎ B19/B21・n79を含む au △ B18/26不足 SoftBank △ B8不足 楽天モバイル ○ B3は利用可能 eSIMプロファイル QRコード 手動設定 アクティベーションコード 接続サーバー APN切り分け"
   },
   {
     "title": "Xperia 5 II SOG02を4キャリアで使う相性｜Band・VoLTE・APN・5G",
@@ -1676,6 +1858,13 @@
     "text": "スマートフォンのモバイルデータ通信ができない時の確認手順 アンテナ表示があるのに通信できない、圏外、SIM・eSIM変更後に使えない場合の確認順を説明します。 契約のデータ容量・支払状況・障害情報を確認する モバイルデータが対象SIMでオンか確認する 海外ではローミング設定と契約対象国を確認する 機内モードをオンにして約10秒後にオフへ戻し、ネットワークを再取得します。 設定でモバイルデータがオンか、デュアルSIMでは正しい回線が選ばれているか確認します。 端末を通常再起動します。 通信事業者の障害・メンテナンス情報と、データ容量超過や利用停止がないか確認します。 SIMを最近変更した場合は、開通手続き、APN、eSIMプロファイルの状態を事業者の公式手順で確認します。 改善しなければネットワーク設定のリセットまたは通信事業者への照会へ進みます。"
   },
   {
+    "title": "スマートフォンのワイヤレス充電ができない・途中で止まる時の対処法",
+    "description": "充電パッドに置いても反応しない場合を、対応機種・位置ずれ・ケース・異物・電源・温度の順で確認します。",
+    "url": "/ja/technology/smartphone/smartphone-wireless-charging-not-working/",
+    "category": "スマートフォン",
+    "text": "スマートフォンのワイヤレス充電ができない・途中で止まる時の対処法 充電パッドに置いても反応しない場合を、対応機種・位置ずれ・ケース・異物・電源・温度の順で確認します。 充電・温度 端末と充電器が同じワイヤレス充電規格に対応しているか確認する ケース内に金属板、磁石、カードが入っていないか確認する 有線充電では正常に充電できるか確認する"
+  },
+  {
     "title": "スマートフォンの充電が遅い時の原因と改善方法",
     "description": "低速充電表示、数時間たっても増えない場合を、充電器出力・ケーブル・端子・温度・使用中の消費・充電最適化の順で確認します。",
     "url": "/ja/technology/smartphone/smartphone-charging-slow/",
@@ -1688,6 +1877,13 @@
     "url": "/ja/technology/smartphone/smartphone-remove-suspicious-app/",
     "category": "スマートフォン",
     "text": "スマートフォンの怪しいアプリを安全に確認・削除する方法 身に覚えのないアプリ、急な広告、電池消費、権限乱用がある場合に、証拠保存・権限解除・アカウント保護・削除を安全な順で行います。 セキュリティ アプリ名、アイコン、インストール元、導入日を記録する 銀行・メール・SNS等へ不審なログインがないか別の安全な端末で確認する 端末管理、アクセシビリティ、VPN、プロファイル権限を持つか確認する"
+  },
+  {
+    "title": "スマートフォンの画面が自動回転しない時の設定と対処法",
+    "description": "縦向きのまま回転しない場合に、回転ロック、アプリ対応、センサー、一時的不具合を確認します。",
+    "url": "/ja/technology/smartphone/smartphone-auto-rotate-not-working/",
+    "category": "スマートフォン",
+    "text": "スマートフォンの画面が自動回転しない時の設定と対処法 縦向きのまま回転しない場合に、回転ロック、アプリ対応、センサー、一時的不具合を確認します。 画面・表示 回転ロックまたは縦向き固定が有効でないか確認する ホーム画面ではなく写真・動画アプリでも試す 端末を机に置いたままではなく手に持って回転させる"
   },
   {
     "title": "スマートフォンの画面録画で音が入らない時の設定",
@@ -1914,6 +2110,13 @@
     "text": "中古スマホ 中古iPhone 中古Android 修理履歴 バッテリー 最大容量 充放電回数 Activation Lock Android端末保護 ネットワーク利用制限 IMEI 生体認証 SIM eSIM 購入前診断"
   },
   {
+    "title": "井川MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日",
+    "description": "井川MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。",
+    "url": "/ja/technology/smartphone/ikawa-mobile-sim-mnp-reservation-number-guide/",
+    "category": "MVNO MNP",
+    "text": "井川MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日 井川MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。 MNP 予約番号 ワンストップ 格安SIM 転出 Xmobile系モバイルサービス"
+  },
+  {
     "title": "公衆Wi-Fiで証明書警告が出た時に接続を続けるべきか",
     "description": "ホテル・空港Wi-Fiのログイン時に証明書警告が出る場合を、認証画面、偽アクセスポイント、日時、VPN、重要操作の回避で判断します。",
     "url": "/ja/technology/smartphone/smartphone-public-wifi-certificate-warning/",
@@ -2024,6 +2227,13 @@
     "url": "/ja/technology/smartphone/smartphone-roaming-connected-no-data/",
     "category": "スマートフォン",
     "date": "2026-07-23"
+  },
+  {
+    "title": "海外旅行でデータeSIMを使いながら日本の電話番号でSMSを受ける方法｜iPhoneデュアルSIM設定",
+    "description": "海外旅行中に旅行用データeSIMで通信しつつ、日本の電話番号をオンにしてSMS・着信を受けたい場合のiPhoneデュアルSIM設定とローミング料金の注意点を整理します。",
+    "url": "/ja/technology/smartphone/iphone-travel-esim-keep-japan-number-sms/",
+    "category": "デュアルSIM・通話・SMS/RCS",
+    "text": "海外旅行でデータeSIMを使いながら日本の電話番号でSMSを受ける方法｜iPhoneデュアルSIM設定 海外旅行中に旅行用データeSIMで通信しつつ、日本の電話番号をオンにしてSMS・着信を受けたい場合のiPhoneデュアルSIM設定とローミング料金の注意点を整理します。 iPhone 海外旅行 eSIM 日本番号 SMS 受信 デュアルSIM 旅行eSIM ローミング"
   },
   {
     "title": "海外版スマホで110・119は使える？日本で緊急通報を前提にする前に通信方式・VoLTE・動作保証を確認",

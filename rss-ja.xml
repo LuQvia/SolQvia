@@ -1,13 +1,70 @@
 <?xml version='1.0' encoding='utf-8'?>
 <rss version="2.0">
   <channel>
-    <item><title>中古スマホ購入フロー｜型番・OS・修理・個体状態を順番に確認</title><link>https://solqvia.com/ja/technology/smartphone/used-smartphone-purchase-flow/</link><guid>https://solqvia.com/ja/technology/smartphone/used-smartphone-purchase-flow/</guid><description>515型番を入口に、型番・回線、OS寿命、修理ルート、実際の中古個体条件を順に確認して最終購入診断へ進みます。</description><pubDate>Tue, 11 Aug 2026 11:50:00 +0900</pubDate></item><item><title>中古スマホ 修理・部品・バッテリー交換ルート確認DB</title><link>https://solqvia.com/ja/technology/smartphone/repair-parts-battery-service-route-check/</link><guid>https://solqvia.com/ja/technology/smartphone/repair-parts-battery-service-route-check/</guid><description>515型番について4キャリアと主要メーカーの修理・バッテリー交換ルートを分離確認します。</description><pubDate>Tue, 11 Aug 2026 11:39:00 +0900</pubDate></item>
-    <item><title>中古スマホ OS・セキュリティサポート確認DB</title><link>https://solqvia.com/ja/technology/smartphone/os-security-support-lifecycle-check/</link><guid>https://solqvia.com/ja/technology/smartphone/os-security-support-lifecycle-check/</guid><description>515型番を現行主要OS互換・長期更新方針・現在のセキュリティ更新対象に分けて確認します。</description><pubDate>Tue, 11 Aug 2026 11:26:00 +0900</pubDate></item>
-    <item><title>中古スマホ型番別 購入注意点DB｜回線・SIM/eSIM・FeliCa・未確認項目</title><link>https://solqvia.com/ja/technology/smartphone/used-smartphone-model-check-database/</link><guid>https://solqvia.com/ja/technology/smartphone/used-smartphone-model-check-database/</guid><description>515スマホ販売記録を型番別に検索し、購入前の確認点を整理します。</description><pubDate>Tue, 11 Aug 2026 11:13:00 +0900</pubDate></item>
-    <item><title>中古スマホ購入安全診断｜型番・回線・ロック・バッテリー・保証を判定</title><link>https://solqvia.com/ja/technology/smartphone/used-smartphone-purchase-safety-diagnosis/</link><guid>https://solqvia.com/ja/technology/smartphone/used-smartphone-purchase-safety-diagnosis/</guid><description>515スマホ販売記録を基に、型番・回線適合・SIM/eSIM・利用制限・端末状態・保証を分離して購入安全性を診断します。</description><pubDate>Tue, 11 Aug 2026 10:55:00 +0900</pubDate></item>
-    <item><title>統合端末パスポート｜型番・通信・安全・周辺機器・証拠を横断</title><link>https://solqvia.com/ja/technology/smartphone/device-passport/</link><guid>https://solqvia.com/ja/technology/smartphone/device-passport/</guid><description>550端末・販売記録を、通信・安全・周辺機器・証拠レベルまで型番単位で横断します。</description><pubDate>Sun, 09 Aug 2026 02:15:00 +0900</pubDate></item>
-    <item><title>USB-C・映像出力・外付けSSD・周辺機器互換性ラボ</title><link>https://solqvia.com/ja/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/</link><guid>https://solqvia.com/ja/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/</guid><description>USB-C端子と映像・データ速度・充電・周辺機器対応を分離して型番別に診断。</description><pubDate>Sun, 09 Aug 2026 01:57:00 +0900</pubDate></item>
-    <item><title>衛星通信・緊急SOS・災害時通信診断</title><link>https://solqvia.com/ja/technology/smartphone/satellite-emergency-connectivity-diagnosis/</link><guid>https://solqvia.com/ja/technology/smartphone/satellite-emergency-connectivity-diagnosis/</guid><description>端末内蔵型とキャリア直結型を分離し、現在の衛星通信経路を診断。</description><pubDate>Sun, 09 Aug 2026 00:00:00 +0900</pubDate></item><item><title>盗難・紛失・アカウント復旧ナビ｜ロック・回線停止・2FA・消去の順序</title><link>https://solqvia.com/ja/technology/smartphone/lost-stolen-account-recovery-navigator/</link><guid>https://solqvia.com/ja/technology/smartphone/lost-stolen-account-recovery-navigator/</guid><description>スマホの盗難・紛失時に、位置確認、端末ロック、回線停止、Apple/Googleアカウント、SMS/2FA、Wallet、SIM/eSIM再発行、遠隔消去の順序を整理します。</description><pubDate>Sun, 09 Aug 2026 00:51:00 +0900</pubDate></item><item>
+    <item>
+      <title>中古スマホ購入フロー｜型番・OS・修理・個体状態を順番に確認</title>
+      <link>https://solqvia.com/ja/technology/smartphone/used-smartphone-purchase-flow/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/used-smartphone-purchase-flow/</guid>
+      <description>515型番を入口に、型番・回線、OS寿命、修理ルート、実際の中古個体条件を順に確認して最終購入診断へ進みます。</description>
+      <pubDate>Tue, 11 Aug 2026 11:50:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>中古スマホ 修理・部品・バッテリー交換ルート確認DB</title>
+      <link>https://solqvia.com/ja/technology/smartphone/repair-parts-battery-service-route-check/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/repair-parts-battery-service-route-check/</guid>
+      <description>515型番について4キャリアと主要メーカーの修理・バッテリー交換ルートを分離確認します。</description>
+      <pubDate>Tue, 11 Aug 2026 11:39:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>中古スマホ OS・セキュリティサポート確認DB</title>
+      <link>https://solqvia.com/ja/technology/smartphone/os-security-support-lifecycle-check/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/os-security-support-lifecycle-check/</guid>
+      <description>515型番を現行主要OS互換・長期更新方針・現在のセキュリティ更新対象に分けて確認します。</description>
+      <pubDate>Tue, 11 Aug 2026 11:26:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>中古スマホ型番別 購入注意点DB｜回線・SIM/eSIM・FeliCa・未確認項目</title>
+      <link>https://solqvia.com/ja/technology/smartphone/used-smartphone-model-check-database/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/used-smartphone-model-check-database/</guid>
+      <description>515スマホ販売記録を型番別に検索し、購入前の確認点を整理します。</description>
+      <pubDate>Tue, 11 Aug 2026 11:13:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>中古スマホ購入安全診断｜型番・回線・ロック・バッテリー・保証を判定</title>
+      <link>https://solqvia.com/ja/technology/smartphone/used-smartphone-purchase-safety-diagnosis/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/used-smartphone-purchase-safety-diagnosis/</guid>
+      <description>515スマホ販売記録を基に、型番・回線適合・SIM/eSIM・利用制限・端末状態・保証を分離して購入安全性を診断します。</description>
+      <pubDate>Tue, 11 Aug 2026 10:55:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>統合端末パスポート｜型番・通信・安全・周辺機器・証拠を横断</title>
+      <link>https://solqvia.com/ja/technology/smartphone/device-passport/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/device-passport/</guid>
+      <description>550端末・販売記録を、通信・安全・周辺機器・証拠レベルまで型番単位で横断します。</description>
+      <pubDate>Sun, 09 Aug 2026 02:15:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>USB-C・映像出力・外付けSSD・周辺機器互換性ラボ</title>
+      <link>https://solqvia.com/ja/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/</guid>
+      <description>USB-C端子と映像・データ速度・充電・周辺機器対応を分離して型番別に診断。</description>
+      <pubDate>Sun, 09 Aug 2026 01:57:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>衛星通信・緊急SOS・災害時通信診断</title>
+      <link>https://solqvia.com/ja/technology/smartphone/satellite-emergency-connectivity-diagnosis/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/satellite-emergency-connectivity-diagnosis/</guid>
+      <description>端末内蔵型とキャリア直結型を分離し、現在の衛星通信経路を診断。</description>
+      <pubDate>Sun, 09 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>盗難・紛失・アカウント復旧ナビ｜ロック・回線停止・2FA・消去の順序</title>
+      <link>https://solqvia.com/ja/technology/smartphone/lost-stolen-account-recovery-navigator/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/lost-stolen-account-recovery-navigator/</guid>
+      <description>スマホの盗難・紛失時に、位置確認、端末ロック、回線停止、Apple/Googleアカウント、SMS/2FA、Wallet、SIM/eSIM再発行、遠隔消去の順序を整理します。</description>
+      <pubDate>Sun, 09 Aug 2026 00:51:00 +0900</pubDate>
+    </item>
+    <item>
       <title>OSアップデート × 端末 × 回線 不具合DB｜更新後悪化を機能別に記録</title>
       <link>https://solqvia.com/ja/technology/smartphone/os-update-carrier-issue-database/</link>
       <guid>https://solqvia.com/ja/technology/smartphone/os-update-carrier-issue-database/</guid>
@@ -106,6 +163,13 @@
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
+      <title>Google Pixel Watch 4 LTEのキャリア相性｜docomo・au・SoftBankの番号共有と楽天の扱い</title>
+      <link>https://solqvia.com/ja/technology/smartphone/pixel-watch-lte-carrier-number-share/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/pixel-watch-lte-carrier-number-share/</guid>
+      <description>Google Pixel Watch 4 LTEのeSIM/4G LTE仕様と、ドコモ・au・SoftBankの公式番号共有対応、楽天モバイルの現状を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
       <title>iPad・AndroidタブレットのeSIM・対応Bandを4キャリア比較｜2026年版</title>
       <link>https://solqvia.com/ja/technology/smartphone/tablet-cellular-band-carrier-compatibility/</link>
       <guid>https://solqvia.com/ja/technology/smartphone/tablet-cellular-band-carrier-compatibility/</guid>
@@ -117,6 +181,20 @@
       <link>https://solqvia.com/ja/technology/smartphone/ipad-pro-m5-cellular-band-carrier-fit/</link>
       <guid>https://solqvia.com/ja/technology/smartphone/ipad-pro-m5-cellular-band-carrier-fit/</guid>
       <description>11/13インチ iPad Pro (M5) Wi-Fi + Cellularの日本向け型番、eSIM、LTE/5G Band、ドコモ・au・SoftBank・楽天モバイル主要Bandとの適合を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>dtab d-51Fの他社SIM相性｜nanoSIM/eSIM・Band・5G SA・APNを確認</title>
+      <link>https://solqvia.com/ja/technology/smartphone/docomo-dtab-d51f-other-sim-band/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/docomo-dtab-d51f-other-sim-band/</guid>
+      <description>ドコモ dtab d-51Fを他社SIM/eSIMで検討する際の、SIM構成、LTE/5G Band、5G SA、データ専用仕様、4キャリアRF相性を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>SoftBank Lenovo TAB8の他社SIM相性｜nanoSIM/eSIM・Band・APNを確認</title>
+      <link>https://solqvia.com/ja/technology/smartphone/softbank-lenovo-tab8-other-sim-band/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/softbank-lenovo-tab8-other-sim-band/</guid>
+      <description>SoftBank Lenovo TAB8のnanoSIM/eSIM、LTE/5G Bandとドコモ・au・SoftBank・楽天モバイル主要Bandの相性を整理します。</description>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
@@ -288,6 +366,13 @@
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
+      <title>AQUOS R10（楽天モバイル販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G</title>
+      <link>https://solqvia.com/ja/technology/smartphone/aquos-r10-rakuten-2026-carrier-compatibility/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/aquos-r10-rakuten-2026-carrier-compatibility/</guid>
+      <description>2026年8月8日までに楽天モバイルで発売されたAQUOS R10（楽天モバイル販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
       <title>Galaxy S26 Ultra SC-53Gを4キャリアで使う相性｜2026年Band・VoLTE・APN・5G</title>
       <link>https://solqvia.com/ja/technology/smartphone/sc-53g-docomo-2026-carrier-compatibility/</link>
       <guid>https://solqvia.com/ja/technology/smartphone/sc-53g-docomo-2026-carrier-compatibility/</guid>
@@ -344,6 +429,20 @@
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
+      <title>Google Pixel 10a（NTTドコモ販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G</title>
+      <link>https://solqvia.com/ja/technology/smartphone/google-pixel-10a-docomo-2026-carrier-compatibility/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/google-pixel-10a-docomo-2026-carrier-compatibility/</guid>
+      <description>2026年8月8日までにNTTドコモで発売されたGoogle Pixel 10a（NTTドコモ販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Google Pixel 10a（SoftBank販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G</title>
+      <link>https://solqvia.com/ja/technology/smartphone/google-pixel-10a-softbank-2026-carrier-compatibility/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/google-pixel-10a-softbank-2026-carrier-compatibility/</guid>
+      <description>2026年8月8日までにSoftBankで発売されたGoogle Pixel 10a（SoftBank販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
       <title>Google Pixel 10a（au販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G</title>
       <link>https://solqvia.com/ja/technology/smartphone/google-pixel-10a-au-2026-carrier-compatibility/</link>
       <guid>https://solqvia.com/ja/technology/smartphone/google-pixel-10a-au-2026-carrier-compatibility/</guid>
@@ -379,11 +478,39 @@
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
+      <title>AQUOS R11（SoftBank販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G</title>
+      <link>https://solqvia.com/ja/technology/smartphone/aquos-r11-softbank-2026-carrier-compatibility/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/aquos-r11-softbank-2026-carrier-compatibility/</guid>
+      <description>2026年8月8日までにSoftBankで発売されたAQUOS R11（SoftBank販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>OPPO Reno13 A（au販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G</title>
+      <link>https://solqvia.com/ja/technology/smartphone/oppo-reno13-a-au-2026-carrier-compatibility/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/oppo-reno13-a-au-2026-carrier-compatibility/</guid>
+      <description>2026年8月8日までにauで発売されたOPPO Reno13 A（au販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Galaxy Z Fold8 SC-57Gを4キャリアで使う相性｜2026年Band・VoLTE・APN・5G</title>
+      <link>https://solqvia.com/ja/technology/smartphone/sc-57g-docomo-2026-carrier-compatibility/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/sc-57g-docomo-2026-carrier-compatibility/</guid>
+      <description>2026年8月8日までにNTTドコモで発売されたGalaxy Z Fold8 SC-57Gについて、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
       <title>Galaxy Z Fold8（楽天モバイル販売）を4キャリアで使う相性｜2026年Band・VoLTE・APN・5G</title>
       <link>https://solqvia.com/ja/technology/smartphone/galaxy-z-fold8-rakuten-2026-carrier-compatibility/</link>
       <guid>https://solqvia.com/ja/technology/smartphone/galaxy-z-fold8-rakuten-2026-carrier-compatibility/</guid>
       <description>2026年8月8日までに楽天モバイルで発売されたGalaxy Z Fold8（楽天モバイル販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>iPhone 17 Pro日本版と海外版の違い｜A3522・eSIM・Band・4キャリア相性</title>
+      <link>https://solqvia.com/ja/technology/smartphone/iphone-17-pro-2025-japan-region-esim-band-carrier-compatibility/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/iphone-17-pro-2025-japan-region-esim-band-carrier-compatibility/</guid>
+      <description>2025年発売のiPhone 17 Proについて、日本で販売されるA3522と海外A番号、SIM/eSIM、LTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性をApple公式情報から整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 05:05:00 +0000</pubDate>
     </item>
     <item>
       <title>2025年国内キャリアAndroid全機種のBand・4キャリア相性一覧｜68販売レコード</title>
@@ -435,10 +562,24 @@
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
+      <title>AQUOS R10 SH-51Fを4キャリアで使う相性｜2025年Band・VoLTE・APN・5G</title>
+      <link>https://solqvia.com/ja/technology/smartphone/sh-51f-docomo-2025-carrier-compatibility/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/sh-51f-docomo-2025-carrier-compatibility/</guid>
+      <description>2025年にNTTドコモで発売されたAQUOS R10 SH-51Fについて、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
       <title>Galaxy Z Fold7 SC-56Fを4キャリアで使う相性｜2025年Band・VoLTE・APN・5G</title>
       <link>https://solqvia.com/ja/technology/smartphone/sc-56f-docomo-2025-carrier-compatibility/</link>
       <guid>https://solqvia.com/ja/technology/smartphone/sc-56f-docomo-2025-carrier-compatibility/</guid>
       <description>2025年にNTTドコモで発売されたGalaxy Z Fold7 SC-56Fについて、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Galaxy Z Fold7（SoftBank販売）を4キャリアで使う相性｜2025年Band・VoLTE・APN・5G</title>
+      <link>https://solqvia.com/ja/technology/smartphone/galaxy-z-fold7-softbank-2025-carrier-compatibility/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/galaxy-z-fold7-softbank-2025-carrier-compatibility/</guid>
+      <description>2025年にSoftBankで発売されたGalaxy Z Fold7（SoftBank販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
@@ -467,6 +608,13 @@
       <link>https://solqvia.com/ja/technology/smartphone/so-52f-docomo-2025-carrier-compatibility/</link>
       <guid>https://solqvia.com/ja/technology/smartphone/so-52f-docomo-2025-carrier-compatibility/</guid>
       <description>2025年にNTTドコモで発売されたXperia 10 VII SO-52Fについて、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>nubia S2R（楽天モバイル販売）を4キャリアで使う相性｜2025年Band・VoLTE・APN・5G</title>
+      <link>https://solqvia.com/ja/technology/smartphone/nubia-s2r-rakuten-2025-carrier-compatibility/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/nubia-s2r-rakuten-2025-carrier-compatibility/</guid>
+      <description>2025年に楽天モバイルで発売されたnubia S2R（楽天モバイル販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
@@ -561,6 +709,13 @@
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
+      <title>Galaxy Z Fold6 SC-55Eを4キャリアで使う相性｜2024年Band・VoLTE・APN・5G</title>
+      <link>https://solqvia.com/ja/technology/smartphone/sc-55e-docomo-2024-carrier-compatibility/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/sc-55e-docomo-2024-carrier-compatibility/</guid>
+      <description>2024年にNTTドコモで発売されたGalaxy Z Fold6 SC-55Eについて、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
       <title>Galaxy Z Flip6 SCG29を4キャリアで使う相性｜2024年Band・VoLTE・APN・5G</title>
       <link>https://solqvia.com/ja/technology/smartphone/scg29-au-2024-carrier-compatibility/</link>
       <guid>https://solqvia.com/ja/technology/smartphone/scg29-au-2024-carrier-compatibility/</guid>
@@ -579,6 +734,13 @@
       <link>https://solqvia.com/ja/technology/smartphone/google-pixel-9-docomo-2024-carrier-compatibility/</link>
       <guid>https://solqvia.com/ja/technology/smartphone/google-pixel-9-docomo-2024-carrier-compatibility/</guid>
       <description>2024年にNTTドコモで発売されたGoogle Pixel 9（NTTドコモ販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Google Pixel 9 Pro（au販売）を4キャリアで使う相性｜2024年Band・VoLTE・APN・5G</title>
+      <link>https://solqvia.com/ja/technology/smartphone/google-pixel-9-pro-au-2024-carrier-compatibility/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/google-pixel-9-pro-au-2024-carrier-compatibility/</guid>
+      <description>2024年にauで発売されたGoogle Pixel 9 Pro（au販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
@@ -603,6 +765,13 @@
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
+      <title>Galaxy A54 5G SCG21を4キャリアで使う相性｜2023年Band・VoLTE・APN・5G</title>
+      <link>https://solqvia.com/ja/technology/smartphone/scg21-au-2023-carrier-compatibility/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/scg21-au-2023-carrier-compatibility/</guid>
+      <description>2023年にauで発売されたGalaxy A54 5G SCG21について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
       <title>Xperia 1 V SO-51Dを4キャリアで使う相性｜2023年Band・VoLTE・APN・5G</title>
       <link>https://solqvia.com/ja/technology/smartphone/so-51d-docomo-2023-carrier-compatibility/</link>
       <guid>https://solqvia.com/ja/technology/smartphone/so-51d-docomo-2023-carrier-compatibility/</guid>
@@ -614,6 +783,13 @@
       <link>https://solqvia.com/ja/technology/smartphone/sog11-au-2023-carrier-compatibility/</link>
       <guid>https://solqvia.com/ja/technology/smartphone/sog11-au-2023-carrier-compatibility/</guid>
       <description>2023年にauで発売されたXperia 10 V SOG11について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>AQUOS R8 pro（SoftBank販売）を4キャリアで使う相性｜2023年Band・VoLTE・APN・5G</title>
+      <link>https://solqvia.com/ja/technology/smartphone/aquos-r8-pro-softbank-2023-carrier-compatibility/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/aquos-r8-pro-softbank-2023-carrier-compatibility/</guid>
+      <description>2023年にSoftBankで発売されたAQUOS R8 pro（SoftBank販売）について、公式周波数情報からLTE/5G Band、ドコモ・au・SoftBank・楽天モバイル相性、VoLTE/IMS・APN確認順を整理します。</description>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
@@ -736,6 +912,13 @@
       <description>ヤマダニューモバイル既存契約者が他社へMNP転出する方法を解説。新規申込受付終了後も、公式FAQでMNP予約番号をマイページから発行する手順が案内されています。</description>
     </item>
     <item>
+      <title>ASAHIネット LTE ANSIMのMNP予約番号発行方法｜マイページから通話SIMを転出</title>
+      <link>https://solqvia.com/ja/technology/smartphone/asahi-net-ansim-mnp-reservation-number-guide/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/asahi-net-ansim-mnp-reservation-number-guide/</guid>
+      <pubDate>Sat, 08 Aug 2026 02:25:00 GMT</pubDate>
+      <description>ASAHIネット LTE ANSIMの通話SIMから他社へMNP転出する方法を解説。マイページでの予約番号発行、転出完了日が最終利用日になる公式ルールを整理します。</description>
+    </item>
+    <item>
       <title>hi-ho LTE typeDのMNP予約番号発行方法｜Myサポート・約4日・発行できない条件</title>
       <link>https://solqvia.com/ja/technology/smartphone/hiho-lte-typed-mnp-reservation-number-guide/</link>
       <guid>https://solqvia.com/ja/technology/smartphone/hiho-lte-typed-mnp-reservation-number-guide/</guid>
@@ -776,6 +959,13 @@
       <guid>https://solqvia.com/ja/technology/smartphone/hapimoba-sim-mnp-reservation-number-guide/</guid>
       <pubDate>Sat, 08 Aug 2026 03:20:00 GMT</pubDate>
       <description>ハピモバSIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。</description>
+    </item>
+    <item>
+      <title>井川MOBILE SIMのMNP予約番号発行方法｜マイページ申請・約4日・有効期限14日</title>
+      <link>https://solqvia.com/ja/technology/smartphone/ikawa-mobile-sim-mnp-reservation-number-guide/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/ikawa-mobile-sim-mnp-reservation-number-guide/</guid>
+      <pubDate>Sat, 08 Aug 2026 03:20:00 GMT</pubDate>
+      <description>井川MOBILE SIMから他社へMNP転出する方法を解説。Xmobile公式サポートに掲載された共通マイページ手順、発行目安約4日、予約番号の有効期限14日、転出完了時の解約タイミングを整理します。</description>
     </item>
     <item>
       <title>誰でもスマホのMNP予約番号発行方法｜ヘルプデスクへ連絡して転出</title>
@@ -925,6 +1115,13 @@
       <description>iCloud写真をオンにしたiPhoneで写真を削除した時、iCloudや他のApple製デバイスからも消える理由と、「最近削除した項目」から復元できる期間を整理します。</description>
     </item>
     <item>
+      <title>Google Oneをダウングレード・解約すると保存データはどうなる？容量超過前に確認すること</title>
+      <link>https://solqvia.com/ja/technology/smartphone/google-one-downgrade-cancel-over-storage-limit/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/google-one-downgrade-cancel-over-storage-limit/</guid>
+      <pubDate>Sat, 08 Aug 2026 01:50:00 GMT</pubDate>
+      <description>Google Oneのストレージプランを小さくする・解約する前に、現在の使用量、更新停止、保存容量超過時の影響を確認する手順を整理します。</description>
+    </item>
+    <item>
       <title>OneDriveへ写真をバックアップ後、スマホ本体から削除しても大丈夫？カメラアップロードの仕組み</title>
       <link>https://solqvia.com/ja/technology/smartphone/onedrive-camera-upload-delete-phone-photo-cloud-copy-remains/</link>
       <guid>https://solqvia.com/ja/technology/smartphone/onedrive-camera-upload-delete-phone-photo-cloud-copy-remains/</guid>
@@ -1002,6 +1199,13 @@
       <pubDate>Sat, 08 Aug 2026 10:21:00 +0900</pubDate>
     </item>
     <item>
+      <title>海外旅行でデータeSIMを使いながら日本の電話番号でSMSを受ける方法｜iPhoneデュアルSIM設定</title>
+      <link>https://solqvia.com/ja/technology/smartphone/iphone-travel-esim-keep-japan-number-sms/</link>
+      <guid isPermaLink="true">https://solqvia.com/ja/technology/smartphone/iphone-travel-esim-keep-japan-number-sms/</guid>
+      <description>海外旅行中に旅行用データeSIMで通信しつつ、日本の電話番号をオンにしてSMS・着信を受けたい場合のiPhoneデュアルSIM設定とローミング料金の注意点を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 10:21:00 +0900</pubDate>
+    </item>
+    <item>
       <title>Pixelで旅行eSIMを使いながら日本のSIMでSMSを受ける方法｜データ・通話・テキストの回線を分ける</title>
       <link>https://solqvia.com/ja/technology/smartphone/pixel-travel-esim-keep-japan-sim-sms/</link>
       <guid isPermaLink="true">https://solqvia.com/ja/technology/smartphone/pixel-travel-esim-keep-japan-sim-sms/</guid>
@@ -1062,6 +1266,13 @@
       <link>https://solqvia.com/ja/technology/smartphone/galaxy-z-fold7-japan-hongkong-model-differences/</link>
       <guid isPermaLink="true">https://solqvia.com/ja/technology/smartphone/galaxy-z-fold7-japan-hongkong-model-differences/</guid>
       <description>Galaxy Z Fold7の日本SIMフリー版SM-F966Q系と香港版SM-F9660を比較。おサイフケータイ、nanoSIM/eSIM、LTE B21/B42、5G n79、mmWave n257を整理します。</description>
+      <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
+    </item>
+    <item>
+      <title>Galaxy Z Flip7日本版と香港版の違い｜SM-F766Q/SM-F7660・FeliCa・B21/B42・n79</title>
+      <link>https://solqvia.com/ja/technology/smartphone/galaxy-z-flip7-japan-hongkong-model-differences/</link>
+      <guid isPermaLink="true">https://solqvia.com/ja/technology/smartphone/galaxy-z-flip7-japan-hongkong-model-differences/</guid>
+      <description>Galaxy Z Flip7の日本SIMフリー版SM-F766Q系と香港版SM-F7660を比較。おサイフケータイ、nanoSIM/eSIM、LTE B21/B42、5G n79の差を整理します。</description>
       <pubDate>Sat, 08 Aug 2026 00:00:00 +0900</pubDate>
     </item>
     <item>
@@ -1485,5 +1696,33 @@
       <guid>https://solqvia.com/ja/technology/smartphone/smartphone-app-crashes/</guid>
       <description>特定アプリだけ開かない場合を、終了、更新、権限、容量、再インストールの順で確認します。</description>
     </item>
-    </channel>
+    <item>
+      <title>AndroidでVPNが切れるとインターネットも全部使えない時｜「VPN以外の接続をブロック」を確認</title>
+      <link>https://solqvia.com/ja/technology/smartphone/android-always-on-vpn-blocks-internet-when-vpn-disconnected/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/android-always-on-vpn-blocks-internet-when-vpn-disconnected/</guid>
+      <pubDate>Sat, 08 Aug 2026 01:46:00 GMT</pubDate>
+      <description>AndroidでVPN切断後にWi-Fi・モバイル通信まで使えなくなる場合に、常時接続VPNと「VPN以外の接続をブロック」の設定を確認する方法を解説します。</description>
+    </item>
+    <item>
+      <title>PixelのWi-Fiアクセスポイントが使えない時｜データセーバーとキャリア制限を確認</title>
+      <link>https://solqvia.com/ja/technology/smartphone/pixel-hotspot-not-working-data-saver-carrier-restriction/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/pixel-hotspot-not-working-data-saver-carrier-restriction/</guid>
+      <pubDate>Sat, 08 Aug 2026 01:46:00 GMT</pubDate>
+      <description>Google PixelでWi-Fiテザリングをオンにできない・接続しても通信できない場合に、データセーバー、モバイル通信、通信会社の制限を確認します。</description>
+    </item>
+    <item>
+      <title>AndroidでVPNが切れるとインターネットも全部使えない時｜「VPN以外の接続をブロック」を確認</title>
+      <link>https://solqvia.com/ja/technology/smartphone/android-always-on-vpn-blocks-internet-when-vpn-disconnected/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/android-always-on-vpn-blocks-internet-when-vpn-disconnected/</guid>
+      <pubDate>Sat, 08 Aug 2026 01:46:00 GMT</pubDate>
+      <description>AndroidでVPN切断後にWi-Fi・モバイル通信まで使えなくなる場合に、常時接続VPNと「VPN以外の接続をブロック」の設定を確認する方法を解説します。</description>
+    </item>
+    <item>
+      <title>PixelのWi-Fiアクセスポイントが使えない時｜データセーバーとキャリア制限を確認</title>
+      <link>https://solqvia.com/ja/technology/smartphone/pixel-hotspot-not-working-data-saver-carrier-restriction/</link>
+      <guid>https://solqvia.com/ja/technology/smartphone/pixel-hotspot-not-working-data-saver-carrier-restriction/</guid>
+      <pubDate>Sat, 08 Aug 2026 01:46:00 GMT</pubDate>
+      <description>Google PixelでWi-Fiテザリングをオンにできない・接続しても通信できない場合に、データセーバー、モバイル通信、通信会社の制限を確認します。</description>
+    </item>
+  </channel>
 </rss>
