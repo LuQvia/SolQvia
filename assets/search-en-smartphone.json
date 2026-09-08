@@ -8,6 +8,14 @@
     "text": "used smartphone purchase flow exact model OS security support repair battery network restriction ownership lock warranty"
   },
   {
+    "title": "Used Smartphone Model Check Database",
+    "description": "Search 515 exact-model smartphone sales records for carrier fit, SIM/eSIM, FeliCa, evidence and unresolved checks before purchase.",
+    "url": "/en/technology/smartphone/used-smartphone-model-check-database/",
+    "category": "Smartphones",
+    "date": "2026-08-11",
+    "text": "used smartphone exact model purchase checks carrier fit SIM eSIM FeliCa band VoLTE IMS evidence network restriction"
+  },
+  {
     "title": "Used Smartphone Repair, Parts & Battery Service Route Check",
     "description": "Check 515 exact-model records for original-carrier repair status plus Apple, Pixel and Galaxy repair/battery service routes.",
     "url": "/en/technology/smartphone/repair-parts-battery-service-route-check/",
@@ -24,6 +32,630 @@
     "text": "used smartphone OS security support update lifecycle iOS 26 Pixel 7 year 5 year Galaxy Samsung monthly quarterly"
   },
   {
+    "title": "USB-C, Display, Storage & Peripheral Compatibility Lab",
+    "description": "Diagnose connector, cable, wired display, USB speed, PD/PPS, SSD, DAC, Ethernet and Samsung DeX separately by exact model.",
+    "url": "/en/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/",
+    "category": "Smartphones",
+    "date": "2026-08-09",
+    "text": "USB-C DisplayPort HDMI Alt Mode external SSD flash storage DAC microphone Ethernet PD PPS USB 2 USB 3 Samsung DeX cable hub power exact model"
+  },
+  {
+    "title": "Satellite, Emergency SOS & Disaster Connectivity Diagnosis",
+    "description": "Separate handset-native satellite features from carrier direct-to-device services and diagnose current paths by device, region, carrier, OS and purpose.",
+    "url": "/en/technology/smartphone/satellite-emergency-connectivity-diagnosis/",
+    "category": "Smartphones",
+    "date": "2026-08-09",
+    "text": "satellite emergency SOS disaster direct to device Starlink iPhone Pixel au SoftBank Docomo Rakuten off grid messaging location"
+  },
+  {
+    "title": "OS Update × Device × Carrier Issue Database",
+    "description": "Track before/after OS/build, carrier, SIM mode, carrier settings and regression/improvement across 18 device functions.",
+    "url": "/en/technology/smartphone/os-update-carrier-issue-database/",
+    "category": "Smartphones",
+    "date": "2026-08-09",
+    "text": "OS update issue regression device variant carrier SIM eSIM VoLTE IMS SMS OTP RCS 5G Wi-Fi Bluetooth battery carrier settings before after"
+  },
+  {
+    "title": "Device Migration, Reset, eSIM, Passkey & 2FA Safety Diagnosis",
+    "description": "A safe migration checklist for backup, SIM/eSIM, SMS authentication, passkeys, authenticator apps, LINE, Wallet and critical apps before erasing the old phone.",
+    "url": "/en/technology/smartphone/device-migration-reset-safety-diagnosis/",
+    "category": "Smartphones",
+    "date": "2026-08-09",
+    "text": "phone migration reset eSIM passkey 2FA authenticator SMS LINE Wallet backup old phone erase safety"
+  },
+  {
+    "title": "ZTE Axon 10 Pro 5G (SoftBank sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com",
+    "description": "Check the SoftBank sales record of ZTE Axon 10 Pro 5G: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants.",
+    "url": "/en/technology/smartphone/zte-axon-10-pro-5g-softbank-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "ZTE Axon 10 Pro 5G (SoftBank sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com Check the SoftBank sales record of ZTE Axon 10 Pro 5G: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants."
+  },
+  {
+    "title": "Yu Mobile: How to Get an MNP Reservation Number | SolQvia.com",
+    "description": "English guide to Yu Mobile: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/yu-mobile-mnp-reservation-number-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Yu Mobile: How to Get an MNP Reservation Number | SolQvia.com English guide to Yu Mobile: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "Y!mobile: How to Get an MNP Reservation Number | SolQvia.com",
+    "description": "English guide to Y!mobile: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/ymobile-mnp-reservation-number-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Y!mobile: How to Get an MNP Reservation Number | SolQvia.com English guide to Y!mobile: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "Xperia Ace II (NTT Docomo sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com",
+    "description": "Check the NTT Docomo sales record of Xperia Ace II: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants.",
+    "url": "/en/technology/smartphone/xperia-ace-ii-so41b-japan-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Xperia Ace II (NTT Docomo sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com Check the NTT Docomo sales record of Xperia Ace II: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants."
+  },
+  {
+    "title": "Xperia 5 Ii SoftBank Japan Carrier Compatibility | SolQvia.com",
+    "description": "English SolQvia technical guide to Xperia 5 Ii SoftBank Japan Carrier Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/xperia-5-ii-softbank-japan-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Xperia 5 Ii SoftBank Japan Carrier Compatibility | SolQvia.com English SolQvia technical guide to Xperia 5 Ii SoftBank Japan Carrier Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "Xperia 1 Viii SIMfree Japan Carrier Compatibility | SolQvia.com",
+    "description": "English SolQvia technical guide to Xperia 1 Viii SIMfree Japan Carrier Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/xperia-1-viii-simfree-japan-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Xperia 1 Viii SIMfree Japan Carrier Compatibility | SolQvia.com English SolQvia technical guide to Xperia 1 Viii SIMfree Japan Carrier Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "Xmobile: How to Get an MNP Reservation Number | SolQvia.com",
+    "description": "English guide to Xmobile: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/xmobile-mnp-reservation-number-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Xmobile: How to Get an MNP Reservation Number | SolQvia.com English guide to Xmobile: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "SoftBank A503SH Other Carrier SIM APN Band | SolQvia.com",
+    "description": "English SolQvia technical guide to SoftBank A503SH Other Carrier SIM APN Band, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/softbank-a503sh-other-sim-apn-band/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "SoftBank A503SH Other Carrier SIM APN Band | SolQvia.com English SolQvia technical guide to SoftBank A503SH Other Carrier SIM APN Band, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "Smiles Connect MNP: SMS Code Unpaid Cancellation | SolQvia.com",
+    "description": "English guide to Smiles Connect MNP: SMS Code Unpaid Cancellation, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/smiles-connect-mnp-sms-code-unpaid-cancellation/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Smiles Connect MNP: SMS Code Unpaid Cancellation | SolQvia.com English guide to Smiles Connect MNP: SMS Code Unpaid Cancellation, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "Japan SIM-Free and Open-Market Phone Compatibility | SolQvia.com",
+    "description": "English SolQvia technical guide to Japan SIM-Free and Open-Market Phone Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/simfree-openmarket-device-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Japan SIM-Free and Open-Market Phone Compatibility | SolQvia.com English SolQvia technical guide to Japan SIM-Free and Open-Market Phone Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "SIM Lock Unlock Carrier Comparison 2026 | SolQvia.com",
+    "description": "English SolQvia technical guide to SIM Lock Unlock Carrier Comparison 2026, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/sim-lock-unlock-carrier-comparison-2026/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "SIM Lock Unlock Carrier Comparison 2026 | SolQvia.com English SolQvia technical guide to SIM Lock Unlock Carrier Comparison 2026, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "Rerimoba SIM: How to Get an MNP Reservation Number | SolQvia.com",
+    "description": "English guide to Rerimoba SIM: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/rerimoba-sim-mnp-reservation-number-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Rerimoba SIM: How to Get an MNP Reservation Number | SolQvia.com English guide to Rerimoba SIM: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "Redmi Note 11 Pro 5G (Rakuten Mobile sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com",
+    "description": "Check the Rakuten Mobile sales record of Redmi Note 11 Pro 5G: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants.",
+    "url": "/en/technology/smartphone/redmi-note-11-pro-5g-rakuten-2022-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Redmi Note 11 Pro 5G (Rakuten Mobile sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com Check the Rakuten Mobile sales record of Redmi Note 11 Pro 5G: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants."
+  },
+  {
+    "title": "Rakuten Mobile: How to Get an MNP Reservation Number | SolQvia.com",
+    "description": "English guide to Rakuten Mobile: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/rakuten-mobile-mnp-reservation-number-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Rakuten Mobile: How to Get an MNP Reservation Number | SolQvia.com English guide to Rakuten Mobile: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "Rakuten eSIM Reissue Otp Not Received After Delete | SolQvia.com",
+    "description": "Troubleshoot Rakuten eSIM Reissue Otp Not Received After Delete with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety.",
+    "url": "/en/technology/smartphone/rakuten-esim-reissue-otp-not-received-after-delete/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Rakuten eSIM Reissue Otp Not Received After Delete | SolQvia.com Troubleshoot Rakuten eSIM Reissue Otp Not Received After Delete with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety."
+  },
+  {
+    "title": "Pixel 10 Pro g4qur Docomo 5G n79 Limit | SolQvia.com",
+    "description": "English SolQvia technical guide to Pixel 10 Pro g4qur Docomo 5G n79 Limit, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/pixel-10-pro-g4qur-docomo-5g-n79-limit/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Pixel 10 Pro g4qur Docomo 5G n79 Limit | SolQvia.com English SolQvia technical guide to Pixel 10 Pro g4qur Docomo 5G n79 Limit, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "OPPO Reno3 5G (SoftBank sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com",
+    "description": "Check the SoftBank sales record of OPPO Reno3 5G: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants.",
+    "url": "/en/technology/smartphone/oppo-reno3-5g-softbank-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "OPPO Reno3 5G (SoftBank sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com Check the SoftBank sales record of OPPO Reno3 5G: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants."
+  },
+  {
+    "title": "OPPO A73 (Rakuten Mobile sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com",
+    "description": "Check the Rakuten Mobile sales record of OPPO A73: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants.",
+    "url": "/en/technology/smartphone/oppo-a73-rakuten-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "OPPO A73 (Rakuten Mobile sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com Check the Rakuten Mobile sales record of OPPO A73: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants."
+  },
+  {
+    "title": "OPPO A5 2020 (Rakuten Mobile sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com",
+    "description": "Check the Rakuten Mobile sales record of OPPO A5 2020: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants.",
+    "url": "/en/technology/smartphone/oppo-a5-2020-rakuten-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "OPPO A5 2020 (Rakuten Mobile sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com Check the Rakuten Mobile sales record of OPPO A5 2020: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants."
+  },
+  {
+    "title": "OPPO A54 5G (au sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com",
+    "description": "Check the au sales record of OPPO A54 5G: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants.",
+    "url": "/en/technology/smartphone/opg02-au-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "OPPO A54 5G (au sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com Check the au sales record of OPPO A54 5G: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants."
+  },
+  {
+    "title": "Nihontsushin SIM MNP: Name Mismatch Two Days | SolQvia.com",
+    "description": "English guide to Nihontsushin SIM MNP: Name Mismatch Two Days, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/nihontsushin-sim-mnp-name-mismatch-two-days/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Nihontsushin SIM MNP: Name Mismatch Two Days | SolQvia.com English guide to Nihontsushin SIM MNP: Name Mismatch Two Days, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "Nifmo: How to Get an MNP Reservation Number | SolQvia.com",
+    "description": "English guide to Nifmo: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/nifmo-mnp-reservation-number-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Nifmo: How to Get an MNP Reservation Number | SolQvia.com English guide to Nifmo: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "MVNO MNP: Number Not Issued Causes | SolQvia.com",
+    "description": "English guide to MVNO MNP: Number Not Issued Causes, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/mvno-mnp-number-not-issued-causes/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "MVNO MNP: Number Not Issued Causes | SolQvia.com English guide to MVNO MNP: Number Not Issued Causes, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "Mobile Wi-Fi Router Carrier Band Compatibility | SolQvia.com",
+    "description": "English SolQvia technical guide to Mobile Wi-Fi Router Carrier Band Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/mobile-wifi-router-carrier-band-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Mobile Wi-Fi Router Carrier Band Compatibility | SolQvia.com English SolQvia technical guide to Mobile Wi-Fi Router Carrier Band Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "Why an MNP Reservation Number Is Not Issued | SolQvia.com",
+    "description": "English guide to Why an MNP Reservation Number Is Not Issued, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/mnp-reservation-number-not-issued/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Why an MNP Reservation Number Is Not Issued | SolQvia.com English guide to Why an MNP Reservation Number Is Not Issued, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "MNP Reservation Number Issuance Time Comparison | SolQvia.com",
+    "description": "English guide to MNP Reservation Number Issuance Time Comparison, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/mnp-reservation-number-issue-time-comparison/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "MNP Reservation Number Issuance Time Comparison | SolQvia.com English guide to MNP Reservation Number Issuance Time Comparison, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "mineo: How to Get an MNP Reservation Number | SolQvia.com",
+    "description": "English guide to mineo: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/mineo-mnp-reservation-number-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "mineo: How to Get an MNP Reservation Number | SolQvia.com English guide to mineo: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "Lp Mobile: How to Get an MNP Reservation Number | SolQvia.com",
+    "description": "English guide to Lp Mobile: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/lp-mobile-mnp-reservation-number-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Lp Mobile: How to Get an MNP Reservation Number | SolQvia.com English guide to Lp Mobile: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "livedoor MOBILE SIM: How to Get an MNP Reservation Number | SolQvia.com",
+    "description": "English guide to livedoor MOBILE SIM: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/livedoor-mobile-sim-mnp-reservation-number-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "livedoor MOBILE SIM: How to Get an MNP Reservation Number | SolQvia.com English guide to livedoor MOBILE SIM: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "Kids Phone Crosscarrier APN VoLTE Location Comparison | SolQvia.com",
+    "description": "English SolQvia technical guide to Kids Phone Crosscarrier APN VoLTE Location Comparison, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/kids-phone-crosscarrier-apn-volte-location-comparison/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Kids Phone Crosscarrier APN VoLTE Location Comparison | SolQvia.com English SolQvia technical guide to Kids Phone Crosscarrier APN VoLTE Location Comparison, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "iPhone Se 3rd 2022 Japan Region eSIM Band A2595 on Japan's 4 Carriers: Bands, eSIM, VoLTE and APN | SolQvia.com",
+    "description": "Check iPhone SE (3rd generation) by exact Japan sales variant for NTT Docomo, au, SoftBank and Rakuten Mobile, including LTE/5G bands, SIM/eSIM, VoLTE/IMS and APN boundaries.",
+    "url": "/en/technology/smartphone/iphone-se-3rd-2022-japan-region-esim-band-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "iPhone Se 3rd 2022 Japan Region eSIM Band A2595 on Japan's 4 Carriers: Bands, eSIM, VoLTE and APN | SolQvia.com Check iPhone SE (3rd generation) by exact Japan sales variant for NTT Docomo, au, SoftBank and Rakuten Mobile, including LTE/5G bands, SIM/eSIM, VoLTE/IMS and APN boundaries."
+  },
+  {
+    "title": "iPhone eSIM Quick Transfer Fails Japan Carriers | SolQvia.com",
+    "description": "Troubleshoot iPhone eSIM Quick Transfer Fails Japan Carriers with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety.",
+    "url": "/en/technology/smartphone/iphone-esim-quick-transfer-fails-japan-carriers/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "iPhone eSIM Quick Transfer Fails Japan Carriers | SolQvia.com Troubleshoot iPhone eSIM Quick Transfer Fails Japan Carriers with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety."
+  },
+  {
+    "title": "IIJmio: How to Get an MNP Reservation Number | SolQvia.com",
+    "description": "English guide to IIJmio: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/iijmio-mnp-reservation-number-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "IIJmio: How to Get an MNP Reservation Number | SolQvia.com English guide to IIJmio: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "IIJmio MNP: Number Reissue SIM Reissue Blocked | SolQvia.com",
+    "description": "English guide to IIJmio MNP: Number Reissue SIM Reissue Blocked, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/iijmio-mnp-number-reissue-sim-reissue-blocked/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "IIJmio MNP: Number Reissue SIM Reissue Blocked | SolQvia.com English guide to IIJmio MNP: Number Reissue SIM Reissue Blocked, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "Galaxy Z fold7 Sm f966q Japan Carrier Compatibility | SolQvia.com",
+    "description": "English SolQvia technical guide to Galaxy Z fold7 Sm f966q Japan Carrier Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/galaxy-z-fold7-sm-f966q-japan-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Galaxy Z fold7 Sm f966q Japan Carrier Compatibility | SolQvia.com English SolQvia technical guide to Galaxy Z fold7 Sm f966q Japan Carrier Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "Galaxy Z fold7 Sm f9660 Hong Kong Japan Carrier Compatibility | SolQvia.com",
+    "description": "English SolQvia technical guide to Galaxy Z fold7 Sm f9660 Hong Kong Japan Carrier Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/galaxy-z-fold7-sm-f9660-hk-japan-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Galaxy Z fold7 Sm f9660 Hong Kong Japan Carrier Compatibility | SolQvia.com English SolQvia technical guide to Galaxy Z fold7 Sm f9660 Hong Kong Japan Carrier Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "Galaxy S21 Ultra 5G (NTT Docomo sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com",
+    "description": "Check the NTT Docomo sales record of Galaxy S21 Ultra 5G: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants.",
+    "url": "/en/technology/smartphone/galaxy-s21-ultra-5g-sc52b-japan-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Galaxy S21 Ultra 5G (NTT Docomo sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com Check the NTT Docomo sales record of Galaxy S21 Ultra 5G: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants."
+  },
+  {
+    "title": "Japan Feature Phone Carrier Band Compatibility | SolQvia.com",
+    "description": "English SolQvia technical guide to Japan Feature Phone Carrier Band Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/feature-phone-garakei-carrier-band-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Japan Feature Phone Carrier Band Compatibility | SolQvia.com English SolQvia technical guide to Japan Feature Phone Carrier Band Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "arrows N (NTT Docomo sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com",
+    "description": "Check the NTT Docomo sales record of arrows N: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants.",
+    "url": "/en/technology/smartphone/f-51c-docomo-2023-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "arrows N (NTT Docomo sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com Check the NTT Docomo sales record of arrows N: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants."
+  },
+  {
+    "title": "eSIM Manual Input SM-DP+ Activation Code Guide | SolQvia.com",
+    "description": "Troubleshoot eSIM Manual Input SM-DP+ Activation Code Guide with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety.",
+    "url": "/en/technology/smartphone/esim-manual-input-smdp-activation-code-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "eSIM Manual Input SM-DP+ Activation Code Guide | SolQvia.com Troubleshoot eSIM Manual Input SM-DP+ Activation Code Guide with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety."
+  },
+  {
+    "title": "eSIM Delete Reissue Transfer Safety Guide | SolQvia.com",
+    "description": "Troubleshoot eSIM Delete Reissue Transfer Safety Guide with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety.",
+    "url": "/en/technology/smartphone/esim-delete-reissue-transfer-safety-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "eSIM Delete Reissue Transfer Safety Guide | SolQvia.com Troubleshoot eSIM Delete Reissue Transfer Safety Guide with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety."
+  },
+  {
+    "title": "NTT Docomo MNP: Reservation Number Not Issued | SolQvia.com",
+    "description": "English guide to NTT Docomo MNP: Reservation Number Not Issued, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/docomo-mnp-reservation-number-not-issued/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "NTT Docomo MNP: Reservation Number Not Issued | SolQvia.com English guide to NTT Docomo MNP: Reservation Number Not Issued, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "Docomo Dtab d51f Other Carrier SIM Band",
+    "description": "English SolQvia technical guide to Docomo Dtab d51f Other Carrier SIM Band, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/docomo-dtab-d51f-other-sim-band/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Docomo Dtab d51f Other Carrier SIM Band English SolQvia technical guide to Docomo Dtab d51f Other Carrier SIM Band, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "Daredemo Smartphone: How to Get an MNP Reservation Number | SolQvia.com",
+    "description": "English guide to Daredemo Smartphone: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/daredemo-smartphone-mnp-reservation-number-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Daredemo Smartphone: How to Get an MNP Reservation Number | SolQvia.com English guide to Daredemo Smartphone: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "Cr Mobile SIM: How to Get an MNP Reservation Number | SolQvia.com",
+    "description": "English guide to Cr Mobile SIM: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/cr-mobile-sim-mnp-reservation-number-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Cr Mobile SIM: How to Get an MNP Reservation Number | SolQvia.com English guide to Cr Mobile SIM: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "Carrier Switch Network Troubleshooting Checklist | SolQvia.com",
+    "description": "English SolQvia technical guide to Carrier Switch Network Troubleshooting Checklist, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/carrier-switch-network-troubleshooting-checklist/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Carrier Switch Network Troubleshooting Checklist | SolQvia.com English SolQvia technical guide to Carrier Switch Network Troubleshooting Checklist, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "Au eSIM After Activation Mms Au Mail Not Working | SolQvia.com",
+    "description": "Troubleshoot Au eSIM After Activation Mms Au Mail Not Working with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety.",
+    "url": "/en/technology/smartphone/au-esim-after-activation-mms-au-mail-not-working/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Au eSIM After Activation Mms Au Mail Not Working | SolQvia.com Troubleshoot Au eSIM After Activation Mms Au Mail Not Working with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety."
+  },
+  {
+    "title": "Au APN Settings Android 2026 | SolQvia.com",
+    "description": "English SolQvia technical guide to Au APN Settings Android 2026, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/au-apn-settings-android-2026/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Au APN Settings Android 2026 | SolQvia.com English SolQvia technical guide to Au APN Settings Android 2026, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "AQUOS sense4 plus (Rakuten Mobile sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com",
+    "description": "Check the Rakuten Mobile sales record of AQUOS sense4 plus: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants.",
+    "url": "/en/technology/smartphone/aquos-sense4-plus-rakuten-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "AQUOS sense4 plus (Rakuten Mobile sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com Check the Rakuten Mobile sales record of AQUOS sense4 plus: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants."
+  },
+  {
+    "title": "AQUOS r5g SoftBank Japan Carrier Compatibility | SolQvia.com",
+    "description": "English SolQvia technical guide to AQUOS r5g SoftBank Japan Carrier Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/aquos-r5g-softbank-japan-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "AQUOS r5g SoftBank Japan Carrier Compatibility | SolQvia.com English SolQvia technical guide to AQUOS r5g SoftBank Japan Carrier Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "AQUOS r5g SHG01 Japan Carrier Compatibility | SolQvia.com",
+    "description": "English SolQvia technical guide to AQUOS r5g SHG01 Japan Carrier Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/aquos-r5g-shg01-japan-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "AQUOS r5g SHG01 Japan Carrier Compatibility | SolQvia.com English SolQvia technical guide to AQUOS r5g SHG01 Japan Carrier Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "あんしんファミリースマホ (SoftBank sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com",
+    "description": "Check the SoftBank sales record of あんしんファミリースマホ: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants.",
+    "url": "/en/technology/smartphone/anshin-family-smartphone-softbank-2024-carrier-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "あんしんファミリースマホ (SoftBank sales variant) on Japan's 4 carriers: bands, eSIM, VoLTE & APN | SolQvia.com Check the SoftBank sales record of あんしんファミリースマホ: LTE/5G bands, SIM/eSIM, VoLTE/IMS, APN, four-carrier fit, and source-table differences from other Japan sales variants."
+  },
+  {
+    "title": "Ahamo Network PIN Forgotten MNP: Guide",
+    "description": "English guide to Ahamo Network PIN Forgotten MNP: Guide, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/ahamo-network-pin-forgotten-mnp-guide/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "Ahamo Network PIN Forgotten MNP: Guide English guide to Ahamo Network PIN Forgotten MNP: Guide, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "AEON Mobile MNP: One Stop Name Change Web Deadline | SolQvia.com",
+    "description": "English guide to AEON Mobile MNP: One Stop Name Change Web Deadline, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/aeon-mobile-mnp-onestop-name-change-web-deadline/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "AEON Mobile MNP: One Stop Name Change Web Deadline | SolQvia.com English guide to AEON Mobile MNP: One Stop Name Change Web Deadline, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry."
+  },
+  {
+    "title": "2023 iPhone Region eSIM Band Compatibility | SolQvia.com",
+    "description": "Troubleshoot 2023 iPhone Region eSIM Band Compatibility with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety.",
+    "url": "/en/technology/smartphone/2023-iphone-region-esim-band-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "2023 iPhone Region eSIM Band Compatibility | SolQvia.com Troubleshoot 2023 iPhone Region eSIM Band Compatibility with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety."
+  },
+  {
+    "title": "2023 Domestic Carrier Android Band Compatibility | SolQvia.com",
+    "description": "English SolQvia technical guide to 2023 Domestic Carrier Android Band Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/2023-domestic-carrier-android-band-compatibility/",
+    "category": "Smartphones",
+    "date": "2026-08-08",
+    "text": "2023 Domestic Carrier Android Band Compatibility | SolQvia.com English SolQvia technical guide to 2023 Domestic Carrier Android Band Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links."
+  },
+  {
+    "title": "Phone Dropped in Water: Immediate Safety and Recovery Steps | SolQvia.com",
+    "description": "Reduce short-circuit, corrosion, and battery risks after liquid exposure by handling power, charging, drying, backup, and repair in the correct order.",
+    "url": "/en/technology/smartphone/smartphone-water-damage-first-aid/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "Phone Dropped in Water: Immediate Safety and Recovery Steps | SolQvia.com Reduce short-circuit, corrosion, and battery risks after liquid exposure by handling power, charging, drying, backup, and repair in the correct order."
+  },
+  {
+    "title": "Phone Video Is Too Large to Send | SolQvia.com",
+    "description": "Send large 4K or HDR phone videos by comparing resolution, frame rate, codec, trimming, compression, and cloud-link sharing.",
+    "url": "/en/technology/smartphone/smartphone-video-too-large-to-send/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "Phone Video Is Too Large to Send | SolQvia.com Send large 4K or HDR phone videos by comparing resolution, frame rate, codec, trimming, compression, and cloud-link sharing."
+  },
+  {
+    "title": "Computer Does Not Recognize a Phone over USB: Data Connection Fixes | SolQvia.com",
+    "description": "When a phone charges but files do not appear, check the data cable, unlocked state, USB mode, trust prompt, computer software, and port condition.",
+    "url": "/en/technology/smartphone/smartphone-usb-computer-not-recognized/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "Computer Does Not Recognize a Phone over USB: Data Connection Fixes | SolQvia.com When a phone charges but files do not appear, check the data cable, unlocked state, USB mode, trust prompt, computer software, and port condition."
+  },
+  {
+    "title": "Unknown Certificate or Unsafe Connection Warning on a Phone | SolQvia.com",
+    "description": "When a certificate warning appears, distinguish clock errors, captive portals, VPN inspection, user certificates, and fraudulent sites before deciding whether to continue.",
+    "url": "/en/technology/smartphone/smartphone-unknown-certificate-warning/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "Unknown Certificate or Unsafe Connection Warning on a Phone | SolQvia.com When a certificate warning appears, distinguish clock errors, captive portals, VPN inspection, user certificates, and fraudulent sites before deciding whether to continue."
+  },
+  {
+    "title": "RCS Chat Features Stuck on Verifying Your Number | SolQvia.com",
+    "description": "Fix RCS that remains on verifying or falls back to SMS by checking the number, default SIM, carrier services, VPN, and registration on an old phone.",
+    "url": "/en/technology/smartphone/smartphone-rcs-chat-not-verifying/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "RCS Chat Features Stuck on Verifying Your Number | SolQvia.com Fix RCS that remains on verifying or falls back to SMS by checking the number, default SIM, carrier services, VPN, and registration on an old phone."
+  },
+  {
+    "title": "eSIM Will Not Activate or Add: QR Code and Transfer Checklist | SolQvia.com",
+    "description": "Resolve eSIM QR-code, pending-activation, and missing-line problems by checking device support, Wi-Fi, one-time codes, transfer rules, and carrier provisioning.",
+    "url": "/en/technology/smartphone/smartphone-esim-not-activating/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "eSIM Will Not Activate or Add: QR Code and Transfer Checklist | SolQvia.com Resolve eSIM QR-code, pending-activation, and missing-line problems by checking device support, Wi-Fi, one-time codes, transfer rules, and carrier provisioning."
+  },
+  {
+    "title": "Emergency SOS Triggers Accidentally on a Phone | SolQvia.com",
+    "description": "When button presses trigger Emergency SOS, review the activation gesture, countdown, emergency contacts, regional behavior, and safe cancellation.",
+    "url": "/en/technology/smartphone/smartphone-emergency-sos-accidental-trigger/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "Emergency SOS Triggers Accidentally on a Phone | SolQvia.com When button presses trigger Emergency SOS, review the activation gesture, countdown, emergency contacts, regional behavior, and safe cancellation."
+  },
+  {
+    "title": "Dual-SIM Phone Uses the Wrong Line",
+    "description": "Stop a dual-SIM phone from using the wrong line for calls, texts, or data by checking defaults, per-contact choices, automatic switching, and roaming.",
+    "url": "/en/technology/smartphone/smartphone-dual-sim-wrong-line/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "Dual-SIM Phone Uses the Wrong Line Stop a dual-SIM phone from using the wrong line for calls, texts, or data by checking defaults, per-contact choices, automatic switching, and roaming."
+  },
+  {
+    "title": "Public Wi-Fi Login Page Not Opening | SolQvia.com",
+    "description": "Open a captive portal that does not appear on hotel, airport, or cafe Wi-Fi by checking HTTPS redirection, Private DNS, VPN, randomized MAC, and expired sessions.",
+    "url": "/en/technology/smartphone/smartphone-captive-portal-login-not-opening/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "Public Wi-Fi Login Page Not Opening | SolQvia.com Open a captive portal that does not appear on hotel, airport, or cafe Wi-Fi by checking HTTPS redirection, Private DNS, VPN, randomized MAC, and expired sessions."
+  },
+  {
+    "title": "Bluetooth Device Will Not Connect to a Phone: Fixes | SolQvia.com",
+    "description": "Troubleshoot earbuds, cars, keyboards and other Bluetooth devices that cannot be found or connected.",
+    "url": "/en/technology/smartphone/smartphone-bluetooth-not-connecting/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "Bluetooth Device Will Not Connect to a Phone: Fixes | SolQvia.com Troubleshoot earbuds, cars, keyboards and other Bluetooth devices that cannot be found or connected."
+  },
+  {
+    "title": "Bluetooth Audio Stutters or Has High Latency | SolQvia.com",
+    "description": "Fix Bluetooth audio stutter or latency by checking distance, 2.4 GHz interference, multipoint, codec negotiation, battery, and developer overrides.",
+    "url": "/en/technology/smartphone/smartphone-bluetooth-audio-stutters/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "Bluetooth Audio Stutters or Has High Latency | SolQvia.com Fix Bluetooth audio stutter or latency by checking distance, 2.4 GHz interference, multipoint, codec negotiation, battery, and developer overrides."
+  },
+  {
+    "title": "App Tracking Permission Is Missing or Cannot Be Changed | SolQvia.com",
+    "description": "When app tracking permission is missing or disabled, check age, managed accounts, profiles, and restrictions after recent account or device changes.",
+    "url": "/en/technology/smartphone/smartphone-app-tracking-permission-missing/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "App Tracking Permission Is Missing or Cannot Be Changed | SolQvia.com When app tracking permission is missing or disabled, check age, managed accounts, profiles, and restrictions after recent account or device changes."
+  },
+  {
+    "title": "App Keeps Crashing or Will Not Open on a Phone | SolQvia.com",
+    "description": "Fix an app that will not open or keeps closing by checking updates, permissions, storage and reinstall options.",
+    "url": "/en/technology/smartphone/smartphone-app-crashes/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "App Keeps Crashing or Will Not Open on a Phone | SolQvia.com Fix an app that will not open or keeps closing by checking updates, permissions, storage and reinstall options."
+  },
+  {
+    "title": "Android Auto Keeps Disconnecting or Will Not Start | SolQvia.com",
+    "description": "Fix Android Auto that disconnects or will not launch by checking USB quality, wireless requirements, permissions, battery controls, and head-unit compatibility.",
+    "url": "/en/technology/smartphone/smartphone-android-auto-disconnects/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "Android Auto Keeps Disconnecting or Will Not Start | SolQvia.com Fix Android Auto that disconnects or will not launch by checking USB quality, wireless requirements, permissions, battery controls, and head-unit compatibility."
+  },
+  {
+    "title": "Why 5G Is Not Showing on a 5G Phone | SolQvia.com",
+    "description": "Diagnose a 5G-capable phone that stays on LTE by checking bands, NSA versus SA, power settings, SIM provisioning, and local coverage.",
+    "url": "/en/technology/smartphone/smartphone-5g-not-showing/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "Why 5G Is Not Showing on a 5G Phone | SolQvia.com Diagnose a 5G-capable phone that stays on LTE by checking bands, NSA versus SA, power settings, SIM provisioning, and local coverage."
+  },
+  {
+    "title": "iPhone Unavailable or Security Lockout: What to Do",
+    "description": "Handle iPhone Unavailable or Security Lockout safely by understanding wait times, previous passcode options, device erase, and Apple Account requirements.",
+    "url": "/en/technology/smartphone/iphone-unavailable-security-lockout/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "iPhone Unavailable or Security Lockout: What to Do Handle iPhone Unavailable or Security Lockout safely by understanding wait times, previous passcode options, device erase, and Apple Account requirements."
+  },
+  {
+    "title": "Transfer an Authenticator App Before Resetting a Phone | SolQvia.com",
+    "description": "Avoid losing two-factor codes by checking cloud sync, export options, backup codes, and per-service re-enrollment before resetting a phone.",
+    "url": "/en/technology/smartphone/authenticator-app-transfer-before-reset/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "Transfer an Authenticator App Before Resetting a Phone | SolQvia.com Avoid losing two-factor codes by checking cloud sync, export options, backup codes, and per-service re-enrollment before resetting a phone."
+  },
+  {
+    "title": "Android System WebView Causes Apps to Crash | SolQvia.com",
+    "description": "When multiple apps crash or embedded web pages turn blank, inspect Android System WebView, Chrome updates, beta builds, and cached components.",
+    "url": "/en/technology/smartphone/android-system-webview-app-crashes/",
+    "category": "Smartphones",
+    "date": "2026-07-23",
+    "text": "Android System WebView Causes Apps to Crash | SolQvia.com When multiple apps crash or embedded web pages turn blank, inspect Android System WebView, Chrome updates, beta builds, and cached components."
+  },
+  {
     "title": "Used Smartphone Purchase Safety Diagnosis | Variant, Carrier, Lock, Battery & Warranty",
     "description": "Use 515 smartphone sales records to separate exact variant, carrier fit, SIM/eSIM, ownership lock, network restriction, battery, repair history, OS support and warranty before purchase.",
     "url": "/en/technology/smartphone/used-smartphone-purchase-safety-diagnosis/",
@@ -31,508 +663,25 @@
     "text": "used smartphone purchase safety diagnosis model variant carrier SIM eSIM Activation Lock network restriction battery repair history OS support warranty FeliCa Japan"
   },
   {
-    "title": "Integrated Device Passport | Model, Network, Safety, Peripherals & Evidence",
-    "description": "Search 550 device/sales records across exact model, SIM/eSIM, bands, voice/SMS/RCS, Dual SIM, used-device checks, migration, OS updates, loss recovery, satellite, USB-C and evidence.",
-    "url": "/en/technology/smartphone/device-passport/",
-    "category": "Smartphone device database and evidence",
-    "text": "integrated device passport exact model SIM eSIM bands VoLTE IMS voice SMS RCS Dual SIM used device migration OS update lost stolen satellite USB-C evidence real device"
-  },
-  {
-    "title": "Lost / Stolen Device & Account Recovery Navigator",
-    "description": "Prioritize tracking, lock, carrier suspension, Apple/Google account protection, SMS/2FA recovery, wallet checks, SIM/eSIM replacement and remote erase after phone loss or theft.",
-    "url": "/en/technology/smartphone/lost-stolen-account-recovery-navigator/",
-    "category": "Smartphone loss, theft & security",
-    "text": "lost stolen phone iPhone Android Find My Find Hub carrier suspension SIM eSIM SMS 2FA passkey wallet account recovery remote erase Activation Lock"
-  },
-  {
-    "title": "Advanced Network and Carrier Settings",
-    "description": "Diagnose APN, Private DNS, VoLTE, Wi-Fi calling, dual-SIM, VPN, and other network settings that basic restarts do not resolve.",
-    "url": "/en/technology/smartphone/advanced-network/",
-    "category": "Smartphones",
-    "text": "Advanced Network and Carrier Settings Diagnose APN, Private DNS, VoLTE, Wi-Fi calling, dual-SIM, VPN, and other network settings that basic restarts do not resolve. advanced-network"
-  },
-  {
-    "title": "Ahamo Network PIN Forgotten MNP: Guide",
-    "description": "English guide to Ahamo Network PIN Forgotten MNP: Guide, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
-    "url": "/en/technology/smartphone/ahamo-network-pin-forgotten-mnp-guide/",
-    "category": "Smartphones",
-    "text": "Ahamo Network PIN Forgotten MNP: Guide English guide to Ahamo Network PIN Forgotten MNP: Guide, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry. ahamo-network-pin-forgotten-mnp-guide"
-  },
-  {
-    "title": "AirDrop Is Stuck on Waiting",
-    "description": "Fix AirDrop stuck on waiting or unable to find the recipient by checking receiving mode, contact matching, Wi-Fi and Bluetooth, and Personal Hotspot.",
-    "url": "/en/technology/smartphone/iphone-airdrop-stuck-waiting/",
-    "category": "Smartphones",
-    "text": "AirDrop Is Stuck on Waiting Fix AirDrop stuck on waiting or unable to find the recipient by checking receiving mode, contact matching, Wi-Fi and Bluetooth, and Personal Hotspot. iphone-airdrop-stuck-waiting"
-  },
-  {
-    "title": "Android App Links Open in a Browser Instead of the App",
-    "description": "When verified URLs open in a browser instead of the app, inspect supported-link settings, domain verification, defaults, and competing apps.",
-    "url": "/en/technology/smartphone/android-app-links-not-opening/",
-    "category": "Smartphones",
-    "text": "Android App Links Open in a Browser Instead of the App When verified URLs open in a browser instead of the app, inspect supported-link settings, domain verification, defaults, and competing apps. android-app-links-not-opening"
-  },
-  {
-    "title": "Android Battery Optimization Stops an App",
-    "description": "When tracking, VPN, health, or sync apps stop, understand battery-optimization exclusions and what to verify before allowing unrestricted background use.",
-    "url": "/en/technology/smartphone/android-battery-optimization-app-stops/",
-    "category": "Smartphones",
-    "text": "Android Battery Optimization Stops an App When tracking, VPN, health, or sync apps stop, understand battery-optimization exclusions and what to verify before allowing unrestricted background use. android-battery-optimization-app-stops"
-  },
-  {
-    "title": "Android Notification History: Enable, Read, and Troubleshoot It",
-    "description": "Use Android Notification History and understand activation requirements, retention limits, excluded notifications, and manufacturer differences.",
-    "url": "/en/technology/smartphone/android-notification-history-guide/",
-    "category": "Smartphones",
-    "text": "Android Notification History: Enable, Read, and Troubleshoot It Use Android Notification History and understand activation requirements, retention limits, excluded notifications, and manufacturer differences. android-notification-history-guide"
-  },
-  {
-    "title": "Android Private DNS Not Working: Advanced Troubleshooting",
-    "description": "Diagnose Private DNS hostnames that will not save, break connectivity, or fail only on certain Wi-Fi networks by separating provider, VPN, certificate, and network restrictions.",
-    "url": "/en/technology/smartphone/android-private-dns-not-working/",
-    "category": "Smartphones",
-    "text": "Android Private DNS Not Working: Advanced Troubleshooting Diagnose Private DNS hostnames that will not save, break connectivity, or fail only on certain Wi-Fi networks by separating provider, VPN, certificate, and network restrictions. android-private-dns-not-working"
-  },
-  {
-    "title": "Android USB OTG Storage Is Not Mounting",
-    "description": "When Android does not mount a USB drive or card reader, check OTG support, power, file system, USB mode, and encryption.",
-    "url": "/en/technology/smartphone/android-usb-otg-storage-not-mounted/",
-    "category": "Smartphones",
-    "text": "Android USB OTG Storage Is Not Mounting When Android does not mount a USB drive or card reader, check OTG support, power, file system, USB mode, and encryption. android-usb-otg-storage-not-mounted"
-  },
-  {
-    "title": "Android Work Profile Is Paused or Not Syncing",
-    "description": "Fix grayed-out work apps or stopped notifications by checking the Work Profile toggle, schedules, management policy, and device-policy controller connectivity.",
-    "url": "/en/technology/smartphone/android-work-profile-paused/",
-    "category": "Smartphones",
-    "text": "Android Work Profile Is Paused or Not Syncing Fix grayed-out work apps or stopped notifications by checking the Work Profile toggle, schedules, management policy, and device-policy controller connectivity. android-work-profile-paused"
-  },
-  {
-    "title": "Au Uq: How to Get an MNP Reservation Number",
-    "description": "English guide to Au Uq: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
-    "url": "/en/technology/smartphone/au-uq-mnp-reservation-number-guide/",
-    "category": "Smartphones",
-    "text": "Au Uq: How to Get an MNP Reservation Number English guide to Au Uq: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry. au-uq-mnp-reservation-number-guide"
-  },
-  {
-    "title": "Camera or Microphone Privacy Indicator Stays On",
-    "description": "When a camera or microphone privacy indicator remains visible, identify the active app, background permission, call service, accessibility feature, or system process.",
-    "url": "/en/technology/smartphone/smartphone-camera-mic-indicator-stays-on/",
-    "category": "Smartphones",
-    "text": "Camera or Microphone Privacy Indicator Stays On When a camera or microphone privacy indicator remains visible, identify the active app, background permission, call service, accessibility feature, or system process. smartphone-camera-mic-indicator-stays-on"
-  },
-  {
-    "title": "Cloud Storage, VPN and Privacy Guides",
-    "description": "English SolQvia technical guide to Cloud Storage, VPN and Privacy Guides, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
-    "url": "/en/technology/smartphone/cloud-privacy/",
-    "category": "Smartphones",
-    "text": "Cloud Storage, VPN and Privacy Guides English SolQvia technical guide to Cloud Storage, VPN and Privacy Guides, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. cloud-privacy"
-  },
-  {
-    "title": "Communication Compatibility Lab | Voice, SMS, RCS and VoLTE/IMS Testing",
-    "description": "Test voice, VoLTE/IMS, SMS, OTP and RCS behavior by device, exact variant, OS, carrier and SIM mode.",
-    "url": "/en/technology/smartphone/communication-compatibility-lab/",
-    "category": "Device compatibility",
-    "text": "RCS SMS VoLTE IMS OTP calls voice Google Messages Apple Messages carrier compatibility communication lab connected fallback"
-  },
-  {
-    "title": "Complete Smartphone Backup Checklist Before a Factory Reset",
-    "description": "Check photos, contacts, messages, authenticator apps, eSIM and app-specific data before erasing a phone.",
-    "url": "/en/technology/smartphone/smartphone-backup-before-reset/",
-    "category": "Smartphones",
-    "text": "Complete Smartphone Backup Checklist Before a Factory Reset Check photos, contacts, messages, authenticator apps, eSIM and app-specific data before erasing a phone. smartphone-backup-before-reset"
-  },
-  {
-    "title": "Computer Does Not Recognize a Phone over USB: Data Connection Fixes",
-    "description": "When a phone charges but files do not appear, check the data cable, unlocked state, USB mode, trust prompt, computer software, and port condition.",
-    "url": "/en/technology/smartphone/smartphone-usb-computer-not-recognized/",
-    "category": "Smartphones",
-    "text": "Computer Does Not Recognize a Phone over USB: Data Connection Fixes When a phone charges but files do not appear, check the data cable, unlocked state, USB mode, trust prompt, computer software, and port condition. smartphone-usb-computer-not-recognized"
-  },
-  {
-    "title": "Device Compatibility",
-    "description": "English SolQvia technical guide to Device Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
-    "url": "/en/technology/smartphone/device-compatibility/",
-    "category": "Smartphones",
-    "text": "Device Compatibility English SolQvia technical guide to Device Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. device-compatibility"
-  },
-  {
-    "title": "Device Verification & Evidence Ledger | Official, Real-Device and Unverified Records",
-    "description": "Search 550 device and sales records while keeping official-source review, SolQvia first-party observations, technical assessment and unverified states separate.",
-    "url": "/en/technology/smartphone/real-device-verification-ledger/",
-    "category": "Device compatibility",
-    "text": "device verification evidence ledger real device official sources unverified KY-41C Ymobile SoftBank eSIM profile recognition APN data VoLTE IMS SMS Japan carriers 550 records"
-  },
-  {
-    "title": "Docomo Dtab d51f Other Carrier SIM Band",
-    "description": "English SolQvia technical guide to Docomo Dtab d51f Other Carrier SIM Band, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
-    "url": "/en/technology/smartphone/docomo-dtab-d51f-other-sim-band/",
-    "category": "Smartphones",
-    "text": "Docomo Dtab d51f Other Carrier SIM Band English SolQvia technical guide to Docomo Dtab d51f Other Carrier SIM Band, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. docomo-dtab-d51f-other-sim-band"
-  },
-  {
-    "title": "Docomo SIMfree Overseas Phone APN Spmode Guide",
-    "description": "English SolQvia technical guide to Docomo SIMfree Overseas Phone APN Spmode Guide, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
-    "url": "/en/technology/smartphone/docomo-simfree-overseas-phone-apn-spmode-guide/",
-    "category": "Smartphones",
-    "text": "Docomo SIMfree Overseas Phone APN Spmode Guide English SolQvia technical guide to Docomo SIMfree Overseas Phone APN Spmode Guide, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. docomo-simfree-overseas-phone-apn-spmode-guide"
-  },
-  {
-    "title": "Dual SIM / Dual eSIM Combination Diagnosis | Calls, RCS, 5G & Data Switching",
-    "description": "Diagnose a Dual SIM / Dual eSIM setup by exact device, two carriers, SIM types, default voice/SMS/data routing, RCS, call-time behavior and 5G.",
-    "url": "/en/technology/smartphone/dual-sim-esim-combination-diagnosis/",
-    "category": "Smartphones",
-    "text": "Dual SIM dual eSIM DSDS SIM1 SIM2 calls SMS RCS VoLTE IMS 5G automatic data switching Wi-Fi Calling combination diagnosis"
-  },
-  {
-    "title": "Dual SIM, Calls, SMS and RCS",
-    "description": "English SolQvia technical guide to Dual SIM, Calls, SMS and RCS, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
-    "url": "/en/technology/smartphone/dual-sim-messaging/",
-    "category": "Smartphones",
-    "text": "Dual SIM, Calls, SMS and RCS English SolQvia technical guide to Dual SIM, Calls, SMS and RCS, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. dual-sim-messaging"
-  },
-  {
-    "title": "Dual-SIM Phone Uses the Wrong Line",
-    "description": "Stop a dual-SIM phone from using the wrong line for calls, texts, or data by checking defaults, per-contact choices, automatic switching, and roaming.",
-    "url": "/en/technology/smartphone/smartphone-dual-sim-wrong-line/",
-    "category": "Smartphones",
-    "text": "Dual-SIM Phone Uses the Wrong Line Stop a dual-SIM phone from using the wrong line for calls, texts, or data by checking defaults, per-contact choices, automatic switching, and roaming. smartphone-dual-sim-wrong-line"
-  },
-  {
-    "title": "Find My Device Shows the Phone Offline",
-    "description": "Understand an offline lost phone by checking power, connectivity, location, offline-finding networks, last known location, and queued remote actions.",
-    "url": "/en/technology/smartphone/smartphone-find-device-offline/",
-    "category": "Smartphones",
-    "text": "Find My Device Shows the Phone Offline Understand an offline lost phone by checking power, connectivity, location, offline-finding networks, last known location, and queued remote actions. smartphone-find-device-offline"
-  },
-  {
-    "title": "Galaxy S22 SCG13 on Japan's 4 Carriers: Bands, eSIM, VoLTE and APN",
-    "description": "Check Galaxy S22 by exact Japan sales variant for NTT Docomo, au, SoftBank and Rakuten Mobile, including LTE/5G bands, SIM/eSIM, VoLTE/IMS and APN boundaries.",
-    "url": "/en/technology/smartphone/scg13-au-2022-carrier-compatibility/",
-    "category": "Smartphones",
-    "text": "Galaxy S22 SCG13 on Japan's 4 Carriers: Bands, eSIM, VoLTE and APN Check Galaxy S22 by exact Japan sales variant for NTT Docomo, au, SoftBank and Rakuten Mobile, including LTE/5G bands, SIM/eSIM, VoLTE/IMS and APN boundaries. scg13-au-2022-carrier-compatibility"
-  },
-  {
-    "title": "Galaxy S22 Ultra SCG14 on Japan's 4 Carriers: Bands, eSIM, VoLTE and APN",
-    "description": "Check Galaxy S22 Ultra by exact Japan sales variant for NTT Docomo, au, SoftBank and Rakuten Mobile, including LTE/5G bands, SIM/eSIM, VoLTE/IMS and APN boundaries.",
-    "url": "/en/technology/smartphone/scg14-au-2022-carrier-compatibility/",
-    "category": "Smartphones",
-    "text": "Galaxy S22 Ultra SCG14 on Japan's 4 Carriers: Bands, eSIM, VoLTE and APN Check Galaxy S22 Ultra by exact Japan sales variant for NTT Docomo, au, SoftBank and Rakuten Mobile, including LTE/5G bands, SIM/eSIM, VoLTE/IMS and APN boundaries. scg14-au-2022-carrier-compatibility"
-  },
-  {
-    "title": "Galaxy Secure Folder Notifications Are Missing or Hidden",
-    "description": "Fix missing or hidden Secure Folder notifications by checking folder lock state, content visibility, power controls, and differences from a work profile.",
-    "url": "/en/technology/smartphone/galaxy-secure-folder-notifications/",
-    "category": "Smartphones",
-    "text": "Galaxy Secure Folder Notifications Are Missing or Hidden Fix missing or hidden Secure Folder notifications by checking folder lock state, content visibility, power controls, and differences from a work profile. galaxy-secure-folder-notifications"
-  },
-  {
-    "title": "Google Play Protect Blocks or Disables an App",
-    "description": "When Play Protect blocks or disables an app, verify its source, signature, update state, and management policy without casually disabling protection.",
-    "url": "/en/technology/smartphone/android-play-protect-blocks-app/",
-    "category": "Smartphones",
-    "text": "Google Play Protect Blocks or Disables an App When Play Protect blocks or disables an app, verify its source, signature, update state, and management policy without casually disabling protection. android-play-protect-blocks-app"
-  },
-  {
-    "title": "How to Check and Remove a Suspicious App Safely",
-    "description": "Handle an unknown app, sudden ads, abnormal battery use, or excessive permissions by preserving evidence, protecting accounts, revoking control, and uninstalling safely.",
-    "url": "/en/technology/smartphone/smartphone-remove-suspicious-app/",
-    "category": "Smartphones",
-    "text": "How to Check and Remove a Suspicious App Safely Handle an unknown app, sudden ads, abnormal battery use, or excessive permissions by preserving evidence, protecting accounts, revoking control, and uninstalling safely. smartphone-remove-suspicious-app"
-  },
-  {
-    "title": "How to Check Android Device Administrators and Management Profiles",
-    "description": "When settings or app removal are blocked, distinguish device administrators, work profiles, VPN or certificates, and parental controls.",
-    "url": "/en/technology/smartphone/android-device-admin-profile-check/",
-    "category": "Smartphones",
-    "text": "How to Check Android Device Administrators and Management Profiles When settings or app removal are blocked, distinguish device administrators, work profiles, VPN or certificates, and parental controls. android-device-admin-profile-check"
-  },
-  {
-    "title": "How to Copy and Paste Text on a Smartphone",
-    "description": "Copy, cut and paste text on iPhone and Android, including how to adjust a selection and what to do when text cannot be selected.",
-    "url": "/en/technology/smartphone/smartphone-copy-paste-text/",
-    "category": "Smartphones",
-    "text": "How to Copy and Paste Text on a Smartphone Copy, cut and paste text on iPhone and Android, including how to adjust a selection and what to do when text cannot be selected. smartphone-copy-paste-text"
-  },
-  {
-    "title": "How to Factory Reset an Android Phone Safely",
-    "description": "Prepare account access and backups before erasing an Android phone through Settings.",
-    "url": "/en/technology/smartphone/android-factory-reset/",
-    "category": "Smartphones",
-    "text": "How to Factory Reset an Android Phone Safely Prepare account access and backups before erasing an Android phone through Settings. android-factory-reset"
-  },
-  {
-    "title": "How to Factory Reset an iPhone Safely",
-    "description": "Erase all content and settings on an iPhone safely after checking backup, eSIM and account access.",
-    "url": "/en/technology/smartphone/iphone-factory-reset/",
-    "category": "Smartphones",
-    "text": "How to Factory Reset an iPhone Safely Erase all content and settings on an iPhone safely after checking backup, eSIM and account access. iphone-factory-reset"
-  },
-  {
-    "title": "How to Find Text on a Web Page in Chrome and Safari",
-    "description": "Use Find in Page in Chrome and Safari to locate a word or phrase within a long page.",
-    "url": "/en/technology/smartphone/find-text-on-web-page-smartphone/",
-    "category": "Smartphones",
-    "text": "How to Find Text on a Web Page in Chrome and Safari Use Find in Page in Chrome and Safari to locate a word or phrase within a long page. find-text-on-web-page-smartphone"
-  },
-  {
-    "title": "How to Force Restart an Android Phone",
-    "description": "Force restart a frozen Android phone and account for manufacturer-specific button combinations safely.",
-    "url": "/en/technology/smartphone/android-force-restart/",
-    "category": "Smartphones",
-    "text": "How to Force Restart an Android Phone Force restart a frozen Android phone and account for manufacturer-specific button combinations safely. android-force-restart"
-  },
-  {
-    "title": "How to Force Restart an iPhone by Model",
-    "description": "Force restart an unresponsive iPhone using the correct button sequence for Face ID, iPhone 7 and older models.",
-    "url": "/en/technology/smartphone/iphone-force-restart/",
-    "category": "Smartphones",
-    "text": "How to Force Restart an iPhone by Model Force restart an unresponsive iPhone using the correct button sequence for Face ID, iPhone 7 and older models. iphone-force-restart"
-  },
-  {
-    "title": "How to Reset Network Settings on a Smartphone",
-    "description": "Understand what a network-settings reset removes and how to prepare before using it for Wi-Fi, Bluetooth or mobile-data problems.",
-    "url": "/en/technology/smartphone/smartphone-network-settings-reset/",
-    "category": "Smartphones",
-    "text": "How to Reset Network Settings on a Smartphone Understand what a network-settings reset removes and how to prepare before using it for Wi-Fi, Bluetooth or mobile-data problems. smartphone-network-settings-reset"
-  },
-  {
-    "title": "How to Scan a QR Code Safely on a Smartphone",
-    "description": "Scan QR codes with the camera or scanner, inspect the destination and handle codes that will not open.",
-    "url": "/en/technology/smartphone/smartphone-scan-qr-code/",
-    "category": "Smartphones",
-    "text": "How to Scan a QR Code Safely on a Smartphone Scan QR codes with the camera or scanner, inspect the destination and handle codes that will not open. smartphone-scan-qr-code"
-  },
-  {
-    "title": "How to Search with Google Lens on a Smartphone",
-    "description": "Use Google Lens with a camera or saved photo to identify objects, places and text while reducing false matches.",
-    "url": "/en/technology/smartphone/google-lens-image-search/",
-    "category": "Smartphones",
-    "text": "How to Search with Google Lens on a Smartphone Use Google Lens with a camera or saved photo to identify objects, places and text while reducing false matches. google-lens-image-search"
-  },
-  {
-    "title": "How to Use iPhone Recovery Mode: Update vs Restore Explained",
-    "description": "Prepare a computer, enter Recovery mode, and understand the data-preserving Update option versus the data-erasing Restore option.",
-    "url": "/en/technology/smartphone/iphone-recovery-mode-guide/",
-    "category": "Smartphones",
-    "text": "How to Use iPhone Recovery Mode: Update vs Restore Explained Prepare a computer, enter Recovery mode, and understand the data-preserving Update option versus the data-erasing Restore option. iphone-recovery-mode-guide"
-  },
-  {
-    "title": "How to Use Pixel Device Diagnostics and Battery Checks",
-    "description": "Use Pixel settings and official support diagnostics to check battery, connectivity, and sensors and collect useful information before repair.",
-    "url": "/en/technology/smartphone/pixel-device-health-diagnostics/",
-    "category": "Smartphones",
-    "text": "How to Use Pixel Device Diagnostics and Battery Checks Use Pixel settings and official support diagnostics to check battery, connectivity, and sensors and collect useful information before repair. pixel-device-health-diagnostics"
-  },
-  {
-    "title": "iCloud Private Relay Causes Website or Wi-Fi Problems",
-    "description": "When Private Relay breaks a site, changes location, or triggers a network warning, check IP tracking controls, network compatibility, and VPN overlap.",
-    "url": "/en/technology/smartphone/iphone-private-relay-network-problem/",
-    "category": "Smartphones",
-    "text": "iCloud Private Relay Causes Website or Wi-Fi Problems When Private Relay breaks a site, changes location, or triggers a network warning, check IP tracking controls, network compatibility, and VPN overlap. iphone-private-relay-network-problem"
-  },
-  {
-    "title": "iPhone Background App Refresh Is Not Working",
-    "description": "Fix Background App Refresh that is disabled or ineffective by checking Low Power Mode, cellular access, Screen Time, and force-closing habits.",
-    "url": "/en/technology/smartphone/iphone-background-app-refresh-not-working/",
-    "category": "Smartphones",
-    "text": "iPhone Background App Refresh Is Not Working Fix Background App Refresh that is disabled or ineffective by checking Low Power Mode, cellular access, Screen Time, and force-closing habits. iphone-background-app-refresh-not-working"
-  },
-  {
-    "title": "iPhone Focus Mode Is Blocking Important Notifications",
-    "description": "Fix important alerts blocked by iPhone Focus by checking shared Focus state, schedules, filters, allowed people and apps, and emergency exceptions.",
-    "url": "/en/technology/smartphone/iphone-focus-blocking-notifications/",
-    "category": "Smartphones",
-    "text": "iPhone Focus Mode Is Blocking Important Notifications Fix important alerts blocked by iPhone Focus by checking shared Focus state, schedules, filters, allowed people and apps, and emergency exceptions. iphone-focus-blocking-notifications"
-  },
-  {
-    "title": "iPhone iCloud Backup Is Stuck or Calculating Time",
-    "description": "Fix an iCloud backup stuck on calculating or not progressing by checking storage, Wi-Fi quality, power mode, included apps, and encryption.",
-    "url": "/en/technology/smartphone/iphone-icloud-backup-stuck/",
-    "category": "Smartphones",
-    "text": "iPhone iCloud Backup Is Stuck or Calculating Time Fix an iCloud backup stuck on calculating or not progressing by checking storage, Wi-Fi quality, power mode, included apps, and encryption. iphone-icloud-backup-stuck"
-  },
-  {
-    "title": "iPhone Says This Accessory May Not Be Supported",
-    "description": "Resolve iPhone accessory-not-supported warnings by checking certification, debris, power requirements, liquid detection, and iOS compatibility.",
-    "url": "/en/technology/smartphone/iphone-accessory-not-supported/",
-    "category": "Smartphones",
-    "text": "iPhone Says This Accessory May Not Be Supported Resolve iPhone accessory-not-supported warnings by checking certification, debris, power requirements, liquid detection, and iOS compatibility. iphone-accessory-not-supported"
-  },
-  {
-    "title": "iPhone Unavailable or Security Lockout: What to Do",
-    "description": "Handle iPhone Unavailable or Security Lockout safely by understanding wait times, previous passcode options, device erase, and Apple Account requirements.",
-    "url": "/en/technology/smartphone/iphone-unavailable-security-lockout/",
-    "category": "Smartphones",
-    "text": "iPhone Unavailable or Security Lockout: What to Do Handle iPhone Unavailable or Security Lockout safely by understanding wait times, previous passcode options, device erase, and Apple Account requirements. iphone-unavailable-security-lockout"
-  },
-  {
-    "title": "Japan / Overseas / Carrier Variant Database",
-    "description": "Search and compare Japanese carrier, Japan SIM-free and iPhone regional model variants. Check model numbers, SIM/eSIM layout, bands, FeliCa and evidence before importing or switching carriers.",
-    "url": "/en/technology/smartphone/device-model-region-variant-database/",
-    "category": "Smartphones",
-    "text": "Japan / Overseas / Carrier Variant Database Search and compare Japanese carrier, Japan SIM-free and iPhone regional model variants. Check model numbers, SIM/eSIM layout, bands, FeliCa and evidence before importing or switching carriers. device-model-region-variant-database"
-  },
-  {
-    "title": "Japan Carrier and MVNO Procedures",
-    "description": "English SolQvia technical guide to Japan Carrier and MVNO Procedures, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
-    "url": "/en/technology/smartphone/carrier-mvno/",
-    "category": "Smartphones",
-    "text": "Japan Carrier and MVNO Procedures English SolQvia technical guide to Japan Carrier and MVNO Procedures, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. carrier-mvno"
-  },
-  {
-    "title": "Japan Carrier APN and SIM Troubleshooting",
-    "description": "English SolQvia technical guide to Japan Carrier APN and SIM Troubleshooting, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
-    "url": "/en/technology/smartphone/carrier-apn-sim-troubleshooting/",
-    "category": "Smartphones",
-    "text": "Japan Carrier APN and SIM Troubleshooting English SolQvia technical guide to Japan Carrier APN and SIM Troubleshooting, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. carrier-apn-sim-troubleshooting"
-  },
-  {
-    "title": "Japan Carrier Smartphone 7-Year Audit",
-    "description": "English SolQvia technical guide to Japan Carrier Smartphone 7-Year Audit, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
-    "url": "/en/technology/smartphone/domestic-carrier-smartphone-7year-audit/",
-    "category": "Smartphones",
-    "text": "Japan Carrier Smartphone 7-Year Audit English SolQvia technical guide to Japan Carrier Smartphone 7-Year Audit, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. domestic-carrier-smartphone-7year-audit"
-  },
-  {
-    "title": "Japan Carrier Smartphone 7-Year Device Master",
-    "description": "English SolQvia technical guide to Japan Carrier Smartphone 7-Year Device Master, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
-    "url": "/en/technology/smartphone/domestic-carrier-smartphone-7year-master/",
-    "category": "Smartphones",
-    "text": "Japan Carrier Smartphone 7-Year Device Master English SolQvia technical guide to Japan Carrier Smartphone 7-Year Device Master, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. domestic-carrier-smartphone-7year-master"
-  },
-  {
-    "title": "Links or Files Open in the Wrong Default App",
-    "description": "Fix web links, PDFs, maps, or phone numbers opening in the wrong app by checking defaults, supported links, share actions, and file associations.",
-    "url": "/en/technology/smartphone/smartphone-default-app-opens-wrong-app/",
-    "category": "Smartphones",
-    "text": "Links or Files Open in the Wrong Default App Fix web links, PDFs, maps, or phone numbers opening in the wrong app by checking defaults, supported links, share actions, and file associations. smartphone-default-app-opens-wrong-app"
-  },
-  {
-    "title": "Lost Phone: Find, Lock and Erase It Remotely",
-    "description": "Locate, lock and if necessary erase a lost iPhone or Android phone while protecting accounts and carrier service.",
-    "url": "/en/technology/smartphone/lost-smartphone-find-lock-erase/",
-    "category": "Smartphones",
-    "text": "Lost Phone: Find, Lock and Erase It Remotely Locate, lock and if necessary erase a lost iPhone or Android phone while protecting accounts and carrier service. lost-smartphone-find-lock-erase"
-  },
-  {
-    "title": "Media, USB, Audio, and In-Car Connections",
-    "description": "Troubleshoot HEIF, HDR, video size, USB-C display output, external microphones, OTG, CarPlay, Android Auto, and Bluetooth audio.",
-    "url": "/en/technology/smartphone/media-accessories/",
-    "category": "Smartphones",
-    "text": "Media, USB, Audio, and In-Car Connections Troubleshoot HEIF, HDR, video size, USB-C display output, external microphones, OTG, CarPlay, Android Auto, and Bluetooth audio. media-accessories"
-  },
-  {
-    "title": "Metakozo Mobile SIM: How to Get an MNP Reservation Number",
-    "description": "English guide to Metakozo Mobile SIM: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
-    "url": "/en/technology/smartphone/metakozo-mobile-sim-mnp-reservation-number-guide/",
-    "category": "Smartphones",
-    "text": "Metakozo Mobile SIM: How to Get an MNP Reservation Number English guide to Metakozo Mobile SIM: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry. metakozo-mobile-sim-mnp-reservation-number-guide"
-  },
-  {
-    "title": "Mobile Data Drops During Calls: VoLTE Checks",
-    "description": "When mobile data slows or stops during calls, check VoLTE, IMS registration, the selected voice line, and carrier support.",
-    "url": "/en/technology/smartphone/smartphone-volte-calls-drop-data/",
-    "category": "Smartphones",
-    "text": "Mobile Data Drops During Calls: VoLTE Checks When mobile data slows or stops during calls, check VoLTE, IMS registration, the selected voice line, and carrier support. smartphone-volte-calls-drop-data"
-  },
-  {
-    "title": "Mobile Data Not Working: A Step-by-Step Phone Checklist",
-    "description": "Troubleshoot no service, unusable data despite signal bars, and SIM or eSIM issues.",
-    "url": "/en/technology/smartphone/smartphone-mobile-data-not-working/",
-    "category": "Smartphones",
-    "text": "Mobile Data Not Working: A Step-by-Step Phone Checklist Troubleshoot no service, unusable data despite signal bars, and SIM or eSIM issues. smartphone-mobile-data-not-working"
-  },
-  {
-    "title": "MVNO MNP: Reservation Number Directory",
-    "description": "English guide to MVNO MNP: Reservation Number Directory, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
-    "url": "/en/technology/smartphone/mvno-mnp-reservation-number-directory/",
-    "category": "Smartphones",
-    "text": "MVNO MNP: Reservation Number Directory English guide to MVNO MNP: Reservation Number Directory, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry. mvno-mnp-reservation-number-directory"
-  },
-  {
-    "title": "Network, SIM and eSIM Troubleshooting",
-    "description": "English SolQvia technical guide to Network, SIM and eSIM Troubleshooting, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
-    "url": "/en/technology/smartphone/network-sim-troubleshooting/",
-    "category": "Smartphones",
-    "text": "Network, SIM and eSIM Troubleshooting English SolQvia technical guide to Network, SIM and eSIM Troubleshooting, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. network-sim-troubleshooting"
-  },
-  {
-    "title": "No Sound from a Phone: Separate Ringtone, Media, Call, and Speaker Issues",
-    "description": "Identify which audio path is silent, then check volume controls, mute modes, Bluetooth output, apps, and speaker condition.",
-    "url": "/en/technology/smartphone/smartphone-no-sound/",
-    "category": "Smartphones",
-    "text": "No Sound from a Phone: Separate Ringtone, Media, Call, and Speaker Issues Identify which audio path is silent, then check volume controls, mute modes, Bluetooth output, apps, and speaker condition. smartphone-no-sound"
-  },
-  {
-    "title": "Overseas Smartphone Bands Match VoLTE IMS Calls Fail",
-    "description": "English SolQvia technical guide to Overseas Smartphone Bands Match VoLTE IMS Calls Fail, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
-    "url": "/en/technology/smartphone/overseas-smartphone-bands-match-volte-ims-calls-fail/",
-    "category": "Smartphones",
-    "text": "Overseas Smartphone Bands Match VoLTE IMS Calls Fail English SolQvia technical guide to Overseas Smartphone Bands Match VoLTE IMS Calls Fail, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. overseas-smartphone-bands-match-volte-ims-calls-fail"
-  },
-  {
-    "title": "Overseas Smartphone Giteki Japan Use Check",
-    "description": "English SolQvia technical guide to Overseas Smartphone Giteki Japan Use Check, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
-    "url": "/en/technology/smartphone/overseas-smartphone-giteki-japan-use-check/",
-    "category": "Smartphones",
-    "text": "Overseas Smartphone Giteki Japan Use Check English SolQvia technical guide to Overseas Smartphone Giteki Japan Use Check, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. overseas-smartphone-giteki-japan-use-check"
-  },
-  {
-    "title": "Phone Alarm Did Not Ring or Was Too Quiet: What to Check",
-    "description": "Verify time, repeat days, alarm sound, volume, Bluetooth output, clock-app restrictions, and a real test before relying on an alarm.",
-    "url": "/en/technology/smartphone/smartphone-alarm-not-ringing/",
-    "category": "Smartphones",
-    "text": "Phone Alarm Did Not Ring or Was Too Quiet: What to Check Verify time, repeat days, alarm sound, volume, Bluetooth output, clock-app restrictions, and a real test before relying on an alarm. smartphone-alarm-not-ringing"
-  },
-  {
-    "title": "Phone APN Settings Not Saving or Working",
-    "description": "Fix APN profiles that do not save or provide data even when 4G or 5G appears by checking APN type, authentication, MCC/MNC, and carrier provisioning.",
-    "url": "/en/technology/smartphone/smartphone-apn-settings-not-working/",
-    "category": "Smartphones",
-    "text": "Phone APN Settings Not Saving or Working Fix APN profiles that do not save or provide data even when 4G or 5G appears by checking APN type, authentication, MCC/MNC, and carrier provisioning. smartphone-apn-settings-not-working"
-  },
-  {
-    "title": "Phone Browser Pop-Ups, Fake Warnings, or Redirects Will Not Stop",
-    "description": "Remove persistent scam warnings and redirects by closing tabs safely, reviewing site notifications and data, checking profiles or apps, and protecting exposed accounts.",
-    "url": "/en/technology/smartphone/smartphone-browser-popups-redirects/",
-    "category": "Smartphones",
-    "text": "Phone Browser Pop-Ups, Fake Warnings, or Redirects Will Not Stop Remove persistent scam warnings and redirects by closing tabs safely, reviewing site notifications and data, checking profiles or apps, and protecting exposed accounts. smartphone-browser-popups-redirects"
-  },
-  {
-    "title": "Phone Cannot Make Calls: Network, SIM, and Account Checks",
-    "description": "Troubleshoot outgoing calls that fail, disconnect immediately, or show emergency calls only by checking coverage, SIM selection, restrictions, and carrier status.",
-    "url": "/en/technology/smartphone/smartphone-cannot-make-calls/",
-    "category": "Smartphones",
-    "text": "Phone Cannot Make Calls: Network, SIM, and Account Checks Troubleshoot outgoing calls that fail, disconnect immediately, or show emergency calls only by checking coverage, SIM selection, restrictions, and carrier status. smartphone-cannot-make-calls"
-  },
-  {
-    "title": "Phone Clipboard Copy and Paste Not Working",
-    "description": "Fix copied text that disappears or cannot be pasted by checking clipboard history, sensitive-data protection, keyboard behavior, and work-profile boundaries.",
-    "url": "/en/technology/smartphone/smartphone-clipboard-not-working/",
-    "category": "Smartphones",
-    "text": "Phone Clipboard Copy and Paste Not Working Fix copied text that disappears or cannot be pasted by checking clipboard history, sensitive-data protection, keyboard behavior, and work-profile boundaries. smartphone-clipboard-not-working"
-  },
-  {
-    "title": "Phone GPS or Location Is Wrong or Unavailable: Troubleshooting Guide",
-    "description": "Fix inaccurate or unavailable location by checking app permissions, precision options, network assistance, environment, compass behavior, and sensors.",
-    "url": "/en/technology/smartphone/smartphone-gps-location-not-working/",
+    "title": "Used Device Condition, Repair & Battery Diagnosis Before Purchase",
+    "description": "Check a used phone by exact variant, ownership lock, carrier network restriction, repair history, battery, biometrics and SIM/eSIM/communications without entering IMEI into SolQvia.",
+    "url": "/en/technology/smartphone/used-device-condition-diagnosis/",
     "category": "Smartphones",
-    "text": "Phone GPS or Location Is Wrong or Unavailable: Troubleshooting Guide Fix inaccurate or unavailable location by checking app permissions, precision options, network assistance, environment, compass behavior, and sensors. smartphone-gps-location-not-working"
+    "text": "used phone refurbished iPhone Android repair history battery health cycle count Activation Lock device protection carrier network restriction SIM eSIM Japan purchase checklist"
   },
   {
-    "title": "Phone Hotspot or Tethering Not Working: Connection Checklist",
-    "description": "Fix a hotspot that is invisible, rejects the password, or connects without internet by checking mobile data, plan support, frequency, power limits, and carrier settings.",
-    "url": "/en/technology/smartphone/smartphone-hotspot-not-working/",
+    "title": "SoftBank: How to Get an MNP Reservation Number",
+    "description": "English guide to SoftBank: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/softbank-mnp-reservation-number-guide/",
     "category": "Smartphones",
-    "text": "Phone Hotspot or Tethering Not Working: Connection Checklist Fix a hotspot that is invisible, rejects the password, or connects without internet by checking mobile data, plan support, frequency, power limits, and carrier settings. smartphone-hotspot-not-working"
+    "text": "SoftBank: How to Get an MNP Reservation Number English guide to SoftBank: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry. softbank-mnp-reservation-number-guide"
   },
   {
-    "title": "Phone Not Charging: Cable, Port and Device Checks",
-    "description": "Troubleshoot no charging, slow charging and interrupted charging by checking power, cables, ports and temperature.",
-    "url": "/en/technology/smartphone/smartphone-not-charging/",
+    "title": "Wireless Charging Not Working or Stops: Alignment and Safety Checks",
+    "description": "Check device support, coil alignment, cases, foreign objects, power supply, temperature, and charger condition when wireless charging fails.",
+    "url": "/en/technology/smartphone/smartphone-wireless-charging-not-working/",
     "category": "Smartphones",
-    "text": "Phone Not Charging: Cable, Port and Device Checks Troubleshoot no charging, slow charging and interrupted charging by checking power, cables, ports and temperature. smartphone-not-charging"
+    "text": "Wireless Charging Not Working or Stops: Alignment and Safety Checks Check device support, coil alignment, cases, foreign objects, power supply, temperature, and charger condition when wireless charging fails. smartphone-wireless-charging-not-working"
   },
   {
     "title": "Phone Not Connecting to Wi-Fi: iPhone and Android Fixes",
@@ -542,18 +691,67 @@
     "text": "Phone Not Connecting to Wi-Fi: iPhone and Android Fixes Troubleshoot missing networks, password errors and “connected but no internet” problems on iPhone and Android. smartphone-wifi-not-connecting"
   },
   {
-    "title": "Phone Notifications Not Arriving or Delayed: Complete Checklist",
-    "description": "Separate one-app notification issues from system-wide delays by checking permissions, Focus modes, battery restrictions, connectivity, and account settings.",
-    "url": "/en/technology/smartphone/smartphone-notifications-not-working/",
+    "title": "Wi-Fi Calling Not Activating or Completing Calls",
+    "description": "Troubleshoot missing Wi-Fi Calling controls, activation failures, and calls that will not complete by checking plan eligibility, emergency address, router behavior, and VPNs.",
+    "url": "/en/technology/smartphone/smartphone-wifi-calling-not-working/",
     "category": "Smartphones",
-    "text": "Phone Notifications Not Arriving or Delayed: Complete Checklist Separate one-app notification issues from system-wide delays by checking permissions, Focus modes, battery restrictions, connectivity, and account settings. smartphone-notifications-not-working"
+    "text": "Wi-Fi Calling Not Activating or Completing Calls Troubleshoot missing Wi-Fi Calling controls, activation failures, and calls that will not complete by checking plan eligibility, emergency address, router behavior, and VPNs. smartphone-wifi-calling-not-working"
   },
   {
-    "title": "Phone Passkey Sign-In Fails",
-    "description": "Fix missing passkeys or failed cross-device QR sign-in by checking the credential provider, screen lock, Bluetooth, account sync, and website domain.",
-    "url": "/en/technology/smartphone/smartphone-passkey-signin-fails/",
+    "title": "VPN Connected but No Internet on a Phone",
+    "description": "Diagnose a phone VPN that reports connected but has no internet by checking DNS, always-on VPN, kill switch, MTU, protocol, and competing VPN profiles.",
+    "url": "/en/technology/smartphone/smartphone-vpn-connected-no-internet/",
     "category": "Smartphones",
-    "text": "Phone Passkey Sign-In Fails Fix missing passkeys or failed cross-device QR sign-in by checking the credential provider, screen lock, Bluetooth, account sync, and website domain. smartphone-passkey-signin-fails"
+    "text": "VPN Connected but No Internet on a Phone Diagnose a phone VPN that reports connected but has no internet by checking DNS, always-on VPN, kill switch, MTU, protocol, and competing VPN profiles. smartphone-vpn-connected-no-internet"
+  },
+  {
+    "title": "Mobile Data Drops During Calls: VoLTE Checks",
+    "description": "When mobile data slows or stops during calls, check VoLTE, IMS registration, the selected voice line, and carrier support.",
+    "url": "/en/technology/smartphone/smartphone-volte-calls-drop-data/",
+    "category": "Smartphones",
+    "text": "Mobile Data Drops During Calls: VoLTE Checks When mobile data slows or stops during calls, check VoLTE, IMS registration, the selected voice line, and carrier support. smartphone-volte-calls-drop-data"
+  },
+  {
+    "title": "Phone USB-C Video Output Is Not Working",
+    "description": "When USB-C will not output video, verify DisplayPort Alt Mode, device support, cable capability, hub power, and desktop-mode requirements.",
+    "url": "/en/technology/smartphone/smartphone-usb-c-display-output-not-working/",
+    "category": "Smartphones",
+    "text": "Phone USB-C Video Output Is Not Working When USB-C will not output video, verify DisplayPort Alt Mode, device support, cable capability, hub power, and desktop-mode requirements. smartphone-usb-c-display-output-not-working"
+  },
+  {
+    "title": "Touchscreen Not Responding or Moving by Itself: What to Check",
+    "description": "Troubleshoot dead zones and ghost touches by checking moisture, protectors, chargers, apps, restart behavior, and physical damage.",
+    "url": "/en/technology/smartphone/smartphone-touchscreen-not-responding/",
+    "category": "Smartphones",
+    "text": "Touchscreen Not Responding or Moving by Itself: What to Check Troubleshoot dead zones and ghost touches by checking moisture, protectors, chargers, apps, restart behavior, and physical damage. smartphone-touchscreen-not-responding"
+  },
+  {
+    "title": "Phone Storage Full: How to Free Space Safely",
+    "description": "Free phone storage safely by reviewing photos, videos, apps, downloads and offline files without losing needed data.",
+    "url": "/en/technology/smartphone/smartphone-storage-full/",
+    "category": "Smartphones",
+    "text": "Phone Storage Full: How to Free Space Safely Free phone storage safely by reviewing photos, videos, apps, downloads and offline files without losing needed data. smartphone-storage-full"
+  },
+  {
+    "title": "Phone Software Update Failed: Download and Install Fixes",
+    "description": "Resolve update-check, download, verification, and installation errors by checking compatibility, battery, storage, Wi-Fi, server status, and recovery options.",
+    "url": "/en/technology/smartphone/smartphone-software-update-failed/",
+    "category": "Smartphones",
+    "text": "Phone Software Update Failed: Download and Install Fixes Resolve update-check, download, verification, and installation errors by checking compatibility, battery, storage, Wi-Fi, server status, and recovery options. smartphone-software-update-failed"
+  },
+  {
+    "title": "SMS or Verification Code Not Received: Troubleshooting Checklist",
+    "description": "Separate a general SMS reception problem from a missing one-time code by checking line registration, blocks, spam filtering, number format, and sender limits.",
+    "url": "/en/technology/smartphone/smartphone-sms-not-received/",
+    "category": "Smartphones",
+    "text": "SMS or Verification Code Not Received: Troubleshooting Checklist Separate a general SMS reception problem from a missing one-time code by checking line registration, blocks, spam filtering, number format, and sender limits. smartphone-sms-not-received"
+  },
+  {
+    "title": "Phone Slow or Frozen: What to Try Before a Factory Reset",
+    "description": "Diagnose slow performance, freezes and unexpected restarts through restart, storage and app checks before resetting.",
+    "url": "/en/technology/smartphone/smartphone-slow-or-freezing/",
+    "category": "Smartphones",
+    "text": "Phone Slow or Frozen: What to Try Before a Factory Reset Diagnose slow performance, freezes and unexpected restarts through restart, storage and app checks before resetting. smartphone-slow-or-freezing"
   },
   {
     "title": "Phone Says No SIM or Invalid SIM: Safe Checks and Fixes",
@@ -561,6 +759,13 @@
     "url": "/en/technology/smartphone/smartphone-sim-not-detected/",
     "category": "Smartphones",
     "text": "Phone Says No SIM or Invalid SIM: Safe Checks and Fixes Troubleshoot No SIM, Invalid SIM, or emergency-calls-only messages by checking line state, SIM seating, device lock, compatibility, and carrier provisioning. smartphone-sim-not-detected"
+  },
+  {
+    "title": "Phone Screen Recording Has No Audio",
+    "description": "Fix silent screen recordings or recordings with only microphone or device audio by checking the audio source, microphone permission, protected calls, and Bluetooth routing.",
+    "url": "/en/technology/smartphone/smartphone-screen-recording-no-audio/",
+    "category": "Smartphones",
+    "text": "Phone Screen Recording Has No Audio Fix silent screen recordings or recordings with only microphone or device audio by checking the audio source, microphone permission, protected calls, and Bluetooth routing. smartphone-screen-recording-no-audio"
   },
   {
     "title": "Phone Screen Flickering, Lines, or Strange Colors: Diagnostic Guide",
@@ -577,74 +782,18 @@
     "text": "Phone Screen Is Black but the Phone Is On: Safe Troubleshooting Steps Use sound, vibration, charging, forced restart, and damage checks to diagnose a phone that appears powered on while the display stays black. smartphone-screen-black-but-phone-on"
   },
   {
-    "title": "Phone Screen Recording Has No Audio",
-    "description": "Fix silent screen recordings or recordings with only microphone or device audio by checking the audio source, microphone permission, protected calls, and Bluetooth routing.",
-    "url": "/en/technology/smartphone/smartphone-screen-recording-no-audio/",
+    "title": "How to Scan a QR Code Safely on a Smartphone",
+    "description": "Scan QR codes with the camera or scanner, inspect the destination and handle codes that will not open.",
+    "url": "/en/technology/smartphone/smartphone-scan-qr-code/",
     "category": "Smartphones",
-    "text": "Phone Screen Recording Has No Audio Fix silent screen recordings or recordings with only microphone or device audio by checking the audio source, microphone permission, protected calls, and Bluetooth routing. smartphone-screen-recording-no-audio"
+    "text": "How to Scan a QR Code Safely on a Smartphone Scan QR codes with the camera or scanner, inspect the destination and handle codes that will not open. smartphone-scan-qr-code"
   },
   {
-    "title": "Phone Screen Will Not Auto-Rotate: Settings and Sensor Checks",
-    "description": "Check rotation lock, app support, display controls, and orientation sensors when a phone remains in portrait mode.",
-    "url": "/en/technology/smartphone/smartphone-auto-rotate-not-working/",
+    "title": "How to Check and Remove a Suspicious App Safely",
+    "description": "Handle an unknown app, sudden ads, abnormal battery use, or excessive permissions by preserving evidence, protecting accounts, revoking control, and uninstalling safely.",
+    "url": "/en/technology/smartphone/smartphone-remove-suspicious-app/",
     "category": "Smartphones",
-    "text": "Phone Screen Will Not Auto-Rotate: Settings and Sensor Checks Check rotation lock, app support, display controls, and orientation sensors when a phone remains in portrait mode. smartphone-auto-rotate-not-working"
-  },
-  {
-    "title": "Phone Slow or Frozen: What to Try Before a Factory Reset",
-    "description": "Diagnose slow performance, freezes and unexpected restarts through restart, storage and app checks before resetting.",
-    "url": "/en/technology/smartphone/smartphone-slow-or-freezing/",
-    "category": "Smartphones",
-    "text": "Phone Slow or Frozen: What to Try Before a Factory Reset Diagnose slow performance, freezes and unexpected restarts through restart, storage and app checks before resetting. smartphone-slow-or-freezing"
-  },
-  {
-    "title": "Phone Software Update Failed: Download and Install Fixes",
-    "description": "Resolve update-check, download, verification, and installation errors by checking compatibility, battery, storage, Wi-Fi, server status, and recovery options.",
-    "url": "/en/technology/smartphone/smartphone-software-update-failed/",
-    "category": "Smartphones",
-    "text": "Phone Software Update Failed: Download and Install Fixes Resolve update-check, download, verification, and installation errors by checking compatibility, battery, storage, Wi-Fi, server status, and recovery options. smartphone-software-update-failed"
-  },
-  {
-    "title": "Phone Storage Full: How to Free Space Safely",
-    "description": "Free phone storage safely by reviewing photos, videos, apps, downloads and offline files without losing needed data.",
-    "url": "/en/technology/smartphone/smartphone-storage-full/",
-    "category": "Smartphones",
-    "text": "Phone Storage Full: How to Free Space Safely Free phone storage safely by reviewing photos, videos, apps, downloads and offline files without losing needed data. smartphone-storage-full"
-  },
-  {
-    "title": "Phone USB-C Video Output Is Not Working",
-    "description": "When USB-C will not output video, verify DisplayPort Alt Mode, device support, cable capability, hub power, and desktop-mode requirements.",
-    "url": "/en/technology/smartphone/smartphone-usb-c-display-output-not-working/",
-    "category": "Smartphones",
-    "text": "Phone USB-C Video Output Is Not Working When USB-C will not output video, verify DisplayPort Alt Mode, device support, cable capability, hub power, and desktop-mode requirements. smartphone-usb-c-display-output-not-working"
-  },
-  {
-    "title": "Picture-in-Picture Is Not Working on a Phone",
-    "description": "Fix video that does not enter picture-in-picture by checking app permission, subscription eligibility, exit gesture, power mode, and content restrictions.",
-    "url": "/en/technology/smartphone/smartphone-picture-in-picture-not-working/",
-    "category": "Smartphones",
-    "text": "Picture-in-Picture Is Not Working on a Phone Fix video that does not enter picture-in-picture by checking app permission, subscription eligibility, exit gesture, power mode, and content restrictions. smartphone-picture-in-picture-not-working"
-  },
-  {
-    "title": "Pixel Adaptive Connectivity and Unexpected 5G or Wi-Fi Switching",
-    "description": "Understand how Pixel Adaptive Connectivity affects 5G use, battery consumption, and network switching, and how to run a controlled disabled test.",
-    "url": "/en/technology/smartphone/pixel-adaptive-connectivity-5g/",
-    "category": "Smartphones",
-    "text": "Pixel Adaptive Connectivity and Unexpected 5G or Wi-Fi Switching Understand how Pixel Adaptive Connectivity affects 5G use, battery consumption, and network switching, and how to run a controlled disabled test. pixel-adaptive-connectivity-5g"
-  },
-  {
-    "title": "Pixel Repair Mode: Preparation and Limitations",
-    "description": "Prepare for Pixel Repair Mode by understanding eligibility, backups, screen-lock requirements, what technicians can access, and how to exit.",
-    "url": "/en/technology/smartphone/pixel-repair-mode-guide/",
-    "category": "Smartphones",
-    "text": "Pixel Repair Mode: Preparation and Limitations Prepare for Pixel Repair Mode by understanding eligibility, backups, screen-lock requirements, what technicians can access, and how to exit. pixel-repair-mode-guide"
-  },
-  {
-    "title": "Quick Share or Nearby Sharing Cannot Find the Other Device",
-    "description": "Fix nearby transfer discovery or stalled transfers by checking visibility, account matching, Bluetooth and Wi-Fi, screen lock, and file limits.",
-    "url": "/en/technology/smartphone/smartphone-quick-share-nearby-not-working/",
-    "category": "Smartphones",
-    "text": "Quick Share or Nearby Sharing Cannot Find the Other Device Fix nearby transfer discovery or stalled transfers by checking visibility, account matching, Bluetooth and Wi-Fi, screen lock, and file limits. smartphone-quick-share-nearby-not-working"
+    "text": "How to Check and Remove a Suspicious App Safely Handle an unknown app, sudden ads, abnormal battery use, or excessive permissions by preserving evidence, protecting accounts, revoking control, and uninstalling safely. smartphone-remove-suspicious-app"
   },
   {
     "title": "Randomized MAC Address Causing Wi-Fi Problems",
@@ -654,39 +803,165 @@
     "text": "Randomized MAC Address Causing Wi-Fi Problems Resolve Wi-Fi registration failures caused by randomized MAC or private addresses while preserving privacy where fixed device registration is not required. smartphone-random-mac-wifi-problem"
   },
   {
-    "title": "RCS Chat Features Stuck on Verifying Your Number",
-    "description": "Fix RCS that remains on verifying or falls back to SMS by checking the number, default SIM, carrier services, VPN, and registration on an old phone.",
-    "url": "/en/technology/smartphone/smartphone-rcs-chat-not-verifying/",
+    "title": "Quick Share or Nearby Sharing Cannot Find the Other Device",
+    "description": "Fix nearby transfer discovery or stalled transfers by checking visibility, account matching, Bluetooth and Wi-Fi, screen lock, and file limits.",
+    "url": "/en/technology/smartphone/smartphone-quick-share-nearby-not-working/",
     "category": "Smartphones",
-    "text": "RCS Chat Features Stuck on Verifying Your Number Fix RCS that remains on verifying or falls back to SMS by checking the number, default SIM, carrier services, VPN, and registration on an old phone. smartphone-rcs-chat-not-verifying"
+    "text": "Quick Share or Nearby Sharing Cannot Find the Other Device Fix nearby transfer discovery or stalled transfers by checking visibility, account matching, Bluetooth and Wi-Fi, screen lock, and file limits. smartphone-quick-share-nearby-not-working"
   },
   {
-    "title": "Report a Device Test Result | Function-Scoped Carrier Compatibility",
-    "description": "Prepare a device/carrier report with SIM recognition, data, voice, SMS, 5G and other results separated by function.",
-    "url": "/en/technology/smartphone/device-field-report/",
-    "category": "Device compatibility",
-    "text": "device field report carrier compatibility user report SIM eSIM recognition data voice SMS 5G tethering evidence Japan carriers"
+    "title": "Picture-in-Picture Is Not Working on a Phone",
+    "description": "Fix video that does not enter picture-in-picture by checking app permission, subscription eligibility, exit gesture, power mode, and content restrictions.",
+    "url": "/en/technology/smartphone/smartphone-picture-in-picture-not-working/",
+    "category": "Smartphones",
+    "text": "Picture-in-Picture Is Not Working on a Phone Fix video that does not enter picture-in-picture by checking app permission, subscription eligibility, exit gesture, power mode, and content restrictions. smartphone-picture-in-picture-not-working"
   },
   {
-    "title": "Samsung Galaxy Maintenance Mode: Setup and Repair Checklist",
-    "description": "Use Samsung Galaxy Maintenance Mode before repair, including eligibility, backup, system-log options, technician access, and exit steps.",
-    "url": "/en/technology/smartphone/galaxy-maintenance-mode-guide/",
+    "title": "Phone Passkey Sign-In Fails",
+    "description": "Fix missing passkeys or failed cross-device QR sign-in by checking the credential provider, screen lock, Bluetooth, account sync, and website domain.",
+    "url": "/en/technology/smartphone/smartphone-passkey-signin-fails/",
     "category": "Smartphones",
-    "text": "Samsung Galaxy Maintenance Mode: Setup and Repair Checklist Use Samsung Galaxy Maintenance Mode before repair, including eligibility, backup, system-log options, technician access, and exit steps. galaxy-maintenance-mode-guide"
+    "text": "Phone Passkey Sign-In Fails Fix missing passkeys or failed cross-device QR sign-in by checking the credential provider, screen lock, Bluetooth, account sync, and website domain. smartphone-passkey-signin-fails"
   },
   {
-    "title": "SIM/eSIM Compatibility Diagnosis",
-    "description": "Troubleshoot SIM/eSIM Compatibility Diagnosis with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety.",
-    "url": "/en/technology/smartphone/sim-esim-compatibility-diagnosis/",
+    "title": "Phone Notifications Not Arriving or Delayed: Complete Checklist",
+    "description": "Separate one-app notification issues from system-wide delays by checking permissions, Focus modes, battery restrictions, connectivity, and account settings.",
+    "url": "/en/technology/smartphone/smartphone-notifications-not-working/",
     "category": "Smartphones",
-    "text": "SIM/eSIM Compatibility Diagnosis Troubleshoot SIM/eSIM Compatibility Diagnosis with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety. sim-esim-compatibility-diagnosis"
+    "text": "Phone Notifications Not Arriving or Delayed: Complete Checklist Separate one-app notification issues from system-wide delays by checking permissions, Focus modes, battery restrictions, connectivity, and account settings. smartphone-notifications-not-working"
   },
   {
-    "title": "SIM/eSIM Error Message and Symptom Lookup",
-    "description": "Troubleshoot SIM/eSIM Error Message and Symptom Lookup with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety.",
-    "url": "/en/technology/smartphone/sim-esim-error-lookup/",
+    "title": "Phone Not Charging: Cable, Port and Device Checks",
+    "description": "Troubleshoot no charging, slow charging and interrupted charging by checking power, cables, ports and temperature.",
+    "url": "/en/technology/smartphone/smartphone-not-charging/",
     "category": "Smartphones",
-    "text": "SIM/eSIM Error Message and Symptom Lookup Troubleshoot SIM/eSIM Error Message and Symptom Lookup with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety. sim-esim-error-lookup"
+    "text": "Phone Not Charging: Cable, Port and Device Checks Troubleshoot no charging, slow charging and interrupted charging by checking power, cables, ports and temperature. smartphone-not-charging"
+  },
+  {
+    "title": "No Sound from a Phone: Separate Ringtone, Media, Call, and Speaker Issues",
+    "description": "Identify which audio path is silent, then check volume controls, mute modes, Bluetooth output, apps, and speaker condition.",
+    "url": "/en/technology/smartphone/smartphone-no-sound/",
+    "category": "Smartphones",
+    "text": "No Sound from a Phone: Separate Ringtone, Media, Call, and Speaker Issues Identify which audio path is silent, then check volume controls, mute modes, Bluetooth output, apps, and speaker condition. smartphone-no-sound"
+  },
+  {
+    "title": "How to Reset Network Settings on a Smartphone",
+    "description": "Understand what a network-settings reset removes and how to prepare before using it for Wi-Fi, Bluetooth or mobile-data problems.",
+    "url": "/en/technology/smartphone/smartphone-network-settings-reset/",
+    "category": "Smartphones",
+    "text": "How to Reset Network Settings on a Smartphone Understand what a network-settings reset removes and how to prepare before using it for Wi-Fi, Bluetooth or mobile-data problems. smartphone-network-settings-reset"
+  },
+  {
+    "title": "Mobile Data Not Working: A Step-by-Step Phone Checklist",
+    "description": "Troubleshoot no service, unusable data despite signal bars, and SIM or eSIM issues.",
+    "url": "/en/technology/smartphone/smartphone-mobile-data-not-working/",
+    "category": "Smartphones",
+    "text": "Mobile Data Not Working: A Step-by-Step Phone Checklist Troubleshoot no service, unusable data despite signal bars, and SIM or eSIM issues. smartphone-mobile-data-not-working"
+  },
+  {
+    "title": "Phone Hotspot or Tethering Not Working: Connection Checklist",
+    "description": "Fix a hotspot that is invisible, rejects the password, or connects without internet by checking mobile data, plan support, frequency, power limits, and carrier settings.",
+    "url": "/en/technology/smartphone/smartphone-hotspot-not-working/",
+    "category": "Smartphones",
+    "text": "Phone Hotspot or Tethering Not Working: Connection Checklist Fix a hotspot that is invisible, rejects the password, or connects without internet by checking mobile data, plan support, frequency, power limits, and carrier settings. smartphone-hotspot-not-working"
+  },
+  {
+    "title": "Phone GPS or Location Is Wrong or Unavailable: Troubleshooting Guide",
+    "description": "Fix inaccurate or unavailable location by checking app permissions, precision options, network assistance, environment, compass behavior, and sensors.",
+    "url": "/en/technology/smartphone/smartphone-gps-location-not-working/",
+    "category": "Smartphones",
+    "text": "Phone GPS or Location Is Wrong or Unavailable: Troubleshooting Guide Fix inaccurate or unavailable location by checking app permissions, precision options, network assistance, environment, compass behavior, and sensors. smartphone-gps-location-not-working"
+  },
+  {
+    "title": "Find My Device Shows the Phone Offline",
+    "description": "Understand an offline lost phone by checking power, connectivity, location, offline-finding networks, last known location, and queued remote actions.",
+    "url": "/en/technology/smartphone/smartphone-find-device-offline/",
+    "category": "Smartphones",
+    "text": "Find My Device Shows the Phone Offline Understand an offline lost phone by checking power, connectivity, location, offline-finding networks, last known location, and queued remote actions. smartphone-find-device-offline"
+  },
+  {
+    "title": "Links or Files Open in the Wrong Default App",
+    "description": "Fix web links, PDFs, maps, or phone numbers opening in the wrong app by checking defaults, supported links, share actions, and file associations.",
+    "url": "/en/technology/smartphone/smartphone-default-app-opens-wrong-app/",
+    "category": "Smartphones",
+    "text": "Links or Files Open in the Wrong Default App Fix web links, PDFs, maps, or phone numbers opening in the wrong app by checking defaults, supported links, share actions, and file associations. smartphone-default-app-opens-wrong-app"
+  },
+  {
+    "title": "How to Copy and Paste Text on a Smartphone",
+    "description": "Copy, cut and paste text on iPhone and Android, including how to adjust a selection and what to do when text cannot be selected.",
+    "url": "/en/technology/smartphone/smartphone-copy-paste-text/",
+    "category": "Smartphones",
+    "text": "How to Copy and Paste Text on a Smartphone Copy, cut and paste text on iPhone and Android, including how to adjust a selection and what to do when text cannot be selected. smartphone-copy-paste-text"
+  },
+  {
+    "title": "Phone Clipboard Copy and Paste Not Working",
+    "description": "Fix copied text that disappears or cannot be pasted by checking clipboard history, sensitive-data protection, keyboard behavior, and work-profile boundaries.",
+    "url": "/en/technology/smartphone/smartphone-clipboard-not-working/",
+    "category": "Smartphones",
+    "text": "Phone Clipboard Copy and Paste Not Working Fix copied text that disappears or cannot be pasted by checking clipboard history, sensitive-data protection, keyboard behavior, and work-profile boundaries. smartphone-clipboard-not-working"
+  },
+  {
+    "title": "Phone Cannot Make Calls: Network, SIM, and Account Checks",
+    "description": "Troubleshoot outgoing calls that fail, disconnect immediately, or show emergency calls only by checking coverage, SIM selection, restrictions, and carrier status.",
+    "url": "/en/technology/smartphone/smartphone-cannot-make-calls/",
+    "category": "Smartphones",
+    "text": "Phone Cannot Make Calls: Network, SIM, and Account Checks Troubleshoot outgoing calls that fail, disconnect immediately, or show emergency calls only by checking coverage, SIM selection, restrictions, and carrier status. smartphone-cannot-make-calls"
+  },
+  {
+    "title": "Camera or Microphone Privacy Indicator Stays On",
+    "description": "When a camera or microphone privacy indicator remains visible, identify the active app, background permission, call service, accessibility feature, or system process.",
+    "url": "/en/technology/smartphone/smartphone-camera-mic-indicator-stays-on/",
+    "category": "Smartphones",
+    "text": "Camera or Microphone Privacy Indicator Stays On When a camera or microphone privacy indicator remains visible, identify the active app, background permission, call service, accessibility feature, or system process. smartphone-camera-mic-indicator-stays-on"
+  },
+  {
+    "title": "Phone Browser Pop-Ups, Fake Warnings, or Redirects Will Not Stop",
+    "description": "Remove persistent scam warnings and redirects by closing tabs safely, reviewing site notifications and data, checking profiles or apps, and protecting exposed accounts.",
+    "url": "/en/technology/smartphone/smartphone-browser-popups-redirects/",
+    "category": "Smartphones",
+    "text": "Phone Browser Pop-Ups, Fake Warnings, or Redirects Will Not Stop Remove persistent scam warnings and redirects by closing tabs safely, reviewing site notifications and data, checking profiles or apps, and protecting exposed accounts. smartphone-browser-popups-redirects"
+  },
+  {
+    "title": "Why Biometrics Are Unavailable After a Phone Restart",
+    "description": "Understand why biometrics require a passcode after restart, extended inactivity, or security changes, and use legitimate recovery methods if the passcode is forgotten.",
+    "url": "/en/technology/smartphone/smartphone-biometric-unavailable-after-restart/",
+    "category": "Smartphones",
+    "text": "Why Biometrics Are Unavailable After a Phone Restart Understand why biometrics require a passcode after restart, extended inactivity, or security changes, and use legitimate recovery methods if the passcode is forgotten. smartphone-biometric-unavailable-after-restart"
+  },
+  {
+    "title": "Smartphone Touch Gestures: Tap, Long-Press, Swipe and Pinch",
+    "description": "Learn tap, long-press, swipe, pinch and drag gestures, including practical ways to avoid accidental actions.",
+    "url": "/en/technology/smartphone/smartphone-basic-touch-gestures/",
+    "category": "Smartphones",
+    "text": "Smartphone Touch Gestures: Tap, Long-Press, Swipe and Pinch Learn tap, long-press, swipe, pinch and drag gestures, including practical ways to avoid accidental actions. smartphone-basic-touch-gestures"
+  },
+  {
+    "title": "Complete Smartphone Backup Checklist Before a Factory Reset",
+    "description": "Check photos, contacts, messages, authenticator apps, eSIM and app-specific data before erasing a phone.",
+    "url": "/en/technology/smartphone/smartphone-backup-before-reset/",
+    "category": "Smartphones",
+    "text": "Complete Smartphone Backup Checklist Before a Factory Reset Check photos, contacts, messages, authenticator apps, eSIM and app-specific data before erasing a phone. smartphone-backup-before-reset"
+  },
+  {
+    "title": "Phone Screen Will Not Auto-Rotate: Settings and Sensor Checks",
+    "description": "Check rotation lock, app support, display controls, and orientation sensors when a phone remains in portrait mode.",
+    "url": "/en/technology/smartphone/smartphone-auto-rotate-not-working/",
+    "category": "Smartphones",
+    "text": "Phone Screen Will Not Auto-Rotate: Settings and Sensor Checks Check rotation lock, app support, display controls, and orientation sensors when a phone remains in portrait mode. smartphone-auto-rotate-not-working"
+  },
+  {
+    "title": "Phone APN Settings Not Saving or Working",
+    "description": "Fix APN profiles that do not save or provide data even when 4G or 5G appears by checking APN type, authentication, MCC/MNC, and carrier provisioning.",
+    "url": "/en/technology/smartphone/smartphone-apn-settings-not-working/",
+    "category": "Smartphones",
+    "text": "Phone APN Settings Not Saving or Working Fix APN profiles that do not save or provide data even when 4G or 5G appears by checking APN type, authentication, MCC/MNC, and carrier provisioning. smartphone-apn-settings-not-working"
+  },
+  {
+    "title": "Phone Alarm Did Not Ring or Was Too Quiet: What to Check",
+    "description": "Verify time, repeat days, alarm sound, volume, Bluetooth output, clock-app restrictions, and a real test before relying on an alarm.",
+    "url": "/en/technology/smartphone/smartphone-alarm-not-ringing/",
+    "category": "Smartphones",
+    "text": "Phone Alarm Did Not Ring or Was Too Quiet: What to Check Verify time, repeat days, alarm sound, volume, Bluetooth output, clock-app restrictions, and a real test before relying on an alarm. smartphone-alarm-not-ringing"
   },
   {
     "title": "SIM/eSIM Migration, Reissue and Authentication",
@@ -703,81 +978,81 @@
     "text": "SIM/eSIM Recovery Navigator Troubleshoot SIM/eSIM Recovery Navigator with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety. sim-esim-recovery-navigator"
   },
   {
-    "title": "Smartphone How-To and Troubleshooting",
-    "description": "Step-by-step guides for smartphone controls, search, connectivity, displays, calls, charging, updates, recovery, security, and data transfer.",
-    "url": "/en/technology/smartphone/",
+    "title": "SIM/eSIM Error Message and Symptom Lookup",
+    "description": "Troubleshoot SIM/eSIM Error Message and Symptom Lookup with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety.",
+    "url": "/en/technology/smartphone/sim-esim-error-lookup/",
     "category": "Smartphones",
-    "text": "Smartphone How-To and Troubleshooting Step-by-step guides for smartphone controls, search, connectivity, displays, calls, charging, updates, recovery, security, and data transfer. smartphone"
+    "text": "SIM/eSIM Error Message and Symptom Lookup Troubleshoot SIM/eSIM Error Message and Symptom Lookup with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety. sim-esim-error-lookup"
   },
   {
-    "title": "Smartphone Touch Gestures: Tap, Long-Press, Swipe and Pinch",
-    "description": "Learn tap, long-press, swipe, pinch and drag gestures, including practical ways to avoid accidental actions.",
-    "url": "/en/technology/smartphone/smartphone-basic-touch-gestures/",
+    "title": "SIM/eSIM Compatibility Diagnosis",
+    "description": "Troubleshoot SIM/eSIM Compatibility Diagnosis with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety.",
+    "url": "/en/technology/smartphone/sim-esim-compatibility-diagnosis/",
     "category": "Smartphones",
-    "text": "Smartphone Touch Gestures: Tap, Long-Press, Swipe and Pinch Learn tap, long-press, swipe, pinch and drag gestures, including practical ways to avoid accidental actions. smartphone-basic-touch-gestures"
+    "text": "SIM/eSIM Compatibility Diagnosis Troubleshoot SIM/eSIM Compatibility Diagnosis with separate checks for eSIM provisioning, line activation, APN, VoLTE/IMS and reissue safety. sim-esim-compatibility-diagnosis"
   },
   {
-    "title": "SMS or Verification Code Not Received: Troubleshooting Checklist",
-    "description": "Separate a general SMS reception problem from a missing one-time code by checking line registration, blocks, spam filtering, number format, and sender limits.",
-    "url": "/en/technology/smartphone/smartphone-sms-not-received/",
+    "title": "Galaxy S22 Ultra SCG14 on Japan's 4 Carriers: Bands, eSIM, VoLTE and APN",
+    "description": "Check Galaxy S22 Ultra by exact Japan sales variant for NTT Docomo, au, SoftBank and Rakuten Mobile, including LTE/5G bands, SIM/eSIM, VoLTE/IMS and APN boundaries.",
+    "url": "/en/technology/smartphone/scg14-au-2022-carrier-compatibility/",
     "category": "Smartphones",
-    "text": "SMS or Verification Code Not Received: Troubleshooting Checklist Separate a general SMS reception problem from a missing one-time code by checking line registration, blocks, spam filtering, number format, and sender limits. smartphone-sms-not-received"
+    "text": "Galaxy S22 Ultra SCG14 on Japan's 4 Carriers: Bands, eSIM, VoLTE and APN Check Galaxy S22 Ultra by exact Japan sales variant for NTT Docomo, au, SoftBank and Rakuten Mobile, including LTE/5G bands, SIM/eSIM, VoLTE/IMS and APN boundaries. scg14-au-2022-carrier-compatibility"
   },
   {
-    "title": "SoftBank: How to Get an MNP Reservation Number",
-    "description": "English guide to SoftBank: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
-    "url": "/en/technology/smartphone/softbank-mnp-reservation-number-guide/",
+    "title": "Galaxy S22 SCG13 on Japan's 4 Carriers: Bands, eSIM, VoLTE and APN",
+    "description": "Check Galaxy S22 by exact Japan sales variant for NTT Docomo, au, SoftBank and Rakuten Mobile, including LTE/5G bands, SIM/eSIM, VoLTE/IMS and APN boundaries.",
+    "url": "/en/technology/smartphone/scg13-au-2022-carrier-compatibility/",
     "category": "Smartphones",
-    "text": "SoftBank: How to Get an MNP Reservation Number English guide to SoftBank: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry. softbank-mnp-reservation-number-guide"
+    "text": "Galaxy S22 SCG13 on Japan's 4 Carriers: Bands, eSIM, VoLTE and APN Check Galaxy S22 by exact Japan sales variant for NTT Docomo, au, SoftBank and Rakuten Mobile, including LTE/5G bands, SIM/eSIM, VoLTE/IMS and APN boundaries. scg13-au-2022-carrier-compatibility"
   },
   {
-    "title": "Touchscreen Not Responding or Moving by Itself: What to Check",
-    "description": "Troubleshoot dead zones and ghost touches by checking moisture, protectors, chargers, apps, restart behavior, and physical damage.",
-    "url": "/en/technology/smartphone/smartphone-touchscreen-not-responding/",
-    "category": "Smartphones",
-    "text": "Touchscreen Not Responding or Moving by Itself: What to Check Troubleshoot dead zones and ghost touches by checking moisture, protectors, chargers, apps, restart behavior, and physical damage. smartphone-touchscreen-not-responding"
+    "title": "Device Verification & Evidence Ledger | Official, Real-Device and Unverified Records",
+    "description": "Search 550 device and sales records while keeping official-source review, SolQvia first-party observations, technical assessment and unverified states separate.",
+    "url": "/en/technology/smartphone/real-device-verification-ledger/",
+    "category": "Device compatibility",
+    "text": "device verification evidence ledger real device official sources unverified KY-41C Ymobile SoftBank eSIM profile recognition APN data VoLTE IMS SMS Japan carriers 550 records"
   },
   {
-    "title": "Transfer Data from an Old iPhone to a New iPhone with Quick Start",
-    "description": "Compare Quick Start, iCloud, and encrypted computer backups and verify eSIM, authentication, messaging, Wallet, and important data before erasing the old iPhone.",
-    "url": "/en/technology/smartphone/iphone-to-iphone-data-transfer/",
+    "title": "Pixel Repair Mode: Preparation and Limitations",
+    "description": "Prepare for Pixel Repair Mode by understanding eligibility, backups, screen-lock requirements, what technicians can access, and how to exit.",
+    "url": "/en/technology/smartphone/pixel-repair-mode-guide/",
     "category": "Smartphones",
-    "text": "Transfer Data from an Old iPhone to a New iPhone with Quick Start Compare Quick Start, iCloud, and encrypted computer backups and verify eSIM, authentication, messaging, Wallet, and important data before erasing the old iPhone. iphone-to-iphone-data-transfer"
+    "text": "Pixel Repair Mode: Preparation and Limitations Prepare for Pixel Repair Mode by understanding eligibility, backups, screen-lock requirements, what technicians can access, and how to exit. pixel-repair-mode-guide"
   },
   {
-    "title": "Transfer Data from Android to a New Android Phone",
-    "description": "Use Google backup, cable transfer, wireless copy, and manufacturer tools while separately preparing authenticator, eSIM, banking, and messaging data.",
-    "url": "/en/technology/smartphone/android-to-android-data-transfer/",
+    "title": "How to Use Pixel Device Diagnostics and Battery Checks",
+    "description": "Use Pixel settings and official support diagnostics to check battery, connectivity, and sensors and collect useful information before repair.",
+    "url": "/en/technology/smartphone/pixel-device-health-diagnostics/",
     "category": "Smartphones",
-    "text": "Transfer Data from Android to a New Android Phone Use Google backup, cable transfer, wireless copy, and manufacturer tools while separately preparing authenticator, eSIM, banking, and messaging data. android-to-android-data-transfer"
+    "text": "How to Use Pixel Device Diagnostics and Battery Checks Use Pixel settings and official support diagnostics to check battery, connectivity, and sensors and collect useful information before repair. pixel-device-health-diagnostics"
   },
   {
-    "title": "Transfer from Android to iPhone with Move to iOS",
-    "description": "Use Apple’s official Move to iOS process for contacts, messages, photos, and supported apps, then handle eSIM, authentication, and messaging services separately.",
-    "url": "/en/technology/smartphone/android-to-iphone-data-transfer/",
+    "title": "Pixel Adaptive Connectivity and Unexpected 5G or Wi-Fi Switching",
+    "description": "Understand how Pixel Adaptive Connectivity affects 5G use, battery consumption, and network switching, and how to run a controlled disabled test.",
+    "url": "/en/technology/smartphone/pixel-adaptive-connectivity-5g/",
     "category": "Smartphones",
-    "text": "Transfer from Android to iPhone with Move to iOS Use Apple’s official Move to iOS process for contacts, messages, photos, and supported apps, then handle eSIM, authentication, and messaging services separately. android-to-iphone-data-transfer"
+    "text": "Pixel Adaptive Connectivity and Unexpected 5G or Wi-Fi Switching Understand how Pixel Adaptive Connectivity affects 5G use, battery consumption, and network switching, and how to run a controlled disabled test. pixel-adaptive-connectivity-5g"
   },
   {
-    "title": "Use Android Safe Mode to Identify a Problem App",
-    "description": "Test whether restarts, freezing, battery drain, pop-ups, or other issues are caused by a downloaded app, then remove candidates one at a time.",
-    "url": "/en/technology/smartphone/android-safe-mode-guide/",
+    "title": "Overseas Smartphone Giteki Japan Use Check",
+    "description": "English SolQvia technical guide to Overseas Smartphone Giteki Japan Use Check, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/overseas-smartphone-giteki-japan-use-check/",
     "category": "Smartphones",
-    "text": "Use Android Safe Mode to Identify a Problem App Test whether restarts, freezing, battery drain, pop-ups, or other issues are caused by a downloaded app, then remove candidates one at a time. android-safe-mode-guide"
+    "text": "Overseas Smartphone Giteki Japan Use Check English SolQvia technical guide to Overseas Smartphone Giteki Japan Use Check, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. overseas-smartphone-giteki-japan-use-check"
   },
   {
-    "title": "Used Device Condition, Repair & Battery Diagnosis Before Purchase",
-    "description": "Check a used phone by exact variant, ownership lock, carrier network restriction, repair history, battery, biometrics and SIM/eSIM/communications without entering IMEI into SolQvia.",
-    "url": "/en/technology/smartphone/used-device-condition-diagnosis/",
+    "title": "Overseas Smartphone Bands Match VoLTE IMS Calls Fail",
+    "description": "English SolQvia technical guide to Overseas Smartphone Bands Match VoLTE IMS Calls Fail, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/overseas-smartphone-bands-match-volte-ims-calls-fail/",
     "category": "Smartphones",
-    "text": "used phone refurbished iPhone Android repair history battery health cycle count Activation Lock device protection carrier network restriction SIM eSIM Japan purchase checklist"
+    "text": "Overseas Smartphone Bands Match VoLTE IMS Calls Fail English SolQvia technical guide to Overseas Smartphone Bands Match VoLTE IMS Calls Fail, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. overseas-smartphone-bands-match-volte-ims-calls-fail"
   },
   {
-    "title": "VPN Connected but No Internet on a Phone",
-    "description": "Diagnose a phone VPN that reports connected but has no internet by checking DNS, always-on VPN, kill switch, MTU, protocol, and competing VPN profiles.",
-    "url": "/en/technology/smartphone/smartphone-vpn-connected-no-internet/",
+    "title": "Network, SIM and eSIM Troubleshooting",
+    "description": "English SolQvia technical guide to Network, SIM and eSIM Troubleshooting, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/network-sim-troubleshooting/",
     "category": "Smartphones",
-    "text": "VPN Connected but No Internet on a Phone Diagnose a phone VPN that reports connected but has no internet by checking DNS, always-on VPN, kill switch, MTU, protocol, and competing VPN profiles. smartphone-vpn-connected-no-internet"
+    "text": "Network, SIM and eSIM Troubleshooting English SolQvia technical guide to Network, SIM and eSIM Troubleshooting, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. network-sim-troubleshooting"
   },
   {
     "title": "VPN, Private Relay, DNS and Tethering Troubleshooting",
@@ -787,11 +1062,46 @@
     "text": "VPN, Private Relay, DNS and Tethering Troubleshooting English SolQvia technical guide to VPN, Private Relay, DNS and Tethering Troubleshooting, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. network-privacy-tethering"
   },
   {
-    "title": "Why Biometrics Are Unavailable After a Phone Restart",
-    "description": "Understand why biometrics require a passcode after restart, extended inactivity, or security changes, and use legitimate recovery methods if the passcode is forgotten.",
-    "url": "/en/technology/smartphone/smartphone-biometric-unavailable-after-restart/",
+    "title": "MVNO MNP: Reservation Number Directory",
+    "description": "English guide to MVNO MNP: Reservation Number Directory, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/mvno-mnp-reservation-number-directory/",
     "category": "Smartphones",
-    "text": "Why Biometrics Are Unavailable After a Phone Restart Understand why biometrics require a passcode after restart, extended inactivity, or security changes, and use legitimate recovery methods if the passcode is forgotten. smartphone-biometric-unavailable-after-restart"
+    "text": "MVNO MNP: Reservation Number Directory English guide to MVNO MNP: Reservation Number Directory, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry. mvno-mnp-reservation-number-directory"
+  },
+  {
+    "title": "Metakozo Mobile SIM: How to Get an MNP Reservation Number",
+    "description": "English guide to Metakozo Mobile SIM: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/metakozo-mobile-sim-mnp-reservation-number-guide/",
+    "category": "Smartphones",
+    "text": "Metakozo Mobile SIM: How to Get an MNP Reservation Number English guide to Metakozo Mobile SIM: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry. metakozo-mobile-sim-mnp-reservation-number-guide"
+  },
+  {
+    "title": "Media, USB, Audio, and In-Car Connections",
+    "description": "Troubleshoot HEIF, HDR, video size, USB-C display output, external microphones, OTG, CarPlay, Android Auto, and Bluetooth audio.",
+    "url": "/en/technology/smartphone/media-accessories/",
+    "category": "Smartphones",
+    "text": "Media, USB, Audio, and In-Car Connections Troubleshoot HEIF, HDR, video size, USB-C display output, external microphones, OTG, CarPlay, Android Auto, and Bluetooth audio. media-accessories"
+  },
+  {
+    "title": "Lost / Stolen Device & Account Recovery Navigator",
+    "description": "Prioritize tracking, lock, carrier suspension, Apple/Google account protection, SMS/2FA recovery, wallet checks, SIM/eSIM replacement and remote erase after phone loss or theft.",
+    "url": "/en/technology/smartphone/lost-stolen-account-recovery-navigator/",
+    "category": "Smartphone loss, theft & security",
+    "text": "lost stolen phone iPhone Android Find My Find Hub carrier suspension SIM eSIM SMS 2FA passkey wallet account recovery remote erase Activation Lock"
+  },
+  {
+    "title": "Lost Phone: Find, Lock and Erase It Remotely",
+    "description": "Locate, lock and if necessary erase a lost iPhone or Android phone while protecting accounts and carrier service.",
+    "url": "/en/technology/smartphone/lost-smartphone-find-lock-erase/",
+    "category": "Smartphones",
+    "text": "Lost Phone: Find, Lock and Erase It Remotely Locate, lock and if necessary erase a lost iPhone or Android phone while protecting accounts and carrier service. lost-smartphone-find-lock-erase"
+  },
+  {
+    "title": "Transfer Data from an Old iPhone to a New iPhone with Quick Start",
+    "description": "Compare Quick Start, iCloud, and encrypted computer backups and verify eSIM, authentication, messaging, Wallet, and important data before erasing the old iPhone.",
+    "url": "/en/technology/smartphone/iphone-to-iphone-data-transfer/",
+    "category": "Smartphones",
+    "text": "Transfer Data from an Old iPhone to a New iPhone with Quick Start Compare Quick Start, iCloud, and encrypted computer backups and verify eSIM, authentication, messaging, Wallet, and important data before erasing the old iPhone. iphone-to-iphone-data-transfer"
   },
   {
     "title": "Why iPhone Stolen Device Protection Adds a Security Delay",
@@ -801,57 +1111,297 @@
     "text": "Why iPhone Stolen Device Protection Adds a Security Delay Understand the security delay for Apple Account or passcode changes, including familiar locations, biometric checks, and protected actions. iphone-stolen-device-protection-delay"
   },
   {
-    "title": "Wi-Fi Calling Not Activating or Completing Calls",
-    "description": "Troubleshoot missing Wi-Fi Calling controls, activation failures, and calls that will not complete by checking plan eligibility, emergency address, router behavior, and VPNs.",
-    "url": "/en/technology/smartphone/smartphone-wifi-calling-not-working/",
+    "title": "How to Use iPhone Recovery Mode: Update vs Restore Explained",
+    "description": "Prepare a computer, enter Recovery mode, and understand the data-preserving Update option versus the data-erasing Restore option.",
+    "url": "/en/technology/smartphone/iphone-recovery-mode-guide/",
     "category": "Smartphones",
-    "text": "Wi-Fi Calling Not Activating or Completing Calls Troubleshoot missing Wi-Fi Calling controls, activation failures, and calls that will not complete by checking plan eligibility, emergency address, router behavior, and VPNs. smartphone-wifi-calling-not-working"
+    "text": "How to Use iPhone Recovery Mode: Update vs Restore Explained Prepare a computer, enter Recovery mode, and understand the data-preserving Update option versus the data-erasing Restore option. iphone-recovery-mode-guide"
   },
   {
-    "title": "Wireless Charging Not Working or Stops: Alignment and Safety Checks",
-    "description": "Check device support, coil alignment, cases, foreign objects, power supply, temperature, and charger condition when wireless charging fails.",
-    "url": "/en/technology/smartphone/smartphone-wireless-charging-not-working/",
+    "title": "iCloud Private Relay Causes Website or Wi-Fi Problems",
+    "description": "When Private Relay breaks a site, changes location, or triggers a network warning, check IP tracking controls, network compatibility, and VPN overlap.",
+    "url": "/en/technology/smartphone/iphone-private-relay-network-problem/",
     "category": "Smartphones",
-    "text": "Wireless Charging Not Working or Stops: Alignment and Safety Checks Check device support, coil alignment, cases, foreign objects, power supply, temperature, and charger condition when wireless charging fails. smartphone-wireless-charging-not-working"
+    "text": "iCloud Private Relay Causes Website or Wi-Fi Problems When Private Relay breaks a site, changes location, or triggers a network warning, check IP tracking controls, network compatibility, and VPN overlap. iphone-private-relay-network-problem"
   },
   {
-    "title": "Device Migration, Reset, eSIM, Passkey & 2FA Safety Diagnosis",
-    "description": "A safe migration checklist for backup, SIM/eSIM, SMS authentication, passkeys, authenticator apps, LINE, Wallet and critical apps before erasing the old phone.",
-    "url": "/en/technology/smartphone/device-migration-reset-safety-diagnosis/",
+    "title": "iPhone iCloud Backup Is Stuck or Calculating Time",
+    "description": "Fix an iCloud backup stuck on calculating or not progressing by checking storage, Wi-Fi quality, power mode, included apps, and encryption.",
+    "url": "/en/technology/smartphone/iphone-icloud-backup-stuck/",
     "category": "Smartphones",
-    "date": "2026-08-09",
-    "text": "phone migration reset eSIM passkey 2FA authenticator SMS LINE Wallet backup old phone erase safety"
+    "text": "iPhone iCloud Backup Is Stuck or Calculating Time Fix an iCloud backup stuck on calculating or not progressing by checking storage, Wi-Fi quality, power mode, included apps, and encryption. iphone-icloud-backup-stuck"
   },
   {
-    "title": "OS Update × Device × Carrier Issue Database",
-    "description": "Track before/after OS/build, carrier, SIM mode, carrier settings and regression/improvement across 18 device functions.",
-    "url": "/en/technology/smartphone/os-update-carrier-issue-database/",
+    "title": "How to Force Restart an iPhone by Model",
+    "description": "Force restart an unresponsive iPhone using the correct button sequence for Face ID, iPhone 7 and older models.",
+    "url": "/en/technology/smartphone/iphone-force-restart/",
     "category": "Smartphones",
-    "date": "2026-08-09",
-    "text": "OS update issue regression device variant carrier SIM eSIM VoLTE IMS SMS OTP RCS 5G Wi-Fi Bluetooth battery carrier settings before after"
+    "text": "How to Force Restart an iPhone by Model Force restart an unresponsive iPhone using the correct button sequence for Face ID, iPhone 7 and older models. iphone-force-restart"
   },
   {
-    "title": "Satellite, Emergency SOS & Disaster Connectivity Diagnosis",
-    "description": "Separate handset-native satellite features from carrier direct-to-device services and diagnose current paths by device, region, carrier, OS and purpose.",
-    "url": "/en/technology/smartphone/satellite-emergency-connectivity-diagnosis/",
+    "title": "iPhone Focus Mode Is Blocking Important Notifications",
+    "description": "Fix important alerts blocked by iPhone Focus by checking shared Focus state, schedules, filters, allowed people and apps, and emergency exceptions.",
+    "url": "/en/technology/smartphone/iphone-focus-blocking-notifications/",
     "category": "Smartphones",
-    "date": "2026-08-09",
-    "text": "satellite emergency SOS disaster direct to device Starlink iPhone Pixel au SoftBank Docomo Rakuten off grid messaging location"
+    "text": "iPhone Focus Mode Is Blocking Important Notifications Fix important alerts blocked by iPhone Focus by checking shared Focus state, schedules, filters, allowed people and apps, and emergency exceptions. iphone-focus-blocking-notifications"
   },
   {
-    "title": "USB-C, Display, Storage & Peripheral Compatibility Lab",
-    "description": "Diagnose connector, cable, wired display, USB speed, PD/PPS, SSD, DAC, Ethernet and Samsung DeX separately by exact model.",
-    "url": "/en/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/",
+    "title": "How to Factory Reset an iPhone Safely",
+    "description": "Erase all content and settings on an iPhone safely after checking backup, eSIM and account access.",
+    "url": "/en/technology/smartphone/iphone-factory-reset/",
     "category": "Smartphones",
-    "date": "2026-08-09",
-    "text": "USB-C DisplayPort HDMI Alt Mode external SSD flash storage DAC microphone Ethernet PD PPS USB 2 USB 3 Samsung DeX cable hub power exact model"
+    "text": "How to Factory Reset an iPhone Safely Erase all content and settings on an iPhone safely after checking backup, eSIM and account access. iphone-factory-reset"
   },
   {
-    "title": "Used Smartphone Model Check Database",
-    "description": "Search 515 exact-model smartphone sales records for carrier fit, SIM/eSIM, FeliCa, evidence and unresolved checks before purchase.",
-    "url": "/en/technology/smartphone/used-smartphone-model-check-database/",
+    "title": "iPhone Background App Refresh Is Not Working",
+    "description": "Fix Background App Refresh that is disabled or ineffective by checking Low Power Mode, cellular access, Screen Time, and force-closing habits.",
+    "url": "/en/technology/smartphone/iphone-background-app-refresh-not-working/",
     "category": "Smartphones",
-    "date": "2026-08-11",
-    "text": "used smartphone exact model purchase checks carrier fit SIM eSIM FeliCa band VoLTE IMS evidence network restriction"
+    "text": "iPhone Background App Refresh Is Not Working Fix Background App Refresh that is disabled or ineffective by checking Low Power Mode, cellular access, Screen Time, and force-closing habits. iphone-background-app-refresh-not-working"
+  },
+  {
+    "title": "AirDrop Is Stuck on Waiting",
+    "description": "Fix AirDrop stuck on waiting or unable to find the recipient by checking receiving mode, contact matching, Wi-Fi and Bluetooth, and Personal Hotspot.",
+    "url": "/en/technology/smartphone/iphone-airdrop-stuck-waiting/",
+    "category": "Smartphones",
+    "text": "AirDrop Is Stuck on Waiting Fix AirDrop stuck on waiting or unable to find the recipient by checking receiving mode, contact matching, Wi-Fi and Bluetooth, and Personal Hotspot. iphone-airdrop-stuck-waiting"
+  },
+  {
+    "title": "iPhone Says This Accessory May Not Be Supported",
+    "description": "Resolve iPhone accessory-not-supported warnings by checking certification, debris, power requirements, liquid detection, and iOS compatibility.",
+    "url": "/en/technology/smartphone/iphone-accessory-not-supported/",
+    "category": "Smartphones",
+    "text": "iPhone Says This Accessory May Not Be Supported Resolve iPhone accessory-not-supported warnings by checking certification, debris, power requirements, liquid detection, and iOS compatibility. iphone-accessory-not-supported"
+  },
+  {
+    "title": "How to Search with Google Lens on a Smartphone",
+    "description": "Use Google Lens with a camera or saved photo to identify objects, places and text while reducing false matches.",
+    "url": "/en/technology/smartphone/google-lens-image-search/",
+    "category": "Smartphones",
+    "text": "How to Search with Google Lens on a Smartphone Use Google Lens with a camera or saved photo to identify objects, places and text while reducing false matches. google-lens-image-search"
+  },
+  {
+    "title": "Galaxy Secure Folder Notifications Are Missing or Hidden",
+    "description": "Fix missing or hidden Secure Folder notifications by checking folder lock state, content visibility, power controls, and differences from a work profile.",
+    "url": "/en/technology/smartphone/galaxy-secure-folder-notifications/",
+    "category": "Smartphones",
+    "text": "Galaxy Secure Folder Notifications Are Missing or Hidden Fix missing or hidden Secure Folder notifications by checking folder lock state, content visibility, power controls, and differences from a work profile. galaxy-secure-folder-notifications"
+  },
+  {
+    "title": "Samsung Galaxy Maintenance Mode: Setup and Repair Checklist",
+    "description": "Use Samsung Galaxy Maintenance Mode before repair, including eligibility, backup, system-log options, technician access, and exit steps.",
+    "url": "/en/technology/smartphone/galaxy-maintenance-mode-guide/",
+    "category": "Smartphones",
+    "text": "Samsung Galaxy Maintenance Mode: Setup and Repair Checklist Use Samsung Galaxy Maintenance Mode before repair, including eligibility, backup, system-log options, technician access, and exit steps. galaxy-maintenance-mode-guide"
+  },
+  {
+    "title": "How to Find Text on a Web Page in Chrome and Safari",
+    "description": "Use Find in Page in Chrome and Safari to locate a word or phrase within a long page.",
+    "url": "/en/technology/smartphone/find-text-on-web-page-smartphone/",
+    "category": "Smartphones",
+    "text": "How to Find Text on a Web Page in Chrome and Safari Use Find in Page in Chrome and Safari to locate a word or phrase within a long page. find-text-on-web-page-smartphone"
+  },
+  {
+    "title": "Dual SIM, Calls, SMS and RCS",
+    "description": "English SolQvia technical guide to Dual SIM, Calls, SMS and RCS, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/dual-sim-messaging/",
+    "category": "Smartphones",
+    "text": "Dual SIM, Calls, SMS and RCS English SolQvia technical guide to Dual SIM, Calls, SMS and RCS, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. dual-sim-messaging"
+  },
+  {
+    "title": "Dual SIM / Dual eSIM Combination Diagnosis | Calls, RCS, 5G & Data Switching",
+    "description": "Diagnose a Dual SIM / Dual eSIM setup by exact device, two carriers, SIM types, default voice/SMS/data routing, RCS, call-time behavior and 5G.",
+    "url": "/en/technology/smartphone/dual-sim-esim-combination-diagnosis/",
+    "category": "Smartphones",
+    "text": "Dual SIM dual eSIM DSDS SIM1 SIM2 calls SMS RCS VoLTE IMS 5G automatic data switching Wi-Fi Calling combination diagnosis"
+  },
+  {
+    "title": "Japan Carrier Smartphone 7-Year Device Master",
+    "description": "English SolQvia technical guide to Japan Carrier Smartphone 7-Year Device Master, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/domestic-carrier-smartphone-7year-master/",
+    "category": "Smartphones",
+    "text": "Japan Carrier Smartphone 7-Year Device Master English SolQvia technical guide to Japan Carrier Smartphone 7-Year Device Master, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. domestic-carrier-smartphone-7year-master"
+  },
+  {
+    "title": "Japan Carrier Smartphone 7-Year Audit",
+    "description": "English SolQvia technical guide to Japan Carrier Smartphone 7-Year Audit, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/domestic-carrier-smartphone-7year-audit/",
+    "category": "Smartphones",
+    "text": "Japan Carrier Smartphone 7-Year Audit English SolQvia technical guide to Japan Carrier Smartphone 7-Year Audit, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. domestic-carrier-smartphone-7year-audit"
+  },
+  {
+    "title": "Docomo SIMfree Overseas Phone APN Spmode Guide",
+    "description": "English SolQvia technical guide to Docomo SIMfree Overseas Phone APN Spmode Guide, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/docomo-simfree-overseas-phone-apn-spmode-guide/",
+    "category": "Smartphones",
+    "text": "Docomo SIMfree Overseas Phone APN Spmode Guide English SolQvia technical guide to Docomo SIMfree Overseas Phone APN Spmode Guide, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. docomo-simfree-overseas-phone-apn-spmode-guide"
+  },
+  {
+    "title": "Integrated Device Passport | Model, Network, Safety, Peripherals & Evidence",
+    "description": "Search 550 device/sales records across exact model, SIM/eSIM, bands, voice/SMS/RCS, Dual SIM, used-device checks, migration, OS updates, loss recovery, satellite, USB-C and evidence.",
+    "url": "/en/technology/smartphone/device-passport/",
+    "category": "Smartphone device database and evidence",
+    "text": "integrated device passport exact model SIM eSIM bands VoLTE IMS voice SMS RCS Dual SIM used device migration OS update lost stolen satellite USB-C evidence real device"
+  },
+  {
+    "title": "Japan / Overseas / Carrier Variant Database",
+    "description": "Search and compare Japanese carrier, Japan SIM-free and iPhone regional model variants. Check model numbers, SIM/eSIM layout, bands, FeliCa and evidence before importing or switching carriers.",
+    "url": "/en/technology/smartphone/device-model-region-variant-database/",
+    "category": "Smartphones",
+    "text": "Japan / Overseas / Carrier Variant Database Search and compare Japanese carrier, Japan SIM-free and iPhone regional model variants. Check model numbers, SIM/eSIM layout, bands, FeliCa and evidence before importing or switching carriers. device-model-region-variant-database"
+  },
+  {
+    "title": "Report a Device Test Result | Function-Scoped Carrier Compatibility",
+    "description": "Prepare a device/carrier report with SIM recognition, data, voice, SMS, 5G and other results separated by function.",
+    "url": "/en/technology/smartphone/device-field-report/",
+    "category": "Device compatibility",
+    "text": "device field report carrier compatibility user report SIM eSIM recognition data voice SMS 5G tethering evidence Japan carriers"
+  },
+  {
+    "title": "Device Compatibility",
+    "description": "English SolQvia technical guide to Device Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/device-compatibility/",
+    "category": "Smartphones",
+    "text": "Device Compatibility English SolQvia technical guide to Device Compatibility, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. device-compatibility"
+  },
+  {
+    "title": "Communication Compatibility Lab | Voice, SMS, RCS and VoLTE/IMS Testing",
+    "description": "Test voice, VoLTE/IMS, SMS, OTP and RCS behavior by device, exact variant, OS, carrier and SIM mode.",
+    "url": "/en/technology/smartphone/communication-compatibility-lab/",
+    "category": "Device compatibility",
+    "text": "RCS SMS VoLTE IMS OTP calls voice Google Messages Apple Messages carrier compatibility communication lab connected fallback"
+  },
+  {
+    "title": "Cloud Storage, VPN and Privacy Guides",
+    "description": "English SolQvia technical guide to Cloud Storage, VPN and Privacy Guides, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/cloud-privacy/",
+    "category": "Smartphones",
+    "text": "Cloud Storage, VPN and Privacy Guides English SolQvia technical guide to Cloud Storage, VPN and Privacy Guides, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. cloud-privacy"
+  },
+  {
+    "title": "Japan Carrier and MVNO Procedures",
+    "description": "English SolQvia technical guide to Japan Carrier and MVNO Procedures, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/carrier-mvno/",
+    "category": "Smartphones",
+    "text": "Japan Carrier and MVNO Procedures English SolQvia technical guide to Japan Carrier and MVNO Procedures, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. carrier-mvno"
+  },
+  {
+    "title": "Japan Carrier APN and SIM Troubleshooting",
+    "description": "English SolQvia technical guide to Japan Carrier APN and SIM Troubleshooting, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links.",
+    "url": "/en/technology/smartphone/carrier-apn-sim-troubleshooting/",
+    "category": "Smartphones",
+    "text": "Japan Carrier APN and SIM Troubleshooting English SolQvia technical guide to Japan Carrier APN and SIM Troubleshooting, with evidence boundaries, diagnostic order, structured device or carrier data, and official source links. carrier-apn-sim-troubleshooting"
+  },
+  {
+    "title": "Au Uq: How to Get an MNP Reservation Number",
+    "description": "English guide to Au Uq: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry.",
+    "url": "/en/technology/smartphone/au-uq-mnp-reservation-number-guide/",
+    "category": "Smartphones",
+    "text": "Au Uq: How to Get an MNP Reservation Number English guide to Au Uq: How to Get an MNP Reservation Number, including MNP One-Stop, reservation-number timing, conflicting procedures and the safest order to retry. au-uq-mnp-reservation-number-guide"
+  },
+  {
+    "title": "Android Work Profile Is Paused or Not Syncing",
+    "description": "Fix grayed-out work apps or stopped notifications by checking the Work Profile toggle, schedules, management policy, and device-policy controller connectivity.",
+    "url": "/en/technology/smartphone/android-work-profile-paused/",
+    "category": "Smartphones",
+    "text": "Android Work Profile Is Paused or Not Syncing Fix grayed-out work apps or stopped notifications by checking the Work Profile toggle, schedules, management policy, and device-policy controller connectivity. android-work-profile-paused"
+  },
+  {
+    "title": "Android USB OTG Storage Is Not Mounting",
+    "description": "When Android does not mount a USB drive or card reader, check OTG support, power, file system, USB mode, and encryption.",
+    "url": "/en/technology/smartphone/android-usb-otg-storage-not-mounted/",
+    "category": "Smartphones",
+    "text": "Android USB OTG Storage Is Not Mounting When Android does not mount a USB drive or card reader, check OTG support, power, file system, USB mode, and encryption. android-usb-otg-storage-not-mounted"
+  },
+  {
+    "title": "Transfer from Android to iPhone with Move to iOS",
+    "description": "Use Apple’s official Move to iOS process for contacts, messages, photos, and supported apps, then handle eSIM, authentication, and messaging services separately.",
+    "url": "/en/technology/smartphone/android-to-iphone-data-transfer/",
+    "category": "Smartphones",
+    "text": "Transfer from Android to iPhone with Move to iOS Use Apple’s official Move to iOS process for contacts, messages, photos, and supported apps, then handle eSIM, authentication, and messaging services separately. android-to-iphone-data-transfer"
+  },
+  {
+    "title": "Transfer Data from Android to a New Android Phone",
+    "description": "Use Google backup, cable transfer, wireless copy, and manufacturer tools while separately preparing authenticator, eSIM, banking, and messaging data.",
+    "url": "/en/technology/smartphone/android-to-android-data-transfer/",
+    "category": "Smartphones",
+    "text": "Transfer Data from Android to a New Android Phone Use Google backup, cable transfer, wireless copy, and manufacturer tools while separately preparing authenticator, eSIM, banking, and messaging data. android-to-android-data-transfer"
+  },
+  {
+    "title": "Use Android Safe Mode to Identify a Problem App",
+    "description": "Test whether restarts, freezing, battery drain, pop-ups, or other issues are caused by a downloaded app, then remove candidates one at a time.",
+    "url": "/en/technology/smartphone/android-safe-mode-guide/",
+    "category": "Smartphones",
+    "text": "Use Android Safe Mode to Identify a Problem App Test whether restarts, freezing, battery drain, pop-ups, or other issues are caused by a downloaded app, then remove candidates one at a time. android-safe-mode-guide"
+  },
+  {
+    "title": "Android Private DNS Not Working: Advanced Troubleshooting",
+    "description": "Diagnose Private DNS hostnames that will not save, break connectivity, or fail only on certain Wi-Fi networks by separating provider, VPN, certificate, and network restrictions.",
+    "url": "/en/technology/smartphone/android-private-dns-not-working/",
+    "category": "Smartphones",
+    "text": "Android Private DNS Not Working: Advanced Troubleshooting Diagnose Private DNS hostnames that will not save, break connectivity, or fail only on certain Wi-Fi networks by separating provider, VPN, certificate, and network restrictions. android-private-dns-not-working"
+  },
+  {
+    "title": "Google Play Protect Blocks or Disables an App",
+    "description": "When Play Protect blocks or disables an app, verify its source, signature, update state, and management policy without casually disabling protection.",
+    "url": "/en/technology/smartphone/android-play-protect-blocks-app/",
+    "category": "Smartphones",
+    "text": "Google Play Protect Blocks or Disables an App When Play Protect blocks or disables an app, verify its source, signature, update state, and management policy without casually disabling protection. android-play-protect-blocks-app"
+  },
+  {
+    "title": "Android Notification History: Enable, Read, and Troubleshoot It",
+    "description": "Use Android Notification History and understand activation requirements, retention limits, excluded notifications, and manufacturer differences.",
+    "url": "/en/technology/smartphone/android-notification-history-guide/",
+    "category": "Smartphones",
+    "text": "Android Notification History: Enable, Read, and Troubleshoot It Use Android Notification History and understand activation requirements, retention limits, excluded notifications, and manufacturer differences. android-notification-history-guide"
+  },
+  {
+    "title": "How to Force Restart an Android Phone",
+    "description": "Force restart a frozen Android phone and account for manufacturer-specific button combinations safely.",
+    "url": "/en/technology/smartphone/android-force-restart/",
+    "category": "Smartphones",
+    "text": "How to Force Restart an Android Phone Force restart a frozen Android phone and account for manufacturer-specific button combinations safely. android-force-restart"
+  },
+  {
+    "title": "How to Factory Reset an Android Phone Safely",
+    "description": "Prepare account access and backups before erasing an Android phone through Settings.",
+    "url": "/en/technology/smartphone/android-factory-reset/",
+    "category": "Smartphones",
+    "text": "How to Factory Reset an Android Phone Safely Prepare account access and backups before erasing an Android phone through Settings. android-factory-reset"
+  },
+  {
+    "title": "How to Check Android Device Administrators and Management Profiles",
+    "description": "When settings or app removal are blocked, distinguish device administrators, work profiles, VPN or certificates, and parental controls.",
+    "url": "/en/technology/smartphone/android-device-admin-profile-check/",
+    "category": "Smartphones",
+    "text": "How to Check Android Device Administrators and Management Profiles When settings or app removal are blocked, distinguish device administrators, work profiles, VPN or certificates, and parental controls. android-device-admin-profile-check"
+  },
+  {
+    "title": "Android Battery Optimization Stops an App",
+    "description": "When tracking, VPN, health, or sync apps stop, understand battery-optimization exclusions and what to verify before allowing unrestricted background use.",
+    "url": "/en/technology/smartphone/android-battery-optimization-app-stops/",
+    "category": "Smartphones",
+    "text": "Android Battery Optimization Stops an App When tracking, VPN, health, or sync apps stop, understand battery-optimization exclusions and what to verify before allowing unrestricted background use. android-battery-optimization-app-stops"
+  },
+  {
+    "title": "Android App Links Open in a Browser Instead of the App",
+    "description": "When verified URLs open in a browser instead of the app, inspect supported-link settings, domain verification, defaults, and competing apps.",
+    "url": "/en/technology/smartphone/android-app-links-not-opening/",
+    "category": "Smartphones",
+    "text": "Android App Links Open in a Browser Instead of the App When verified URLs open in a browser instead of the app, inspect supported-link settings, domain verification, defaults, and competing apps. android-app-links-not-opening"
+  },
+  {
+    "title": "Advanced Network and Carrier Settings",
+    "description": "Diagnose APN, Private DNS, VoLTE, Wi-Fi calling, dual-SIM, VPN, and other network settings that basic restarts do not resolve.",
+    "url": "/en/technology/smartphone/advanced-network/",
+    "category": "Smartphones",
+    "text": "Advanced Network and Carrier Settings Diagnose APN, Private DNS, VoLTE, Wi-Fi calling, dual-SIM, VPN, and other network settings that basic restarts do not resolve. advanced-network"
+  },
+  {
+    "title": "Smartphone How-To and Troubleshooting",
+    "description": "Step-by-step guides for smartphone controls, search, connectivity, displays, calls, charging, updates, recovery, security, and data transfer.",
+    "url": "/en/technology/smartphone/",
+    "category": "Smartphones",
+    "text": "Smartphone How-To and Troubleshooting Step-by-step guides for smartphone controls, search, connectivity, displays, calls, charging, updates, recovery, security, and data transfer. smartphone"
   }
 ]
