@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "release": "phase131-priority-runtime-enrichment",
   "checked_at": "2026-09-17",
   "basis": "Phase130 Unified Smartphone Intelligence / current GSC priority + current official sources",
@@ -12,45 +12,17 @@
   ],
   "priority_records": [
     {
-      "key": "digno-bx3-softbank-2025",
+      "key": "digno-bx3-a401kc-softbank",
       "model_name": "DIGNO BX3",
-      "model_number": null,
+      "model_number": "A401KC",
       "original_carrier": "SoftBank",
-      "priority_reason": "Existing SolQvia indexed device/carrier page and strong fit for Phase131 exact SIM/eSIM enrichment.",
-      "evidence_level": "carrier_official",
-      "sim_esim": {
-        "physical_sim": "nanoSIM",
-        "esim_supported": true,
-        "factory_reset_esim_erase_option": true,
-        "redownload_after_erase": "SoftBank manual states that a new eSIM download QR code is required after erasing the eSIM.",
-        "contract_after_esim_erase": "SoftBank manual states that erasing the eSIM does not cancel the mobile contract."
-      },
-      "software": {
-        "launch_os": "Android 14",
-        "official_os_upgrade_plan": "Up to two OS upgrades, planned through Android 16",
-        "security_update_plan": "Planned through November 2027"
-      },
-      "carrier_documented_features": {
-        "fiveg": true,
-        "volte": true,
-        "volte_hd_plus": true
-      },
-      "runtime": {
-        "sim_recognition": "not_solqvia_tested",
-        "mobile_data": "not_solqvia_tested",
-        "voice_outgoing": "not_solqvia_tested",
-        "voice_incoming": "not_solqvia_tested",
-        "sms_send": "not_solqvia_tested",
-        "sms_receive": "not_solqvia_tested",
-        "tethering": "not_solqvia_tested",
-        "fiveg_attach": "not_solqvia_tested",
-        "volte_ims_registration": "not_solqvia_tested"
-      },
-      "sources": [
-        "https://www.softbank.jp/mobile/products/smartphone/digno-bx3-cameraless/",
-        "https://www.softbank.jp/mobile/support/manual/smartphone/digno-bx3/detail/141525/",
-        "https://www.softbank.jp/mobile/support/manual/smartphone/digno-bx3/detail/141887/"
-      ]
+      "priority_reason": "Existing indexed device/carrier page and high-value exact SIM/eSIM enrichment target.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {"variant_map": {"A401KC":"DIGNO BX3","A402KC":"DIGNO BX3 Camera-less","A403KC":"DIGNO BX3 Plus"}},
+      "sim_esim": {"physical_sim":"nanoSIM","esim_supported":true,"dual_sim_ui":"SoftBank manual exposes SIM slot 1/2 information"},
+      "software": {"manufacturer_listed_os":["Android 14","Android 15","Android 16"]},
+      "runtime": {"sim_recognition":"not_solqvia_tested","mobile_data":"not_solqvia_tested","voice_outgoing":"not_solqvia_tested","voice_incoming":"not_solqvia_tested","sms_send":"not_solqvia_tested","sms_receive":"not_solqvia_tested","tethering":"not_solqvia_tested","fiveg_attach":"not_solqvia_tested","volte_ims_registration":"not_solqvia_tested"},
+      "sources": ["https://www.softbank.jp/mobile/support/manual/smartphone/digno-bx3/menu/42909/","https://www.softbank.jp/mobile/support/manual/smartphone/digno-bx3/detail/141904/","https://www.kyocera.co.jp/prdct/telecom/office/phone/lineup/smartphone/digno-bx3/"]
     },
     {
       "key": "iphone-18-pro-japan",
@@ -59,69 +31,23 @@
       "market_region": "Japan",
       "priority_reason": "Current high-change eSIM-only device and direct migration/troubleshooting demand.",
       "evidence_level": "manufacturer_official",
-      "sim_esim": {
-        "physical_sim_slots": 0,
-        "physical_sim_supported": false,
-        "esim_supported": true,
-        "active_esim_count": 2,
-        "stored_esim_count": "8_or_more",
-        "dual_esim": true
-      },
-      "activation": {
-        "android_to_iphone": "Apple documents Android-to-iPhone eSIM transfer on supported carriers/devices; in Japan the listed carriers are au and UQ.",
-        "fallback_when_direct_transfer_unavailable": "Carrier activation or a carrier-provided QR code may be required.",
-        "old_android_sim_after_successful_transfer": "Apple states that the Android SIM becomes inactive after transfer."
-      },
-      "software": {
-        "shipping_os": "iOS 27"
-      },
-      "runtime": {
-        "sim_recognition": "not_applicable_physical_sim",
-        "mobile_data": "not_solqvia_tested",
-        "voice_outgoing": "not_solqvia_tested",
-        "voice_incoming": "not_solqvia_tested",
-        "sms_send": "not_solqvia_tested",
-        "sms_receive": "not_solqvia_tested",
-        "tethering": "not_solqvia_tested",
-        "fiveg_attach": "not_solqvia_tested",
-        "volte_ims_registration": "not_solqvia_tested"
-      },
-      "sources": [
-        "https://www.apple.com/jp/iphone-18-pro/specs/",
-        "https://www.apple.com/jp/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
-        "https://support.apple.com/ja-jp/123878"
-      ]
+      "sim_esim": {"physical_sim_slots":0,"physical_sim_supported":false,"esim_supported":true,"active_esim_count":2,"stored_esim_count":"8_or_more","dual_esim":true},
+      "activation": {"android_to_iphone":"carrier/OS dependent; verify supported path before migration","old_android_sim_after_successful_transfer":"inactive after successful supported transfer"},
+      "software": {"shipping_os":"iOS 27"},
+      "runtime": {"mobile_data":"not_solqvia_tested","voice_outgoing":"not_solqvia_tested","voice_incoming":"not_solqvia_tested","sms_send":"not_solqvia_tested","sms_receive":"not_solqvia_tested","tethering":"not_solqvia_tested","fiveg_attach":"not_solqvia_tested","volte_ims_registration":"not_solqvia_tested"},
+      "sources": ["https://www.apple.com/jp/iphone-18-pro/specs/","https://www.apple.com/jp/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/","https://support.apple.com/ja-jp/123878"]
     },
     {
       "key": "iphone-18-pro-max-japan",
       "model_name": "iPhone 18 Pro Max",
       "model_number": null,
       "market_region": "Japan",
-      "priority_reason": "Same eSIM-only migration surface as iPhone 18 Pro; keep as an exact model record rather than assuming by product family.",
+      "priority_reason": "Retain an exact model record rather than assuming family-wide runtime results.",
       "evidence_level": "manufacturer_official",
-      "sim_esim": {
-        "physical_sim_slots": 0,
-        "physical_sim_supported": false,
-        "esim_supported": true,
-        "active_esim_count": 2,
-        "stored_esim_count": "8_or_more",
-        "dual_esim": true
-      },
-      "software": {
-        "shipping_os": "iOS 27"
-      },
-      "runtime": {
-        "mobile_data": "not_solqvia_tested",
-        "voice_outgoing": "not_solqvia_tested",
-        "sms_send": "not_solqvia_tested",
-        "tethering": "not_solqvia_tested",
-        "fiveg_attach": "not_solqvia_tested",
-        "volte_ims_registration": "not_solqvia_tested"
-      },
-      "sources": [
-        "https://www.apple.com/jp/iphone-18-pro/specs/",
-        "https://www.apple.com/jp/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/"
-      ]
+      "sim_esim": {"physical_sim_slots":0,"physical_sim_supported":false,"esim_supported":true,"active_esim_count":2,"stored_esim_count":"8_or_more","dual_esim":true},
+      "software": {"shipping_os":"iOS 27"},
+      "runtime": {"mobile_data":"not_solqvia_tested","voice_outgoing":"not_solqvia_tested","voice_incoming":"not_solqvia_tested","sms_send":"not_solqvia_tested","sms_receive":"not_solqvia_tested","tethering":"not_solqvia_tested","fiveg_attach":"not_solqvia_tested","volte_ims_registration":"not_solqvia_tested"},
+      "sources": ["https://www.apple.com/jp/iphone-18-pro/specs/","https://www.apple.com/jp/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/"]
     },
     {
       "key": "aquos-sense6-sh54b-docomo",
@@ -129,23 +55,13 @@
       "model_number": "SH-54B",
       "original_carrier": "NTTドコモ",
       "priority_reason": "Recent GSC reappearance makes this an observation-priority record.",
-      "evidence_level": "official_presence_confirmed_exact_sim_config_pending",
-      "sim_esim": {
-        "exact_configuration": "pending_primary_source_confirmation"
-      },
-      "runtime": {
-        "sim_recognition": "not_solqvia_tested",
-        "mobile_data": "not_solqvia_tested",
-        "voice_outgoing": "not_solqvia_tested",
-        "sms_send": "not_solqvia_tested",
-        "tethering": "not_solqvia_tested",
-        "fiveg_attach": "not_solqvia_tested",
-        "volte_ims_registration": "not_solqvia_tested"
-      },
-      "sources": [
-        "https://www.docomo.ne.jp/service/initialization/compatible_model/",
-        "https://www.docomo.ne.jp/service/lock/compatible_model/"
-      ]
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {"release_date":"2021-11-11","manufacturer":"SHARP"},
+      "sim_esim": {"physical_sim":"nanoUIM","physical_sim_slots":1,"esim_supported":false,"basis":"Docomo spec lists nanoUIM only; official manual documents one nanoUIM/microSD tray."},
+      "network": {"fiveg_supported":true,"volte":true,"volte_hd_plus":true,"tethering_supported":true,"lte_bands":["B1","B3","B5","B12","B17","B18","B19","B21","B39","B42"],"nr_bands":["n77","n78","n79"]},
+      "software": {"docomo_listed_os":"Android 13","docomo_spec_snapshot":"2024-02-29"},
+      "runtime": {"sim_recognition":"not_solqvia_tested","mobile_data":"not_solqvia_tested","voice_outgoing":"not_solqvia_tested","voice_incoming":"not_solqvia_tested","sms_send":"not_solqvia_tested","sms_receive":"not_solqvia_tested","tethering":"official_capability_only_not_solqvia_tested","fiveg_attach":"not_solqvia_tested","volte_ims_registration":"official_capability_only_not_solqvia_tested"},
+      "sources": ["https://www.docomo.ne.jp/support/product/sh54b/spec.html","https://www.docomo.ne.jp/binary/pdf/support/manual/SH-54B_J_syousai_13.pdf","https://www.sharp.co.jp/products/aquos-sense6/d/"]
     },
     {
       "key": "xperia-1-iii-so51b-docomo",
@@ -153,23 +69,13 @@
       "model_number": "SO-51B",
       "original_carrier": "NTTドコモ",
       "priority_reason": "Recent GSC reappearance makes this an observation-priority record.",
-      "evidence_level": "official_presence_confirmed_exact_sim_config_pending",
-      "sim_esim": {
-        "exact_configuration": "pending_primary_source_confirmation"
-      },
-      "runtime": {
-        "sim_recognition": "not_solqvia_tested",
-        "mobile_data": "not_solqvia_tested",
-        "voice_outgoing": "not_solqvia_tested",
-        "sms_send": "not_solqvia_tested",
-        "tethering": "not_solqvia_tested",
-        "fiveg_attach": "not_solqvia_tested",
-        "volte_ims_registration": "not_solqvia_tested"
-      },
-      "sources": [
-        "https://www.docomo.ne.jp/service/initialization/compatible_model/",
-        "https://www.docomo.ne.jp/service/lock/compatible_model/"
-      ]
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {"release_date":"2021-07-09","manufacturer":"Sony"},
+      "sim_esim": {"physical_sim":"nanoUIM","physical_sim_slots":1,"esim_supported":false,"basis":"Docomo spec lists nanoUIM only; official manual documents one nanoUIM/microSD tray."},
+      "network": {"fiveg_supported":true,"volte":true,"volte_hd_plus":true,"tethering_supported":true},
+      "software": {"docomo_listed_os":"Android 13","docomo_spec_snapshot":"2024-04-30"},
+      "runtime": {"sim_recognition":"not_solqvia_tested","mobile_data":"not_solqvia_tested","voice_outgoing":"not_solqvia_tested","voice_incoming":"not_solqvia_tested","sms_send":"not_solqvia_tested","sms_receive":"not_solqvia_tested","tethering":"official_capability_only_not_solqvia_tested","fiveg_attach":"not_solqvia_tested","volte_ims_registration":"official_capability_only_not_solqvia_tested"},
+      "sources": ["https://www.docomo.ne.jp/support/product/so51b/spec.html","https://www.docomo.ne.jp/binary/pdf/support/manual/SO-51B_J_syousai_11.pdf","https://www.sony.jp/xperia/xperia/xperia1m3/spec_docomo.html"]
     }
   ]
 }
