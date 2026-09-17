@@ -1,0 +1,33 @@
+name: Apply Phase130
+
+on:
+  push:
+    branches:
+      - phase130-unified-intelligence-foundation
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Phase130 branch
+        uses: actions/checkout@v4
+        with:
+          ref: phase130-unified-intelligence-foundation
+          fetch-depth: 0
+      - name: Apply exact Phase130 patch
+        run: python3 .phase130-deploy.py
+      - name: Remove temporary deployment files
+        run: |
+          rm .phase130-deploy.py .phase130-payload.b64
+          rm .github/workflows/apply-phase130.yml
+      - name: Commit Phase130
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Deploy SolQvia Phase130 [skip ci]"
+          git push origin HEAD:phase130-unified-intelligence-foundation
