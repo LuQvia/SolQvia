@@ -21,10 +21,19 @@
       "sim_esim": {
         "physical_sim": "nanoSIM",
         "esim_supported": true,
-        "dual_path": "USIM + eSIM simultaneous-use UI is documented by SoftBank",
-        "qr_activation": true,
-        "manual_activation_code": "documented for DIGNO BX3 Camera-less when QR scanning is unavailable",
-        "delete_behavior": "Factory reset can optionally erase the eSIM; erasing the eSIM does not cancel the contract and a new download QR may be required."
+        "factory_reset_esim_erase_option": true,
+        "redownload_after_erase": "SoftBank manual states that a new eSIM download QR code is required after erasing the eSIM.",
+        "contract_after_esim_erase": "SoftBank manual states that erasing the eSIM does not cancel the mobile contract."
+      },
+      "software": {
+        "launch_os": "Android 14",
+        "official_os_upgrade_plan": "Up to two OS upgrades, planned through Android 16",
+        "security_update_plan": "Planned through November 2027"
+      },
+      "carrier_documented_features": {
+        "fiveg": true,
+        "volte": true,
+        "volte_hd_plus": true
       },
       "runtime": {
         "sim_recognition": "not_solqvia_tested",
@@ -39,7 +48,6 @@
       },
       "sources": [
         "https://www.softbank.jp/mobile/products/smartphone/digno-bx3-cameraless/",
-        "https://www.softbank.jp/mobile/support/manual/smartphone/digno-bx3/menu/42795/",
         "https://www.softbank.jp/mobile/support/manual/smartphone/digno-bx3/detail/141525/",
         "https://www.softbank.jp/mobile/support/manual/smartphone/digno-bx3/detail/141887/"
       ]
@@ -47,7 +55,7 @@
     {
       "key": "iphone-18-pro-japan",
       "model_name": "iPhone 18 Pro",
-      "model_number": "A3713/A3716 family on Apple Japan specifications",
+      "model_number": null,
       "market_region": "Japan",
       "priority_reason": "Current high-change eSIM-only device and direct migration/troubleshooting demand.",
       "evidence_level": "manufacturer_official",
@@ -60,11 +68,12 @@
         "dual_esim": true
       },
       "activation": {
-        "carrier_activation": "supported when the carrier provides it",
-        "quick_transfer": "supported when the carrier provides it",
-        "qr_activation": "supported when provided by the carrier",
-        "carrier_app_activation": "supported when required by the carrier",
-        "android_to_iphone": "carrier/OS dependent; verify the supported path before migration"
+        "android_to_iphone": "Apple documents Android-to-iPhone eSIM transfer on supported carriers/devices; in Japan the listed carriers are au and UQ.",
+        "fallback_when_direct_transfer_unavailable": "Carrier activation or a carrier-provided QR code may be required.",
+        "old_android_sim_after_successful_transfer": "Apple states that the Android SIM becomes inactive after transfer."
+      },
+      "software": {
+        "shipping_os": "iOS 27"
       },
       "runtime": {
         "sim_recognition": "not_applicable_physical_sim",
@@ -86,7 +95,7 @@
     {
       "key": "iphone-18-pro-max-japan",
       "model_name": "iPhone 18 Pro Max",
-      "model_number": "A3713/A3716 family on Apple Japan specifications",
+      "model_number": null,
       "market_region": "Japan",
       "priority_reason": "Same eSIM-only migration surface as iPhone 18 Pro; keep as an exact model record rather than assuming by product family.",
       "evidence_level": "manufacturer_official",
@@ -97,6 +106,9 @@
         "active_esim_count": 2,
         "stored_esim_count": "8_or_more",
         "dual_esim": true
+      },
+      "software": {
+        "shipping_os": "iOS 27"
       },
       "runtime": {
         "mobile_data": "not_solqvia_tested",
