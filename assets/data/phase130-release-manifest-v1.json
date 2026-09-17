@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "release": "phase130-unified-intelligence-foundation",
+  "date": "2026-09-17",
+  "baseline": "Phase129 / 802 indexable URLs",
+  "goal": "Keep the 802-URL index surface unchanged while turning the existing Device Passport into the core unified technical-intelligence layer.",
+  "public_url_changes": {"new_indexable":0,"removed_indexable":0,"canonical_changes":0},
+  "files_added": [
+    "/assets/data/phase130-unified-capability-taxonomy-v1.json",
+    "/assets/data/phase130-source-evidence-registry-v1.json",
+    "/assets/data/phase130-coverage-gap-audit-v1.json",
+    "/assets/data/phase130-release-manifest-v1.json"
+  ],
+  "files_modified": [
+    "/ja/technology/smartphone/device-passport/index.html",
+    "/assets/phase110-device-passport.js",
+    "/assets/phase110-device-passport.css"
+  ]
+}
