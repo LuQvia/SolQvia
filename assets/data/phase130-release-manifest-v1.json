@@ -3,7 +3,7 @@
   "release": "phase130-unified-intelligence-foundation",
   "date": "2026-09-17",
   "baseline": "Phase129 / 802 indexable URLs",
-  "goal": "Keep the 802-URL index surface unchanged while turning the existing Device Passport into the core unified technical-intelligence layer.",
+  "goal": "Keep the 802-URL index surface unchanged while establishing the shared taxonomy, evidence-source registry, and measurable coverage-gap foundation for Unified Smartphone Intelligence.",
   "public_url_changes": {"new_indexable":0,"removed_indexable":0,"canonical_changes":0},
   "files_added": [
     "/assets/data/phase130-unified-capability-taxonomy-v1.json",
@@ -12,8 +12,7 @@
     "/assets/data/phase130-release-manifest-v1.json"
   ],
   "files_modified": [
-    "/ja/technology/smartphone/device-passport/index.html",
-    "/assets/phase110-device-passport.js",
     "/assets/phase110-device-passport.css"
-  ]
+  ],
+  "note": "Public Device Passport UI wiring remains a separate deployment step; this commit establishes the data/governance foundation without changing the 802-URL index surface."
 }
