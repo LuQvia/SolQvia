@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "release": "phase130-unified-intelligence-foundation",
+  "checked_at": "2026-09-17",
+  "basis": "phase110-device-passport-v1.json",
+  "device_records": 550,
+  "smartphone_records": 515,
+  "official_source_records": 490,
+  "real_device_records": 1,
+  "current_integrated_layers": 11,
+  "target_domains": 16,
+  "metrics": [
+    {"id":"release_date","label_ja":"発売日","known":521,"total":550,"coverage_pct":94.7,"domain":"identity"},
+    {"id":"sim_esim_exact","label_ja":"SIM/eSIM構成を具体記録","known":217,"total":550,"coverage_pct":39.5,"domain":"sim_esim"},
+    {"id":"lte_bands","label_ja":"LTE Bandを具体記録","known":490,"total":550,"coverage_pct":89.1,"domain":"radio"},
+    {"id":"nr_bands","label_ja":"5G NR Bandを具体記録","known":476,"total":550,"coverage_pct":86.5,"domain":"radio"},
+    {"id":"four_carrier_fit","label_ja":"4キャリア技術評価あり","known":481,"total":550,"coverage_pct":87.5,"domain":"carrier"},
+    {"id":"dual_sim_exact","label_ja":"型番別Dual SIM構成あり","known":96,"total":550,"coverage_pct":17.5,"domain":"sim_esim"},
+    {"id":"usb_connector","label_ja":"USB/端子情報あり","known":286,"total":550,"coverage_pct":52.0,"domain":"peripheral"},
+    {"id":"charging","label_ja":"充電仕様情報あり","known":446,"total":550,"coverage_pct":81.1,"domain":"peripheral"},
+    {"id":"real_device","label_ja":"SolQvia実機確認あり","known":1,"total":550,"coverage_pct":0.2,"domain":"evidence"}
+  ],
+  "interpretation_ja": [
+    "充足率は品質点ではなく、現在のDBに具体値が入っている割合です。",
+    "未確認を推測で埋めません。",
+    "実機確認はSolQvia自身の確認だけを数え、外部メディアの実機報告とは分離します。"
+  ]
+}
