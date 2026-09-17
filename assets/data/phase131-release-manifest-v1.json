@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "release": "phase131-priority-runtime-enrichment",
+  "date": "2026-09-17",
+  "baseline": "Phase130 / 802 indexable URLs",
+  "goal": "Begin populating Unified Smartphone Intelligence with priority exact-device data without expanding the index surface.",
+  "index_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "completed_in_this_step": [
+    "Created a priority enrichment dataset for GSC-observed and current high-change devices.",
+    "Added exact official SIM/eSIM configuration for DIGNO BX3 and iPhone 18 Pro/Pro Max.",
+    "Kept runtime outcomes unconfirmed where SolQvia has not performed a real-device test.",
+    "Registered AQUOS sense6 SH-54B and Xperia 1 III SO-51B as GSC-priority records requiring exact primary-source SIM configuration confirmation."
+  ],
+  "next_order": [
+    "Confirm exact primary-source SIM/eSIM configuration for SH-54B and SO-51B.",
+    "Extend the priority set from GSC pages/queries rather than generic device volume.",
+    "Add carrier-specific actual-runtime observations only when test conditions are documented.",
+    "Record OS/software version with every runtime result.",
+    "Expose Phase131 enrichment in Device Passport after merge logic and UI labels pass QA.",
+    "Keep external field-test evidence separate from SolQvia real-device evidence."
+  ],
+  "release_gate": [
+    "JSON parse passes.",
+    "No runtime success is inferred from specs or bands.",
+    "No APN/eSIM conflation.",
+    "No third-party test is labeled SolQvia real-device confirmed.",
+    "802-URL observation surface remains unchanged."
+  ]
+}
