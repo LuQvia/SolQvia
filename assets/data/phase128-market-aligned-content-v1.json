@@ -1,0 +1,28 @@
+{
+  "phase": "Phase128",
+  "release": "phase128-market-aligned-content-2026-09-17",
+  "date": "2026-09-17",
+  "strategy": "Market-aligned, search-intent-led expansion without broad template proliferation",
+  "new_indexable_pages": [
+    "/ja/technology/smartphone/iphone-18-pro-japan-esim-only-physical-sim-migration/",
+    "/ja/technology/smartphone/company-owned-smartphone-reset-mdm-frp-activation-lock/"
+  ],
+  "strengthened_existing_pages": [
+    "/ja/technology/smartphone/au-esim-after-activation-mms-au-mail-not-working/",
+    "/ja/technology/smartphone/carrier-switch-network-troubleshooting-checklist/"
+  ],
+  "discovery_updates": [
+    "/ja/",
+    "/ja/technology/smartphone/",
+    "/ja/articles/",
+    "/assets/search-ja-smartphone.json",
+    "/sitemap.xml",
+    "/rss-ja.xml"
+  ],
+  "principles": [
+    "solve technical intent",
+    "official-primary-sources-first",
+    "separate verified/spec/inference",
+    "avoid duplicate URL when existing page matches intent"
+  ]
+}
