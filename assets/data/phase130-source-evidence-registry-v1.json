@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "release": "phase130-unified-intelligence-foundation",
+  "checked_at": "2026-09-17",
+  "purpose_ja": "競合・一次情報の強みを項目単位で吸収しつつ、出典種別を混同しないための情報源レジストリ。本文転載用ではなく、検証対象・更新監視・根拠分類に使用する。",
+  "source_classes": [
+    {"id":"solqvia_real_device","label_ja":"SolQvia実機確認","claim_scope":"実際に確認した端末・OS・回線・SIM・機能に限定","public_label":"実機確認済み"},
+    {"id":"manufacturer_official","label_ja":"メーカー公式","examples":["support.apple.com","support.google.com","store.google.com","samsung.com/jp","jp.sharp","xperia.sony.jp"],"claim_scope":"端末仕様・OS・eSIM・機能要件","public_label":"公式確認済み"},
+    {"id":"carrier_official","label_ja":"通信事業者公式","examples":["docomo.ne.jp","au.com","softbank.jp","network.mobile.rakuten.co.jp"],"claim_scope":"APN・eSIM・MNP・BYOD・回線条件・サービス仕様","public_label":"公式確認済み"},
+    {"id":"mvno_test_lab","label_ja":"MVNO動作確認","examples":["iijmio.jp","mineo.jp"],"claim_scope":"事業者が独自確認した端末動作。SolQvia実機確認とは分離","public_label":"外部動作確認"},
+    {"id":"specialist_field_test","label_ja":"専門メディア実機報告","examples":["garumax.com","orefolder.jp"],"claim_scope":"第三者の実機挙動。端末・OS・回線条件を保持して事実確認の手掛かりにする","public_label":"外部実機報告"},
+    {"id":"frequency_spec_db","label_ja":"周波数・仕様DB","examples":["kimovil.com"],"claim_scope":"Band・地域型番などの探索補助。最終仕様はメーカー/キャリア一次情報で再確認","public_label":"仕様DB参照"},
+    {"id":"tech_news","label_ja":"技術ニュース・専門媒体","examples":["itmedia.co.jp/mobile","k-tai.watch.impress.co.jp"],"claim_scope":"制度変更・新機能・発表把握。仕様断定は一次情報へ遡る","public_label":"外部情報"},
+    {"id":"search_demand","label_ja":"SolQvia Search Console","examples":["Google Search Console export"],"claim_scope":"ユーザー需要・検索文言・改善優先順位。技術事実の根拠にはしない","public_label":"検索需要"},
+    {"id":"user_report","label_ja":"ユーザー報告","examples":["SolQvia field report","community/Q&A"],"claim_scope":"未審査の観測情報。個人情報を収集せず、再現確認前は断定に使用しない","public_label":"未審査ユーザー報告"}
+  ],
+  "collection_rules_ja": [
+    "競合ページ本文を複製しない。項目・観測条件・出典URL・確認日を記録する。",
+    "第三者の実機結果をSolQvia実機確認済みにしない。",
+    "仕様DBのBand一致だけで通話・データ通信・5G・VoLTEを保証しない。",
+    "メーカー仕様とキャリアBYOD条件が競合する場合は両方を表示し、適用範囲を分ける。",
+    "OS/ソフトウェア更新で結果が変わり得る情報には確認版を保存する。"
+  ],
+  "verified_examples_2026_09_17": [
+    {"source":"IIJmio","url":"https://www.iijmio.jp/hdd/devices/","role":"MVNO動作確認端末DB"},
+    {"source":"mineo","url":"https://mineo.jp/device/devicelist/ng/","role":"動作不可・条件付き端末DB"},
+    {"source":"Kimovil","url":"https://www.kimovil.com/en/frequency-checker/JP","role":"日本の周波数/Band照合"},
+    {"source":"NTTドコモ","url":"https://www.docomo.ne.jp/support/for_simfree/apn.html","role":"他社Android APN設定"},
+    {"source":"au","url":"https://www.au.com/support/service/mobile/procedure/simcard/unlocked/","role":"他社端末/SIM利用条件"},
+    {"source":"楽天モバイル","url":"https://network.mobile.rakuten.co.jp/product/byod/","role":"OS/SW版を含むBYOD確認"},
+    {"source":"Apple","url":"https://support.apple.com/ja-jp/123878","role":"Android→iPhone eSIM転送"},
+    {"source":"Google","url":"https://support.google.com/pixelphone/answer/16115951?hl=ja","role":"新端末へのSIM/eSIM移行"},
+    {"source":"Samsung","url":"https://www.samsung.com/jp/support/mobile-devices/galaxy-esim-and-supported-network-carriers/","role":"eSIM設定・転送・対応キャリア"}
+  ]
+}

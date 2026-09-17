@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "release": "phase130-unified-intelligence-foundation",
+  "checked_at": "2026-09-17",
+  "purpose_ja": "スマートフォンの仕様・回線・設定・実動作・安全性・企業管理・周辺機器・トラブルを、同じ証拠モデルで統合するための共通項目定義。",
+  "principles_ja": [
+    "SIM認識とデータ通信・音声通話・SMSの実用可否を分離する。",
+    "APN設定とeSIMプロファイル設定を分離する。",
+    "Band一致をキャリア動作保証として扱わない。",
+    "端末名だけでなく型番・販売地域・販売元・OS/ソフトウェア版を保持する。",
+    "公式仕様、SolQvia実機、外部実機報告、ユーザー報告を混同しない。",
+    "確認できない項目は未確認のまま保持する。"
+  ],
+  "domains": [
+    {"id":"identity","label_ja":"端末識別","fields":["model_name","model_number","brand","device_class","release_date","original_carrier","market_region","sales_channel"]},
+    {"id":"region_regulatory","label_ja":"地域差・法規","fields":["domestic_or_overseas","regional_variant","technical_conformity","felica_osaifu","sim_lock_state","network_restriction_scope"]},
+    {"id":"sim_esim","label_ja":"SIM/eSIM","fields":["physical_sim_slots","sim_size","esim_supported","stored_esim_count","active_esim_count","dual_esim","dsds_dsdv","physical_to_esim_conversion"]},
+    {"id":"esim_activation","label_ja":"eSIM設定・移行","fields":["carrier_activation","quick_transfer","android_to_iphone","iphone_to_android","android_to_android","galaxy_instant_transfer","qr_activation","manual_smdp_activation","old_sim_invalidation_timing"]},
+    {"id":"radio","label_ja":"無線・Band","fields":["lte_bands","nr_bands","n79","mmwave","carrier_aggregation","5g_sa","network_generation_limits"]},
+    {"id":"carrier_fit","label_ja":"キャリア別技術適合","fields":["docomo_fit","au_fit","softbank_fit","rakuten_fit","official_byod_status","required_os_sw_version"]},
+    {"id":"runtime","label_ja":"実動作","fields":["sim_recognition","mobile_data","voice_outgoing","voice_incoming","sms_send","sms_receive","tethering","fiveg_attach","volte_ims_registration","wifi_calling"]},
+    {"id":"messaging","label_ja":"メッセージ・通話サービス","fields":["rcs_registration","rcs_send_receive","otp_sms","plus_message","rakuten_link","carrier_mail","fallback_behavior"]},
+    {"id":"apn_setup","label_ja":"APN・回線設定","fields":["apn_auto","apn_manual","apn_profile_ios","ipv4_ipv6","carrier_config","reboot_required","line_switch_required"]},
+    {"id":"software","label_ja":"OS・ソフトウェア","fields":["tested_os","tested_firmware","latest_supported_os","security_update_policy","carrier_settings_version","known_update_regression"]},
+    {"id":"troubleshooting","label_ja":"不具合・エラー","fields":["exact_error_text","trigger_condition","root_cause","safe_first_step","recovery_sequence","factory_reset_needed","official_incident_reference"]},
+    {"id":"used_device","label_ja":"中古・所有権・安全","fields":["imei_lookup_route","network_restriction","activation_lock","google_frp","mdm_supervision","repair_history","battery_condition","parts_warning"]},
+    {"id":"enterprise","label_ja":"法人・MDM","fields":["company_owned","supervised","android_enterprise","efrp","activation_lock_bypass","zero_touch","apple_business_manager","wipe_esim_behavior"]},
+    {"id":"peripheral","label_ja":"USB-C・周辺機器","fields":["connector","usb_speed","display_output","usb_storage","usb_audio","ethernet","pd_pps","reverse_power","desktop_mode"]},
+    {"id":"satellite_emergency","label_ja":"衛星・緊急通信","fields":["native_satellite","carrier_direct_to_device","sos","messaging","location_share","data","voice","region_contract_limits"]},
+    {"id":"evidence","label_ja":"証拠・来歴","fields":["source_type","source_url","source_checked_at","solqvia_real_device","external_real_device","user_report","test_conditions","confidence_scope","open_questions"]}
+  ]
+}
