@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "release": "phase129-home-ux-evidence-2026-09-17",
+  "purpose": "Prioritize maintenance of the ~802-page SolQvia index surface without treating all pages as equally volatile.",
+  "tiers": [
+    {
+      "tier": "A",
+      "label": "高頻度確認",
+      "cadence": "変更検知時 + 月次",
+      "topics": [
+        "APN",
+        "MNP",
+        "eSIM",
+        "carrier procedures",
+        "new devices",
+        "activation",
+        "OS/carrier-specific errors"
+      ],
+      "reason": "Carrier procedures, product launches and provisioning behavior can change quickly."
+    },
+    {
+      "tier": "B",
+      "label": "定期確認",
+      "cadence": "四半期 + 仕様変更時",
+      "topics": [
+        "carrier compatibility",
+        "bands",
+        "VoLTE/IMS",
+        "OS/security lifecycle",
+        "USB-C",
+        "repair/service"
+      ],
+      "reason": "Specifications are relatively stable but device/carrier support can change."
+    },
+    {
+      "tier": "C",
+      "label": "低頻度確認",
+      "cadence": "年次 + 重大変更時",
+      "topics": [
+        "evergreen troubleshooting",
+        "basic operation",
+        "concept/reference guides"
+      ],
+      "reason": "Core diagnostic logic changes less frequently; update when platform behavior changes."
+    }
+  ],
+  "publicationRule": "Tier is an editorial maintenance priority, not a quality score or search-ranking label.",
+  "indexSurfaceTarget": 802
+}

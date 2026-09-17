@@ -1,0 +1,15 @@
+{
+  "phase": "Phase129",
+  "date": "2026-09-17",
+  "baseline": "Phase128 Market-Aligned Content",
+  "indexPolicy": "No index-surface expansion or contraction",
+  "changes": [
+    "JA homepage information hierarchy cleanup",
+    "JA UI Menu label localization",
+    "Homepage evidence-level legend",
+    "Standard evidence summary on four Phase128 focus pages",
+    "Maintenance tier policy data added"
+  ],
+  "expectedIndexableUrls": 802,
+  "newIndexableUrls": 0
+}
