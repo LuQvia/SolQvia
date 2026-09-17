@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "release": "phase131-priority-runtime-enrichment",
+  "checked_at": "2026-09-17",
+  "basis": "Phase130 Unified Smartphone Intelligence / current GSC priority + current official sources",
+  "principles": [
+    "Do not infer runtime success from SIM support or band overlap.",
+    "Keep SIM recognition, mobile data, voice, SMS, tethering, 5G and VoLTE/IMS as separate outcomes.",
+    "Keep APN configuration separate from eSIM profile activation.",
+    "Unknown values remain unknown until a primary source or SolQvia real-device test confirms them.",
+    "Third-party field tests are never labeled as SolQvia real-device evidence."
+  ],
+  "priority_records": [
+    {
+      "key": "digno-bx3-softbank-2025",
+      "model_name": "DIGNO BX3",
+      "model_number": null,
+      "original_carrier": "SoftBank",
+      "priority_reason": "Existing SolQvia indexed device/carrier page and strong fit for Phase131 exact SIM/eSIM enrichment.",
+      "evidence_level": "carrier_official",
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "esim_supported": true,
+        "dual_path": "USIM + eSIM simultaneous-use UI is documented by SoftBank",
+        "qr_activation": true,
+        "manual_activation_code": "documented for DIGNO BX3 Camera-less when QR scanning is unavailable",
+        "delete_behavior": "Factory reset can optionally erase the eSIM; erasing the eSIM does not cancel the contract and a new download QR may be required."
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.softbank.jp/mobile/products/smartphone/digno-bx3-cameraless/",
+        "https://www.softbank.jp/mobile/support/manual/smartphone/digno-bx3/menu/42795/",
+        "https://www.softbank.jp/mobile/support/manual/smartphone/digno-bx3/detail/141525/",
+        "https://www.softbank.jp/mobile/support/manual/smartphone/digno-bx3/detail/141887/"
+      ]
+    },
+    {
+      "key": "iphone-18-pro-japan",
+      "model_name": "iPhone 18 Pro",
+      "model_number": "A3713/A3716 family on Apple Japan specifications",
+      "market_region": "Japan",
+      "priority_reason": "Current high-change eSIM-only device and direct migration/troubleshooting demand.",
+      "evidence_level": "manufacturer_official",
+      "sim_esim": {
+        "physical_sim_slots": 0,
+        "physical_sim_supported": false,
+        "esim_supported": true,
+        "active_esim_count": 2,
+        "stored_esim_count": "8_or_more",
+        "dual_esim": true
+      },
+      "activation": {
+        "carrier_activation": "supported when the carrier provides it",
+        "quick_transfer": "supported when the carrier provides it",
+        "qr_activation": "supported when provided by the carrier",
+        "carrier_app_activation": "supported when required by the carrier",
+        "android_to_iphone": "carrier/OS dependent; verify the supported path before migration"
+      },
+      "runtime": {
+        "sim_recognition": "not_applicable_physical_sim",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.apple.com/jp/iphone-18-pro/specs/",
+        "https://www.apple.com/jp/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
+        "https://support.apple.com/ja-jp/123878"
+      ]
+    },
+    {
+      "key": "iphone-18-pro-max-japan",
+      "model_name": "iPhone 18 Pro Max",
+      "model_number": "A3713/A3716 family on Apple Japan specifications",
+      "market_region": "Japan",
+      "priority_reason": "Same eSIM-only migration surface as iPhone 18 Pro; keep as an exact model record rather than assuming by product family.",
+      "evidence_level": "manufacturer_official",
+      "sim_esim": {
+        "physical_sim_slots": 0,
+        "physical_sim_supported": false,
+        "esim_supported": true,
+        "active_esim_count": 2,
+        "stored_esim_count": "8_or_more",
+        "dual_esim": true
+      },
+      "runtime": {
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "tethering": "not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.apple.com/jp/iphone-18-pro/specs/",
+        "https://www.apple.com/jp/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/"
+      ]
+    },
+    {
+      "key": "aquos-sense6-sh54b-docomo",
+      "model_name": "AQUOS sense6",
+      "model_number": "SH-54B",
+      "original_carrier": "NTTドコモ",
+      "priority_reason": "Recent GSC reappearance makes this an observation-priority record.",
+      "evidence_level": "official_presence_confirmed_exact_sim_config_pending",
+      "sim_esim": {
+        "exact_configuration": "pending_primary_source_confirmation"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "tethering": "not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.docomo.ne.jp/service/initialization/compatible_model/",
+        "https://www.docomo.ne.jp/service/lock/compatible_model/"
+      ]
+    },
+    {
+      "key": "xperia-1-iii-so51b-docomo",
+      "model_name": "Xperia 1 III",
+      "model_number": "SO-51B",
+      "original_carrier": "NTTドコモ",
+      "priority_reason": "Recent GSC reappearance makes this an observation-priority record.",
+      "evidence_level": "official_presence_confirmed_exact_sim_config_pending",
+      "sim_esim": {
+        "exact_configuration": "pending_primary_source_confirmation"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "tethering": "not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.docomo.ne.jp/service/initialization/compatible_model/",
+        "https://www.docomo.ne.jp/service/lock/compatible_model/"
+      ]
+    }
+  ]
+}
