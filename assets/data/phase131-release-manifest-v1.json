@@ -1,7 +1,7 @@
 {
   "schema_version": "1.1",
   "release": "phase131-priority-runtime-enrichment",
-  "date": "2026-09-17",
+  "date": "2026-09-18",
   "baseline": "Phase130 / 802 indexable URLs",
   "goal": "Populate Unified Smartphone Intelligence with exact primary-source device data and separate SolQvia-owned field evidence without expanding the index surface.",
   "index_surface": {
@@ -11,21 +11,18 @@
     "canonical_policy_changes": 0
   },
   "completed_in_this_step": [
-    "Created the Phase131 priority enrichment dataset for GSC-observed and high-change devices.",
-    "Confirmed DIGNO BX3 model number A401KC and separated the A402KC/A403KC variants.",
-    "Confirmed SH-54B exact SIM configuration as single nanoUIM with no eSIM support from Docomo/Sharp primary sources.",
-    "Confirmed SO-51B exact SIM configuration as single nanoUIM with no eSIM support from Docomo/Sony primary sources.",
-    "Retained iPhone 18 Pro / Pro Max Japan as eSIM-only records while leaving runtime behavior unconfirmed.",
-    "Created a separate SolQvia real-device evidence dataset for KY-41C Y!mobile/SoftBank eSIM profile configuration and SIM-information recognition.",
-    "Kept APN, data, voice, SMS, tethering, 5G attachment and VoLTE/IMS runtime results unconfirmed unless specifically tested."
+    "Created priority enrichment records for DIGNO BX3 A401KC, iPhone 18 Pro/Pro Max Japan, AQUOS sense6 SH-54B and Xperia 1 III SO-51B.",
+    "Confirmed exact official SIM/eSIM configuration for SH-54B and SO-51B without inferring runtime behavior.",
+    "Stored KY-41C Y!mobile/SoftBank eSIM-profile recognition as SolQvia-owned real-device evidence, separate from official/spec data.",
+    "Wired Phase131 official detail, runtime matrix, evidence labels and SolQvia real-device evidence into the existing Japanese and English Device Passport URLs.",
+    "Added the Phase130 16-domain foundation and coverage display to the public Device Passport without creating new indexable URLs."
   ],
   "next_order": [
-    "Merge Phase131 exact-device facts into the Device Passport data layer without overwriting unknown runtime fields.",
-    "Surface official capability versus SolQvia real-device evidence as separate UI labels.",
-    "Extend the priority set from GSC pages/queries rather than generic device volume.",
-    "Add carrier-specific runtime observations only when exact device, OS/software, carrier, SIM type and test date are documented.",
-    "Add external MVNO/field-test evidence as a separate source class, never as SolQvia real-device evidence.",
-    "Run static QA and confirm the 802-URL observation surface remains unchanged before any main-branch merge."
+    "Merge the validated Phase131 branch into main.",
+    "Verify the deployment workflow and public Device Passport load after merge.",
+    "Extend exact-model enrichment from current GSC pages/queries.",
+    "Add external field-test evidence as a separate evidence class only when test conditions and source dates are recorded.",
+    "Expand SolQvia-owned real-device tests with OS/software version, carrier, SIM/eSIM type and per-function results."
   ],
   "release_gate": [
     "JSON parse passes.",
@@ -34,5 +31,14 @@
     "No third-party test is labeled SolQvia real-device confirmed.",
     "Exact model variants are not merged when official sources distinguish them.",
     "802-URL observation surface remains unchanged."
-  ]
+  ],
+  "static_qa": {
+    "json_parse": "PASS",
+    "enrichment_js_syntax": "PASS",
+    "ja_device_passport_markers": "PASS",
+    "en_device_passport_markers": "PASS",
+    "phase131_css_marker": "PASS",
+    "compare_to_main": "7 files changed / existing URLs only",
+    "index_surface_target": 802
+  }
 }
