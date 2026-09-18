@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "release": "phase134-per-function-evidence-matrix",
+  "date": "2026-09-18",
+  "baseline": "Phase133 main 84fdeb3633098cfd2695218f77d47daff0b80bda",
+  "goal": "Separate runtime functions and evidence classes in Device Passport without changing the 802-URL SEO observation surface.",
+  "changes": [
+    "Added per-function evidence matrix to Device Passport.",
+    "Separated specification/official capability, external field-test evidence, and SolQvia real-device evidence into independent columns.",
+    "Kept voice direction and SMS send/receive unverified when source data does not separate them.",
+    "Added responsive mobile card layout for the evidence matrix.",
+    "Wired the matrix into Japanese and English Device Passport pages."
+  ],
+  "functions": [
+    "eSIM profile configuration",
+    "device-side SIM information recognition",
+    "SIM recognition",
+    "mobile data",
+    "voice outgoing",
+    "voice incoming",
+    "voice direction-unspecified",
+    "SMS send",
+    "SMS receive",
+    "SMS direction-unspecified",
+    "tethering",
+    "5G attach",
+    "VoLTE/IMS registration"
+  ],
+  "evidence_classes": [
+    "specification_or_official",
+    "external_field_test",
+    "solqvia_real_device"
+  ],
+  "qa": {
+    "branch_ahead_by": 4,
+    "branch_behind_by": 0,
+    "ja_phase134_css": true,
+    "ja_phase134_js": true,
+    "en_phase134_css": true,
+    "en_phase134_js": true,
+    "canonical_count_ja": 1,
+    "canonical_count_en": 1,
+    "phase134_js_new_indexable_links": 0,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "interpretation": [
+    "No result is promoted from generic voice to outgoing/incoming unless the source separates direction.",
+    "No result is promoted from generic SMS to send/receive unless the source separates direction.",
+    "Third-party field tests remain distinct from SolQvia-owned real-device evidence.",
+    "No record means no evidence record is currently attached; it does not mean unsupported."
+  ],
+  "next_order": [
+    "Increase exact-model priority enrichment for GSC-observed devices.",
+    "Expand external field-test matrices when stable source data is available.",
+    "Expand SolQvia-owned real-device evidence with OS, firmware, carrier, SIM/eSIM and per-function conditions.",
+    "Continue normalizing current carrier-only flagship records without adding thin indexable pages."
+  ]
+}
