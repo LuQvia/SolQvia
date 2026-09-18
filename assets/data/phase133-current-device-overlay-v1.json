@@ -594,7 +594,8 @@
           "call_other_line_profile": "carrier_condition_required",
           "data_profile": "one_default_data_line",
           "fiveg_profile": "carrier_condition_required"
-        }
+        },
+        "exact_dual_mixed": true
       },
       "peripheral": {
         "port_connector": "usb_c",
