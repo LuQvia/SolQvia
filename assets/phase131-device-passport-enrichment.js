@@ -12,7 +12,7 @@
   const status=v=>({confirmed:t('実機確認済み','Real-device confirmed'),not_tested:t('未検証','Not tested'),not_solqvia_tested:t('SolQvia実機未確認','Not tested by SolQvia'),not_applicable_physical_sim:t('物理SIM対象外','Physical SIM not applicable'),official_capability_only_not_solqvia_tested:t('公式機能あり／実動作未確認','Official capability / runtime unverified')})[v]||String(v||t('未確認','Unverified'));
   let priority={priority_records:[]},realdb={records:[]},externaldb={records:[]},coverage={metrics:[]},taxonomy={domains:[]};
   const load=u=>fetch(u).then(r=>r.ok?r.json():Promise.reject(new Error(u)));
-  const findPriority=(name,number)=>priority.priority_records.find(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
+  const findPriority=(name,number,carrierName)=>priority.priority_records.find(x=>(((x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name))&&(!x.original_carrier||norm(x.original_carrier)===norm(carrierName))))||priority.priority_records.find(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
   const findReal=(name,number)=>realdb.records.filter(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
   const findExternal=name=>externaldb.records.filter(x=>(x.model_names||[]).some(n=>norm(n)===norm(name)));
   const objGrid=obj=>obj?Object.entries(obj).filter(([,v])=>v!==null&&v!==undefined).map(([k,v])=>`<div><b>${esc(label[k]||k.replaceAll('_',' '))}</b><span>${esc(fmt(v))}</span></div>`).join(''):'';
@@ -25,13 +25,13 @@
     try{
       const name=detail.querySelector('.p110-passport-head h2')?.textContent?.trim();
       const meta=detail.querySelector('.p110-passport-head p:not(.eyebrow)')?.textContent||'';
-      const number=meta.split('/')[0].trim();
+      const partsMeta=meta.split('/');const number=partsMeta[0].trim();const carrierName=partsMeta.slice(1).join('/').trim();
       if(!name)return;
       const signature=norm(name)+'|'+norm(number);
       if(detail.dataset.p131Record===signature&&detail.querySelector('[data-p131-added]'))return;
       detail.querySelectorAll('[data-p131-added]').forEach(n=>n.remove());
       detail.dataset.p131Record=signature;
-      const ex=findPriority(name,number);const real=findReal(name,number);const external=findExternal(name);
+      const ex=findPriority(name,number,carrierName);const real=findReal(name,number);const external=findExternal(name);
       const firstSection=detail.querySelector('.p110-section');
       if(!firstSection)return;
       const parts=[];
