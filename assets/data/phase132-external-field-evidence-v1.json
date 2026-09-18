@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "release": "phase132-evidence-coverage-expansion",
+  "checked_at": "2026-09-18",
+  "purpose": "External field-test evidence is stored separately from SolQvia real-device evidence and manufacturer/carrier specifications.",
+  "records": [
+    {
+      "model_names": [
+        "iPhone 17e"
+      ],
+      "source_class": "mvno_test_lab",
+      "source_name": "IIJmio",
+      "tested_at": "2026-03-12",
+      "device_variant": "SIMフリー版",
+      "results": {
+        "音声SIM（タイプD/A）": {
+          "voice": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        },
+        "音声eSIM（タイプD/A）": {
+          "voice": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        },
+        "データeSIM（ドコモ網）": {
+          "voice": "not_applicable",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        }
+      },
+      "notes": [
+        "IIJmio独自調査。保証・サポートを意味しない。",
+        "データeSIM（ドコモ網）には掲載時点の注記あり。",
+        "IIJmioのeSIMクイック転送は掲載時点で非対応。"
+      ],
+      "source_url": "https://www.iijmio.jp/info/iij/1772512940.html"
+    },
+    {
+      "model_names": [
+        "Galaxy S26",
+        "Galaxy S26+",
+        "Galaxy S26 Ultra"
+      ],
+      "source_class": "mvno_test_lab",
+      "source_name": "IIJmio",
+      "tested_at": "2026-03-12",
+      "device_variant": "SIMフリー版",
+      "results": {
+        "音声SIM（タイプD/A）": {
+          "voice": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        },
+        "音声eSIM（タイプD/A）": {
+          "voice": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        },
+        "データeSIM（ドコモ網）": {
+          "voice": "not_applicable",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        }
+      },
+      "notes": [
+        "IIJmio独自調査。保証・サポートを意味しない。",
+        "SIMロック解除不要として掲載。"
+      ],
+      "source_url": "https://www.iijmio.jp/info/iij/1773100556.html"
+    },
+    {
+      "model_names": [
+        "AQUOS R11"
+      ],
+      "source_class": "mvno_test_lab",
+      "source_name": "IIJmio",
+      "tested_at": "2026-07-10",
+      "device_variant": "SIMフリー版",
+      "results": {
+        "音声SIM（タイプD/A）": {
+          "voice": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        },
+        "音声eSIM（タイプD/A）": {
+          "voice": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        },
+        "データeSIM（ドコモ網）": {
+          "voice": "not_applicable",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        }
+      },
+      "notes": [
+        "IIJmio独自調査。保証・サポートを意味しない。",
+        "SIMロック解除不要として掲載。"
+      ],
+      "source_url": "https://www.iijmio.jp/info/iij/1783483613.html"
+    }
+  ]
+}
