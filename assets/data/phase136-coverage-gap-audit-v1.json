@@ -1,0 +1,108 @@
+{
+  "schema_version": "1.0",
+  "release": "phase136-arrows-alpha2-normalization",
+  "checked_at": "2026-09-18",
+  "basis": "Phase135 coverage audit + Phase136 arrows Alpha2 exact-model sales-channel normalization",
+  "device_records": 562,
+  "smartphone_records": 527,
+  "official_source_records": 502,
+  "real_device_records": 1,
+  "current_integrated_layers": 16,
+  "metrics": [
+    {
+      "id": "release_date",
+      "label_ja": "発売日",
+      "known": 533,
+      "total": 562,
+      "coverage_pct": 94.8,
+      "domain": "identity"
+    },
+    {
+      "id": "sim_esim_exact",
+      "label_ja": "SIM/eSIM構成を具体記録",
+      "known": 233,
+      "total": 562,
+      "coverage_pct": 41.5,
+      "domain": "sim_esim"
+    },
+    {
+      "id": "lte_bands",
+      "label_ja": "LTE Bandを具体記録",
+      "known": 502,
+      "total": 562,
+      "coverage_pct": 89.3,
+      "domain": "radio"
+    },
+    {
+      "id": "nr_bands",
+      "label_ja": "5G NR Bandを具体記録",
+      "known": 488,
+      "total": 562,
+      "coverage_pct": 86.8,
+      "domain": "radio"
+    },
+    {
+      "id": "four_carrier_fit",
+      "label_ja": "4キャリア別条件情報あり",
+      "known": 493,
+      "total": 562,
+      "coverage_pct": 87.7,
+      "domain": "carrier_fit"
+    },
+    {
+      "id": "dual_sim_exact",
+      "label_ja": "型番別Dual SIM構成あり",
+      "known": 112,
+      "total": 562,
+      "coverage_pct": 19.9,
+      "domain": "sim_esim"
+    },
+    {
+      "id": "usb_connector",
+      "label_ja": "USB/端子情報あり",
+      "known": 298,
+      "total": 562,
+      "coverage_pct": 53,
+      "domain": "peripheral"
+    },
+    {
+      "id": "charging",
+      "label_ja": "充電仕様情報あり",
+      "known": 458,
+      "total": 562,
+      "coverage_pct": 81.5,
+      "domain": "peripheral"
+    },
+    {
+      "id": "external_field_test",
+      "label_ja": "外部実機動作確認を構造化",
+      "known": 22,
+      "total": 562,
+      "coverage_pct": 3.9,
+      "domain": "evidence"
+    },
+    {
+      "id": "real_device",
+      "label_ja": "SolQvia実機確認あり",
+      "known": 1,
+      "total": 562,
+      "coverage_pct": 0.2,
+      "domain": "evidence"
+    }
+  ],
+  "phase136_delta": {
+    "added_exact_sales_channel_records": 5,
+    "added_models": [
+      "arrows Alpha2 F-51G / NTTドコモ",
+      "arrows Alpha2 M10 / au Flex Style",
+      "arrows Alpha2 M10 / 楽天モバイル",
+      "arrows Alpha2 M10 / SoftBank・Y!mobile Free Style",
+      "arrows Alpha2 M10 / SIMフリー"
+    ]
+  },
+  "interpretation_ja": [
+    "同じM10でも販売経路を別レコードにし、証拠・販売元・回線条件を混同しません。",
+    "公式仕様にある機能と実際の通信成功は別判定です。",
+    "Phase136は新規index URLを作らず、Device Passport内部データを強化します。"
+  ]
+}
