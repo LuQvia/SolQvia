@@ -58,10 +58,11 @@
   }
   Promise.all([
     load('/assets/data/phase131-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
+    load('/assets/data/phase136-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase131-solqvia-real-device-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase132-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase135-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase135-coverage-gap-audit-v1.json').catch(()=>load('/assets/data/phase133-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase132-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase130-coverage-gap-audit-v1.json')).catch(()=>({metrics:[]})),
     load('/assets/data/phase130-unified-capability-taxonomy-v1.json').catch(()=>({domains:[]}))
-  ]).then(([p,r,ext132,ext135,c,tax])=>{priority=p;realdb=r;externaldb={records:[...(ext132.records||[]),...(ext135.records||[])]};coverage=c;taxonomy=tax;foundation();augment();new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false})});
+  ]).then(([p131,p136,r,ext132,ext135,c,tax])=>{priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[])]};realdb=r;externaldb={records:[...(ext132.records||[]),...(ext135.records||[])]};coverage=c;taxonomy=tax;foundation();augment();new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false})});
 })();
