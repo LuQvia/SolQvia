@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "release": "phase140-pixel10a-normalization",
+  "checked_at": "2026-09-18",
+  "purpose": "Record au's official BYOD runtime evidence for Japanese Pixel 10a GQ57S while keeping it separate from SolQvia-owned real-device evidence.",
+  "records": [
+    {
+      "model_names": [
+        "Google Pixel 10a"
+      ],
+      "model_numbers": [
+        "GQ57S"
+      ],
+      "source_class": "carrier_byod_test",
+      "source_name": "au",
+      "tested_at": "2026-09-18",
+      "verified_os": "Android 16",
+      "device_variant": "Google Pixel 10a GQ57S",
+      "results": {
+        "au Nano ICカード 05/05 HALF": {
+          "voice": "confirmed",
+          "sms": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed",
+          "fiveg_sa": "confirmed",
+          "satellite_direct": "confirmed"
+        },
+        "eSIM": {
+          "voice": "confirmed",
+          "sms": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed",
+          "fiveg_sa": "confirmed",
+          "satellite_direct": "confirmed"
+        }
+      },
+      "notes": [
+        "au公式の他社端末動作確認。SolQvia実機確認ではない。",
+        "通話は発信/着信、SMSは送信/受信に分離されていないため、個別方向へ推測展開しない。",
+        "5G SAと衛星直接通信は通常5G/通常データ通信とは別項目として保持する。",
+        "動作確認時OSはAndroid 16。"
+      ],
+      "source_url": "https://www.au.com/mobile/product/sim/devices/",
+      "source_urls": [
+        "https://www.au.com/mobile/product/sim/devices/"
+      ]
+    }
+  ]
+}
