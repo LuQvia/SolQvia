@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "release": "phase143-galaxy-s26-family-normalization",
+  "date": "2026-09-18",
+  "baseline": "Phase142 main d24676c03baf0f6726087561275b8b1e163aa229",
+  "goal": "Normalize the Japanese Galaxy S26 / S26+ / S26 Ultra family by exact sales model and tighten evidence scoping without changing the 802-URL SEO observation surface.",
+  "index_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "dataset_after_merge": {
+    "device_records": 572,
+    "smartphone_records": 537,
+    "official_source_records": 512,
+    "solqvia_real_device_records": 1
+  },
+  "normalized_exact_models": [
+    "SC-51G",
+    "SCG36",
+    "SM-S942Z",
+    "SM-S942C",
+    "SM-S942Q",
+    "SC-52G",
+    "SCG38",
+    "SM-S947Z",
+    "SM-S947C",
+    "SM-S947Q",
+    "SC-53G",
+    "SCG37",
+    "SM-S948Z",
+    "SM-S948C",
+    "SM-S948Q"
+  ],
+  "corrected_existing_records": 12,
+  "added_exact_model_records": [
+    "SM-S942Q",
+    "SM-S947Q",
+    "SM-S948Q"
+  ],
+  "evidence_rules": [
+    "SIM recognition, mobile data, voice, SMS, tethering, 5G and VoLTE/IMS remain separate dimensions.",
+    "au official operation checks confirm single-SIM/eSIM voice, SMS, data, tethering and 5G SA for the S26 family on the stated OS, but do not confirm two-or-more-line simultaneous use.",
+    "SoftBank's dual-line service device list confirms at least one successful voice/data/SMS use for listed S26-family devices on Android 16, but does not prove every runtime condition or exact simultaneous-SIM architecture.",
+    "Rakuten Mobile and NTT Docomo exact specifications explicitly identify nanoSIM/eSIM and supported dual-SIM patterns for their exact models.",
+    "Samsung.com/open Q variants use exact manufacturer specifications; generic SIM-free external field tests remain separate from carrier variants.",
+    "Third-party field tests are never promoted to SolQvia real-device evidence."
+  ],
+  "engineering": [
+    "Add Phase143 current-device overlay and priority enrichment to the existing Device Passport merge chain.",
+    "Scope generic SIM-free external field evidence to SIM-free/open records unless an exact model number is present.",
+    "Load Phase143 data in the per-function evidence matrix.",
+    "Update JA/EN Device Passport release copy without changing title, canonical or indexed URL count."
+  ],
+  "qa_targets": [
+    "All Phase143 JSON parses and record IDs/model numbers are unique.",
+    "Phase110/131/134 JavaScript syntax passes.",
+    "Phase143 overlay is loaded after Phase141.",
+    "Phase132 generic SIM-free evidence no longer appears on carrier variants.",
+    "JA/EN canonicals remain unchanged.",
+    "No sitemap/indexable URL is added or removed."
+  ],
+  "next_order": [
+    "Run full 2026 normalization audit after Phase143 merge.",
+    "Normalize arrows We3 exact-model/SIM gaps if it remains the top unaffected backlog.",
+    "Continue SolQvia-owned real-device evidence expansion."
+  ]
+}
