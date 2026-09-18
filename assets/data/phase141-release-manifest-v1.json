@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "release": "phase141-a57-r11-normalization",
+  "date": "2026-09-18",
+  "baseline": "Phase140 main 4c5d0f530d2b2e9866a676ca9c01e50ef3a9e59a",
+  "goal": "Normalize Japanese Galaxy A57 5G and AQUOS R11 exact models and add exact-model IIJmio runtime evidence without changing the 802-URL SEO observation surface.",
+  "index_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "normalized_exact_models": [
+    "SC-54G",
+    "SM-A576Z",
+    "SM-A576Q",
+    "SH-51G",
+    "A602SH",
+    "SH-M35"
+  ],
+  "corrected_existing_records": 4,
+  "added_exact_model_records": [
+    "SM-A576Q",
+    "SH-M35"
+  ],
+  "external_runtime_evidence": [
+    {
+      "source": "IIJmio",
+      "model_number": "SM-A576Q",
+      "confirmed_dimensions": [
+        "voice",
+        "mobile_data",
+        "tethering"
+      ],
+      "sim_types": [
+        "voice SIM Type D/A",
+        "voice eSIM Type D/A"
+      ]
+    },
+    {
+      "source": "IIJmio",
+      "model_number": "SH-M35",
+      "confirmed_dimensions": [
+        "voice",
+        "mobile_data",
+        "tethering"
+      ],
+      "sim_types": [
+        "voice SIM Type D/A",
+        "voice eSIM Type D/A"
+      ]
+    }
+  ],
+  "engineering": [
+    "Phase110 Device Passport loads Phase141 overlay.",
+    "Phase131 enrichment merges Phase141 priority/external evidence and Phase141 coverage audit.",
+    "Phase134 evidence matrix loads Phase141 exact-model external evidence.",
+    "JA/EN Device Passport counts updated to 569 / 534 / 509."
+  ],
+  "evidence_rules": [
+    "IIJmio evidence is external field-test evidence, not SolQvia real-device evidence.",
+    "Generic voice results are not split into outgoing/incoming unless the source separates direction.",
+    "SMS remains unverified when the source result is not established in Phase141.",
+    "SIM/eSIM simultaneous-use claims remain unasserted where exact Japanese primary evidence is insufficient.",
+    "Band support is not promoted to runtime success."
+  ],
+  "qa_targets": [
+    "All Phase141 JSON parses.",
+    "Phase110/131/134 JavaScript syntax passes.",
+    "Phase141 overlay IDs are unique.",
+    "SM-A576Q and SH-M35 external evidence is exact-model scoped.",
+    "JA/EN canonicals remain one each.",
+    "No new indexable URL is created."
+  ],
+  "next_order": [
+    "Normalize remaining 2026 AQUOS / Galaxy midrange gaps using exact-model evidence.",
+    "Expand official carrier BYOD results where OS-conditioned data is published.",
+    "Expand SolQvia-owned real-device evidence.",
+    "Use the next GSC export to reprioritize enrichment."
+  ]
+}
