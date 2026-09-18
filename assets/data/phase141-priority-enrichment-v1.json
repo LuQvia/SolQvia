@@ -1,0 +1,315 @@
+{
+  "schema_version": "1.0",
+  "release": "phase141-a57-r11-normalization",
+  "checked_at": "2026-09-18",
+  "priority_records": [
+    {
+      "key": "galaxy-a57-sc54g",
+      "model_name": "Galaxy A57 5G",
+      "model_number": "SC-54G",
+      "original_carrier": "NTTドコモ",
+      "priority_reason": "2026 current-device normalization target with exact model, SIM/eSIM and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-04-23",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "active_esim_count": 2,
+        "dual_esim": true,
+        "dual_sim_ui": "nanoSIM + eSIM or eSIM + eSIM / DSDV"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "fiveg_sa": true,
+        "volte": true,
+        "volte_hd_plus": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "not_supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.docomo.ne.jp/product/sc54g/spec.html",
+        "https://www.docomo.ne.jp/product/sc54g/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+      ]
+    },
+    {
+      "key": "galaxy-a57-sm-a576z",
+      "model_name": "Galaxy A57 5G",
+      "model_number": "SM-A576Z",
+      "original_carrier": "SoftBank",
+      "priority_reason": "2026 current-device normalization target with exact model, SIM/eSIM and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-04-23",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "simultaneous configuration unverified in Phase141"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "volte": true,
+        "vonr": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "not_supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.softbank.jp/mobile/products/samsung-galaxy/samsung-galaxy-a57-5g/",
+        "https://www.samsung.com/jp/support/model/SM-A576ZZVASBM/"
+      ]
+    },
+    {
+      "key": "galaxy-a57-sm-a576q",
+      "model_name": "Galaxy A57 5G",
+      "model_number": "SM-A576Q",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "priority_reason": "2026 current-device normalization target with exact model, SIM/eSIM and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-04-23",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "simultaneous configuration unverified in Phase141"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5",
+        "current_build_suffix": "ZH3",
+        "latest_checked_at": "2026-09-16"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "not_supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.samsung.com/jp/support/model/SM-A576QZAASJP/",
+        "https://www.samsung.com/jp/support/mobile-devices/please-tell-us-about-the-latest-version-of-your-galaxy-devices/",
+        "https://www.iijmio.jp/hdd/devices/"
+      ]
+    },
+    {
+      "key": "aquos-r11-sh51g",
+      "model_name": "AQUOS R11",
+      "model_number": "SH-51G",
+      "original_carrier": "NTTドコモ",
+      "priority_reason": "2026 current-device normalization target with exact model, SIM/eSIM and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-07-09",
+        "manufacturer": "Sharp"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM + eSIM / DSDV"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "fiveg_sa": true,
+        "volte": true,
+        "volte_hd_plus": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "os_upgrade_policy": "maximum 3 upgrades",
+        "security_update_policy": "5 years from release"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "not_supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.docomo.ne.jp/product/sh51g/spec.html",
+        "https://jp.sharp/k-tai/products/aquos-r11/specs/"
+      ]
+    },
+    {
+      "key": "aquos-r11-a602sh",
+      "model_name": "AQUOS R11",
+      "model_number": "A602SH",
+      "original_carrier": "SoftBank",
+      "priority_reason": "2026 current-device normalization target with exact model, SIM/eSIM and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-07-09",
+        "manufacturer": "Sharp"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM + eSIM / DSDV; exact simultaneous details unverified in Phase141"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "volte": "official_capability",
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "os_upgrade_policy": "maximum 3 upgrades",
+        "security_update_policy": "5 years from release"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "not_supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.softbank.jp/mobile/products/smartphone/aquos-r11/",
+        "https://k-tai.sharp.co.jp/business/aer_models.html"
+      ]
+    },
+    {
+      "key": "aquos-r11-sh-m35",
+      "model_name": "AQUOS R11",
+      "model_number": "SH-M35",
+      "original_carrier": "SHARP / SIMフリー",
+      "priority_reason": "2026 current-device normalization target with exact model, SIM/eSIM and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-07-09",
+        "manufacturer": "Sharp"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM + eSIM / DSDV"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "os_upgrade_policy": "maximum 3 upgrades",
+        "security_update_policy": "5 years from release"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "not_supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://jp.sharp/k-tai/products/aquos-r11/specs/",
+        "https://www.iijmio.jp/hdd/devices/",
+        "https://www.iijmio.jp/info/iij/1783483613.html"
+      ]
+    }
+  ]
+}
