@@ -19,6 +19,7 @@
     ['sms',t('SMS（送受信未分離）','SMS (send/receive not separated)')],
     ['tethering',t('テザリング','Tethering')],
     ['fiveg_attach',t('5G実接続','5G attach')],
+    ['fiveg_sa',t('5G SA','5G SA')],
     ['volte_ims_registration',t('VoLTE / IMS登録','VoLTE / IMS registration')]
   ];
   const statusText={
@@ -29,9 +30,10 @@
     not_applicable:t('対象外','Not applicable'),
     not_applicable_physical_sim:t('物理SIM対象外','Physical SIM not applicable'),
     unverified:t('未確認','Unverified'),
+    not_supported:t('非対応／×','Not supported / failed'),
     no_record:t('記録なし','No record')
   };
-  const statusClass=v=>v==='confirmed'?'is-confirmed':v==='official_capability_only_not_solqvia_tested'?'is-official':v==='not_applicable'||v==='not_applicable_physical_sim'?'is-na':'is-unverified';
+  const statusClass=v=>v==='confirmed'?'is-confirmed':v==='official_capability_only_not_solqvia_tested'?'is-official':v==='not_applicable'||v==='not_applicable_physical_sim'||v==='not_supported'?'is-na':'is-unverified';
   const summarize=values=>{
     const v=values.filter(Boolean);
     if(!v.length)return'no_record';
