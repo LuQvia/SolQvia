@@ -1,0 +1,534 @@
+{
+  "schema_version": "1.0",
+  "release": "phase140-pixel10a-normalization",
+  "checked_at": "2026-09-18",
+  "purpose": "Normalize Japanese Pixel 10a GQ57S across four carriers and Google Store with exact SIM/eSIM, radio and evidence provenance.",
+  "merge_mode": "deep_upsert_by_id",
+  "records": [
+    {
+      "id": "smartphone-bbaed71552a9",
+      "model_number": "GQ57S",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://www.docomo.ne.jp/product/pixel10a/spec.html",
+          "https://support.google.com/pixelphone/answer/7158570?hl=ja",
+          "https://support.google.com/pixelphone/answer/9449293?hl=ja"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM。Google Pixel 7以降はキャリア条件によりeSIM×2同時利用可",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B12 / B13 / B14 / B17 / B18 / B19 / B20 / B21 / B25 / B26 / B28 / B29 / B30 / B32 / B38 / B39 / B40 / B41 / B42 / B48 / B66 / B71 / B75",
+        "nr_bands": "n1 / n2 / n3 / n5 / n7 / n8 / n12 / n14 / n20 / n25 / n26 / n28 / n30 / n38 / n40 / n41 / n66 / n71 / n75 / n76 / n77 / n78 / n79",
+        "volte_ims": "Google公式で日本モデルGQ57SのSIM/eSIM・Band仕様を確認。各キャリアのVoLTE/IMS実動作は販売元仕様・外部実機証拠で分離",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "販売確認",
+            "basis": "ドコモ/Google公式",
+            "note": "2026-04-14発売。ドコモ販売"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase140未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase140未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase140未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "pixel10a-gq57s",
+          "label_ja": "Google公式 nanoSIM+eSIM / eSIM×2（キャリア許可条件）",
+          "label_en": "Google official nanoSIM+eSIM / Dual eSIM subject to carrier support",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "pixel_8a_plus_dual_call_conditional",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "dual_sim_5g_supported_carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "pixel_android",
+        "ecosystem": "google_pixel",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "update_policy": "7 years"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "unverified",
+        "usb_data": "official_usb_c",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB-C fast charging / Qi wireless charging",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "販売元以外の回線での実動作は外部確認とSolQvia実機確認を分離",
+        "Dual eSIMはキャリア許可条件付き"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Cross-carrier runtime is kept separate from specification evidence",
+        "Dual eSIM depends on carrier support"
+      ]
+    },
+    {
+      "id": "smartphone-7b56837dd86e",
+      "model_number": "GQ57S",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://www.au.com/mobile/product/smartphone/pixel10a/spec/",
+          "https://support.google.com/pixelphone/answer/7158570?hl=ja",
+          "https://support.google.com/pixelphone/answer/9449293?hl=ja"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM。Google Pixel 7以降はキャリア条件によりeSIM×2同時利用可",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B12 / B13 / B14 / B17 / B18 / B19 / B20 / B21 / B25 / B26 / B28 / B29 / B30 / B32 / B38 / B39 / B40 / B41 / B42 / B48 / B66 / B71 / B75",
+        "nr_bands": "n1 / n2 / n3 / n5 / n7 / n8 / n12 / n14 / n20 / n25 / n26 / n28 / n30 / n38 / n40 / n41 / n66 / n71 / n75 / n76 / n77 / n78 / n79",
+        "volte_ims": "Google公式で日本モデルGQ57SのSIM/eSIM・Band仕様を確認。各キャリアのVoLTE/IMS実動作は販売元仕様・外部実機証拠で分離",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase140未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "販売・5G SA/Starlink動作確認あり",
+            "basis": "au/Google公式",
+            "note": "2026-04-14発売。au販売"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase140未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase140未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "pixel10a-gq57s",
+          "label_ja": "Google公式 nanoSIM+eSIM / eSIM×2（キャリア許可条件）",
+          "label_en": "Google official nanoSIM+eSIM / Dual eSIM subject to carrier support",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "pixel_8a_plus_dual_call_conditional",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "dual_sim_5g_supported_carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "pixel_android",
+        "ecosystem": "google_pixel",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "update_policy": "7 years"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "unverified",
+        "usb_data": "official_usb_c",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB-C fast charging / Qi wireless charging",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "販売元以外の回線での実動作は外部確認とSolQvia実機確認を分離",
+        "Dual eSIMはキャリア許可条件付き"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Cross-carrier runtime is kept separate from specification evidence",
+        "Dual eSIM depends on carrier support"
+      ]
+    },
+    {
+      "id": "smartphone-866eac743971",
+      "model_number": "GQ57S",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://www.softbank.jp/mobile/products/google-pixel/google-pixel-10a/",
+          "https://support.google.com/pixelphone/answer/7158570?hl=ja",
+          "https://support.google.com/pixelphone/answer/9449293?hl=ja"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM。Google Pixel 7以降はキャリア条件によりeSIM×2同時利用可",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B12 / B13 / B14 / B17 / B18 / B19 / B20 / B21 / B25 / B26 / B28 / B29 / B30 / B32 / B38 / B39 / B40 / B41 / B42 / B48 / B66 / B71 / B75",
+        "nr_bands": "n1 / n2 / n3 / n5 / n7 / n8 / n12 / n14 / n20 / n25 / n26 / n28 / n30 / n38 / n40 / n41 / n66 / n71 / n75 / n76 / n77 / n78 / n79",
+        "volte_ims": "Google公式で日本モデルGQ57SのSIM/eSIM・Band仕様を確認。各キャリアのVoLTE/IMS実動作は販売元仕様・外部実機証拠で分離",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase140未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase140未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "販売・VoLTE HD+仕様確認",
+            "basis": "SoftBank/Google公式",
+            "note": "2026-04-14発売。SoftBank販売"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase140未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "pixel10a-gq57s",
+          "label_ja": "Google公式 nanoSIM+eSIM / eSIM×2（キャリア許可条件）",
+          "label_en": "Google official nanoSIM+eSIM / Dual eSIM subject to carrier support",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "pixel_8a_plus_dual_call_conditional",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "dual_sim_5g_supported_carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "pixel_android",
+        "ecosystem": "google_pixel",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "update_policy": "7 years"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "unverified",
+        "usb_data": "official_usb_c",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB-C fast charging / Qi wireless charging",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "販売元以外の回線での実動作は外部確認とSolQvia実機確認を分離",
+        "Dual eSIMはキャリア許可条件付き"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Cross-carrier runtime is kept separate from specification evidence",
+        "Dual eSIM depends on carrier support"
+      ]
+    },
+    {
+      "id": "smartphone-f4e145abb04f",
+      "model_number": "GQ57S",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://network.mobile.rakuten.co.jp/product/smartphone/google-pixel-10a/spec/",
+          "https://support.google.com/pixelphone/answer/7158570?hl=ja",
+          "https://support.google.com/pixelphone/answer/9449293?hl=ja"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM。Google Pixel 7以降はキャリア条件によりeSIM×2同時利用可",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B12 / B13 / B14 / B17 / B18 / B19 / B20 / B21 / B25 / B26 / B28 / B29 / B30 / B32 / B38 / B39 / B40 / B41 / B42 / B48 / B66 / B71 / B75",
+        "nr_bands": "n1 / n2 / n3 / n5 / n7 / n8 / n12 / n14 / n20 / n25 / n26 / n28 / n30 / n38 / n40 / n41 / n66 / n71 / n75 / n76 / n77 / n78 / n79",
+        "volte_ims": "Google公式で日本モデルGQ57SのSIM/eSIM・Band仕様を確認。各キャリアのVoLTE/IMS実動作は販売元仕様・外部実機証拠で分離",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase140未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase140未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase140未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "販売・SIM/eSIM仕様確認",
+            "basis": "楽天モバイル/Google公式",
+            "note": "2026-04-14発売。楽天モバイル販売"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "pixel10a-gq57s",
+          "label_ja": "Google公式 nanoSIM+eSIM / eSIM×2（キャリア許可条件）",
+          "label_en": "Google official nanoSIM+eSIM / Dual eSIM subject to carrier support",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "pixel_8a_plus_dual_call_conditional",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "dual_sim_5g_supported_carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "pixel_android",
+        "ecosystem": "google_pixel",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "update_policy": "7 years"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "unverified",
+        "usb_data": "official_usb_c",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB-C fast charging / Qi wireless charging",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "販売元以外の回線での実動作は外部確認とSolQvia実機確認を分離",
+        "Dual eSIMはキャリア許可条件付き"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Cross-carrier runtime is kept separate from specification evidence",
+        "Dual eSIM depends on carrier support"
+      ]
+    },
+    {
+      "id": "phase140-pixel10a-gq57s-google-store",
+      "model_name": "Google Pixel 10a",
+      "model_number": "GQ57S",
+      "brand": "Google",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "original_carrier": "Google Store / SIMフリー",
+      "release_date": "2026-04-14",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "manufacturer_official",
+        "ja": "メーカー公式確認",
+        "en": "Manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://store.google.com/jp/product/pixel_10a?hl=ja",
+          "https://store.google.com/jp/product/pixel_10a_specs?hl=ja",
+          "https://support.google.com/pixelphone/answer/7158570?hl=ja",
+          "https://support.google.com/pixelphone/answer/9449293?hl=ja"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM。Google Pixel 7以降はキャリア条件によりeSIM×2同時利用可",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B12 / B13 / B14 / B17 / B18 / B19 / B20 / B21 / B25 / B26 / B28 / B29 / B30 / B32 / B38 / B39 / B40 / B41 / B42 / B48 / B66 / B71 / B75",
+        "nr_bands": "n1 / n2 / n3 / n5 / n7 / n8 / n12 / n14 / n20 / n25 / n26 / n28 / n30 / n38 / n40 / n41 / n66 / n71 / n75 / n76 / n77 / n78 / n79",
+        "volte_ims": "Google公式で日本モデルGQ57SのSIM/eSIM・Band仕様を確認。各キャリアのVoLTE/IMS実動作は販売元仕様・外部実機証拠で分離",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "実動作未確認",
+            "basis": "Google公式GQ57S仕様",
+            "note": "Band/仕様のみ。通話・IMS実動作は別確認"
+          },
+          "au": {
+            "rating": "au公式動作確認あり",
+            "basis": "au動作確認端末一覧",
+            "note": "Android 16でnanoSIM/eSIMの通話・SMS・データ・テザリング・5G SA・Starlink Directを確認"
+          },
+          "SoftBank": {
+            "rating": "実動作未確認",
+            "basis": "Google公式GQ57S仕様",
+            "note": "Band/仕様のみ。通話・IMS実動作は別確認"
+          },
+          "楽天モバイル": {
+            "rating": "実動作未確認",
+            "basis": "Google公式GQ57S仕様",
+            "note": "Band/仕様のみ。通話・IMS実動作は別確認"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "pixel10a-gq57s",
+          "label_ja": "Google公式 nanoSIM+eSIM / eSIM×2（キャリア許可条件）",
+          "label_en": "Google official nanoSIM+eSIM / Dual eSIM subject to carrier support",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "pixel_8a_plus_dual_call_conditional",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "dual_sim_5g_supported_carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "google_pixel",
+          "ownership": "android_device_protection",
+          "repair_history": "google_or_seller_record",
+          "battery": "device_specific"
+        },
+        "network_restriction_profile": "google_store"
+      },
+      "migration": {
+        "platform": "pixel_android"
+      },
+      "os_update": {
+        "platform": "pixel_android",
+        "ecosystem": "google_pixel",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "update_policy": "7 years"
+      },
+      "loss_recovery": {
+        "platform": "android",
+        "primary_scope": true
+      },
+      "satellite": {
+        "apple_native_japan": false,
+        "apple_features_japan": [],
+        "google_device_eligible": true,
+        "google_japan_available": false,
+        "au_level": "data_and_message",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "unverified",
+        "usb_data": "official_usb_c",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB-C fast charging / Qi wireless charging",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "au公式動作確認は外部キャリア証拠でありSolQvia実機確認ではない",
+        "Dual eSIMはキャリア許可条件付き"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "au runtime evidence is external carrier evidence, not SolQvia real-device evidence",
+        "Dual eSIM depends on carrier support"
+      ],
+      "availability_note_ja": "2026-04-14発売。Google Store日本向けGQ57S",
+      "availability_note_en": "Released April 14, 2026; Japanese Google Store model GQ57S",
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase140-pixel10a-gq57s-google-store",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase140-pixel10a-gq57s-google-store",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase140-pixel10a-gq57s-google-store",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase140-pixel10a-gq57s-google-store",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase140-pixel10a-gq57s-google-store",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase140-pixel10a-gq57s-google-store",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase140-pixel10a-gq57s-google-store",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase140-pixel10a-gq57s-google-store",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase140-pixel10a-gq57s-google-store",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase140-pixel10a-gq57s-google-store",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase140-pixel10a-gq57s-google-store",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase140-pixel10a-gq57s-google-store"
+      }
+    }
+  ]
+}

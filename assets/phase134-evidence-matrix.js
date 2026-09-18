@@ -94,14 +94,16 @@
     load('/assets/data/phase137-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase138-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase139-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
+    load('/assets/data/phase140-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase131-solqvia-real-device-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase132-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase135-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase137-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase138-external-field-evidence-v1.json').catch(()=>({records:[]})),
-    load('/assets/data/phase139-external-field-evidence-v1.json').catch(()=>({records:[]}))
-  ]).then(([p131,p136,p137,p138,p139,r,e132,e135,e137,e138,e139])=>{
-    priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[]),...(p137.priority_records||[]),...(p138.priority_records||[]),...(p139.priority_records||[])]};realdb=r;externaldb={records:[...(e132.records||[]),...(e135.records||[]),...(e137.records||[]),...(e138.records||[]),...(e139.records||[])]};
+    load('/assets/data/phase139-external-field-evidence-v1.json').catch(()=>({records:[]})),
+    load('/assets/data/phase140-external-field-evidence-v1.json').catch(()=>({records:[]}))
+  ]).then(([p131,p136,p137,p138,p139,p140,r,e132,e135,e137,e138,e139,e140])=>{
+    priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[]),...(p137.priority_records||[]),...(p138.priority_records||[]),...(p139.priority_records||[]),...(p140.priority_records||[])]};realdb=r;externaldb={records:[...(e132.records||[]),...(e135.records||[]),...(e137.records||[]),...(e138.records||[]),...(e139.records||[]),...(e140.records||[])]};
     augment();
     new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false});
   });
