@@ -1,0 +1,273 @@
+{
+  "schema_version": "1.0",
+  "release": "phase138-galaxy-z-flip8-normalization",
+  "checked_at": "2026-09-18",
+  "priority_records": [
+    {
+      "key": "galaxy-z-flip8-sc55g-docomo",
+      "model_name": "Galaxy Z Flip8",
+      "model_number": "SC-55G",
+      "original_carrier": "NTTドコモ",
+      "priority_reason": "2026 foldable flagship normalization target with exact-model SIM/eSIM and evidence-separated runtime status.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-08-07",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "active_esim_count": 2,
+        "dual_esim": true,
+        "dual_sim_ui": "nanoSIM + eSIM or eSIM + eSIM / DSDV"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "fiveg_sa": true,
+        "volte": true,
+        "volte_hd_plus": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0",
+        "current_build_suffix": "ZH7",
+        "latest_checked_at": "2026-08-27"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "Qi"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.docomo.ne.jp/product/sc55g/",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+      ]
+    },
+    {
+      "key": "galaxy-z-flip8-scg40-au",
+      "model_name": "Galaxy Z Flip8",
+      "model_number": "SCG40",
+      "original_carrier": "au",
+      "priority_reason": "2026 foldable flagship normalization target with exact-model SIM/eSIM and evidence-separated runtime status.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-08-07",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "simultaneous configuration unverified in Phase138"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "fiveg_sa": true,
+        "volte": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0",
+        "current_build_suffix": "ZH7",
+        "latest_checked_at": "2026-08-26"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.au.com/mobile/product/smartphone/galaxy_z_flip8/",
+        "https://www.samsung.com/jp/support/mobile-devices/please-tell-us-about-the-latest-version-of-galaxy-terminal-which-is-sold-in-au/"
+      ]
+    },
+    {
+      "key": "galaxy-z-flip8-sm-f776z-softbank",
+      "model_name": "Galaxy Z Flip8",
+      "model_number": "SM-F776Z",
+      "original_carrier": "SoftBank",
+      "priority_reason": "2026 foldable flagship normalization target with exact-model SIM/eSIM and evidence-separated runtime status.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-08-07",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "simultaneous configuration unverified in Phase138"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "fiveg_sa": true,
+        "volte": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "Qi2"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.softbank.jp/mobile/products/samsung-galaxy/samsung-galaxy-z-flip8/",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/"
+      ]
+    },
+    {
+      "key": "galaxy-z-flip8-sm-f776c-rakuten",
+      "model_name": "Galaxy Z Flip8",
+      "model_number": "SM-F776C",
+      "original_carrier": "楽天モバイル",
+      "priority_reason": "2026 foldable flagship normalization target with exact-model SIM/eSIM and evidence-separated runtime status.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-08-07",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "active_esim_count": 2,
+        "dual_esim": true,
+        "dual_sim_ui": "nanoSIM + eSIM or eSIM + eSIM"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0",
+        "current_build_suffix": "ZH7",
+        "latest_checked_at": "2026-08-26"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-z-flip8/spec/",
+        "https://www.samsung.com/jp/support/mobile-devices/about-latest-version-information-of-rakutenmobile/"
+      ]
+    },
+    {
+      "key": "galaxy-z-flip8-sm-f776q-simfree",
+      "model_name": "Galaxy Z Flip8",
+      "model_number": "SM-F776Q",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "priority_reason": "2026 foldable flagship normalization target with exact-model SIM/eSIM and evidence-separated runtime status.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-08-07",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "exact simultaneous configuration unverified in Phase138"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": "official_capability"
+      },
+      "software": {
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0",
+        "current_build_suffix": "ZH7",
+        "latest_checked_at": "2026-08-26"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.samsung.com/jp/support/model/SM-F776QZKESJP/",
+        "https://www.samsung.com/jp/support/mobile-devices/please-tell-us-about-the-latest-version-of-your-galaxy-devices/",
+        "https://www.iijmio.jp/info/iij/"
+      ]
+    }
+  ]
+}
