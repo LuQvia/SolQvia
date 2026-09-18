@@ -20,11 +20,13 @@
         "ja": "メーカー公式確認",
         "en": "Manufacturer official",
         "has_real_device": false,
-        "source_count": 3,
+        "source_count": 5,
         "source_urls": [
-          "https://support.google.com/pixelphone/answer/7158570?hl=ja",
+          "https://store.google.com/jp/product/pixel_11_specs?hl=ja",
           "https://support.google.com/product-documentation/answer/17033799?hl=ja",
-          "https://www.docomo.ne.jp/info/news_release/2026/08/13_00.html"
+          "https://www.docomo.ne.jp/info/news_release/2026/08/13_00.html",
+          "https://www.au.com/mobile/product/smartphone/pixel11/",
+          "https://www.softbank.jp/mobile/products/google-pixel/google-pixel-11/"
         ]
       },
       "network": {
@@ -161,7 +163,7 @@
         "has_real_device": false,
         "source_count": 3,
         "source_urls": [
-          "https://support.google.com/pixelphone/answer/7158570?hl=ja",
+          "https://store.google.com/jp/product/pixel_11_pro_specs?hl=ja",
           "https://support.google.com/product-documentation/answer/17033799?hl=ja",
           "https://www.docomo.ne.jp/info/news_release/2026/08/13_00.html"
         ]
@@ -300,7 +302,7 @@
         "has_real_device": false,
         "source_count": 3,
         "source_urls": [
-          "https://support.google.com/pixelphone/answer/7158570?hl=ja",
+          "https://store.google.com/jp/product/pixel_11_pro_specs?hl=ja",
           "https://support.google.com/product-documentation/answer/17033799?hl=ja",
           "https://www.docomo.ne.jp/info/news_release/2026/08/13_00.html"
         ]
