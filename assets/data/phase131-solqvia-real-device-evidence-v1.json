@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "release": "phase131-priority-runtime-enrichment",
+  "checked_at": "2026-09-17",
+  "purpose": "SolQvia-owned real-device evidence kept separate from official/spec data.",
+  "records": [
+    {
+      "key": "ky41c-ymobile-softbank-esim-profile-recognition-20260808",
+      "model_name": "キッズケータイ",
+      "model_number": "KY-41C",
+      "original_carrier": "NTTドコモ",
+      "tested_at": "2026-08-08",
+      "device_spec": {
+        "sim": "eSIM",
+        "fiveg": false,
+        "lte": true,
+        "volte": true,
+        "tethering": false
+      },
+      "tests": {
+        "Y!mobile": {
+          "esim_profile_configuration": "confirmed",
+          "sim_information_recognition": "confirmed",
+          "apn": "not_tested",
+          "mobile_data": "not_tested",
+          "voice": "not_tested",
+          "sms": "not_tested",
+          "guardian_features": "not_tested"
+        },
+        "SoftBank": {
+          "esim_profile_configuration": "confirmed",
+          "sim_information_recognition": "confirmed",
+          "apn": "not_tested",
+          "mobile_data": "not_tested",
+          "voice": "not_tested",
+          "sms": "not_tested",
+          "guardian_features": "not_tested"
+        }
+      },
+      "scope_note": "Only eSIM profile configuration and terminal-side SIM information recognition are confirmed. Do not promote this to data, voice, SMS, VoLTE/IMS or guardian-function usability.",
+      "sources": [
+        "https://solqvia.com/ja/technology/smartphone/docomo-kids-phone-ymobile-softbank-field-test/",
+        "https://www.docomo.ne.jp/product/ky41c/spec.html",
+        "https://www.kyocera.co.jp/prdct/telecom/consumer/lineup/ky-41c/spec.html"
+      ]
+    }
+  ]
+}
