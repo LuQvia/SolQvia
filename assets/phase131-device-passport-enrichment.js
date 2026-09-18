@@ -21,11 +21,14 @@
     if(detail.dataset.p131Busy==='1')return;
     detail.dataset.p131Busy='1';
     try{
-      detail.querySelectorAll('[data-p131-added]').forEach(n=>n.remove());
       const name=detail.querySelector('.p110-passport-head h2')?.textContent?.trim();
       const meta=detail.querySelector('.p110-passport-head p:not(.eyebrow)')?.textContent||'';
       const number=meta.split('/')[0].trim();
       if(!name)return;
+      const signature=norm(name)+'|'+norm(number);
+      if(detail.dataset.p131Record===signature&&detail.querySelector('[data-p131-added]'))return;
+      detail.querySelectorAll('[data-p131-added]').forEach(n=>n.remove());
+      detail.dataset.p131Record=signature;
       const ex=findPriority(name,number);const real=findReal(name,number);
       const firstSection=detail.querySelector('.p110-section');
       if(!firstSection)return;
