@@ -1,0 +1,1014 @@
+{
+  "schema_version": "1.0",
+  "release": "phase139-galaxy-z-fold8-normalization",
+  "checked_at": "2026-09-18",
+  "purpose": "Normalize Japanese Galaxy Z Fold8 and Z Fold8 Ultra carrier/SIM-free exact models while separating specification, external listing evidence and runtime confirmation.",
+  "merge_mode": "deep_upsert_by_id",
+  "records": [
+    {
+      "id": "smartphone-8b4a3b1183ce",
+      "model_number": "SC-57G",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://www.docomo.ne.jp/product/sc57g/",
+          "https://www.samsung.com/jp/support/mobile-devices/about-repair-compatible-models-of-galaxy-studio-osaka/",
+          "https://www.samsung.com/jp/support/model.SM-F971DZKADCM/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "販売元の公式仕様を確認。他社回線のVoLTE/IMS・通話・SMS・データ・5G実動作は別判定",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "販売・VoLTE/5G SA/DSDV確認",
+            "basis": "ドコモ/Samsung公式",
+            "note": "SC-57G。nanoSIM+eSIM / eSIM×2、DSDV、VoLTE HD+、5G SAを確認"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "phase139-sc-57g",
+          "label_ja": "nanoSIM+eSIM / eSIM×2 を公式確認",
+          "label_en": "Official nanoSIM+eSIM / Dual eSIM",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / wireless charging",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "販売元以外の回線での実動作は未確認",
+        "他社回線のSIM認識・データ・発着信・SMS・5G・VoLTE/IMSは仕様だけで対応判定しない"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime outside the original carrier remains unverified",
+        "Cross-carrier runtime is not inferred from specifications alone"
+      ]
+    },
+    {
+      "id": "smartphone-63179203f5df",
+      "model_number": "SCG41",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://www.au.com/mobile/product/smartphone/galaxy_z_fold8/",
+          "https://www.au.com/mobile/product/smartphone/galaxy_z_fold8/spec/",
+          "https://www.samsung.com/jp/support/mobile-devices/about-repair-compatible-models-of-galaxy-studio-osaka/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM / eSIM",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "販売元の公式仕様を確認。他社回線のVoLTE/IMS・通話・SMS・データ・5G実動作は別判定",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "販売・au VoLTE/5G SA確認",
+            "basis": "au/Samsung公式",
+            "note": "SCG41。au VoLTE、5G SA、au Starlink Directを確認"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": false,
+        "platform_profile": {
+          "code": "phase139-scg41",
+          "label_ja": "nanoSIM/eSIM対応・同時利用構成はPhase139未確認",
+          "label_en": "nanoSIM/eSIM supported; simultaneous configuration unverified in Phase139",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "carrier_condition_required",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / wireless charging",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "nanoSIM/eSIMの同時利用構成はPhase139では断定しない",
+        "他社回線のSIM認識・データ・発着信・SMS・5G・VoLTE/IMSは仕様だけで対応判定しない"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Simultaneous nanoSIM/eSIM configuration is not asserted in Phase139",
+        "Cross-carrier runtime is not inferred from specifications alone"
+      ]
+    },
+    {
+      "id": "smartphone-073696959f1e",
+      "model_number": "SM-F971Z",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 2,
+        "source_urls": [
+          "https://www.softbank.jp/mobile/products/samsung-galaxy/samsung-galaxy-z-fold8/",
+          "https://www.samsung.com/jp/support/mobile-devices/about-repair-compatible-models-of-galaxy-studio-osaka/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM / eSIM",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "販売元の公式仕様を確認。他社回線のVoLTE/IMS・通話・SMS・データ・5G実動作は別判定",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "販売・5G SA仕様確認",
+            "basis": "SoftBank/Samsung公式",
+            "note": "SM-F971Z。nanoSIM/eSIM、Android 17、5G SA対応を確認"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": false,
+        "platform_profile": {
+          "code": "phase139-sm-f971z",
+          "label_ja": "nanoSIM/eSIM対応・同時利用構成はPhase139未確認",
+          "label_en": "nanoSIM/eSIM supported; simultaneous configuration unverified in Phase139",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "carrier_condition_required",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / wireless charging",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "nanoSIM/eSIMの同時利用構成はPhase139では断定しない",
+        "他社回線のSIM認識・データ・発着信・SMS・5G・VoLTE/IMSは仕様だけで対応判定しない"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Simultaneous nanoSIM/eSIM configuration is not asserted in Phase139",
+        "Cross-carrier runtime is not inferred from specifications alone"
+      ]
+    },
+    {
+      "id": "smartphone-63ccdc5c225e",
+      "model_number": "SM-F971C",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-z-fold8/",
+          "https://network.mobile.rakuten.co.jp/guide/setting/samsung-galaxy/",
+          "https://www.samsung.com/jp/support/mobile-devices/about-repair-compatible-models-of-galaxy-studio-osaka/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "販売元の公式仕様を確認。他社回線のVoLTE/IMS・通話・SMS・データ・5G実動作は別判定",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "販売・nanoSIM/eSIM確認",
+            "basis": "楽天モバイル/Samsung公式",
+            "note": "SM-F971C。楽天モバイル公式のeSIM対象・初期設定対象を確認"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "phase139-sm-f971c",
+          "label_ja": "nanoSIM+eSIM / eSIM×2 を公式確認",
+          "label_en": "Official nanoSIM+eSIM / Dual eSIM",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / wireless charging",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "販売元以外の回線での実動作は未確認",
+        "他社回線のSIM認識・データ・発着信・SMS・5G・VoLTE/IMSは仕様だけで対応判定しない"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime outside the original carrier remains unverified",
+        "Cross-carrier runtime is not inferred from specifications alone"
+      ]
+    },
+    {
+      "id": "smartphone-f6a5085ec173",
+      "model_number": "SC-56G",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://www.docomo.ne.jp/product/sc56g/",
+          "https://www.samsung.com/jp/support/mobile-devices/about-repair-compatible-models-of-galaxy-studio-osaka/",
+          "https://www.samsung.com/jp/support/model.SM-F976DZVADCM/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "販売元の公式仕様を確認。他社回線のVoLTE/IMS・通話・SMS・データ・5G実動作は別判定",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "販売・VoLTE/5G SA/DSDV確認",
+            "basis": "ドコモ/Samsung公式",
+            "note": "SC-56G。nanoSIM+eSIM / eSIM×2、DSDV、VoLTE HD+、5G SAを確認"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "phase139-sc-56g",
+          "label_ja": "nanoSIM+eSIM / eSIM×2 を公式確認",
+          "label_en": "Official nanoSIM+eSIM / Dual eSIM",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / wireless charging",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "販売元以外の回線での実動作は未確認",
+        "他社回線のSIM認識・データ・発着信・SMS・5G・VoLTE/IMSは仕様だけで対応判定しない"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime outside the original carrier remains unverified",
+        "Cross-carrier runtime is not inferred from specifications alone"
+      ]
+    },
+    {
+      "id": "smartphone-5bd741df43c9",
+      "model_number": "SCG39",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://www.au.com/mobile/product/smartphone/galaxy_z_fold8_ultra/",
+          "https://www.au.com/mobile/product/smartphone/galaxy_z_fold8_ultra/spec/",
+          "https://www.samsung.com/jp/support/mobile-devices/about-repair-compatible-models-of-galaxy-studio-osaka/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM / eSIM",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "販売元の公式仕様を確認。他社回線のVoLTE/IMS・通話・SMS・データ・5G実動作は別判定",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "販売・au VoLTE/5G SA確認",
+            "basis": "au/Samsung公式",
+            "note": "SCG39。au VoLTE、5G SA、au Starlink Directを確認"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": false,
+        "platform_profile": {
+          "code": "phase139-scg39",
+          "label_ja": "nanoSIM/eSIM対応・同時利用構成はPhase139未確認",
+          "label_en": "nanoSIM/eSIM supported; simultaneous configuration unverified in Phase139",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "carrier_condition_required",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / wireless charging",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "nanoSIM/eSIMの同時利用構成はPhase139では断定しない",
+        "他社回線のSIM認識・データ・発着信・SMS・5G・VoLTE/IMSは仕様だけで対応判定しない"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Simultaneous nanoSIM/eSIM configuration is not asserted in Phase139",
+        "Cross-carrier runtime is not inferred from specifications alone"
+      ]
+    },
+    {
+      "id": "smartphone-7a17b7589da1",
+      "model_number": "SM-F976Z",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://www.softbank.jp/mobile/products/samsung-galaxy/samsung-galaxy-z-fold8-ultra/",
+          "https://www.samsung.com/jp/support/model.SM-F976ZZKASBM/",
+          "https://www.samsung.com/jp/support/mobile-devices/about-repair-compatible-models-of-galaxy-studio-osaka/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM / eSIM",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "販売元の公式仕様を確認。他社回線のVoLTE/IMS・通話・SMS・データ・5G実動作は別判定",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "販売・5G SA仕様確認",
+            "basis": "SoftBank/Samsung公式",
+            "note": "SM-F976Z。nanoSIM/eSIM、Android 17、5G SA対応を確認"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": false,
+        "platform_profile": {
+          "code": "phase139-sm-f976z",
+          "label_ja": "nanoSIM/eSIM対応・同時利用構成はPhase139未確認",
+          "label_en": "nanoSIM/eSIM supported; simultaneous configuration unverified in Phase139",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "carrier_condition_required",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / wireless charging",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "nanoSIM/eSIMの同時利用構成はPhase139では断定しない",
+        "他社回線のSIM認識・データ・発着信・SMS・5G・VoLTE/IMSは仕様だけで対応判定しない"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Simultaneous nanoSIM/eSIM configuration is not asserted in Phase139",
+        "Cross-carrier runtime is not inferred from specifications alone"
+      ]
+    },
+    {
+      "id": "smartphone-c016005e7236",
+      "model_number": "SM-F976C",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://network.mobile.rakuten.co.jp/product/sim/esim/",
+          "https://network.mobile.rakuten.co.jp/guide/setting/samsung-galaxy/",
+          "https://www.samsung.com/jp/support/mobile-devices/about-repair-compatible-models-of-galaxy-studio-osaka/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "販売元の公式仕様を確認。他社回線のVoLTE/IMS・通話・SMS・データ・5G実動作は別判定",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "販売・eSIM対象確認",
+            "basis": "楽天モバイル/Samsung公式",
+            "note": "SM-F976C。楽天モバイルのeSIM対象・初期設定対象を確認"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "phase139-sm-f976c",
+          "label_ja": "nanoSIM+eSIM / eSIM×2 を公式確認",
+          "label_en": "Official nanoSIM+eSIM / Dual eSIM",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / wireless charging",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "販売元以外の回線での実動作は未確認",
+        "他社回線のSIM認識・データ・発着信・SMS・5G・VoLTE/IMSは仕様だけで対応判定しない"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime outside the original carrier remains unverified",
+        "Cross-carrier runtime is not inferred from specifications alone"
+      ]
+    },
+    {
+      "id": "phase139-galaxy-z-fold8-sm-f971q",
+      "model_name": "Galaxy Z Fold8",
+      "model_number": "SM-F971Q",
+      "brand": "Samsung",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-08-07",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "manufacturer_official",
+        "ja": "メーカー公式確認",
+        "en": "Manufacturer official",
+        "has_real_device": false,
+        "source_count": 5,
+        "source_urls": [
+          "https://www.samsung.com/jp/support/model.SM-F971QZGASJP/",
+          "https://www.samsung.com/jp/smartphones/galaxy-z-fold8/",
+          "https://news.samsung.com/jp/galaxy-z-series-onsale-samsung",
+          "https://www.samsung.com/jp/support/mobile-devices/about-repair-compatible-models-of-galaxy-studio-osaka/",
+          "https://www.iijmio.jp/info/iij/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM / eSIM（日本向けSIMフリー型番の同時利用構成はPhase139では個別断定しない）",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "",
+        "nr_bands": "",
+        "volte_ims": "国内SIMフリー型番をSamsung公式で確認。キャリア別VoLTE/IMS実動作は外部実機証拠と分離",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "外部動作確認端末掲載あり",
+            "basis": "IIJmio一覧",
+            "note": "個別機能結果はPhase139で推測しない"
+          },
+          "au": {
+            "rating": "外部動作確認端末掲載あり",
+            "basis": "IIJmio一覧",
+            "note": "個別機能結果はPhase139で推測しない"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": false,
+        "platform_profile": {
+          "code": "phase139-sm-f971q",
+          "label_ja": "nanoSIM/eSIM対応・日本向け同時利用構成はPhase139未確認",
+          "label_en": "nanoSIM/eSIM supported; Japanese simultaneous configuration unverified in Phase139",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "carrier_condition_required",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "samsung_galaxy",
+          "ownership": "android_device_protection",
+          "repair_history": "samsung_service_record",
+          "battery": "device_specific"
+        },
+        "network_restriction_profile": "sim_free"
+      },
+      "migration": {
+        "platform": "android"
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0"
+      },
+      "loss_recovery": {
+        "platform": "android",
+        "primary_scope": true
+      },
+      "satellite": {
+        "apple_native_japan": false,
+        "apple_features_japan": [],
+        "google_device_eligible": false,
+        "google_japan_available": false,
+        "au_level": "unverified",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "unverified",
+        "usb_data": "speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / wireless charging",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "国内SIMフリー型番の同時SIM構成はPhase139では断定しない",
+        "IIJmio動作確認端末掲載は個別機能の成功を意味しない"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Exact simultaneous SIM configuration is not asserted for the Japanese SIM-free model in Phase139",
+        "IIJmio listing presence does not imply every runtime function is confirmed"
+      ],
+      "availability_note_ja": "2026-08-07発売。Samsung.com・量販店・IIJmio等で販売する国内SIMフリーモデル",
+      "availability_note_en": "Released August 7, 2026; Japanese SIM-free model sold through Samsung.com, retail channels and IIJmio",
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase139-galaxy-z-fold8-sm-f971q",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase139-galaxy-z-fold8-sm-f971q",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase139-galaxy-z-fold8-sm-f971q",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase139-galaxy-z-fold8-sm-f971q",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase139-galaxy-z-fold8-sm-f971q",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase139-galaxy-z-fold8-sm-f971q",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase139-galaxy-z-fold8-sm-f971q",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase139-galaxy-z-fold8-sm-f971q",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase139-galaxy-z-fold8-sm-f971q",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase139-galaxy-z-fold8-sm-f971q",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase139-galaxy-z-fold8-sm-f971q",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase139-galaxy-z-fold8-sm-f971q"
+      }
+    },
+    {
+      "id": "phase139-galaxy-z-fold8-ultra-sm-f976q",
+      "model_name": "Galaxy Z Fold8 Ultra",
+      "model_number": "SM-F976Q",
+      "brand": "Samsung",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-08-07",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "manufacturer_official",
+        "ja": "メーカー公式確認",
+        "en": "Manufacturer official",
+        "has_real_device": false,
+        "source_count": 5,
+        "source_urls": [
+          "https://www.samsung.com/jp/support/model.SM-F976QZKASJP/",
+          "https://www.samsung.com/jp/smartphones/galaxy-z-fold8-ultra/",
+          "https://news.samsung.com/jp/galaxy-z-series-onsale-samsung",
+          "https://www.samsung.com/jp/support/mobile-devices/about-repair-compatible-models-of-galaxy-studio-osaka/",
+          "https://www.iijmio.jp/info/iij/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM / eSIM（日本向けSIMフリー型番の同時利用構成はPhase139では個別断定しない）",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "",
+        "nr_bands": "",
+        "volte_ims": "国内SIMフリー型番をSamsung公式で確認。キャリア別VoLTE/IMS実動作は外部実機証拠と分離",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "外部動作確認端末掲載あり",
+            "basis": "IIJmio一覧",
+            "note": "個別機能結果はPhase139で推測しない"
+          },
+          "au": {
+            "rating": "外部動作確認端末掲載あり",
+            "basis": "IIJmio一覧",
+            "note": "個別機能結果はPhase139で推測しない"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase139未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": false,
+        "platform_profile": {
+          "code": "phase139-sm-f976q",
+          "label_ja": "nanoSIM/eSIM対応・日本向け同時利用構成はPhase139未確認",
+          "label_en": "nanoSIM/eSIM supported; Japanese simultaneous configuration unverified in Phase139",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "carrier_condition_required",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "samsung_galaxy",
+          "ownership": "android_device_protection",
+          "repair_history": "samsung_service_record",
+          "battery": "device_specific"
+        },
+        "network_restriction_profile": "sim_free"
+      },
+      "migration": {
+        "platform": "android"
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0"
+      },
+      "loss_recovery": {
+        "platform": "android",
+        "primary_scope": true
+      },
+      "satellite": {
+        "apple_native_japan": false,
+        "apple_features_japan": [],
+        "google_device_eligible": false,
+        "google_japan_available": false,
+        "au_level": "unverified",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "unverified",
+        "usb_data": "speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / wireless charging",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "国内SIMフリー型番の同時SIM構成はPhase139では断定しない",
+        "IIJmio動作確認端末掲載は個別機能の成功を意味しない"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Exact simultaneous SIM configuration is not asserted for the Japanese SIM-free model in Phase139",
+        "IIJmio listing presence does not imply every runtime function is confirmed"
+      ],
+      "availability_note_ja": "2026-08-07発売。Samsung.com・量販店・IIJmio等で販売する国内SIMフリーモデル",
+      "availability_note_en": "Released August 7, 2026; Japanese SIM-free model sold through Samsung.com, retail channels and IIJmio",
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase139-galaxy-z-fold8-ultra-sm-f976q",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase139-galaxy-z-fold8-ultra-sm-f976q",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase139-galaxy-z-fold8-ultra-sm-f976q",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase139-galaxy-z-fold8-ultra-sm-f976q",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase139-galaxy-z-fold8-ultra-sm-f976q",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase139-galaxy-z-fold8-ultra-sm-f976q",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase139-galaxy-z-fold8-ultra-sm-f976q",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase139-galaxy-z-fold8-ultra-sm-f976q",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase139-galaxy-z-fold8-ultra-sm-f976q",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase139-galaxy-z-fold8-ultra-sm-f976q",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase139-galaxy-z-fold8-ultra-sm-f976q",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase139-galaxy-z-fold8-ultra-sm-f976q"
+      }
+    }
+  ]
+}
