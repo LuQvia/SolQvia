@@ -16,7 +16,6 @@
       "release_date": "2026-09-18",
       "article_slug": "",
       "official_checked_at": "2026-09-18",
-      "availability_note": "2026-09-18発売",
       "evidence": {
         "code": "manufacturer_official",
         "ja": "メーカー公式確認",
@@ -124,13 +123,11 @@
       },
       "gaps_ja": [
         "SolQvia実機確認なし",
-        "各キャリアのデータ通信・通話・SMS・5G・VoLTE/IMS実動作は未確認",
-        "2026-09-18発売"
+        "各キャリアのデータ通信・通話・SMS・5G・VoLTE/IMS実動作は未確認"
       ],
       "gaps_en": [
         "No SolQvia real-device observation",
-        "Carrier-specific data/voice/SMS/5G/VoLTE-IMS runtime is unverified",
-        "2026-09-18発売"
+        "Carrier-specific data/voice/SMS/5G/VoLTE-IMS runtime is unverified"
       ],
       "links": {
         "article_ja": "",
@@ -147,7 +144,9 @@
         "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase133-iphone18pro-a3713",
         "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase133-iphone18pro-a3713",
         "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase133-iphone18pro-a3713"
-      }
+      },
+      "availability_note_ja": "2026-09-18発売",
+      "availability_note_en": "Released September 18, 2026"
     },
     {
       "id": "phase133-iphone18promax-a3716",
@@ -160,7 +159,6 @@
       "release_date": "2026-09-18",
       "article_slug": "",
       "official_checked_at": "2026-09-18",
-      "availability_note": "2026-09-18発売",
       "evidence": {
         "code": "manufacturer_official",
         "ja": "メーカー公式確認",
@@ -268,13 +266,11 @@
       },
       "gaps_ja": [
         "SolQvia実機確認なし",
-        "各キャリアのデータ通信・通話・SMS・5G・VoLTE/IMS実動作は未確認",
-        "2026-09-18発売"
+        "各キャリアのデータ通信・通話・SMS・5G・VoLTE/IMS実動作は未確認"
       ],
       "gaps_en": [
         "No SolQvia real-device observation",
-        "Carrier-specific data/voice/SMS/5G/VoLTE-IMS runtime is unverified",
-        "2026-09-18発売"
+        "Carrier-specific data/voice/SMS/5G/VoLTE-IMS runtime is unverified"
       ],
       "links": {
         "article_ja": "",
@@ -291,7 +287,9 @@
         "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase133-iphone18promax-a3716",
         "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase133-iphone18promax-a3716",
         "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase133-iphone18promax-a3716"
-      }
+      },
+      "availability_note_ja": "2026-09-18発売",
+      "availability_note_en": "Released September 18, 2026"
     },
     {
       "id": "phase133-iphone-duo-a3719",
@@ -304,7 +302,6 @@
       "release_date": "2026-10-23",
       "article_slug": "",
       "official_checked_at": "2026-09-18",
-      "availability_note": "2026-10-16予約開始・2026-10-23発売予定",
       "evidence": {
         "code": "manufacturer_official",
         "ja": "メーカー公式確認",
@@ -418,7 +415,7 @@
       "gaps_en": [
         "No SolQvia real-device observation",
         "Carrier-specific data/voice/SMS/5G/VoLTE-IMS runtime is unverified",
-        "2026-10-16予約開始・2026-10-23発売予定"
+        "Pre-orders start October 16, 2026; scheduled release October 23, 2026"
       ],
       "links": {
         "article_ja": "",
@@ -435,7 +432,9 @@
         "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase133-iphone-duo-a3719",
         "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase133-iphone-duo-a3719",
         "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase133-iphone-duo-a3719"
-      }
+      },
+      "availability_note_ja": "2026-10-16予約開始・2026-10-23発売予定",
+      "availability_note_en": "Pre-orders start October 16, 2026; scheduled release October 23, 2026"
     },
     {
       "id": "smartphone-2bea9c501e53",
