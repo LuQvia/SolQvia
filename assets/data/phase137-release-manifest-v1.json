@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "release": "phase137-xperia1viii-normalization",
+  "date": "2026-09-18",
+  "baseline": "Phase136 main f43b633a74b6bf8faae7eef239b3dcf7aafbbcad",
+  "goal": "Normalize Xperia 1 VIII carrier/SIM-free exact models and add exact-model au BYOD runtime evidence without changing the 802-URL SEO observation surface.",
+  "index_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "corrected_existing_records": [
+    {
+      "model": "Xperia 1 VIII",
+      "model_number": "SO-51G",
+      "carrier": "NTTドコモ"
+    },
+    {
+      "model": "Xperia 1 VIII",
+      "model_number": "SOG17",
+      "carrier": "au"
+    },
+    {
+      "model": "Xperia 1 VIII",
+      "model_number": "A601SO",
+      "carrier": "SoftBank"
+    }
+  ],
+  "added_exact_model_records": [
+    {
+      "model": "Xperia 1 VIII",
+      "model_number": "XQ-GE44",
+      "carrier": "Sony Store / SIMフリー",
+      "release_date": "2026-06-11"
+    }
+  ],
+  "external_runtime_evidence": {
+    "source": "au",
+    "source_class": "carrier_byod_test",
+    "exact_model": "SO-51G",
+    "verified_os": "Android 16",
+    "sim_types": [
+      "au Nano ICカード 05/05 HALF",
+      "eSIM"
+    ],
+    "confirmed_dimensions": [
+      "voice",
+      "sms",
+      "mobile_data",
+      "tethering"
+    ],
+    "fiveg_sa": "not_supported",
+    "separation_rule": "5G SA failure is stored separately and is not converted into generic 5G failure.",
+    "scope_rule": "This record is matched to SO-51G only and is never inherited by SOG17, A601SO or XQ-GE44."
+  },
+  "engineering": [
+    "Phase110 Device Passport now loads the Phase137 overlay.",
+    "Phase131 enrichment merges Phase137 priority and external evidence.",
+    "Phase134 evidence matrix now matches external evidence by model number when model_numbers are present.",
+    "Added a separate 5G SA evidence row so 5G SA does not collapse into generic 5G.",
+    "Phase137 coverage audit is loaded first.",
+    "JA/EN Device Passport counts updated to 563 device records / 528 smartphone records / 503 official-source records."
+  ],
+  "evidence_rules": [
+    "Carrier BYOD test evidence is external evidence, not SolQvia real-device evidence.",
+    "Generic voice is not split into outgoing/incoming unless the source separates direction.",
+    "Generic SMS is not split into send/receive unless the source separates direction.",
+    "5G SA result is not used as a proxy for all 5G connectivity.",
+    "Band support is not promoted to runtime success."
+  ],
+  "qa_targets": [
+    "All Phase137 JSON parses.",
+    "Phase110/131/134 JavaScript syntax passes.",
+    "Phase137 overlay IDs are unique.",
+    "SO-51G au external evidence does not match other Xperia 1 VIII variants.",
+    "JA/EN canonicals remain one each.",
+    "No new indexable URL is created."
+  ],
+  "next_order": [
+    "Normalize the next 2026 multi-carrier exact-model family.",
+    "Expand carrier BYOD evidence where exact-model and OS conditions are published.",
+    "Expand SolQvia-owned real-device evidence.",
+    "Use the next GSC export to reorder exact-model enrichment priority."
+  ]
+}
