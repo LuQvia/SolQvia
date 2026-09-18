@@ -5,7 +5,7 @@
   const t=(ja,en)=>lang==='en'?en:ja;
   const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const norm=s=>String(s??'').normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim();
-  const label={
+  const label={device_listing:t('動作確認端末掲載','Tested-device listing'),
     physical_sim:t('物理SIM','Physical SIM'),physical_sim_slots:t('物理SIMスロット','Physical SIM slots'),physical_sim_supported:t('物理SIM対応','Physical SIM supported'),esim_supported:'eSIM',active_esim_count:t('同時有効eSIM','Active eSIMs'),stored_esim_count:t('保存可能eSIM','Stored eSIMs'),dual_esim:'Dual eSIM',dual_sim_ui:'Dual SIM UI',release_date:t('発売日','Release date'),manufacturer:t('メーカー','Manufacturer'),fiveg_supported:'5G',volte:'VoLTE',volte_hd_plus:'VoLTE HD+',tethering_supported:t('テザリング','Tethering'),lte_bands:'LTE Band',nr_bands:'5G NR Band',launch_os:t('発売時OS','Launch OS'),shipping_os:t('出荷時OS','Shipping OS'),docomo_listed_os:t('ドコモ掲載OS','Docomo-listed OS'),official_os_upgrade_plan:t('OS更新予定','OS upgrade plan'),security_update_plan:t('セキュリティ更新予定','Security update plan'),sim_recognition:t('SIM認識','SIM recognition'),mobile_data:t('データ通信','Mobile data'),voice_outgoing:t('音声発信','Voice outgoing'),voice_incoming:t('音声着信','Voice incoming'),sms_send:t('SMS送信','SMS send'),sms_receive:t('SMS受信','SMS receive'),tethering:t('テザリング','Tethering'),fiveg_attach:t('5G実接続','5G attach'),volte_ims_registration:t('VoLTE/IMS登録','VoLTE/IMS registration'),esim_profile_configuration:t('eSIMプロファイル設定','eSIM profile configuration'),sim_information_recognition:t('SIM情報認識','SIM information recognition'),apn:'APN',voice:t('音声通話','Voice'),sms:'SMS',guardian_features:t('見守り機能','Guardian features')
   };
   const fmt=v=>Array.isArray(v)?v.join(', '):typeof v==='boolean'?(v?t('対応','Supported'):t('非対応','Not supported')):(v&&typeof v==='object'?Object.entries(v).map(([k,x])=>`${label[k]||k}: ${fmt(x)}`).join(' / '):String(v??'—'));
@@ -60,11 +60,13 @@
     load('/assets/data/phase131-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase136-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase137-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
+    load('/assets/data/phase138-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase131-solqvia-real-device-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase132-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase135-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase137-external-field-evidence-v1.json').catch(()=>({records:[]})),
-    load('/assets/data/phase137-coverage-gap-audit-v1.json').catch(()=>load('/assets/data/phase136-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase135-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase133-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase132-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase130-coverage-gap-audit-v1.json')).catch(()=>({metrics:[]})),
+    load('/assets/data/phase138-external-field-evidence-v1.json').catch(()=>({records:[]})),
+    load('/assets/data/phase138-coverage-gap-audit-v1.json').catch(()=>load('/assets/data/phase137-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase136-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase135-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase133-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase132-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase130-coverage-gap-audit-v1.json')).catch(()=>({metrics:[]})),
     load('/assets/data/phase130-unified-capability-taxonomy-v1.json').catch(()=>({domains:[]}))
-  ]).then(([p131,p136,p137,r,ext132,ext135,ext137,c,tax])=>{priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[]),...(p137.priority_records||[])]};realdb=r;externaldb={records:[...(ext132.records||[]),...(ext135.records||[]),...(ext137.records||[])]};coverage=c;taxonomy=tax;foundation();augment();new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false})});
+  ]).then(([p131,p136,p137,p138,r,ext132,ext135,ext137,ext138,c,tax])=>{priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[]),...(p137.priority_records||[]),...(p138.priority_records||[])]};realdb=r;externaldb={records:[...(ext132.records||[]),...(ext135.records||[]),...(ext137.records||[]),...(ext138.records||[])]};coverage=c;taxonomy=tax;foundation();augment();new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false})});
 })();

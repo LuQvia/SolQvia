@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "release": "phase138-galaxy-z-flip8-normalization",
+  "checked_at": "2026-09-18",
+  "purpose": "Record IIJmio's official listing of the Japanese SIM-free Galaxy Z Flip8 as a tested device without inferring per-function results that are not available in the retrieved primary source.",
+  "records": [
+    {
+      "model_names": [
+        "Galaxy Z Flip8"
+      ],
+      "model_numbers": [
+        "SM-F776Q"
+      ],
+      "source_class": "mvno_test_lab",
+      "source_name": "IIJmio",
+      "tested_at": "2026-07-31",
+      "device_variant": "国内SIMフリー版 SM-F776Q",
+      "results": {
+        "IIJmio動作確認端末一覧": {
+          "device_listing": "confirmed"
+        }
+      },
+      "notes": [
+        "IIJmioは2026-07-31のお知らせでGalaxy Z Flip8を含むAndroid端末を動作確認端末一覧へ追加した。",
+        "今回取得できた一次情報だけでは通話・データ・SMS・テザリング等の個別結果を確定できないため、機能別確認済みには昇格しない。",
+        "IIJmio外部動作確認はSolQvia実機確認ではない。"
+      ],
+      "source_url": "https://www.iijmio.jp/info/iij/",
+      "source_urls": [
+        "https://www.iijmio.jp/info/iij/",
+        "https://www.iijmio.jp/info/iij/1785122699.html"
+      ]
+    }
+  ]
+}

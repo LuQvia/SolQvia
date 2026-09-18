@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "release": "phase138-galaxy-z-flip8-normalization",
+  "date": "2026-09-18",
+  "baseline": "Phase137 main fa7c0ff2af6e5d85e31b53672d5089502c2427c7",
+  "goal": "Normalize Japanese Galaxy Z Flip8 exact models and add conservative exact-model IIJmio tested-device listing evidence without changing the 802-URL SEO observation surface.",
+  "index_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "corrected_existing_records": [
+    {
+      "model_number": "SC-55G",
+      "carrier": "NTTドコモ"
+    },
+    {
+      "model_number": "SCG40",
+      "carrier": "au"
+    },
+    {
+      "model_number": "SM-F776Z",
+      "carrier": "SoftBank"
+    },
+    {
+      "model_number": "SM-F776C",
+      "carrier": "楽天モバイル"
+    }
+  ],
+  "added_exact_model_records": [
+    {
+      "model_number": "SM-F776Q",
+      "carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-08-07"
+    }
+  ],
+  "external_evidence": {
+    "source": "IIJmio",
+    "exact_model": "SM-F776Q",
+    "evidence_level": "tested-device listing confirmed",
+    "per_function_results": "not promoted because retrieved primary source did not expose exact per-function outcomes"
+  },
+  "evidence_rules": [
+    "Same product name does not merge evidence across model numbers.",
+    "IIJmio tested-device listing is external evidence, not SolQvia real-device evidence.",
+    "No voice/data/SMS/tethering result is inferred from listing presence alone.",
+    "Band or sales-channel presence is not promoted to runtime success."
+  ],
+  "qa_targets": [
+    "All Phase138 JSON parses.",
+    "Phase110/131/134 JavaScript syntax passes.",
+    "Phase138 overlay IDs are unique.",
+    "SM-F776Q IIJmio evidence does not attach to carrier variants.",
+    "JA/EN canonicals remain one each.",
+    "No new indexable URL is created."
+  ],
+  "next_order": [
+    "Normalize Galaxy Z Fold8 family next if primary-source exact-model coverage remains stable.",
+    "Add per-function IIJmio results only when exact primary result detail is available.",
+    "Expand SolQvia-owned real-device evidence.",
+    "Use the next GSC export to reorder enrichment priority."
+  ]
+}

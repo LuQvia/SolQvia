@@ -1,0 +1,521 @@
+{
+  "schema_version": "1.0",
+  "release": "phase138-galaxy-z-flip8-normalization",
+  "checked_at": "2026-09-18",
+  "purpose": "Normalize Japanese Galaxy Z Flip8 carrier and SIM-free exact models while keeping unsupported simultaneous-SIM claims unasserted.",
+  "merge_mode": "deep_upsert_by_id",
+  "records": [
+    {
+      "id": "smartphone-52a818d08cc6",
+      "model_number": "SC-55G",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.docomo.ne.jp/product/sc55g/",
+          "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+          "https://www.samsung.com/jp/support/mobile-devices/please-tell-us-about-the-latest-version-of-the-galaxy-device-sold-in-docomo/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "ドコモ公式でVoLTE（HD+）・高音質通話・5G SA・DSDVを確認。他社回線の実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "販売・VoLTE/5G SA仕様確認",
+            "basis": "ドコモ公式",
+            "note": "SC-55G。nanoSIM+eSIM / eSIM×2、DSDVを公式確認"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase138未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase138未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase138未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "galaxy-z-flip8-sc55g",
+          "label_ja": "ドコモ公式 nanoSIM+eSIM / eSIM×2 / DSDV",
+          "label_en": "Docomo official nanoSIM+eSIM / Dual eSIM / DSDV",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0",
+        "current_build_suffix": "ZH7",
+        "latest_checked_at": "2026-08-27"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / Qi wireless charging",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "他社回線でのSIM認識・データ・発着信・SMS・5G・VoLTE/IMS実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime on non-Docomo networks remains unverified"
+      ]
+    },
+    {
+      "id": "smartphone-b024201756a4",
+      "model_number": "SCG40",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.au.com/mobile/product/smartphone/galaxy_z_flip8/",
+          "https://www.au.com/support/service/mobile/manual/smartphone/samsung/",
+          "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+          "https://www.samsung.com/jp/support/mobile-devices/please-tell-us-about-the-latest-version-of-galaxy-terminal-which-is-sold-in-au/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM / eSIM（同時利用構成はPhase138未確認）",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "au販売・5G SA対応を公式確認。nanoSIM/eSIMの同時利用構成と他社回線IMS実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase138未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "販売・5G SA確認",
+            "basis": "au/Samsung公式",
+            "note": "SCG40。Android 17 / One UI 9.0の更新情報を確認"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase138未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase138未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": false,
+        "platform_profile": {
+          "code": "galaxy-z-flip8-scg40",
+          "label_ja": "nanoSIM/eSIM対応・同時利用構成はPhase138未確認",
+          "label_en": "nanoSIM/eSIM supported; simultaneous configuration unverified in Phase138",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "carrier_condition_required",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0",
+        "current_build_suffix": "ZH7",
+        "latest_checked_at": "2026-08-26"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / wireless charging",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "SCG40のnanoSIM/eSIM同時利用構成はPhase138では断定しない",
+        "他社回線の実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Simultaneous nanoSIM/eSIM configuration is not asserted for SCG40 in Phase138",
+        "Runtime on non-au networks remains unverified"
+      ]
+    },
+    {
+      "id": "smartphone-74bd107ac207",
+      "model_number": "SM-F776Z",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.softbank.jp/mobile/products/samsung-galaxy/samsung-galaxy-z-flip8/",
+          "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+          "https://www.samsung.com/jp/support/mobile-devices/about-repair-compatible-models-of-galaxy-studio-osaka/",
+          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM / eSIM（同時利用構成はPhase138未確認）",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "SoftBank公式で5G/4G通話仕様・nanoSIM/eSIMを確認。他社回線IMS実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase138未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase138未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "販売・5G SA仕様確認",
+            "basis": "SoftBank/Samsung公式",
+            "note": "SM-F776Z。Android 17、nanoSIM/eSIM、テザリングを公式確認"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase138未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": false,
+        "platform_profile": {
+          "code": "galaxy-z-flip8-sm-f776z",
+          "label_ja": "SoftBank nanoSIM/eSIM対応・同時利用構成はPhase138未確認",
+          "label_en": "SoftBank nanoSIM/eSIM supported; simultaneous configuration unverified in Phase138",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "carrier_condition_required",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C PD-PPS / Qi2",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "SM-F776ZのDual eSIM同時利用はPhase138では断定しない",
+        "他社回線の実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Dual-eSIM simultaneous use is not asserted for SM-F776Z in Phase138",
+        "Runtime on non-SoftBank networks remains unverified"
+      ]
+    },
+    {
+      "id": "smartphone-a7f05fb4fe0c",
+      "model_number": "SM-F776C",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-z-flip8/",
+          "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-z-flip8/spec/",
+          "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+          "https://www.samsung.com/jp/support/mobile-devices/about-latest-version-information-of-rakutenmobile/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "楽天モバイル販売仕様とSIM/eSIM構成を確認。他社回線IMS実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase138未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase138未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase138未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "販売・SIM/eSIM仕様確認",
+            "basis": "楽天モバイル/Samsung公式",
+            "note": "SM-F776C。nanoSIM/eSIM・eSIM×2を確認"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "galaxy-z-flip8-sm-f776c",
+          "label_ja": "楽天モバイル nanoSIM+eSIM / eSIM×2",
+          "label_en": "Rakuten Mobile nanoSIM+eSIM / Dual eSIM",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0",
+        "current_build_suffix": "ZH7",
+        "latest_checked_at": "2026-08-26"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / wireless charging",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "他社回線のSIM認識・データ・発着信・SMS・5G・VoLTE/IMS実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime on non-Rakuten networks remains unverified"
+      ]
+    },
+    {
+      "id": "phase138-galaxy-z-flip8-sm-f776q",
+      "model_name": "Galaxy Z Flip8",
+      "model_number": "SM-F776Q",
+      "brand": "Samsung",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-08-07",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "manufacturer_official",
+        "ja": "メーカー公式確認",
+        "en": "Manufacturer official",
+        "has_real_device": false,
+        "source_count": 5,
+        "source_urls": [
+          "https://www.samsung.com/jp/support/model/SM-F776QZKESJP/",
+          "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+          "https://www.samsung.com/jp/support/mobile-devices/please-tell-us-about-the-latest-version-of-your-galaxy-devices/",
+          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+          "https://www.samsung.com/jp/support/mobile-devices/about-discontinued-products-for-manufacturer-brand-repair/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM / eSIM（日本向けSM-F776Qの同時利用構成はPhase138では個別断定しない）",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "",
+        "nr_bands": "",
+        "volte_ims": "Samsung日本向けSIMフリー型番SM-F776Qを確認。キャリア別VoLTE/IMS実動作はIIJmio等の外部実機証拠と分離",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "外部実機証拠あり",
+            "basis": "IIJmio Type D",
+            "note": "SM-F776QのIIJmio動作確認を別レイヤー表示"
+          },
+          "au": {
+            "rating": "外部実機証拠あり",
+            "basis": "IIJmio Type A",
+            "note": "SM-F776QのIIJmio動作確認を別レイヤー表示"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase138未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase138未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": false,
+        "platform_profile": {
+          "code": "galaxy-z-flip8-sm-f776q",
+          "label_ja": "nanoSIM/eSIM対応・日本向け同時利用構成はPhase138未確認",
+          "label_en": "nanoSIM/eSIM supported; Japanese simultaneous configuration unverified in Phase138",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "carrier_condition_required",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "samsung_galaxy",
+          "ownership": "android_device_protection",
+          "repair_history": "samsung_service_record",
+          "battery": "device_specific"
+        },
+        "network_restriction_profile": "sim_free"
+      },
+      "migration": {
+        "platform": "android"
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 17",
+        "current_os": "Android 17",
+        "one_ui": "9.0",
+        "current_build_suffix": "ZH7",
+        "latest_checked_at": "2026-08-26"
+      },
+      "loss_recovery": {
+        "platform": "android",
+        "primary_scope": true
+      },
+      "satellite": {
+        "apple_native_japan": false,
+        "apple_features_japan": [],
+        "google_device_eligible": false,
+        "google_japan_available": false,
+        "au_level": "unverified",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "unverified",
+        "usb_data": "exact_japan_speed_unverified",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / wireless charging",
+        "samsung_dex": "unverified",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "日本向けSM-F776QのLTE/5G Band表はPhase138で一次情報から具体値を登録していない",
+        "Dual eSIM同時利用は日本向け型番の一次情報を追加確認するまで断定しない",
+        "IIJmio外部動作確認はSolQvia実機確認ではない"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Exact Japanese SM-F776Q LTE/5G band table is not populated in Phase138",
+        "Dual-eSIM simultaneous use is not asserted without an exact Japanese source",
+        "IIJmio evidence is external field-test evidence, not SolQvia real-device evidence"
+      ],
+      "availability_note_ja": "2026-08-07発売。Samsung.com/IIJmio等で流通する国内SIMフリーSM-F776Q",
+      "availability_note_en": "Released August 7, 2026; Japanese SIM-free SM-F776Q sold through Samsung.com and channels such as IIJmio",
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase138-galaxy-z-flip8-sm-f776q",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase138-galaxy-z-flip8-sm-f776q",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase138-galaxy-z-flip8-sm-f776q",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase138-galaxy-z-flip8-sm-f776q",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase138-galaxy-z-flip8-sm-f776q",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase138-galaxy-z-flip8-sm-f776q",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase138-galaxy-z-flip8-sm-f776q",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase138-galaxy-z-flip8-sm-f776q",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase138-galaxy-z-flip8-sm-f776q",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase138-galaxy-z-flip8-sm-f776q",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase138-galaxy-z-flip8-sm-f776q",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase138-galaxy-z-flip8-sm-f776q"
+      }
+    }
+  ]
+}
