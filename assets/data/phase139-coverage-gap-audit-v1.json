@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0",
+  "release": "phase139-galaxy-z-fold8-normalization",
+  "checked_at": "2026-09-18",
+  "basis": "Phase138 coverage audit + Galaxy Z Fold8 / Z Fold8 Ultra exact-model normalization + conservative IIJmio tested-device listing evidence",
+  "device_records": 566,
+  "smartphone_records": 531,
+  "official_source_records": 506,
+  "real_device_records": 1,
+  "current_integrated_layers": 16,
+  "metrics": [
+    {
+      "id": "release_date",
+      "label_ja": "発売日",
+      "known": 537,
+      "total": 566,
+      "coverage_pct": 94.9,
+      "domain": "identity"
+    },
+    {
+      "id": "sim_esim_exact",
+      "label_ja": "SIM/eSIM構成を具体記録",
+      "known": 252,
+      "total": 566,
+      "coverage_pct": 44.5,
+      "domain": "sim_esim"
+    },
+    {
+      "id": "lte_bands",
+      "label_ja": "LTE Bandを具体記録",
+      "known": 506,
+      "total": 566,
+      "coverage_pct": 89.4,
+      "domain": "radio"
+    },
+    {
+      "id": "nr_bands",
+      "label_ja": "5G NR Bandを具体記録",
+      "known": 492,
+      "total": 566,
+      "coverage_pct": 86.9,
+      "domain": "radio"
+    },
+    {
+      "id": "four_carrier_fit",
+      "label_ja": "4キャリア別条件情報あり",
+      "known": 497,
+      "total": 566,
+      "coverage_pct": 87.8,
+      "domain": "carrier_fit"
+    },
+    {
+      "id": "dual_sim_exact",
+      "label_ja": "型番別Dual SIM構成あり",
+      "known": 123,
+      "total": 566,
+      "coverage_pct": 21.7,
+      "domain": "sim_esim"
+    },
+    {
+      "id": "usb_connector",
+      "label_ja": "USB/端子情報あり",
+      "known": 317,
+      "total": 566,
+      "coverage_pct": 56,
+      "domain": "peripheral"
+    },
+    {
+      "id": "charging",
+      "label_ja": "充電仕様情報あり",
+      "known": 477,
+      "total": 566,
+      "coverage_pct": 84.3,
+      "domain": "peripheral"
+    },
+    {
+      "id": "external_field_test",
+      "label_ja": "外部実機動作確認を構造化",
+      "known": 26,
+      "total": 566,
+      "coverage_pct": 4.6,
+      "domain": "evidence"
+    },
+    {
+      "id": "real_device",
+      "label_ja": "SolQvia実機確認あり",
+      "known": 1,
+      "total": 566,
+      "coverage_pct": 0.2,
+      "domain": "evidence"
+    }
+  ],
+  "phase139_delta": {
+    "added_exact_model_records": 2,
+    "corrected_existing_records": 8,
+    "added_external_listing_records": 2,
+    "normalized_models": [
+      "SC-57G",
+      "SCG41",
+      "SM-F971Z",
+      "SM-F971C",
+      "SM-F971Q",
+      "SC-56G",
+      "SCG39",
+      "SM-F976Z",
+      "SM-F976C",
+      "SM-F976Q"
+    ]
+  },
+  "interpretation_ja": [
+    "Fold8 / Fold8 Ultraは製品名ではなく国内型番単位で証拠を分離します。",
+    "Ultraの型番は製品別Samsungサポートページと修理対応一覧で確認したF976系を優先します。",
+    "IIJmio証拠は動作確認端末一覧への掲載確認に限定し、個別機能結果を推測しません。",
+    "Phase139は新規index URLを作らずDevice Passport内部データを強化します。"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "release": "phase139-galaxy-z-fold8-normalization",
+  "date": "2026-09-18",
+  "baseline": "Phase138 main dd052e11a8868bdf64380e7de7e6eae6b248395a",
+  "goal": "Normalize Japanese Galaxy Z Fold8 / Z Fold8 Ultra exact models and conservative IIJmio listing evidence without changing the 802-URL SEO observation surface.",
+  "index_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "normalized_exact_models": [
+    "SC-57G",
+    "SCG41",
+    "SM-F971Z",
+    "SM-F971C",
+    "SM-F971Q",
+    "SC-56G",
+    "SCG39",
+    "SM-F976Z",
+    "SM-F976C",
+    "SM-F976Q"
+  ],
+  "added_exact_model_records": [
+    "SM-F971Q",
+    "SM-F976Q"
+  ],
+  "corrected_existing_records": 8,
+  "external_evidence": {
+    "source": "IIJmio",
+    "model_numbers": [
+      "SM-F971Q",
+      "SM-F976Q"
+    ],
+    "evidence_level": "tested-device listing confirmed",
+    "per_function_results": "not promoted because retrieved primary sources did not expose exact per-function outcomes"
+  },
+  "engineering": [
+    "Phase110 Device Passport now loads Phase139 overlay.",
+    "Phase131 enrichment merges Phase139 priority/external evidence and Phase139 coverage audit.",
+    "Phase134 evidence matrix loads Phase139 external evidence by exact model number.",
+    "JA/EN Device Passport counts updated to 566 / 531 / 506."
+  ],
+  "evidence_rules": [
+    "Product-name matches never override exact model-number scope when model_numbers are present.",
+    "IIJmio listing evidence is external evidence, not SolQvia real-device evidence.",
+    "No voice/data/SMS/tethering result is inferred from listing presence alone.",
+    "For Fold8 Ultra, product-specific Samsung support pages and current repair-model listings take precedence over inconsistent generic manual-list text."
+  ],
+  "qa_targets": [
+    "All Phase139 JSON parses.",
+    "Phase110/131/134 JavaScript syntax passes.",
+    "Phase139 overlay IDs are unique.",
+    "SM-F971Q and SM-F976Q IIJmio evidence does not attach to carrier variants.",
+    "JA/EN canonicals remain one each.",
+    "No new indexable URL is created."
+  ],
+  "next_order": [
+    "Normalize remaining 2026 Galaxy A57 / Fold-family gaps if official evidence is stable.",
+    "Add per-function IIJmio results only when exact result details are available.",
+    "Expand SolQvia-owned real-device evidence.",
+    "Use the next GSC export to reprioritize enrichment."
+  ]
+}
