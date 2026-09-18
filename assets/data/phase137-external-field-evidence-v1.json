@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0",
+  "release": "phase137-xperia1viii-normalization",
+  "checked_at": "2026-09-18",
+  "purpose": "Structure au's official BYOD runtime test for the NTT Docomo Xperia 1 VIII SO-51G as external carrier evidence.",
+  "records": [
+    {
+      "model_names": [
+        "Xperia 1 VIII"
+      ],
+      "model_numbers": [
+        "SO-51G"
+      ],
+      "source_class": "carrier_byod_test",
+      "source_name": "au",
+      "tested_at": "2026-09-18",
+      "verified_os": "Android 16",
+      "device_variant": "NTTドコモ Xperia 1 VIII SO-51G",
+      "results": {
+        "au Nano ICカード 05/05 HALF": {
+          "voice": "confirmed",
+          "sms": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed",
+          "fiveg_sa": "not_supported"
+        },
+        "eSIM": {
+          "voice": "confirmed",
+          "sms": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed",
+          "fiveg_sa": "not_supported"
+        }
+      },
+      "notes": [
+        "au公式の他社端末動作確認。SolQvia実機確認ではない。",
+        "通話は発信/着信、SMSは送信/受信に分離されていないため、Phase137でも個別方向へ推測展開しない。",
+        "5G SAは×だが、通常の5G通信全体を非対応と解釈しない。",
+        "2回線以上の同時利用はauでは動作確認していない。",
+        "三者通話は使用できない。"
+      ],
+      "source_url": "https://www.au.com/mobile/product/sim/devices/",
+      "source_urls": [
+        "https://www.au.com/mobile/product/sim/devices/"
+      ]
+    }
+  ]
+}
