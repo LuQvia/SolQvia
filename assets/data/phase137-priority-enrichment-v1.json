@@ -1,0 +1,234 @@
+{
+  "schema_version": "1.0",
+  "release": "phase137-xperia1viii-normalization",
+  "checked_at": "2026-09-18",
+  "priority_records": [
+    {
+      "key": "xperia1viii-so51g-docomo",
+      "model_name": "Xperia 1 VIII",
+      "model_number": "SO-51G",
+      "original_carrier": "NTTドコモ",
+      "priority_reason": "2026 current flagship normalization target with exact model/SIM and evidence-separated runtime data.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-06-11",
+        "manufacturer": "Sony"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM + eSIM / DSDV"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "volte": true,
+        "volte_hd_plus": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_security_patch": "2026-08",
+        "os_upgrade_policy": "最大4回",
+        "security_update_policy": "発売時から6年間"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "wired_display": "DisplayPort 1.4",
+        "external_storage": "microSDXC up to 2TB",
+        "wireless_charging": "Qi"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "dual_sim": {
+        "exact_dual_mixed": true
+      },
+      "sources": [
+        "https://www.docomo.ne.jp/product/so51g/spec.html",
+        "https://www.docomo.ne.jp/product/so51g/",
+        "https://www.sony.jp/xperia/products/xperia1m8/spec.html"
+      ]
+    },
+    {
+      "key": "xperia1viii-sog17-au",
+      "model_name": "Xperia 1 VIII",
+      "model_number": "SOG17",
+      "original_carrier": "au",
+      "priority_reason": "2026 current flagship normalization target with exact model/SIM and evidence-separated runtime data.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-06-11",
+        "manufacturer": "Sony"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "simultaneous configuration unverified"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "volte": true,
+        "tethering_supported": true,
+        "au_starlink_direct": "data_and_message"
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_security_patch": "2026-08",
+        "os_upgrade_policy": "最大4回",
+        "security_update_policy": "発売時から6年間"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "microSDXC up to 2TB",
+        "wireless_charging": "Qi"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "dual_sim": {
+        "exact_dual_mixed": false
+      },
+      "sources": [
+        "https://www.au.com/mobile/product/smartphone/xperia_1_viii/spec/",
+        "https://support.sony.jp/electronics/support/japan-kddi/xperia-1-viii-sog17"
+      ]
+    },
+    {
+      "key": "xperia1viii-a601so-softbank",
+      "model_name": "Xperia 1 VIII",
+      "model_number": "A601SO",
+      "original_carrier": "SoftBank",
+      "priority_reason": "2026 current flagship normalization target with exact model/SIM and evidence-separated runtime data.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-06-11",
+        "manufacturer": "Sony"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "SoftBank Dual SIM eligible"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "volte": true,
+        "volte_hd_plus": true,
+        "vonr": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_security_patch": "2026-08",
+        "os_upgrade_policy": "最大4回",
+        "security_update_policy": "発売時から6年間"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "microSDXC up to 2TB",
+        "wireless_charging": "Qi"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "dual_sim": {
+        "exact_dual_mixed": true
+      },
+      "sources": [
+        "https://www.softbank.jp/mobile/products/smartphone/xperia1m8/",
+        "https://support.sony.jp/electronics/support/japan-softbank/xperia-1-viii-a601so"
+      ]
+    },
+    {
+      "key": "xperia1viii-xqge44-simfree",
+      "model_name": "Xperia 1 VIII",
+      "model_number": "XQ-GE44",
+      "original_carrier": "Sony Store / SIMフリー",
+      "priority_reason": "2026 current flagship normalization target with exact model/SIM and evidence-separated runtime data.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-06-11",
+        "manufacturer": "Sony"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "active_esim_count": 2,
+        "dual_esim": true,
+        "dual_sim_ui": "nanoSIM + eSIM or eSIM + eSIM"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": "official_capability"
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_security_patch": "2026-08",
+        "os_upgrade_policy": "最大4回",
+        "security_update_policy": "発売時から6年間",
+        "current_build": "73.0.A.2.62"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "wired_display": "DisplayPort supported",
+        "external_storage": "microSDXC up to 2TB",
+        "wireless_charging": "Qi"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_mixed": true
+      },
+      "sources": [
+        "https://support.sony.jp/electronics/support/mobile-phones-sim-free/xperia-1-viii-xq-ge44",
+        "https://support.sony.jp/electronics/support/mobile-phones-sim-free/xperia-1-viii-xq-ge44/software/00402376",
+        "https://www.sony.jp/xperia/store/products/xperia-simfree/plan/"
+      ]
+    }
+  ]
+}

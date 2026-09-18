@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "release": "phase137-xperia1viii-normalization",
+  "checked_at": "2026-09-18",
+  "basis": "Phase136 coverage audit + Xperia 1 VIII carrier normalization + SIM-free XQ-GE44 + au BYOD runtime evidence",
+  "device_records": 563,
+  "smartphone_records": 528,
+  "official_source_records": 503,
+  "real_device_records": 1,
+  "current_integrated_layers": 16,
+  "metrics": [
+    {
+      "id": "release_date",
+      "label_ja": "発売日",
+      "known": 534,
+      "total": 563,
+      "coverage_pct": 94.8,
+      "domain": "identity"
+    },
+    {
+      "id": "sim_esim_exact",
+      "label_ja": "SIM/eSIM構成を具体記録",
+      "known": 237,
+      "total": 563,
+      "coverage_pct": 42.1,
+      "domain": "sim_esim"
+    },
+    {
+      "id": "lte_bands",
+      "label_ja": "LTE Bandを具体記録",
+      "known": 503,
+      "total": 563,
+      "coverage_pct": 89.3,
+      "domain": "radio"
+    },
+    {
+      "id": "nr_bands",
+      "label_ja": "5G NR Bandを具体記録",
+      "known": 489,
+      "total": 563,
+      "coverage_pct": 86.9,
+      "domain": "radio"
+    },
+    {
+      "id": "four_carrier_fit",
+      "label_ja": "4キャリア別条件情報あり",
+      "known": 494,
+      "total": 563,
+      "coverage_pct": 87.7,
+      "domain": "carrier_fit"
+    },
+    {
+      "id": "dual_sim_exact",
+      "label_ja": "型番別Dual SIM構成あり",
+      "known": 115,
+      "total": 563,
+      "coverage_pct": 20.4,
+      "domain": "sim_esim"
+    },
+    {
+      "id": "usb_connector",
+      "label_ja": "USB/端子情報あり",
+      "known": 302,
+      "total": 563,
+      "coverage_pct": 53.6,
+      "domain": "peripheral"
+    },
+    {
+      "id": "charging",
+      "label_ja": "充電仕様情報あり",
+      "known": 462,
+      "total": 563,
+      "coverage_pct": 82.1,
+      "domain": "peripheral"
+    },
+    {
+      "id": "external_field_test",
+      "label_ja": "外部実機動作確認を構造化",
+      "known": 23,
+      "total": 563,
+      "coverage_pct": 4.1,
+      "domain": "evidence"
+    },
+    {
+      "id": "real_device",
+      "label_ja": "SolQvia実機確認あり",
+      "known": 1,
+      "total": 563,
+      "coverage_pct": 0.2,
+      "domain": "evidence"
+    }
+  ],
+  "phase137_delta": {
+    "added_exact_model_records": 1,
+    "corrected_existing_records": 3,
+    "added_external_runtime_records": 1,
+    "normalized_models": [
+      "Xperia 1 VIII SO-51G / NTTドコモ",
+      "Xperia 1 VIII SOG17 / au",
+      "Xperia 1 VIII A601SO / SoftBank",
+      "Xperia 1 VIII XQ-GE44 / SIMフリー"
+    ]
+  },
+  "interpretation_ja": [
+    "SO-51Gのau動作確認はau公式の他社端末検証であり、SolQvia実機確認とは別証拠です。",
+    "auの5G SA×は通常の5G通信全体を非対応とする意味ではないため、5G SAを独立項目で保持します。",
+    "同じXperia 1 VIIIでも型番別にSIM・販売元・実動作証拠を分離します。",
+    "Phase137は新規index URLを作らずDevice Passport内部データを強化します。"
+  ]
+}

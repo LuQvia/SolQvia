@@ -19,6 +19,7 @@
     ['sms',t('SMS（送受信未分離）','SMS (send/receive not separated)')],
     ['tethering',t('テザリング','Tethering')],
     ['fiveg_attach',t('5G実接続','5G attach')],
+    ['fiveg_sa',t('5G SA','5G SA')],
     ['volte_ims_registration',t('VoLTE / IMS登録','VoLTE / IMS registration')]
   ];
   const statusText={
@@ -29,9 +30,10 @@
     not_applicable:t('対象外','Not applicable'),
     not_applicable_physical_sim:t('物理SIM対象外','Physical SIM not applicable'),
     unverified:t('未確認','Unverified'),
+    not_supported:t('非対応／×','Not supported / failed'),
     no_record:t('記録なし','No record')
   };
-  const statusClass=v=>v==='confirmed'?'is-confirmed':v==='official_capability_only_not_solqvia_tested'?'is-official':v==='not_applicable'||v==='not_applicable_physical_sim'?'is-na':'is-unverified';
+  const statusClass=v=>v==='confirmed'?'is-confirmed':v==='official_capability_only_not_solqvia_tested'?'is-official':v==='not_applicable'||v==='not_applicable_physical_sim'||v==='not_supported'?'is-na':'is-unverified';
   const summarize=values=>{
     const v=values.filter(Boolean);
     if(!v.length)return'no_record';
@@ -45,7 +47,7 @@
   let priority={priority_records:[]},realdb={records:[]},externaldb={records:[]};
   const findPriority=(name,number,carrierName)=>priority.priority_records.find(x=>(((x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name))&&(!x.original_carrier||norm(x.original_carrier)===norm(carrierName))))||priority.priority_records.find(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
   const findReal=(name,number)=>realdb.records.filter(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
-  const findExternal=name=>externaldb.records.filter(x=>(x.model_names||[]).some(n=>norm(n)===norm(name)));
+  const findExternal=(name,number)=>externaldb.records.filter(x=>(x.model_names||[]).some(n=>norm(n)===norm(name))&&(!(x.model_numbers||[]).length||(x.model_numbers||[]).some(n=>norm(n)===norm(number))));
   const collectExternal=(records,key)=>{
     const out=[];
     for(const rec of records)for(const tests of Object.values(rec.results||{}))if(tests&&Object.prototype.hasOwnProperty.call(tests,key))out.push(tests[key]);
@@ -70,7 +72,7 @@
       detail.querySelectorAll('[data-p134-added]').forEach(n=>n.remove());
       detail.dataset.p134Record=signature;
       const ex=findPriority(name,number,carrierName);
-      const external=findExternal(name);
+      const external=findExternal(name,number);
       const real=findReal(name,number);
       const body=rows.map(([key,label])=>{
         const official=ex?.runtime&&Object.prototype.hasOwnProperty.call(ex.runtime,key)?ex.runtime[key]:'no_record';
@@ -89,11 +91,12 @@
   Promise.all([
     load('/assets/data/phase131-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase136-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
+    load('/assets/data/phase137-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase131-solqvia-real-device-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase132-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase135-external-field-evidence-v1.json').catch(()=>({records:[]}))
-  ]).then(([p131,p136,r,e132,e135])=>{
-    priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[])]};realdb=r;externaldb={records:[...(e132.records||[]),...(e135.records||[])]};
+  ]).then(([p131,p136,p137,r,e132,e135,e137])=>{
+    priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[]),...(p137.priority_records||[])]};realdb=r;externaldb={records:[...(e132.records||[]),...(e135.records||[]),...(e137.records||[])]};
     augment();
     new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false});
   });
