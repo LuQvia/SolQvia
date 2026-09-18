@@ -1,0 +1,614 @@
+{
+  "schema_version": "1.0",
+  "release": "phase133-current-flagship-normalization",
+  "checked_at": "2026-09-18",
+  "purpose": "Normalize current flagship exact-model records and correct high-value SIM/eSIM fields using current primary sources.",
+  "merge_mode": "deep_upsert_by_id",
+  "records": [
+    {
+      "id": "phase133-iphone18pro-a3713",
+      "model_name": "iPhone 18 Pro",
+      "model_number": "A3713",
+      "brand": "Apple",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "original_carrier": "Apple Store",
+      "release_date": "2026-09-18",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "manufacturer_official",
+        "ja": "メーカー公式確認",
+        "en": "Manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://www.apple.com/jp/iphone-18-pro/specs/",
+          "https://support.apple.com/en-al/108044",
+          "https://support.apple.com/ja-jp/123878"
+        ]
+      },
+      "network": {
+        "sim_esim": "eSIM専用 / デュアルeSIM（同時有効2件、8件以上保存）",
+        "supports_esim": true,
+        "supports_physical_sim": false,
+        "lte_bands": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B11 / B12 / B13 / B14 / B17 / B18 / B19 / B20 / B21 / B25 / B26 / B28 / B29 / B30 / B32 / B34 / B38 / B39 / B40 / B41 / B42 / B48 / B53 / B66 / B71 / B106",
+        "nr_bands": "n1 / n2 / n3 / n5 / n7 / n8 / n12 / n14 / n20 / n25 / n26 / n28 / n29 / n30 / n38 / n40 / n41 / n48 / n53 / n66 / n70 / n71 / n75 / n77 / n78 / n79",
+        "volte_ims": "Apple公式で日本向けeSIM専用・対応Bandを確認。キャリア別VoLTE/IMS実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "eSIM対応キャリア",
+            "basis": "Apple公式",
+            "note": "実動作・プラン条件はキャリア側で別確認"
+          },
+          "au": {
+            "rating": "eSIM対応キャリア",
+            "basis": "Apple公式",
+            "note": "Android→iPhone eSIM転送のApple掲載あり。実動作は別確認"
+          },
+          "SoftBank": {
+            "rating": "eSIM対応キャリア",
+            "basis": "Apple公式",
+            "note": "実動作・プラン条件はキャリア側で別確認"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase133未確認",
+            "note": "推測で埋めない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "platform_profile": {
+          "code": "apple_iphone",
+          "label_ja": "Apple公式Dual eSIM基準",
+          "label_en": "Apple Dual eSIM baseline",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_line",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "apple_iphone",
+          "ownership": "activation_lock",
+          "repair_history": "parts_and_service_history",
+          "battery": "battery_health"
+        },
+        "network_restriction_profile": "apple_store"
+      },
+      "migration": {
+        "platform": "ios"
+      },
+      "os_update": {
+        "platform": "ios",
+        "ecosystem": "apple",
+        "primary_scope": true
+      },
+      "loss_recovery": {
+        "platform": "ios",
+        "primary_scope": true
+      },
+      "satellite": {
+        "apple_native_japan": true,
+        "apple_features_japan": [
+          "emergency_sos",
+          "messages",
+          "find_my"
+        ],
+        "google_device_eligible": false,
+        "google_japan_available": false,
+        "au_level": "unverified",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "official_usb_c_displayport_family",
+        "usb_data": "official_usb_c",
+        "external_storage": "ios_device_specific",
+        "usb_audio": "official_usb_c",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "usb_c_fast_charge",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "device_specific"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "各キャリアのデータ通信・通話・SMS・5G・VoLTE/IMS実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Carrier-specific data/voice/SMS/5G/VoLTE-IMS runtime is unverified"
+      ],
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase133-iphone18pro-a3713",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase133-iphone18pro-a3713",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase133-iphone18pro-a3713",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase133-iphone18pro-a3713",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase133-iphone18pro-a3713",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase133-iphone18pro-a3713",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase133-iphone18pro-a3713",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase133-iphone18pro-a3713",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase133-iphone18pro-a3713",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase133-iphone18pro-a3713",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase133-iphone18pro-a3713",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase133-iphone18pro-a3713"
+      },
+      "availability_note_ja": "2026-09-18発売",
+      "availability_note_en": "Released September 18, 2026"
+    },
+    {
+      "id": "phase133-iphone18promax-a3716",
+      "model_name": "iPhone 18 Pro Max",
+      "model_number": "A3716",
+      "brand": "Apple",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "original_carrier": "Apple Store",
+      "release_date": "2026-09-18",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "manufacturer_official",
+        "ja": "メーカー公式確認",
+        "en": "Manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://www.apple.com/jp/iphone-18-pro/specs/",
+          "https://support.apple.com/en-al/108044",
+          "https://support.apple.com/ja-jp/123878"
+        ]
+      },
+      "network": {
+        "sim_esim": "eSIM専用 / デュアルeSIM（同時有効2件、8件以上保存）",
+        "supports_esim": true,
+        "supports_physical_sim": false,
+        "lte_bands": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B11 / B12 / B13 / B14 / B17 / B18 / B19 / B20 / B21 / B25 / B26 / B28 / B29 / B30 / B32 / B34 / B38 / B39 / B40 / B41 / B42 / B48 / B53 / B66 / B71 / B106",
+        "nr_bands": "n1 / n2 / n3 / n5 / n7 / n8 / n12 / n14 / n20 / n25 / n26 / n28 / n29 / n30 / n38 / n40 / n41 / n48 / n53 / n66 / n70 / n71 / n75 / n77 / n78 / n79",
+        "volte_ims": "Apple公式で日本向けeSIM専用・対応Bandを確認。キャリア別VoLTE/IMS実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "eSIM対応キャリア",
+            "basis": "Apple公式",
+            "note": "実動作・プラン条件はキャリア側で別確認"
+          },
+          "au": {
+            "rating": "eSIM対応キャリア",
+            "basis": "Apple公式",
+            "note": "Android→iPhone eSIM転送のApple掲載あり。実動作は別確認"
+          },
+          "SoftBank": {
+            "rating": "eSIM対応キャリア",
+            "basis": "Apple公式",
+            "note": "実動作・プラン条件はキャリア側で別確認"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase133未確認",
+            "note": "推測で埋めない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "platform_profile": {
+          "code": "apple_iphone",
+          "label_ja": "Apple公式Dual eSIM基準",
+          "label_en": "Apple Dual eSIM baseline",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_line",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "apple_iphone",
+          "ownership": "activation_lock",
+          "repair_history": "parts_and_service_history",
+          "battery": "battery_health"
+        },
+        "network_restriction_profile": "apple_store"
+      },
+      "migration": {
+        "platform": "ios"
+      },
+      "os_update": {
+        "platform": "ios",
+        "ecosystem": "apple",
+        "primary_scope": true
+      },
+      "loss_recovery": {
+        "platform": "ios",
+        "primary_scope": true
+      },
+      "satellite": {
+        "apple_native_japan": true,
+        "apple_features_japan": [
+          "emergency_sos",
+          "messages",
+          "find_my"
+        ],
+        "google_device_eligible": false,
+        "google_japan_available": false,
+        "au_level": "unverified",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "official_usb_c_displayport_family",
+        "usb_data": "official_usb_c",
+        "external_storage": "ios_device_specific",
+        "usb_audio": "official_usb_c",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "usb_c_fast_charge",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "device_specific"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "各キャリアのデータ通信・通話・SMS・5G・VoLTE/IMS実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Carrier-specific data/voice/SMS/5G/VoLTE-IMS runtime is unverified"
+      ],
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase133-iphone18promax-a3716",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase133-iphone18promax-a3716",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase133-iphone18promax-a3716",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase133-iphone18promax-a3716",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase133-iphone18promax-a3716",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase133-iphone18promax-a3716",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase133-iphone18promax-a3716",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase133-iphone18promax-a3716",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase133-iphone18promax-a3716",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase133-iphone18promax-a3716",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase133-iphone18promax-a3716",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase133-iphone18promax-a3716"
+      },
+      "availability_note_ja": "2026-09-18発売",
+      "availability_note_en": "Released September 18, 2026"
+    },
+    {
+      "id": "phase133-iphone-duo-a3719",
+      "model_name": "iPhone Duo",
+      "model_number": "A3719",
+      "brand": "Apple",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "original_carrier": "Apple Store",
+      "release_date": "2026-10-23",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "manufacturer_official",
+        "ja": "メーカー公式確認",
+        "en": "Manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://www.apple.com/jp/iphone-duo/specs/",
+          "https://support.apple.com/en-al/108044",
+          "https://support.apple.com/ja-jp/123878"
+        ]
+      },
+      "network": {
+        "sim_esim": "eSIM専用 / デュアルeSIM（同時有効2件、8件以上保存）",
+        "supports_esim": true,
+        "supports_physical_sim": false,
+        "lte_bands": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B11 / B12 / B13 / B14 / B17 / B18 / B19 / B20 / B21 / B25 / B26 / B28 / B29 / B30 / B32 / B34 / B38 / B39 / B40 / B41 / B42 / B48 / B53 / B66 / B71 / B106",
+        "nr_bands": "n1 / n2 / n3 / n5 / n7 / n8 / n12 / n14 / n20 / n25 / n26 / n28 / n29 / n30 / n38 / n40 / n41 / n48 / n53 / n66 / n70 / n71 / n75 / n77 / n78 / n79",
+        "volte_ims": "Apple公式で日本向けeSIM専用・対応Bandを確認。キャリア別VoLTE/IMS実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "eSIM対応キャリア",
+            "basis": "Apple公式",
+            "note": "実動作・プラン条件はキャリア側で別確認"
+          },
+          "au": {
+            "rating": "eSIM対応キャリア",
+            "basis": "Apple公式",
+            "note": "Android→iPhone eSIM転送のApple掲載あり。実動作は別確認"
+          },
+          "SoftBank": {
+            "rating": "eSIM対応キャリア",
+            "basis": "Apple公式",
+            "note": "実動作・プラン条件はキャリア側で別確認"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase133未確認",
+            "note": "推測で埋めない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "platform_profile": {
+          "code": "apple_iphone",
+          "label_ja": "Apple公式Dual eSIM基準",
+          "label_en": "Apple Dual eSIM baseline",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_line",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "apple_iphone",
+          "ownership": "activation_lock",
+          "repair_history": "parts_and_service_history",
+          "battery": "battery_health"
+        },
+        "network_restriction_profile": "apple_store"
+      },
+      "migration": {
+        "platform": "ios"
+      },
+      "os_update": {
+        "platform": "ios",
+        "ecosystem": "apple",
+        "primary_scope": true
+      },
+      "loss_recovery": {
+        "platform": "ios",
+        "primary_scope": true
+      },
+      "satellite": {
+        "apple_native_japan": true,
+        "apple_features_japan": [
+          "emergency_sos",
+          "messages",
+          "find_my"
+        ],
+        "google_device_eligible": false,
+        "google_japan_available": false,
+        "au_level": "unverified",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "official_usb_c_displayport_family",
+        "usb_data": "usb_3_10gbps",
+        "external_storage": "ios_device_specific",
+        "usb_audio": "official_usb_c",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "usb_c_fast_charge",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "device_specific"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "各キャリアのデータ通信・通話・SMS・5G・VoLTE/IMS実動作は未確認",
+        "2026-10-16予約開始・2026-10-23発売予定"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Carrier-specific data/voice/SMS/5G/VoLTE-IMS runtime is unverified",
+        "Pre-orders start October 16, 2026; scheduled release October 23, 2026"
+      ],
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase133-iphone-duo-a3719",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase133-iphone-duo-a3719",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase133-iphone-duo-a3719",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase133-iphone-duo-a3719",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase133-iphone-duo-a3719",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase133-iphone-duo-a3719",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase133-iphone-duo-a3719",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase133-iphone-duo-a3719",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase133-iphone-duo-a3719",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase133-iphone-duo-a3719",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase133-iphone-duo-a3719",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase133-iphone-duo-a3719"
+      },
+      "availability_note_ja": "2026-10-16予約開始・2026-10-23発売予定",
+      "availability_note_en": "Pre-orders start October 16, 2026; scheduled release October 23, 2026"
+    },
+    {
+      "id": "smartphone-2bea9c501e53",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.docomo.ne.jp/product/sc51g/spec.html",
+          "https://www.samsung.com/jp/smartphones/galaxy-s26/specs/",
+          "https://www.samsung.com/jp/business/smartphones/galaxy-s/galaxy-s26-black-256gb-sm-s942qzkesjp/",
+          "https://www.samsung.com/jp/support/mobile-devices/galaxy-esim-and-supported-network-carriers/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "ドコモ仕様でVoLTE/VoLTE HD+対応。持ち込み先IMSは別確認"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "usb_data": "usb_3_2_gen1",
+        "charging": "qi_supported"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "他社回線での通話・SMS・データ・5G・VoLTE/IMS実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime on non-Docomo networks remains unverified"
+      ]
+    },
+    {
+      "id": "smartphone-d8a2412e70bc",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.docomo.ne.jp/product/sc52g/spec.html",
+          "https://www.samsung.com/jp/smartphones/galaxy-s26/specs/",
+          "https://www.samsung.com/jp/business/smartphones/galaxy-s/galaxy-s26-plus-black-256gb-sm-s947qzkasjp/",
+          "https://www.samsung.com/jp/support/mobile-devices/galaxy-esim-and-supported-network-carriers/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "ドコモ仕様でVoLTE/VoLTE HD+対応。持ち込み先IMSは別確認"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "usb_data": "usb_3_2_gen1",
+        "charging": "qi_supported"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "他社回線での通話・SMS・データ・5G・VoLTE/IMS実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime on non-Docomo networks remains unverified"
+      ]
+    },
+    {
+      "id": "smartphone-7c754fc42e42",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.docomo.ne.jp/product/sc53g/spec.html",
+          "https://www.samsung.com/jp/smartphones/galaxy-s26-ultra/",
+          "https://www.samsung.com/jp/business/smartphones/galaxy-s/galaxy-s26-ultra-white-256gb-sm-s948qzwasjp/",
+          "https://www.samsung.com/jp/support/mobile-devices/galaxy-esim-and-supported-network-carriers/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "ドコモ仕様でVoLTE/VoLTE HD+対応。持ち込み先IMSは別確認"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "usb_data": "usb_3_2_gen1",
+        "charging": "qi_supported"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "他社回線での通話・SMS・データ・5G・VoLTE/IMS実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime on non-Docomo networks remains unverified"
+      ]
+    },
+    {
+      "id": "smartphone-2d1018da795e",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://www.docomo.ne.jp/product/sh51g/spec.html",
+          "https://www.sharp.co.jp/k-tai/products/aquos-r11/specs/",
+          "https://www.docomo.ne.jp/product/sh51g/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B3 / B8 / B11 / B18 / B19 / B21 / B28 / B41 / B42",
+        "nr_bands": "n1 / n3 / n28 / n40 / n41 / n77 / n78 / n79",
+        "volte_ims": "シャープ公式でVoLTE通話仕様、ドコモ販売仕様を確認。持ち込み先IMSは別確認"
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "platform_profile": {
+          "code": "aquos_r11",
+          "label_ja": "AQUOS R11公式DSDV",
+          "label_en": "AQUOS R11 official DSDV",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_line",
+          "fiveg_profile": "carrier_condition_required"
+        },
+        "exact_dual_mixed": true
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "charging": "usb_pd_3_0_36w"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "他社回線での通話・SMS・データ・5G・VoLTE/IMS実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime on non-Docomo networks remains unverified"
+      ]
+    }
+  ]
+}

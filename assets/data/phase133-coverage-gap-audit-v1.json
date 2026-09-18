@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "release": "phase133-current-flagship-normalization",
+  "checked_at": "2026-09-18",
+  "basis": "Phase132 coverage audit + Phase133 current flagship deep-upsert overlay",
+  "device_records": 556,
+  "smartphone_records": 521,
+  "official_source_records": 496,
+  "real_device_records": 1,
+  "current_integrated_layers": 16,
+  "metrics": [
+    {
+      "id": "release_date",
+      "label_ja": "発売日",
+      "known": 527,
+      "total": 556,
+      "coverage_pct": 94.8,
+      "domain": "identity"
+    },
+    {
+      "id": "sim_esim_exact",
+      "label_ja": "SIM/eSIM構成を具体記録",
+      "known": 227,
+      "total": 556,
+      "coverage_pct": 40.8,
+      "domain": "sim_esim"
+    },
+    {
+      "id": "lte_bands",
+      "label_ja": "LTE Bandを具体記録",
+      "known": 496,
+      "total": 556,
+      "coverage_pct": 89.2,
+      "domain": "radio"
+    },
+    {
+      "id": "nr_bands",
+      "label_ja": "5G NR Bandを具体記録",
+      "known": 482,
+      "total": 556,
+      "coverage_pct": 86.7,
+      "domain": "radio"
+    },
+    {
+      "id": "four_carrier_fit",
+      "label_ja": "4キャリア別条件情報あり",
+      "known": 487,
+      "total": 556,
+      "coverage_pct": 87.6,
+      "domain": "carrier_fit"
+    },
+    {
+      "id": "dual_sim_exact",
+      "label_ja": "型番別Dual SIM構成あり",
+      "known": 106,
+      "total": 556,
+      "coverage_pct": 19.1,
+      "domain": "sim_esim"
+    },
+    {
+      "id": "usb_connector",
+      "label_ja": "USB/端子情報あり",
+      "known": 292,
+      "total": 556,
+      "coverage_pct": 52.5,
+      "domain": "peripheral"
+    },
+    {
+      "id": "charging",
+      "label_ja": "充電仕様情報あり",
+      "known": 452,
+      "total": 556,
+      "coverage_pct": 81.3,
+      "domain": "peripheral"
+    },
+    {
+      "id": "external_field_test",
+      "label_ja": "外部実機動作確認を構造化",
+      "known": 18,
+      "total": 556,
+      "coverage_pct": 3.2,
+      "domain": "evidence"
+    },
+    {
+      "id": "real_device",
+      "label_ja": "SolQvia実機確認あり",
+      "known": 1,
+      "total": 556,
+      "coverage_pct": 0.2,
+      "domain": "evidence"
+    }
+  ],
+  "phase133_delta": {
+    "added_exact_model_records": 3,
+    "corrected_existing_records": 4,
+    "added_models": [
+      "iPhone 18 Pro A3713",
+      "iPhone 18 Pro Max A3716",
+      "iPhone Duo A3719"
+    ],
+    "corrected_models": [
+      "Galaxy S26 SC-51G",
+      "Galaxy S26+ SC-52G",
+      "Galaxy S26 Ultra SC-53G",
+      "AQUOS R11 SH-51G"
+    ]
+  },
+  "interpretation_ja": [
+    "充足率は品質点ではなく、現在のDBに具体値が入っている割合です。",
+    "Phase133は新規URLを作らず、Device Passport内の型番データを追加・補正します。",
+    "発売前端末は発売予定として保持し、実機利用可否を断定しません。",
+    "外部実機結果とSolQvia実機確認は別集計です。"
+  ]
+}
