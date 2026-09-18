@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "release": "phase140-pixel10a-normalization",
+  "checked_at": "2026-09-18",
+  "basis": "Phase139 coverage audit + Pixel 10a GQ57S normalization across four carriers and Google Store + au BYOD runtime evidence",
+  "device_records": 567,
+  "smartphone_records": 532,
+  "official_source_records": 507,
+  "real_device_records": 1,
+  "current_integrated_layers": 16,
+  "metrics": [
+    {
+      "id": "release_date",
+      "label_ja": "発売日",
+      "known": 538,
+      "total": 567,
+      "coverage_pct": 94.9,
+      "domain": "identity"
+    },
+    {
+      "id": "sim_esim_exact",
+      "label_ja": "SIM/eSIM構成を具体記録",
+      "known": 257,
+      "total": 567,
+      "coverage_pct": 45.3,
+      "domain": "sim_esim"
+    },
+    {
+      "id": "lte_bands",
+      "label_ja": "LTE Bandを具体記録",
+      "known": 507,
+      "total": 567,
+      "coverage_pct": 89.4,
+      "domain": "radio"
+    },
+    {
+      "id": "nr_bands",
+      "label_ja": "5G NR Bandを具体記録",
+      "known": 493,
+      "total": 567,
+      "coverage_pct": 86.9,
+      "domain": "radio"
+    },
+    {
+      "id": "four_carrier_fit",
+      "label_ja": "4キャリア別条件情報あり",
+      "known": 498,
+      "total": 567,
+      "coverage_pct": 87.8,
+      "domain": "carrier_fit"
+    },
+    {
+      "id": "dual_sim_exact",
+      "label_ja": "型番別Dual SIM構成あり",
+      "known": 128,
+      "total": 567,
+      "coverage_pct": 22.6,
+      "domain": "sim_esim"
+    },
+    {
+      "id": "usb_connector",
+      "label_ja": "USB/端子情報あり",
+      "known": 322,
+      "total": 567,
+      "coverage_pct": 56.8,
+      "domain": "peripheral"
+    },
+    {
+      "id": "charging",
+      "label_ja": "充電仕様情報あり",
+      "known": 482,
+      "total": 567,
+      "coverage_pct": 85,
+      "domain": "peripheral"
+    },
+    {
+      "id": "external_field_test",
+      "label_ja": "外部実機動作確認を構造化",
+      "known": 27,
+      "total": 567,
+      "coverage_pct": 4.8,
+      "domain": "evidence"
+    },
+    {
+      "id": "real_device",
+      "label_ja": "SolQvia実機確認あり",
+      "known": 1,
+      "total": 567,
+      "coverage_pct": 0.2,
+      "domain": "evidence"
+    }
+  ],
+  "phase140_delta": {
+    "added_exact_model_records": 1,
+    "corrected_existing_records": 4,
+    "added_external_runtime_records": 1,
+    "normalized_models": [
+      "Google Pixel 10a GQ57S / NTTドコモ",
+      "Google Pixel 10a GQ57S / au",
+      "Google Pixel 10a GQ57S / SoftBank",
+      "Google Pixel 10a GQ57S / 楽天モバイル",
+      "Google Pixel 10a GQ57S / Google Store"
+    ]
+  },
+  "interpretation_ja": [
+    "日本向けPixel 10aはGQ57Sとして販売経路別に証拠を分離します。",
+    "auのGQ57S動作確認はAndroid 16条件の外部キャリア証拠であり、SolQvia実機確認とは別です。",
+    "Dual eSIMはGoogle Pixel 7以降の公式仕様に基づき、キャリア許可条件付きとして保持します。",
+    "Phase140は新規index URLを作らずDevice Passport内部データを強化します。"
+  ]
+}
