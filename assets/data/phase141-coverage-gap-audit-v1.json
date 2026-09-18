@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "release": "phase141-a57-r11-normalization",
+  "checked_at": "2026-09-18",
+  "basis": "Phase140 coverage audit + Galaxy A57 5G / AQUOS R11 exact-model normalization + IIJmio runtime evidence",
+  "device_records": 569,
+  "smartphone_records": 534,
+  "official_source_records": 509,
+  "real_device_records": 1,
+  "current_integrated_layers": 16,
+  "metrics": [
+    {
+      "id": "release_date",
+      "label_ja": "発売日",
+      "known": 540,
+      "total": 569,
+      "coverage_pct": 94.9,
+      "domain": "identity"
+    },
+    {
+      "id": "sim_esim_exact",
+      "label_ja": "SIM/eSIM構成を具体記録",
+      "known": 263,
+      "total": 569,
+      "coverage_pct": 46.2,
+      "domain": "sim_esim"
+    },
+    {
+      "id": "lte_bands",
+      "label_ja": "LTE Bandを具体記録",
+      "known": 508,
+      "total": 569,
+      "coverage_pct": 89.3,
+      "domain": "radio"
+    },
+    {
+      "id": "nr_bands",
+      "label_ja": "5G NR Bandを具体記録",
+      "known": 494,
+      "total": 569,
+      "coverage_pct": 86.8,
+      "domain": "radio"
+    },
+    {
+      "id": "four_carrier_fit",
+      "label_ja": "4キャリア別条件情報あり",
+      "known": 500,
+      "total": 569,
+      "coverage_pct": 87.9,
+      "domain": "carrier_fit"
+    },
+    {
+      "id": "dual_sim_exact",
+      "label_ja": "型番別Dual SIM構成あり",
+      "known": 132,
+      "total": 569,
+      "coverage_pct": 23.2,
+      "domain": "sim_esim"
+    },
+    {
+      "id": "usb_connector",
+      "label_ja": "USB/端子情報あり",
+      "known": 324,
+      "total": 569,
+      "coverage_pct": 56.9,
+      "domain": "peripheral"
+    },
+    {
+      "id": "charging",
+      "label_ja": "充電仕様情報あり",
+      "known": 484,
+      "total": 569,
+      "coverage_pct": 85.1,
+      "domain": "peripheral"
+    },
+    {
+      "id": "external_field_test",
+      "label_ja": "外部実機動作確認を構造化",
+      "known": 29,
+      "total": 569,
+      "coverage_pct": 5.1,
+      "domain": "evidence"
+    },
+    {
+      "id": "real_device",
+      "label_ja": "SolQvia実機確認あり",
+      "known": 1,
+      "total": 569,
+      "coverage_pct": 0.2,
+      "domain": "evidence"
+    }
+  ],
+  "phase141_delta": {
+    "added_exact_model_records": 2,
+    "corrected_existing_records": 4,
+    "added_external_runtime_records": 2,
+    "normalized_models": [
+      "Galaxy A57 5G SC-54G / NTTドコモ",
+      "Galaxy A57 5G SM-A576Z / SoftBank",
+      "Galaxy A57 5G SM-A576Q / SIMフリー",
+      "AQUOS R11 SH-51G / NTTドコモ",
+      "AQUOS R11 A602SH / SoftBank",
+      "AQUOS R11 SH-M35 / SIMフリー"
+    ]
+  },
+  "interpretation_ja": [
+    "Galaxy A57 5GとAQUOS R11は国内型番単位で販売元・SIM/eSIM・実動作証拠を分離します。",
+    "IIJmioのSM-A576Q / SH-M35実機結果は外部証拠でありSolQvia実機確認ではありません。",
+    "通話結果は発信/着信へ、未確認SMSは送信/受信へ推測展開しません。",
+    "Phase141は新規index URLを作らずDevice Passport内部データを強化します。"
+  ]
+}

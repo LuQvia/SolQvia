@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "release": "phase141-a57-r11-normalization",
+  "checked_at": "2026-09-18",
+  "purpose": "Add exact-model IIJmio runtime evidence for Japanese SIM-free Galaxy A57 5G SM-A576Q and AQUOS R11 SH-M35.",
+  "records": [
+    {
+      "model_names": [
+        "Galaxy A57 5G"
+      ],
+      "model_numbers": [
+        "SM-A576Q"
+      ],
+      "source_class": "mvno_test_lab",
+      "source_name": "IIJmio",
+      "tested_at": "2026-09-18",
+      "device_variant": "国内SIMフリー版 SM-A576Q",
+      "results": {
+        "音声SIM（タイプD/A）": {
+          "voice": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        },
+        "音声eSIM（タイプD/A）": {
+          "voice": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        }
+      },
+      "notes": [
+        "IIJmio公式の動作確認結果。SolQvia実機確認ではない。",
+        "通話は発信/着信に分離されていないため、個別方向へ推測展開しない。",
+        "SMSはPhase141で個別結果を確認できていないため未確認のまま保持する。"
+      ],
+      "source_url": "https://www.iijmio.jp/hdd/devices/",
+      "source_urls": [
+        "https://www.iijmio.jp/hdd/devices/",
+        "https://www.iijmio.jp/device/"
+      ]
+    },
+    {
+      "model_names": [
+        "AQUOS R11"
+      ],
+      "model_numbers": [
+        "SH-M35"
+      ],
+      "source_class": "mvno_test_lab",
+      "source_name": "IIJmio",
+      "tested_at": "2026-09-18",
+      "device_variant": "国内SIMフリー版 SH-M35",
+      "results": {
+        "音声SIM（タイプD/A）": {
+          "voice": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        },
+        "音声eSIM（タイプD/A）": {
+          "voice": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        }
+      },
+      "notes": [
+        "IIJmio公式の動作確認結果。SolQvia実機確認ではない。",
+        "通話は発信/着信に分離されていないため、個別方向へ推測展開しない。",
+        "SMSはPhase141で個別結果を確認できていないため未確認のまま保持する。"
+      ],
+      "source_url": "https://www.iijmio.jp/hdd/devices/",
+      "source_urls": [
+        "https://www.iijmio.jp/hdd/devices/",
+        "https://www.iijmio.jp/info/iij/1783483613.html"
+      ]
+    }
+  ]
+}
