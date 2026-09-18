@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "release": "phase133-current-flagship-normalization",
+  "date": "2026-09-18",
+  "baseline": "Phase132 main 2f47460d5785d736f7c78c86dad498dac7372547",
+  "goal": "Normalize current flagship exact-model records and repair high-value SIM/eSIM gaps without changing the SEO observation surface.",
+  "index_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "added_exact_model_records": [
+    {
+      "model": "iPhone 18 Pro",
+      "model_number": "A3713",
+      "market": "Japan",
+      "release_date": "2026-09-18",
+      "sim": "eSIM-only / Dual eSIM"
+    },
+    {
+      "model": "iPhone 18 Pro Max",
+      "model_number": "A3716",
+      "market": "Japan",
+      "release_date": "2026-09-18",
+      "sim": "eSIM-only / Dual eSIM"
+    },
+    {
+      "model": "iPhone Duo",
+      "model_number": "A3719",
+      "market": "Japan",
+      "release_date": "2026-10-23",
+      "status": "scheduled release",
+      "sim": "eSIM-only / Dual eSIM"
+    }
+  ],
+  "corrected_existing_records": [
+    {
+      "id": "smartphone-2bea9c501e53",
+      "model": "Galaxy S26",
+      "model_number": "SC-51G",
+      "correction": "nanoSIM + eSIM / eSIM x2 and official source normalization"
+    },
+    {
+      "id": "smartphone-d8a2412e70bc",
+      "model": "Galaxy S26+",
+      "model_number": "SC-52G",
+      "correction": "nanoSIM + eSIM / eSIM x2 and official source normalization"
+    },
+    {
+      "id": "smartphone-7c754fc42e42",
+      "model": "Galaxy S26 Ultra",
+      "model_number": "SC-53G",
+      "correction": "nanoSIM + eSIM / eSIM x2 and official source normalization"
+    },
+    {
+      "id": "smartphone-2d1018da795e",
+      "model": "AQUOS R11",
+      "model_number": "SH-51G",
+      "correction": "nanoSIM + eSIM, DSDV and official band/source normalization"
+    }
+  ],
+  "engineering": [
+    "Device Passport now deep-merges Phase132 and Phase133 overlays by record ID.",
+    "Existing records can be corrected without duplicating sales records.",
+    "New current models can be added without creating thin indexable pages.",
+    "Official-source count excludes evidence records explicitly marked unverified.",
+    "Exact mixed Dual SIM configuration is recognized in the UI.",
+    "Evidence UI labels were generalized so future phases do not expose stale phase numbers."
+  ],
+  "evidence_rules": [
+    "Official SIM/eSIM or band support does not imply runtime success.",
+    "Carrier sales presence does not imply BYOD interoperability on another carrier.",
+    "External field-test evidence remains separate from SolQvia-owned real-device evidence.",
+    "Future-release devices are marked as scheduled and are not treated as real-device confirmed."
+  ],
+  "qa_targets": [
+    "Merged Device Passport record count = 556.",
+    "Smartphone record count = 521.",
+    "Official-confirmed record count = 496.",
+    "All IDs unique.",
+    "Phase133 overlay adds 3 records and patches 4 existing records.",
+    "JSON parse PASS.",
+    "Device Passport JavaScript syntax PASS.",
+    "No new indexable URL."
+  ],
+  "next_order": [
+    "Normalize remaining 2026 current flagship records already present as carrier-only entries.",
+    "Add stable third-party field-test matrices for Pixel 11 series when detailed source results are available.",
+    "Prioritize GSC-observed device records for exact-model corrections.",
+    "Expand SolQvia-owned real-device evidence with OS, firmware, carrier, SIM/eSIM and per-function conditions."
+  ]
+}
