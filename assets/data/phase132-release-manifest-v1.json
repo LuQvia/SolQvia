@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "release": "phase132-evidence-coverage-expansion",
+  "date": "2026-09-18",
+  "baseline": "Phase131 main 45d1dfdc674daff46df83dd94da1babc61206bab",
+  "goal": "Expand the unified Device Passport with current exact-model records and third-party field-test evidence while preserving the SEO observation surface.",
+  "index_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "current_device_overlay": {
+    "added_records": 3,
+    "records": [
+      {
+        "model": "Google Pixel 11",
+        "model_number": "GUJ0N",
+        "release_date": "2026-08-20",
+        "evidence": "Google/NTT Docomo/au/SoftBank official"
+      },
+      {
+        "model": "Google Pixel 11 Pro",
+        "model_number": "GM45K",
+        "release_date": "2026-08-20",
+        "evidence": "Google/NTT Docomo official"
+      },
+      {
+        "model": "Google Pixel 11 Pro XL",
+        "model_number": "G4HCD",
+        "release_date": "2026-08-20",
+        "evidence": "Google/NTT Docomo official"
+      }
+    ],
+    "runtime_rule": "No carrier runtime success inferred from official specification, band support, sales presence or SIM configuration."
+  },
+  "external_field_evidence": {
+    "source_class": "mvno_test_lab",
+    "source": "IIJmio",
+    "model_families": [
+      "iPhone 17e",
+      "Galaxy S26",
+      "Galaxy S26+",
+      "Galaxy S26 Ultra",
+      "AQUOS R11"
+    ],
+    "result_dimensions": [
+      "voice",
+      "mobile_data",
+      "tethering"
+    ],
+    "sim_types": [
+      "音声SIM（タイプD/A）",
+      "音声eSIM（タイプD/A）",
+      "データeSIM（ドコモ網）"
+    ],
+    "separation_rule": "Displayed as external field-test evidence, never SolQvia real-device confirmed."
+  },
+  "coverage": {
+    "device_records": 553,
+    "smartphone_records": 518,
+    "official_source_records": 493,
+    "solqvia_real_device_records": 1,
+    "external_field_test_exact_sales_records": 18
+  },
+  "completed": [
+    "Added Pixel 11 / 11 Pro / 11 Pro XL exact-model Google Store overlay records.",
+    "Device Passport now loads Phase132 additive records without replacing the Phase110 baseline dataset.",
+    "Structured IIJmio test results for iPhone 17e, Galaxy S26 family and AQUOS R11.",
+    "Device Passport renders external field-test evidence separately from SolQvia real-device evidence.",
+    "Updated the coverage audit and JA/EN Device Passport metadata/counts."
+  ],
+  "next_order": [
+    "Add Google Pixel 11 Pro Fold only after exact Japanese model/network fields are primary-source confirmed.",
+    "Extract exact external-test matrices for Pixel 11 series when a stable IIJmio detailed announcement/result source is available.",
+    "Expand current official exact-model overlays for major 2026 devices already present only as carrier sales records.",
+    "Prioritize GSC-observed models and high-change SIM/eSIM devices before broad historical enrichment.",
+    "Increase SolQvia-owned real-device evidence with documented OS/software, carrier and per-function test conditions."
+  ],
+  "release_gate": [
+    "JSON parses.",
+    "Device Passport JavaScript syntax passes.",
+    "Overlay IDs are unique.",
+    "No external field test is labeled SolQvia real-device evidence.",
+    "No band/spec inference is converted into runtime success.",
+    "No new indexable URL is created."
+  ]
+}
