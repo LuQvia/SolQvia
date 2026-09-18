@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.1",
+  "release": "phase135-pixel11-runtime-evidence",
+  "checked_at": "2026-09-18",
+  "purpose": "Add Pixel 11-series third-party runtime evidence while keeping it separate from SolQvia-owned real-device evidence.",
+  "records": [
+    {
+      "model_names": [
+        "Google Pixel 11",
+        "Google Pixel 11 Pro",
+        "Google Pixel 11 Pro XL",
+        "Google Pixel 11 Pro Fold"
+      ],
+      "source_class": "mvno_test_lab",
+      "source_name": "IIJmio",
+      "tested_at": "2026-08-21",
+      "device_variant": "IIJmio動作確認掲載版",
+      "result_provenance": "official_listing_plus_secondary_detail_crosscheck",
+      "results": {
+        "音声SIM（タイプD/A）": {
+          "voice": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        },
+        "音声eSIM（タイプD/A）": {
+          "voice": "confirmed",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        },
+        "データeSIM（ドコモ網／現・タイプI）": {
+          "voice": "not_applicable",
+          "mobile_data": "confirmed",
+          "tethering": "confirmed"
+        }
+      },
+      "notes": [
+        "IIJmioは2026-08-21にPixel 11シリーズ4機種を動作確認端末へ追加。",
+        "動作確認はIIJ独自調査であり、メーカー・キャリアの動作保証やSolQvia実機確認ではない。",
+        "2026-09-01から従来の「データeSIM（ドコモ網）」は「タイプI」名称へ変更。",
+        "元データは音声通話を発信/着信に、SMSを送信/受信に分離していないため、Phase134の機能別マトリクスでも推測で分割しない。",
+        "IIJ公式一覧・告知で対象追加を確認し、機能別結果の詳細はIIJ一次調査を参照した二次報道でクロスチェック。"
+      ],
+      "source_url": "https://www.iijmio.jp/hdd/devices/",
+      "source_urls": [
+        "https://www.iijmio.jp/hdd/devices/",
+        "https://www.iijmio.jp/info/iij/",
+        "https://jetstream.blog/2026/08/24/pixel-11-arrows-alpha-2-iijmio-support/"
+      ]
+    }
+  ]
+}
