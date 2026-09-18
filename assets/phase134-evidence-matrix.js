@@ -27,7 +27,7 @@
     not_solqvia_tested:t('実動作未確認','Runtime unverified'),
     official_capability_only_not_solqvia_tested:t('公式機能あり／実動作未確認','Official capability / runtime unverified'),
     not_applicable:t('対象外','Not applicable'),
-    not_applicable_physical_sim:t((物理SIM対象外','Physical SIM not applicable'),
+    not_applicable_physical_sim:t('物理SIM対象外','Physical SIM not applicable'),
     unverified:t('未確認','Unverified'),
     no_record:t('記録なし','No record')
   };
@@ -89,9 +89,10 @@
   Promise.all([
     load('/assets/data/phase131-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase131-solqvia-real-device-evidence-v1.json').catch(()=>({records:[]})),
-    load('/assets/data/phase132-external-field-evidence-v1.json').catch(()=>({records:[]}))
-  ]).then(([p,r,e])=>{
-    priority=p;realdb=r;externaldb=e;
+    load('/assets/data/phase132-external-field-evidence-v1.json').catch(()=>({records:[]})),
+    load('/assets/data/phase135-external-field-evidence-v1.json').catch(()=>({records:[]}))
+  ]).then(([p,r,e132,e135])=>{
+    priority=p;realdb=r;externaldb={records:[...(e132.records||[]),...(e135.records||[])]};
     augment();
     new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false});
   });

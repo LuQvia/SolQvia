@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "release": "phase135-pixel11-runtime-evidence",
+  "checked_at": "2026-09-18",
+  "basis": "Phase133 coverage audit + Phase135 Pixel 11 Pro Fold exact-model overlay + Pixel 11 series external field evidence",
+  "device_records": 557,
+  "smartphone_records": 522,
+  "official_source_records": 497,
+  "real_device_records": 1,
+  "current_integrated_layers": 16,
+  "metrics": [
+    {
+      "id": "release_date",
+      "label_ja": "発売日",
+      "known": 528,
+      "total": 557,
+      "coverage_pct": 94.8,
+      "domain": "identity"
+    },
+    {
+      "id": "sim_esim_exact",
+      "label_ja": "SIM/eSIM構成を具体記録",
+      "known": 228,
+      "total": 557,
+      "coverage_pct": 40.9,
+      "domain": "sim_esim"
+    },
+    {
+      "id": "lte_bands",
+      "label_ja": "LTE Bandを具体記録",
+      "known": 497,
+      "total": 557,
+      "coverage_pct": 89.2,
+      "domain": "radio"
+    },
+    {
+      "id": "nr_bands",
+      "label_ja": "5G NR Bandを具体記録",
+      "known": 483,
+      "total": 557,
+      "coverage_pct": 86.7,
+      "domain": "radio"
+    },
+    {
+      "id": "four_carrier_fit",
+      "label_ja": "4キャリア別条件情報あり",
+      "known": 488,
+      "total": 557,
+      "coverage_pct": 87.6,
+      "domain": "carrier_fit"
+    },
+    {
+      "id": "dual_sim_exact",
+      "label_ja": "型番別Dual SIM構成あり",
+      "known": 107,
+      "total": 557,
+      "coverage_pct": 19.2,
+      "domain": "sim_esim"
+    },
+    {
+      "id": "usb_connector",
+      "label_ja": "USB/端子情報あり",
+      "known": 293,
+      "total": 557,
+      "coverage_pct": 52.6,
+      "domain": "peripheral"
+    },
+    {
+      "id": "charging",
+      "label_ja": "充電仕様情報あり",
+      "known": 453,
+      "total": 557,
+      "coverage_pct": 81.3,
+      "domain": "peripheral"
+    },
+    {
+      "id": "external_field_test",
+      "label_ja": "外部実機動作確認を構造化",
+      "known": 22,
+      "total": 557,
+      "coverage_pct": 3.9,
+      "domain": "evidence"
+    },
+    {
+      "id": "real_device",
+      "label_ja": "SolQvia実機確認あり",
+      "known": 1,
+      "total": 557,
+      "coverage_pct": 0.2,
+      "domain": "evidence"
+    }
+  ],
+  "phase135_delta": {
+    "added_exact_model_records": 1,
+    "added_external_model_families": 4,
+    "added_models": [
+      "Google Pixel 11 Pro Fold GZDQ6"
+    ],
+    "external_models": [
+      "Google Pixel 11",
+      "Google Pixel 11 Pro",
+      "Google Pixel 11 Pro XL",
+      "Google Pixel 11 Pro Fold"
+    ]
+  },
+  "interpretation_ja": [
+    "充足率は品質点ではなく、現在のDBに具体値が入っている割合です。",
+    "外部実機結果はSolQvia実機確認とは別証拠として集計します。",
+    "音声通話やSMSの元データが方向別に分かれていない場合、発信/着信・送信/受信へ推測展開しません。",
+    "Phase135は新規index URLを作らず、Device Passportのデータ層を強化します。"
+  ]
+}
