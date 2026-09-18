@@ -88,11 +88,12 @@
   }
   Promise.all([
     load('/assets/data/phase131-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
+    load('/assets/data/phase136-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase131-solqvia-real-device-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase132-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase135-external-field-evidence-v1.json').catch(()=>({records:[]}))
-  ]).then(([p,r,e132,e135])=>{
-    priority=p;realdb=r;externaldb={records:[...(e132.records||[]),...(e135.records||[])]};
+  ]).then(([p131,p136,r,e132,e135])=>{
+    priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[])]};realdb=r;externaldb={records:[...(e132.records||[]),...(e135.records||[])]};
     augment();
     new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false});
   });
