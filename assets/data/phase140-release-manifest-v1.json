@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "release": "phase140-pixel10a-normalization",
+  "date": "2026-09-18",
+  "baseline": "Phase139 main 60d91a5315d69a43b61c0649344408917c0e3a0f",
+  "goal": "Normalize Japanese Google Pixel 10a GQ57S across four carriers and Google Store, and add exact-model au Android 16 runtime evidence without changing the 802-URL SEO observation surface.",
+  "index_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "corrected_existing_records": 4,
+  "added_exact_model_records": [
+    {
+      "model": "Google Pixel 10a",
+      "model_number": "GQ57S",
+      "carrier": "Google Store / SIMフリー"
+    }
+  ],
+  "exact_model": "GQ57S",
+  "external_runtime_evidence": {
+    "source": "au",
+    "source_class": "carrier_byod_test",
+    "verified_os": "Android 16",
+    "sim_types": [
+      "au Nano ICカード 05/05 HALF",
+      "eSIM"
+    ],
+    "confirmed_dimensions": [
+      "voice",
+      "sms",
+      "mobile_data",
+      "tethering",
+      "5G SA",
+      "satellite direct"
+    ],
+    "scope_rule": "Exact model GQ57S only; generic Pixel-name matching must not widen scope."
+  },
+  "engineering": [
+    "Phase110 Device Passport loads Phase140 overlay.",
+    "Phase131 enrichment merges Phase140 priority/external evidence and Phase140 coverage audit.",
+    "Phase134 evidence matrix loads Phase140 exact-model external evidence.",
+    "JA/EN Device Passport counts updated to 567 / 532 / 507."
+  ],
+  "evidence_rules": [
+    "au BYOD evidence is external carrier evidence, not SolQvia real-device evidence.",
+    "Generic voice/SMS results are not split into direction-specific sub-results unless the source does so.",
+    "Dual eSIM is stored as carrier-conditional based on Google's Pixel 7+ official dual-SIM guidance.",
+    "Specification/Band support is not promoted to runtime success."
+  ],
+  "qa_targets": [
+    "All Phase140 JSON parses.",
+    "Phase110/131/134 JavaScript syntax passes.",
+    "Phase140 overlay IDs are unique.",
+    "GQ57S au evidence does not attach to unrelated Pixel models.",
+    "JA/EN canonicals remain one each.",
+    "No new indexable URL is created."
+  ],
+  "next_order": [
+    "Normalize Galaxy A57 5G exact models or remaining AQUOS R11 gaps.",
+    "Expand exact-model carrier BYOD evidence where official OS-conditioned results exist.",
+    "Expand SolQvia-owned real-device evidence.",
+    "Use the next GSC export to reprioritize enrichment."
+  ]
+}
