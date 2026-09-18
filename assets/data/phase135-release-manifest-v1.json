@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "release": "phase135-pixel11-runtime-evidence",
+  "date": "2026-09-18",
+  "baseline": "Phase134 main 0bb804339871744d74599c582e6055f38dea2a9a",
+  "goal": "Add exact-model Pixel 11 Pro Fold coverage and Pixel 11-series external runtime evidence while keeping the 802-URL SEO observation surface unchanged.",
+  "index_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "added_exact_model_records": [
+    {
+      "model": "Google Pixel 11 Pro Fold",
+      "model_number": "GZDQ6",
+      "release_date": "2026-08-20",
+      "sim": "nanoSIM + eSIM or Dual eSIM",
+      "evidence": "Google + NTT Docomo + au + SoftBank official"
+    }
+  ],
+  "external_field_evidence": {
+    "source": "IIJmio",
+    "listed_at": "2026-08-21",
+    "models": [
+      "Google Pixel 11",
+      "Google Pixel 11 Pro",
+      "Google Pixel 11 Pro XL",
+      "Google Pixel 11 Pro Fold"
+    ],
+    "dimensions": [
+      "voice",
+      "mobile_data",
+      "tethering"
+    ],
+    "separation_rule": "External field-test evidence remains separate from SolQvia real-device evidence.",
+    "provenance_rule": "IIJ official listing confirms the added devices; detailed result dimensions are retained with explicit source provenance and are not promoted to carrier-wide guarantees."
+  },
+  "engineering": [
+    "Phase110 Device Passport now loads the Phase135 exact-model overlay.",
+    "Phase131 enrichment now merges Phase132 and Phase135 external field evidence.",
+    "Phase134 per-function evidence matrix now consumes Phase135 evidence.",
+    "Fixed a pre-existing Phase134 status-label syntax error found during Phase135 QA.",
+    "Phase135 coverage audit is the current fallback-first coverage source.",
+    "JA/EN Device Passport counts and release markers updated to 557 device records / 522 smartphone records / 497 official-source records."
+  ],
+  "evidence_rules": [
+    "Voice results are not split into outgoing/incoming unless the source separates direction.",
+    "SMS results are not split into send/receive unless the source separates direction.",
+    "External field tests are not labeled SolQvia real-device evidence.",
+    "Official sales/spec presence does not imply runtime success on another carrier.",
+    "No unverified field is filled by band matching alone."
+  ],
+  "qa_targets": [
+    "All Phase135 JSON parses.",
+    "Phase110/131/134 JavaScript syntax passes.",
+    "Phase135 overlay ID is unique.",
+    "Device Passport loads Phase135 overlay and evidence data.",
+    "JA/EN canonicals remain one each.",
+    "No new indexable URL is created."
+  ],
+  "next_order": [
+    "Add stable primary-source external-test matrices for more GSC-observed current devices.",
+    "Normalize remaining 2026 carrier-only flagship records.",
+    "Expand SolQvia-owned real-device evidence with exact OS/software, carrier, SIM/eSIM and per-function results.",
+    "Use GSC query/page data when the next dataset is supplied to reprioritize enrichment."
+  ]
+}
