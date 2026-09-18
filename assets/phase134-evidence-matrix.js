@@ -98,7 +98,8 @@
     load('/assets/data/phase132-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase135-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase137-external-field-evidence-v1.json').catch(()=>({records:[]})),
-    load('/assets/data/phase138-external-field-evidence-v1.json').catch(()=>({records:[]}))
+    load('/assets/data/phase138-external-field-evidence-v1.json').catch(()=>({records:[]})),
+    load('/assets/data/phase139-external-field-evidence-v1.json').catch(()=>({records:[]}))
   ]).then(([p131,p136,p137,p138,p139,r,e132,e135,e137,e138,e139])=>{
     priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[]),...(p137.priority_records||[]),...(p138.priority_records||[]),...(p139.priority_records||[])]};realdb=r;externaldb={records:[...(e132.records||[]),...(e135.records||[]),...(e137.records||[]),...(e138.records||[]),...(e139.records||[])]};
     augment();
