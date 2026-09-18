@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "release": "phase133-current-flagship-evidence-unification",
+  "checked_at": "2026-09-18",
+  "purpose": "Add the current Google Pixel 11 Pro Fold exact-model record without creating a new indexable URL.",
+  "records": [
+    {
+      "id": "phase133-pixel11profold-gzdq6",
+      "model_name": "Google Pixel 11 Pro Fold",
+      "model_number": "GZDQ6",
+      "brand": "Google",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "original_carrier": "Google Store",
+      "release_date": "2026-08-20",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "manufacturer_official",
+        "ja": "メーカー公式確認",
+        "en": "Manufacturer official",
+        "has_real_device": false,
+        "source_count": 5,
+        "source_urls": [
+          "https://store.google.com/jp/product/pixel_11_pro_fold_specs?hl=ja",
+          "https://support.google.com/pixelphone/answer/7158570?hl=ja",
+          "https://www.docomo.ne.jp/product/pixel11profold/",
+          "https://www.au.com/mobile/product/smartphone/pixel11p_fold/",
+          "https://www.softbank.jp/mobile/products/google-pixel/google-pixel-11-pro-fold/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 または eSIM×2（デュアルSIM）",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B12 / B13 / B14 / B17 / B18 / B19 / B20 / B21 / B25 / B26 / B28 / B29 / B30 / B32 / B38 / B39 / B40 / B41 / B42 / B48 / B66 / B71 / B75",
+        "nr_bands": "n1 / n2 / n3 / n5 / n7 / n8 / n12 / n13 / n14 / n20 / n25 / n26 / n28 / n29 / n30 / n38 / n40 / n41 / n48 / n66 / n70 / n71 / n75 / n77 / n78 / n79 / n257 / n258 / n260 / n261",
+        "volte_ims": "Google公式のSIM/無線仕様と国内販売は確認済み。各回線のVoLTE/IMS実登録・通話実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "販売確認",
+            "basis": "ドコモ発売情報",
+            "note": "2026-08-20発売。5G SA・ミリ波対応表記あり。実動作は別判定"
+          },
+          "au": {
+            "rating": "販売確認",
+            "basis": "au製品ページ",
+            "note": "2026-08-20発売。実動作は別判定"
+          },
+          "SoftBank": {
+            "rating": "販売確認",
+            "basis": "SoftBank製品ページ",
+            "note": "2026-08-20発売。実動作は別判定"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase133未確認",
+            "note": "推測で埋めない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "platform_profile": {
+          "code": "google_pixel",
+          "label_ja": "Google Pixel公式DSDS基準",
+          "label_en": "Google Pixel DSDS baseline",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "dual_5g_carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "google_pixel",
+          "ownership": "android_device_protection",
+          "repair_history": "seller_or_repair_record",
+          "battery": "device_specific"
+        },
+        "network_restriction_profile": "google_store"
+      },
+      "migration": {
+        "platform": "pixel_android"
+      },
+      "os_update": {
+        "platform": "pixel_android",
+        "ecosystem": "google_pixel",
+        "primary_scope": true
+      },
+      "loss_recovery": {
+        "platform": "android",
+        "primary_scope": true
+      },
+      "satellite": {
+        "apple_native_japan": false,
+        "apple_features_japan": [],
+        "google_device_eligible": true,
+        "google_japan_available": false,
+        "au_level": "unverified",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "unverified",
+        "usb_data": "usb_3_2",
+        "external_storage": "android_platform_supported_exact_accessory_conditions",
+        "usb_audio": "unverified",
+        "usb_ethernet": "unknown",
+        "charging": "usb_pd_pps",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "各キャリアでの通話・SMS・データ・5G・VoLTE/IMS実動作は未確認",
+        "楽天モバイル販売・BYOD条件はPhase133では未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Carrier-specific voice/SMS/data/5G/VoLTE-IMS runtime is unverified",
+        "Rakuten Mobile sales/BYOD status is unverified in Phase133"
+      ],
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase133-pixel11profold-gzdq6",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase133-pixel11profold-gzdq6",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase133-pixel11profold-gzdq6",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase133-pixel11profold-gzdq6",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase133-pixel11profold-gzdq6",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase133-pixel11profold-gzdq6",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase133-pixel11profold-gzdq6",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase133-pixel11profold-gzdq6",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase133-pixel11profold-gzdq6",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase133-pixel11profold-gzdq6",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase133-pixel11profold-gzdq6",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase133-pixel11profold-gzdq6"
+      }
+    }
+  ]
+}
