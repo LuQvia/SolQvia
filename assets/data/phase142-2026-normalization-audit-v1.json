@@ -1,0 +1,929 @@
+{
+  "schema_version": "1.0",
+  "release": "phase142-2026-normalization-audit",
+  "checked_at": "2026-09-18",
+  "year": "2026",
+  "scoring_weights": {
+    "model_number": 25,
+    "sim_esim": 20,
+    "sim_flags": 10,
+    "dual_sim_exact": 15,
+    "lte_bands": 10,
+    "nr_bands": 10,
+    "four_carrier_fit": 5,
+    "usb": 3,
+    "os_update": 2,
+    "official_source_depth": 5
+  },
+  "summary": {
+    "total_year_records": 72,
+    "incomplete_records": 39,
+    "complete_by_structural_rules": 33,
+    "families_with_gaps": 21,
+    "external_runtime_records": 33,
+    "solqvia_real_device_records": 0
+  },
+  "family_priority": [
+    {
+      "model": "Galaxy S26",
+      "records": 4,
+      "incomplete_records": 3,
+      "missing_model_numbers": 3,
+      "external_runtime_records": 4,
+      "solqvia_real_records": 0,
+      "score_sum": 180,
+      "max_record_score": 75,
+      "priority_score": 200
+    },
+    {
+      "model": "Galaxy S26 Ultra",
+      "records": 4,
+      "incomplete_records": 3,
+      "missing_model_numbers": 3,
+      "external_runtime_records": 4,
+      "solqvia_real_records": 0,
+      "score_sum": 180,
+      "max_record_score": 75,
+      "priority_score": 200
+    },
+    {
+      "model": "Galaxy S26+",
+      "records": 4,
+      "incomplete_records": 3,
+      "missing_model_numbers": 3,
+      "external_runtime_records": 4,
+      "solqvia_real_records": 0,
+      "score_sum": 180,
+      "max_record_score": 75,
+      "priority_score": 200
+    },
+    {
+      "model": "arrows We3",
+      "records": 3,
+      "incomplete_records": 3,
+      "missing_model_numbers": 2,
+      "external_runtime_records": 0,
+      "solqvia_real_records": 0,
+      "score_sum": 170,
+      "max_record_score": 75,
+      "priority_score": 195
+    },
+    {
+      "model": "iPhone 17e",
+      "records": 4,
+      "incomplete_records": 4,
+      "missing_model_numbers": 4,
+      "external_runtime_records": 4,
+      "solqvia_real_records": 0,
+      "score_sum": 120,
+      "max_record_score": 30,
+      "priority_score": 145
+    },
+    {
+      "model": "moto g37",
+      "records": 1,
+      "incomplete_records": 1,
+      "missing_model_numbers": 1,
+      "external_runtime_records": 0,
+      "solqvia_real_records": 0,
+      "score_sum": 75,
+      "max_record_score": 75,
+      "priority_score": 90
+    },
+    {
+      "model": "Natural AI Phone",
+      "records": 1,
+      "incomplete_records": 1,
+      "missing_model_numbers": 1,
+      "external_runtime_records": 0,
+      "solqvia_real_records": 0,
+      "score_sum": 75,
+      "max_record_score": 75,
+      "priority_score": 90
+    },
+    {
+      "model": "Galaxy Z Flip8",
+      "records": 5,
+      "incomplete_records": 3,
+      "missing_model_numbers": 0,
+      "external_runtime_records": 1,
+      "solqvia_real_records": 0,
+      "score_sum": 65,
+      "max_record_score": 35,
+      "priority_score": 85
+    },
+    {
+      "model": "Galaxy Z Fold8",
+      "records": 5,
+      "incomplete_records": 3,
+      "missing_model_numbers": 0,
+      "external_runtime_records": 1,
+      "solqvia_real_records": 0,
+      "score_sum": 65,
+      "max_record_score": 35,
+      "priority_score": 85
+    },
+    {
+      "model": "Galaxy Z Fold8 Ultra",
+      "records": 5,
+      "incomplete_records": 3,
+      "missing_model_numbers": 0,
+      "external_runtime_records": 1,
+      "solqvia_real_records": 0,
+      "score_sum": 65,
+      "max_record_score": 35,
+      "priority_score": 85
+    },
+    {
+      "model": "Galaxy A57 5G",
+      "records": 3,
+      "incomplete_records": 2,
+      "missing_model_numbers": 0,
+      "external_runtime_records": 1,
+      "solqvia_real_records": 0,
+      "score_sum": 50,
+      "max_record_score": 35,
+      "priority_score": 65
+    },
+    {
+      "model": "AQUOS R10",
+      "records": 1,
+      "incomplete_records": 1,
+      "missing_model_numbers": 1,
+      "external_runtime_records": 0,
+      "solqvia_real_records": 0,
+      "score_sum": 45,
+      "max_record_score": 45,
+      "priority_score": 60
+    },
+    {
+      "model": "moto g37j",
+      "records": 1,
+      "incomplete_records": 1,
+      "missing_model_numbers": 1,
+      "external_runtime_records": 0,
+      "solqvia_real_records": 0,
+      "score_sum": 45,
+      "max_record_score": 45,
+      "priority_score": 60
+    },
+    {
+      "model": "OPPO Reno13 A",
+      "records": 1,
+      "incomplete_records": 1,
+      "missing_model_numbers": 1,
+      "external_runtime_records": 0,
+      "solqvia_real_records": 0,
+      "score_sum": 45,
+      "max_record_score": 45,
+      "priority_score": 60
+    },
+    {
+      "model": "OPPO Reno15 A",
+      "records": 1,
+      "incomplete_records": 1,
+      "missing_model_numbers": 1,
+      "external_runtime_records": 0,
+      "solqvia_real_records": 0,
+      "score_sum": 45,
+      "max_record_score": 45,
+      "priority_score": 60
+    },
+    {
+      "model": "Phone (3a) Lite",
+      "records": 1,
+      "incomplete_records": 1,
+      "missing_model_numbers": 1,
+      "external_runtime_records": 0,
+      "solqvia_real_records": 0,
+      "score_sum": 45,
+      "max_record_score": 45,
+      "priority_score": 60
+    },
+    {
+      "model": "Phone (4a) Pro",
+      "records": 1,
+      "incomplete_records": 1,
+      "missing_model_numbers": 1,
+      "external_runtime_records": 0,
+      "solqvia_real_records": 0,
+      "score_sum": 45,
+      "max_record_score": 45,
+      "priority_score": 60
+    },
+    {
+      "model": "TORQUE G07",
+      "records": 1,
+      "incomplete_records": 1,
+      "missing_model_numbers": 1,
+      "external_runtime_records": 0,
+      "solqvia_real_records": 0,
+      "score_sum": 45,
+      "max_record_score": 45,
+      "priority_score": 60
+    },
+    {
+      "model": "らくらくスマートフォン Lite",
+      "records": 1,
+      "incomplete_records": 1,
+      "missing_model_numbers": 1,
+      "external_runtime_records": 0,
+      "solqvia_real_records": 0,
+      "score_sum": 45,
+      "max_record_score": 45,
+      "priority_score": 60
+    },
+    {
+      "model": "キッズフォン4",
+      "records": 1,
+      "incomplete_records": 1,
+      "missing_model_numbers": 0,
+      "external_runtime_records": 0,
+      "solqvia_real_records": 0,
+      "score_sum": 15,
+      "max_record_score": 15,
+      "priority_score": 30
+    },
+    {
+      "model": "Xperia 1 VIII",
+      "records": 4,
+      "incomplete_records": 1,
+      "missing_model_numbers": 0,
+      "external_runtime_records": 1,
+      "solqvia_real_records": 0,
+      "score_sum": 15,
+      "max_record_score": 15,
+      "priority_score": 25
+    }
+  ],
+  "record_backlog": [
+    {
+      "id": "smartphone-bbe638456aa5",
+      "model": "arrows We3",
+      "model_number": "",
+      "carrier": "au",
+      "release_date": "2026-06-25",
+      "structural_score": 75,
+      "gaps": [
+        "model_number",
+        "sim_esim",
+        "sim_flags",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-5f29c063af29",
+      "model": "Galaxy S26",
+      "model_number": "",
+      "carrier": "SoftBank",
+      "release_date": "2026-03-12",
+      "structural_score": 75,
+      "gaps": [
+        "model_number",
+        "sim_esim",
+        "sim_flags",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-d81e928aea24",
+      "model": "Galaxy S26",
+      "model_number": "",
+      "carrier": "au",
+      "release_date": "2026-03-12",
+      "structural_score": 75,
+      "gaps": [
+        "model_number",
+        "sim_esim",
+        "sim_flags",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-6024ac39a36b",
+      "model": "Galaxy S26 Ultra",
+      "model_number": "",
+      "carrier": "SoftBank",
+      "release_date": "2026-03-12",
+      "structural_score": 75,
+      "gaps": [
+        "model_number",
+        "sim_esim",
+        "sim_flags",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-258795ce0865",
+      "model": "Galaxy S26 Ultra",
+      "model_number": "",
+      "carrier": "au",
+      "release_date": "2026-03-12",
+      "structural_score": 75,
+      "gaps": [
+        "model_number",
+        "sim_esim",
+        "sim_flags",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-392675890be5",
+      "model": "Galaxy S26+",
+      "model_number": "",
+      "carrier": "SoftBank",
+      "release_date": "2026-03-12",
+      "structural_score": 75,
+      "gaps": [
+        "model_number",
+        "sim_esim",
+        "sim_flags",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-c1a89c87c390",
+      "model": "Galaxy S26+",
+      "model_number": "",
+      "carrier": "au",
+      "release_date": "2026-03-12",
+      "structural_score": 75,
+      "gaps": [
+        "model_number",
+        "sim_esim",
+        "sim_flags",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-e7d7dfaf8dd8",
+      "model": "moto g37",
+      "model_number": "",
+      "carrier": "SoftBank",
+      "release_date": "2026-07-31",
+      "structural_score": 75,
+      "gaps": [
+        "model_number",
+        "sim_esim",
+        "sim_flags",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-317fe991611a",
+      "model": "Natural AI Phone",
+      "model_number": "",
+      "carrier": "SoftBank",
+      "release_date": "2026-04-24",
+      "structural_score": 75,
+      "gaps": [
+        "model_number",
+        "sim_esim",
+        "sim_flags",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-043b0bd76f8b",
+      "model": "arrows We3",
+      "model_number": "F-52G",
+      "carrier": "NTTドコモ",
+      "release_date": "2026-06-25",
+      "structural_score": 50,
+      "gaps": [
+        "sim_esim",
+        "sim_flags",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-b3285c0ac052",
+      "model": "AQUOS R10",
+      "model_number": "",
+      "carrier": "楽天モバイル",
+      "release_date": "2026-01-23",
+      "structural_score": 45,
+      "gaps": [
+        "model_number",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-26105fe223ea",
+      "model": "arrows We3",
+      "model_number": "",
+      "carrier": "楽天モバイル",
+      "release_date": "2026-06-25",
+      "structural_score": 45,
+      "gaps": [
+        "model_number",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-427a97c87846",
+      "model": "moto g37j",
+      "model_number": "",
+      "carrier": "楽天モバイル",
+      "release_date": "2026-07-31",
+      "structural_score": 45,
+      "gaps": [
+        "model_number",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-ca4bc05eddf1",
+      "model": "OPPO Reno13 A",
+      "model_number": "",
+      "carrier": "au",
+      "release_date": "2026-07-17",
+      "structural_score": 45,
+      "gaps": [
+        "model_number",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-1db94ecf6897",
+      "model": "OPPO Reno15 A",
+      "model_number": "",
+      "carrier": "楽天モバイル",
+      "release_date": "2026-06-25",
+      "structural_score": 45,
+      "gaps": [
+        "model_number",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-fd84879ba9af",
+      "model": "Phone (3a) Lite",
+      "model_number": "",
+      "carrier": "楽天モバイル",
+      "release_date": "2026-01-15",
+      "structural_score": 45,
+      "gaps": [
+        "model_number",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-4dc5d79c1d3a",
+      "model": "Phone (4a) Pro",
+      "model_number": "",
+      "carrier": "楽天モバイル",
+      "release_date": "2026-04-22",
+      "structural_score": 45,
+      "gaps": [
+        "model_number",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-122725dd0415",
+      "model": "TORQUE G07",
+      "model_number": "",
+      "carrier": "au",
+      "release_date": "2026-03-18",
+      "structural_score": 45,
+      "gaps": [
+        "model_number",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-76b7fc3c03e4",
+      "model": "らくらくスマートフォン Lite",
+      "model_number": "",
+      "carrier": "au",
+      "release_date": "2026-01-23",
+      "structural_score": 45,
+      "gaps": [
+        "model_number",
+        "dual_sim_exact",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "phase141-galaxy-a57-sm-a576q",
+      "model": "Galaxy A57 5G",
+      "model_number": "SM-A576Q",
+      "carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-04-23",
+      "structural_score": 35,
+      "gaps": [
+        "dual_sim_exact",
+        "lte_bands",
+        "nr_bands"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "phase138-galaxy-z-flip8-sm-f776q",
+      "model": "Galaxy Z Flip8",
+      "model_number": "SM-F776Q",
+      "carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-08-07",
+      "structural_score": 35,
+      "gaps": [
+        "dual_sim_exact",
+        "lte_bands",
+        "nr_bands"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "phase139-galaxy-z-fold8-sm-f971q",
+      "model": "Galaxy Z Fold8",
+      "model_number": "SM-F971Q",
+      "carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-08-07",
+      "structural_score": 35,
+      "gaps": [
+        "dual_sim_exact",
+        "lte_bands",
+        "nr_bands"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "phase139-galaxy-z-fold8-ultra-sm-f976q",
+      "model": "Galaxy Z Fold8 Ultra",
+      "model_number": "SM-F976Q",
+      "carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-08-07",
+      "structural_score": 35,
+      "gaps": [
+        "dual_sim_exact",
+        "lte_bands",
+        "nr_bands"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-93cf43bd9492",
+      "model": "Galaxy S26",
+      "model_number": "",
+      "carrier": "楽天モバイル",
+      "release_date": "2026-03-12",
+      "structural_score": 30,
+      "gaps": [
+        "model_number",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-6c330cbd9eeb",
+      "model": "Galaxy S26 Ultra",
+      "model_number": "",
+      "carrier": "楽天モバイル",
+      "release_date": "2026-03-12",
+      "structural_score": 30,
+      "gaps": [
+        "model_number",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-06df6bb9ef93",
+      "model": "Galaxy S26+",
+      "model_number": "",
+      "carrier": "楽天モバイル",
+      "release_date": "2026-03-12",
+      "structural_score": 30,
+      "gaps": [
+        "model_number",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-703a3a66b983",
+      "model": "iPhone 17e",
+      "model_number": "",
+      "carrier": "NTTドコモ",
+      "release_date": "2026-03-11",
+      "structural_score": 30,
+      "gaps": [
+        "model_number",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-a135ae6593c3",
+      "model": "iPhone 17e",
+      "model_number": "",
+      "carrier": "SoftBank",
+      "release_date": "2026-03-11",
+      "structural_score": 30,
+      "gaps": [
+        "model_number",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-f4af5911098c",
+      "model": "iPhone 17e",
+      "model_number": "",
+      "carrier": "au",
+      "release_date": "2026-03-11",
+      "structural_score": 30,
+      "gaps": [
+        "model_number",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-e5209dbbacb3",
+      "model": "iPhone 17e",
+      "model_number": "",
+      "carrier": "楽天モバイル",
+      "release_date": "2026-03-11",
+      "structural_score": 30,
+      "gaps": [
+        "model_number",
+        "official_source_depth"
+      ],
+      "external_runtime_evidence": true,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-26be0541a414",
+      "model": "Galaxy A57 5G",
+      "model_number": "SM-A576Z",
+      "carrier": "SoftBank",
+      "release_date": "2026-04-23",
+      "structural_score": 15,
+      "gaps": [
+        "dual_sim_exact"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-74bd107ac207",
+      "model": "Galaxy Z Flip8",
+      "model_number": "SM-F776Z",
+      "carrier": "SoftBank",
+      "release_date": "2026-08-07",
+      "structural_score": 15,
+      "gaps": [
+        "dual_sim_exact"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-b024201756a4",
+      "model": "Galaxy Z Flip8",
+      "model_number": "SCG40",
+      "carrier": "au",
+      "release_date": "2026-08-07",
+      "structural_score": 15,
+      "gaps": [
+        "dual_sim_exact"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-073696959f1e",
+      "model": "Galaxy Z Fold8",
+      "model_number": "SM-F971Z",
+      "carrier": "SoftBank",
+      "release_date": "2026-08-07",
+      "structural_score": 15,
+      "gaps": [
+        "dual_sim_exact"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-63179203f5df",
+      "model": "Galaxy Z Fold8",
+      "model_number": "SCG41",
+      "carrier": "au",
+      "release_date": "2026-08-07",
+      "structural_score": 15,
+      "gaps": [
+        "dual_sim_exact"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-7a17b7589da1",
+      "model": "Galaxy Z Fold8 Ultra",
+      "model_number": "SM-F976Z",
+      "carrier": "SoftBank",
+      "release_date": "2026-08-07",
+      "structural_score": 15,
+      "gaps": [
+        "dual_sim_exact"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-5bd741df43c9",
+      "model": "Galaxy Z Fold8 Ultra",
+      "model_number": "SCG39",
+      "carrier": "au",
+      "release_date": "2026-08-07",
+      "structural_score": 15,
+      "gaps": [
+        "dual_sim_exact"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "smartphone-fde7c59c8d84",
+      "model": "Xperia 1 VIII",
+      "model_number": "SOG17",
+      "carrier": "au",
+      "release_date": "2026-06-11",
+      "structural_score": 15,
+      "gaps": [
+        "dual_sim_exact"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    },
+    {
+      "id": "kids-4-Kids Phone 4",
+      "model": "キッズフォン4",
+      "model_number": "Kids Phone 4",
+      "carrier": "SoftBank",
+      "release_date": "2026-02-20",
+      "structural_score": 15,
+      "gaps": [
+        "dual_sim_exact"
+      ],
+      "external_runtime_evidence": false,
+      "solqvia_real_device": false
+    }
+  ],
+  "next_execution_order": [
+    {
+      "rank": 1,
+      "model": "Galaxy S26",
+      "priority_score": 200,
+      "incomplete_records": 3,
+      "missing_model_numbers": 3,
+      "external_runtime_records": 4
+    },
+    {
+      "rank": 2,
+      "model": "Galaxy S26 Ultra",
+      "priority_score": 200,
+      "incomplete_records": 3,
+      "missing_model_numbers": 3,
+      "external_runtime_records": 4
+    },
+    {
+      "rank": 3,
+      "model": "Galaxy S26+",
+      "priority_score": 200,
+      "incomplete_records": 3,
+      "missing_model_numbers": 3,
+      "external_runtime_records": 4
+    },
+    {
+      "rank": 4,
+      "model": "arrows We3",
+      "priority_score": 195,
+      "incomplete_records": 3,
+      "missing_model_numbers": 2,
+      "external_runtime_records": 0
+    },
+    {
+      "rank": 5,
+      "model": "iPhone 17e",
+      "priority_score": 145,
+      "incomplete_records": 4,
+      "missing_model_numbers": 4,
+      "external_runtime_records": 4
+    },
+    {
+      "rank": 6,
+      "model": "moto g37",
+      "priority_score": 90,
+      "incomplete_records": 1,
+      "missing_model_numbers": 1,
+      "external_runtime_records": 0
+    },
+    {
+      "rank": 7,
+      "model": "Natural AI Phone",
+      "priority_score": 90,
+      "incomplete_records": 1,
+      "missing_model_numbers": 1,
+      "external_runtime_records": 0
+    },
+    {
+      "rank": 8,
+      "model": "Galaxy Z Flip8",
+      "priority_score": 85,
+      "incomplete_records": 3,
+      "missing_model_numbers": 0,
+      "external_runtime_records": 1
+    },
+    {
+      "rank": 9,
+      "model": "Galaxy Z Fold8",
+      "priority_score": 85,
+      "incomplete_records": 3,
+      "missing_model_numbers": 0,
+      "external_runtime_records": 1
+    },
+    {
+      "rank": 10,
+      "model": "Galaxy Z Fold8 Ultra",
+      "priority_score": 85,
+      "incomplete_records": 3,
+      "missing_model_numbers": 0,
+      "external_runtime_records": 1
+    }
+  ],
+  "rules": [
+    "Missing exact model number is a high-priority structural gap.",
+    "Generic SIM placeholders are distinct from known nanoSIM/eSIM support.",
+    "Dual-SIM exactness is evaluated separately from basic SIM/eSIM support.",
+    "Band tables and carrier-fit records are structural evidence, not runtime guarantees.",
+    "External field tests and SolQvia-owned real-device evidence remain separate."
+  ]
+}
