@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "release": "phase133-current-flagship-evidence-unification",
+  "checked_at": "2026-09-18",
+  "purpose": "Store model/OS/service-specific runtime caveats separately from generic compatibility and real-device evidence.",
+  "conditions": [
+    {
+      "key": "iijmio-docomo-data-esim-foma-shutdown-apple-2026",
+      "affected_models": [
+        "iPhone 16e",
+        "iPhone Air",
+        "iPhone 17e"
+      ],
+      "source_class": "mvno_test_lab",
+      "source_name": "IIJmio",
+      "source_url": "https://www.iijmio.jp/info/iij/1766027735.html",
+      "observed_software": "iOS 26.2",
+      "affected_service_scope": {
+        "network": "NTTドコモ網",
+        "services": [
+          "IIJmioギガプラン データ通信専用eSIM",
+          "IIJmio データプランゼロ（eSIM）",
+          "IIJmio eSIMベータ版",
+          "mio IoTサービス",
+          "Japan Travel SIM（eSIM/物理SIM）"
+        ],
+        "excludes": [
+          "IIJmioギガプラン 音声SIM/eSIM",
+          "SMS機能付きSIM（物理SIM）",
+          "データ通信専用SIM（物理SIM）",
+          "5G対応の各プラン/SIM"
+        ]
+      },
+      "timeline": [
+        {
+          "period": "2026-03-01/2026-03-31",
+          "symptom": "端末が3G網に接続してしまい、4G（LTE）で通信できなくなる可能性",
+          "status": "external_observed_condition"
+        },
+        {
+          "period": "2026-04-01/",
+          "symptom": "再起動直後など特定条件で4G（LTE）接続まで1〜2分程度かかる可能性",
+          "status": "external_observed_condition"
+        }
+      ],
+      "workaround": [
+        "機内モードのON/OFFで速やかに接続できる可能性がある"
+      ],
+      "scope_note": "IIJmioが3G停波を想定した試験で確認した条件付き事象。すべての回線・SIM・OS版に一般化しない。iOS更新で挙動が変わる可能性がある。"
+    }
+  ]
+}
