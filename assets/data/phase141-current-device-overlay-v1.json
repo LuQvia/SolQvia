@@ -1,0 +1,650 @@
+{
+  "schema_version": "1.0",
+  "release": "phase141-a57-r11-normalization",
+  "checked_at": "2026-09-18",
+  "purpose": "Normalize Japanese Galaxy A57 5G and AQUOS R11 exact models, sales channels, SIM/eSIM capability and evidence provenance.",
+  "merge_mode": "deep_upsert_by_id",
+  "records": [
+    {
+      "id": "smartphone-4c28a7ada73e",
+      "model_number": "SC-54G",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.docomo.ne.jp/product/sc54g/spec.html",
+          "https://www.docomo.ne.jp/product/sc54g/",
+          "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "ドコモ公式でVoLTE（HD+）・高音質通話・DSDV・5G SAを確認。他社回線の実動作は別判定",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "販売・VoLTE/5G SA/DSDV確認",
+            "basis": "ドコモ/Samsung公式",
+            "note": "SC-54G。nanoSIM+eSIM / eSIM×2、DSDVを公式確認"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "galaxy-a57-sc54g",
+          "label_ja": "ドコモ公式 nanoSIM+eSIM / eSIM×2 / DSDV",
+          "label_en": "Docomo official nanoSIM+eSIM / Dual eSIM / DSDV",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "current_os": "Android 16"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "not_supported",
+        "usb_data": "official_usb_c",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C fast charging / no Qi",
+        "samsung_dex": "not_supported",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "他社回線のSIM認識・データ・発着信・SMS・5G・VoLTE/IMS実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime on non-Docomo networks remains unverified"
+      ]
+    },
+    {
+      "id": "smartphone-26be0541a414",
+      "model_number": "SM-A576Z",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.softbank.jp/mobile/products/samsung-galaxy/samsung-galaxy-a57-5g/",
+          "https://www.samsung.com/jp/support/model/SM-A576ZZVASBM/",
+          "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM / eSIM（同時利用構成はPhase141未確認）",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "SoftBank公式でVoNR・VoLTE（HD+）・VoLTE、テザリングを確認。他社回線の実動作は別判定",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "販売・VoNR/VoLTE仕様確認",
+            "basis": "SoftBank/Samsung公式",
+            "note": "SM-A576Z。nanoSIM/eSIM、VoNR、VoLTE HD+、テザリングを確認"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": false,
+        "platform_profile": {
+          "code": "galaxy-a57-sm-a576z",
+          "label_ja": "SoftBank nanoSIM/eSIM対応・同時利用構成はPhase141未確認",
+          "label_en": "SoftBank nanoSIM/eSIM supported; simultaneous configuration unverified in Phase141",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "carrier_condition_required",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "current_os": "Android 16"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "official_usb_c",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C PD-PPS fast charging / no Qi",
+        "samsung_dex": "not_supported",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "SM-A576ZのDual eSIM同時利用はPhase141では断定しない",
+        "他社回線の実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Dual-eSIM simultaneous use is not asserted for SM-A576Z in Phase141",
+        "Runtime on non-SoftBank networks remains unverified"
+      ]
+    },
+    {
+      "id": "phase141-galaxy-a57-sm-a576q",
+      "model_name": "Galaxy A57 5G",
+      "model_number": "SM-A576Q",
+      "brand": "Samsung",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-04-23",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "manufacturer_official",
+        "ja": "メーカー公式確認",
+        "en": "Manufacturer official",
+        "has_real_device": false,
+        "source_count": 5,
+        "source_urls": [
+          "https://www.samsung.com/jp/smartphones/galaxy-a/galaxy-a57-5g-awesome-gray-128gb-sm-a576qzaasjp/",
+          "https://www.samsung.com/jp/support/model/SM-A576QZAASJP/",
+          "https://www.samsung.com/jp/support/mobile-devices/please-tell-us-about-the-latest-version-of-your-galaxy-devices/",
+          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+          "https://news.samsung.com/jp/galaxy-a57-launch"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM / eSIM（同時利用構成はPhase141未確認）",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "",
+        "nr_bands": "",
+        "volte_ims": "Samsung公式で国内SIMフリーSM-A576QとnanoSIM/eSIM対応を確認。通信事業者別のVoLTE/IMS実動作は外部実機証拠と分離",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "IIJmio Type D外部実機確認あり",
+            "basis": "IIJmio",
+            "note": "SM-A576Q相当の国内SIMフリー版。音声SIM/eSIMで通話・データ・テザリング○"
+          },
+          "au": {
+            "rating": "IIJmio Type A外部実機確認あり",
+            "basis": "IIJmio",
+            "note": "SM-A576Q相当の国内SIMフリー版。音声SIM/eSIMで通話・データ・テザリング○"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": false,
+        "platform_profile": {
+          "code": "galaxy-a57-sm-a576q",
+          "label_ja": "nanoSIM/eSIM対応・同時利用構成はPhase141未確認",
+          "label_en": "nanoSIM/eSIM supported; simultaneous configuration unverified in Phase141",
+          "dual_esim_conditional": true,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "carrier_condition_required",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "samsung_galaxy",
+          "ownership": "android_device_protection",
+          "repair_history": "samsung_service_record",
+          "battery": "device_specific"
+        },
+        "network_restriction_profile": "sim_free"
+      },
+      "migration": {
+        "platform": "android"
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "samsung_galaxy",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5",
+        "current_build_suffix": "ZH3",
+        "latest_checked_at": "2026-09-16"
+      },
+      "loss_recovery": {
+        "platform": "android",
+        "primary_scope": true
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "unverified",
+        "usb_data": "official_usb_c",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C fast charging / no Qi",
+        "samsung_dex": "not_supported",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "IIJmio実機結果は外部証拠でありSolQvia実機確認ではない",
+        "Dual eSIM同時利用は日本向けSM-A576Qの一次情報を追加確認するまで断定しない"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "IIJmio results are external evidence, not SolQvia real-device evidence",
+        "Dual-eSIM simultaneous use is not asserted without exact Japanese model evidence"
+      ],
+      "availability_note_ja": "2026-04-23発売。Samsung.com、量販店等で販売する国内SIMフリーSM-A576Q",
+      "availability_note_en": "Released April 23, 2026; Japanese SIM-free SM-A576Q sold through Samsung.com and retail channels",
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase141-galaxy-a57-sm-a576q",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase141-galaxy-a57-sm-a576q",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase141-galaxy-a57-sm-a576q",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase141-galaxy-a57-sm-a576q",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase141-galaxy-a57-sm-a576q",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase141-galaxy-a57-sm-a576q",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase141-galaxy-a57-sm-a576q",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase141-galaxy-a57-sm-a576q",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase141-galaxy-a57-sm-a576q",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase141-galaxy-a57-sm-a576q",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase141-galaxy-a57-sm-a576q",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase141-galaxy-a57-sm-a576q"
+      }
+    },
+    {
+      "id": "smartphone-2d1018da795e",
+      "model_number": "SH-51G",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.docomo.ne.jp/product/sh51g/spec.html",
+          "https://www.docomo.ne.jp/product/sh51g/",
+          "https://jp.sharp/k-tai/products/aquos-r11/specs/",
+          "https://k-tai.sharp.co.jp/business/aer_models.html"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 / DSDV",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B3 / B8 / B11 / B18 / B19 / B21 / B28 / B41 / B42",
+        "nr_bands": "n1 / n3 / n28 / n40 / n41 / n77 / n78 / n79",
+        "volte_ims": "ドコモ公式でVoLTE（HD+）・高音質通話・DSDV・5G SAを確認。他社回線の実動作は別判定",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "販売・VoLTE/5G SA/DSDV確認",
+            "basis": "ドコモ/Sharp公式",
+            "note": "SH-51G。nanoSIM+eSIM、DSDV、5G SAを公式確認"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "aquos-r11-sh51g",
+          "label_ja": "ドコモ公式 nanoSIM+eSIM / DSDV",
+          "label_en": "Docomo official nanoSIM+eSIM / DSDV",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "sharp_aquos",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "os_upgrade_policy": "発売日から最大3回",
+        "security_update_policy": "発売日から5年",
+        "security_support_end": "2031-06"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "unverified",
+        "usb_data": "official_usb_c",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB PD 3.0 36W / no Qi",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "販売元以外の回線での実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime outside NTT Docomo remains unverified"
+      ]
+    },
+    {
+      "id": "smartphone-e0aa34d450a0",
+      "model_number": "A602SH",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.softbank.jp/mobile/products/smartphone/aquos-r11/",
+          "https://www.softbank.jp/mobile/support/smartphone/list/",
+          "https://k-tai.sharp.co.jp/business/aer_models.html",
+          "https://k-tai.sharp.co.jp/business/linc_biz_emm/feature.html"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM / eSIM / DSDV（詳細同時構成はPhase141未確認）",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B3 / B8 / B11 / B18 / B19 / B21 / B28 / B41 / B42",
+        "nr_bands": "n1 / n3 / n28 / n40 / n41 / n77 / n78 / n79",
+        "volte_ims": "Sharp公式でA602SH、Android 16、AQUOS R11共通DSDV仕様を確認。SoftBank個別のVoLTE/IMS実動作は販売元仕様として保持",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "販売・型番確認",
+            "basis": "SoftBank/Sharp公式",
+            "note": "A602SH。2026-07-09発売"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "aquos-r11-a602sh",
+          "label_ja": "nanoSIM/eSIM・DSDV対応、詳細同時構成はPhase141未確認",
+          "label_en": "nanoSIM/eSIM with DSDV; exact simultaneous configuration unverified in Phase141",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "sharp_aquos",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "os_upgrade_policy": "発売日から最大3回",
+        "security_update_policy": "発売日から5年",
+        "security_support_end": "2031-06"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "unverified",
+        "usb_data": "official_usb_c",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB PD 3.0 36W / no Qi",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "A602SHの詳細な同時SIM構成はPhase141では断定しない",
+        "他社回線の実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Exact simultaneous SIM configuration for A602SH is not asserted in Phase141",
+        "Runtime on non-SoftBank networks remains unverified"
+      ]
+    },
+    {
+      "id": "phase141-aquos-r11-sh-m35",
+      "model_name": "AQUOS R11",
+      "model_number": "SH-M35",
+      "brand": "Sharp",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "original_carrier": "SHARP / SIMフリー",
+      "release_date": "2026-07-09",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "manufacturer_official",
+        "ja": "メーカー公式確認",
+        "en": "Manufacturer official",
+        "has_real_device": false,
+        "source_count": 5,
+        "source_urls": [
+          "https://jp.sharp/k-tai/products/aquos-r11/",
+          "https://jp.sharp/k-tai/products/aquos-r11/specs/",
+          "https://k-tai.sharp.co.jp/business/aer_models.html",
+          "https://www.iijmio.jp/info/iij/1783483613.html",
+          "https://www.iijmio.jp/info/iij/1782785893.html"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 / DSDV",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B3 / B8 / B11 / B18 / B19 / B21 / B28 / B41 / B42",
+        "nr_bands": "n1 / n3 / n28 / n40 / n41 / n77 / n78 / n79",
+        "volte_ims": "Sharp公式でSH-M35のnanoSIM/eSIM・DSDV・Band仕様を確認。IIJmioの通話/データ/テザリング実動作は外部証拠として分離",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "IIJmio Type D外部実機確認あり",
+            "basis": "IIJmio",
+            "note": "音声SIM/eSIMで通話・データ・テザリング○"
+          },
+          "au": {
+            "rating": "IIJmio Type A外部実機確認あり",
+            "basis": "IIJmio / au Flex Style販売",
+            "note": "音声SIM/eSIMで通話・データ・テザリング○。au Online ShopでもSH-M35販売確認"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase141未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "aquos-r11-sh-m35",
+          "label_ja": "Sharp公式 nanoSIM+eSIM / DSDV",
+          "label_en": "Sharp official nanoSIM+eSIM / DSDV",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "sharp_aquos",
+          "ownership": "android_device_protection",
+          "repair_history": "sharp_or_seller_record",
+          "battery": "device_specific"
+        },
+        "network_restriction_profile": "sim_free"
+      },
+      "migration": {
+        "platform": "android"
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "sharp_aquos",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "os_upgrade_policy": "発売日から最大3回",
+        "security_update_policy": "発売日から5年",
+        "security_support_end": "2031-06"
+      },
+      "loss_recovery": {
+        "platform": "android",
+        "primary_scope": true
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "unverified",
+        "usb_data": "official_usb_c",
+        "external_storage": "not_supported",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Power Delivery Revision 3.0 / 36W / no Qi",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "IIJmio実機結果は外部証拠でありSolQvia実機確認ではない",
+        "通話は発信/着信へ分割せず保持"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "IIJmio results are external evidence, not SolQvia real-device evidence",
+        "Voice result is not split into outgoing/incoming"
+      ],
+      "availability_note_ja": "2026-07-09以降順次発売。Sharp Store、IIJmio、au Flex Style等で販売する国内SIMフリーSH-M35",
+      "availability_note_en": "Released from July 9, 2026; Japanese SIM-free SH-M35 sold through Sharp Store, IIJmio and au Flex Style",
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase141-aquos-r11-sh-m35",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase141-aquos-r11-sh-m35",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase141-aquos-r11-sh-m35",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase141-aquos-r11-sh-m35",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase141-aquos-r11-sh-m35",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase141-aquos-r11-sh-m35",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase141-aquos-r11-sh-m35",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase141-aquos-r11-sh-m35",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase141-aquos-r11-sh-m35",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase141-aquos-r11-sh-m35",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase141-aquos-r11-sh-m35",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase141-aquos-r11-sh-m35"
+      }
+    }
+  ]
+}
