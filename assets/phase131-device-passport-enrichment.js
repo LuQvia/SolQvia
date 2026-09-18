@@ -14,7 +14,7 @@
   const load=u=>fetch(u).then(r=>r.ok?r.json():Promise.reject(new Error(u)));
   const findPriority=(name,number,carrierName)=>priority.priority_records.find(x=>(((x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name))&&(!x.original_carrier||norm(x.original_carrier)===norm(carrierName))))||priority.priority_records.find(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
   const findReal=(name,number)=>realdb.records.filter(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
-  const findExternal=(name,number)=>externaldb.records.filter(x=>(x.model_names||[]).some(n=>norm(n)===norm(name))&&(!(x.model_numbers||[]).length||(x.model_numbers||[]).some(n=>norm(n)===norm(number))));
+  const findExternal=(name,number,carrierName)=>externaldb.records.filter(x=>{if(!(x.model_names||[]).some(n=>norm(n)===norm(name)))return false;const nums=x.model_numbers||[];if(nums.length)return nums.some(n=>norm(n)===norm(number));const variant=norm(x.device_variant||'');if(variant.includes('simフリー')||variant.includes('sim-free'))return /simフリー|samsung\.com|google store|sharp/i.test(String(carrierName||''));return true;});
   const objGrid=obj=>obj?Object.entries(obj).filter(([,v])=>v!==null&&v!==undefined).map(([k,v])=>`<div><b>${esc(label[k]||k.replaceAll('_',' '))}</b><span>${esc(fmt(v))}</span></div>`).join(''):'';
   function runtime(ex){if(!ex?.runtime)return'';return `<div class="p131-runtime">${Object.entries(ex.runtime).map(([k,v])=>`<div><b>${esc(label[k]||k)}</b><span>${esc(status(v))}</span></div>`).join('')}</div>`}
   function externalHtml(records){return records.map(rec=>`<div class="p131-real-wrap"><p><strong>${esc(rec.source_name||t('外部動作確認','External field test'))}</strong> · ${esc(rec.tested_at||'—')} · ${esc(rec.device_variant||'—')}</p><div class="p131-test-grid">${Object.entries(rec.results||{}).map(([simType,tests])=>`<section class="p131-test-card"><h4>${esc(simType)}</h4><dl>${Object.entries(tests).map(([k,v])=>`<div><dt>${esc(label[k]||k)}</dt><dd class="${v==='confirmed'?'is-confirmed':''}">${esc(status(v))}</dd></div>`).join('')}</dl></section>`).join('')}</div>${(rec.notes||[]).length?`<ul class="p110-gaps">${rec.notes.map(n=>`<li>${esc(n)}</li>`).join('')}</ul>`:''}<p><a href="${esc(rec.source_url)}" target="_blank" rel="noopener">${esc(t('外部動作確認の一次掲載元','External test source'))}</a></p></div>`).join('')}
@@ -31,7 +31,7 @@
       if(detail.dataset.p131Record===signature&&detail.querySelector('[data-p131-added]'))return;
       detail.querySelectorAll('[data-p131-added]').forEach(n=>n.remove());
       detail.dataset.p131Record=signature;
-      const ex=findPriority(name,number,carrierName);const real=findReal(name,number);const external=findExternal(name,number);
+      const ex=findPriority(name,number,carrierName);const real=findReal(name,number);const external=findExternal(name,number,carrierName);
       const firstSection=detail.querySelector('.p110-section');
       if(!firstSection)return;
       const parts=[];
@@ -64,6 +64,7 @@
     load('/assets/data/phase139-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase140-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase141-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
+    load('/assets/data/phase143-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase131-solqvia-real-device-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase132-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase135-external-field-evidence-v1.json').catch(()=>({records:[]})),
@@ -74,5 +75,5 @@
     load('/assets/data/phase141-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase141-coverage-gap-audit-v1.json').catch(()=>load('/assets/data/phase140-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase139-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase138-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase137-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase136-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase135-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase133-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase132-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase130-coverage-gap-audit-v1.json')).catch(()=>({metrics:[]})),
     load('/assets/data/phase130-unified-capability-taxonomy-v1.json').catch(()=>({domains:[]}))
-  ]).then(([p131,p136,p137,p138,p139,p140,p141,r,ext132,ext135,ext137,ext138,ext139,ext140,ext141,c,tax])=>{priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[]),...(p137.priority_records||[]),...(p138.priority_records||[]),...(p139.priority_records||[]),...(p140.priority_records||[]),...(p141.priority_records||[])]};realdb=r;externaldb={records:[...(ext132.records||[]),...(ext135.records||[]),...(ext137.records||[]),...(ext138.records||[]),...(ext139.records||[]),...(ext140.records||[]),...(ext141.records||[])]};coverage=c;taxonomy=tax;foundation();augment();new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false})});
+  ]).then(([p131,p136,p137,p138,p139,p140,p141,p143,r,ext132,ext135,ext137,ext138,ext139,ext140,ext141,c,tax])=>{priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[]),...(p137.priority_records||[]),...(p138.priority_records||[]),...(p139.priority_records||[]),...(p140.priority_records||[]),...(p141.priority_records||[]),...(p143.priority_records||[])]};realdb=r;externaldb={records:[...(ext132.records||[]),...(ext135.records||[]),...(ext137.records||[]),...(ext138.records||[]),...(ext139.records||[]),...(ext140.records||[]),...(ext141.records||[])]};coverage=c;taxonomy=tax;foundation();augment();new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false})});
 })();

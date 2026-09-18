@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "release": "phase143-galaxy-s26-family-normalization",
+  "checked_at": "2026-09-18",
+  "basis": "Phase142 2026 normalization audit + Phase143 exact-model normalization",
+  "scope_note": "Targeted post-normalization delta, not a replacement for the next full global normalization audit.",
+  "phase142_target": {
+    "families": [
+      "Galaxy S26",
+      "Galaxy S26+",
+      "Galaxy S26 Ultra"
+    ],
+    "priority_score_each": 200,
+    "backlog_records": 9,
+    "known_gaps": {
+      "model_number": 9,
+      "sim_esim": 6,
+      "sim_flags": 6,
+      "dual_sim_exact": 6,
+      "official_source_depth": 9
+    }
+  },
+  "phase143_result": {
+    "normalized_existing_records": 12,
+    "added_exact_sim_free_records": 3,
+    "exact_models_total": 15,
+    "resolved_phase142_backlog_gaps": {
+      "model_number": 9,
+      "sim_esim": 6,
+      "sim_flags": 6,
+      "official_source_depth": 9
+    },
+    "intentionally_unresolved": {
+      "dual_sim_exact": [
+        "SCG36",
+        "SM-S942Z",
+        "SCG38",
+        "SM-S947Z",
+        "SCG37",
+        "SM-S948Z"
+      ],
+      "reason": "Exact simultaneous-SIM architecture is not asserted beyond exact Japanese primary evidence. au explicitly says two-or-more-line simultaneous use is not part of its operation check; SoftBank's service list proves selected voice/data/SMS operation but not the exact nanoSIM+eSIM/eSIM+eSIM architecture."
+    },
+    "exact_dual_sim_confirmed": [
+      "SC-51G",
+      "SM-S942C",
+      "SM-S942Q",
+      "SC-52G",
+      "SM-S947C",
+      "SM-S947Q",
+      "SC-53G",
+      "SM-S948C",
+      "SM-S948Q"
+    ],
+    "external_field_evidence_scope": "Generic Phase132 'SIM-free version' IIJmio evidence must only attach to SIM-free/open records unless an exact model number is present.",
+    "indexable_url_delta": 0
+  },
+  "next_unaffected_priority_from_phase142": {
+    "model": "arrows We3",
+    "phase142_priority_score": 195,
+    "reason": "The S26-family structural backlog is substantially reduced; arrows We3 was the highest unaffected Phase142 family priority."
+  }
+}
