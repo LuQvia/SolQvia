@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "release": "phase142-2026-normalization-audit",
+  "date": "2026-09-18",
+  "baseline": "Phase141 main 6b48d9bcc6a3af52bd48ee50583fed65a1e27f34",
+  "goal": "Replace ad-hoc next-device selection with a repeatable 2026 exact-model normalization audit while preserving the 802-URL SEO observation surface.",
+  "index_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "audit_scope": {
+    "year": 2026,
+    "total_records": 72,
+    "incomplete_records": 39,
+    "complete_by_structural_rules": 33,
+    "families_with_gaps": 21,
+    "external_runtime_records": 33,
+    "solqvia_real_device_records": 0
+  },
+  "scoring_weights": {
+    "model_number": 25,
+    "sim_esim": 20,
+    "sim_flags": 10,
+    "dual_sim_exact": 15,
+    "lte_bands": 10,
+    "nr_bands": 10,
+    "four_carrier_fit": 5,
+    "official_source_depth": 5,
+    "usb": 3,
+    "os_update": 2
+  },
+  "next_execution_order": [
+    {
+      "rank": 1,
+      "model": "Galaxy S26",
+      "priority_score": 200
+    },
+    {
+      "rank": 2,
+      "model": "Galaxy S26 Ultra",
+      "priority_score": 200
+    },
+    {
+      "rank": 3,
+      "model": "Galaxy S26+",
+      "priority_score": 200
+    },
+    {
+      "rank": 4,
+      "model": "arrows We3",
+      "priority_score": 195
+    },
+    {
+      "rank": 5,
+      "model": "iPhone 17e",
+      "priority_score": 145
+    },
+    {
+      "rank": 6,
+      "model": "moto g37",
+      "priority_score": 90
+    },
+    {
+      "rank": 7,
+      "model": "Natural AI Phone",
+      "priority_score": 90
+    },
+    {
+      "rank": 8,
+      "model": "Galaxy Z Flip8",
+      "priority_score": 85
+    },
+    {
+      "rank": 9,
+      "model": "Galaxy Z Fold8",
+      "priority_score": 85
+    },
+    {
+      "rank": 10,
+      "model": "Galaxy Z Fold8 Ultra",
+      "priority_score": 85
+    }
+  ],
+  "engineering": [
+    "Added scripts/phase142-device-normalization-audit.mjs as a repeatable audit generator.",
+    "Added assets/data/phase142-2026-normalization-audit-v1.json as the current prioritized backlog.",
+    "The audit deep-merges the base Device Passport dataset with all current-device overlays in phase order.",
+    "External field-test evidence and SolQvia-owned real-device evidence are scored separately from structural completeness.",
+    "No public URL, canonical, or Device Passport record count changes are introduced in Phase142."
+  ],
+  "evidence_rules": [
+    "Missing model number is weighted more heavily than secondary metadata gaps.",
+    "Generic SIM placeholders are treated as unresolved, but known nanoSIM/eSIM support is not penalized simply because simultaneous use remains unverified.",
+    "Dual-SIM exactness is a separate gap from basic SIM/eSIM support.",
+    "Band tables and sales-channel fit do not prove runtime compatibility.",
+    "External tests do not become SolQvia real-device evidence."
+  ],
+  "qa_targets": [
+    "Audit JSON parses.",
+    "Audit script is syntactically valid as an ES module.",
+    "Audit backlog is deterministic for a fixed repository state.",
+    "Top-priority families reflect aggregate structural gaps rather than manual preference.",
+    "No public indexable URL is created or removed."
+  ],
+  "phase143_recommendation": {
+    "target": "Galaxy S26 family",
+    "reason": "Three S26 families tie for the highest aggregate priority and already have external runtime evidence, so exact-model/carrier normalization can close multiple high-value gaps efficiently."
+  }
+}
