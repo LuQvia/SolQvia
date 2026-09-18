@@ -1,0 +1,812 @@
+{
+  "schema_version": "1.0",
+  "release": "phase143-galaxy-s26-family-normalization",
+  "checked_at": "2026-09-18",
+  "priority_records": [
+    {
+      "key": "phase143-sc-51g",
+      "model_name": "Galaxy S26",
+      "model_number": "SC-51G",
+      "original_carrier": "NTTドコモ",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "active_esim_count": 2,
+        "dual_esim": true
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true,
+        "fiveg_sa": true,
+        "volte": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.docomo.ne.jp/product/sc51g/spec.html",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+      ]
+    },
+    {
+      "key": "phase143-scg36",
+      "model_name": "Galaxy S26",
+      "model_number": "SCG36",
+      "original_carrier": "au",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM / eSIM（同時利用構成はPhase143未確認）"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true,
+        "fiveg_sa": true,
+        "volte": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "confirmed",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "confirmed",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "confirmed",
+        "volte_ims_registration": "not_solqvia_tested",
+        "voice": "confirmed",
+        "sms": "confirmed"
+      },
+      "sources": [
+        "https://www.au.com/mobile/product/smartphone/galaxy_s26/spec/",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+        "https://www.au.com/mobile/product/sim/devices/"
+      ]
+    },
+    {
+      "key": "phase143-sm-s942z",
+      "model_name": "Galaxy S26",
+      "model_number": "SM-S942Z",
+      "original_carrier": "SoftBank",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM / eSIM（同時利用構成はPhase143未確認）"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true,
+        "fiveg_sa": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "confirmed",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested",
+        "voice": "confirmed",
+        "sms": "confirmed"
+      },
+      "sources": [
+        "https://www.softbank.jp/mobile/products/samsung-galaxy/samsung-galaxy-s26/",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+        "https://www.softbank.jp/mobile/service/dualsim/dualsim-device/"
+      ]
+    },
+    {
+      "key": "phase143-sm-s942c",
+      "model_name": "Galaxy S26",
+      "model_number": "SM-S942C",
+      "original_carrier": "楽天モバイル",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "active_esim_count": 2,
+        "dual_esim": true
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested"
+      },
+      "sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-s26/spec/",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+      ]
+    },
+    {
+      "key": "phase143-sm-s942q",
+      "model_name": "Galaxy S26",
+      "model_number": "SM-S942Q",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "active_esim_count": 2,
+        "dual_esim": true
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.samsung.com/jp/business/smartphones/galaxy-s/galaxy-s26-black-256gb-sm-s942qzkesjp/",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+        "https://www.samsung.com/jp/support/mobile-devices/please-tell-us-about-the-latest-version-of-your-galaxy-devices/"
+      ]
+    },
+    {
+      "key": "phase143-sc-52g",
+      "model_name": "Galaxy S26+",
+      "model_number": "SC-52G",
+      "original_carrier": "NTTドコモ",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "active_esim_count": 2,
+        "dual_esim": true
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true,
+        "fiveg_sa": true,
+        "volte": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.docomo.ne.jp/product/sc52g/spec.html",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+      ]
+    },
+    {
+      "key": "phase143-scg38",
+      "model_name": "Galaxy S26+",
+      "model_number": "SCG38",
+      "original_carrier": "au",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM / eSIM（同時利用構成はPhase143未確認）"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true,
+        "fiveg_sa": true,
+        "volte": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "confirmed",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "confirmed",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "confirmed",
+        "volte_ims_registration": "not_solqvia_tested",
+        "voice": "confirmed",
+        "sms": "confirmed"
+      },
+      "sources": [
+        "https://www.au.com/mobile/product/smartphone/galaxy_s26plus/spec/",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+        "https://www.au.com/mobile/product/sim/devices/"
+      ]
+    },
+    {
+      "key": "phase143-sm-s947z",
+      "model_name": "Galaxy S26+",
+      "model_number": "SM-S947Z",
+      "original_carrier": "SoftBank",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM / eSIM（同時利用構成はPhase143未確認）"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true,
+        "fiveg_sa": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "confirmed",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested",
+        "voice": "confirmed",
+        "sms": "confirmed"
+      },
+      "sources": [
+        "https://www.softbank.jp/mobile/products/samsung-galaxy/samsung-galaxy-s26-plus/",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+        "https://www.softbank.jp/mobile/service/dualsim/dualsim-device/"
+      ]
+    },
+    {
+      "key": "phase143-sm-s947c",
+      "model_name": "Galaxy S26+",
+      "model_number": "SM-S947C",
+      "original_carrier": "楽天モバイル",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "active_esim_count": 2,
+        "dual_esim": true
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested"
+      },
+      "sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-s26-plus/spec/",
+        "https://www.samsung.com/jp/explore/event/galaxy-cp-2026-1h-rakuten/",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+      ]
+    },
+    {
+      "key": "phase143-sm-s947q",
+      "model_name": "Galaxy S26+",
+      "model_number": "SM-S947Q",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "active_esim_count": 2,
+        "dual_esim": true
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.samsung.com/jp/business/smartphones/galaxy-s/galaxy-s26-plus-white-256gb-sm-s947qzwasjp/",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+        "https://www.samsung.com/jp/support/mobile-devices/please-tell-us-about-the-latest-version-of-your-galaxy-devices/"
+      ]
+    },
+    {
+      "key": "phase143-sc-53g",
+      "model_name": "Galaxy S26 Ultra",
+      "model_number": "SC-53G",
+      "original_carrier": "NTTドコモ",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "active_esim_count": 2,
+        "dual_esim": true
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true,
+        "fiveg_sa": true,
+        "volte": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.docomo.ne.jp/product/sc53g/spec.html",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+      ]
+    },
+    {
+      "key": "phase143-scg37",
+      "model_name": "Galaxy S26 Ultra",
+      "model_number": "SCG37",
+      "original_carrier": "au",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM / eSIM（同時利用構成はPhase143未確認）"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true,
+        "fiveg_sa": true,
+        "volte": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "confirmed",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "confirmed",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "confirmed",
+        "volte_ims_registration": "not_solqvia_tested",
+        "voice": "confirmed",
+        "sms": "confirmed"
+      },
+      "sources": [
+        "https://www.au.com/mobile/product/smartphone/galaxy_s26_ultra/spec/",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+        "https://www.au.com/mobile/product/sim/devices/"
+      ]
+    },
+    {
+      "key": "phase143-sm-s948z",
+      "model_name": "Galaxy S26 Ultra",
+      "model_number": "SM-S948Z",
+      "original_carrier": "SoftBank",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM / eSIM（同時利用構成はPhase143未確認）"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true,
+        "fiveg_sa": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "confirmed",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested",
+        "voice": "confirmed",
+        "sms": "confirmed"
+      },
+      "sources": [
+        "https://www.samsung.com/jp/support/model/SM-S948ZZWESBM/",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+        "https://www.softbank.jp/mobile/service/dualsim/dualsim-device/"
+      ]
+    },
+    {
+      "key": "phase143-sm-s948c",
+      "model_name": "Galaxy S26 Ultra",
+      "model_number": "SM-S948C",
+      "original_carrier": "楽天モバイル",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "active_esim_count": 2,
+        "dual_esim": true
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested"
+      },
+      "sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-s26-ultra/spec/",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+      ]
+    },
+    {
+      "key": "phase143-sm-s948q",
+      "model_name": "Galaxy S26 Ultra",
+      "model_number": "SM-S948Q",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "priority_reason": "Phase142 top-priority family normalized by exact Japanese model, SIM/eSIM structure and evidence-separated runtime conditions.",
+      "evidence_level": "manufacturer_official",
+      "identity": {
+        "release_date": "2026-03-12",
+        "manufacturer": "Samsung"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_sim_ui": "nanoSIM×1 + eSIM×1 / eSIM×2",
+        "active_esim_count": 2,
+        "dual_esim": true
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "one_ui": "8.5"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "supported"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.samsung.com/jp/business/smartphones/galaxy-s/galaxy-s26-ultra-white-256gb-sm-s948qzwasjp/",
+        "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
+        "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+        "https://www.samsung.com/jp/support/mobile-devices/please-tell-us-about-the-latest-version-of-your-galaxy-devices/"
+      ]
+    }
+  ]
+}
