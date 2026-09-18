@@ -45,7 +45,7 @@
   let priority={priority_records:[]},realdb={records:[]},externaldb={records:[]};
   const findPriority=(name,number,carrierName)=>priority.priority_records.find(x=>(((x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name))&&(!x.original_carrier||norm(x.original_carrier)===norm(carrierName))))||priority.priority_records.find(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
   const findReal=(name,number)=>realdb.records.filter(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
-  const findExternal=name=>externaldb.records.filter(x=>(x.model_names||[]).some(n=>norm(n)===norm(name)));
+  const findExternal=(name,number)=>externaldb.records.filter(x=>(x.model_names||[]).some(n=>norm(n)===norm(name))&&(!(x.model_numbers||[]).length||(x.model_numbers||[]).some(n=>norm(n)===norm(number))));
   const collectExternal=(records,key)=>{
     const out=[];
     for(const rec of records)for(const tests of Object.values(rec.results||{}))if(tests&&Object.prototype.hasOwnProperty.call(tests,key))out.push(tests[key]);
@@ -70,7 +70,7 @@
       detail.querySelectorAll('[data-p134-added]').forEach(n=>n.remove());
       detail.dataset.p134Record=signature;
       const ex=findPriority(name,number,carrierName);
-      const external=findExternal(name);
+      const external=findExternal(name,number);
       const real=findReal(name,number);
       const body=rows.map(([key,label])=>{
         const official=ex?.runtime&&Object.prototype.hasOwnProperty.call(ex.runtime,key)?ex.runtime[key]:'no_record';
@@ -89,11 +89,12 @@
   Promise.all([
     load('/assets/data/phase131-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase136-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
+    load('/assets/data/phase137-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase131-solqvia-real-device-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase132-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase135-external-field-evidence-v1.json').catch(()=>({records:[]}))
-  ]).then(([p131,p136,r,e132,e135])=>{
-    priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[])]};realdb=r;externaldb={records:[...(e132.records||[]),...(e135.records||[])]};
+  ]).then(([p131,p136,p137,r,e132,e135,e137])=>{
+    priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[]),...(p137.priority_records||[])]};realdb=r;externaldb={records:[...(e132.records||[]),...(e135.records||[]),...(e137.records||[])]};
     augment();
     new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false});
   });
