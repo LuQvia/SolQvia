@@ -120,18 +120,19 @@
         "ja": "キャリア・メーカー公式確認",
         "en": "Carrier + manufacturer official",
         "has_real_device": false,
-        "source_count": 3,
+        "source_count": 4,
         "source_urls": [
           "https://www.au.com/mobile/product/smartphone/galaxy_s26/spec/",
           "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
-          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+          "https://www.au.com/mobile/product/sim/devices/"
         ]
       },
       "network": {
         "sim_esim": "nanoSIM / eSIM（同時利用構成はPhase143未確認）",
         "supports_esim": true,
         "supports_physical_sim": true,
-        "volte_ims": "au公式でau VoLTE・5G SAを確認。販売元以外のVoLTE/IMS実動作は別判定",
+        "volte_ims": "au公式でau VoLTE・5G SAを仕様確認。au動作確認一覧ではAndroid 16でSIM/eSIMとも通話・SMS・データ通信・テザリング・5G SAを確認。2回線以上の同時利用は未確認",
         "fit": {
           "NTTドコモ": {
             "rating": "未確認",
@@ -139,9 +140,9 @@
             "note": "Band一致だけで利用可にしない"
           },
           "au": {
-            "rating": "販売・仕様確認",
-            "basis": "販売元/Samsung公式",
-            "note": "SCG36。販売元での取扱いと基本通信仕様を確認"
+            "rating": "au公式動作確認（Android 16）",
+            "basis": "au/Samsung公式",
+            "note": "SIM/eSIMとも通話・SMS・データ・テザリング・5G SAを確認。2回線以上の同時利用はau公式未確認"
           },
           "SoftBank": {
             "rating": "未確認",
@@ -221,18 +222,19 @@
         "ja": "キャリア・メーカー公式確認",
         "en": "Carrier + manufacturer official",
         "has_real_device": false,
-        "source_count": 3,
+        "source_count": 4,
         "source_urls": [
           "https://www.softbank.jp/mobile/products/samsung-galaxy/samsung-galaxy-s26/",
           "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
-          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+          "https://www.softbank.jp/mobile/service/dualsim/dualsim-device/"
         ]
       },
       "network": {
         "sim_esim": "nanoSIM / eSIM（同時利用構成はPhase143未確認）",
         "supports_esim": true,
         "supports_physical_sim": true,
-        "volte_ims": "SoftBank/Samsung公式で販売型番・5G SA系仕様を確認。他社回線のVoLTE/IMS実動作は別判定",
+        "volte_ims": "SoftBank/Samsung公式で販売型番・SIM/eSIM対応を確認。SoftBank副回線サービス対象機種一覧ではAndroid 16で音声通話・データ通信・SMSを少なくとも1回利用可能と確認。VoLTE/IMS登録自体は別判定",
         "fit": {
           "NTTドコモ": {
             "rating": "未確認",
@@ -245,9 +247,9 @@
             "note": "Band一致だけで利用可にしない"
           },
           "SoftBank": {
-            "rating": "販売・仕様確認",
-            "basis": "販売元/Samsung公式",
-            "note": "SM-S942Z。販売元での取扱いと基本通信仕様を確認"
+            "rating": "販売・公式動作確認（Android 16）",
+            "basis": "SoftBank/Samsung公式",
+            "note": "SoftBank公式対象機種一覧で音声通話・データ通信・SMSを確認。全動作保証や同時SIM構成の断定には使用しない"
           },
           "楽天モバイル": {
             "rating": "未確認",
@@ -324,7 +326,7 @@
         "has_real_device": false,
         "source_count": 3,
         "source_urls": [
-          "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-s26/",
+          "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-s26/spec/",
           "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
           "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
         ]
@@ -455,7 +457,9 @@
             "basis": "Samsung公式仕様",
             "note": "Band/仕様だけで利用可にしない"
           }
-        }
+        },
+        "lte_bands": "FDD-LTE B1/2/3/4/5/7/8/12/13/18/19/20/21/26/28/66; TDD-LTE B38/39/40/41/42",
+        "nr_bands": "n1/n3/n5/n28/n40/n41/n66/n77/n78/n79"
       },
       "communication": {
         "real_device_confirmed": false,
@@ -656,18 +660,19 @@
         "ja": "キャリア・メーカー公式確認",
         "en": "Carrier + manufacturer official",
         "has_real_device": false,
-        "source_count": 3,
+        "source_count": 4,
         "source_urls": [
           "https://www.au.com/mobile/product/smartphone/galaxy_s26plus/spec/",
           "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
-          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+          "https://www.au.com/mobile/product/sim/devices/"
         ]
       },
       "network": {
         "sim_esim": "nanoSIM / eSIM（同時利用構成はPhase143未確認）",
         "supports_esim": true,
         "supports_physical_sim": true,
-        "volte_ims": "au公式でau VoLTE・5G SAを確認。販売元以外のVoLTE/IMS実動作は別判定",
+        "volte_ims": "au公式でau VoLTE・5G SAを仕様確認。au動作確認一覧ではAndroid 16でSIM/eSIMとも通話・SMS・データ通信・テザリング・5G SAを確認。2回線以上の同時利用は未確認",
         "fit": {
           "NTTドコモ": {
             "rating": "未確認",
@@ -675,9 +680,9 @@
             "note": "Band一致だけで利用可にしない"
           },
           "au": {
-            "rating": "販売・仕様確認",
-            "basis": "販売元/Samsung公式",
-            "note": "SCG38。販売元での取扱いと基本通信仕様を確認"
+            "rating": "au公式動作確認（Android 16）",
+            "basis": "au/Samsung公式",
+            "note": "SIM/eSIMとも通話・SMS・データ・テザリング・5G SAを確認。2回線以上の同時利用はau公式未確認"
           },
           "SoftBank": {
             "rating": "未確認",
@@ -757,18 +762,19 @@
         "ja": "キャリア・メーカー公式確認",
         "en": "Carrier + manufacturer official",
         "has_real_device": false,
-        "source_count": 3,
+        "source_count": 4,
         "source_urls": [
           "https://www.softbank.jp/mobile/products/samsung-galaxy/samsung-galaxy-s26-plus/",
           "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
-          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+          "https://www.softbank.jp/mobile/service/dualsim/dualsim-device/"
         ]
       },
       "network": {
         "sim_esim": "nanoSIM / eSIM（同時利用構成はPhase143未確認）",
         "supports_esim": true,
         "supports_physical_sim": true,
-        "volte_ims": "SoftBank/Samsung公式で販売型番・5G SA系仕様を確認。他社回線のVoLTE/IMS実動作は別判定",
+        "volte_ims": "SoftBank/Samsung公式で販売型番・SIM/eSIM対応を確認。SoftBank副回線サービス対象機種一覧ではAndroid 16で音声通話・データ通信・SMSを少なくとも1回利用可能と確認。VoLTE/IMS登録自体は別判定",
         "fit": {
           "NTTドコモ": {
             "rating": "未確認",
@@ -781,9 +787,9 @@
             "note": "Band一致だけで利用可にしない"
           },
           "SoftBank": {
-            "rating": "販売・仕様確認",
-            "basis": "販売元/Samsung公式",
-            "note": "SM-S947Z。販売元での取扱いと基本通信仕様を確認"
+            "rating": "販売・公式動作確認（Android 16）",
+            "basis": "SoftBank/Samsung公式",
+            "note": "SoftBank公式対象機種一覧で音声通話・データ通信・SMSを確認。全動作保証や同時SIM構成の断定には使用しない"
           },
           "楽天モバイル": {
             "rating": "未確認",
@@ -858,8 +864,9 @@
         "ja": "キャリア・メーカー公式確認",
         "en": "Carrier + manufacturer official",
         "has_real_device": false,
-        "source_count": 3,
+        "source_count": 4,
         "source_urls": [
+          "https://network.mobile.rakuten.co.jp/product/smartphone/samsung-galaxy-s26-plus/spec/",
           "https://www.samsung.com/jp/explore/event/galaxy-cp-2026-1h-rakuten/",
           "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
           "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
@@ -991,7 +998,9 @@
             "basis": "Samsung公式仕様",
             "note": "Band/仕様だけで利用可にしない"
           }
-        }
+        },
+        "lte_bands": "FDD-LTE B1/2/3/4/5/7/8/12/13/18/19/20/21/26/28/66; TDD-LTE B38/39/40/41/42",
+        "nr_bands": "n1/n3/n5/n28/n40/n41/n66/n77/n78/n79"
       },
       "communication": {
         "real_device_confirmed": false,
@@ -1192,18 +1201,19 @@
         "ja": "キャリア・メーカー公式確認",
         "en": "Carrier + manufacturer official",
         "has_real_device": false,
-        "source_count": 3,
+        "source_count": 4,
         "source_urls": [
           "https://www.au.com/mobile/product/smartphone/galaxy_s26_ultra/spec/",
           "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
-          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+          "https://www.au.com/mobile/product/sim/devices/"
         ]
       },
       "network": {
         "sim_esim": "nanoSIM / eSIM（同時利用構成はPhase143未確認）",
         "supports_esim": true,
         "supports_physical_sim": true,
-        "volte_ims": "au公式でau VoLTE・5G SAを確認。販売元以外のVoLTE/IMS実動作は別判定",
+        "volte_ims": "au公式でau VoLTE・5G SAを仕様確認。au動作確認一覧ではAndroid 16でSIM/eSIMとも通話・SMS・データ通信・テザリング・5G SAを確認。2回線以上の同時利用は未確認",
         "fit": {
           "NTTドコモ": {
             "rating": "未確認",
@@ -1211,9 +1221,9 @@
             "note": "Band一致だけで利用可にしない"
           },
           "au": {
-            "rating": "販売・仕様確認",
-            "basis": "販売元/Samsung公式",
-            "note": "SCG37。販売元での取扱いと基本通信仕様を確認"
+            "rating": "au公式動作確認（Android 16）",
+            "basis": "au/Samsung公式",
+            "note": "SIM/eSIMとも通話・SMS・データ・テザリング・5G SAを確認。2回線以上の同時利用はau公式未確認"
           },
           "SoftBank": {
             "rating": "未確認",
@@ -1293,18 +1303,19 @@
         "ja": "キャリア・メーカー公式確認",
         "en": "Carrier + manufacturer official",
         "has_real_device": false,
-        "source_count": 3,
+        "source_count": 4,
         "source_urls": [
           "https://www.samsung.com/jp/support/model/SM-S948ZZWESBM/",
           "https://www.samsung.com/jp/support/mobile-devices/how-to-check-galaxy-online-manual/",
-          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/"
+          "https://www.samsung.com/jp/support/mobile-devices/what-sim-cards-are-compatible-with-the-device/",
+          "https://www.softbank.jp/mobile/service/dualsim/dualsim-device/"
         ]
       },
       "network": {
         "sim_esim": "nanoSIM / eSIM（同時利用構成はPhase143未確認）",
         "supports_esim": true,
         "supports_physical_sim": true,
-        "volte_ims": "SoftBank/Samsung公式で販売型番・5G SA系仕様を確認。他社回線のVoLTE/IMS実動作は別判定",
+        "volte_ims": "SoftBank/Samsung公式で販売型番・SIM/eSIM対応を確認。SoftBank副回線サービス対象機種一覧ではAndroid 16で音声通話・データ通信・SMSを少なくとも1回利用可能と確認。VoLTE/IMS登録自体は別判定",
         "fit": {
           "NTTドコモ": {
             "rating": "未確認",
@@ -1317,9 +1328,9 @@
             "note": "Band一致だけで利用可にしない"
           },
           "SoftBank": {
-            "rating": "販売・仕様確認",
-            "basis": "販売元/Samsung公式",
-            "note": "SM-S948Z。販売元での取扱いと基本通信仕様を確認"
+            "rating": "販売・公式動作確認（Android 16）",
+            "basis": "SoftBank/Samsung公式",
+            "note": "SoftBank公式対象機種一覧で音声通話・データ通信・SMSを確認。全動作保証や同時SIM構成の断定には使用しない"
           },
           "楽天モバイル": {
             "rating": "未確認",
@@ -1527,7 +1538,9 @@
             "basis": "Samsung公式仕様",
             "note": "Band/仕様だけで利用可にしない"
           }
-        }
+        },
+        "lte_bands": "FDD-LTE B1/2/3/4/5/7/8/12/13/18/19/20/21/26/28/66; TDD-LTE B38/39/40/41/42",
+        "nr_bands": "n1/n3/n5/n28/n40/n41/n66/n77/n78/n79/n257"
       },
       "communication": {
         "real_device_confirmed": false,
