@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0",
+  "release": "phase140-pixel10a-normalization",
+  "checked_at": "2026-09-18",
+  "priority_records": [
+    {
+      "key": "pixel10a-gq57s-docomo",
+      "model_name": "Google Pixel 10a",
+      "model_number": "GQ57S",
+      "original_carrier": "NTTドコモ",
+      "priority_reason": "2026 current multi-carrier Pixel normalization target with exact Japanese model number and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-04-14",
+        "manufacturer": "Google",
+        "japan_model": "GQ57S"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "active_esim_count": 2,
+        "dual_esim": true,
+        "dual_sim_ui": "nanoSIM + eSIM or eSIM + eSIM (carrier support required)"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true,
+        "volte": "carrier_condition_required",
+        "fiveg_sa": "carrier_condition_required",
+        "satellite_direct": "carrier_condition_required"
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "update_policy": "7 years"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "Qi"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.docomo.ne.jp/product/pixel10a/spec.html",
+        "https://support.google.com/pixelphone/answer/7158570?hl=ja",
+        "https://support.google.com/pixelphone/answer/9449293?hl=ja"
+      ]
+    },
+    {
+      "key": "pixel10a-gq57s-au",
+      "model_name": "Google Pixel 10a",
+      "model_number": "GQ57S",
+      "original_carrier": "au",
+      "priority_reason": "2026 current multi-carrier Pixel normalization target with exact Japanese model number and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-04-14",
+        "manufacturer": "Google",
+        "japan_model": "GQ57S"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "active_esim_count": 2,
+        "dual_esim": true,
+        "dual_sim_ui": "nanoSIM + eSIM or eSIM + eSIM (carrier support required)"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true,
+        "volte": "official_runtime_confirmed",
+        "fiveg_sa": "official_runtime_confirmed",
+        "satellite_direct": "official_runtime_confirmed"
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "update_policy": "7 years"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "Qi"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.au.com/mobile/product/smartphone/pixel10a/spec/",
+        "https://www.au.com/mobile/product/sim/devices/",
+        "https://support.google.com/pixelphone/answer/7158570?hl=ja"
+      ]
+    },
+    {
+      "key": "pixel10a-gq57s-softbank",
+      "model_name": "Google Pixel 10a",
+      "model_number": "GQ57S",
+      "original_carrier": "SoftBank",
+      "priority_reason": "2026 current multi-carrier Pixel normalization target with exact Japanese model number and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-04-14",
+        "manufacturer": "Google",
+        "japan_model": "GQ57S"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "active_esim_count": 2,
+        "dual_esim": true,
+        "dual_sim_ui": "nanoSIM + eSIM or eSIM + eSIM (carrier support required)"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true,
+        "volte": "official_capability",
+        "fiveg_sa": "carrier_condition_required",
+        "satellite_direct": "carrier_condition_required"
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "update_policy": "7 years"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "Qi"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.softbank.jp/mobile/products/google-pixel/google-pixel-10a/",
+        "https://support.google.com/pixelphone/answer/7158570?hl=ja",
+        "https://support.google.com/pixelphone/answer/9449293?hl=ja"
+      ]
+    },
+    {
+      "key": "pixel10a-gq57s-rakuten",
+      "model_name": "Google Pixel 10a",
+      "model_number": "GQ57S",
+      "original_carrier": "楽天モバイル",
+      "priority_reason": "2026 current multi-carrier Pixel normalization target with exact Japanese model number and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-04-14",
+        "manufacturer": "Google",
+        "japan_model": "GQ57S"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "active_esim_count": 2,
+        "dual_esim": true,
+        "dual_sim_ui": "nanoSIM + eSIM or eSIM + eSIM (carrier support required)"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true,
+        "volte": "carrier_condition_required",
+        "fiveg_sa": "carrier_condition_required",
+        "satellite_direct": "carrier_condition_required"
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "update_policy": "7 years"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "Qi"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://network.mobile.rakuten.co.jp/product/smartphone/google-pixel-10a/spec/",
+        "https://support.google.com/pixelphone/answer/7158570?hl=ja",
+        "https://support.google.com/pixelphone/answer/9449293?hl=ja"
+      ]
+    },
+    {
+      "key": "pixel10a-gq57s-google-store",
+      "model_name": "Google Pixel 10a",
+      "model_number": "GQ57S",
+      "original_carrier": "Google Store / SIMフリー",
+      "priority_reason": "2026 current multi-carrier Pixel normalization target with exact Japanese model number and evidence-separated runtime conditions.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-04-14",
+        "manufacturer": "Google",
+        "japan_model": "GQ57S"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "active_esim_count": 2,
+        "dual_esim": true,
+        "dual_sim_ui": "nanoSIM + eSIM or eSIM + eSIM (carrier support required)"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "tethering_supported": true,
+        "volte": "carrier_condition_required",
+        "fiveg_sa": "carrier_condition_required",
+        "satellite_direct": "carrier_condition_required"
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "update_policy": "7 years"
+      },
+      "peripheral": {
+        "port_connector": "USB Type-C",
+        "external_storage": "not_supported",
+        "wireless_charging": "Qi"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "fiveg_sa": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://store.google.com/jp/product/pixel_10a_specs?hl=ja",
+        "https://support.google.com/pixelphone/answer/7158570?hl=ja",
+        "https://support.google.com/pixelphone/answer/9449293?hl=ja",
+        "https://www.au.com/mobile/product/sim/devices/"
+      ]
+    }
+  ]
+}
