@@ -47,7 +47,7 @@
   let priority={priority_records:[]},realdb={records:[]},externaldb={records:[]};
   const findPriority=(name,number,carrierName)=>priority.priority_records.find(x=>(((x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name))&&(!x.original_carrier||norm(x.original_carrier)===norm(carrierName))))||priority.priority_records.find(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
   const findReal=(name,number)=>realdb.records.filter(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
-  const findExternal=(name,number)=>externaldb.records.filter(x=>(x.model_names||[]).some(n=>norm(n)===norm(name))&&(!(x.model_numbers||[]).length||(x.model_numbers||[]).some(n=>norm(n)===norm(number))));
+  const findExternal=(name,number,carrierName)=>externaldb.records.filter(x=>{if(!(x.model_names||[]).some(n=>norm(n)===norm(name)))return false;const nums=x.model_numbers||[];if(nums.length)return nums.some(n=>norm(n)===norm(number));const variant=norm(x.device_variant||'');if(variant.includes('simフリー')||variant.includes('sim-free'))return /simフリー|samsung\.com|google store|sharp/i.test(String(carrierName||''));return true;});
   const collectExternal=(records,key)=>{
     const out=[];
     for(const rec of records)for(const tests of Object.values(rec.results||{}))if(tests&&Object.prototype.hasOwnProperty.call(tests,key))out.push(tests[key]);
@@ -72,7 +72,7 @@
       detail.querySelectorAll('[data-p134-added]').forEach(n=>n.remove());
       detail.dataset.p134Record=signature;
       const ex=findPriority(name,number,carrierName);
-      const external=findExternal(name,number);
+      const external=findExternal(name,number,carrierName);
       const real=findReal(name,number);
       const body=rows.map(([key,label])=>{
         const official=ex?.runtime&&Object.prototype.hasOwnProperty.call(ex.runtime,key)?ex.runtime[key]:'no_record';
@@ -96,6 +96,7 @@
     load('/assets/data/phase139-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase140-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase141-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
+    load('/assets/data/phase143-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase131-solqvia-real-device-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase132-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase135-external-field-evidence-v1.json').catch(()=>({records:[]})),
@@ -104,8 +105,8 @@
     load('/assets/data/phase139-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase140-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase141-external-field-evidence-v1.json').catch(()=>({records:[]}))
-  ]).then(([p131,p136,p137,p138,p139,p140,p141,r,e132,e135,e137,e138,e139,e140,e141])=>{
-    priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[]),...(p137.priority_records||[]),...(p138.priority_records||[]),...(p139.priority_records||[]),...(p140.priority_records||[]),...(p141.priority_records||[])]};realdb=r;externaldb={records:[...(e132.records||[]),...(e135.records||[]),...(e137.records||[]),...(e138.records||[]),...(e139.records||[]),...(e140.records||[]),...(e141.records||[])]};
+  ]).then(([p131,p136,p137,p138,p139,p140,p141,p143,r,e132,e135,e137,e138,e139,e140,e141])=>{
+    priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[]),...(p137.priority_records||[]),...(p138.priority_records||[]),...(p139.priority_records||[]),...(p140.priority_records||[]),...(p141.priority_records||[]),...(p143.priority_records||[])]};realdb=r;externaldb={records:[...(e132.records||[]),...(e135.records||[]),...(e137.records||[]),...(e138.records||[]),...(e139.records||[]),...(e140.records||[]),...(e141.records||[])]};
     augment();
     new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false});
   });
