@@ -1,0 +1,739 @@
+{
+  "schema_version": "1.0",
+  "release": "phase136-arrows-alpha2-normalization",
+  "checked_at": "2026-09-18",
+  "purpose": "Normalize arrows Alpha2 exact-model and sales-channel variants with current primary-source SIM/eSIM, radio, peripheral and software-support data.",
+  "merge_mode": "deep_upsert_by_id",
+  "records": [
+    {
+      "id": "phase136-arrows-alpha2-f51g-docomo",
+      "model_name": "arrows Alpha2 F-51G",
+      "model_number": "F-51G",
+      "brand": "FCNT",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "original_carrier": "NTTドコモ",
+      "release_date": "2026-08-27",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.fcnt.com/spec/f-51g-dcm/",
+          "https://www.docomo.ne.jp/product/f51g/",
+          "https://www.fcnt.com/news/35541/",
+          "https://www.fcnt.com/business/product/arrows/aer/aer-security/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 または eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B3 / B8 / B18 / B19 / B21 / B28 / B41 / B42",
+        "nr_bands": "n1 / n3 / n28 / n40 / n41 / n77 / n78 / n79",
+        "volte_ims": "ドコモ公式でVoLTE（HD+）・高音質通話・DSDVを確認。他社回線のIMS実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "販売・VoLTE仕様確認",
+            "basis": "ドコモ/FCNT公式",
+            "note": "ドコモ版F-51G。実機範囲は別管理"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase136未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase136未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase136未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "fcnt_arrows_alpha2_f51g",
+          "label_ja": "ドコモ/FCNT公式DSDV",
+          "label_en": "Docomo/FCNT official DSDV",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "android",
+          "ownership": "android_device_protection",
+          "repair_history": "carrier_or_manufacturer_record",
+          "battery": "device_specific"
+        },
+        "network_restriction_profile": "docomo"
+      },
+      "migration": {
+        "platform": "android"
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "fcnt",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "security_support_end": "2031-08",
+        "security_patch_level": "2026-08-01",
+        "security_update_frequency": "90日ごと"
+      },
+      "loss_recovery": {
+        "platform": "android",
+        "primary_scope": true
+      },
+      "satellite": {
+        "apple_native_japan": false,
+        "apple_features_japan": [],
+        "google_device_eligible": false,
+        "google_japan_available": false,
+        "au_level": "unverified",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "DisplayPort 1.4 / Miracast",
+        "usb_data": "USB 3.1 SuperSpeed",
+        "external_storage": "microSDXC up to 2TB",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Power Delivery 3.0",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "他社回線でのSIM認識・データ・発着信・SMS・5G・VoLTE/IMS実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime on non-Docomo networks remains unverified"
+      ],
+      "availability_note_ja": "2026-08-27発売。NTTドコモ/ahamo取扱い",
+      "availability_note_en": "Released August 27, 2026; sold by NTT Docomo / ahamo",
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase136-arrows-alpha2-f51g-docomo",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase136-arrows-alpha2-f51g-docomo",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase136-arrows-alpha2-f51g-docomo",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase136-arrows-alpha2-f51g-docomo",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase136-arrows-alpha2-f51g-docomo",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase136-arrows-alpha2-f51g-docomo",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase136-arrows-alpha2-f51g-docomo",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase136-arrows-alpha2-f51g-docomo",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase136-arrows-alpha2-f51g-docomo",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase136-arrows-alpha2-f51g-docomo",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase136-arrows-alpha2-f51g-docomo",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase136-arrows-alpha2-f51g-docomo"
+      }
+    },
+    {
+      "id": "phase136-arrows-alpha2-m10-au",
+      "model_name": "arrows Alpha2",
+      "model_number": "M10",
+      "original_carrier": "au Flex Style",
+      "brand": "FCNT",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "release_date": "2026-08-27",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 または eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B3 / B8 / B18 / B19 / B21 / B28 / B41 / B42",
+        "nr_bands": "n1 / n3 / n28 / n40 / n41 / n77 / n78 / n79",
+        "volte_ims": "公式仕様でSIM/eSIM・5G/LTEを確認。各回線のVoLTE/IMS実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase136未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "販売確認",
+            "basis": "au/FCNT公式",
+            "note": "au Flex StyleのSIMフリーM10。実動作範囲は別管理"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase136未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase136未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "fcnt_arrows_alpha2_m10",
+          "label_ja": "FCNT公式DSDV / Dual eSIM基準",
+          "label_en": "FCNT official DSDV / Dual eSIM baseline",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "android",
+          "ownership": "android_device_protection",
+          "repair_history": "seller_or_repair_record",
+          "battery": "device_specific"
+        },
+        "network_restriction_profile": "open_market_au_flex_style"
+      },
+      "migration": {
+        "platform": "android"
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "fcnt",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "security_support_end": "2031-08",
+        "security_patch_level": "2026-08-01",
+        "security_update_frequency": "90日ごと"
+      },
+      "loss_recovery": {
+        "platform": "android",
+        "primary_scope": true
+      },
+      "satellite": {
+        "apple_native_japan": false,
+        "apple_features_japan": [],
+        "google_device_eligible": false,
+        "google_japan_available": false,
+        "au_level": "unverified",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "DisplayPort 1.4 / Miracast",
+        "usb_data": "USB 3.1 SuperSpeed",
+        "external_storage": "microSDXC up to 2TB",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Power Delivery 3.0",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 3,
+        "source_urls": [
+          "https://www.fcnt.com/spec/m10-kd/",
+          "https://www.au.com/information/topic/mobile/2026-009/",
+          "https://www.fcnt.com/business/product/arrows/aer/aer-security/"
+        ]
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "発着信・SMS・データ・5G・VoLTE/IMSの実動作は回線別に未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Carrier-specific voice/SMS/data/5G/VoLTE-IMS runtime remains unverified"
+      ],
+      "availability_note_ja": "2026-08-27発売。au Flex Styleで販売するオープンマーケットM10",
+      "availability_note_en": "Released August 27, 2026; open-market M10 sold through au Flex Style",
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase136-arrows-alpha2-m10-au",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase136-arrows-alpha2-m10-au",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase136-arrows-alpha2-m10-au",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase136-arrows-alpha2-m10-au",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase136-arrows-alpha2-m10-au",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase136-arrows-alpha2-m10-au",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase136-arrows-alpha2-m10-au",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase136-arrows-alpha2-m10-au",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase136-arrows-alpha2-m10-au",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase136-arrows-alpha2-m10-au",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase136-arrows-alpha2-m10-au",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase136-arrows-alpha2-m10-au"
+      }
+    },
+    {
+      "id": "phase136-arrows-alpha2-m10-rakuten",
+      "model_name": "arrows Alpha2",
+      "model_number": "M10",
+      "original_carrier": "楽天モバイル",
+      "brand": "FCNT",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "release_date": "2026-08-27",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 または eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B3 / B8 / B18 / B19 / B21 / B28 / B41 / B42",
+        "nr_bands": "n1 / n3 / n28 / n40 / n41 / n77 / n78 / n79",
+        "volte_ims": "公式仕様でSIM/eSIM・5G/LTEを確認。各回線のVoLTE/IMS実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase136未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase136未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase136未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "販売確認",
+            "basis": "楽天モバイル/FCNT公式",
+            "note": "楽天モバイル販売M10。実動作範囲は別管理"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "fcnt_arrows_alpha2_m10",
+          "label_ja": "FCNT公式DSDV / Dual eSIM基準",
+          "label_en": "FCNT official DSDV / Dual eSIM baseline",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "android",
+          "ownership": "android_device_protection",
+          "repair_history": "seller_or_repair_record",
+          "battery": "device_specific"
+        },
+        "network_restriction_profile": "rakuten_mobile"
+      },
+      "migration": {
+        "platform": "android"
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "fcnt",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "security_support_end": "2031-08",
+        "security_patch_level": "2026-08-01",
+        "security_update_frequency": "90日ごと"
+      },
+      "loss_recovery": {
+        "platform": "android",
+        "primary_scope": true
+      },
+      "satellite": {
+        "apple_native_japan": false,
+        "apple_features_japan": [],
+        "google_device_eligible": false,
+        "google_japan_available": false,
+        "au_level": "unverified",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "DisplayPort 1.4 / Miracast",
+        "usb_data": "USB 3.1 SuperSpeed",
+        "external_storage": "microSDXC up to 2TB",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Power Delivery 3.0",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.fcnt.com/spec/m10-rm/",
+          "https://network.mobile.rakuten.co.jp/product/smartphone/arrows-alpha2/spec/",
+          "https://www.fcnt.com/news/35406/",
+          "https://www.fcnt.com/business/product/arrows/aer/aer-security/"
+        ]
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "発着信・SMS・データ・5G・VoLTE/IMSの実動作は回線別に未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Carrier-specific voice/SMS/data/5G/VoLTE-IMS runtime remains unverified"
+      ],
+      "availability_note_ja": "2026-08-27発売。楽天モバイルで販売",
+      "availability_note_en": "Released August 27, 2026; sold by Rakuten Mobile",
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase136-arrows-alpha2-m10-rakuten",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase136-arrows-alpha2-m10-rakuten",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase136-arrows-alpha2-m10-rakuten",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase136-arrows-alpha2-m10-rakuten",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase136-arrows-alpha2-m10-rakuten",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase136-arrows-alpha2-m10-rakuten",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase136-arrows-alpha2-m10-rakuten",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase136-arrows-alpha2-m10-rakuten",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase136-arrows-alpha2-m10-rakuten",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase136-arrows-alpha2-m10-rakuten",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase136-arrows-alpha2-m10-rakuten",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase136-arrows-alpha2-m10-rakuten"
+      }
+    },
+    {
+      "id": "phase136-arrows-alpha2-m10-softbank-ymobile",
+      "model_name": "arrows Alpha2",
+      "model_number": "M10",
+      "original_carrier": "SoftBank / Y!mobile Free Style",
+      "brand": "FCNT",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "release_date": "2026-08-27",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 または eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B3 / B8 / B18 / B19 / B21 / B28 / B41 / B42",
+        "nr_bands": "n1 / n3 / n28 / n40 / n41 / n77 / n78 / n79",
+        "volte_ims": "公式仕様でSIM/eSIM・5G/LTEを確認。各回線のVoLTE/IMS実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase136未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase136未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "販売確認",
+            "basis": "SoftBank/Y!mobile/FCNT公式",
+            "note": "Free StyleのオープンマーケットM10。回線実動作は別管理"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase136未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "fcnt_arrows_alpha2_m10",
+          "label_ja": "FCNT公式DSDV / Dual eSIM基準",
+          "label_en": "FCNT official DSDV / Dual eSIM baseline",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "android",
+          "ownership": "android_device_protection",
+          "repair_history": "seller_or_repair_record",
+          "battery": "device_specific"
+        },
+        "network_restriction_profile": "open_market_softbank_ymobile_free_style"
+      },
+      "migration": {
+        "platform": "android"
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "fcnt",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "security_support_end": "2031-08",
+        "security_patch_level": "2026-08-01",
+        "security_update_frequency": "90日ごと"
+      },
+      "loss_recovery": {
+        "platform": "android",
+        "primary_scope": true
+      },
+      "satellite": {
+        "apple_native_japan": false,
+        "apple_features_japan": [],
+        "google_device_eligible": false,
+        "google_japan_available": false,
+        "au_level": "unverified",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "DisplayPort 1.4 / Miracast",
+        "usb_data": "USB 3.1 SuperSpeed",
+        "external_storage": "microSDXC up to 2TB",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Power Delivery 3.0",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 5,
+        "source_urls": [
+          "https://www.fcnt.com/spec/m10-sb/",
+          "https://www.softbank.jp/mobile/info/personal/news/product/20260818a/",
+          "https://www.ymobile.jp/lineup/simfree/arrowsalpha2/",
+          "https://www.ymobile.jp/info/press/2026/26081801.html",
+          "https://www.fcnt.com/business/product/arrows/aer/aer-security/"
+        ]
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "発着信・SMS・データ・5G・VoLTE/IMSの実動作は回線別に未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Carrier-specific voice/SMS/data/5G/VoLTE-IMS runtime remains unverified"
+      ],
+      "availability_note_ja": "2026-08-27発売。SoftBank Free Style / Y!mobile Free Styleで販売",
+      "availability_note_en": "Released August 27, 2026; sold through SoftBank Free Style / Y!mobile Free Style",
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase136-arrows-alpha2-m10-softbank-ymobile",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase136-arrows-alpha2-m10-softbank-ymobile",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase136-arrows-alpha2-m10-softbank-ymobile",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase136-arrows-alpha2-m10-softbank-ymobile",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase136-arrows-alpha2-m10-softbank-ymobile",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase136-arrows-alpha2-m10-softbank-ymobile",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase136-arrows-alpha2-m10-softbank-ymobile",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase136-arrows-alpha2-m10-softbank-ymobile",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase136-arrows-alpha2-m10-softbank-ymobile",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase136-arrows-alpha2-m10-softbank-ymobile",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase136-arrows-alpha2-m10-softbank-ymobile",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase136-arrows-alpha2-m10-softbank-ymobile"
+      }
+    },
+    {
+      "id": "phase136-arrows-alpha2-m10-open-market",
+      "model_name": "arrows Alpha2",
+      "model_number": "M10",
+      "original_carrier": "SIMフリー（M10）",
+      "brand": "FCNT",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "release_date": "2026-08-27",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 または eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B3 / B8 / B18 / B19 / B21 / B28 / B41 / B42",
+        "nr_bands": "n1 / n3 / n28 / n40 / n41 / n77 / n78 / n79",
+        "volte_ims": "公式仕様でSIM/eSIM・5G/LTEを確認。各回線のVoLTE/IMS実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "実動作未確認",
+            "basis": "M10公式Band/仕様",
+            "note": "対応可否は回線・APN・IMS・OS条件を別確認"
+          },
+          "au": {
+            "rating": "実動作未確認",
+            "basis": "M10公式Band/仕様",
+            "note": "IIJmio Type Aでは最新ファームウェア条件あり"
+          },
+          "SoftBank": {
+            "rating": "実動作未確認",
+            "basis": "M10公式Band/仕様",
+            "note": "対応可否は回線・APN・IMS・OS条件を別確認"
+          },
+          "楽天モバイル": {
+            "rating": "実動作未確認",
+            "basis": "M10公式Band/仕様",
+            "note": "対応可否は回線・APN・IMS・OS条件を別確認"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "fcnt_arrows_alpha2_m10",
+          "label_ja": "FCNT公式DSDV / Dual eSIM基準",
+          "label_en": "FCNT official DSDV / Dual eSIM baseline",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "android",
+          "ownership": "android_device_protection",
+          "repair_history": "seller_or_repair_record",
+          "battery": "device_specific"
+        },
+        "network_restriction_profile": "open_market"
+      },
+      "migration": {
+        "platform": "android"
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "fcnt",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "security_support_end": "2031-08",
+        "security_patch_level": "2026-08-01",
+        "security_update_frequency": "90日ごと"
+      },
+      "loss_recovery": {
+        "platform": "android",
+        "primary_scope": true
+      },
+      "satellite": {
+        "apple_native_japan": false,
+        "apple_features_japan": [],
+        "google_device_eligible": false,
+        "google_japan_available": false,
+        "au_level": "unverified",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "DisplayPort 1.4 / Miracast",
+        "usb_data": "USB 3.1 SuperSpeed",
+        "external_storage": "microSDXC up to 2TB",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Power Delivery 3.0",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.fcnt.com/spec/m10-sim-free/",
+          "https://www.fcnt.com/news/35527/",
+          "https://www.iijmio.jp/device/detail.html?deviceSpecified=1&key=arrows_Alpha2_256GB",
+          "https://www.fcnt.com/business/product/arrows/aer/aer-security/"
+        ]
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "発着信・SMS・データ・5G・VoLTE/IMSの実動作は回線別に未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Carrier-specific voice/SMS/data/5G/VoLTE-IMS runtime remains unverified"
+      ],
+      "availability_note_ja": "2026-08-27から順次発売。IIJmio・mineo・量販店等で取扱い",
+      "availability_note_en": "Rolled out from August 27, 2026 through IIJmio, mineo and retail channels",
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase136-arrows-alpha2-m10-open-market",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase136-arrows-alpha2-m10-open-market",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase136-arrows-alpha2-m10-open-market",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase136-arrows-alpha2-m10-open-market",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase136-arrows-alpha2-m10-open-market",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase136-arrows-alpha2-m10-open-market",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase136-arrows-alpha2-m10-open-market",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase136-arrows-alpha2-m10-open-market",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase136-arrows-alpha2-m10-open-market",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase136-arrows-alpha2-m10-open-market",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase136-arrows-alpha2-m10-open-market",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase136-arrows-alpha2-m10-open-market"
+      }
+    }
+  ]
+}

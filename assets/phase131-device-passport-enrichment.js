@@ -12,7 +12,7 @@
   const status=v=>({confirmed:t('実機確認済み','Real-device confirmed'),not_tested:t('未検証','Not tested'),not_solqvia_tested:t('SolQvia実機未確認','Not tested by SolQvia'),not_applicable_physical_sim:t('物理SIM対象外','Physical SIM not applicable'),official_capability_only_not_solqvia_tested:t('公式機能あり／実動作未確認','Official capability / runtime unverified')})[v]||String(v||t('未確認','Unverified'));
   let priority={priority_records:[]},realdb={records:[]},externaldb={records:[]},coverage={metrics:[]},taxonomy={domains:[]};
   const load=u=>fetch(u).then(r=>r.ok?r.json():Promise.reject(new Error(u)));
-  const findPriority=(name,number)=>priority.priority_records.find(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
+  const findPriority=(name,number,carrierName)=>priority.priority_records.find(x=>(((x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name))&&(!x.original_carrier||norm(x.original_carrier)===norm(carrierName))))||priority.priority_records.find(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
   const findReal=(name,number)=>realdb.records.filter(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
   const findExternal=name=>externaldb.records.filter(x=>(x.model_names||[]).some(n=>norm(n)===norm(name)));
   const objGrid=obj=>obj?Object.entries(obj).filter(([,v])=>v!==null&&v!==undefined).map(([k,v])=>`<div><b>${esc(label[k]||k.replaceAll('_',' '))}</b><span>${esc(fmt(v))}</span></div>`).join(''):'';
@@ -25,13 +25,13 @@
     try{
       const name=detail.querySelector('.p110-passport-head h2')?.textContent?.trim();
       const meta=detail.querySelector('.p110-passport-head p:not(.eyebrow)')?.textContent||'';
-      const number=meta.split('/')[0].trim();
+      const partsMeta=meta.split('/');const number=partsMeta[0].trim();const carrierName=partsMeta.slice(1).join('/').trim();
       if(!name)return;
       const signature=norm(name)+'|'+norm(number);
       if(detail.dataset.p131Record===signature&&detail.querySelector('[data-p131-added]'))return;
       detail.querySelectorAll('[data-p131-added]').forEach(n=>n.remove());
       detail.dataset.p131Record=signature;
-      const ex=findPriority(name,number);const real=findReal(name,number);const external=findExternal(name);
+      const ex=findPriority(name,number,carrierName);const real=findReal(name,number);const external=findExternal(name);
       const firstSection=detail.querySelector('.p110-section');
       if(!firstSection)return;
       const parts=[];
@@ -58,10 +58,11 @@
   }
   Promise.all([
     load('/assets/data/phase131-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
+    load('/assets/data/phase136-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase131-solqvia-real-device-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase132-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase135-external-field-evidence-v1.json').catch(()=>({records:[]})),
-    load('/assets/data/phase135-coverage-gap-audit-v1.json').catch(()=>load('/assets/data/phase133-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase132-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase130-coverage-gap-audit-v1.json')).catch(()=>({metrics:[]})),
+    load('/assets/data/phase136-coverage-gap-audit-v1.json').catch(()=>load('/assets/data/phase135-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase133-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase132-coverage-gap-audit-v1.json')).catch(()=>load('/assets/data/phase130-coverage-gap-audit-v1.json')).catch(()=>({metrics:[]})),
     load('/assets/data/phase130-unified-capability-taxonomy-v1.json').catch(()=>({domains:[]}))
-  ]).then(([p,r,ext132,ext135,c,tax])=>{priority=p;realdb=r;externaldb={records:[...(ext132.records||[]),...(ext135.records||[])]};coverage=c;taxonomy=tax;foundation();augment();new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false})});
+  ]).then(([p131,p136,r,ext132,ext135,c,tax])=>{priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[])]};realdb=r;externaldb={records:[...(ext132.records||[]),...(ext135.records||[])]};coverage=c;taxonomy=tax;foundation();augment();new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false})});
 })();

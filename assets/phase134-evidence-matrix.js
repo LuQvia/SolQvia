@@ -43,7 +43,7 @@
     return v[0]||'unverified';
   };
   let priority={priority_records:[]},realdb={records:[]},externaldb={records:[]};
-  const findPriority=(name,number)=>priority.priority_records.find(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
+  const findPriority=(name,number,carrierName)=>priority.priority_records.find(x=>(((x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name))&&(!x.original_carrier||norm(x.original_carrier)===norm(carrierName))))||priority.priority_records.find(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
   const findReal=(name,number)=>realdb.records.filter(x=>(x.model_number&&number&&norm(x.model_number)===norm(number))||norm(x.model_name)===norm(name));
   const findExternal=name=>externaldb.records.filter(x=>(x.model_names||[]).some(n=>norm(n)===norm(name)));
   const collectExternal=(records,key)=>{
@@ -63,13 +63,13 @@
     try{
       const name=detail.querySelector('.p110-passport-head h2')?.textContent?.trim();
       const meta=detail.querySelector('.p110-passport-head p:not(.eyebrow)')?.textContent||'';
-      const number=meta.split('/')[0].trim();
+      const partsMeta=meta.split('/');const number=partsMeta[0].trim();const carrierName=partsMeta.slice(1).join('/').trim();
       if(!name)return;
       const signature=norm(name)+'|'+norm(number);
       if(detail.dataset.p134Record===signature&&detail.querySelector('[data-p134-added]'))return;
       detail.querySelectorAll('[data-p134-added]').forEach(n=>n.remove());
       detail.dataset.p134Record=signature;
-      const ex=findPriority(name,number);
+      const ex=findPriority(name,number,carrierName);
       const external=findExternal(name);
       const real=findReal(name,number);
       const body=rows.map(([key,label])=>{
@@ -88,11 +88,12 @@
   }
   Promise.all([
     load('/assets/data/phase131-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
+    load('/assets/data/phase136-priority-enrichment-v1.json').catch(()=>({priority_records:[]})),
     load('/assets/data/phase131-solqvia-real-device-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase132-external-field-evidence-v1.json').catch(()=>({records:[]})),
     load('/assets/data/phase135-external-field-evidence-v1.json').catch(()=>({records:[]}))
-  ]).then(([p,r,e132,e135])=>{
-    priority=p;realdb=r;externaldb={records:[...(e132.records||[]),...(e135.records||[])]};
+  ]).then(([p131,p136,r,e132,e135])=>{
+    priority={priority_records:[...(p131.priority_records||[]),...(p136.priority_records||[])]};realdb=r;externaldb={records:[...(e132.records||[]),...(e135.records||[])]};
     augment();
     new MutationObserver(()=>augment()).observe(detail,{childList:true,subtree:false});
   });

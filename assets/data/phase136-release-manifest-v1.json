@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "release": "phase136-arrows-alpha2-normalization",
+  "date": "2026-09-18",
+  "baseline": "Phase135 main abd27dc1efe0feeb814606894f6e429e002bb88b",
+  "goal": "Normalize arrows Alpha2 exact-model and sales-channel variants and connect them to the per-function evidence matrix without changing the 802-URL SEO observation surface.",
+  "index_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "added_records": [
+    "arrows Alpha2 F-51G / NTTドコモ",
+    "arrows Alpha2 M10 / au Flex Style",
+    "arrows Alpha2 M10 / 楽天モバイル",
+    "arrows Alpha2 M10 / SoftBank・Y!mobile Free Style",
+    "arrows Alpha2 M10 / SIMフリー"
+  ],
+  "normalized_fields": [
+    "model number",
+    "sales channel",
+    "SIM/eSIM",
+    "LTE/5G bands",
+    "Dual SIM",
+    "OS",
+    "security support",
+    "USB/DisplayPort",
+    "charging",
+    "evidence provenance"
+  ],
+  "engineering": [
+    "Phase110 Device Passport now loads Phase136 overlay records.",
+    "Phase131 enrichment merges Phase136 priority records.",
+    "Phase134 evidence matrix resolves same-model-number records by exact sales channel before fallback matching.",
+    "Phase136 coverage audit is loaded first.",
+    "JA/EN Device Passport counts updated to 562 / 527 / 502."
+  ],
+  "evidence_rules": [
+    "The same M10 model number is not treated as one universal carrier record.",
+    "Sales-channel evidence is kept separate even when hardware specifications are shared.",
+    "Official capability is not promoted to runtime success.",
+    "Band overlap is not promoted to voice/data/5G/VoLTE compatibility.",
+    "Unverified carrier behavior remains unverified."
+  ],
+  "qa_targets": [
+    "All Phase136 JSON parses.",
+    "Phase110/131/134 JavaScript syntax passes.",
+    "All Phase136 IDs are unique.",
+    "Sales-channel matching selects the correct priority record before generic fallback.",
+    "JA/EN canonicals remain unchanged.",
+    "No new indexable URL is created."
+  ],
+  "next_order": [
+    "Add external runtime evidence for arrows Alpha2 only when stable source detail is available.",
+    "Normalize the next 2026 current-device family with carrier/model variants.",
+    "Expand SolQvia-owned real-device evidence.",
+    "Reprioritize by GSC query/page data when the next export is supplied."
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0",
+  "release": "phase136-arrows-alpha2-normalization",
+  "checked_at": "2026-09-18",
+  "priority_records": [
+    {
+      "key": "arrows-alpha2-f51g-docomo",
+      "model_name": "arrows Alpha2 F-51G",
+      "model_number": "F-51G",
+      "original_carrier": "NTTドコモ",
+      "priority_reason": "2026 current device normalization target; exact SIM/eSIM, software and runtime-evidence separation.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-08-27",
+        "manufacturer": "FCNT"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_esim": true,
+        "dual_sim_ui": "nanoSIM + eSIM or eSIM + eSIM; DSDV"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "volte": "official_capability",
+        "tethering_supported": "official_capability"
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "security_update_plan": "through 2031-08",
+        "security_update_frequency": "90 days",
+        "security_patch_level": "2026-08-01"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.fcnt.com/spec/f-51g-dcm/",
+        "https://www.docomo.ne.jp/product/f51g/",
+        "https://www.fcnt.com/business/product/arrows/aer/aer-security/"
+      ]
+    },
+    {
+      "key": "arrows-alpha2-m10-au",
+      "model_name": "arrows Alpha2",
+      "model_number": "M10",
+      "original_carrier": "au Flex Style",
+      "priority_reason": "2026 current device normalization target; exact SIM/eSIM, software and runtime-evidence separation.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-08-27",
+        "manufacturer": "FCNT"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_esim": true,
+        "dual_sim_ui": "nanoSIM + eSIM or eSIM + eSIM; DSDV"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "volte": "carrier_condition_required",
+        "tethering_supported": "official_capability"
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "security_update_plan": "through 2031-08",
+        "security_update_frequency": "90 days",
+        "security_patch_level": "2026-08-01"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.fcnt.com/spec/m10-kd/",
+        "https://www.au.com/information/topic/mobile/2026-009/",
+        "https://www.fcnt.com/business/product/arrows/aer/aer-security/"
+      ]
+    },
+    {
+      "key": "arrows-alpha2-m10-rakuten",
+      "model_name": "arrows Alpha2",
+      "model_number": "M10",
+      "original_carrier": "楽天モバイル",
+      "priority_reason": "2026 current device normalization target; exact SIM/eSIM, software and runtime-evidence separation.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-08-27",
+        "manufacturer": "FCNT"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_esim": true,
+        "dual_sim_ui": "nanoSIM + eSIM or eSIM + eSIM; DSDV"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "volte": "carrier_condition_required",
+        "tethering_supported": "official_capability"
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "security_update_plan": "through 2031-08",
+        "security_update_frequency": "90 days",
+        "security_patch_level": "2026-08-01"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.fcnt.com/spec/m10-rm/",
+        "https://network.mobile.rakuten.co.jp/product/smartphone/arrows-alpha2/spec/",
+        "https://www.fcnt.com/business/product/arrows/aer/aer-security/"
+      ]
+    },
+    {
+      "key": "arrows-alpha2-m10-softbank-ymobile",
+      "model_name": "arrows Alpha2",
+      "model_number": "M10",
+      "original_carrier": "SoftBank / Y!mobile Free Style",
+      "priority_reason": "2026 current device normalization target; exact SIM/eSIM, software and runtime-evidence separation.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-08-27",
+        "manufacturer": "FCNT"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_esim": true,
+        "dual_sim_ui": "nanoSIM + eSIM or eSIM + eSIM; DSDV"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "volte": "carrier_condition_required",
+        "tethering_supported": "official_capability"
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "security_update_plan": "through 2031-08",
+        "security_update_frequency": "90 days",
+        "security_patch_level": "2026-08-01"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.fcnt.com/spec/m10-sb/",
+        "https://www.softbank.jp/mobile/info/personal/news/product/20260818a/",
+        "https://www.ymobile.jp/lineup/simfree/arrowsalpha2/"
+      ]
+    },
+    {
+      "key": "arrows-alpha2-m10-open-market",
+      "model_name": "arrows Alpha2",
+      "model_number": "M10",
+      "original_carrier": "SIMフリー（M10）",
+      "priority_reason": "2026 current device normalization target; exact SIM/eSIM, software and runtime-evidence separation.",
+      "evidence_level": "carrier_and_manufacturer_official",
+      "identity": {
+        "release_date": "2026-08-27",
+        "manufacturer": "FCNT"
+      },
+      "sim_esim": {
+        "physical_sim": "nanoSIM",
+        "physical_sim_slots": 1,
+        "physical_sim_supported": true,
+        "esim_supported": true,
+        "dual_esim": true,
+        "dual_sim_ui": "nanoSIM + eSIM or eSIM + eSIM; DSDV"
+      },
+      "network": {
+        "fiveg_supported": true,
+        "volte": "carrier_condition_required",
+        "tethering_supported": "official_capability"
+      },
+      "software": {
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "security_update_plan": "through 2031-08",
+        "security_update_frequency": "90 days",
+        "security_patch_level": "2026-08-01"
+      },
+      "runtime": {
+        "sim_recognition": "not_solqvia_tested",
+        "mobile_data": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested",
+        "sms_send": "not_solqvia_tested",
+        "sms_receive": "not_solqvia_tested",
+        "tethering": "official_capability_only_not_solqvia_tested",
+        "fiveg_attach": "not_solqvia_tested",
+        "volte_ims_registration": "official_capability_only_not_solqvia_tested"
+      },
+      "sources": [
+        "https://www.fcnt.com/spec/m10-sim-free/",
+        "https://www.fcnt.com/news/35527/",
+        "https://www.iijmio.jp/device/detail.html?deviceSpecified=1&key=arrows_Alpha2_256GB"
+      ]
+    }
+  ]
+}
