@@ -21,10 +21,13 @@
         "ja": "メーカー公式確認",
         "en": "Manufacturer official",
         "has_real_device": false,
-        "source_count": 2,
+        "source_count": 5,
         "source_urls": [
           "https://store.google.com/jp/product/pixel_11_pro_fold_specs?hl=ja",
-          "https://blog.google/intl/ja-jp/products/devices-services/pixel-11-pro-fold/"
+          "https://blog.google/intl/ja-jp/products/devices-services/pixel-11-pro-fold/",
+          "https://www.docomo.ne.jp/product/pixel11profold/",
+          "https://www.au.com/mobile/product/smartphone/pixel11p_fold/",
+          "https://www.softbank.jp/mobile/products/google-pixel/google-pixel-11-pro-fold/"
         ]
       },
       "network": {
@@ -37,17 +40,17 @@
         "fit": {
           "NTTドコモ": {
             "rating": "販売確認",
-            "basis": "Google公式販売情報",
+            "basis": "NTTドコモ公式",
             "note": "2026-08-20発売。実動作は別判定"
           },
           "au": {
             "rating": "販売確認",
-            "basis": "Google公式販売情報",
-            "note": "KDDI/沖縄セルラー販売あり。実動作は別判定"
+            "basis": "au公式",
+            "note": "2026-08-20発売。実動作は別判定"
           },
           "SoftBank": {
             "rating": "販売確認",
-            "basis": "Google公式販売情報",
+            "basis": "SoftBank公式",
             "note": "2026-08-20発売。実動作は別判定"
           },
           "楽天モバイル": {
@@ -143,8 +146,8 @@
         "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase135-pixel11profold-gzdq6",
         "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase135-pixel11profold-gzdq6"
       },
-      "availability_note_ja": "2026-08-20発売。Google Store、NTTドコモ、KDDI/沖縄セルラー、SoftBankで販売",
-      "availability_note_en": "Released August 20, 2026; sold by Google Store, NTT Docomo, KDDI/Okinawa Cellular and SoftBank"
+      "availability_note_ja": "2026-08-20発売。Google Store、NTTドコモ、au、SoftBankの公式ページで販売を確認",
+      "availability_note_en": "Released August 20, 2026; sales confirmed on Google Store, NTT Docomo, au and SoftBank official pages"
     }
   ]
 }
