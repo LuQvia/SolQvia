@@ -1,0 +1,442 @@
+{
+  "schema_version": "1.0",
+  "release": "phase137-xperia1viii-normalization",
+  "checked_at": "2026-09-18",
+  "purpose": "Normalize Xperia 1 VIII carrier variants and add the Japanese SIM-free XQ-GE44 record using current primary sources.",
+  "merge_mode": "deep_upsert_by_id",
+  "records": [
+    {
+      "id": "smartphone-4db40c6adf59",
+      "model_number": "SO-51G",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.docomo.ne.jp/product/so51g/spec.html",
+          "https://www.docomo.ne.jp/product/so51g/",
+          "https://www.docomo.ne.jp/support/product_update/so51g/index.html",
+          "https://www.sony.jp/xperia/products/xperia1m8/spec.html"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "ドコモ公式でVoLTE（HD+）・高音質通話・DSDVを確認。au回線での外部動作確認は別証拠として保持",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "販売・VoLTE仕様確認",
+            "basis": "ドコモ公式",
+            "note": "SO-51G。VoLTE（HD+）・DSDVを公式確認"
+          },
+          "au": {
+            "rating": "au公式動作確認あり",
+            "basis": "au BYOD動作確認",
+            "note": "Android 16で物理SIM/eSIMの通話・SMS・データ・テザリングをauが確認。5G SAは×"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase137未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase137未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "xperia1viii-so51g",
+          "label_ja": "ドコモ公式 nanoSIM + eSIM / DSDV",
+          "label_en": "Docomo official nanoSIM + eSIM / DSDV",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "sony_xperia",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "current_security_patch": "2026-08",
+        "os_upgrade_policy": "最大4回",
+        "security_update_policy": "発売時から6年間"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "DisplayPort 1.4",
+        "usb_data": "official_usb_c",
+        "external_storage": "microSDXC up to 2TB",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / Qi wireless charging",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "au以外の他社回線でのSIM認識・データ・発着信・SMS・5G・VoLTE/IMS実動作は未確認",
+        "au公式動作確認は第三者キャリアの外部実機証拠であり、SolQvia実機確認ではない"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime on non-Docomo networks other than the documented au test remains unverified",
+        "The au BYOD test is third-party carrier evidence, not SolQvia real-device evidence"
+      ]
+    },
+    {
+      "id": "smartphone-fde7c59c8d84",
+      "model_number": "SOG17",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.au.com/mobile/product/smartphone/xperia_1_viii/",
+          "https://www.au.com/mobile/product/smartphone/xperia_1_viii/spec/",
+          "https://support.sony.jp/electronics/support/japan-kddi/xperia-1-viii-sog17",
+          "https://www.sony.jp/xperia/products/xperia1m8/spec.html"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM / eSIM",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "au公式でau VoLTE対応を確認。他社回線のVoLTE/IMS実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase137未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "販売・au VoLTE仕様確認",
+            "basis": "au公式",
+            "note": "SOG17。5G SA・au Starlink Direct対応は契約/ソフトウェア条件あり"
+          },
+          "SoftBank": {
+            "rating": "未確認",
+            "basis": "Phase137未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase137未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": false,
+        "platform_profile": {
+          "code": "xperia1viii-sog17",
+          "label_ja": "nanoSIM/eSIM対応・同時利用構成はPhase137未確認",
+          "label_en": "nanoSIM/eSIM supported; simultaneous configuration unverified in Phase137",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "carrier_condition_required",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "sony_xperia",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "current_build": "73.0.A.2.62",
+        "current_security_patch": "2026-08",
+        "os_upgrade_policy": "最大4回",
+        "security_update_policy": "発売時から6年間"
+      },
+      "satellite": {
+        "apple_native_japan": false,
+        "apple_features_japan": [],
+        "google_device_eligible": false,
+        "google_japan_available": false,
+        "au_level": "data_and_message",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "official_usb_c",
+        "external_storage": "microSDXC up to 2TB",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / Qi wireless charging",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "nanoSIM/eSIMの同時利用構成はPhase137では公式根拠を追加確認していない",
+        "他社回線でのSIM認識・データ・発着信・SMS・5G・VoLTE/IMS実動作は未確認"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Simultaneous nanoSIM/eSIM configuration is not asserted without an exact Phase137 source",
+        "Runtime on non-au networks remains unverified"
+      ]
+    },
+    {
+      "id": "smartphone-78af07f918f7",
+      "model_number": "A601SO",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "carrier_manufacturer_official",
+        "ja": "キャリア・メーカー公式確認",
+        "en": "Carrier + manufacturer official",
+        "has_real_device": false,
+        "source_count": 4,
+        "source_urls": [
+          "https://www.softbank.jp/mobile/products/smartphone/xperia1m8/",
+          "https://www.softbank.jp/corp/news/press/sbkk/2026/20260513_01/",
+          "https://support.sony.jp/electronics/support/japan-softbank/xperia-1-viii-a601so",
+          "https://www.sony.jp/xperia/products/xperia1m8/spec.html"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM / eSIM",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "volte_ims": "SoftBank公式でVoNR・VoLTE（HD+）・VoLTE対応を確認。他社回線のIMS実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "未確認",
+            "basis": "Phase137未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "au": {
+            "rating": "未確認",
+            "basis": "Phase137未確認",
+            "note": "Band一致だけで利用可にしない"
+          },
+          "SoftBank": {
+            "rating": "販売・VoNR/VoLTE仕様確認",
+            "basis": "SoftBank公式",
+            "note": "A601SO。nanoSIM/eSIM、VoNR、VoLTE HD+を公式確認"
+          },
+          "楽天モバイル": {
+            "rating": "未確認",
+            "basis": "Phase137未確認",
+            "note": "Band一致だけで利用可にしない"
+          }
+        }
+      },
+      "dual_sim": {
+        "exact_dual_esim": false,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "xperia1viii-a601so",
+          "label_ja": "SoftBank Dual SIM対象・nanoSIM/eSIM",
+          "label_en": "SoftBank Dual SIM eligible / nanoSIM + eSIM",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "sony_xperia",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "os_upgrade_policy": "最大4回",
+        "security_update_policy": "発売時から6年間"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "carrier_official",
+        "wired_display": "unverified",
+        "usb_data": "official_usb_c",
+        "external_storage": "microSDXC up to 2TB",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C PD-PPS / Qi wireless charging",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "他社回線でのSIM認識・データ・発着信・SMS・5G・VoLTE/IMS実動作は未確認",
+        "SoftBank Dual SIM対象であることと、他社SIM組み合わせの動作保証は別"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Runtime on non-SoftBank networks remains unverified",
+        "SoftBank Dual SIM eligibility does not guarantee arbitrary cross-carrier SIM combinations"
+      ]
+    },
+    {
+      "id": "phase137-xperia1viii-xqge44",
+      "model_name": "Xperia 1 VIII",
+      "model_number": "XQ-GE44",
+      "brand": "Sony",
+      "device_class": "スマートフォン",
+      "device_class_en": "Smartphone",
+      "original_carrier": "Sony Store / SIMフリー",
+      "release_date": "2026-06-11",
+      "article_slug": "",
+      "official_checked_at": "2026-09-18",
+      "evidence": {
+        "code": "manufacturer_official",
+        "ja": "メーカー公式確認",
+        "en": "Manufacturer official",
+        "has_real_device": false,
+        "source_count": 6,
+        "source_urls": [
+          "https://www.sony.jp/xperia/products/xperia1m8/spec.html",
+          "https://www.sony.jp/xperia/spec/simfree.html",
+          "https://support.sony.jp/electronics/support/mobile-phones-sim-free/xperia-1-viii-xq-ge44",
+          "https://support.sony.jp/electronics/support/mobile-phones-sim-free/xperia-1-viii-xq-ge44/software/00402376",
+          "https://support.sony.jp/electronics/support/mobile-phones-sim-free/xperia-1-viii-xq-ge44/articles/00277272",
+          "https://www.sony.jp/mail/store/member/20260605/"
+        ]
+      },
+      "network": {
+        "sim_esim": "nanoSIM×1 + eSIM×1 または eSIM×2",
+        "supports_esim": true,
+        "supports_physical_sim": true,
+        "lte_bands": "B1 / B2 / B3 / B4 / B5 / B7 / B8 / B11 / B12 / B13 / B17 / B18 / B19 / B21 / B26 / B28 / B38 / B39 / B40 / B41 / B42 / B66",
+        "nr_bands": "n1 / n3 / n5 / n28 / n40 / n41 / n66 / n77 / n78 / n79 / n257",
+        "volte_ims": "SIMフリー版のSIM/Band仕様をソニー公式で確認。各通信事業者のVoLTE/IMS実動作は別確認",
+        "fit": {
+          "NTTドコモ": {
+            "rating": "実動作未確認",
+            "basis": "Sony公式SIM/Band仕様",
+            "note": "Band一致だけで通話・データ・VoLTE/IMSを保証しない"
+          },
+          "au": {
+            "rating": "実動作未確認",
+            "basis": "Sony公式SIM/Band仕様",
+            "note": "Band一致だけで通話・データ・VoLTE/IMSを保証しない"
+          },
+          "SoftBank": {
+            "rating": "実動作未確認",
+            "basis": "Sony公式SIM/Band仕様",
+            "note": "Band一致だけで通話・データ・VoLTE/IMSを保証しない"
+          },
+          "楽天モバイル": {
+            "rating": "実動作未確認",
+            "basis": "Sony公式SIM/Band仕様",
+            "note": "Band一致だけで通話・データ・VoLTE/IMSを保証しない"
+          }
+        }
+      },
+      "communication": {
+        "real_device_confirmed": false,
+        "voice_scope_hint": "voice_or_sms_class_check_required",
+        "rcs_scope_hint": "os_carrier_app_peer_check_required"
+      },
+      "dual_sim": {
+        "exact_dual_esim": true,
+        "exact_dual_physical": false,
+        "exact_dual_mixed": true,
+        "platform_profile": {
+          "code": "xperia1viii-xqge44",
+          "label_ja": "Sony公式 nanoSIM + eSIM / eSIM + eSIM / DSDS・DSDV",
+          "label_en": "Sony official nanoSIM + eSIM / eSIM + eSIM / DSDS-DSDV",
+          "dual_esim_conditional": false,
+          "call_other_line_profile": "carrier_condition_required",
+          "data_profile": "one_default_data_sim",
+          "fiveg_profile": "carrier_condition_required"
+        }
+      },
+      "used_device": {
+        "platform_profile": {
+          "code": "sony_xperia",
+          "ownership": "android_device_protection",
+          "repair_history": "manufacturer_or_seller_record",
+          "battery": "device_specific"
+        },
+        "network_restriction_profile": "sim_free"
+      },
+      "migration": {
+        "platform": "android"
+      },
+      "os_update": {
+        "platform": "android",
+        "ecosystem": "sony_xperia",
+        "primary_scope": true,
+        "launch_os": "Android 16",
+        "current_os": "Android 16",
+        "current_build": "73.0.A.2.62",
+        "current_security_patch": "2026-08",
+        "os_upgrade_policy": "最大4回",
+        "security_update_policy": "発売時から6年間"
+      },
+      "loss_recovery": {
+        "platform": "android",
+        "primary_scope": true
+      },
+      "satellite": {
+        "apple_native_japan": false,
+        "apple_features_japan": [],
+        "google_device_eligible": false,
+        "google_japan_available": false,
+        "au_level": "unverified",
+        "softbank_level": "unverified"
+      },
+      "peripheral": {
+        "port_connector": "usb_c",
+        "port_evidence": "manufacturer_official",
+        "wired_display": "DisplayPort output supported",
+        "usb_data": "official_usb_c",
+        "external_storage": "microSDXC up to 2TB",
+        "usb_audio": "usb_c_supported",
+        "usb_ethernet": "device_accessory_condition_required",
+        "charging": "USB Type-C / Qi wireless charging",
+        "samsung_dex": "not_applicable",
+        "reverse_usb_power": "unknown"
+      },
+      "gaps_ja": [
+        "SolQvia実機確認なし",
+        "4MNO各社でのSIM認識・データ・発着信・SMS・5G・VoLTE/IMS実動作は未確認",
+        "Band対応は実動作保証として扱わない"
+      ],
+      "gaps_en": [
+        "No SolQvia real-device observation",
+        "Carrier-specific SIM recognition, data, voice, SMS, 5G and VoLTE/IMS runtime remains unverified",
+        "Band support is not treated as a runtime guarantee"
+      ],
+      "availability_note_ja": "2026-06-11発売。Sony StoreのSIMフリーモデル",
+      "availability_note_en": "Released June 11, 2026; Japanese SIM-free Sony Store model",
+      "links": {
+        "article_ja": "",
+        "article_en": "",
+        "evidence": "/{lang}/technology/smartphone/real-device-verification-ledger/?record=phase137-xperia1viii-xqge44",
+        "sim_esim": "/{lang}/technology/smartphone/sim-esim-compatibility-diagnosis/?record=phase137-xperia1viii-xqge44",
+        "field_report": "/{lang}/technology/smartphone/device-field-report/?record=phase137-xperia1viii-xqge44",
+        "communication": "/{lang}/technology/smartphone/communication-compatibility-lab/?record=phase137-xperia1viii-xqge44",
+        "dual_sim": "/{lang}/technology/smartphone/dual-sim-esim-combination-diagnosis/?record=phase137-xperia1viii-xqge44",
+        "used_device": "/{lang}/technology/smartphone/used-device-condition-diagnosis/?record=phase137-xperia1viii-xqge44",
+        "migration": "/{lang}/technology/smartphone/device-migration-reset-safety-diagnosis/?record=phase137-xperia1viii-xqge44",
+        "os_update": "/{lang}/technology/smartphone/os-update-carrier-issue-database/?record=phase137-xperia1viii-xqge44",
+        "loss_recovery": "/{lang}/technology/smartphone/lost-stolen-account-recovery-navigator/?record=phase137-xperia1viii-xqge44",
+        "satellite": "/{lang}/technology/smartphone/satellite-emergency-connectivity-diagnosis/?record=phase137-xperia1viii-xqge44",
+        "usb": "/{lang}/technology/smartphone/usb-c-display-storage-peripheral-compatibility-lab/?record=phase137-xperia1viii-xqge44",
+        "purchase_safety": "/{lang}/technology/smartphone/used-smartphone-purchase-safety-diagnosis/?record=phase137-xperia1viii-xqge44"
+      }
+    }
+  ]
+}
