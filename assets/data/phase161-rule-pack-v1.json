@@ -1092,7 +1092,8 @@
       ],
       "forbidden_inferences": [
         "One successful direction does not prove the other."
-      ]
+      ],
+      "localize_on_match": true
     },
     {
       "id": "r_sms_directional_failure",
@@ -1121,7 +1122,8 @@
       ],
       "forbidden_inferences": [
         "One successful SMS direction does not prove the other."
-      ]
+      ],
+      "localize_on_match": true
     },
     {
       "id": "r_volte_bearer_unknown",
