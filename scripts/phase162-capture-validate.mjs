@@ -26,10 +26,16 @@ function walk(obj,p=[]){
 
 for(const cap of captures.records||[]){
   if(!cap.capture_id){errors.push({error:"missing_capture_id"});continue;}
+  for(const req of schema.required_top_level||[]){
+    if(cap[req]==null)errors.push({capture:cap.capture_id,error:"missing_required_top_level",field:req});
+  }
   if(ids.has(cap.capture_id))errors.push({capture:cap.capture_id,error:"duplicate_capture_id"});
   ids.add(cap.capture_id);
   if(!allowedCaptureLevels.has(cap.capture_level))errors.push({capture:cap.capture_id,error:"invalid_capture_level",value:cap.capture_level});
   if(!phase161.goals.includes(cap.test_goal))errors.push({capture:cap.capture_id,error:"invalid_test_goal",value:cap.test_goal});
+  if(!schema.software_snapshot.binding_states.includes(cap.software_snapshot?.binding_state)){
+    errors.push({capture:cap.capture_id,error:"invalid_software_binding_state",value:cap.software_snapshot?.binding_state});
+  }
   walk(cap,[cap.capture_id]);
 
   const evidenceIds=new Set((cap.evidence||[]).map(x=>x.id));
@@ -48,6 +54,10 @@ for(const cap of captures.records||[]){
     if(!allowedMethods.has(obs.method))errors.push({capture:cap.capture_id,error:"invalid_method",method:obs.method});
     if(!allowedConfidence.has(obs.confidence))errors.push({capture:cap.capture_id,error:"invalid_confidence",confidence:obs.confidence});
     for(const ref of obs.evidence_refs||[])if(!evidenceIds.has(ref))errors.push({capture:cap.capture_id,error:"missing_evidence_ref",ref});
+    const strongStates=new Set(["confirmed","failed","registered","not_registered","configured","not_configured","connected","disconnected","validated","not_validated","enabled_by_policy","disabled_by_policy","provisioned","not_provisioned","in_service","out_of_service","emergency_only"]);
+    if(strongStates.has(obs.value) && obs.method!=="manual_runtime_test" && obs.method!=="call_test" && obs.method!=="sms_test" && obs.method!=="http_test" && obs.method!=="dns_test" && !(obs.evidence_refs||[]).length){
+      errors.push({capture:cap.capture_id,error:"strong_observation_requires_evidence_ref",key:obs.key});
+    }
   }
 
   for(const ev of cap.evidence||[]){
