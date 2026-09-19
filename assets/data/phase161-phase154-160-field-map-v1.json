@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0",
+  "release": "phase161-failure-diagnosis-engine",
+  "checked_at": "2026-09-19",
+  "phase154": [
+    {
+      "source": "subscriber_identity",
+      "target_prefix": "subscriber"
+    },
+    {
+      "source": "esim_rsp",
+      "target_prefix": "esim"
+    },
+    {
+      "source": "carrier_configuration",
+      "target_prefix": "carrier"
+    },
+    {
+      "source": "network_registration",
+      "target_prefix": "network"
+    },
+    {
+      "source": "data_session",
+      "target_prefix": "data"
+    },
+    {
+      "source": "ims_services",
+      "target_prefix": "ims/voice/sms"
+    },
+    {
+      "source": "diagnosis",
+      "target": "phase161 output"
+    }
+  ],
+  "phase155": [
+    {
+      "source": "configuration.state",
+      "target": "carrier.config_state"
+    },
+    {
+      "source": "configuration.feature_policies.ims_policy",
+      "target": "carrier.ims_policy"
+    }
+  ],
+  "phase156": [
+    {
+      "source": "workflow.stages.device_capability.state",
+      "target": "esim.device_capability"
+    },
+    {
+      "source": "workflow.stages.activation_material.state",
+      "target": "esim.activation_material"
+    },
+    {
+      "source": "workflow.stages.discovery_and_server_session.state",
+      "target": "esim.server_session"
+    },
+    {
+      "source": "workflow.stages.profile_download.state",
+      "target": "esim.profile_download"
+    },
+    {
+      "source": "workflow.stages.profile_install.state",
+      "target": "esim.profile_install"
+    },
+    {
+      "source": "workflow.stages.profile_enable.state",
+      "target": "esim.profile_enable"
+    },
+    {
+      "source": "workflow.stages.carrier_line_activation.state",
+      "target": "esim.carrier_line_activation"
+    }
+  ],
+  "phase157": [
+    {
+      "source": "matrix.carrier_policy.ims_provisioning_required",
+      "target": "carrier.ims_policy",
+      "note": "Only when the source semantics are an actual enabled/disabled policy state."
+    },
+    {
+      "source": "matrix.entitlement_provisioning",
+      "target": "ims.entitlement"
+    },
+    {
+      "source": "matrix.ims_registration.ims_registration_state",
+      "target": "ims.registration"
+    },
+    {
+      "source": "matrix.ims_registration.volte_registration",
+      "target": "ims.volte_registration"
+    },
+    {
+      "source": "matrix.ims_registration.vonr_registration",
+      "target": "ims.vonr_registration"
+    },
+    {
+      "source": "matrix.service_capability.mmtel_voice_capability",
+      "target": "ims.voice_capability"
+    },
+    {
+      "source": "matrix.voice_runtime.voice_outgoing",
+      "target": "voice.outgoing"
+    },
+    {
+      "source": "matrix.voice_runtime.voice_incoming",
+      "target": "voice.incoming"
+    },
+    {
+      "source": "matrix.voice_runtime.volte_call",
+      "target": "voice.volte_call"
+    },
+    {
+      "source": "matrix.voice_runtime.vonr_call",
+      "target": "voice.vonr_call"
+    },
+    {
+      "source": "matrix.sms_runtime.sms_send",
+      "target": "sms.send"
+    },
+    {
+      "source": "matrix.sms_runtime.sms_receive",
+      "target": "sms.receive"
+    },
+    {
+      "source": "matrix.sms_runtime.sms_over_ims_send/receive",
+      "target": "sms.over_ims",
+      "note": "Do not collapse send/receive unless both source directions are compatible with the requested diagnosis."
+    }
+  ],
+  "phase158": [
+    {
+      "source": "matrix.plmn_service_state.service_state",
+      "target": "network.service_state"
+    },
+    {
+      "source": "matrix.access_registration",
+      "target": "network.data_registration",
+      "note": "Map only explicit registration state, not a 4G/5G icon."
+    },
+    {
+      "source": "matrix.access_registration.fiveg_sa_registration",
+      "target": "network.fiveg_sa_registration"
+    },
+    {
+      "source": "matrix.subscription_data_selection.selected_data_line",
+      "target": "data.selected_line"
+    },
+    {
+      "source": "matrix.apn_dnn_profile",
+      "target": "data.apn_or_dnn",
+      "note": "Map configured/not-configured only when exact APN/DNN evidence exists."
+    },
+    {
+      "source": "matrix.packet_session.session_state",
+      "target": "data.packet_session"
+    },
+    {
+      "source": "matrix.ip_link",
+      "target": "data.ip_link"
+    },
+    {
+      "source": "matrix.dns_resolution.dns_lookup_test",
+      "target": "data.dns"
+    },
+    {
+      "source": "matrix.network_validation.validated_capability",
+      "target": "data.validation"
+    },
+    {
+      "source": "matrix.runtime_data",
+      "target": "data.runtime"
+    }
+  ],
+  "phase159": [
+    {
+      "source": "runtime_binding.binding_state",
+      "target": "software.snapshot_binding"
+    }
+  ],
+  "phase160": [
+    {
+      "source": "runtime.display_hint",
+      "target": "radio.display_hint"
+    },
+    {
+      "source": "runtime.observed_component_carriers",
+      "target": "radio.physical_channels",
+      "note": "confirmed only when actual channel evidence exists"
+    },
+    {
+      "source": "runtime.lte_ca",
+      "target": "radio.lte_ca"
+    },
+    {
+      "source": "runtime.endc",
+      "target": "radio.endc"
+    },
+    {
+      "source": "runtime.nr_ca",
+      "target": "radio.nr_ca"
+    }
+  ],
+  "preservation_rules": [
+    "unknown/not_tested/not_solqvia_tested remain evidence gaps, not failures.",
+    "Generic carrier voice/SMS/data success is not split into hidden internal states.",
+    "No phase-to-phase mapping may raise evidence strength.",
+    "Software snapshot mismatch is retained rather than silently merging historical/current results."
+  ]
+}
