@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "release": "phase161-failure-diagnosis-engine",
+  "checked_at": "2026-09-19",
+  "scenarios": [
+    {
+      "id": "s01-esim-installed-enable-unknown",
+      "description": "eSIM profile installation is observed, but enablement is not yet known.",
+      "input": {
+        "goal": "esim_setup",
+        "observations": {
+          "subscriber.sim_or_esim_recognized": "confirmed",
+          "esim.profile_install": "confirmed",
+          "esim.profile_enable": "unknown"
+        }
+      },
+      "expect": {
+        "diagnosis_status": "requires_more_evidence",
+        "next_question_id": "q_esim_profile_enabled",
+        "candidate_includes": [
+          "profile_enable_failure",
+          "upstream_state_unknown"
+        ]
+      }
+    },
+    {
+      "id": "s02-esim-enabled-carrier-activation-failed",
+      "description": "Profile is enabled but carrier-side line activation is explicitly incomplete.",
+      "input": {
+        "goal": "esim_setup",
+        "observations": {
+          "subscriber.sim_or_esim_recognized": "confirmed",
+          "esim.profile_install": "confirmed",
+          "esim.profile_enable": "confirmed",
+          "esim.carrier_line_activation": "failed"
+        }
+      },
+      "expect": {
+        "diagnosis_status": "localized",
+        "next_question_id": null,
+        "candidate_includes": [
+          "carrier_activation_or_line_switch_pending"
+        ]
+      }
+    },
+    {
+      "id": "s03-in-service-no-data-registration",
+      "description": "SIM is recognized and device is in service, but cellular-data registration is explicitly absent.",
+      "input": {
+        "goal": "no_mobile_data",
+        "observations": {
+          "subscriber.sim_or_esim_recognized": "confirmed",
+          "network.service_state": "in_service",
+          "network.data_registration": "not_registered"
+        }
+      },
+      "expect": {
+        "diagnosis_status": "localized",
+        "next_question_id": null,
+        "candidate_includes": [
+          "data_registration_failure"
+        ]
+      }
+    },
+    {
+      "id": "s04-registered-no-data-apn-unknown",
+      "description": "Data registration is present, but APN/DNN state is unknown.",
+      "input": {
+        "goal": "no_mobile_data",
+        "observations": {
+          "subscriber.sim_or_esim_recognized": "confirmed",
+          "network.service_state": "in_service",
+          "network.data_registration": "registered",
+          "data.selected_line": "confirmed",
+          "data.runtime": "failed"
+        }
+      },
+      "expect": {
+        "diagnosis_status": "requires_more_evidence",
+        "next_question_id": "q_apn_dnn",
+        "candidate_includes": [
+          "apn_dnn_missing_or_wrong"
+        ]
+      }
+    },
+    {
+      "id": "s05-session-connected-ip-failed",
+      "description": "APN exists and packet session connects, but IP/link state explicitly fails.",
+      "input": {
+        "goal": "no_mobile_data",
+        "observations": {
+          "network.service_state": "in_service",
+          "network.data_registration": "registered",
+          "data.selected_line": "confirmed",
+          "data.apn_or_dnn": "configured",
+          "data.packet_session": "connected",
+          "data.ip_link": "failed",
+          "data.runtime": "failed"
+        }
+      },
+      "expect": {
+        "diagnosis_status": "localized",
+        "next_question_id": null,
+        "candidate_includes": [
+          "ip_address_or_route_failure"
+        ]
+      }
+    },
+    {
+      "id": "s06-data-works-voice-fails-ims-unknown",
+      "description": "Actual data works, but voice fails and IMS policy is not known.",
+      "input": {
+        "goal": "voice_failure",
+        "observations": {
+          "subscriber.sim_or_esim_recognized": "confirmed",
+          "network.service_state": "in_service",
+          "network.data_registration": "registered",
+          "data.runtime": "confirmed",
+          "voice.outgoing": "failed"
+        }
+      },
+      "expect": {
+        "diagnosis_status": "requires_more_evidence",
+        "next_question_id": "q_ims_policy",
+        "candidate_includes": [
+          "carrier_policy_disabled"
+        ]
+      }
+    },
+    {
+      "id": "s07-ims-registered-outgoing-fails",
+      "description": "IMS and MMTel voice are confirmed, but outgoing voice fails.",
+      "input": {
+        "goal": "voice_failure",
+        "observations": {
+          "data.runtime": "confirmed",
+          "carrier.ims_policy": "enabled_by_policy",
+          "ims.entitlement": "provisioned",
+          "ims.registration": "registered",
+          "ims.voice_capability": "confirmed",
+          "voice.outgoing": "failed",
+          "voice.incoming": "confirmed"
+        }
+      },
+      "expect": {
+        "diagnosis_status": "localized",
+        "next_question_id": null,
+        "candidate_includes": [
+          "directional_voice_failure"
+        ]
+      }
+    },
+    {
+      "id": "s08-fiveg-sa-does-not-prove-vonr",
+      "description": "5G SA is confirmed but actual voice bearer is unknown.",
+      "input": {
+        "goal": "volte_vonr_check",
+        "observations": {
+          "network.fiveg_sa_registration": "confirmed",
+          "data.runtime": "confirmed",
+          "carrier.ims_policy": "enabled_by_policy",
+          "ims.entitlement": "provisioned",
+          "ims.registration": "registered",
+          "ims.voice_capability": "confirmed",
+          "voice.outgoing": "confirmed",
+          "voice.vonr_call": "unknown"
+        }
+      },
+      "expect": {
+        "diagnosis_status": "requires_more_evidence",
+        "next_question_id": "q_vonr_bearer",
+        "candidate_includes": [
+          "vonr_runtime_failure"
+        ]
+      }
+    },
+    {
+      "id": "s09-5gplus-display-only",
+      "description": "5G+/NR Advanced display is visible but component carriers are not observed.",
+      "input": {
+        "goal": "fiveg_or_aggregation_check",
+        "observations": {
+          "radio.display_hint": "NR_ADVANCED",
+          "radio.physical_channels": "unknown",
+          "software.snapshot_binding": "partial_snapshot"
+        }
+      },
+      "expect": {
+        "diagnosis_status": "requires_more_evidence",
+        "next_question_id": "q_physical_channels",
+        "candidate_includes": [
+          "display_hint_without_physical_combo"
+        ]
+      }
+    },
+    {
+      "id": "s10-runtime-success-does-not-backfill-internals",
+      "description": "Generic mobile data succeeds while APN/session/DNS internals are unknown.",
+      "input": {
+        "goal": "general_connectivity",
+        "observations": {
+          "data.runtime": "confirmed",
+          "data.apn_or_dnn": "unknown",
+          "data.packet_session": "unknown",
+          "data.dns": "unknown"
+        }
+      },
+      "expect": {
+        "diagnosis_status": "requires_more_evidence",
+        "next_question_id": "q_service_state",
+        "candidate_includes": [
+          "runtime_success_internal_state_unknown"
+        ]
+      },
+      "note": "The engine may still ask for upstream service state for a full general-connectivity trace, but it must not auto-fill APN/session/DNS."
+    }
+  ]
+}
