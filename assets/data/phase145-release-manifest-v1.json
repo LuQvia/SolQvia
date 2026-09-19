@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "release": "phase145-gsc-demand-priority-engine",
+  "date": "2026-09-19",
+  "baseline": "Phase144 main 9bcdaac6f0b10432b2a8c138328c54e0160a2bbb",
+  "goal": "Convert GSC demand signals into a repeatable action queue that favors strengthening existing URLs and Device Passport data before creating new URLs.",
+  "input_state": {
+    "latest_retrievable_raw_like_basis": "2026-09-08 Phase128 GSC-backed backlog summary",
+    "newer_raw_export_available_in_current_project": false,
+    "policy": "Do not fabricate 2026-09-19 GSC metrics. Use the dated seed only until a newer raw export is supplied."
+  },
+  "outputs": [
+    "assets/data/phase145-gsc-demand-seed-v1.json",
+    "assets/data/phase145-demand-priority-v1.json",
+    "scripts/phase145-gsc-demand-priority.mjs"
+  ],
+  "initial_result": {
+    "numeric_candidates": 3,
+    "qualitative_candidates": 3,
+    "numeric_candidates_reclassified_to_strengthen_existing": 3,
+    "new_urls_approved": 0,
+    "note": "The two top Phase128 net-new candidates now have dedicated URLs in main, so they are reclassified to strengthen_existing."
+  },
+  "decision_rules": [
+    "GSC demand precedes page-count growth.",
+    "Existing intent-matched URLs are strengthened rather than duplicated.",
+    "Exact Query×Page exports outrank inferred query-to-page mapping.",
+    "Missing metrics remain null and are not imputed.",
+    "Qualitative demand does not enter exact numeric ranking.",
+    "URL creation requires distinct intent, insufficient existing coverage and available evidence."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "next_execution": [
+    "Use the next raw SolQvia GSC export to replace the dated seed.",
+    "Recompute exact Query×Page priority.",
+    "Strengthen the highest-priority existing URL first.",
+    "Feed device/carrier/SIM/eSIM demand into Device Passport enrichment where the query exposes a data gap.",
+    "Only create a new URL when no existing page cleanly satisfies the intent."
+  ],
+  "qa_targets": [
+    "Seed and output JSON parse.",
+    "Priority script syntax passes.",
+    "No new public URL is introduced by Phase145.",
+    "No sitemap or canonical change.",
+    "All unavailable GSC values remain null or explicitly lower-bound/approximate."
+  ]
+}
