@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "release": "phase146-android-vpn-lockdown-intent-strengthening",
+  "date": "2026-09-19",
+  "baseline": "Phase145 main 507a609563ff1d21d8a3b43e0921ae740e52577a",
+  "gsc_basis": {
+    "source": "2026-09-08 Phase128 GSC-backed backlog",
+    "query": "VPN以外の接続をブロックとは",
+    "impressions": 9,
+    "average_position": 8.4,
+    "note": "This is the latest safely retrievable numeric basis in the current Project. No newer metric is invented."
+  },
+  "page": {
+    "ja": "/ja/technology/smartphone/android-always-on-vpn-blocks-internet-when-vpn-disconnected/",
+    "en": "/en/technology/smartphone/android-always-on-vpn-blocks-internet-when-vpn-disconnected/",
+    "action": "strengthen_existing",
+    "index_state_preserved": "noindex,follow",
+    "reason_for_noindex_preservation": "Phase129 802-URL observation baseline is preserved until newer GSC evidence justifies a deliberate reindex decision."
+  },
+  "changes": [
+    "Put the exact search intent and answer first in title/H1/lead.",
+    "Separate Always-on VPN from Block connections without VPN.",
+    "Add a direct diagnostic path and symptom table.",
+    "Separate VPN lockdown from Private DNS and APN.",
+    "Add managed-device / Android Enterprise boundaries.",
+    "Refresh official Google sources to 2026-09-19.",
+    "Strengthen the English companion without adding a new URL."
+  ],
+  "evidence": [
+    "Google Android Help: https://support.google.com/android/answer/9089766?hl=ja",
+    "Google Android Enterprise Help: https://support.google.com/work/android/answer/9213914?hl=ja"
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0,
+    "reindexed_urls": 0
+  },
+  "next_decision": "When a newer raw GSC export is available, rerun Phase145. If this strengthened URL still has material demand and passes the current quality gate, evaluate a single-URL reindex as a separate controlled phase."
+}
