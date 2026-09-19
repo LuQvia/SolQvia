@@ -77,6 +77,15 @@
           },
           "registration_access_network": {
             "state": "unknown"
+          },
+          "volte_registration": {
+            "state": "supported_by_spec"
+          },
+          "vonr_registration": {
+            "state": "supported_by_spec"
+          },
+          "vowifi_registration": {
+            "state": "supported_by_spec"
           }
         },
         "service_capability": {
@@ -281,6 +290,15 @@
           },
           "registration_access_network": {
             "state": "unknown"
+          },
+          "volte_registration": {
+            "state": "unknown"
+          },
+          "vonr_registration": {
+            "state": "unknown"
+          },
+          "vowifi_registration": {
+            "state": "unknown"
           }
         },
         "service_capability": {
@@ -454,6 +472,15 @@
           },
           "registration_access_network": {
             "state": "unknown"
+          },
+          "volte_registration": {
+            "state": "not_solqvia_tested"
+          },
+          "vonr_registration": {
+            "state": "not_solqvia_tested"
+          },
+          "vowifi_registration": {
+            "state": "not_solqvia_tested"
           }
         },
         "service_capability": {
@@ -636,6 +663,15 @@
           },
           "registration_access_network": {
             "state": "unknown"
+          },
+          "volte_registration": {
+            "state": "not_tested"
+          },
+          "vonr_registration": {
+            "state": "not_applicable"
+          },
+          "vowifi_registration": {
+            "state": "not_tested"
           }
         },
         "service_capability": {
