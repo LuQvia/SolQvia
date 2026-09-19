@@ -18,7 +18,11 @@
     not_solqvia_tested:t('SolQvia実機未確認','Not tested by SolQvia'),
     partial_snapshot:t('部分一致','Partial snapshot'),
     same_model_only:t('型番一致のみ','Same model only'),
-    unbound:t('未結合','Unbound')
+    unbound:t('未結合','Unbound'),
+    partial:t('深層データ：部分','Deep evidence: partial'),
+    software_only:t('Softwareのみ','Software only'),
+    capability_plus_software:t('仕様＋Software','Capability + software'),
+    solqvia_capture:t('SolQvia実機Captureあり','SolQvia capture available')
   })[v]||String(v??t('未確認','Unknown'));
 
   const statusClass=v=>{
