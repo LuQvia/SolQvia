@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "release": "phase158-registration-data-session-model",
+  "date": "2026-09-19",
+  "baseline": "Phase157 main b7baf09f5804e5cabad2c7b40e160636d054c777",
+  "goal": "Separate cellular service registration, APN/DNN configuration, EPS PDN / 5GS PDU session state, IP/link properties, DNS, validation and actual user-data success.",
+  "outputs": [
+    "assets/data/phase158-registration-data-schema-v1.json",
+    "assets/data/phase158-registration-data-failure-taxonomy-v1.json",
+    "assets/data/phase158-registration-data-v1.json",
+    "assets/data/phase158-phase154-156-field-map-v1.json",
+    "scripts/phase158-registration-data-validate.mjs"
+  ],
+  "dimensions": [
+    "subscription_data_selection",
+    "plmn_service_state",
+    "access_registration",
+    "apn_dnn_profile",
+    "packet_session",
+    "ip_link",
+    "dns_resolution",
+    "network_validation",
+    "runtime_data"
+  ],
+  "official_basis": [
+    "3GPP EPS/5GS architecture references distinguishing registration and packet sessions",
+    "Android ServiceState and data registration APIs",
+    "Android ApnSetting",
+    "Android PreciseDataConnectionState",
+    "Android LinkProperties",
+    "Android NetworkCapabilities INTERNET vs VALIDATED",
+    "Apple APN and MDM cellular payload guidance"
+  ],
+  "key_rules": [
+    "Service/signal indication does not prove data registration.",
+    "Registration does not prove APN/DNN session.",
+    "APN profile presence does not prove selection or connection.",
+    "Connected session does not prove DNS or validated Internet.",
+    "INTERNET capability does not equal VALIDATED.",
+    "Runtime mobile-data success does not backfill APN/DNN/IP/DNS internals.",
+    "APN and eSIM profile configuration remain separate.",
+    "5G SA registration does not prove VoNR."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "public_html_changes": 0
+  },
+  "next_phase": "Phase159 Firmware / Baseband / Carrier Bundle versioned snapshot model."
+}

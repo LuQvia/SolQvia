@@ -1,0 +1,315 @@
+{
+  "schema_version": "1.0",
+  "release": "phase158-registration-data-session-model",
+  "checked_at": "2026-09-19",
+  "purpose": "Normalize cellular service registration, APN/DNN selection, EPS PDN / 5GS PDU session establishment, IP/link state, DNS and validated internet reachability so SolQvia can localize 'antenna but no data' failures without inference.",
+  "states": [
+    "confirmed",
+    "failed",
+    "in_service",
+    "out_of_service",
+    "emergency_only",
+    "power_off",
+    "registered",
+    "not_registered",
+    "configured",
+    "not_configured",
+    "selected",
+    "not_selected",
+    "connecting",
+    "connected",
+    "disconnected",
+    "suspended",
+    "validated",
+    "not_validated",
+    "validation_in_progress",
+    "validation_not_requested",
+    "validation_unsupported",
+    "supported_by_spec",
+    "not_supported_by_spec",
+    "not_tested",
+    "not_solqvia_tested",
+    "not_applicable",
+    "unknown"
+  ],
+  "dimensions": [
+    {
+      "id": "subscription_data_selection",
+      "order": 10,
+      "purpose": "Which subscription/SIM is selected for cellular data and whether user/carrier policy permits data.",
+      "fields": [
+        "active_data_subscription",
+        "default_data_subscription",
+        "selected_data_line",
+        "mobile_data_enabled",
+        "roaming_data_enabled",
+        "data_roaming_state",
+        "dual_sim_context"
+      ]
+    },
+    {
+      "id": "plmn_service_state",
+      "order": 20,
+      "purpose": "Basic cellular service state and serving operator before packet session establishment.",
+      "fields": [
+        "service_state",
+        "registered_operator",
+        "operator_numeric_type",
+        "voice_reg_state",
+        "data_reg_state",
+        "roaming"
+      ]
+    },
+    {
+      "id": "access_registration",
+      "order": 30,
+      "purpose": "Radio access / core registration kept distinct from packet-data session success.",
+      "fields": [
+        "current_data_network_type",
+        "lte_eps_registration",
+        "fivegs_registration",
+        "fiveg_nsa_attach",
+        "fiveg_sa_registration",
+        "registration_access_network",
+        "duplex_mode"
+      ]
+    },
+    {
+      "id": "apn_dnn_profile",
+      "order": 40,
+      "purpose": "Data-network profile configuration and selection.",
+      "fields": [
+        "profile_present",
+        "profile_enabled",
+        "apn_name",
+        "dnn_name",
+        "apn_type",
+        "protocol",
+        "roaming_protocol",
+        "authentication_type",
+        "carrier_id_match",
+        "mvno_match_type",
+        "selected_for_default_data"
+      ],
+      "privacy_rule": "Do not store APN usernames/passwords, subscriber identifiers, or user-specific credentials. APN/DNN names may be stored only when they are public carrier configuration, not user secrets."
+    },
+    {
+      "id": "packet_session",
+      "order": 50,
+      "purpose": "EPS PDN connection / 5GS PDU session establishment independent from IP validation.",
+      "fields": [
+        "session_family",
+        "session_state",
+        "session_id_or_profile_id_type",
+        "pdu_session_type",
+        "ssc_mode",
+        "transport",
+        "data_connection_fail_cause"
+      ],
+      "allowed_session_family": [
+        "EPS_PDN",
+        "5GS_PDU",
+        "legacy_PDP",
+        "unknown"
+      ],
+      "allowed_transport": [
+        "WWAN",
+        "WLAN",
+        "unknown"
+      ]
+    },
+    {
+      "id": "ip_link",
+      "order": 60,
+      "purpose": "IP addressing and link properties after a data session is established.",
+      "fields": [
+        "ipv4_address_present",
+        "ipv6_address_present",
+        "routes_present",
+        "gateway_present",
+        "interface_name_present",
+        "mtu",
+        "nat64_prefix_present",
+        "http_proxy_present"
+      ]
+    },
+    {
+      "id": "dns_resolution",
+      "order": 70,
+      "purpose": "DNS server/link state and actual name-resolution outcome.",
+      "fields": [
+        "dns_servers_present",
+        "private_dns_active",
+        "private_dns_mode",
+        "private_dns_server_name_present",
+        "dns_lookup_test"
+      ]
+    },
+    {
+      "id": "network_validation",
+      "order": 80,
+      "purpose": "Configured Internet capability versus actual validated Internet connectivity.",
+      "fields": [
+        "internet_capability",
+        "validated_capability",
+        "precise_validation_state",
+        "captive_or_restricted_network",
+        "validation_failure_reason"
+      ]
+    },
+    {
+      "id": "runtime_data",
+      "order": 90,
+      "purpose": "Actual user-data success under recorded conditions, independent from registration icons or APN configuration.",
+      "fields": [
+        "http_https_success",
+        "dns_dependent_browsing",
+        "raw_ip_reachability",
+        "upload_success",
+        "download_success",
+        "tethering_data_success",
+        "application_scope",
+        "tested_at"
+      ]
+    }
+  ],
+  "standards_context": {
+    "eps": {
+      "term": "PDN connection",
+      "access_point_term": "APN",
+      "note": "EPS packet-data connectivity is modeled separately from EPS registration."
+    },
+    "fivegs": {
+      "term": "PDU Session",
+      "access_point_term": "DNN",
+      "note": "5GS PDU Session attributes such as DNN and PDU Session Type belong to session context; 5GS registration alone does not prove a PDU Session."
+    }
+  },
+  "evidence_contract": {
+    "required": [
+      "type",
+      "source",
+      "checked_at",
+      "scope",
+      "confidence",
+      "role"
+    ],
+    "allowed_types": [
+      "standards_body",
+      "os_platform_official",
+      "carrier_official",
+      "manufacturer_official",
+      "solqvia_real_device",
+      "external_real_device",
+      "user_report"
+    ],
+    "roles": [
+      "service_state",
+      "registration_state",
+      "apn_dnn_configuration",
+      "session_state",
+      "link_properties",
+      "dns_state",
+      "network_validation",
+      "runtime_data",
+      "solqvia_real_device",
+      "external_field_test"
+    ],
+    "confidence": [
+      "high",
+      "medium",
+      "low",
+      "unknown"
+    ]
+  },
+  "platform_observation_methods": {
+    "android": [
+      {
+        "method": "ServiceState / Telephony.ServiceStateTable",
+        "proves": "current service/data registration state and current operator/network-type observations",
+        "boundaries": [
+          "Does not prove APN/DNN session or Internet validation."
+        ]
+      },
+      {
+        "method": "TelephonyManager.getDataNetworkType",
+        "proves": "current data radio technology for the active data subscription",
+        "boundaries": [
+          "Does not by itself prove active validated Internet connectivity."
+        ]
+      },
+      {
+        "method": "ApnSetting",
+        "proves": "carrier APN configuration used/available for a data connection",
+        "boundaries": [
+          "APN existence does not prove selection, connection, or Internet access."
+        ]
+      },
+      {
+        "method": "PreciseDataConnectionState",
+        "proves": "data connection state, APN/APN types, network type, LinkProperties, failure cause, validation state where exposed",
+        "boundaries": [
+          "Network type can change during the data connection and is not a guaranteed instantaneous physical-bearer truth."
+        ]
+      },
+      {
+        "method": "LinkProperties",
+        "proves": "link addresses, routes, DNS servers, MTU, NAT64/private-DNS metadata",
+        "boundaries": [
+          "Link properties do not prove application traffic success."
+        ]
+      },
+      {
+        "method": "NetworkCapabilities",
+        "proves": "INTERNET capability and VALIDATED state",
+        "boundaries": [
+          "NET_CAPABILITY_INTERNET means configured for general Internet; VALIDATED is the stronger evidence that Internet connectivity was actually detected."
+        ]
+      }
+    ],
+    "apple": [
+      {
+        "method": "APN UI / carrier settings / MDM APN payload",
+        "proves": "user- or administrator-visible APN configuration where carrier permits",
+        "boundaries": [
+          "Apple user documentation does not expose EPS/5GS registration or PDU Session internals."
+        ]
+      },
+      {
+        "method": "user runtime validation",
+        "proves": "actual mobile-data success/failure under the recorded SIM/eSIM and carrier context",
+        "boundaries": [
+          "Do not infer APN/DNN or internal session cause from runtime success alone."
+        ]
+      }
+    ]
+  },
+  "non_inference_rules": [
+    "Signal bars do not prove data registration.",
+    "4G/5G/5G+ UI does not prove an active or validated data session.",
+    "PLMN/service registration does not prove APN/DNN selection.",
+    "LTE EPS or 5GS registration does not prove PDN/PDU session establishment.",
+    "An APN profile being present does not prove it was selected.",
+    "An APN/DNN being selected does not prove the packet session connected.",
+    "A connected data session does not prove valid IP routes or DNS.",
+    "DNS servers being present does not prove DNS lookup success.",
+    "NET_CAPABILITY_INTERNET does not prove actual Internet connectivity; VALIDATED is a separate state.",
+    "DNS lookup success does not prove all HTTP/HTTPS/application traffic.",
+    "Mobile-data success does not prove IMS registration or voice/SMS success.",
+    "5G SA registration does not prove VoNR.",
+    "APN configuration and eSIM profile configuration are separate layers.",
+    "Generic carrier 'data works' evidence does not populate APN, DNN, IP, DNS or exact registration internals unless the source exposes them."
+  ],
+  "prohibited_secret_fields": [
+    "apn_username",
+    "apn_password",
+    "password",
+    "imsi",
+    "iccid",
+    "msisdn",
+    "eid_full_value",
+    "activation_code",
+    "confirmation_code",
+    "account_id"
+  ]
+}

@@ -1,0 +1,623 @@
+{
+  "schema_version": "1.0",
+  "release": "phase158-registration-data-session-model",
+  "checked_at": "2026-09-19",
+  "records": [
+    {
+      "key": "3gpp-eps-5gs-data-connectivity-reference-20260919",
+      "record_type": "standards_reference",
+      "platform": "cross_platform",
+      "identity": {
+        "market_region": "global"
+      },
+      "matrix": {
+        "subscription_data_selection": {
+          "state": "unknown"
+        },
+        "plmn_service_state": {
+          "state": "supported_by_spec"
+        },
+        "access_registration": {
+          "state": "supported_by_spec",
+          "lte_eps_registration": {
+            "state": "supported_by_spec"
+          },
+          "fivegs_registration": {
+            "state": "supported_by_spec"
+          }
+        },
+        "apn_dnn_profile": {
+          "state": "supported_by_spec",
+          "apn_name": {
+            "state": "supported_by_spec",
+            "note": "EPS uses APN terminology."
+          },
+          "dnn_name": {
+            "state": "supported_by_spec",
+            "note": "5GS uses DNN terminology."
+          }
+        },
+        "packet_session": {
+          "state": "supported_by_spec",
+          "session_family": {
+            "state": "supported_by_spec",
+            "value": [
+              "EPS_PDN",
+              "5GS_PDU"
+            ]
+          },
+          "pdu_session_type": {
+            "state": "supported_by_spec"
+          },
+          "ssc_mode": {
+            "state": "supported_by_spec"
+          }
+        },
+        "ip_link": {
+          "state": "unknown"
+        },
+        "dns_resolution": {
+          "state": "unknown"
+        },
+        "network_validation": {
+          "state": "unknown"
+        },
+        "runtime_data": {
+          "state": "unknown"
+        }
+      },
+      "evidence": [
+        {
+          "type": "standards_body",
+          "source": "https://www.3gpp.org/ftp/inbox/marcoms/ICT_6_1-2.pdf",
+          "checked_at": "2026-09-19",
+          "scope": "3GPP overview distinguishes signalling registration from PDN connections in EPS and PDU Sessions in 5GS.",
+          "confidence": "high",
+          "role": "session_state"
+        },
+        {
+          "type": "standards_body",
+          "source": "https://portal.3gpp.org/DesktopModules/CRs/CrDetails.aspx?CrId=522777",
+          "checked_at": "2026-09-19",
+          "scope": "3GPP TS 23.501/23.502 change record reflects PDU Session attributes including DNN, PDU Session Type and SSC mode.",
+          "confidence": "medium",
+          "role": "session_state"
+        }
+      ],
+      "open_questions": [
+        "This record is architecture-only and does not claim a particular carrier/device implementation."
+      ]
+    },
+    {
+      "key": "android-data-connectivity-observation-architecture-20260919",
+      "record_type": "platform_architecture",
+      "platform": "android",
+      "identity": {
+        "model_name": null,
+        "model_number": null,
+        "market_region": "global",
+        "os_version": "current Android APIs"
+      },
+      "matrix": {
+        "subscription_data_selection": {
+          "state": "supported_by_spec",
+          "active_data_subscription": {
+            "state": "supported_by_spec"
+          },
+          "default_data_subscription": {
+            "state": "supported_by_spec"
+          }
+        },
+        "plmn_service_state": {
+          "state": "supported_by_spec",
+          "service_state": {
+            "state": "supported_by_spec"
+          },
+          "registered_operator": {
+            "state": "supported_by_spec"
+          },
+          "voice_reg_state": {
+            "state": "supported_by_spec"
+          },
+          "data_reg_state": {
+            "state": "supported_by_spec"
+          }
+        },
+        "access_registration": {
+          "state": "supported_by_spec",
+          "current_data_network_type": {
+            "state": "supported_by_spec"
+          },
+          "lte_eps_registration": {
+            "state": "unknown"
+          },
+          "fivegs_registration": {
+            "state": "unknown"
+          },
+          "registration_access_network": {
+            "state": "supported_by_spec"
+          }
+        },
+        "apn_dnn_profile": {
+          "state": "supported_by_spec",
+          "profile_present": {
+            "state": "supported_by_spec"
+          },
+          "profile_enabled": {
+            "state": "supported_by_spec"
+          },
+          "apn_name": {
+            "state": "supported_by_spec"
+          },
+          "apn_type": {
+            "state": "supported_by_spec"
+          },
+          "protocol": {
+            "state": "supported_by_spec"
+          },
+          "roaming_protocol": {
+            "state": "supported_by_spec"
+          },
+          "authentication_type": {
+            "state": "supported_by_spec"
+          },
+          "carrier_id_match": {
+            "state": "supported_by_spec"
+          },
+          "mvno_match_type": {
+            "state": "supported_by_spec"
+          },
+          "selected_for_default_data": {
+            "state": "unknown"
+          }
+        },
+        "packet_session": {
+          "state": "supported_by_spec",
+          "session_state": {
+            "state": "supported_by_spec",
+            "value": [
+              "connecting",
+              "connected",
+              "disconnected",
+              "suspended"
+            ]
+          },
+          "data_connection_fail_cause": {
+            "state": "supported_by_spec"
+          },
+          "transport": {
+            "state": "supported_by_spec",
+            "value": [
+              "WWAN",
+              "WLAN"
+            ]
+          },
+          "session_family": {
+            "state": "unknown"
+          }
+        },
+        "ip_link": {
+          "state": "supported_by_spec",
+          "ipv4_address_present": {
+            "state": "supported_by_spec"
+          },
+          "ipv6_address_present": {
+            "state": "supported_by_spec"
+          },
+          "routes_present": {
+            "state": "supported_by_spec"
+          },
+          "interface_name_present": {
+            "state": "supported_by_spec"
+          },
+          "mtu": {
+            "state": "supported_by_spec"
+          },
+          "nat64_prefix_present": {
+            "state": "supported_by_spec"
+          },
+          "http_proxy_present": {
+            "state": "supported_by_spec"
+          }
+        },
+        "dns_resolution": {
+          "state": "supported_by_spec",
+          "dns_servers_present": {
+            "state": "supported_by_spec"
+          },
+          "private_dns_active": {
+            "state": "supported_by_spec"
+          },
+          "private_dns_mode": {
+            "state": "supported_by_spec"
+          },
+          "private_dns_server_name_present": {
+            "state": "supported_by_spec"
+          },
+          "dns_lookup_test": {
+            "state": "not_tested"
+          }
+        },
+        "network_validation": {
+          "state": "supported_by_spec",
+          "internet_capability": {
+            "state": "supported_by_spec"
+          },
+          "validated_capability": {
+            "state": "supported_by_spec"
+          },
+          "precise_validation_state": {
+            "state": "supported_by_spec"
+          }
+        },
+        "runtime_data": {
+          "state": "not_tested",
+          "http_https_success": {
+            "state": "not_tested"
+          },
+          "raw_ip_reachability": {
+            "state": "not_tested"
+          },
+          "upload_success": {
+            "state": "not_tested"
+          },
+          "download_success": {
+            "state": "not_tested"
+          }
+        }
+      },
+      "evidence": [
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/telephony/ServiceState",
+          "checked_at": "2026-09-19",
+          "scope": "Current operator and service-state observation.",
+          "confidence": "high",
+          "role": "service_state"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/provider/Telephony.ServiceStateTable",
+          "checked_at": "2026-09-19",
+          "scope": "Data registration state and data network type.",
+          "confidence": "high",
+          "role": "registration_state"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/telephony/TelephonyManager",
+          "checked_at": "2026-09-19",
+          "scope": "Active data network type and subscription-scoped telephony observations.",
+          "confidence": "high",
+          "role": "registration_state"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/telephony/data/ApnSetting",
+          "checked_at": "2026-09-19",
+          "scope": "APN configuration, APN type, carrier/MVNO matching and protocol fields.",
+          "confidence": "high",
+          "role": "apn_dnn_configuration"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/telephony/PreciseDataConnectionState",
+          "checked_at": "2026-09-19",
+          "scope": "Data connection state, APN, LinkProperties, fail cause and validation state.",
+          "confidence": "high",
+          "role": "session_state"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/net/LinkProperties",
+          "checked_at": "2026-09-19",
+          "scope": "IP addresses, routes, DNS servers, MTU, NAT64 and private-DNS metadata.",
+          "confidence": "high",
+          "role": "link_properties"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/net/NetworkCapabilities",
+          "checked_at": "2026-09-19",
+          "scope": "INTERNET capability versus VALIDATED actual Internet-connectivity signal.",
+          "confidence": "high",
+          "role": "network_validation"
+        }
+      ],
+      "open_questions": [
+        "Exact fields require permissions/API level and may not be available to normal apps.",
+        "PDU Session/DNN internals are not inferred solely from Android APN observations."
+      ]
+    },
+    {
+      "key": "apple-apn-data-path-user-observation-20260919",
+      "record_type": "platform_user_observation",
+      "platform": "apple",
+      "identity": {
+        "model_name": "iPhone/iPad",
+        "model_number": null,
+        "market_region": "global",
+        "os_version": "current Apple guidance"
+      },
+      "matrix": {
+        "subscription_data_selection": {
+          "state": "supported_by_spec",
+          "selected_data_line": {
+            "state": "supported_by_spec"
+          }
+        },
+        "plmn_service_state": {
+          "state": "unknown"
+        },
+        "access_registration": {
+          "state": "unknown"
+        },
+        "apn_dnn_profile": {
+          "state": "supported_by_spec",
+          "profile_present": {
+            "state": "supported_by_spec"
+          },
+          "profile_enabled": {
+            "state": "unknown"
+          },
+          "apn_name": {
+            "state": "supported_by_spec",
+            "note": "Visible/editable only when carrier allows."
+          },
+          "selected_for_default_data": {
+            "state": "unknown"
+          }
+        },
+        "packet_session": {
+          "state": "unknown"
+        },
+        "ip_link": {
+          "state": "unknown"
+        },
+        "dns_resolution": {
+          "state": "unknown"
+        },
+        "network_validation": {
+          "state": "unknown"
+        },
+        "runtime_data": {
+          "state": "not_tested",
+          "http_https_success": {
+            "state": "not_tested"
+          },
+          "dns_dependent_browsing": {
+            "state": "not_tested"
+          }
+        }
+      },
+      "evidence": [
+        {
+          "type": "os_platform_official",
+          "source": "https://support.apple.com/ja-jp/102483",
+          "checked_at": "2026-09-19",
+          "scope": "APN defines the network path for cellular data; carrier may control visibility/editability; wrong APN can break cellular data.",
+          "confidence": "high",
+          "role": "apn_dnn_configuration"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://support.apple.com/ja-jp/guide/deployment/depa34b7357/web",
+          "checked_at": "2026-09-19",
+          "scope": "MDM cellular payload can set APN/proxy and incorrect values can prevent mobile-data access.",
+          "confidence": "high",
+          "role": "apn_dnn_configuration"
+        }
+      ],
+      "open_questions": [
+        "Apple user documentation does not expose EPS/5GS registration, DNN or PDU Session internals.",
+        "Internal IP/DNS state must remain unknown unless separately observed."
+      ]
+    },
+    {
+      "key": "scg36-au-android16-data-session-placeholder",
+      "record_type": "device_subscription",
+      "platform": "android",
+      "identity": {
+        "model_name": "Galaxy S26",
+        "model_number": "SCG36",
+        "original_carrier": "au",
+        "tested_carrier": "au",
+        "market_region": "JP",
+        "os_version": "Android 16"
+      },
+      "matrix": {
+        "subscription_data_selection": {
+          "state": "unknown",
+          "selected_data_line": {
+            "state": "unknown"
+          },
+          "mobile_data_enabled": {
+            "state": "unknown"
+          }
+        },
+        "plmn_service_state": {
+          "state": "unknown",
+          "data_reg_state": {
+            "state": "unknown"
+          },
+          "registered_operator": {
+            "state": "unknown"
+          }
+        },
+        "access_registration": {
+          "state": "unknown",
+          "current_data_network_type": {
+            "state": "unknown"
+          },
+          "lte_eps_registration": {
+            "state": "unknown"
+          },
+          "fivegs_registration": {
+            "state": "unknown"
+          },
+          "fiveg_sa_registration": {
+            "state": "confirmed",
+            "note": "au official operation listing confirms 5G SA generically for the exact model/OS context; internal registration details remain unknown."
+          }
+        },
+        "apn_dnn_profile": {
+          "state": "unknown",
+          "profile_present": {
+            "state": "unknown"
+          },
+          "apn_name": {
+            "state": "unknown"
+          },
+          "dnn_name": {
+            "state": "unknown"
+          },
+          "selected_for_default_data": {
+            "state": "unknown"
+          }
+        },
+        "packet_session": {
+          "state": "unknown",
+          "session_family": {
+            "state": "unknown"
+          },
+          "session_state": {
+            "state": "unknown"
+          },
+          "data_connection_fail_cause": {
+            "state": "unknown"
+          }
+        },
+        "ip_link": {
+          "state": "unknown",
+          "ipv4_address_present": {
+            "state": "unknown"
+          },
+          "ipv6_address_present": {
+            "state": "unknown"
+          },
+          "routes_present": {
+            "state": "unknown"
+          }
+        },
+        "dns_resolution": {
+          "state": "unknown",
+          "dns_servers_present": {
+            "state": "unknown"
+          },
+          "dns_lookup_test": {
+            "state": "unknown"
+          }
+        },
+        "network_validation": {
+          "state": "unknown",
+          "validated_capability": {
+            "state": "unknown"
+          }
+        },
+        "runtime_data": {
+          "state": "confirmed",
+          "http_https_success": {
+            "state": "unknown"
+          },
+          "dns_dependent_browsing": {
+            "state": "unknown"
+          },
+          "upload_success": {
+            "state": "unknown"
+          },
+          "download_success": {
+            "state": "unknown"
+          },
+          "application_scope": {
+            "state": "confirmed",
+            "value": "au official generic mobile-data operation check"
+          }
+        }
+      },
+      "evidence": [
+        {
+          "type": "carrier_official",
+          "source": "https://www.au.com/mobile/product/sim/devices/",
+          "checked_at": "2026-09-18",
+          "scope": "Exact-model au operation listing confirms mobile data and 5G SA generically; it does not expose APN/DNN, IP, DNS, session or validation internals.",
+          "confidence": "high",
+          "role": "runtime_data"
+        }
+      ],
+      "open_questions": [
+        "Active/default data subscription",
+        "PLMN/data registration state",
+        "APN/DNN selection",
+        "PDN/PDU session state",
+        "IPv4/IPv6 link",
+        "DNS servers and lookup",
+        "Validated Internet state"
+      ]
+    },
+    {
+      "key": "ky41c-softbank-phase158-data-unverified",
+      "record_type": "solqvia_real_device_projection",
+      "platform": "android",
+      "identity": {
+        "model_name": "キッズケータイ",
+        "model_number": "KY-41C",
+        "original_carrier": "NTTドコモ",
+        "tested_carrier": "SoftBank",
+        "market_region": "JP"
+      },
+      "matrix": {
+        "subscription_data_selection": {
+          "state": "unknown"
+        },
+        "plmn_service_state": {
+          "state": "not_tested"
+        },
+        "access_registration": {
+          "state": "not_tested"
+        },
+        "apn_dnn_profile": {
+          "state": "not_tested"
+        },
+        "packet_session": {
+          "state": "not_tested"
+        },
+        "ip_link": {
+          "state": "not_tested"
+        },
+        "dns_resolution": {
+          "state": "not_tested"
+        },
+        "network_validation": {
+          "state": "not_tested"
+        },
+        "runtime_data": {
+          "state": "not_tested"
+        }
+      },
+      "upstream_context": {
+        "esim_profile_configuration": "confirmed",
+        "sim_information_recognition": "confirmed",
+        "source": "Existing SolQvia KY-41C evidence"
+      },
+      "evidence": [
+        {
+          "type": "solqvia_real_device",
+          "source": "ky41c-ymobile-softbank-esim-profile-recognition-20260808",
+          "checked_at": "2026-08-08",
+          "scope": "eSIM profile configuration and terminal-side SIM information recognition only; no registration or data success is claimed.",
+          "confidence": "high",
+          "role": "solqvia_real_device"
+        }
+      ],
+      "open_questions": [
+        "Data-line selection",
+        "PLMN/data registration",
+        "APN/DNN",
+        "Packet session",
+        "IP/DNS",
+        "Internet validation",
+        "Actual data transfer"
+      ]
+    }
+  ]
+}
