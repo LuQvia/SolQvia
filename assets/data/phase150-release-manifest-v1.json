@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "release": "phase150-google-lens-current-ui-strengthening",
+  "date": "2026-09-19",
+  "baseline": "Phase149 main 38836c4ab5e3dacb9fd52926d65c47731f6b3e41",
+  "gsc_basis": {
+    "source": "2026-09-08 Phase128 GSC-backed backlog",
+    "query_cluster": [
+      "google lens search",
+      "search with lens",
+      "image search"
+    ],
+    "exact_numeric_metrics_available": false,
+    "note": "The retrievable backlog confirms the query family but does not expose safe numeric rows, so no synthetic score is created."
+  },
+  "pages": {
+    "ja": "/ja/technology/smartphone/google-lens-image-search/",
+    "en": "/en/technology/smartphone/google-lens-image-search/",
+    "action": "strengthen_existing",
+    "index_state": "index,follow"
+  },
+  "changes": [
+    "Replace generic template copy with current Lens search intents.",
+    "Separate camera, saved-photo, website-image, Google Photos and screen-search entry points.",
+    "Add current Android Google app / Chrome flow.",
+    "Add current iPhone/iPad Google app / Chrome / Safari saved-image flow and photo-access check.",
+    "Add Chrome default-search-engine requirement for website-image Lens search.",
+    "Add Circle to Search as a supported-device Android path instead of implying universal availability.",
+    "Add image-region refinement and multimodal keyword/question follow-up.",
+    "Add Visual Search History privacy boundary and default-off state.",
+    "Refresh Google official evidence to 2026-09-19."
+  ],
+  "evidence_rules": [
+    "UI labels are described by official current flows rather than frozen screenshots.",
+    "Circle to Search is not treated as universal Android availability.",
+    "Lens results are not treated as definitive identity/authenticity/safety evidence.",
+    "No SolQvia real-device confirmation is claimed."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "next_priority": "After Phase150, rerun the qualitative Phase145 queue. If no newer raw GSC is available, strengthen the generic symptom pages as a cluster while avoiding duplicate intent."
+}
