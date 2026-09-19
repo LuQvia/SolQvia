@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "release": "phase156-esim-rsp-lifecycle-db",
+  "checked_at": "2026-09-19",
+  "categories": [
+    {
+      "id": "device_esim_unavailable",
+      "stage": "device_capability",
+      "examples": [
+        "No eUICC/eSIM capability",
+        "LPA unavailable or disabled"
+      ],
+      "safe_next_checks": [
+        "Confirm exact model/region eSIM support",
+        "Confirm OS/LPA availability"
+      ],
+      "do_not_conclude": [
+        "Carrier outage",
+        "SM-DP+ failure"
+      ]
+    },
+    {
+      "id": "activation_material_unavailable_or_invalid",
+      "stage": "activation_material",
+      "examples": [
+        "QR/link/manual material unavailable",
+        "Confirmation code required but unavailable",
+        "Activation material rejected"
+      ],
+      "safe_next_checks": [
+        "Re-open carrier-issued activation workflow",
+        "Check whether material has expired or was already consumed",
+        "Do not expose activation credentials in logs"
+      ],
+      "do_not_conclude": [
+        "Profile installed",
+        "Carrier service active"
+      ]
+    },
+    {
+      "id": "smdp_or_discovery_failure",
+      "stage": "discovery_and_server_session",
+      "examples": [
+        "SM-DP+ cannot be reached",
+        "Server authentication fails",
+        "Profile metadata cannot be retrieved"
+      ],
+      "safe_next_checks": [
+        "Confirm internet connectivity independent of the target eSIM",
+        "Retry official carrier workflow",
+        "Check carrier service incident"
+      ],
+      "do_not_conclude": [
+        "eUICC hardware failure"
+      ]
+    },
+    {
+      "id": "profile_download_failure",
+      "stage": "profile_download",
+      "examples": [
+        "Download request starts but profile package is not obtained"
+      ],
+      "safe_next_checks": [
+        "Retry on stable network",
+        "Check carrier profile/reissue state",
+        "Check LPA/eUICC error category if available"
+      ],
+      "do_not_conclude": [
+        "Profile install failure",
+        "Network registration failure"
+      ]
+    },
+    {
+      "id": "profile_install_or_policy_failure",
+      "stage": "profile_install",
+      "examples": [
+        "Profile package obtained but cannot be installed",
+        "Profile policy rejects installation"
+      ],
+      "safe_next_checks": [
+        "Check eUICC/profile capacity",
+        "Check official device/carrier support",
+        "Check policy/error category without bypassing restrictions"
+      ],
+      "do_not_conclude": [
+        "Carrier backend outage"
+      ]
+    },
+    {
+      "id": "profile_enable_failure",
+      "stage": "profile_enable",
+      "examples": [
+        "Installed profile cannot be enabled or selected",
+        "MEP/sim-slot state blocks selection"
+      ],
+      "safe_next_checks": [
+        "Confirm enabled-line selection",
+        "Check dual-SIM/MEP state",
+        "Reboot only when carrier/device guidance calls for it"
+      ],
+      "do_not_conclude": [
+        "APN failure"
+      ]
+    },
+    {
+      "id": "carrier_activation_or_line_switch_pending",
+      "stage": "carrier_line_activation",
+      "examples": [
+        "Profile exists but operator line switch is incomplete",
+        "Old SIM/profile invalidation or backend activation is pending"
+      ],
+      "safe_next_checks": [
+        "Confirm carrier line-switch status",
+        "Observe carrier-specified wait period",
+        "Confirm old SIM/profile invalidation timing"
+      ],
+      "do_not_conclude": [
+        "Profile download failure"
+      ]
+    },
+    {
+      "id": "network_registration_failure",
+      "stage": "network_registration",
+      "examples": [
+        "Profile enabled and carrier activation complete but no LTE/5G registration"
+      ],
+      "safe_next_checks": [
+        "CarrierConfig/carrier settings",
+        "PLMN/RAT support",
+        "SIM provisioning",
+        "device regional variant"
+      ],
+      "do_not_conclude": [
+        "APN is the only cause",
+        "IMS is the only cause"
+      ]
+    },
+    {
+      "id": "data_session_failure",
+      "stage": "service_validation",
+      "examples": [
+        "Network registration succeeds but mobile data does not"
+      ],
+      "safe_next_checks": [
+        "APN/DNN",
+        "data-line selection",
+        "IPv4/IPv6/session provisioning"
+      ],
+      "do_not_conclude": [
+        "eSIM profile failure"
+      ]
+    },
+    {
+      "id": "ims_service_failure",
+      "stage": "service_validation",
+      "examples": [
+        "Data works but voice/IMS/SMS-over-IMS does not"
+      ],
+      "safe_next_checks": [
+        "CarrierConfig/carrier settings",
+        "IMS provisioning",
+        "VoLTE/VoNR support",
+        "firmware/baseband"
+      ],
+      "do_not_conclude": [
+        "Band mismatch solely from IMS failure"
+      ]
+    },
+    {
+      "id": "transfer_old_profile_state_mismatch",
+      "stage": "carrier_line_activation",
+      "examples": [
+        "New-device transfer completes but old line/profile remains unexpectedly usable or new line is not active"
+      ],
+      "safe_next_checks": [
+        "Check carrier-specific transfer completion rules",
+        "Check which device is currently assigned the number"
+      ],
+      "do_not_conclude": [
+        "Two active subscriptions are intentionally supported"
+      ]
+    }
+  ]
+}
