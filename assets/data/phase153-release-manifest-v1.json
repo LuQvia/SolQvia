@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "release": "phase153-gsc-impact-measurement",
+  "date": "2026-09-19",
+  "baseline": "Phase152 main 28fa3996d213e9331e677ed6e260da8cc526a929",
+  "goal": "Make Phase146-151 SEO impact measurable without inventing newer Search Console data.",
+  "outputs": [
+    "assets/data/phase153-gsc-impact-targets-v1.json",
+    "assets/data/phase153-gsc-data-availability-v1.json",
+    "scripts/phase153-gsc-impact-measurement.mjs"
+  ],
+  "measurement_targets": 6,
+  "covered_phases": [
+    "146",
+    "147",
+    "148",
+    "149",
+    "150",
+    "151"
+  ],
+  "rules": [
+    "Exact Query×Page data is preferred.",
+    "Separate Query and Page exports are never joined by inference.",
+    "Only compatible metric scopes receive baseline deltas.",
+    "Lower-bound and approximate baselines remain labeled.",
+    "No uplift claim is made until newer raw GSC data is provided."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0,
+    "public_html_changes": 0
+  },
+  "next_gate": "Ingest the next raw SolQvia GSC export, generate phase153-gsc-impact-report-v1.json, rerun Phase145 with the same fresh data, then select the next work item from measured demand rather than the dated seed."
+}
