@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "release": "phase165-measurement-execution-gates",
+  "checked_at": "2026-09-19",
+  "status": "pending_browser_render",
+  "reason": "The current execution environment can inspect source/static structure but cannot render the public site in a browser.",
+  "breakpoints": [
+    {
+      "width_px": 390,
+      "label": "mobile_narrow"
+    },
+    {
+      "width_px": 768,
+      "label": "tablet"
+    },
+    {
+      "width_px": 1440,
+      "label": "desktop"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "empty_state",
+      "setup": "Open Device Passport before selecting a device.",
+      "checks": [
+        "Search controls fit without horizontal overflow",
+        "Empty detail panel remains clear",
+        "Level navigation is absent until a record is selected"
+      ]
+    },
+    {
+      "id": "standard_device_without_deep_overlay",
+      "setup": "Select a model that has no Phase163 deep overlay.",
+      "checks": [
+        "Level 1 remains primary",
+        "Level 2 actions remain visible",
+        "Level 3 states that deep record is not registered and does not imply unsupported"
+      ]
+    },
+    {
+      "id": "scg36_partial_deep_overlay",
+      "setup": "Select SCG36 / au.",
+      "checks": [
+        "Confirmed generic data/voice/SMS do not visually dominate unknown IMS/CA states",
+        "Software snapshot is marked partial",
+        "Unknown/not-tested labels remain legible"
+      ]
+    },
+    {
+      "id": "ky41c_solqvia_capture",
+      "setup": "Select KY-41C / docomo-origin record.",
+      "checks": [
+        "Two SolQvia capture sessions are readable",
+        "Next question q_esim_profile_enabled is prominent",
+        "Data/voice/SMS remain visibly not tested"
+      ]
+    },
+    {
+      "id": "level3_expanded",
+      "setup": "Expand deep technical/evidence detail.",
+      "checks": [
+        "No card clipping",
+        "Long evidence text wraps",
+        "Status rows do not rely on color alone",
+        "Touch targets remain usable on mobile"
+      ]
+    }
+  ],
+  "accessibility_checks": [
+    "State meaning must be conveyed by text, not color alone.",
+    "Keyboard focus remains visible for tier navigation and details/summary.",
+    "ARIA live Device Passport detail updates remain understandable.",
+    "No horizontal scrolling at 390px caused by deep rows or capture strings."
+  ],
+  "completion_rule": "Do not set status=passed until every scenario is rendered at every breakpoint."
+}
