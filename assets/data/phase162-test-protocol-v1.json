@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "release": "phase162-real-device-capture-format",
+  "checked_at": "2026-09-19",
+  "purpose": "Repeatable field-test order for collecting the minimum evidence needed by Phase161 while keeping invasive actions and personal identifiers out of the default workflow.",
+  "stages": [
+    {
+      "id": "A_context",
+      "order": 10,
+      "title_ja": "端末・回線・ソフトウェア条件を固定",
+      "required": [
+        "exact model number",
+        "carrier/brand",
+        "SIM type",
+        "test time",
+        "OS version"
+      ],
+      "recommended": [
+        "Phase159 software snapshot key when available",
+        "Android build/baseband or iPhone modem firmware/carrier settings version when visible",
+        "coarse location scope and indoor/outdoor"
+      ],
+      "notes": [
+        "On iPhone, Settings > General > About exposes software version, Modem Firmware and carrier information; carrier settings version is visible by the Carrier field.",
+        "Do not retain unredacted IMEI/EID/serial/subscriber identifiers."
+      ]
+    },
+    {
+      "id": "B_subscriber_esim",
+      "order": 20,
+      "title_ja": "SIM/eSIM認識とeSIMライフサイクル",
+      "observations": [
+        "subscriber.sim_or_esim_recognized",
+        "esim.device_capability",
+        "esim.activation_material",
+        "esim.server_session",
+        "esim.profile_download",
+        "esim.profile_install",
+        "esim.profile_enable",
+        "esim.carrier_line_activation"
+      ],
+      "rules": [
+        "For pSIM-only tests, eSIM-specific observations may remain not_applicable/not_tested.",
+        "Profile installation/enablement is not promoted to network/service success."
+      ]
+    },
+    {
+      "id": "C_registration",
+      "order": 30,
+      "title_ja": "圏内・登録状態",
+      "observations": [
+        "network.service_state",
+        "network.data_registration",
+        "network.fiveg_sa_registration"
+      ],
+      "rules": [
+        "Signal bars or 4G/5G icons are not a substitute for explicit registration evidence when deep evidence is required."
+      ]
+    },
+    {
+      "id": "D_data",
+      "order": 40,
+      "title_ja": "データ回線・APN/DNN・実通信",
+      "observations": [
+        "data.selected_line",
+        "data.apn_or_dnn",
+        "data.packet_session",
+        "data.ip_link",
+        "data.dns",
+        "data.validation",
+        "data.runtime"
+      ],
+      "test_order": [
+        "Confirm intended data SIM/line on dual-SIM devices.",
+        "Check official APN/DNN only when the platform/carrier exposes or requires it.",
+        "Observe packet-session/IP/DNS/validation only when accessible.",
+        "Perform a simple real data test separately from internal-state observations."
+      ],
+      "rule": "A successful web/data test does not backfill APN/session/IP/DNS/VALIDATED states."
+    },
+    {
+      "id": "E_ims_voice_sms",
+      "order": 50,
+      "title_ja": "IMS・VoLTE/VoNR・通話・SMS",
+      "observations": [
+        "carrier.ims_policy",
+        "ims.entitlement",
+        "ims.registration",
+        "ims.voice_capability",
+        "ims.volte_registration",
+        "ims.vonr_registration",
+        "voice.outgoing",
+        "voice.incoming",
+        "voice.volte_call",
+        "voice.vonr_call",
+        "sms.send",
+        "sms.receive",
+        "sms.over_ims",
+        "wfc.runtime"
+      ],
+      "test_order": [
+        "Capture policy/provisioning/registration only when exact evidence is available.",
+        "On iPhone, Settings > General > About can expose carrier/network information; tapping Carrier can show IMS status. Record only the visible status and do not infer hidden IMS internals.",
+        "Test outgoing and incoming voice separately.",
+        "Test SMS send and receive separately.",
+        "Record VoLTE/VoNR/Wi-Fi Calling bearer only when actually observed."
+      ],
+      "rule": "Successful voice does not identify its bearer; generic SMS success does not prove SMS over IMS."
+    },
+    {
+      "id": "F_radio_aggregation",
+      "order": 60,
+      "title_ja": "LTE CA・EN-DC・NR CA",
+      "observations": [
+        "radio.display_hint",
+        "radio.physical_channels",
+        "radio.lte_ca",
+        "radio.endc",
+        "radio.nr_ca"
+      ],
+      "deep_capture": [
+        "On supported/authorized Android environments, PhysicalChannelConfig can provide band, network type, primary/secondary status and channel bandwidth.",
+        "Treat LTE+/5G+/NR Advanced as display hints only."
+      ]
+    },
+    {
+      "id": "G_closeout",
+      "order": 70,
+      "title_ja": "証拠・プライバシー・診断投入",
+      "required": [
+        "Attach evidence refs to observed results.",
+        "Complete privacy review.",
+        "Project explicit observation_records into Phase161 input.",
+        "Keep untested items untested/unknown instead of filling them."
+      ]
+    }
+  ],
+  "default_goal_minimums": {
+    "esim_setup": [
+      "A_context",
+      "B_subscriber_esim",
+      "C_registration"
+    ],
+    "no_service": [
+      "A_context",
+      "B_subscriber_esim",
+      "C_registration"
+    ],
+    "no_mobile_data": [
+      "A_context",
+      "B_subscriber_esim",
+      "C_registration",
+      "D_data"
+    ],
+    "voice_failure": [
+      "A_context",
+      "C_registration",
+      "D_data",
+      "E_ims_voice_sms"
+    ],
+    "sms_failure": [
+      "A_context",
+      "C_registration",
+      "D_data",
+      "E_ims_voice_sms"
+    ],
+    "wifi_calling_failure": [
+      "A_context",
+      "E_ims_voice_sms"
+    ],
+    "volte_vonr_check": [
+      "A_context",
+      "C_registration",
+      "E_ims_voice_sms"
+    ],
+    "fiveg_or_aggregation_check": [
+      "A_context",
+      "C_registration",
+      "F_radio_aggregation"
+    ],
+    "general_connectivity": [
+      "A_context",
+      "B_subscriber_esim",
+      "C_registration",
+      "D_data",
+      "E_ims_voice_sms"
+    ]
+  }
+}

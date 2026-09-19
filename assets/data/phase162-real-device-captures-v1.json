@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "release": "phase162-real-device-capture-format",
+  "checked_at": "2026-09-19",
+  "records": [
+    {
+      "capture_id": "sqv-20260808-ky41c-ymobile-esim-profile",
+      "capture_version": "1.0",
+      "capture_level": "baseline",
+      "test_goal": "esim_setup",
+      "tested_at": "2026-08-08",
+      "device": {
+        "model_name": "キッズケータイ",
+        "model_number": "KY-41C",
+        "market_region": "JP",
+        "sales_channel": "NTTドコモ",
+        "original_carrier": "NTTドコモ",
+        "device_family": "kids_phone"
+      },
+      "subscription": {
+        "carrier": "Y!mobile",
+        "brand": "Y!mobile",
+        "plan_family": null,
+        "sim_type": "eSIM",
+        "line_role": "test_line",
+        "slot_label": null,
+        "mvno_or_mno": "MNO"
+      },
+      "software_snapshot": {
+        "phase159_snapshot_key": null,
+        "binding_state": "unbound",
+        "os_name": null,
+        "os_version": null,
+        "build_id": null,
+        "build_fingerprint": null,
+        "security_patch": null,
+        "baseband_full": null,
+        "baseband_suffix": null,
+        "modem_firmware": null,
+        "vendor_ui_name": null,
+        "vendor_ui_version": null,
+        "carrier_settings_version": null,
+        "carrier_config_observed": null
+      },
+      "environment": {
+        "country_region": "JP",
+        "location_scope": "historical SolQvia field-test note; precise location not retained",
+        "indoor_outdoor": null,
+        "wifi_enabled": null,
+        "airplane_mode": false,
+        "dual_sim_active": null,
+        "network_mode": null,
+        "roaming": false,
+        "notes": "Historical projection from Phase131. No additional runtime state is inferred."
+      },
+      "observation_records": [
+        {
+          "key": "subscriber.sim_or_esim_recognized",
+          "value": "confirmed",
+          "method": "solqvia_existing_evidence",
+          "confidence": "high",
+          "evidence_refs": [
+            "ev-ky41c-ymobile-01"
+          ],
+          "note": "Terminal-side SIM information recognition confirmed."
+        },
+        {
+          "key": "esim.profile_install",
+          "value": "confirmed",
+          "method": "solqvia_existing_evidence",
+          "confidence": "high",
+          "evidence_refs": [
+            "ev-ky41c-ymobile-01"
+          ],
+          "note": "Existing evidence confirms eSIM profile configuration; downstream enablement/registration is not inferred."
+        },
+        {
+          "key": "software.snapshot_binding",
+          "value": "unbound",
+          "method": "not_observed",
+          "confidence": "high",
+          "evidence_refs": [
+            "ev-ky41c-ymobile-01"
+          ],
+          "note": "Historical record did not preserve OS/build/baseband snapshot."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-ky41c-ymobile-01",
+          "type": "solqvia_prior_record",
+          "captured_at": "2026-08-08",
+          "scope": "eSIM profile configuration and terminal-side SIM information recognition only",
+          "source": "ky41c-ymobile-softbank-esim-profile-recognition-20260808",
+          "artifact_ref": "assets/data/phase131-solqvia-real-device-evidence-v1.json",
+          "note": "Do not promote to data, voice, SMS, IMS or guardian-function usability.",
+          "redaction_applied": true
+        }
+      ],
+      "privacy_review": {
+        "completed": true,
+        "prohibited_identifiers_present": false,
+        "redaction_required": false,
+        "review_note": "Historical evidence contains no retained phone number, ICCID, IMSI, EID, IMEI or activation credentials."
+      }
+    },
+    {
+      "capture_id": "sqv-20260808-ky41c-softbank-esim-profile",
+      "capture_version": "1.0",
+      "capture_level": "baseline",
+      "test_goal": "esim_setup",
+      "tested_at": "2026-08-08",
+      "device": {
+        "model_name": "キッズケータイ",
+        "model_number": "KY-41C",
+        "market_region": "JP",
+        "sales_channel": "NTTドコモ",
+        "original_carrier": "NTTドコモ",
+        "device_family": "kids_phone"
+      },
+      "subscription": {
+        "carrier": "SoftBank",
+        "brand": "SoftBank",
+        "plan_family": null,
+        "sim_type": "eSIM",
+        "line_role": "test_line",
+        "slot_label": null,
+        "mvno_or_mno": "MNO"
+      },
+      "software_snapshot": {
+        "phase159_snapshot_key": null,
+        "binding_state": "unbound",
+        "os_name": null,
+        "os_version": null,
+        "build_id": null,
+        "build_fingerprint": null,
+        "security_patch": null,
+        "baseband_full": null,
+        "baseband_suffix": null,
+        "modem_firmware": null,
+        "vendor_ui_name": null,
+        "vendor_ui_version": null,
+        "carrier_settings_version": null,
+        "carrier_config_observed": null
+      },
+      "environment": {
+        "country_region": "JP",
+        "location_scope": "historical SolQvia field-test note; precise location not retained",
+        "indoor_outdoor": null,
+        "wifi_enabled": null,
+        "airplane_mode": false,
+        "dual_sim_active": null,
+        "network_mode": null,
+        "roaming": false,
+        "notes": "Historical projection from Phase131. No additional runtime state is inferred."
+      },
+      "observation_records": [
+        {
+          "key": "subscriber.sim_or_esim_recognized",
+          "value": "confirmed",
+          "method": "solqvia_existing_evidence",
+          "confidence": "high",
+          "evidence_refs": [
+            "ev-ky41c-softbank-01"
+          ],
+          "note": "Terminal-side SIM information recognition confirmed."
+        },
+        {
+          "key": "esim.profile_install",
+          "value": "confirmed",
+          "method": "solqvia_existing_evidence",
+          "confidence": "high",
+          "evidence_refs": [
+            "ev-ky41c-softbank-01"
+          ],
+          "note": "Existing evidence confirms eSIM profile configuration; profile enablement and network service are not inferred."
+        },
+        {
+          "key": "software.snapshot_binding",
+          "value": "unbound",
+          "method": "not_observed",
+          "confidence": "high",
+          "evidence_refs": [
+            "ev-ky41c-softbank-01"
+          ],
+          "note": "Historical record did not preserve OS/build/baseband snapshot."
+        }
+      ],
+      "evidence": [
+        {
+          "id": "ev-ky41c-softbank-01",
+          "type": "solqvia_prior_record",
+          "captured_at": "2026-08-08",
+          "scope": "eSIM profile configuration and terminal-side SIM information recognition only",
+          "source": "ky41c-ymobile-softbank-esim-profile-recognition-20260808",
+          "artifact_ref": "assets/data/phase131-solqvia-real-device-evidence-v1.json",
+          "note": "Do not promote to data, voice, SMS, IMS or guardian-function usability.",
+          "redaction_applied": true
+        }
+      ],
+      "privacy_review": {
+        "completed": true,
+        "prohibited_identifiers_present": false,
+        "redaction_required": false,
+        "review_note": "Historical evidence contains no retained phone number, ICCID, IMSI, EID, IMEI or activation credentials."
+      }
+    }
+  ]
+}

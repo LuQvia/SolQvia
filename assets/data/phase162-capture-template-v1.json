@@ -1,0 +1,259 @@
+{
+  "schema_version": "1.0",
+  "release": "phase162-real-device-capture-format",
+  "template": true,
+  "capture_id": "replace-with-non-identifying-capture-id",
+  "capture_version": "1.0",
+  "capture_level": "standard",
+  "test_goal": "general_connectivity",
+  "tested_at": null,
+  "device": {
+    "model_name": null,
+    "model_number": null,
+    "market_region": null,
+    "sales_channel": null,
+    "original_carrier": null,
+    "device_family": null
+  },
+  "subscription": {
+    "carrier": null,
+    "brand": null,
+    "plan_family": null,
+    "sim_type": null,
+    "line_role": "primary_test_line",
+    "slot_label": null,
+    "mvno_or_mno": null
+  },
+  "software_snapshot": {
+    "phase159_snapshot_key": null,
+    "binding_state": "unbound",
+    "os_name": null,
+    "os_version": null,
+    "build_id": null,
+    "build_fingerprint": null,
+    "security_patch": null,
+    "baseband_full": null,
+    "baseband_suffix": null,
+    "modem_firmware": null,
+    "vendor_ui_name": null,
+    "vendor_ui_version": null,
+    "carrier_settings_version": null,
+    "carrier_config_observed": null
+  },
+  "environment": {
+    "country_region": "JP",
+    "location_scope": null,
+    "indoor_outdoor": null,
+    "wifi_enabled": null,
+    "airplane_mode": false,
+    "dual_sim_active": null,
+    "network_mode": null,
+    "roaming": null,
+    "notes": null
+  },
+  "observation_records": [],
+  "observation_catalog": [
+    {
+      "key": "subscriber.sim_or_esim_recognized",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "esim.device_capability",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "esim.activation_material",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "esim.server_session",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "esim.profile_download",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "esim.profile_install",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "esim.profile_enable",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "esim.carrier_line_activation",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "carrier.config_state",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "carrier.ims_policy",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "network.service_state",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "network.data_registration",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "network.fiveg_sa_registration",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "data.selected_line",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "data.apn_or_dnn",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "data.packet_session",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "data.ip_link",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "data.dns",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "data.validation",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "data.runtime",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "ims.entitlement",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "ims.registration",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "ims.voice_capability",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "ims.volte_registration",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "ims.vonr_registration",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "voice.outgoing",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "voice.incoming",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "voice.volte_call",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "voice.vonr_call",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "sms.send",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "sms.receive",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "sms.over_ims",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "wfc.runtime",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "radio.display_hint",
+      "kind": "value",
+      "default": null
+    },
+    {
+      "key": "radio.physical_channels",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "radio.lte_ca",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "radio.endc",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "radio.nr_ca",
+      "kind": "state",
+      "default": "not_tested"
+    },
+    {
+      "key": "software.snapshot_binding",
+      "kind": "value",
+      "default": "unbound"
+    }
+  ],
+  "evidence": [],
+  "privacy_review": {
+    "completed": false,
+    "prohibited_identifiers_present": null,
+    "redaction_required": null,
+    "review_note": null
+  }
+}
