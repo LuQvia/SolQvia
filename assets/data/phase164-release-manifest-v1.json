@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "release": "phase164-real-device-capture-campaign",
+  "date": "2026-09-19",
+  "baseline": "Phase163 main 04763a31dfdd0402b475e4bb560f092b53e4435a",
+  "goal": "Convert the Phase154-163 evidence architecture into an executable real-device capture queue while keeping planned work separate from real evidence.",
+  "outputs": [
+    "assets/data/phase164-capture-campaign-priority-v1.json",
+    "assets/data/phase164-planned-captures-v1.json",
+    "assets/data/phase164-validation-report-v1.json",
+    "assets/data/phase164-release-manifest-v1.json",
+    "scripts/phase164-plan-to-capture-template.mjs",
+    "scripts/phase164-capture-campaign-validate.mjs"
+  ],
+  "campaign_tracks": [
+    {
+      "id": "seo_demand_linked",
+      "campaigns": [
+        "p164-au-esim-activation-flow"
+      ],
+      "note": "Uses only the dated Phase145/153 GSC-supported au eSIM query cluster; no fresh uplift/demand claim."
+    },
+    {
+      "id": "proprietary_evidence_expansion",
+      "campaigns": [
+        "p164-ky41c-ymobile-deepen",
+        "p164-ky41c-softbank-deepen"
+      ],
+      "note": "Extends the only existing SolQvia-owned device evidence without merging Y!mobile and SoftBank scopes."
+    },
+    {
+      "id": "device_passport_depth",
+      "campaigns": [
+        "p164-scg36-au-runtime-stack",
+        "p164-sms942q-crosscarrier",
+        "p164-sc51g-docomo-runtime"
+      ],
+      "note": "Prioritized by current evidence-gap closure and implementation readiness, not by unverified device-level search demand."
+    }
+  ],
+  "current_real_device_evidence": {
+    "phase162_completed_captures": 2,
+    "new_completed_captures_in_phase164": 0,
+    "reason": "Phase164 creates execution plans only. Real-device evidence can be added only after a test is actually performed and passes Phase162 privacy/evidence validation."
+  },
+  "priority_logic": [
+    "Use explicit GSC demand only when a supported query cluster exists.",
+    "Prefer deepening an existing SolQvia capture before starting equivalent evidence from zero.",
+    "Prefer models with Phase159/163 scaffolding when an exact runtime capture would close multiple high-value gaps.",
+    "Higher execution cost, such as a four-carrier matrix, is preserved as a cost/availability constraint rather than ignored.",
+    "Device availability is unknown until the tester confirms the actual device/line can be used."
+  ],
+  "execution_flow": [
+    "Select a Phase164 plan.",
+    "Generate a blank Phase162-compatible capture template.",
+    "Fill exact device/carrier/SIM/software context before testing.",
+    "Record only observations actually made.",
+    "Complete privacy review.",
+    "Validate as Phase162 capture.",
+    "Project to Phase161 diagnosis when useful.",
+    "Only then update Phase163 Device Passport deep overlay."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "public_html_changes": 0,
+    "sitemap_changes": 0,
+    "canonical_policy_changes": 0
+  },
+  "next_gate": "Actual real-device execution. Do not advance a planned campaign into Phase162/Phase163 until observed results are supplied or captured."
+}
