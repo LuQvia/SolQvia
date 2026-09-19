@@ -1,0 +1,378 @@
+{
+  "schema_version": "1.0",
+  "release": "phase156-esim-rsp-lifecycle-db",
+  "checked_at": "2026-09-19",
+  "records": [
+    {
+      "key": "gsma-consumer-rsp-reference-20260919",
+      "record_type": "standards_reference",
+      "platform": "cross_platform",
+      "identity": {
+        "device_family": null,
+        "model_number": null,
+        "market_region": "global"
+      },
+      "workflow": {
+        "state": "confirmed",
+        "activation_method": "unknown",
+        "stages": {
+          "device_capability": {
+            "state": "supported_by_spec"
+          },
+          "activation_material": {
+            "state": "supported_by_spec"
+          },
+          "discovery_and_server_session": {
+            "state": "supported_by_spec"
+          },
+          "profile_download": {
+            "state": "supported_by_spec"
+          },
+          "profile_install": {
+            "state": "supported_by_spec"
+          },
+          "profile_enable": {
+            "state": "supported_by_spec"
+          },
+          "carrier_line_activation": {
+            "state": "unknown"
+          },
+          "network_registration": {
+            "state": "unknown"
+          },
+          "service_validation": {
+            "state": "unknown"
+          }
+        }
+      },
+      "evidence": [
+        {
+          "type": "standards_body",
+          "source": "https://www.gsma.com/solutions-and-impact/technologies/esim/esim-specification/",
+          "checked_at": "2026-09-19",
+          "scope": "Current GSMA consumer eSIM specification family and active SGP.22 versions",
+          "confidence": "high"
+        },
+        {
+          "type": "standards_body",
+          "source": "https://www.gsma.com/solutions-and-impact/technologies/esim/gsma_resources/sgp-22-v2-7/",
+          "checked_at": "2026-09-19",
+          "scope": "Consumer RSP technical architecture reference v2.7",
+          "confidence": "high"
+        },
+        {
+          "type": "standards_body",
+          "source": "https://www.gsma.com/solutions-and-impact/technologies/esim/gsma_resources/sgp-22-v3-1/",
+          "checked_at": "2026-09-19",
+          "scope": "Consumer RSP technical architecture reference v3.1",
+          "confidence": "high"
+        }
+      ],
+      "open_questions": [
+        "Do not infer which SGP.22 version any individual handset/carrier deployment uses without exact evidence."
+      ]
+    },
+    {
+      "key": "android-esim-rsp-platform-architecture",
+      "record_type": "platform_architecture",
+      "platform": "android",
+      "identity": {
+        "device_family": "Android",
+        "model_number": null,
+        "market_region": "global"
+      },
+      "workflow": {
+        "state": "confirmed",
+        "activation_method": "unknown",
+        "stages": {
+          "device_capability": {
+            "state": "confirmed",
+            "note": "Android 9+ framework exposes eUICC APIs; actual device support still requires eUICC feature and LPA."
+          },
+          "activation_material": {
+            "state": "supported_by_spec"
+          },
+          "discovery_and_server_session": {
+            "state": "supported_by_spec",
+            "note": "LPA implements SM-DP+ client and may use SM-DS."
+          },
+          "profile_download": {
+            "state": "supported_by_spec",
+            "note": "EuiccManager exposes high-level downloadSubscription operation."
+          },
+          "profile_install": {
+            "state": "supported_by_spec",
+            "note": "LPA/eUICC path handles profile package loading; exact device outcome requires observation."
+          },
+          "profile_enable": {
+            "state": "supported_by_spec",
+            "note": "EuiccManager supports switching to subscription/profile."
+          },
+          "carrier_line_activation": {
+            "state": "unknown"
+          },
+          "network_registration": {
+            "state": "unknown"
+          },
+          "service_validation": {
+            "state": "unknown"
+          }
+        }
+      },
+      "evidence": [
+        {
+          "type": "os_platform_official",
+          "source": "https://source.android.com/docs/core/connect/esim-overview",
+          "checked_at": "2026-09-19",
+          "scope": "Android eSIM architecture, LPA, SM-DP+, EuiccManager operations and eUICC routing",
+          "confidence": "high"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://source.android.com/docs/core/connect/esim-euicc-api",
+          "checked_at": "2026-09-19",
+          "scope": "eUICC APIs, LPA SM-DP+ client, optional SM-DS, notifications and profile policy boundary",
+          "confidence": "high"
+        }
+      ],
+      "open_questions": [
+        "Exact LPA implementation and RSP version vary by device/OEM."
+      ]
+    },
+    {
+      "key": "apple-iphone-esim-activation-methods-20260919",
+      "record_type": "platform_user_workflow",
+      "platform": "apple",
+      "identity": {
+        "device_family": "iPhone",
+        "model_number": null,
+        "market_region": "global",
+        "os_context": "current Apple guidance; iOS 26 includes expanded supported transfer flows"
+      },
+      "workflow": {
+        "state": "confirmed",
+        "activation_method": [
+          "carrier_activation",
+          "quick_transfer",
+          "qr_code",
+          "carrier_link",
+          "carrier_app",
+          "manual_smdp_activation_material",
+          "cross_platform_transfer"
+        ],
+        "stages": {
+          "device_capability": {
+            "state": "supported_by_spec"
+          },
+          "activation_material": {
+            "state": "confirmed",
+            "note": "Method depends on carrier and device support."
+          },
+          "discovery_and_server_session": {
+            "state": "unknown",
+            "note": "Internal server transaction details are not inferred from Apple user guidance."
+          },
+          "profile_download": {
+            "state": "unknown"
+          },
+          "profile_install": {
+            "state": "unknown"
+          },
+          "profile_enable": {
+            "state": "confirmed",
+            "note": "Apple describes adding/activating the eSIM plan; internal substeps are not split without direct evidence."
+          },
+          "carrier_line_activation": {
+            "state": "unknown",
+            "note": "Carrier-specific."
+          },
+          "network_registration": {
+            "state": "unknown"
+          },
+          "service_validation": {
+            "state": "unknown",
+            "note": "Apple explicitly recommends testing cellular/call service after transfer/activation."
+          }
+        }
+      },
+      "evidence": [
+        {
+          "type": "os_platform_official",
+          "source": "https://support.apple.com/ja-jp/118669",
+          "checked_at": "2026-09-19",
+          "scope": "iPhone eSIM activation methods: Quick Transfer, Carrier Activation, QR, link/app/manual entry and non-Apple transfer",
+          "confidence": "high"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://support.apple.com/ja-jp/123878",
+          "checked_at": "2026-09-19",
+          "scope": "Android-to-iPhone eSIM transfer and old-SIM invalidation after supported transfer",
+          "confidence": "high"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://support.apple.com/ja-jp/126058",
+          "checked_at": "2026-09-19",
+          "scope": "iPhone/iPad-to-Android transfer workflow availability depends on carrier support",
+          "confidence": "high"
+        }
+      ],
+      "open_questions": [
+        "Exact internal RSP transaction states are intentionally not inferred from Apple user-facing instructions."
+      ]
+    },
+    {
+      "key": "au-jp-esim-opening-workflow-20260919",
+      "record_type": "carrier_workflow",
+      "platform": "cross_platform",
+      "identity": {
+        "carrier": "au",
+        "market_region": "JP"
+      },
+      "workflow": {
+        "state": "confirmed",
+        "activation_method": [
+          "carrier_app",
+          "qr_code",
+          "manual_smdp_activation_material",
+          "carrier_activation"
+        ],
+        "stages": {
+          "device_capability": {
+            "state": "unknown",
+            "note": "Exact device support must be checked separately."
+          },
+          "activation_material": {
+            "state": "confirmed",
+            "note": "au provides app, QR and manual-code flows depending on scenario."
+          },
+          "discovery_and_server_session": {
+            "state": "unknown",
+            "note": "au user guidance does not expose server-session internals."
+          },
+          "profile_download": {
+            "state": "confirmed",
+            "note": "Official workflow explicitly contains eSIM profile download."
+          },
+          "profile_install": {
+            "state": "unknown",
+            "note": "Do not split internal profile-install success from user-visible download unless device evidence exists."
+          },
+          "profile_enable": {
+            "state": "confirmed",
+            "note": "Manual Android flow includes enabling the downloaded eSIM."
+          },
+          "carrier_line_activation": {
+            "state": "confirmed",
+            "note": "For applicable contracts, au requires line switching before eSIM setup; new contracts may not require this step."
+          },
+          "network_registration": {
+            "state": "unknown"
+          },
+          "service_validation": {
+            "state": "supported_by_spec",
+            "note": "au's reissue/new-device workflow ends with a call test; actual service success requires a device observation."
+          }
+        },
+        "carrier_specific_rules": [
+          "For applicable device changes/MNP/reissues, complete line switching before profile setup; new contracts can be exempt.",
+          "After profile download, au states phone-number information can be written automatically after about five minutes.",
+          "For SIM-free/other-carrier Android devices, APN setup may be required after eSIM profile download.",
+          "After line switching, the previously used SIM/eSIM becomes unusable under the documented workflow.",
+          "If QR scanning is unavailable, official manual entry material is provided; do not store that user's code in SolQvia."
+        ]
+      },
+      "evidence": [
+        {
+          "type": "carrier_official",
+          "source": "https://www.au.com/support/service/mobile/procedure/sim/esim/",
+          "checked_at": "2026-09-19",
+          "scope": "au eSIM line switch, profile download, enablement, APN and post-download workflow",
+          "confidence": "high"
+        },
+        {
+          "type": "carrier_official",
+          "source": "https://www.au.com/support/service/mobile/procedure/sim/esim/sub-line/",
+          "checked_at": "2026-09-19",
+          "scope": "Manual eSIM setup using SM-DP+ address/activation material or Android setup code",
+          "confidence": "high"
+        },
+        {
+          "type": "carrier_official",
+          "source": "https://www.au.com/support/faq/details/00/0000/000018/pg00001883/",
+          "checked_at": "2026-09-19",
+          "scope": "Line switching invalidates the previously used SIM/eSIM and eSIM activation remains a separate post-switch procedure",
+          "confidence": "high"
+        }
+      ],
+      "open_questions": [
+        "Exact SM-DP+ transaction outcome is not exposed by the user-facing carrier page.",
+        "Exact network registration and IMS results depend on device/carrier/OS conditions."
+      ]
+    },
+    {
+      "key": "ky41c-softbank-esim-profile-recognition-phase156",
+      "record_type": "solqvia_real_device_projection",
+      "platform": "android",
+      "identity": {
+        "model_name": "キッズケータイ",
+        "model_number": "KY-41C",
+        "original_carrier": "NTTドコモ",
+        "tested_carrier": "SoftBank",
+        "market_region": "JP"
+      },
+      "workflow": {
+        "state": "confirmed",
+        "activation_method": "other_official_method",
+        "stages": {
+          "device_capability": {
+            "state": "confirmed"
+          },
+          "activation_material": {
+            "state": "unknown"
+          },
+          "discovery_and_server_session": {
+            "state": "unknown"
+          },
+          "profile_download": {
+            "state": "unknown"
+          },
+          "profile_install": {
+            "state": "confirmed",
+            "note": "Existing SolQvia evidence confirms eSIM profile configuration on the terminal; do not infer hidden internal transaction stages beyond that observation."
+          },
+          "profile_enable": {
+            "state": "unknown"
+          },
+          "carrier_line_activation": {
+            "state": "unknown"
+          },
+          "network_registration": {
+            "state": "unknown"
+          },
+          "service_validation": {
+            "state": "not_tested"
+          }
+        }
+      },
+      "evidence": [
+        {
+          "type": "solqvia_real_device",
+          "source": "ky41c-ymobile-softbank-esim-profile-recognition-20260808",
+          "checked_at": "2026-08-08",
+          "scope": "eSIM profile configuration and terminal-side SIM information recognition only",
+          "confidence": "high"
+        }
+      ],
+      "open_questions": [
+        "Network registration",
+        "Mobile data",
+        "Voice",
+        "SMS",
+        "IMS/VoLTE",
+        "Guardian functions"
+      ]
+    }
+  ]
+}
