@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "release": "phase148-corporate-reset-management-strengthening",
+  "date": "2026-09-19",
+  "baseline": "Phase147 main 8e8c3fa0f16dc8caab28b0eb00c6a958bb002b29",
+  "gsc_basis": {
+    "source": "2026-09-08 Phase128 GSC-backed backlog",
+    "query": "法人 携帯 初期化 管理設定",
+    "impressions": 15,
+    "note": "Latest safely retrievable numeric basis in the current Project; no newer metric is invented."
+  },
+  "page": {
+    "ja": "/ja/technology/smartphone/company-owned-smartphone-reset-mdm-frp-activation-lock/",
+    "action": "strengthen_existing",
+    "index_state": "index,follow",
+    "english_new_url_created": false
+  },
+  "changes": [
+    "Match the corporate-phone reset/management search intent in title, H1 and lead.",
+    "Separate employee-return workflow from IT-admin reset/redeployment workflow.",
+    "Add scenario branches for redeployment, repair/exchange, employee offboarding and disposal.",
+    "Add current Android Enterprise FRP/EFRP behavior and pre-reset requirement.",
+    "Add Apple supervision, Activation Lock management and Apple Business boundary.",
+    "Add managed eSIM preservation/modification controls and post-reset redeployment verification.",
+    "Link to existing migration/reset and SIM/eSIM diagnostics.",
+    "Refresh official Google and Apple sources to 2026-09-19."
+  ],
+  "evidence_rules": [
+    "No FRP or Activation Lock bypass procedure is provided.",
+    "FRP/EFRP behavior is described by management mode rather than generalized.",
+    "Erase success is not treated as redeployment success.",
+    "eSIM handling is separated from device-data erasure.",
+    "No SolQvia real-device confirmation is claimed."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "next_priority": "Rerun Phase145 when newer raw GSC data is available; otherwise move to the qualitative queue and strengthen the suspicious-app cluster without creating duplicate URLs."
+}
