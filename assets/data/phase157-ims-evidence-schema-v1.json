@@ -1,0 +1,351 @@
+{
+  "schema_version": "1.0",
+  "release": "phase157-ims-volte-vonr-evidence-matrix",
+  "checked_at": "2026-09-19",
+  "purpose": "Normalize IMS policy, entitlement, registration, service capability, bearer/runtime and directional outcomes so SolQvia can distinguish VoLTE, VoNR, Wi-Fi Calling and SMS over IMS without inferring one from another.",
+  "states": [
+    "confirmed",
+    "failed",
+    "supported_by_spec",
+    "not_supported_by_spec",
+    "enabled_by_policy",
+    "disabled_by_policy",
+    "provisioned",
+    "not_provisioned",
+    "registered",
+    "not_registered",
+    "not_tested",
+    "not_solqvia_tested",
+    "not_applicable",
+    "unknown"
+  ],
+  "evidence_roles": [
+    "device_capability",
+    "carrier_policy",
+    "entitlement_provisioning",
+    "ims_service_implementation",
+    "ims_registration",
+    "service_capability",
+    "runtime_service",
+    "runtime_bearer",
+    "external_field_test",
+    "solqvia_real_device"
+  ],
+  "dimensions": [
+    {
+      "id": "device_ims_capability",
+      "order": 10,
+      "purpose": "Whether the platform/device exposes telephony IMS capability at all.",
+      "fields": [
+        "telephony_ims_feature",
+        "mmtel_feature",
+        "rcs_feature"
+      ]
+    },
+    {
+      "id": "carrier_policy",
+      "order": 20,
+      "purpose": "Carrier/OEM configuration controlling availability before runtime registration.",
+      "fields": [
+        "volte_available_policy",
+        "vonr_enabled_policy",
+        "wifi_calling_available_policy",
+        "sms_over_ims_supported_policy",
+        "ims_provisioning_required"
+      ]
+    },
+    {
+      "id": "entitlement_provisioning",
+      "order": 30,
+      "purpose": "Carrier entitlement/provisioning state kept separate from policy and registration.",
+      "fields": [
+        "volte_entitlement",
+        "vowifi_entitlement",
+        "smsoip_entitlement",
+        "emergency_address_or_terms_required",
+        "carrier_backend_provisioning"
+      ]
+    },
+    {
+      "id": "ims_service_binding",
+      "order": 40,
+      "purpose": "Android ImsService/MMTel/RCS implementation availability; Apple internals remain opaque unless directly evidenced.",
+      "fields": [
+        "ims_service_available",
+        "mmtel_service_bound",
+        "rcs_service_bound",
+        "service_source"
+      ]
+    },
+    {
+      "id": "ims_registration",
+      "order": 50,
+      "purpose": "Explicit IMS network registration state and transport.",
+      "fields": [
+        "ims_registration_state",
+        "ims_transport",
+        "registration_access_network",
+        "registration_failure_reason"
+      ],
+      "allowed_transport": [
+        "WWAN",
+        "WLAN",
+        "unknown"
+      ],
+      "allowed_access_network": [
+        "EUTRAN",
+        "NGRAN",
+        "IWLAN",
+        "UTRAN",
+        "GERAN",
+        "unknown"
+      ]
+    },
+    {
+      "id": "service_capability",
+      "order": 60,
+      "purpose": "IMS service capability exposed after/beside registration; still not runtime success.",
+      "fields": [
+        "mmtel_voice_capability",
+        "sms_over_ims_capability",
+        "wifi_calling_capability",
+        "emergency_mmtel_capability",
+        "rcs_capability"
+      ]
+    },
+    {
+      "id": "voice_runtime",
+      "order": 70,
+      "purpose": "Directional call results and observed bearer.",
+      "fields": [
+        "voice_outgoing",
+        "voice_incoming",
+        "volte_call",
+        "vonr_call",
+        "wifi_call",
+        "observed_call_bearer"
+      ],
+      "allowed_bearer": [
+        "VoLTE",
+        "VoNR",
+        "WiFiCalling",
+        "CS",
+        "unknown"
+      ]
+    },
+    {
+      "id": "sms_runtime",
+      "order": 80,
+      "purpose": "Directional SMS results and path, with fallback kept explicit.",
+      "fields": [
+        "sms_send",
+        "sms_receive",
+        "sms_over_ims_send",
+        "sms_over_ims_receive",
+        "sms_fallback_observed",
+        "observed_sms_path"
+      ],
+      "allowed_path": [
+        "IMS",
+        "CS",
+        "mixed_or_fallback",
+        "unknown"
+      ]
+    },
+    {
+      "id": "continuity_emergency",
+      "order": 90,
+      "purpose": "Optional handover/fallback/emergency observations separate from normal call success.",
+      "fields": [
+        "srvcc_or_access_transfer",
+        "ims_technology_change",
+        "emergency_calling",
+        "emergency_transport"
+      ]
+    }
+  ],
+  "evidence_contract": {
+    "required": [
+      "type",
+      "source",
+      "checked_at",
+      "scope",
+      "confidence",
+      "role"
+    ],
+    "allowed_types": [
+      "os_platform_official",
+      "carrier_official",
+      "manufacturer_official",
+      "standards_body",
+      "solqvia_real_device",
+      "external_real_device",
+      "user_report"
+    ],
+    "confidence": [
+      "high",
+      "medium",
+      "low",
+      "unknown"
+    ],
+    "role_constraints": {
+      "device_capability": [
+        "supported_by_spec",
+        "confirmed"
+      ],
+      "carrier_policy": [
+        "supported_by_spec",
+        "enabled_by_policy",
+        "disabled_by_policy",
+        "unknown"
+      ],
+      "entitlement_provisioning": [
+        "provisioned",
+        "not_provisioned",
+        "unknown"
+      ],
+      "ims_registration": [
+        "registered",
+        "not_registered",
+        "unknown"
+      ],
+      "runtime_service": [
+        "confirmed",
+        "failed",
+        "not_tested",
+        "not_solqvia_tested",
+        "unknown"
+      ],
+      "runtime_bearer": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ]
+    }
+  },
+  "evidence_capability_rules": [
+    {
+      "evidence_role": "carrier_policy",
+      "can_prove": [
+        "carrier policy/configuration state"
+      ],
+      "cannot_prove": [
+        "IMS registration",
+        "VoLTE call success",
+        "VoNR call success",
+        "Wi-Fi Calling call success",
+        "SMS send/receive success"
+      ]
+    },
+    {
+      "evidence_role": "entitlement_provisioning",
+      "can_prove": [
+        "service entitlement/provisioning status"
+      ],
+      "cannot_prove": [
+        "IMS registration",
+        "actual call/SMS success"
+      ]
+    },
+    {
+      "evidence_role": "ims_registration",
+      "can_prove": [
+        "IMS registered/registering/unregistered state and observed transport when supplied"
+      ],
+      "cannot_prove": [
+        "voice outgoing success",
+        "voice incoming success",
+        "SMS send/receive success",
+        "actual VoLTE/VoNR bearer unless separately evidenced"
+      ]
+    },
+    {
+      "evidence_role": "runtime_service",
+      "can_prove": [
+        "the exact tested direction/function under recorded conditions"
+      ],
+      "cannot_prove": [
+        "untested opposite direction",
+        "IMS registration mechanism",
+        "bearer technology unless captured"
+      ]
+    },
+    {
+      "evidence_role": "runtime_bearer",
+      "can_prove": [
+        "observed bearer/path for that runtime event"
+      ],
+      "cannot_prove": [
+        "future calls",
+        "other carriers",
+        "other OS/baseband versions"
+      ]
+    }
+  ],
+  "platform_observation_methods": {
+    "android": [
+      {
+        "method": "CarrierConfigManager",
+        "proves": "policy/config availability only",
+        "examples": [
+          "KEY_CARRIER_VOLTE_AVAILABLE_BOOL",
+          "KEY_CARRIER_WFC_IMS_AVAILABLE_BOOL",
+          "KEY_VONR_ENABLED_BOOL",
+          "CarrierConfigManager.ImsSms.KEY_SMS_OVER_IMS_SUPPORTED_BOOL"
+        ]
+      },
+      {
+        "method": "IMS service entitlement / TS.43",
+        "proves": "entitlement/provisioning state for supported services",
+        "examples": [
+          "VoWiFi",
+          "VoLTE",
+          "SMSoIP"
+        ]
+      },
+      {
+        "method": "RegistrationManager.RegistrationCallback",
+        "proves": "IMS registration lifecycle and WWAN/WLAN transport",
+        "examples": [
+          "onRegistered",
+          "onRegistering",
+          "onUnregistered",
+          "onTechnologyChangeFailed"
+        ]
+      },
+      {
+        "method": "CallLog.Calls feature flags",
+        "proves": "post-call bearer metadata when platform/version/permissions expose it",
+        "examples": [
+          "FEATURES_VOLTE",
+          "FEATURES_VONR",
+          "FEATURES_WIFI"
+        ]
+      }
+    ],
+    "apple": [
+      {
+        "method": "Carrier feature support + device UI/runtime",
+        "proves": "user-visible feature support or runtime observation only",
+        "examples": [
+          "VoLTE support",
+          "Wi-Fi Calling support",
+          "Wi-Fi Calling status"
+        ]
+      }
+    ]
+  },
+  "non_inference_rules": [
+    "Mobile data success never proves IMS registration.",
+    "CarrierConfig VoLTE available never proves VoLTE registration or call success.",
+    "CarrierConfig VoNR enabled never proves an actual VoNR call.",
+    "Wi-Fi Calling support never proves entitlement completion or an actual Wi-Fi call.",
+    "IMS registration never proves outgoing or incoming voice success.",
+    "Generic voice success never proves VoLTE, VoNR or Wi-Fi Calling bearer.",
+    "Generic SMS success never proves SMS over IMS.",
+    "Outgoing success never proves incoming success; SMS send never proves SMS receive.",
+    "5G SA registration never proves VoNR.",
+    "VoNR capability or policy never proves NGRAN IMS registration.",
+    "Apple carrier feature listings do not expose internal IMS registration details."
+  ]
+}
