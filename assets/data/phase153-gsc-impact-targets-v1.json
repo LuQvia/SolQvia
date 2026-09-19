@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "release": "phase153-gsc-impact-measurement",
+  "checked_at": "2026-09-19",
+  "measurement_policy": {
+    "preferred_input": "exact query-page rows with query, page, clicks, impressions, ctr, position",
+    "accepted_fallback": "separate Queries.csv and Pages.csv from Search Console export",
+    "prohibited": "infer or fabricate Query×Page relationships from separate tables",
+    "comparison_rule": "Only compare metrics when source scope is compatible. Lower bounds, approximate positions, and qualitative baselines remain labeled."
+  },
+  "targets": [
+    {
+      "id": "phase146-vpn-lockdown",
+      "phase": "146",
+      "strengthened_at": "2026-09-19",
+      "pages": [
+        "/ja/technology/smartphone/android-always-on-vpn-blocks-internet-when-vpn-disconnected/",
+        "/en/technology/smartphone/android-always-on-vpn-blocks-internet-when-vpn-disconnected/"
+      ],
+      "index_state": "noindex,follow",
+      "query_patterns": [
+        "VPN以外の接続をブロックとは",
+        "VPN以外の接続をブロック"
+      ],
+      "baseline": {
+        "source_date": "2026-09-08",
+        "scope": "query",
+        "impressions": 9,
+        "clicks": null,
+        "ctr": null,
+        "position": 8.4,
+        "confidence": "high"
+      },
+      "measurement_note": "Historical query demand can be tracked, but the current page remains noindex. Do not interpret page-impression absence as a content failure while noindex is intentionally preserved."
+    },
+    {
+      "id": "phase147-au-line-info",
+      "phase": "147",
+      "strengthened_at": "2026-09-19",
+      "pages": [
+        "/ja/technology/smartphone/au-esim-after-activation-mms-au-mail-not-working/",
+        "/en/technology/smartphone/au-esim-after-activation-mms-au-mail-not-working/"
+      ],
+      "index_state": "index,follow",
+      "query_patterns": [
+        "電話回線情報の書込みが終了しました",
+        "電話回線情報 書込み 終了",
+        "au 回線情報 書込み",
+        "電源をOFF⇒ON"
+      ],
+      "baseline": {
+        "source_date": "2026-09-08",
+        "scope": "query_cluster",
+        "impressions_lower_bound": 11,
+        "clicks": null,
+        "ctr": null,
+        "position_approx_min": 8,
+        "position_approx_max": 9,
+        "confidence": "medium"
+      }
+    },
+    {
+      "id": "phase148-corporate-reset",
+      "phase": "148",
+      "strengthened_at": "2026-09-19",
+      "pages": [
+        "/ja/technology/smartphone/company-owned-smartphone-reset-mdm-frp-activation-lock/"
+      ],
+      "index_state": "index,follow",
+      "query_patterns": [
+        "法人 携帯 初期化 管理設定",
+        "法人携帯 初期化",
+        "会社支給 スマホ 初期化",
+        "MDM 初期化"
+      ],
+      "baseline": {
+        "source_date": "2026-09-08",
+        "scope": "query",
+        "impressions": 15,
+        "clicks": null,
+        "ctr": null,
+        "position": null,
+        "confidence": "high"
+      }
+    },
+    {
+      "id": "phase149-suspicious-app",
+      "phase": "149",
+      "strengthened_at": "2026-09-19",
+      "pages": [
+        "/ja/technology/smartphone/smartphone-remove-suspicious-app/",
+        "/en/technology/smartphone/smartphone-remove-suspicious-app/"
+      ],
+      "index_state": "index,follow",
+      "query_patterns": [
+        "怪しいアプリ",
+        "不審アプリ",
+        "盗聴アプリ",
+        "削除できない アプリ"
+      ],
+      "baseline": {
+        "source_date": "2026-09-08",
+        "scope": "qualitative_cluster",
+        "reported_pattern": "multiple queries at roughly 15-20 impressions each; positions around 19-33",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "phase150-google-lens",
+      "phase": "150",
+      "strengthened_at": "2026-09-19",
+      "pages": [
+        "/ja/technology/smartphone/google-lens-image-search/",
+        "/en/technology/smartphone/google-lens-image-search/"
+      ],
+      "index_state": "index,follow",
+      "query_patterns": [
+        "google lens search",
+        "search with lens",
+        "image search",
+        "google lens",
+        "画像検索"
+      ],
+      "baseline": {
+        "source_date": "2026-09-08",
+        "scope": "qualitative_cluster",
+        "confidence": "low"
+      }
+    },
+    {
+      "id": "phase151-generic-symptoms",
+      "phase": "151",
+      "strengthened_at": "2026-09-19",
+      "pages": [
+        "/ja/technology/smartphone/smartphone-touchscreen-not-responding/",
+        "/ja/technology/smartphone/smartphone-screen-flickering-lines/",
+        "/ja/technology/smartphone/smartphone-no-sound/",
+        "/ja/technology/smartphone/smartphone-not-charging/",
+        "/en/technology/smartphone/smartphone-touchscreen-not-responding/",
+        "/en/technology/smartphone/smartphone-screen-flickering-lines/",
+        "/en/technology/smartphone/smartphone-no-sound/",
+        "/en/technology/smartphone/smartphone-not-charging/"
+      ],
+      "index_state": "index,follow",
+      "query_patterns": [
+        "タッチ反応しない",
+        "タッチパネル 反応しない",
+        "画面ちらつき",
+        "画面 線",
+        "スマホ 音が出ない",
+        "スマホ 充電できない"
+      ],
+      "baseline": {
+        "source_date": "2026-09-08",
+        "scope": "qualitative_cluster",
+        "confidence": "low"
+      }
+    }
+  ]
+}
