@@ -1,0 +1,280 @@
+{
+  "schema_version": "1.0",
+  "release": "phase159-versioned-software-snapshot-model",
+  "checked_at": "2026-09-19",
+  "purpose": "Bind connectivity evidence to a versioned software/radio/carrier-settings snapshot so results are not generalized from model name alone.",
+  "snapshot_types": [
+    "device_observed",
+    "official_latest_reference",
+    "platform_observation_template",
+    "external_test_snapshot",
+    "solqvia_test_snapshot"
+  ],
+  "dimensions": [
+    {
+      "id": "hardware_identity",
+      "order": 10,
+      "purpose": "Non-secret device identity needed to compare software snapshots.",
+      "fields": [
+        "model_name",
+        "model_number",
+        "market_region",
+        "sales_channel",
+        "original_carrier"
+      ]
+    },
+    {
+      "id": "os_release",
+      "order": 20,
+      "purpose": "User-visible OS release and API generation.",
+      "fields": [
+        "os_name",
+        "os_version",
+        "sdk_int",
+        "sdk_int_full",
+        "base_os"
+      ]
+    },
+    {
+      "id": "build_identity",
+      "order": 30,
+      "purpose": "Build-level identity kept distinct from user-visible OS version.",
+      "fields": [
+        "build_id",
+        "build_display",
+        "build_fingerprint",
+        "incremental",
+        "build_type",
+        "build_time"
+      ],
+      "boundary": "Android Build.FINGERPRINT uniquely identifies a build but must not be parsed for inferred semantics."
+    },
+    {
+      "id": "security_state",
+      "order": 40,
+      "purpose": "Security and modular update state that may change without changing the marketing OS name.",
+      "fields": [
+        "security_patch",
+        "system_modules_patch",
+        "kernel_version",
+        "google_play_system_update",
+        "apple_system_files_state"
+      ]
+    },
+    {
+      "id": "radio_firmware",
+      "order": 50,
+      "purpose": "Baseband/modem/radio firmware state separate from OS/build.",
+      "fields": [
+        "radio_firmware_version",
+        "baseband_full",
+        "baseband_suffix",
+        "modem_firmware",
+        "radio_observation_method"
+      ],
+      "boundary": "A published suffix or partial value never reconstructs a full modem/baseband version."
+    },
+    {
+      "id": "vendor_software",
+      "order": 60,
+      "purpose": "OEM UI/version channel and vendor software identifiers.",
+      "fields": [
+        "vendor_ui_name",
+        "vendor_ui_version",
+        "vendor_firmware_version",
+        "service_provider_software_version",
+        "regional_software_channel"
+      ]
+    },
+    {
+      "id": "carrier_settings",
+      "order": 70,
+      "purpose": "Carrier-side device configuration version where the platform exposes it.",
+      "fields": [
+        "carrier_name",
+        "carrier_settings_version",
+        "carrier_settings_update_available",
+        "carrier_settings_update_required"
+      ],
+      "boundary": "A newer carrier-settings version does not automatically mean better compatibility."
+    },
+    {
+      "id": "snapshot_context",
+      "order": 80,
+      "purpose": "Where and when the snapshot was observed or published.",
+      "fields": [
+        "observed_at",
+        "published_at",
+        "source_scope",
+        "subscription_carrier",
+        "sim_type",
+        "plan_family",
+        "network_mode",
+        "location_scope"
+      ]
+    },
+    {
+      "id": "runtime_binding",
+      "order": 90,
+      "purpose": "Link connectivity results to the exact or partial software snapshot that produced them.",
+      "fields": [
+        "binding_state",
+        "runtime_record_keys",
+        "binding_basis",
+        "known_version_gaps"
+      ],
+      "allowed_binding_state": [
+        "exact_snapshot",
+        "partial_snapshot",
+        "same_os_only",
+        "same_model_only",
+        "unbound"
+      ]
+    }
+  ],
+  "evidence_contract": {
+    "required": [
+      "type",
+      "source",
+      "checked_at",
+      "scope",
+      "confidence",
+      "role"
+    ],
+    "allowed_types": [
+      "manufacturer_official",
+      "carrier_official",
+      "os_platform_official",
+      "solqvia_real_device",
+      "external_real_device",
+      "user_report"
+    ],
+    "roles": [
+      "os_version",
+      "build_identity",
+      "security_state",
+      "radio_firmware",
+      "vendor_software",
+      "carrier_settings",
+      "runtime_binding"
+    ],
+    "confidence": [
+      "high",
+      "medium",
+      "low",
+      "unknown"
+    ]
+  },
+  "platform_observation_methods": {
+    "android": [
+      {
+        "method": "android.os.Build",
+        "fields": [
+          "FINGERPRINT",
+          "ID",
+          "DISPLAY",
+          "TIME",
+          "TYPE",
+          "getRadioVersion()"
+        ],
+        "notes": [
+          "Build.FINGERPRINT uniquely identifies the build and should not be parsed.",
+          "Build.getRadioVersion() returns the radio firmware version and can return null."
+        ]
+      },
+      {
+        "method": "android.os.Build.VERSION",
+        "fields": [
+          "INCREMENTAL",
+          "BASE_OS",
+          "SECURITY_PATCH",
+          "SDK_INT",
+          "SDK_INT_FULL"
+        ],
+        "notes": [
+          "SECURITY_PATCH is the user-visible date of the most recently applied security patch.",
+          "INCREMENTAL represents the underlying source-control build value."
+        ]
+      },
+      {
+        "method": "Android security state",
+        "fields": [
+          "system patch",
+          "system modules patch",
+          "kernel version"
+        ],
+        "notes": [
+          "System, modular system components, and kernel can have separate effective patch/version states."
+        ]
+      }
+    ],
+    "apple": [
+      {
+        "method": "Settings > General > About",
+        "fields": [
+          "iOS software version",
+          "Modem Firmware",
+          "Carrier",
+          "Carrier Settings Version / carrier information"
+        ],
+        "notes": [
+          "Apple exposes modem firmware and carrier/network information in About.",
+          "Carrier Settings Version can change independently of the iOS marketing version."
+        ]
+      },
+      {
+        "method": "Software Update / system files",
+        "fields": [
+          "installed iOS version",
+          "system-file automatic update state"
+        ],
+        "notes": [
+          "Apple documents that system files can be updated without changing the software version."
+        ]
+      }
+    ],
+    "samsung": [
+      {
+        "method": "Samsung official latest-version tables",
+        "fields": [
+          "Android version",
+          "One UI version",
+          "baseband suffix",
+          "latest update date"
+        ],
+        "notes": [
+          "Some Samsung Japan tables publish only the last three characters of the baseband version; store them as a suffix, not a full value."
+        ]
+      }
+    ]
+  },
+  "non_inference_rules": [
+    "Same model name does not imply the same software snapshot.",
+    "Same Android/iOS marketing version does not imply the same build, baseband/modem firmware or carrier settings.",
+    "Same One UI version does not imply the same baseband.",
+    "Same baseband suffix does not prove the same full baseband string.",
+    "Published latest-version data does not prove a user's device has installed that version.",
+    "A connectivity result is exact only when the tested software snapshot is explicitly observed.",
+    "A carrier operation-check result must not be bound to the manufacturer's latest baseband unless that exact baseband/build was part of the test evidence.",
+    "Carrier Settings Version and modem firmware are independent fields.",
+    "Android security patch, Google Play system update, system modules and kernel state may differ within the same OS generation.",
+    "Software updates can improve or regress behavior; newer is not automatically better for every connectivity function.",
+    "Runtime evidence remains valid only for its recorded conditions unless a wider scope is separately demonstrated.",
+    "Do not infer CSC/regional channel from unofficial code lists."
+  ],
+  "prohibited_fields": [
+    "serial_number",
+    "imei",
+    "imei2",
+    "meid",
+    "eid",
+    "eid_full_value",
+    "iccid",
+    "imsi",
+    "msisdn",
+    "activation_code",
+    "confirmation_code",
+    "account_id",
+    "account_password"
+  ]
+}
