@@ -85,6 +85,9 @@
         "ims_registration_state",
         "ims_transport",
         "registration_access_network",
+        "volte_registration",
+        "vonr_registration",
+        "vowifi_registration",
         "registration_failure_reason"
       ],
       "allowed_transport": [
@@ -118,6 +121,7 @@
       "order": 70,
       "purpose": "Directional call results and observed bearer.",
       "fields": [
+        "generic_voice",
         "voice_outgoing",
         "voice_incoming",
         "volte_call",
@@ -138,6 +142,7 @@
       "order": 80,
       "purpose": "Directional SMS results and path, with fallback kept explicit.",
       "fields": [
+        "generic_sms",
         "sms_send",
         "sms_receive",
         "sms_over_ims_send",
@@ -341,6 +346,9 @@
     "CarrierConfig VoNR enabled never proves an actual VoNR call.",
     "Wi-Fi Calling support never proves entitlement completion or an actual Wi-Fi call.",
     "IMS registration never proves outgoing or incoming voice success.",
+    "VoLTE registration does not prove an actual VoLTE call.",
+    "VoNR registration does not prove an actual VoNR call.",
+    "VoWiFi registration does not prove an actual Wi-Fi call.",
     "Generic voice success never proves VoLTE, VoNR or Wi-Fi Calling bearer.",
     "Generic SMS success never proves SMS over IMS.",
     "Outgoing success never proves incoming success; SMS send never proves SMS receive.",
