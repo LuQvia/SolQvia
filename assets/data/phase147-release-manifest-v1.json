@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "release": "phase147-au-esim-line-info-intent-strengthening",
+  "date": "2026-09-19",
+  "baseline": "Phase146 main 9267e81e938f1b211768aeb095c8edfbb14e3672",
+  "gsc_basis": {
+    "source": "2026-09-08 Phase128 GSC-backed backlog",
+    "query_cluster": "au line-information write complete / power OFF-ON message",
+    "impressions_lower_bound": 11,
+    "average_position_approx": "8-9",
+    "note": "This is the latest safely retrievable numeric basis in the current Project. The metric remains a lower bound / approximate value, not an exact 2026-09-19 measurement."
+  },
+  "page": {
+    "ja": "/ja/technology/smartphone/au-esim-after-activation-mms-au-mail-not-working/",
+    "en": "/en/technology/smartphone/au-esim-after-activation-mms-au-mail-not-working/",
+    "action": "strengthen_existing",
+    "index_state": "index,follow"
+  },
+  "changes": [
+    "Put the exact SMS search intent in the Japanese title/H1/lead.",
+    "Explain that the message is a restart instruction, not proof that every service works.",
+    "Separate line switching, eSIM profile setup, restart, mobile data, voice, SMS and au Mail/MMS.",
+    "Add dual-SIM troubleshooting and current au Mail preferred-SIM conditions.",
+    "Add a safe diagnostic order before eSIM deletion/reissue.",
+    "Link to SolQvia SIM/eSIM, communication and Dual-SIM diagnostics.",
+    "Refresh official au sources to 2026-09-19.",
+    "Strengthen the English companion without creating a new URL."
+  ],
+  "evidence_rules": [
+    "eSIM profile installation is not treated as proof of mobile data, voice, SMS or mail/MMS success.",
+    "The activation SMS is not treated as a full-service compatibility confirmation.",
+    "Dual-SIM isolation uses temporary disablement before deletion.",
+    "No SolQvia real-device confirmation is claimed."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "next_priority": "Re-run Phase145 when newer raw GSC data becomes available; otherwise continue to the next safely ranked existing-page candidate."
+}
