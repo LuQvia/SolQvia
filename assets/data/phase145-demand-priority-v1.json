@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "release": "phase145-gsc-demand-priority-engine",
+  "checked_at": "2026-09-19",
+  "source": {
+    "type": "project_library_summary",
+    "latest_retrievable_gsc_basis": "2026-09-08",
+    "source_name": "SolQvia_Phase128_New_Content_Backlog_2026-09-08.txt",
+    "note": "Raw 2026-09-11/12 GSC ZIP files were referenced in prior conversation history but are not retrievable from the current Project/Library file surface. This seed therefore preserves only values explicitly supported by the retrievable 2026-09-08 backlog."
+  },
+  "scoring": {
+    "note": "Seed-only priority using retrievable 2026-09-08 GSC-backed values. Raw-query/page exports will replace this seed ranking when available.",
+    "impression_weight_max": 50,
+    "position_opportunity_weight_max": 30,
+    "click_weight_max": 20,
+    "uncertainty_penalties": {
+      "lower_bound_impressions": 3,
+      "approximate_position": 2
+    }
+  },
+  "numeric_priority": [
+    {
+      "rank": 1,
+      "id": "android-vpn-block-nonvpn",
+      "demand_score": 54.95,
+      "confidence": "high",
+      "action": "strengthen_existing",
+      "current_url": "/ja/technology/smartphone/android-always-on-vpn-blocks-internet-when-vpn-disconnected/",
+      "query_cluster": [
+        "VPN以外の接続をブロックとは"
+      ],
+      "demand": {
+        "impressions": 9,
+        "clicks": null,
+        "ctr": null,
+        "position": 8.4,
+        "metric_type": "exact_reported_value"
+      },
+      "reason": "Existing page already matches the query intent; improve snippet/FAQ and current UI wording rather than create another page."
+    },
+    {
+      "rank": 2,
+      "id": "au-line-info-write-complete",
+      "demand_score": 51.92,
+      "confidence": "medium",
+      "action": "strengthen_existing",
+      "current_url": "/ja/technology/smartphone/au-esim-after-activation-mms-au-mail-not-working/",
+      "query_cluster": [
+        "au 回線情報 書込み 終了 電源 OFF ON",
+        "電話回線情報の書込みが終了しました"
+      ],
+      "demand": {
+        "impressions": 11,
+        "impressions_is_lower_bound": true,
+        "clicks": null,
+        "ctr": null,
+        "position": 8.5,
+        "position_is_approximate": true,
+        "metric_type": "reported_lower_bound_and_approx_position"
+      },
+      "reason": "Dedicated exact-message page now exists. Priority should shift from URL creation to snippet/query match, troubleshooting branches and SIM/eSIM diagnostic linkage."
+    },
+    {
+      "rank": 3,
+      "id": "corp-reset-management",
+      "demand_score": 40.04,
+      "confidence": "high",
+      "action": "strengthen_existing",
+      "current_url": "/ja/technology/smartphone/company-owned-smartphone-reset-mdm-frp-activation-lock/",
+      "query_cluster": [
+        "法人 携帯 初期化 管理設定"
+      ],
+      "demand": {
+        "impressions": 15,
+        "clicks": null,
+        "ctr": null,
+        "position": null,
+        "metric_type": "exact_reported_value"
+      },
+      "reason": "Dedicated page now exists; do not create a duplicate URL. Re-evaluate current GSC query/page fit and strengthen missing MDM/Android Enterprise/supervised-iPhone intent."
+    }
+  ],
+  "qualitative_queue": [
+    {
+      "id": "suspicious-app-removal",
+      "action": "strengthen_existing",
+      "confidence": "low",
+      "current_url": "/ja/technology/smartphone/smartphone-remove-suspicious-app/",
+      "query_cluster": [
+        "怪しいアプリ",
+        "不審アプリ",
+        "盗聴アプリ"
+      ],
+      "demand": {
+        "impressions": null,
+        "clicks": null,
+        "ctr": null,
+        "position_min": 19,
+        "position_max": 33,
+        "reported_pattern": "multiple queries with roughly 15-20 impressions each",
+        "metric_type": "cluster_summary_not_safely_aggregatable"
+      },
+      "reason": "Demand exists across multiple query variants, but the retrievable source does not provide a safe aggregate total. Keep outside exact numeric ranking until raw GSC rows are available."
+    },
+    {
+      "id": "google-lens-image-search",
+      "action": "strengthen_existing",
+      "confidence": "low",
+      "current_url": "/ja/technology/smartphone/google-lens-image-search/",
+      "query_cluster": [
+        "google lens search",
+        "search with lens",
+        "image search"
+      ],
+      "demand": {
+        "impressions": null,
+        "clicks": null,
+        "ctr": null,
+        "position": null,
+        "metric_type": "qualitative_cluster_only"
+      },
+      "reason": "Query family is reported, but retrievable source does not expose numerical rows. Re-score when raw GSC export is supplied."
+    },
+    {
+      "id": "generic-device-symptoms",
+      "action": "strengthen_existing",
+      "confidence": "low",
+      "current_url": [
+        "/ja/technology/smartphone/smartphone-touchscreen-not-responding/",
+        "/ja/technology/smartphone/smartphone-screen-flickering-lines/",
+        "/ja/technology/smartphone/smartphone-no-sound/",
+        "/ja/technology/smartphone/smartphone-not-charging/"
+      ],
+      "query_cluster": [
+        "タッチ反応しない",
+        "画面ちらつき 線",
+        "スマホ 音が出ない",
+        "スマホ 充電できない"
+      ],
+      "demand": {
+        "impressions": null,
+        "clicks": null,
+        "ctr": null,
+        "position": null,
+        "metric_type": "qualitative_cluster_only"
+      },
+      "reason": "Existing pages should be improved instead of spawning near-duplicate symptom URLs."
+    }
+  ],
+  "guardrails": [
+    "Do not invent missing GSC metrics.",
+    "Lower-bound and approximate metrics must remain explicitly labeled.",
+    "Candidates without safely aggregatable numeric demand stay outside exact numeric ranking.",
+    "If a dedicated URL now exists, default to strengthen_existing instead of creating a duplicate.",
+    "New URLs require distinct intent, insufficient existing coverage, evidence availability and preserved SEO observation stability."
+  ],
+  "caveat": "The checked-in seed output is conservative and must not be treated as a fresh 2026-09-19 GSC ranking. It is a reproducible bootstrap until a newer raw export is available."
+}
