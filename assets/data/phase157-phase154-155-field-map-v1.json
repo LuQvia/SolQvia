@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "release": "phase157-ims-volte-vonr-evidence-matrix",
+  "phase154": {
+    "layer": "ims_services",
+    "mappings": [
+      {
+        "phase154_field": "ims_registration",
+        "phase157_path": "matrix.ims_registration.ims_registration_state"
+      },
+      {
+        "phase154_field": "volte_registration",
+        "phase157_path": "matrix.voice_runtime.volte_call",
+        "note": "Only map when evidence explicitly represents VoLTE registration/call bearer; legacy combined values must not auto-map."
+      },
+      {
+        "phase154_field": "vonr_registration",
+        "phase157_path": "matrix.voice_runtime.vonr_call",
+        "note": "Only explicit VoNR evidence."
+      },
+      {
+        "phase154_field": "voice_outgoing",
+        "phase157_path": "matrix.voice_runtime.voice_outgoing"
+      },
+      {
+        "phase154_field": "voice_incoming",
+        "phase157_path": "matrix.voice_runtime.voice_incoming"
+      },
+      {
+        "phase154_field": "sms_send",
+        "phase157_path": "matrix.sms_runtime.sms_send"
+      },
+      {
+        "phase154_field": "sms_receive",
+        "phase157_path": "matrix.sms_runtime.sms_receive"
+      },
+      {
+        "phase154_field": "sms_over_ims",
+        "phase157_path": "matrix.sms_runtime.sms_over_ims_send",
+        "note": "Send/receive remain separate in Phase157; a coarse upstream field cannot populate both directions without exact semantics."
+      },
+      {
+        "phase154_field": "wifi_calling",
+        "phase157_path": "matrix.voice_runtime.wifi_call"
+      },
+      {
+        "phase154_field": "emergency_calling",
+        "phase157_path": "matrix.continuity_emergency.emergency_calling"
+      },
+      {
+        "phase154_field": "rcs_registration",
+        "phase157_path": "matrix.service_capability.rcs_capability"
+      }
+    ]
+  },
+  "phase155": {
+    "layer": "carrier_configuration",
+    "mappings": [
+      {
+        "phase155_field": "feature_policies.volte_policy",
+        "phase157_path": "matrix.carrier_policy.volte_available_policy"
+      },
+      {
+        "phase155_field": "feature_policies.ims_policy",
+        "phase157_path": "matrix.carrier_policy.ims_provisioning_required"
+      },
+      {
+        "phase155_field": "feature_policies.wifi_calling_policy",
+        "phase157_path": "matrix.carrier_policy.wifi_calling_available_policy"
+      },
+      {
+        "phase155_field": "feature_policies.sms_mms_policy",
+        "phase157_path": "matrix.carrier_policy.sms_over_ims_supported_policy"
+      }
+    ]
+  },
+  "legacy_projection_rules": [
+    {
+      "source": "Phase143 runtime.voice",
+      "target": "matrix.voice_runtime.generic_voice",
+      "rule": "Keep generic only. Never populate outgoing/incoming or VoLTE/VoNR."
+    },
+    {
+      "source": "Phase143 runtime.sms",
+      "target": "matrix.sms_runtime.generic_sms",
+      "rule": "Keep generic only. Never populate send/receive or SMS-over-IMS."
+    },
+    {
+      "source": "Phase143 runtime.volte_ims_registration",
+      "target": "none_by_default",
+      "rule": "Legacy combined field is ambiguous. Do not split into IMS registration, VoLTE registration or call bearer unless the original source scope is explicit."
+    }
+  ]
+}
