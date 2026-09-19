@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "release": "phase162-real-device-capture-format",
+  "checked_at": "2026-09-19",
+  "target": "Phase161 diagnosis input",
+  "rule": "Projection is a structural copy only. It must never derive or promote values across layers.",
+  "direct_mapping": {
+    "capture_test_goal": "goal",
+    "observation_records_key": "observations.<key>",
+    "observation_records_value": "observations.<key>"
+  },
+  "metadata_passthrough": [
+    "capture_id",
+    "tested_at",
+    "device.model_name",
+    "device.model_number",
+    "subscription.carrier",
+    "subscription.sim_type",
+    "software_snapshot.phase159_snapshot_key",
+    "software_snapshot.binding_state"
+  ],
+  "transformation_rules": [
+    "Only observation_records with a non-null key and value are projected.",
+    "Duplicate keys with different values are rejected.",
+    "Duplicate keys with the same value are allowed only if evidence refs are merged before projection.",
+    "No missing observation is synthesized as confirmed/failed.",
+    "No generic voice/SMS/data result is split into directional or internal states.",
+    "No 4G/5G/5G+ UI hint is promoted to registration/CA/DC.",
+    "No software version match is promoted beyond the recorded binding_state.",
+    "privacy_review must pass before a capture can be projected."
+  ],
+  "output_example": {
+    "goal": "no_mobile_data",
+    "observations": {
+      "subscriber.sim_or_esim_recognized": "confirmed",
+      "network.service_state": "in_service",
+      "network.data_registration": "registered",
+      "data.apn_or_dnn": "configured",
+      "data.runtime": "failed"
+    },
+    "provenance": {
+      "capture_id": "sqv-example",
+      "tested_at": "2026-09-19"
+    }
+  }
+}
