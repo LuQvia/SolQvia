@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0",
+  "release": "phase162-real-device-capture-format",
+  "checked_at": "2026-09-19",
+  "purpose": "Define one repeatable SolQvia real-device capture session that binds device/carrier/SIM/software context to explicit Phase161 observations and evidence without storing subscriber/device secrets or inferring hidden network state.",
+  "capture_levels": [
+    {
+      "id": "baseline",
+      "meaning": "User-visible settings plus basic runtime checks; no privileged telephony APIs required."
+    },
+    {
+      "id": "standard",
+      "meaning": "Baseline plus repeatable data/voice/SMS and software-snapshot observations."
+    },
+    {
+      "id": "deep",
+      "meaning": "Standard plus platform/API evidence such as IMS registration or physical-channel data when legitimately available."
+    }
+  ],
+  "required_top_level": [
+    "capture_id",
+    "capture_version",
+    "capture_level",
+    "test_goal",
+    "tested_at",
+    "device",
+    "subscription",
+    "software_snapshot",
+    "environment",
+    "observation_records",
+    "evidence",
+    "privacy_review"
+  ],
+  "device": {
+    "allowed_fields": [
+      "model_name",
+      "model_number",
+      "market_region",
+      "sales_channel",
+      "original_carrier",
+      "device_family"
+    ],
+    "prohibited_fields": [
+      "serial_number",
+      "imei",
+      "imei2",
+      "meid",
+      "eid",
+      "eid_full_value"
+    ]
+  },
+  "subscription": {
+    "allowed_fields": [
+      "carrier",
+      "brand",
+      "plan_family",
+      "sim_type",
+      "line_role",
+      "slot_label",
+      "mvno_or_mno"
+    ],
+    "prohibited_fields": [
+      "phone_number",
+      "msisdn",
+      "iccid",
+      "imsi",
+      "account_id",
+      "account_password",
+      "activation_code",
+      "confirmation_code"
+    ]
+  },
+  "software_snapshot": {
+    "allowed_fields": [
+      "phase159_snapshot_key",
+      "binding_state",
+      "os_name",
+      "os_version",
+      "build_id",
+      "build_fingerprint",
+      "security_patch",
+      "baseband_full",
+      "baseband_suffix",
+      "modem_firmware",
+      "vendor_ui_name",
+      "vendor_ui_version",
+      "carrier_settings_version",
+      "carrier_config_observed"
+    ],
+    "binding_states": [
+      "exact_snapshot",
+      "partial_snapshot",
+      "same_os_only",
+      "same_model_only",
+      "unbound",
+      "unknown"
+    ]
+  },
+  "environment": {
+    "allowed_fields": [
+      "country_region",
+      "location_scope",
+      "indoor_outdoor",
+      "wifi_enabled",
+      "airplane_mode",
+      "dual_sim_active",
+      "network_mode",
+      "roaming",
+      "notes"
+    ],
+    "privacy_rule": "Use coarse test-location scope only. Do not store a tester home address or precise personal location."
+  },
+  "observation_record": {
+    "required": [
+      "key",
+      "value",
+      "method",
+      "confidence",
+      "evidence_refs"
+    ],
+    "methods": [
+      "device_ui",
+      "carrier_ui",
+      "carrier_app",
+      "platform_api",
+      "manual_runtime_test",
+      "call_test",
+      "sms_test",
+      "http_test",
+      "dns_test",
+      "solqvia_existing_evidence",
+      "manufacturer_official",
+      "carrier_official",
+      "not_observed"
+    ],
+    "confidence": [
+      "high",
+      "medium",
+      "low",
+      "unknown"
+    ],
+    "evidence_rule": "Every confirmed/failed/registered/configured/connected/validated observation should have at least one evidence reference unless the method is an explicitly recorded live manual test."
+  },
+  "evidence_record": {
+    "required": [
+      "id",
+      "type",
+      "captured_at",
+      "scope"
+    ],
+    "types": [
+      "screenshot_redacted",
+      "screen_note",
+      "api_output_redacted",
+      "manual_test_note",
+      "official_url",
+      "solqvia_prior_record",
+      "call_result",
+      "sms_result",
+      "network_test_result"
+    ],
+    "optional_fields": [
+      "source",
+      "artifact_ref",
+      "note",
+      "redaction_applied"
+    ],
+    "privacy_rule": "Screenshots/API output must be redacted before retention when they contain IMEI/EID/ICCID/phone number/account identifiers."
+  },
+  "privacy_review": {
+    "required": [
+      "completed",
+      "prohibited_identifiers_present",
+      "redaction_required",
+      "review_note"
+    ],
+    "pass_condition": "completed=true AND prohibited_identifiers_present=false"
+  },
+  "prohibited_field_names": [
+    "serial_number",
+    "imei",
+    "imei2",
+    "meid",
+    "eid",
+    "eid_full_value",
+    "iccid",
+    "imsi",
+    "msisdn",
+    "phone_number",
+    "activation_code",
+    "confirmation_code",
+    "account_id",
+    "account_password",
+    "apn_username",
+    "apn_password",
+    "password",
+    "pin",
+    "puk"
+  ],
+  "default_exclusions": [
+    "Do not place real emergency calls as a routine test.",
+    "Do not delete/reissue an eSIM merely to complete a capture.",
+    "Do not factory-reset or network-reset a device as a routine capture step.",
+    "Do not change hidden/service-menu radio settings solely to force a desired result.",
+    "Do not retain raw About/status screenshots before redacting IMEI/EID/ICCID/phone numbers."
+  ],
+  "phase161_contract": {
+    "source": "assets/data/phase161-diagnosis-engine-schema-v1.json",
+    "rule": "observation_records.key must be a Phase161 canonical observation key. Projection copies only explicitly recorded values; it performs no semantic inference."
+  }
+}
