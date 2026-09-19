@@ -100,6 +100,7 @@
       ],
       "test_order": [
         "Capture policy/provisioning/registration only when exact evidence is available.",
+        "On iPhone, Settings > General > About can expose carrier/network information; tapping Carrier can show IMS status. Record only the visible status and do not infer hidden IMS internals.",
         "Test outgoing and incoming voice separately.",
         "Test SMS send and receive separately.",
         "Record VoLTE/VoNR/Wi-Fi Calling bearer only when actually observed."
