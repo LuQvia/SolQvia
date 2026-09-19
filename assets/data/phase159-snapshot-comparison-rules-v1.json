@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0",
+  "release": "phase159-versioned-software-snapshot-model",
+  "checked_at": "2026-09-19",
+  "comparison_levels": [
+    {
+      "id": "exact",
+      "requirements": [
+        "same exact model number",
+        "same market/channel context",
+        "same observed OS/build identity when exposed",
+        "same observed radio/baseband/modem firmware when exposed",
+        "same carrier-settings version when relevant and exposed"
+      ],
+      "result": "Runtime results may be treated as exact-snapshot evidence for the recorded carrier/SIM/plan/test conditions."
+    },
+    {
+      "id": "partial",
+      "requirements": [
+        "same exact model number",
+        "some but not all version dimensions match or are available"
+      ],
+      "result": "Keep the result but expose the missing version dimensions. Do not claim exact reproducibility."
+    },
+    {
+      "id": "same_os_only",
+      "requirements": [
+        "same exact model number",
+        "same OS marketing version",
+        "build/radio/carrier-settings differ or are unknown"
+      ],
+      "result": "Do not merge runtime results. Use only as a weak comparison."
+    },
+    {
+      "id": "same_model_only",
+      "requirements": [
+        "same exact model number",
+        "software snapshot is unknown or clearly different"
+      ],
+      "result": "Treat as historical/model-level context, not current compatibility proof."
+    },
+    {
+      "id": "not_comparable",
+      "requirements": [
+        "different exact model/market variant or incompatible test scope"
+      ],
+      "result": "Do not combine runtime outcomes."
+    }
+  ],
+  "change_events": [
+    "os_major_update",
+    "os_minor_update",
+    "security_patch_update",
+    "google_play_system_update",
+    "baseband_or_radio_update",
+    "vendor_ui_update",
+    "carrier_settings_update",
+    "system_file_update",
+    "unknown_software_update"
+  ],
+  "revalidation_priority": [
+    {
+      "change": "baseband_or_radio_update",
+      "retest": [
+        "network registration",
+        "5G SA/NSA",
+        "IMS registration",
+        "VoLTE/VoNR",
+        "SMS",
+        "data session"
+      ],
+      "priority": "high"
+    },
+    {
+      "change": "carrier_settings_update",
+      "retest": [
+        "APN/data",
+        "5G",
+        "IMS/VoLTE",
+        "Wi-Fi Calling",
+        "tethering",
+        "MMS"
+      ],
+      "priority": "high"
+    },
+    {
+      "change": "os_major_update",
+      "retest": [
+        "eSIM",
+        "CarrierConfig/carrier settings",
+        "registration",
+        "data",
+        "IMS",
+        "Dual SIM"
+      ],
+      "priority": "high"
+    },
+    {
+      "change": "security_patch_update",
+      "retest": [
+        "previously failing connectivity path when issue timing matches update"
+      ],
+      "priority": "conditional"
+    },
+    {
+      "change": "system_file_update",
+      "retest": [
+        "affected function only when release timing/symptom evidence suggests relevance"
+      ],
+      "priority": "conditional"
+    }
+  ]
+}
