@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "release": "phase161-failure-diagnosis-engine",
+  "checked_at": "2026-09-19",
+  "categories": [
+    {
+      "id": "subscriber_identity_unrecognized",
+      "layer": "subscriber_identity",
+      "source_phase": "161",
+      "meaning": "The device does not recognize the target SIM/eSIM identity at the terminal level.",
+      "next_checks": [
+        "SIM/eSIM selection",
+        "profile enablement",
+        "physical SIM seating only when applicable",
+        "device/region support"
+      ],
+      "forbidden_inferences": [
+        "Do not diagnose APN, IMS, CA or DNS before subscriber recognition."
+      ]
+    },
+    {
+      "id": "upstream_state_unknown",
+      "layer": "cross_layer",
+      "source_phase": "161",
+      "meaning": "A required upstream dependency is unknown, so later-layer diagnosis would be speculative.",
+      "next_checks": [
+        "Ask the earliest unanswered dependency question."
+      ],
+      "forbidden_inferences": [
+        "Unknown is not failure."
+      ]
+    },
+    {
+      "id": "evidence_contradiction",
+      "layer": "cross_layer",
+      "source_phase": "161",
+      "meaning": "Explicit observations conflict and require scope/time/software reconciliation before diagnosis.",
+      "next_checks": [
+        "Check software snapshot",
+        "Check SIM/carrier/test condition",
+        "Separate test timestamps"
+      ],
+      "forbidden_inferences": [
+        "Do not choose a root cause from contradictory evidence."
+      ]
+    },
+    {
+      "id": "software_snapshot_not_comparable",
+      "layer": "software_snapshot",
+      "source_phase": "161",
+      "meaning": "The available runtime evidence and current software/baseband/carrier-settings state are not sufficiently comparable.",
+      "next_checks": [
+        "Capture Phase159 snapshot",
+        "Retest affected function on current snapshot"
+      ],
+      "forbidden_inferences": [
+        "Historical result does not automatically apply to current software."
+      ]
+    },
+    {
+      "id": "runtime_success_internal_state_unknown",
+      "layer": "cross_layer",
+      "source_phase": "161",
+      "meaning": "The user-facing function succeeds but internal implementation details remain unknown.",
+      "next_checks": [
+        "Only collect deeper internal evidence if the diagnostic goal requires it."
+      ],
+      "forbidden_inferences": [
+        "Success does not backfill hidden APN/IMS/CA implementation."
+      ]
+    }
+  ]
+}

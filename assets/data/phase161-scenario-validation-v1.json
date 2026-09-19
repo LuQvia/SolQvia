@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "release": "phase161-failure-diagnosis-engine",
+  "checked_at": "2026-09-19",
+  "methodology": "Rule-pack evaluation using the same condition/question-selection logic implemented in scripts/phase161-diagnosis-engine.mjs against the committed scenario JSON.",
+  "scenarios": 10,
+  "passed": 10,
+  "failed": 0,
+  "results": [
+    {
+      "id": "s01-esim-installed-enable-unknown",
+      "status": "requires_more_evidence",
+      "next_question": "q_esim_profile_enabled"
+    },
+    {
+      "id": "s02-esim-enabled-carrier-activation-failed",
+      "status": "localized",
+      "next_question": null
+    },
+    {
+      "id": "s03-in-service-no-data-registration",
+      "status": "localized",
+      "next_question": null
+    },
+    {
+      "id": "s04-registered-no-data-apn-unknown",
+      "status": "requires_more_evidence",
+      "next_question": "q_apn_dnn"
+    },
+    {
+      "id": "s05-session-connected-ip-failed",
+      "status": "localized",
+      "next_question": null
+    },
+    {
+      "id": "s06-data-works-voice-fails-ims-unknown",
+      "status": "requires_more_evidence",
+      "next_question": "q_ims_policy"
+    },
+    {
+      "id": "s07-ims-registered-outgoing-fails",
+      "status": "localized",
+      "next_question": null
+    },
+    {
+      "id": "s08-fiveg-sa-does-not-prove-vonr",
+      "status": "requires_more_evidence",
+      "next_question": "q_vonr_bearer"
+    },
+    {
+      "id": "s09-5gplus-display-only",
+      "status": "requires_more_evidence",
+      "next_question": "q_physical_channels"
+    },
+    {
+      "id": "s10-runtime-success-does-not-backfill-internals",
+      "status": "requires_more_evidence",
+      "next_question": "q_sim_recognized"
+    }
+  ],
+  "guardrails_verified": [
+    "Profile install does not prove profile enablement.",
+    "Profile enablement does not prove carrier activation.",
+    "In-service does not prove data registration.",
+    "Data registration does not skip APN/DNN diagnosis.",
+    "Connected packet session does not hide explicit IP-link failure.",
+    "Data success plus voice failure does not skip IMS policy/registration.",
+    "Directional voice failure is localized only after both directions plus IMS/MMTel state are known.",
+    "5G SA does not prove VoNR.",
+    "5G+/NR Advanced display does not prove a CA/DC combination.",
+    "Generic runtime data success does not backfill APN/session/DNS internals."
+  ]
+}

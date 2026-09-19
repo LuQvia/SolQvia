@@ -1,0 +1,1274 @@
+{
+  "schema_version": "1.0",
+  "release": "phase161-failure-diagnosis-engine",
+  "checked_at": "2026-09-19",
+  "rules": [
+    {
+      "id": "r_subscriber_not_recognized",
+      "goals": [
+        "esim_setup",
+        "no_service",
+        "no_mobile_data",
+        "voice_failure",
+        "sms_failure",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "subscriber.sim_or_esim_recognized",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "candidate_failure_ids": [
+        "subscriber_identity_unrecognized"
+      ],
+      "localized_when": [
+        {
+          "observation": "subscriber.sim_or_esim_recognized",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "APN failure",
+        "IMS failure",
+        "carrier aggregation failure"
+      ]
+    },
+    {
+      "id": "r_esim_install_failed",
+      "goals": [
+        "esim_setup",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "esim.profile_install",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "candidate_failure_ids": [
+        "profile_install_or_policy_failure"
+      ],
+      "localized_when": [
+        {
+          "observation": "esim.profile_install",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "Network registration failure",
+        "APN failure"
+      ]
+    },
+    {
+      "id": "r_esim_enable_failed",
+      "goals": [
+        "esim_setup",
+        "no_service",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "esim.profile_install",
+          "op": "eq",
+          "value": "confirmed"
+        },
+        {
+          "observation": "esim.profile_enable",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "candidate_failure_ids": [
+        "profile_enable_failure"
+      ],
+      "localized_when": [
+        {
+          "observation": "esim.profile_enable",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "Carrier line activation completed",
+        "Network registration"
+      ]
+    },
+    {
+      "id": "r_esim_profile_installed_enable_unknown",
+      "goals": [
+        "esim_setup",
+        "no_service",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "esim.profile_install",
+          "op": "eq",
+          "value": "confirmed"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "esim.profile_enable",
+          "op": "in",
+          "value": [
+            "confirmed",
+            "failed"
+          ]
+        }
+      ],
+      "candidate_failure_ids": [
+        "upstream_state_unknown",
+        "profile_enable_failure"
+      ],
+      "next_question_ids": [
+        "q_esim_profile_enabled"
+      ],
+      "forbidden_inferences": [
+        "Profile install does not prove profile enablement."
+      ]
+    },
+    {
+      "id": "r_esim_enabled_activation_unknown",
+      "goals": [
+        "esim_setup",
+        "no_service",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "esim.profile_enable",
+          "op": "eq",
+          "value": "confirmed"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "esim.carrier_line_activation",
+          "op": "in",
+          "value": [
+            "confirmed",
+            "failed"
+          ]
+        }
+      ],
+      "candidate_failure_ids": [
+        "upstream_state_unknown",
+        "carrier_activation_or_line_switch_pending"
+      ],
+      "next_question_ids": [
+        "q_carrier_line_activation"
+      ],
+      "forbidden_inferences": [
+        "Enabled profile does not prove carrier backend activation or network registration."
+      ]
+    },
+    {
+      "id": "r_carrier_activation_failed",
+      "goals": [
+        "esim_setup",
+        "no_service",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "esim.profile_enable",
+          "op": "eq",
+          "value": "confirmed"
+        },
+        {
+          "observation": "esim.carrier_line_activation",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "candidate_failure_ids": [
+        "carrier_activation_or_line_switch_pending"
+      ],
+      "localized_when": [
+        {
+          "observation": "esim.carrier_line_activation",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "Profile download failure"
+      ]
+    },
+    {
+      "id": "r_no_service",
+      "goals": [
+        "no_service",
+        "no_mobile_data",
+        "voice_failure",
+        "sms_failure",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "network.service_state",
+          "op": "in",
+          "value": [
+            "out_of_service",
+            "emergency_only"
+          ]
+        }
+      ],
+      "candidate_failure_ids": [
+        "no_plmn_service",
+        "network_registration_failure"
+      ],
+      "localized_when": [
+        {
+          "observation": "network.service_state",
+          "op": "in",
+          "value": [
+            "out_of_service",
+            "emergency_only"
+          ]
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "DNS failure",
+        "IMS is the only cause",
+        "APN is the only cause"
+      ]
+    },
+    {
+      "id": "r_service_state_unknown",
+      "goals": [
+        "no_service",
+        "no_mobile_data",
+        "voice_failure",
+        "sms_failure",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "subscriber.sim_or_esim_recognized",
+          "op": "eq",
+          "value": "confirmed"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "network.service_state",
+          "op": "known"
+        }
+      ],
+      "candidate_failure_ids": [
+        "upstream_state_unknown",
+        "no_plmn_service"
+      ],
+      "next_question_ids": [
+        "q_service_state"
+      ],
+      "forbidden_inferences": [
+        "Do not skip directly to APN or IMS before service state."
+      ]
+    },
+    {
+      "id": "r_data_registration_failed",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "network.service_state",
+          "op": "eq",
+          "value": "in_service"
+        },
+        {
+          "observation": "network.data_registration",
+          "op": "eq",
+          "value": "not_registered"
+        }
+      ],
+      "candidate_failure_ids": [
+        "data_registration_failure"
+      ],
+      "localized_when": [
+        {
+          "observation": "network.data_registration",
+          "op": "eq",
+          "value": "not_registered"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "PDU session failure before data registration succeeds"
+      ]
+    },
+    {
+      "id": "r_data_registration_unknown",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "network.service_state",
+          "op": "eq",
+          "value": "in_service"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "network.data_registration",
+          "op": "known"
+        }
+      ],
+      "candidate_failure_ids": [
+        "upstream_state_unknown",
+        "data_registration_failure"
+      ],
+      "next_question_ids": [
+        "q_data_registration"
+      ],
+      "forbidden_inferences": [
+        "APN/session diagnosis before data registration is known"
+      ]
+    },
+    {
+      "id": "r_wrong_data_line",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "data.selected_line",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "candidate_failure_ids": [
+        "wrong_or_inactive_data_subscription",
+        "dual_sim_data_path_mismatch"
+      ],
+      "localized_when": [
+        {
+          "observation": "data.selected_line",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "APN failure"
+      ]
+    },
+    {
+      "id": "r_data_line_unknown",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "network.data_registration",
+          "op": "eq",
+          "value": "registered"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "data.selected_line",
+          "op": "known"
+        }
+      ],
+      "candidate_failure_ids": [
+        "wrong_or_inactive_data_subscription",
+        "dual_sim_data_path_mismatch",
+        "upstream_state_unknown"
+      ],
+      "next_question_ids": [
+        "q_selected_data_line"
+      ],
+      "forbidden_inferences": [
+        "Do not assume the intended SIM owns the data path."
+      ]
+    },
+    {
+      "id": "r_apn_missing",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "network.data_registration",
+          "op": "eq",
+          "value": "registered"
+        },
+        {
+          "observation": "data.apn_or_dnn",
+          "op": "eq",
+          "value": "not_configured"
+        }
+      ],
+      "candidate_failure_ids": [
+        "apn_dnn_missing_or_wrong"
+      ],
+      "localized_when": [
+        {
+          "observation": "data.apn_or_dnn",
+          "op": "eq",
+          "value": "not_configured"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "eSIM profile failure"
+      ]
+    },
+    {
+      "id": "r_apn_unknown",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "network.data_registration",
+          "op": "eq",
+          "value": "registered"
+        },
+        {
+          "observation": "data.runtime",
+          "op": "neq",
+          "value": "confirmed"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "data.apn_or_dnn",
+          "op": "known"
+        }
+      ],
+      "candidate_failure_ids": [
+        "apn_dnn_missing_or_wrong",
+        "apn_auth_or_policy_failure",
+        "upstream_state_unknown"
+      ],
+      "next_question_ids": [
+        "q_apn_dnn"
+      ],
+      "forbidden_inferences": [
+        "APN cannot be diagnosed from antenna bars or 5G icon."
+      ]
+    },
+    {
+      "id": "r_packet_session_failed",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "data.apn_or_dnn",
+          "op": "eq",
+          "value": "configured"
+        },
+        {
+          "observation": "data.packet_session",
+          "op": "eq",
+          "value": "disconnected"
+        }
+      ],
+      "candidate_failure_ids": [
+        "pdn_or_pdu_session_rejected"
+      ],
+      "localized_when": [
+        {
+          "observation": "data.packet_session",
+          "op": "eq",
+          "value": "disconnected"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "DNS failure"
+      ]
+    },
+    {
+      "id": "r_packet_session_unknown",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "data.apn_or_dnn",
+          "op": "eq",
+          "value": "configured"
+        },
+        {
+          "observation": "data.runtime",
+          "op": "neq",
+          "value": "confirmed"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "data.packet_session",
+          "op": "known"
+        }
+      ],
+      "candidate_failure_ids": [
+        "pdn_or_pdu_session_rejected",
+        "upstream_state_unknown"
+      ],
+      "next_question_ids": [
+        "q_packet_session"
+      ],
+      "forbidden_inferences": [
+        "Connected data cannot be assumed from APN presence."
+      ]
+    },
+    {
+      "id": "r_ip_link_failed",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "data.packet_session",
+          "op": "eq",
+          "value": "connected"
+        },
+        {
+          "observation": "data.ip_link",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "candidate_failure_ids": [
+        "ip_address_or_route_failure",
+        "ipv4_ipv6_compatibility_issue"
+      ],
+      "localized_when": [
+        {
+          "observation": "data.ip_link",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "IMS failure"
+      ]
+    },
+    {
+      "id": "r_ip_link_unknown",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "data.packet_session",
+          "op": "eq",
+          "value": "connected"
+        },
+        {
+          "observation": "data.runtime",
+          "op": "neq",
+          "value": "confirmed"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "data.ip_link",
+          "op": "known"
+        }
+      ],
+      "candidate_failure_ids": [
+        "ip_address_or_route_failure",
+        "ipv4_ipv6_compatibility_issue",
+        "upstream_state_unknown"
+      ],
+      "next_question_ids": [
+        "q_ip_link"
+      ],
+      "forbidden_inferences": [
+        "DNS cannot be evaluated before usable IP/link state."
+      ]
+    },
+    {
+      "id": "r_dns_failed",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "data.ip_link",
+          "op": "eq",
+          "value": "confirmed"
+        },
+        {
+          "observation": "data.dns",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "candidate_failure_ids": [
+        "dns_configuration_or_resolution_failure"
+      ],
+      "localized_when": [
+        {
+          "observation": "data.dns",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "Packet session absent if raw IP/link is already confirmed"
+      ]
+    },
+    {
+      "id": "r_dns_unknown",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "data.ip_link",
+          "op": "eq",
+          "value": "confirmed"
+        },
+        {
+          "observation": "data.runtime",
+          "op": "neq",
+          "value": "confirmed"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "data.dns",
+          "op": "known"
+        }
+      ],
+      "candidate_failure_ids": [
+        "dns_configuration_or_resolution_failure",
+        "upstream_state_unknown"
+      ],
+      "next_question_ids": [
+        "q_dns"
+      ],
+      "forbidden_inferences": [
+        "Do not assume DNS success from assigned IP."
+      ]
+    },
+    {
+      "id": "r_validation_failed",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "data.dns",
+          "op": "eq",
+          "value": "confirmed"
+        },
+        {
+          "observation": "data.validation",
+          "op": "eq",
+          "value": "not_validated"
+        }
+      ],
+      "candidate_failure_ids": [
+        "network_not_validated"
+      ],
+      "localized_when": [
+        {
+          "observation": "data.validation",
+          "op": "eq",
+          "value": "not_validated"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "No data session"
+      ]
+    },
+    {
+      "id": "r_validation_unknown",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "data.dns",
+          "op": "eq",
+          "value": "confirmed"
+        },
+        {
+          "observation": "data.runtime",
+          "op": "neq",
+          "value": "confirmed"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "data.validation",
+          "op": "known"
+        }
+      ],
+      "candidate_failure_ids": [
+        "network_not_validated",
+        "upstream_state_unknown"
+      ],
+      "next_question_ids": [
+        "q_validation"
+      ],
+      "forbidden_inferences": [
+        "INTERNET capability and VALIDATED are separate states."
+      ]
+    },
+    {
+      "id": "r_application_data_failure",
+      "goals": [
+        "no_mobile_data",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "data.validation",
+          "op": "eq",
+          "value": "validated"
+        },
+        {
+          "observation": "data.runtime",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "candidate_failure_ids": [
+        "application_data_failure"
+      ],
+      "localized_when": [
+        {
+          "observation": "data.validation",
+          "op": "eq",
+          "value": "validated"
+        },
+        {
+          "observation": "data.runtime",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "Carrier registration failure"
+      ]
+    },
+    {
+      "id": "r_data_runtime_success_internal_unknown",
+      "goals": [
+        "general_connectivity",
+        "voice_failure",
+        "sms_failure",
+        "volte_vonr_check"
+      ],
+      "all_of": [
+        {
+          "observation": "data.runtime",
+          "op": "eq",
+          "value": "confirmed"
+        }
+      ],
+      "candidate_failure_ids": [
+        "runtime_success_internal_state_unknown"
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "Do not backfill APN/DNN, packet session, IP, DNS or validation internals from generic data success."
+      ]
+    },
+    {
+      "id": "r_ims_policy_disabled",
+      "goals": [
+        "voice_failure",
+        "sms_failure",
+        "wifi_calling_failure",
+        "volte_vonr_check",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "carrier.ims_policy",
+          "op": "eq",
+          "value": "disabled_by_policy"
+        }
+      ],
+      "candidate_failure_ids": [
+        "carrier_policy_disabled"
+      ],
+      "localized_when": [
+        {
+          "observation": "carrier.ims_policy",
+          "op": "eq",
+          "value": "disabled_by_policy"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "IMS registration should not be assumed"
+      ]
+    },
+    {
+      "id": "r_ims_policy_unknown",
+      "goals": [
+        "voice_failure",
+        "sms_failure",
+        "wifi_calling_failure",
+        "volte_vonr_check"
+      ],
+      "all_of": [
+        {
+          "observation": "data.runtime",
+          "op": "eq",
+          "value": "confirmed"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "carrier.ims_policy",
+          "op": "known"
+        }
+      ],
+      "candidate_failure_ids": [
+        "carrier_policy_disabled",
+        "upstream_state_unknown"
+      ],
+      "next_question_ids": [
+        "q_ims_policy"
+      ],
+      "forbidden_inferences": [
+        "Data success does not prove IMS policy."
+      ]
+    },
+    {
+      "id": "r_ims_entitlement_failed",
+      "goals": [
+        "voice_failure",
+        "sms_failure",
+        "wifi_calling_failure",
+        "volte_vonr_check"
+      ],
+      "all_of": [
+        {
+          "observation": "carrier.ims_policy",
+          "op": "eq",
+          "value": "enabled_by_policy"
+        },
+        {
+          "observation": "ims.entitlement",
+          "op": "eq",
+          "value": "not_provisioned"
+        }
+      ],
+      "candidate_failure_ids": [
+        "ims_entitlement_not_provisioned"
+      ],
+      "localized_when": [
+        {
+          "observation": "ims.entitlement",
+          "op": "eq",
+          "value": "not_provisioned"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "IMS stack defect"
+      ]
+    },
+    {
+      "id": "r_ims_entitlement_unknown",
+      "goals": [
+        "voice_failure",
+        "sms_failure",
+        "wifi_calling_failure",
+        "volte_vonr_check"
+      ],
+      "all_of": [
+        {
+          "observation": "carrier.ims_policy",
+          "op": "eq",
+          "value": "enabled_by_policy"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "ims.entitlement",
+          "op": "known"
+        }
+      ],
+      "candidate_failure_ids": [
+        "ims_entitlement_not_provisioned",
+        "upstream_state_unknown"
+      ],
+      "next_question_ids": [
+        "q_ims_entitlement"
+      ],
+      "forbidden_inferences": [
+        "Policy availability does not prove entitlement."
+      ]
+    },
+    {
+      "id": "r_ims_registration_failed",
+      "goals": [
+        "voice_failure",
+        "sms_failure",
+        "wifi_calling_failure",
+        "volte_vonr_check"
+      ],
+      "all_of": [
+        {
+          "observation": "ims.entitlement",
+          "op": "eq",
+          "value": "provisioned"
+        },
+        {
+          "observation": "ims.registration",
+          "op": "eq",
+          "value": "not_registered"
+        }
+      ],
+      "candidate_failure_ids": [
+        "ims_registration_failure"
+      ],
+      "localized_when": [
+        {
+          "observation": "ims.registration",
+          "op": "eq",
+          "value": "not_registered"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "MMTel runtime success"
+      ]
+    },
+    {
+      "id": "r_ims_registration_unknown",
+      "goals": [
+        "voice_failure",
+        "sms_failure",
+        "wifi_calling_failure",
+        "volte_vonr_check"
+      ],
+      "all_of": [
+        {
+          "observation": "ims.entitlement",
+          "op": "eq",
+          "value": "provisioned"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "ims.registration",
+          "op": "known"
+        }
+      ],
+      "candidate_failure_ids": [
+        "ims_registration_failure",
+        "upstream_state_unknown"
+      ],
+      "next_question_ids": [
+        "q_ims_registration"
+      ],
+      "forbidden_inferences": [
+        "Entitlement does not prove IMS registration."
+      ]
+    },
+    {
+      "id": "r_voice_capability_failed",
+      "goals": [
+        "voice_failure",
+        "volte_vonr_check"
+      ],
+      "all_of": [
+        {
+          "observation": "ims.registration",
+          "op": "eq",
+          "value": "registered"
+        },
+        {
+          "observation": "ims.voice_capability",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "candidate_failure_ids": [
+        "mmtel_voice_capability_missing"
+      ],
+      "localized_when": [
+        {
+          "observation": "ims.voice_capability",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "All IMS services are unavailable"
+      ]
+    },
+    {
+      "id": "r_voice_capability_unknown",
+      "goals": [
+        "voice_failure",
+        "volte_vonr_check"
+      ],
+      "all_of": [
+        {
+          "observation": "ims.registration",
+          "op": "eq",
+          "value": "registered"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "ims.voice_capability",
+          "op": "known"
+        }
+      ],
+      "candidate_failure_ids": [
+        "mmtel_voice_capability_missing",
+        "upstream_state_unknown"
+      ],
+      "next_question_ids": [
+        "q_voice_capability"
+      ],
+      "forbidden_inferences": [
+        "IMS registration does not prove MMTel voice capability."
+      ]
+    },
+    {
+      "id": "r_voice_directional_failure",
+      "goals": [
+        "voice_failure"
+      ],
+      "any_of": [
+        {
+          "observation": "voice.outgoing",
+          "op": "eq",
+          "value": "failed"
+        },
+        {
+          "observation": "voice.incoming",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "candidate_failure_ids": [
+        "directional_voice_failure"
+      ],
+      "localized_when": [],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "One successful direction does not prove the other."
+      ],
+      "localize_on_match": true,
+      "all_of": [
+        {
+          "observation": "ims.registration",
+          "op": "eq",
+          "value": "registered"
+        },
+        {
+          "observation": "ims.voice_capability",
+          "op": "eq",
+          "value": "confirmed"
+        },
+        {
+          "observation": "voice.outgoing",
+          "op": "known"
+        },
+        {
+          "observation": "voice.incoming",
+          "op": "known"
+        }
+      ]
+    },
+    {
+      "id": "r_sms_directional_failure",
+      "goals": [
+        "sms_failure"
+      ],
+      "any_of": [
+        {
+          "observation": "sms.send",
+          "op": "eq",
+          "value": "failed"
+        },
+        {
+          "observation": "sms.receive",
+          "op": "eq",
+          "value": "failed"
+        }
+      ],
+      "candidate_failure_ids": [
+        "directional_sms_failure"
+      ],
+      "localized_when": [],
+      "next_question_ids": [],
+      "forbidden_inferences": [
+        "One successful SMS direction does not prove the other."
+      ],
+      "localize_on_match": true,
+      "all_of": [
+        {
+          "observation": "sms.send",
+          "op": "known"
+        },
+        {
+          "observation": "sms.receive",
+          "op": "known"
+        }
+      ]
+    },
+    {
+      "id": "r_volte_bearer_unknown",
+      "goals": [
+        "volte_vonr_check"
+      ],
+      "all_of": [
+        {
+          "observation": "ims.registration",
+          "op": "eq",
+          "value": "registered"
+        },
+        {
+          "observation": "voice.outgoing",
+          "op": "eq",
+          "value": "confirmed"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "voice.volte_call",
+          "op": "known"
+        }
+      ],
+      "candidate_failure_ids": [
+        "volte_runtime_failure",
+        "upstream_state_unknown"
+      ],
+      "next_question_ids": [
+        "q_volte_bearer"
+      ],
+      "forbidden_inferences": [
+        "Successful voice call does not prove VoLTE bearer."
+      ]
+    },
+    {
+      "id": "r_vonr_not_proven_by_5g_sa",
+      "goals": [
+        "volte_vonr_check",
+        "fiveg_or_aggregation_check"
+      ],
+      "all_of": [
+        {
+          "observation": "network.fiveg_sa_registration",
+          "op": "eq",
+          "value": "confirmed"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "voice.vonr_call",
+          "op": "known"
+        }
+      ],
+      "candidate_failure_ids": [
+        "vonr_runtime_failure",
+        "upstream_state_unknown"
+      ],
+      "next_question_ids": [
+        "q_vonr_bearer"
+      ],
+      "forbidden_inferences": [
+        "5G SA registration does not prove VoNR."
+      ]
+    },
+    {
+      "id": "r_display_hint_needs_physical_channels",
+      "goals": [
+        "fiveg_or_aggregation_check"
+      ],
+      "all_of": [
+        {
+          "observation": "radio.display_hint",
+          "op": "truthy"
+        }
+      ],
+      "exclude_if": [
+        {
+          "observation": "radio.physical_channels",
+          "op": "eq",
+          "value": "confirmed"
+        }
+      ],
+      "candidate_failure_ids": [
+        "display_hint_without_physical_combo"
+      ],
+      "next_question_ids": [
+        "q_physical_channels"
+      ],
+      "forbidden_inferences": [
+        "5G+/NR Advanced/LTE CA display does not prove an exact CA/DC combination."
+      ]
+    },
+    {
+      "id": "r_software_snapshot_unbound",
+      "goals": [
+        "volte_vonr_check",
+        "fiveg_or_aggregation_check",
+        "general_connectivity"
+      ],
+      "all_of": [
+        {
+          "observation": "software.snapshot_binding",
+          "op": "in",
+          "value": [
+            "same_os_only",
+            "same_model_only",
+            "unbound"
+          ]
+        }
+      ],
+      "candidate_failure_ids": [
+        "software_snapshot_not_comparable",
+        "software_snapshot_mismatch"
+      ],
+      "next_question_ids": [
+        "q_software_snapshot"
+      ],
+      "forbidden_inferences": [
+        "Do not transfer historical runtime behavior to the current snapshot."
+      ]
+    }
+  ]
+}

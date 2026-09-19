@@ -1,0 +1,344 @@
+{
+  "schema_version": "1.0",
+  "release": "phase161-failure-diagnosis-engine",
+  "checked_at": "2026-09-19",
+  "purpose": "Consume evidence-scoped states from Phase154-160 and choose the minimum safe next observation needed to localize a connectivity fault without turning unknowns into failures or correlations into causes.",
+  "diagnosis_status": [
+    "localized",
+    "requires_more_evidence",
+    "inconclusive",
+    "outside_scope"
+  ],
+  "observation_state": [
+    "confirmed",
+    "failed",
+    "registered",
+    "not_registered",
+    "configured",
+    "not_configured",
+    "connected",
+    "disconnected",
+    "validated",
+    "not_validated",
+    "enabled_by_policy",
+    "disabled_by_policy",
+    "provisioned",
+    "not_provisioned",
+    "in_service",
+    "out_of_service",
+    "emergency_only",
+    "not_tested",
+    "not_solqvia_tested",
+    "unknown",
+    "not_applicable"
+  ],
+  "goals": [
+    "esim_setup",
+    "no_service",
+    "no_mobile_data",
+    "voice_failure",
+    "sms_failure",
+    "wifi_calling_failure",
+    "volte_vonr_check",
+    "fiveg_or_aggregation_check",
+    "general_connectivity"
+  ],
+  "canonical_layers": [
+    {
+      "id": "subscriber_identity",
+      "order": 10,
+      "source_phase": "154"
+    },
+    {
+      "id": "esim_rsp",
+      "order": 20,
+      "source_phase": "156"
+    },
+    {
+      "id": "carrier_configuration",
+      "order": 30,
+      "source_phase": "155"
+    },
+    {
+      "id": "network_registration",
+      "order": 40,
+      "source_phase": "158"
+    },
+    {
+      "id": "data_session",
+      "order": 50,
+      "source_phase": "158"
+    },
+    {
+      "id": "ims_services",
+      "order": 60,
+      "source_phase": "157"
+    },
+    {
+      "id": "radio_aggregation",
+      "order": 70,
+      "source_phase": "160"
+    },
+    {
+      "id": "software_snapshot",
+      "order": 80,
+      "source_phase": "159"
+    }
+  ],
+  "canonical_observations": [
+    {
+      "key": "subscriber.sim_or_esim_recognized",
+      "layer": "subscriber_identity",
+      "kind": "state"
+    },
+    {
+      "key": "esim.device_capability",
+      "layer": "esim_rsp",
+      "kind": "state"
+    },
+    {
+      "key": "esim.activation_material",
+      "layer": "esim_rsp",
+      "kind": "state"
+    },
+    {
+      "key": "esim.server_session",
+      "layer": "esim_rsp",
+      "kind": "state"
+    },
+    {
+      "key": "esim.profile_download",
+      "layer": "esim_rsp",
+      "kind": "state"
+    },
+    {
+      "key": "esim.profile_install",
+      "layer": "esim_rsp",
+      "kind": "state"
+    },
+    {
+      "key": "esim.profile_enable",
+      "layer": "esim_rsp",
+      "kind": "state"
+    },
+    {
+      "key": "esim.carrier_line_activation",
+      "layer": "esim_rsp",
+      "kind": "state"
+    },
+    {
+      "key": "carrier.config_state",
+      "layer": "carrier_configuration",
+      "kind": "state"
+    },
+    {
+      "key": "carrier.ims_policy",
+      "layer": "carrier_configuration",
+      "kind": "state"
+    },
+    {
+      "key": "network.service_state",
+      "layer": "network_registration",
+      "kind": "state"
+    },
+    {
+      "key": "network.data_registration",
+      "layer": "network_registration",
+      "kind": "state"
+    },
+    {
+      "key": "network.fiveg_sa_registration",
+      "layer": "network_registration",
+      "kind": "state"
+    },
+    {
+      "key": "data.selected_line",
+      "layer": "data_session",
+      "kind": "state"
+    },
+    {
+      "key": "data.apn_or_dnn",
+      "layer": "data_session",
+      "kind": "state"
+    },
+    {
+      "key": "data.packet_session",
+      "layer": "data_session",
+      "kind": "state"
+    },
+    {
+      "key": "data.ip_link",
+      "layer": "data_session",
+      "kind": "state"
+    },
+    {
+      "key": "data.dns",
+      "layer": "data_session",
+      "kind": "state"
+    },
+    {
+      "key": "data.validation",
+      "layer": "data_session",
+      "kind": "state"
+    },
+    {
+      "key": "data.runtime",
+      "layer": "data_session",
+      "kind": "state"
+    },
+    {
+      "key": "ims.entitlement",
+      "layer": "ims_services",
+      "kind": "state"
+    },
+    {
+      "key": "ims.registration",
+      "layer": "ims_services",
+      "kind": "state"
+    },
+    {
+      "key": "ims.voice_capability",
+      "layer": "ims_services",
+      "kind": "state"
+    },
+    {
+      "key": "ims.volte_registration",
+      "layer": "ims_services",
+      "kind": "state"
+    },
+    {
+      "key": "ims.vonr_registration",
+      "layer": "ims_services",
+      "kind": "state"
+    },
+    {
+      "key": "voice.outgoing",
+      "layer": "ims_services",
+      "kind": "state"
+    },
+    {
+      "key": "voice.incoming",
+      "layer": "ims_services",
+      "kind": "state"
+    },
+    {
+      "key": "voice.volte_call",
+      "layer": "ims_services",
+      "kind": "state"
+    },
+    {
+      "key": "voice.vonr_call",
+      "layer": "ims_services",
+      "kind": "state"
+    },
+    {
+      "key": "sms.send",
+      "layer": "ims_services",
+      "kind": "state"
+    },
+    {
+      "key": "sms.receive",
+      "layer": "ims_services",
+      "kind": "state"
+    },
+    {
+      "key": "sms.over_ims",
+      "layer": "ims_services",
+      "kind": "state"
+    },
+    {
+      "key": "wfc.runtime",
+      "layer": "ims_services",
+      "kind": "state"
+    },
+    {
+      "key": "radio.display_hint",
+      "layer": "radio_aggregation",
+      "kind": "value"
+    },
+    {
+      "key": "radio.physical_channels",
+      "layer": "radio_aggregation",
+      "kind": "state"
+    },
+    {
+      "key": "radio.lte_ca",
+      "layer": "radio_aggregation",
+      "kind": "state"
+    },
+    {
+      "key": "radio.endc",
+      "layer": "radio_aggregation",
+      "kind": "state"
+    },
+    {
+      "key": "radio.nr_ca",
+      "layer": "radio_aggregation",
+      "kind": "state"
+    },
+    {
+      "key": "software.snapshot_binding",
+      "layer": "software_snapshot",
+      "kind": "value"
+    }
+  ],
+  "rule_language": {
+    "operators": [
+      "eq",
+      "neq",
+      "in",
+      "not_in",
+      "known",
+      "unknown",
+      "truthy",
+      "falsy"
+    ],
+    "condition_shape": {
+      "observation": "canonical observation key",
+      "op": "operator",
+      "value": "optional scalar/array"
+    },
+    "rule_shape": {
+      "id": "unique rule id",
+      "goals": "applicable diagnosis goals",
+      "all_of": "conditions that must all be true",
+      "any_of": "optional conditions where at least one must be true",
+      "exclude_if": "conditions that exclude the candidate",
+      "candidate_failure_ids": "existing Phase156/157/158/160 failure IDs",
+      "localized_when": "optional conditions sufficient to localize",
+      "next_question_ids": "ordered question IDs if evidence is missing",
+      "forbidden_inferences": "claims the engine must not make"
+    }
+  },
+  "decision_policy": {
+    "principles": [
+      "Explicit failure outranks unknown.",
+      "Unknown and not-tested states are evidence gaps, not failure evidence.",
+      "The earliest unresolved dependency in the connectivity stack is preferred over later-layer speculation.",
+      "When multiple candidates remain, choose the question that can eliminate the most candidates, then prefer lower-risk/lower-effort observations.",
+      "A question already answered by a known observation is never asked again.",
+      "No diagnosis may contradict a higher-confidence explicit observation.",
+      "Runtime success at a later layer can rule out some earlier failures but does not reveal hidden internal implementation details.",
+      "The engine returns candidate causes and next checks; it does not claim an unobserved root cause."
+    ],
+    "question_score": {
+      "candidate_split_weight": 10,
+      "dependency_order_weight": 4,
+      "safety_weight": 3,
+      "effort_penalty": 2,
+      "already_answered_penalty": 1000
+    }
+  },
+  "output_contract": {
+    "required": [
+      "diagnosis_status",
+      "goal",
+      "last_confirmed_layer",
+      "first_explicit_failed_layer",
+      "candidate_failure_ids",
+      "next_question",
+      "evidence_gaps",
+      "forbidden_inferences"
+    ]
+  }
+}

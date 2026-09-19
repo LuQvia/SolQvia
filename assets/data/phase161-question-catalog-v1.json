@@ -1,0 +1,372 @@
+{
+  "schema_version": "1.0",
+  "release": "phase161-failure-diagnosis-engine",
+  "checked_at": "2026-09-19",
+  "questions": [
+    {
+      "id": "q_sim_recognized",
+      "observation": "subscriber.sim_or_esim_recognized",
+      "layer": "subscriber_identity",
+      "prompt_ja": "端末はSIM/eSIMを認識していますか？",
+      "prompt_en": "Does the device recognize the SIM/eSIM?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ],
+      "effort": 1,
+      "safety": 3,
+      "priority": 100
+    },
+    {
+      "id": "q_esim_profile_enabled",
+      "observation": "esim.profile_enable",
+      "layer": "esim_rsp",
+      "prompt_ja": "対象eSIMプロファイルは有効化されていますか？",
+      "prompt_en": "Is the target eSIM profile enabled?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ],
+      "effort": 1,
+      "safety": 3,
+      "priority": 96
+    },
+    {
+      "id": "q_carrier_line_activation",
+      "observation": "esim.carrier_line_activation",
+      "layer": "esim_rsp",
+      "prompt_ja": "キャリア側の回線切替・開通は完了していますか？",
+      "prompt_en": "Is the carrier-side line activation/switch complete?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ],
+      "effort": 1,
+      "safety": 3,
+      "priority": 94
+    },
+    {
+      "id": "q_service_state",
+      "observation": "network.service_state",
+      "layer": "network_registration",
+      "prompt_ja": "圏内・通信サービス登録状態ですか？",
+      "prompt_en": "Is the device in cellular service / registered to the operator?",
+      "expected_answers": [
+        "in_service",
+        "out_of_service",
+        "emergency_only",
+        "unknown"
+      ],
+      "effort": 1,
+      "safety": 3,
+      "priority": 92
+    },
+    {
+      "id": "q_data_registration",
+      "observation": "network.data_registration",
+      "layer": "network_registration",
+      "prompt_ja": "モバイルデータ側のネットワーク登録は確認できますか？",
+      "prompt_en": "Is cellular data registration confirmed?",
+      "expected_answers": [
+        "registered",
+        "not_registered",
+        "unknown"
+      ],
+      "effort": 2,
+      "safety": 3,
+      "priority": 90
+    },
+    {
+      "id": "q_selected_data_line",
+      "observation": "data.selected_line",
+      "layer": "data_session",
+      "prompt_ja": "デュアルSIMの場合、モバイルデータ回線は対象SIM/eSIMに設定されていますか？",
+      "prompt_en": "On dual-SIM devices, is the intended SIM/eSIM selected for mobile data?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "not_applicable",
+        "unknown"
+      ],
+      "effort": 1,
+      "safety": 3,
+      "priority": 88
+    },
+    {
+      "id": "q_apn_dnn",
+      "observation": "data.apn_or_dnn",
+      "layer": "data_session",
+      "prompt_ja": "公式APN/DNN設定が存在し、対象回線に適用されていますか？",
+      "prompt_en": "Is the official APN/DNN profile present and applied to this line?",
+      "expected_answers": [
+        "configured",
+        "not_configured",
+        "unknown"
+      ],
+      "effort": 2,
+      "safety": 3,
+      "priority": 86
+    },
+    {
+      "id": "q_packet_session",
+      "observation": "data.packet_session",
+      "layer": "data_session",
+      "prompt_ja": "PDN/PDUデータセッションは接続状態ですか？",
+      "prompt_en": "Is the PDN/PDU data session connected?",
+      "expected_answers": [
+        "connected",
+        "disconnected",
+        "unknown"
+      ],
+      "effort": 3,
+      "safety": 3,
+      "priority": 84
+    },
+    {
+      "id": "q_ip_link",
+      "observation": "data.ip_link",
+      "layer": "data_session",
+      "prompt_ja": "IPv4/IPv6アドレスと有効なルートは取得できていますか？",
+      "prompt_en": "Does the data link have usable IPv4/IPv6 addressing and routes?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ],
+      "effort": 3,
+      "safety": 3,
+      "priority": 82
+    },
+    {
+      "id": "q_dns",
+      "observation": "data.dns",
+      "layer": "data_session",
+      "prompt_ja": "DNS名前解決は成功しますか？",
+      "prompt_en": "Does DNS name resolution succeed?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ],
+      "effort": 2,
+      "safety": 3,
+      "priority": 80
+    },
+    {
+      "id": "q_validation",
+      "observation": "data.validation",
+      "layer": "data_session",
+      "prompt_ja": "ネットワークは実インターネット接続済み（VALIDATED）ですか？",
+      "prompt_en": "Is the network actually Internet-validated?",
+      "expected_answers": [
+        "validated",
+        "not_validated",
+        "unknown"
+      ],
+      "effort": 2,
+      "safety": 3,
+      "priority": 78
+    },
+    {
+      "id": "q_runtime_data",
+      "observation": "data.runtime",
+      "layer": "data_session",
+      "prompt_ja": "実際のモバイルデータ通信（Web等）は成功しますか？",
+      "prompt_en": "Does actual mobile-data traffic work?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ],
+      "effort": 1,
+      "safety": 3,
+      "priority": 76
+    },
+    {
+      "id": "q_ims_policy",
+      "observation": "carrier.ims_policy",
+      "layer": "carrier_configuration",
+      "prompt_ja": "この端末×回線×ソフトウェアでIMS/VoLTEポリシーは有効ですか？",
+      "prompt_en": "Is IMS/VoLTE allowed by the carrier/device policy for this software snapshot?",
+      "expected_answers": [
+        "enabled_by_policy",
+        "disabled_by_policy",
+        "unknown"
+      ],
+      "effort": 3,
+      "safety": 3,
+      "priority": 74
+    },
+    {
+      "id": "q_ims_entitlement",
+      "observation": "ims.entitlement",
+      "layer": "ims_services",
+      "prompt_ja": "IMSサービスのプロビジョニング/利用資格は確認できますか？",
+      "prompt_en": "Is IMS service entitlement/provisioning confirmed?",
+      "expected_answers": [
+        "provisioned",
+        "not_provisioned",
+        "unknown"
+      ],
+      "effort": 3,
+      "safety": 3,
+      "priority": 72
+    },
+    {
+      "id": "q_ims_registration",
+      "observation": "ims.registration",
+      "layer": "ims_services",
+      "prompt_ja": "IMSはネットワークへ登録済みですか？",
+      "prompt_en": "Is IMS registered?",
+      "expected_answers": [
+        "registered",
+        "not_registered",
+        "unknown"
+      ],
+      "effort": 3,
+      "safety": 3,
+      "priority": 70
+    },
+    {
+      "id": "q_voice_capability",
+      "observation": "ims.voice_capability",
+      "layer": "ims_services",
+      "prompt_ja": "IMS登録後、MMTel音声Capabilityは有効ですか？",
+      "prompt_en": "After IMS registration, is MMTel voice capability available?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ],
+      "effort": 3,
+      "safety": 3,
+      "priority": 68
+    },
+    {
+      "id": "q_voice_outgoing",
+      "observation": "voice.outgoing",
+      "layer": "ims_services",
+      "prompt_ja": "発信は成功しますか？",
+      "prompt_en": "Do outgoing calls succeed?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ],
+      "effort": 1,
+      "safety": 3,
+      "priority": 66
+    },
+    {
+      "id": "q_voice_incoming",
+      "observation": "voice.incoming",
+      "layer": "ims_services",
+      "prompt_ja": "着信は成功しますか？",
+      "prompt_en": "Do incoming calls succeed?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ],
+      "effort": 1,
+      "safety": 3,
+      "priority": 66
+    },
+    {
+      "id": "q_sms_send",
+      "observation": "sms.send",
+      "layer": "ims_services",
+      "prompt_ja": "SMS送信は成功しますか？",
+      "prompt_en": "Does SMS sending succeed?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ],
+      "effort": 1,
+      "safety": 3,
+      "priority": 64
+    },
+    {
+      "id": "q_sms_receive",
+      "observation": "sms.receive",
+      "layer": "ims_services",
+      "prompt_ja": "SMS受信は成功しますか？",
+      "prompt_en": "Does SMS receiving succeed?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ],
+      "effort": 1,
+      "safety": 3,
+      "priority": 64
+    },
+    {
+      "id": "q_volte_bearer",
+      "observation": "voice.volte_call",
+      "layer": "ims_services",
+      "prompt_ja": "実通話のBearerがVoLTEだったことを確認できますか？",
+      "prompt_en": "Can the actual call bearer be confirmed as VoLTE?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ],
+      "effort": 3,
+      "safety": 3,
+      "priority": 60
+    },
+    {
+      "id": "q_vonr_bearer",
+      "observation": "voice.vonr_call",
+      "layer": "ims_services",
+      "prompt_ja": "実通話のBearerがVoNRだったことを確認できますか？",
+      "prompt_en": "Can the actual call bearer be confirmed as VoNR?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ],
+      "effort": 3,
+      "safety": 3,
+      "priority": 65
+    },
+    {
+      "id": "q_physical_channels",
+      "observation": "radio.physical_channels",
+      "layer": "radio_aggregation",
+      "prompt_ja": "実接続中のPhysicalChannelConfig等でComponent Carrierを確認できますか？",
+      "prompt_en": "Can the live component carriers be observed from PhysicalChannelConfig or equivalent evidence?",
+      "expected_answers": [
+        "confirmed",
+        "failed",
+        "unknown"
+      ],
+      "effort": 4,
+      "safety": 3,
+      "priority": 55
+    },
+    {
+      "id": "q_software_snapshot",
+      "observation": "software.snapshot_binding",
+      "layer": "software_snapshot",
+      "prompt_ja": "検証時のOS・build・baseband・carrier settingsを固定できますか？",
+      "prompt_en": "Can the tested OS/build/baseband/carrier-settings snapshot be identified?",
+      "expected_answers": [
+        "exact_snapshot",
+        "partial_snapshot",
+        "same_os_only",
+        "same_model_only",
+        "unbound",
+        "unknown"
+      ],
+      "effort": 2,
+      "safety": 3,
+      "priority": 50
+    }
+  ]
+}

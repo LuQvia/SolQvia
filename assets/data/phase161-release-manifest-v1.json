@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "release": "phase161-failure-diagnosis-engine",
+  "date": "2026-09-19",
+  "baseline": "Phase160 main 7cef517b34bd90cf5b3e2ce7eedf8d0afc625278",
+  "goal": "Turn Phase154-160 evidence into a deterministic cross-layer diagnostic engine that asks the minimum next safe question instead of guessing a root cause.",
+  "outputs": [
+    "assets/data/phase161-diagnosis-engine-schema-v1.json",
+    "assets/data/phase161-question-catalog-v1.json",
+    "assets/data/phase161-engine-failure-taxonomy-v1.json",
+    "assets/data/phase161-rule-pack-v1.json",
+    "assets/data/phase161-phase154-160-field-map-v1.json",
+    "assets/data/phase161-diagnosis-scenarios-v1.json",
+    "assets/data/phase161-scenario-validation-v1.json",
+    "scripts/phase161-diagnosis-engine.mjs",
+    "scripts/phase161-diagnosis-validate.mjs",
+    "assets/data/phase161-validation-report-v1.json"
+  ],
+  "coverage": {
+    "canonical_layers": 8,
+    "canonical_observations": 39,
+    "questions": 24,
+    "rules": 38,
+    "cross_layer_failure_categories": 5,
+    "inherited_failure_taxonomies": [
+      "Phase156 eSIM RSP: 11",
+      "Phase157 IMS: 13",
+      "Phase158 registration/data: 13",
+      "Phase160 CA/DC: 11"
+    ],
+    "scenario_tests": 10,
+    "scenario_tests_passed": 10,
+    "failure_ids_total": 53
+  },
+  "decision_policy": [
+    "Explicit failure outranks unknown.",
+    "Unknown/not-tested is an evidence gap, not failure evidence.",
+    "Earliest unresolved dependency is checked before downstream speculation.",
+    "Already-answered questions are not repeated.",
+    "When multiple questions are possible, prefer the one that separates more active candidates, then lower-risk/lower-effort checks.",
+    "A later-layer success may exclude some earlier failures but never reveals hidden implementation details.",
+    "No unobserved root cause is promoted to a confirmed diagnosis."
+  ],
+  "notable_behaviors": [
+    "eSIM profile install -> next ask profile enablement.",
+    "Profile enabled but carrier line switch failed -> localize carrier activation stage.",
+    "In service but data registration absent -> localize registration failure before APN.",
+    "Registered but no data and APN unknown -> ask APN/DNN next.",
+    "Data works but voice fails and IMS is unknown -> ask IMS policy before calling it a directional voice fault.",
+    "5G SA confirmed with unknown voice bearer -> ask VoNR bearer; never infer VoNR.",
+    "5G+/NR Advanced display without physical channels -> ask PhysicalChannelConfig; never infer NR CA."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "public_html_changes": 0
+  },
+  "next_phase": "Phase162 real-device capture/test format: produce repeatable device × carrier × SIM/eSIM × software-snapshot logs that can feed Phase161 automatically."
+}

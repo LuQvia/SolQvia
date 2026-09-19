@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "release": "phase161-failure-diagnosis-engine",
+  "checked_at": "2026-09-19",
+  "pass": true,
+  "canonical_observations": 39,
+  "questions": 24,
+  "rules": 38,
+  "failure_ids": 53,
+  "scenarios": 10,
+  "scenario_passed": 10,
+  "errors": [],
+  "notes": [
+    "All rule observations resolve to canonical observation keys.",
+    "All rule operators are defined by the Phase161 rule language.",
+    "All next-question references resolve to the question catalog.",
+    "All failure IDs resolve to Phase156/157/158/160 or Phase161 cross-layer taxonomy.",
+    "All 10 scenario expectations pass under the implemented rule/question-selection logic.",
+    "Diagnosis engine and validator JavaScript syntax parse successfully."
+  ]
+}
