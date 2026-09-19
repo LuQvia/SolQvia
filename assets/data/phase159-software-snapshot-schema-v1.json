@@ -104,7 +104,8 @@
       "purpose": "Where and when the snapshot was observed or published.",
       "fields": [
         "observed_at",
-        "published_at",
+        "device_update_date",
+        "reference_checked_at",
         "source_scope",
         "subscription_carrier",
         "sim_type",
