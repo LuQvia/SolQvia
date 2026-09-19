@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "release": "phase149-suspicious-app-removal-strengthening",
+  "date": "2026-09-19",
+  "baseline": "Phase148 main 72bd0c6e696b3e8c2326a8effd99ecafd1c91a9a",
+  "gsc_basis": {
+    "source": "2026-09-08 Phase128 GSC-backed backlog",
+    "query_cluster": [
+      "怪しいアプリ",
+      "不審アプリ",
+      "盗聴アプリ"
+    ],
+    "reported_pattern": "multiple queries at roughly 15-20 impressions each; positions around 19-33",
+    "exact_aggregate_available": false,
+    "note": "The cluster is intentionally excluded from exact numeric ranking because the retrievable source does not expose raw rows."
+  },
+  "pages": {
+    "ja": "/ja/technology/smartphone/smartphone-remove-suspicious-app/",
+    "en": "/en/technology/smartphone/smartphone-remove-suspicious-app/",
+    "action": "strengthen_existing",
+    "index_state": "index,follow"
+  },
+  "changes": [
+    "Replace template-heavy sections with direct suspicious-app and removal intent.",
+    "Add explicit boundary that suspicious behavior is not proof of malware.",
+    "Add Google Play Protect, Android permission manager/privacy dashboard and Safe mode flows.",
+    "Add Android 'cannot uninstall' decision branches without assuming malicious behavior.",
+    "Add Apple app review and VPN/device-management profile checks.",
+    "Separate app removal from account-security remediation.",
+    "Keep factory reset as a final step after backups/authentication/eSIM preparation.",
+    "Refresh official Google and Apple sources to 2026-09-19."
+  ],
+  "evidence_rules": [
+    "No named app is labeled malicious without direct evidence.",
+    "Battery drain, heat, pop-ups or microphone/camera activity are treated as investigation signals, not proof.",
+    "Managed/company/school profiles are not removed without administrator verification.",
+    "No SolQvia real-device confirmation is claimed."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "next_priority": "Continue the Phase145 qualitative queue using newer raw GSC if available; otherwise Google Lens is the next clearly existing intent-matched page candidate."
+}
