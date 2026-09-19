@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.0",
+  "release": "phase158-registration-data-session-model",
+  "checked_at": "2026-09-19",
+  "categories": [
+    {
+      "id": "wrong_or_inactive_data_subscription",
+      "stage": "subscription_data_selection",
+      "symptoms": [
+        "Dual-SIM device uses the other line for mobile data",
+        "Mobile data is disabled"
+      ],
+      "next_checks": [
+        "Selected data line",
+        "Default/active data subscription",
+        "Mobile data toggle",
+        "Roaming data policy"
+      ],
+      "do_not_infer": [
+        "APN failure"
+      ]
+    },
+    {
+      "id": "no_plmn_service",
+      "stage": "plmn_service_state",
+      "symptoms": [
+        "Out of service",
+        "No registered operator",
+        "Emergency-only state"
+      ],
+      "next_checks": [
+        "Coverage",
+        "SIM provisioning",
+        "supported RAT/bands",
+        "carrier selection"
+      ],
+      "do_not_infer": [
+        "DNS failure",
+        "APN is the only cause"
+      ]
+    },
+    {
+      "id": "data_registration_failure",
+      "stage": "access_registration",
+      "symptoms": [
+        "Voice/service may exist but data registration is out of service",
+        "LTE/5GS registration absent"
+      ],
+      "next_checks": [
+        "Carrier provisioning",
+        "RAT support",
+        "regional variant",
+        "roaming policy"
+      ],
+      "do_not_infer": [
+        "PDU session failure before registration succeeds"
+      ]
+    },
+    {
+      "id": "apn_dnn_missing_or_wrong",
+      "stage": "apn_dnn_profile",
+      "symptoms": [
+        "No usable default-data profile",
+        "Incorrect carrier APN/DNN profile"
+      ],
+      "next_checks": [
+        "Official carrier APN",
+        "carrier settings/CarrierConfig",
+        "MVNO matching",
+        "protocol"
+      ],
+      "do_not_infer": [
+        "eSIM profile failure"
+      ]
+    },
+    {
+      "id": "apn_auth_or_policy_failure",
+      "stage": "apn_dnn_profile",
+      "symptoms": [
+        "Profile exists but authentication/policy rejects data"
+      ],
+      "next_checks": [
+        "Official APN authentication type",
+        "carrier backend provisioning",
+        "MVNO matching"
+      ],
+      "do_not_infer": [
+        "Store credentials in SolQvia logs"
+      ]
+    },
+    {
+      "id": "pdn_or_pdu_session_rejected",
+      "stage": "packet_session",
+      "symptoms": [
+        "Registration exists but data connection remains disconnected/failed",
+        "Non-zero data fail cause"
+      ],
+      "next_checks": [
+        "Failure cause",
+        "APN/DNN",
+        "PDU type/protocol",
+        "carrier provisioning"
+      ],
+      "do_not_infer": [
+        "DNS failure"
+      ]
+    },
+    {
+      "id": "ip_address_or_route_failure",
+      "stage": "ip_link",
+      "symptoms": [
+        "Session connects but no usable address/route"
+      ],
+      "next_checks": [
+        "IPv4/IPv6 addresses",
+        "routes",
+        "MTU",
+        "NAT64"
+      ],
+      "do_not_infer": [
+        "IMS failure"
+      ]
+    },
+    {
+      "id": "dns_configuration_or_resolution_failure",
+      "stage": "dns_resolution",
+      "symptoms": [
+        "Raw IP may work while hostnames fail",
+        "DNS server/path unavailable"
+      ],
+      "next_checks": [
+        "DNS server list",
+        "Private DNS",
+        "name lookup test"
+      ],
+      "do_not_infer": [
+        "Packet session absent if raw IP works"
+      ]
+    },
+    {
+      "id": "network_not_validated",
+      "stage": "network_validation",
+      "symptoms": [
+        "Network has INTERNET capability but validation fails",
+        "Captive/restricted path"
+      ],
+      "next_checks": [
+        "VALIDATED capability",
+        "precise validation result",
+        "portal/restriction"
+      ],
+      "do_not_infer": [
+        "No data session"
+      ]
+    },
+    {
+      "id": "application_data_failure",
+      "stage": "runtime_data",
+      "symptoms": [
+        "Network validates but specific app/site still fails"
+      ],
+      "next_checks": [
+        "App scope",
+        "HTTP/HTTPS",
+        "VPN/proxy",
+        "server outage"
+      ],
+      "do_not_infer": [
+        "Carrier registration failure"
+      ]
+    },
+    {
+      "id": "roaming_data_policy_block",
+      "stage": "subscription_data_selection",
+      "symptoms": [
+        "Registered while roaming but data disabled"
+      ],
+      "next_checks": [
+        "Roaming indicator",
+        "data-roaming setting",
+        "carrier roaming entitlement"
+      ],
+      "do_not_infer": [
+        "APN missing"
+      ]
+    },
+    {
+      "id": "dual_sim_data_path_mismatch",
+      "stage": "subscription_data_selection",
+      "symptoms": [
+        "Expected SIM has service but another subscription owns active data"
+      ],
+      "next_checks": [
+        "Active data subscription",
+        "opportunistic data state",
+        "per-line mobile-data selection"
+      ],
+      "do_not_infer": [
+        "Expected SIM's APN is broken"
+      ]
+    },
+    {
+      "id": "ipv4_ipv6_compatibility_issue",
+      "stage": "ip_link",
+      "symptoms": [
+        "One IP family works while another fails",
+        "IPv6/NAT64-dependent path issue"
+      ],
+      "next_checks": [
+        "APN protocol",
+        "IPv4/IPv6 link addresses",
+        "NAT64 prefix",
+        "application behavior"
+      ],
+      "do_not_infer": [
+        "Full mobile-data outage"
+      ]
+    }
+  ]
+}
