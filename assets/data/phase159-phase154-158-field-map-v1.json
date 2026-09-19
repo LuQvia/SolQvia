@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "release": "phase159-versioned-software-snapshot-model",
+  "phase154": {
+    "runtime_observation": [
+      {
+        "phase154_field": "os_version",
+        "phase159_path": "snapshot.os_release.os_version"
+      },
+      {
+        "phase154_field": "firmware_version",
+        "phase159_path": "snapshot.vendor_software.vendor_firmware_version",
+        "note": "Use only when the platform/OEM exposes a specific firmware version; otherwise bind the runtime to the snapshot key."
+      },
+      {
+        "phase154_field": "baseband_version",
+        "phase159_path": "snapshot.radio_firmware.baseband_full",
+        "fallback": "snapshot.radio_firmware.radio_firmware_version",
+        "note": "A baseband suffix is never promoted to a full version."
+      }
+    ],
+    "recommended_additive_field": {
+      "field": "software_snapshot_key",
+      "source": "phase159 record key",
+      "purpose": "Bind runtime evidence to the exact/partial software state without overloading firmware_version."
+    }
+  },
+  "phase155": {
+    "identity": [
+      {
+        "phase155_field": "identity.os_version",
+        "phase159_path": "snapshot.os_release.os_version"
+      },
+      {
+        "phase155_field": "identity.firmware_version",
+        "phase159_path": "snapshot.vendor_software.vendor_firmware_version"
+      },
+      {
+        "phase155_field": "identity.baseband_version",
+        "phase159_path": "snapshot.radio_firmware.baseband_full"
+      }
+    ],
+    "apple_configuration": [
+      {
+        "phase155_field": "configuration.feature_policies.carrier_settings_version",
+        "phase159_path": "snapshot.carrier_settings.carrier_settings_version"
+      }
+    ],
+    "rule": "CarrierConfig/Carrier Settings records should carry software_snapshot_key when exact device-observed configuration is collected."
+  },
+  "phase157": {
+    "recommended_additive_field": {
+      "field": "software_snapshot_key",
+      "purpose": "Tie IMS registration, VoLTE/VoNR/Wi-Fi Calling and call/SMS bearer evidence to the software/radio/carrier-settings state used in the test."
+    },
+    "rules": [
+      "Do not transfer IMS/VoLTE/VoNR success from one baseband/carrier-settings snapshot to another without new evidence.",
+      "A generic carrier operation-check result remains partial_snapshot unless the exact build/baseband/carrier-settings version is published."
+    ]
+  },
+  "phase158": {
+    "recommended_additive_field": {
+      "field": "software_snapshot_key",
+      "purpose": "Tie registration/APN/session/IP/DNS/runtime data results to the exact software/radio state."
+    },
+    "rules": [
+      "Do not infer APN/DNN or data-session equivalence across baseband/carrier-settings changes.",
+      "If only OS version matches, comparison quality is same_os_only."
+    ]
+  },
+  "existing_record_links": [
+    {
+      "phase159_key": "galaxy-s26-scg36-au-official-latest-20260914",
+      "linked_records": [
+        "scg36-au-android16-carrier-config-placeholder",
+        "scg36-au-android16-ims-placeholder",
+        "scg36-au-android16-data-session-placeholder"
+      ],
+      "binding_state": "partial_snapshot",
+      "reason": "Exact model and Android 16 align, but the runtime source does not expose the exact baseband/build used."
+    }
+  ]
+}
