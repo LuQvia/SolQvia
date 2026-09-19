@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0",
+  "release": "phase156-esim-rsp-lifecycle-db",
+  "checked_at": "2026-09-19",
+  "purpose": "Normalize consumer eSIM RSP into ordered but independently evidenced states so SolQvia can localize failures without promoting QR/profile success into network or service success.",
+  "standards_context": {
+    "gsma_consumer_rsp": {
+      "architecture_family": "SGP.21",
+      "technical_family": "SGP.22",
+      "active_reference_versions_seen_on_2026_09_19": [
+        "2.7",
+        "3.1"
+      ],
+      "note": "Reference versions describe the standards landscape and do not assert which version an individual device/carrier implements."
+    },
+    "android": {
+      "framework_entry": "EuiccManager",
+      "lpa_role": "Bridge between SM-DP+ and eUICC; Android routes eUICC operations through the selected LPA.",
+      "low_level_api": "EuiccCardManager / EuiccService for system LPA implementation"
+    },
+    "apple": {
+      "observable_activation_methods": [
+        "eSIM Carrier Activation",
+        "eSIM Quick Transfer",
+        "QR code",
+        "carrier link",
+        "carrier app",
+        "manual entry",
+        "supported cross-platform transfer"
+      ],
+      "boundary": "Apple user documentation exposes activation workflows, not all internal RSP server/eUICC transaction details."
+    }
+  },
+  "states": [
+    "confirmed",
+    "failed",
+    "supported_by_spec",
+    "not_supported_by_spec",
+    "pending",
+    "not_required",
+    "not_tested",
+    "not_solqvia_tested",
+    "unknown"
+  ],
+  "lifecycle_stages": [
+    {
+      "id": "device_capability",
+      "order": 10,
+      "layer": "esim_rsp",
+      "fields": [
+        "euicc_present",
+        "lpa_present",
+        "euicc_manager_available",
+        "multiple_enabled_profiles_capability"
+      ],
+      "success_does_not_prove": [
+        "activation_material",
+        "profile_download",
+        "profile_install",
+        "profile_enable",
+        "carrier_activation",
+        "network_registration"
+      ]
+    },
+    {
+      "id": "activation_material",
+      "order": 20,
+      "layer": "esim_rsp",
+      "fields": [
+        "activation_method",
+        "qr_or_link_received",
+        "manual_entry_available",
+        "smdp_address_available",
+        "activation_code_available",
+        "confirmation_code_required"
+      ],
+      "privacy_rule": "Record availability/method only. Never store a user's activation code, confirmation code, full EID, or account credential.",
+      "success_does_not_prove": [
+        "smdp_session",
+        "profile_download",
+        "profile_install",
+        "profile_enable",
+        "carrier_activation",
+        "network_registration"
+      ]
+    },
+    {
+      "id": "discovery_and_server_session",
+      "order": 30,
+      "layer": "esim_rsp",
+      "fields": [
+        "smds_used",
+        "smdp_reachable",
+        "server_authentication",
+        "profile_metadata_retrieved"
+      ],
+      "success_does_not_prove": [
+        "profile_download",
+        "profile_install",
+        "profile_enable",
+        "carrier_activation",
+        "network_registration"
+      ]
+    },
+    {
+      "id": "profile_download",
+      "order": 40,
+      "layer": "esim_rsp",
+      "fields": [
+        "download_requested",
+        "download_completed",
+        "download_error_category"
+      ],
+      "success_does_not_prove": [
+        "profile_install",
+        "profile_enable",
+        "carrier_activation",
+        "network_registration"
+      ]
+    },
+    {
+      "id": "profile_install",
+      "order": 50,
+      "layer": "esim_rsp",
+      "fields": [
+        "profile_package_loaded",
+        "profile_installed",
+        "profile_policy_result",
+        "install_error_category"
+      ],
+      "success_does_not_prove": [
+        "profile_enable",
+        "carrier_activation",
+        "network_registration"
+      ]
+    },
+    {
+      "id": "profile_enable",
+      "order": 60,
+      "layer": "esim_rsp",
+      "fields": [
+        "profile_enabled",
+        "selected_for_line",
+        "multiple_enabled_profiles_state",
+        "enable_error_category"
+      ],
+      "success_does_not_prove": [
+        "carrier_activation",
+        "network_registration",
+        "mobile_data",
+        "voice",
+        "sms",
+        "ims_registration"
+      ]
+    },
+    {
+      "id": "carrier_line_activation",
+      "order": 70,
+      "layer": "esim_rsp",
+      "fields": [
+        "carrier_activation_required",
+        "line_switch_required",
+        "line_switch_completed",
+        "carrier_backend_activation",
+        "old_sim_or_profile_invalidation"
+      ],
+      "note": "This is operator service activation / line switching around RSP, not a GSMA profile-install success synonym.",
+      "success_does_not_prove": [
+        "network_registration",
+        "mobile_data",
+        "voice",
+        "sms",
+        "ims_registration"
+      ]
+    },
+    {
+      "id": "network_registration",
+      "order": 80,
+      "layer": "network_registration",
+      "fields": [
+        "plmn_selected",
+        "lte_eps_registration",
+        "fiveg_registration"
+      ],
+      "success_does_not_prove": [
+        "mobile_data",
+        "ims_registration",
+        "voice",
+        "sms"
+      ]
+    },
+    {
+      "id": "service_validation",
+      "order": 90,
+      "layer": "data_session+ims_services",
+      "fields": [
+        "mobile_data",
+        "voice_outgoing",
+        "voice_incoming",
+        "sms_send",
+        "sms_receive",
+        "ims_registration",
+        "tethering"
+      ],
+      "note": "Service validation is explicitly downstream from profile provisioning."
+    }
+  ],
+  "activation_methods": [
+    "carrier_activation",
+    "quick_transfer",
+    "qr_code",
+    "manual_smdp_activation_material",
+    "carrier_app",
+    "carrier_link",
+    "cross_platform_transfer",
+    "other_official_method",
+    "unknown"
+  ],
+  "evidence_object": {
+    "required": [
+      "type",
+      "source",
+      "checked_at",
+      "scope",
+      "confidence"
+    ],
+    "allowed_types": [
+      "standards_body",
+      "os_platform_official",
+      "carrier_official",
+      "manufacturer_official",
+      "solqvia_real_device",
+      "external_real_device",
+      "user_report"
+    ]
+  },
+  "prohibited_secret_fields": [
+    "activation_code",
+    "confirmation_code",
+    "eid_full_value",
+    "imsi",
+    "iccid",
+    "msisdn",
+    "account_id",
+    "account_password"
+  ],
+  "diagnosis_contract": {
+    "output_fields": [
+      "last_explicitly_confirmed_stage",
+      "first_explicitly_failed_stage",
+      "unknown_gap_after_last_confirmed",
+      "candidate_failure_categories",
+      "safe_next_checks",
+      "forbidden_inferences"
+    ],
+    "rule": "The diagnosis engine may localize only from explicit states. It must not silently fill earlier or later stages."
+  }
+}
