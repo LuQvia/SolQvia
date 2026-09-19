@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "release": "phase152-cross-surface-consistency-audit",
+  "checked_at": "2026-09-19",
+  "baseline": "Phase151 main ff83abb9ef8dab83d3b3eb6f85c4e34508a2c0ed",
+  "scope": {
+    "primary_surfaces": [
+      "ja/index.html",
+      "en/index.html",
+      "ja/technology/smartphone/device-compatibility/index.html",
+      "en/technology/smartphone/device-compatibility/index.html",
+      "ja/technology/smartphone/device-passport/index.html",
+      "en/technology/smartphone/device-passport/index.html"
+    ],
+    "strengthened_content_phases": [
+      "phase146",
+      "phase147",
+      "phase148",
+      "phase149",
+      "phase150",
+      "phase151"
+    ],
+    "seo_observation_surface": 802
+  },
+  "main_repository": {
+    "device_passport": {
+      "records": 572,
+      "smartphones": 537,
+      "primary_source_records": 512,
+      "solqvia_real_device_records": 1,
+      "ja_answer_first": true,
+      "en_answer_first": true,
+      "stale_en_phase141_hero_fixed": true
+    },
+    "strengthened_content": {
+      "audited_pages": 17,
+      "index_follow_pages": 15,
+      "noindex_follow_pages": 2,
+      "noindex_pages": [
+        "/ja/technology/smartphone/android-always-on-vpn-blocks-internet-when-vpn-disconnected/",
+        "/en/technology/smartphone/android-always-on-vpn-blocks-internet-when-vpn-disconnected/"
+      ],
+      "canonical_count_per_page": 1,
+      "duplicate_target_titles": 0,
+      "minimum_internal_smartphone_links": 3
+    },
+    "sitemap": {
+      "url_count": 802,
+      "changed_url_count": 0,
+      "lastmod_synced_indexable_pages": 21,
+      "noindex_urls_added": 0
+    }
+  },
+  "search_index_snapshot": {
+    "source": "public search-engine snapshot checked 2026-09-19",
+    "observations": [
+      "Search results still expose an older Device Compatibility snapshot labeled Phase110 / 550 records.",
+      "A Device Passport search snapshot shows Phase143 / 572 headline data while the rendered search-form count is still shown as 550 in that snapshot.",
+      "A home-page search snapshot still exposes 550 records."
+    ],
+    "interpretation": "Treat these as crawl/index freshness signals, not proof that the live origin or GitHub deployment is stale. Main contains the 572/Phase144 implementation.",
+    "action": "Use corrected sitemap lastmod and Phase152 release markers, then verify again with a future crawl/GSC export."
+  },
+  "gsc_freshness": {
+    "latest_safely_retrievable_basis": "2026-09-08 Phase128 GSC-backed data",
+    "newer_raw_export_available_in_current_project": false,
+    "status": "blocked_on_new_raw_export",
+    "rule": "Do not re-rank Phase145 candidates with invented metrics."
+  },
+  "seo_metadata_audit": {
+    "note": "Several English titles/descriptions are long, especially Phase149-151. They are not mass-retitled in Phase152 because no newer raw GSC CTR/query evidence is available.",
+    "action_when_new_gsc_arrives": "Use query-level CTR and average-position evidence to decide whether snippet rewrites are justified."
+  },
+  "priorities_after_phase152": [
+    "Verify recrawl/public-search freshness after updated sitemap lastmod is processed.",
+    "Ingest a fresh raw SolQvia GSC export and rerun Phase145.",
+    "Measure Phase146-151 before/after query, impression, CTR and position deltas.",
+    "Expand SolQvia-owned real-device evidence on high-demand current devices.",
+    "Automate official-source change detection."
+  ]
+}

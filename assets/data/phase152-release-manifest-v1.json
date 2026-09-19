@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "release": "phase152-cross-surface-consistency-audit",
+  "date": "2026-09-19",
+  "baseline": "Phase151 main ff83abb9ef8dab83d3b3eb6f85c4e34508a2c0ed",
+  "goal": "Align the current main surfaces, strengthened content metadata, sitemap freshness and search-index observation without changing the 802-URL SEO population.",
+  "fixes": [
+    "Correct stale Phase141 copy in the English Device Passport hero.",
+    "Stamp the primary JA/EN home, compatibility hub and Device Passport surfaces with the Phase152 release marker.",
+    "Update sitemap lastmod to 2026-09-19 for indexable pages actually strengthened in Phase144/147-151/152.",
+    "Add a reusable repository audit for canonical, robots, release markers, internal links, Device Passport count and sitemap URL count."
+  ],
+  "intentionally_not_changed": [
+    "The Phase146 Android VPN lockdown pages remain noindex,follow and absent from the sitemap.",
+    "Evidence Ledger-specific 550-record copy remains separate because that layer has not been migrated to the 572-record Device Passport dataset.",
+    "Long English titles are not mass-retitled without fresh GSC CTR/query evidence.",
+    "No new GSC values are invented beyond the latest safely retrievable 2026-09-08 basis."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "sitemap_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "next_gate": [
+    "Fresh raw GSC export",
+    "Phase145 rerun",
+    "Phase146-151 before/after measurement",
+    "High-demand Device Passport gap fill",
+    "SolQvia real-device evidence expansion"
+  ]
+}
