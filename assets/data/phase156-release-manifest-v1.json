@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0",
+  "release": "phase156-esim-rsp-lifecycle-db",
+  "date": "2026-09-19",
+  "baseline": "Phase155 main e57ce10c368c66d00236705bb25936257ee18940",
+  "goal": "Normalize consumer eSIM provisioning and activation into independently evidenced lifecycle stages and failure categories so SolQvia can identify where setup stopped.",
+  "outputs": [
+    "assets/data/phase156-esim-rsp-lifecycle-schema-v1.json",
+    "assets/data/phase156-esim-rsp-lifecycle-v1.json",
+    "assets/data/phase156-esim-rsp-failure-taxonomy-v1.json",
+    "assets/data/phase156-phase154-field-map-v1.json",
+    "scripts/phase156-esim-rsp-validate.mjs"
+  ],
+  "lifecycle": [
+    "device_capability",
+    "activation_material",
+    "discovery_and_server_session",
+    "profile_download",
+    "profile_install",
+    "profile_enable",
+    "carrier_line_activation",
+    "network_registration",
+    "service_validation"
+  ],
+  "evidence_rules": [
+    "QR/link/manual activation material success does not prove profile download.",
+    "Profile download does not prove installation.",
+    "Profile installation does not prove enablement.",
+    "Profile enablement does not prove carrier line activation or network registration.",
+    "Network registration does not prove data, voice, SMS or IMS.",
+    "Apple user-facing workflows do not expose enough information to infer hidden RSP server stages.",
+    "User activation codes, confirmation codes, full EID and subscriber credentials are prohibited from storage."
+  ],
+  "official_basis": [
+    "GSMA consumer eSIM specifications page and active SGP.22 references",
+    "Android eSIM overview / eUICC APIs",
+    "Apple eSIM activation and cross-platform transfer guidance",
+    "au eSIM opening, line-switch and manual-input procedures"
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "public_html_changes": 0
+  },
+  "next_phase": "Phase157 IMS / VoLTE / VoNR evidence matrix and provisioning/runtime separation."
+}
