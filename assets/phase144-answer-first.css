@@ -1,0 +1,23 @@
+.p144-answer-first{margin-top:1rem;padding:1rem;border:1px solid #cbd9e8;border-radius:16px;background:#f8fbff;box-shadow:0 8px 24px rgba(21,55,92,.04)}
+.p144-answer-head{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start;flex-wrap:wrap}
+.p144-answer-head h3{margin:.15rem 0 .35rem;font-size:1.2rem}
+.p144-answer-head p:not(.eyebrow){margin:0;color:#53657a;max-width:760px}
+.p144-model-chip{display:inline-flex;align-items:center;min-height:32px;padding:.35rem .65rem;border:1px solid #cbd9e8;border-radius:999px;background:#fff;color:#425267;font-size:.8rem;font-weight:700}
+.p144-answer-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:1rem}
+.p144-answer-card{min-width:0;padding:.8rem;border:1px solid #dbe5f0;border-radius:12px;background:#fff}
+.p144-answer-card::before{content:"";display:block;width:28px;height:3px;border-radius:999px;background:#8190a3;margin-bottom:.55rem}
+.p144-answer-card.is-confirmed::before{background:#2f7d58}
+.p144-answer-card.is-official::before{background:#2b69ac}
+.p144-answer-card.is-negative::before{background:#9a4f4f}
+.p144-answer-card.is-unverified::before,.p144-answer-card.is-neutral::before{background:#8190a3}
+.p144-answer-label,.p144-answer-card strong,.p144-answer-card small{display:block}
+.p144-answer-label{font-size:.76rem;color:#617084;font-weight:700}
+.p144-answer-card strong{margin-top:.2rem;font-size:.98rem;color:#1f2f42}
+.p144-answer-card small{margin-top:.28rem;color:#53657a;line-height:1.45;overflow-wrap:anywhere}
+.p144-answer-foot{margin-top:.9rem;padding-top:.85rem;border-top:1px solid #dbe5f0}
+.p144-answer-foot p{margin:0;color:#53657a;font-size:.86rem;line-height:1.6}
+.p144-answer-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:.75rem}
+.p144-answer-actions a{display:inline-flex;align-items:center;padding:.58rem .72rem;border:1px solid #b9c9dc;border-radius:10px;background:#fff;text-decoration:none;font-size:.84rem;font-weight:700}
+.p144-answer-actions a:hover{border-color:#2463a7;background:#f1f7ff}
+@media(max-width:900px){.p144-answer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.p144-answer-first{padding:.85rem}.p144-answer-grid{grid-template-columns:1fr}.p144-answer-actions{display:grid}.p144-answer-actions a{width:100%;justify-content:space-between}}
