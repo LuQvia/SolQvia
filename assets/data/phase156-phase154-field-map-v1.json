@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "release": "phase156-esim-rsp-lifecycle-db",
+  "phase154_layer": "esim_rsp",
+  "mappings": [
+    {
+      "phase154_field": "lpa_present",
+      "phase156_stage": "device_capability",
+      "phase156_field": "lpa_present"
+    },
+    {
+      "phase154_field": "euicc_manager_available",
+      "phase156_stage": "device_capability",
+      "phase156_field": "euicc_manager_available"
+    },
+    {
+      "phase154_field": "smdp_reachable",
+      "phase156_stage": "discovery_and_server_session",
+      "phase156_field": "smdp_reachable"
+    },
+    {
+      "phase154_field": "activation_method",
+      "phase156_stage": "activation_material",
+      "phase156_field": "activation_method"
+    },
+    {
+      "phase154_field": "profile_download",
+      "phase156_stage": "profile_download",
+      "phase156_field": "download_completed"
+    },
+    {
+      "phase154_field": "profile_install",
+      "phase156_stage": "profile_install",
+      "phase156_field": "profile_installed"
+    },
+    {
+      "phase154_field": "profile_enable",
+      "phase156_stage": "profile_enable",
+      "phase156_field": "profile_enabled"
+    },
+    {
+      "phase154_field": "profile_disable",
+      "phase156_stage": "profile_enable",
+      "phase156_field": "profile_disabled"
+    },
+    {
+      "phase154_field": "profile_delete",
+      "phase156_stage": "profile_install",
+      "phase156_field": "profile_deleted"
+    },
+    {
+      "phase154_field": "device_transfer",
+      "phase156_stage": "carrier_line_activation",
+      "phase156_field": "transfer_workflow"
+    },
+    {
+      "phase154_field": "multiple_enabled_profiles",
+      "phase156_stage": "profile_enable",
+      "phase156_field": "multiple_enabled_profiles_state"
+    }
+  ],
+  "cross_layer_links": [
+    {
+      "phase156_stage": "network_registration",
+      "phase154_layer": "network_registration"
+    },
+    {
+      "phase156_stage": "service_validation",
+      "phase154_layers": [
+        "data_session",
+        "ims_services"
+      ]
+    }
+  ],
+  "migration_rule": "Phase156 refines Phase154 eSIM RSP fields. It does not overwrite confirmed network/data/IMS evidence, and profile success never auto-promotes downstream layers."
+}
