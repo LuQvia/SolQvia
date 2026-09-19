@@ -1086,14 +1086,31 @@
         "directional_voice_failure"
       ],
       "localized_when": [],
-      "next_question_ids": [
-        "q_voice_outgoing",
-        "q_voice_incoming"
-      ],
+      "next_question_ids": [],
       "forbidden_inferences": [
         "One successful direction does not prove the other."
       ],
-      "localize_on_match": true
+      "localize_on_match": true,
+      "all_of": [
+        {
+          "observation": "ims.registration",
+          "op": "eq",
+          "value": "registered"
+        },
+        {
+          "observation": "ims.voice_capability",
+          "op": "eq",
+          "value": "confirmed"
+        },
+        {
+          "observation": "voice.outgoing",
+          "op": "known"
+        },
+        {
+          "observation": "voice.incoming",
+          "op": "known"
+        }
+      ]
     },
     {
       "id": "r_sms_directional_failure",
@@ -1116,14 +1133,21 @@
         "directional_sms_failure"
       ],
       "localized_when": [],
-      "next_question_ids": [
-        "q_sms_send",
-        "q_sms_receive"
-      ],
+      "next_question_ids": [],
       "forbidden_inferences": [
         "One successful SMS direction does not prove the other."
       ],
-      "localize_on_match": true
+      "localize_on_match": true,
+      "all_of": [
+        {
+          "observation": "sms.send",
+          "op": "known"
+        },
+        {
+          "observation": "sms.receive",
+          "op": "known"
+        }
+      ]
     },
     {
       "id": "r_volte_bearer_unknown",
