@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0",
+  "release": "phase165-measurement-execution-gates",
+  "checked_at": "2026-09-19",
+  "purpose": "Move SolQvia from architecture-building into measurement, visual QA, real-device execution, and evidence-to-SEO feedback while preventing planned/unmeasured work from being reported as completed.",
+  "gates": [
+    {
+      "id": "gsc_measurement",
+      "order": 10,
+      "status": "blocked_input_missing",
+      "objective": "Recompute Phase145/153 priorities and post-change impact from newer raw Search Console exports.",
+      "current_state": {
+        "latest_safe_numeric_basis": "2026-09-08",
+        "newer_raw_zip_retrieved": false,
+        "searched_names": [
+          "solqvia.com-Performance-on-Search-2026-09-12.zip",
+          "solqvia.com-Performance-on-Search-2026-09-11.zip",
+          "solqvia.com-Performance-on-Search-2026-09-10.zip",
+          "solqvia.com-Performance-on-Search-2026-09-09.zip"
+        ]
+      },
+      "pass_condition": "A newer raw export is available and processed without inferring Query×Page joins from separate tables.",
+      "next_action": "When a new SolQvia GSC export is available, run the existing Phase153 measurement path before changing search-demand priorities.",
+      "forbidden_claims": [
+        "Do not call the 2026-09-08 baseline current demand.",
+        "Do not claim ranking/CTR uplift without newer raw data.",
+        "Do not create device-level GSC rankings from absent query data."
+      ]
+    },
+    {
+      "id": "public_index_freshness",
+      "order": 20,
+      "status": "main_current_search_snapshot_stale",
+      "objective": "Distinguish current repository/public implementation from search-engine crawl freshness.",
+      "current_state": {
+        "main_device_passport_count": 572,
+        "main_phase": "Phase163",
+        "search_snapshot_observed_count": 550,
+        "search_snapshot_observed_phase": "Phase143",
+        "interpretation": "The repository implementation is current while the searchable crawl snapshot is stale; this is not enough evidence to call deployment broken."
+      },
+      "pass_condition": "A later search-engine crawl exposes Phase163 and the 572 search count, or equivalent current-page markers.",
+      "next_action": "Monitor re-crawl/index freshness; do not roll back main or add duplicate content solely to chase a stale crawl snapshot.",
+      "forbidden_claims": [
+        "Do not call a stale crawl snapshot a deployment failure without live-origin evidence.",
+        "Do not reduce the canonical dataset from 572 to match a stale 550 snapshot."
+      ]
+    },
+    {
+      "id": "visual_qa",
+      "order": 30,
+      "status": "pending_browser_render",
+      "objective": "Verify the Phase163 three-layer Device Passport at real breakpoints and interaction states.",
+      "current_state": {
+        "static_html_css_js_checks": true,
+        "live_browser_render_available_in_current_execution_environment": false,
+        "breakpoints_required": [
+          390,
+          768,
+          1440
+        ],
+        "scenarios_required": [
+          "empty_state",
+          "standard_device_without_deep_overlay",
+          "SCG36_partial_deep_overlay",
+          "KY-41C_solqvia_capture",
+          "level3_expanded"
+        ]
+      },
+      "pass_condition": "All required breakpoint/scenario combinations are visually reviewed with no clipping, overlap, unreadable density, or misleading hierarchy.",
+      "next_action": "Run browser screenshots when an environment with page rendering is available; store only QA results, not user data.",
+      "forbidden_claims": [
+        "Static CSS validation is not visual QA.",
+        "Do not mark responsive layout as visually passed until rendered."
+      ]
+    },
+    {
+      "id": "real_device_execution",
+      "order": 40,
+      "status": "ready_waiting_for_observation",
+      "objective": "Execute Phase164 capture campaigns using actual devices/lines and Phase162 privacy-safe capture format.",
+      "current_state": {
+        "completed_phase162_captures": 2,
+        "planned_phase164_campaigns": 6,
+        "new_completed_phase164_captures": 0,
+        "highest_leverage_existing_capture": "KY-41C × Y!mobile / SoftBank",
+        "highest_leverage_new_runtime_capture": "SCG36 × au"
+      },
+      "pass_condition": "At least one Phase164 plan becomes a validated Phase162 completed capture with explicit observed values and passed privacy review.",
+      "next_action": "When a device/line is physically available, start with the Phase164 generated blank capture and record only actual observations.",
+      "forbidden_claims": [
+        "A planned campaign is not a real-device test.",
+        "Do not copy Y!mobile results into SoftBank scope or vice versa.",
+        "Do not infer current software behavior from a historical unbound capture."
+      ]
+    },
+    {
+      "id": "seo_evidence_feedback",
+      "order": 50,
+      "status": "waiting_for_validated_capture",
+      "objective": "Feed validated SolQvia-owned runtime evidence back into existing high-value URLs without expanding page count unnecessarily.",
+      "current_state": {
+        "static_reflection_ready": false,
+        "reason": "No new Phase164 capture has been completed yet.",
+        "preferred_surface": "existing exact-model/device/diagnostic pages",
+        "new_url_default": false
+      },
+      "pass_condition": "A validated capture is reflected into the relevant existing page as static crawlable evidence with exact scope/date/software conditions.",
+      "next_action": "After capture validation, update the existing URL first, then measure GSC impact before considering a new URL.",
+      "forbidden_claims": [
+        "Do not publish planned runtime results.",
+        "Do not create a new URL only because a new capture exists.",
+        "Do not convert a scoped runtime result into a device-wide compatibility guarantee."
+      ]
+    }
+  ],
+  "operating_order": [
+    "Acquire and measure newer GSC raw data when available.",
+    "Complete real-browser Phase163 visual QA.",
+    "Execute KY-41C continuation capture when the physical test setup is available.",
+    "Execute SCG36/au deep capture when available.",
+    "Reflect validated evidence into existing static SEO surfaces.",
+    "Measure impact before adding more architecture or URLs."
+  ]
+}

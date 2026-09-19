@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "release": "phase165-measurement-execution-gates",
+  "checked_at": "2026-09-19",
+  "pass": true,
+  "gates": 5,
+  "gsc": {
+    "newer_raw_retrieved": false,
+    "safe_numeric_basis": "2026-09-08",
+    "status": "blocked_input_missing"
+  },
+  "public_index_freshness": {
+    "repository_main_phase": "Phase163",
+    "repository_main_search_count": 572,
+    "stale_550_in_current_main": false,
+    "searchable_crawl_snapshot_contains_550": true,
+    "status": "main_current_search_snapshot_stale"
+  },
+  "visual_qa": {
+    "status": "pending_browser_render",
+    "breakpoints": [
+      390,
+      768,
+      1440
+    ],
+    "scenarios": 5,
+    "static_source_checks_passed": true,
+    "rendered_visual_pass_claimed": false
+  },
+  "real_device": {
+    "phase162_completed_captures": 2,
+    "phase164_planned_campaigns": 6,
+    "phase164_new_completed_captures": 0,
+    "status": "ready_waiting_for_observation"
+  },
+  "seo_feedback": {
+    "status": "waiting_for_validated_capture",
+    "static_reflection_performed": false
+  },
+  "checks": [
+    "Phase165 JSON artifacts parse.",
+    "Phase165 validator syntax parses.",
+    "JA and EN Device Passport main both contain Phase163 and 572 search count.",
+    "No stale 550 search count exists in current main Device Passport HTML.",
+    "Phase153 still contains the dated 2026-09-08 safe baseline.",
+    "Phase162 completed captures remain exactly 2.",
+    "Phase164 planned captures remain exactly 6.",
+    "Visual QA remains pending rather than being falsely marked passed."
+  ],
+  "public_surface": {
+    "changed": false,
+    "target_indexable_urls": 802
+  }
+}
