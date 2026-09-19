@@ -13,13 +13,14 @@
     "assets/data/phase161-diagnosis-scenarios-v1.json",
     "assets/data/phase161-scenario-validation-v1.json",
     "scripts/phase161-diagnosis-engine.mjs",
-    "scripts/phase161-diagnosis-validate.mjs"
+    "scripts/phase161-diagnosis-validate.mjs",
+    "assets/data/phase161-validation-report-v1.json"
   ],
   "coverage": {
     "canonical_layers": 8,
     "canonical_observations": 39,
     "questions": 24,
-    "rules": 36,
+    "rules": 38,
     "cross_layer_failure_categories": 5,
     "inherited_failure_taxonomies": [
       "Phase156 eSIM RSP: 11",
@@ -28,7 +29,8 @@
       "Phase160 CA/DC: 11"
     ],
     "scenario_tests": 10,
-    "scenario_tests_passed": 10
+    "scenario_tests_passed": 10,
+    "failure_ids_total": 53
   },
   "decision_policy": [
     "Explicit failure outranks unknown.",
