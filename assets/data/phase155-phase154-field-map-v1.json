@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "release": "phase155-carrier-config-settings-db",
+  "phase154_layer": "carrier_configuration",
+  "mappings": [
+    {
+      "phase154_field": "android_carrier_id",
+      "phase155_path": "configuration.feature_policies.carrier_id"
+    },
+    {
+      "phase154_field": "android_carrier_config",
+      "phase155_path": "configuration.feature_policies.carrier_config_snapshot"
+    },
+    {
+      "phase154_field": "carrier_app",
+      "phase155_path": "configuration.feature_policies.carrier_app_present"
+    },
+    {
+      "phase154_field": "carrier_privileges_applied",
+      "phase155_path": "configuration.feature_policies.carrier_privileges_applied"
+    },
+    {
+      "phase154_field": "apple_carrier_settings_version",
+      "phase155_path": "configuration.feature_policies.carrier_settings_version"
+    },
+    {
+      "phase154_field": "apn_policy",
+      "phase155_path": "configuration.feature_policies.apn_policy"
+    },
+    {
+      "phase154_field": "ims_provisioning_required",
+      "phase155_path": "configuration.feature_policies.ims_policy"
+    },
+    {
+      "phase154_field": "volte_available",
+      "phase155_path": "configuration.feature_policies.volte_policy"
+    },
+    {
+      "phase154_field": "wifi_calling_available",
+      "phase155_path": "configuration.feature_policies.wifi_calling_policy"
+    },
+    {
+      "phase154_field": "tethering_policy",
+      "phase155_path": "configuration.feature_policies.tethering_policy"
+    },
+    {
+      "phase154_field": "mms_policy",
+      "phase155_path": "configuration.feature_policies.sms_mms_policy"
+    }
+  ],
+  "migration_rule": "Phase155 records enrich Phase154 carrier_configuration only when exact evidence exists. Unknown Phase155 fields never overwrite confirmed runtime in downstream layers."
+}

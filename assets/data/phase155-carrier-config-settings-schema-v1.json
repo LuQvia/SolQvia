@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "release": "phase155-carrier-config-settings-db",
+  "checked_at": "2026-09-19",
+  "purpose": "Normalize Android CarrierConfig/carrier identification and Apple Carrier Settings into a shared evidence-scoped model that plugs into Phase154 carrier_configuration without pretending the two platforms expose identical internals.",
+  "platform_models": {
+    "android": {
+      "model_id": "android_carrier_configuration_v1",
+      "architecture": {
+        "precedence": [
+          "carrier_app",
+          "platform_carrier_config_app",
+          "framework_default"
+        ],
+        "reload_triggers": [
+          "SIM load / boot / SIM hot swap",
+          "carrier app explicit reload",
+          "carrier app update"
+        ]
+      },
+      "matching_dimensions": [
+        "mcc_mnc",
+        "spn",
+        "imsi_pattern_type_only",
+        "gid1_type",
+        "gid2_type",
+        "carrier_id"
+      ],
+      "fields": [
+        "carrier_id",
+        "carrier_id_name",
+        "carrier_app_present",
+        "carrier_privileges_applied",
+        "carrier_config_source",
+        "carrier_config_snapshot",
+        "apn_policy",
+        "volte_policy",
+        "ims_policy",
+        "wifi_calling_policy",
+        "sms_mms_policy",
+        "tethering_policy",
+        "fiveg_ui_policy"
+      ],
+      "evidence_boundaries": [
+        "Do not store actual IMSI/GID subscriber values; only record matching mechanisms or non-secret carrier metadata.",
+        "CarrierConfig support does not prove runtime success.",
+        "Carrier ID is an identification input, not a compatibility verdict.",
+        "AOSP CarrierConfig content does not prove an OEM/carrier build has adopted the same value."
+      ]
+    },
+    "apple": {
+      "model_id": "apple_carrier_settings_v1",
+      "architecture": {
+        "user_visible_check_path": [
+          "Settings",
+          "General",
+          "About",
+          "Carrier"
+        ],
+        "update_behavior": [
+          "carrier settings updates can improve cellular connectivity/performance",
+          "updates can add support for features such as 5G or Wi-Fi Calling",
+          "new SIM/eSIM may require settings for the new carrier"
+        ]
+      },
+      "fields": [
+        "carrier_name",
+        "carrier_settings_version",
+        "settings_update_available",
+        "settings_update_required",
+        "sim_or_esim_context",
+        "fiveg_feature_support",
+        "wifi_calling_feature_support",
+        "observed_network_behavior"
+      ],
+      "evidence_boundaries": [
+        "Carrier Settings Version is device-observed state unless an official source publishes the exact version.",
+        "A newer carrier settings version is not automatically equivalent to better compatibility.",
+        "Carrier settings capability does not prove voice/data/SMS/IMS runtime success.",
+        "Do not infer internal carrier-bundle contents that Apple does not expose publicly."
+      ]
+    }
+  },
+  "shared_record": {
+    "required": [
+      "key",
+      "platform",
+      "identity",
+      "subscription_context",
+      "configuration",
+      "evidence",
+      "open_questions"
+    ],
+    "identity_fields": [
+      "model_name",
+      "model_number",
+      "market_region",
+      "os_version",
+      "firmware_version",
+      "baseband_version"
+    ],
+    "subscription_context_fields": [
+      "carrier",
+      "sim_type",
+      "plan_family",
+      "mvno_or_mno"
+    ],
+    "configuration_fields": [
+      "state",
+      "platform_model",
+      "observed_version",
+      "matching_dimensions",
+      "feature_policies"
+    ]
+  },
+  "states": [
+    "confirmed",
+    "supported_by_spec",
+    "not_supported_by_spec",
+    "not_tested",
+    "not_solqvia_tested",
+    "unknown"
+  ]
+}

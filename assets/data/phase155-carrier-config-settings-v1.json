@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "release": "phase155-carrier-config-settings-db",
+  "checked_at": "2026-09-19",
+  "records": [
+    {
+      "key": "android-platform-carrierconfig-architecture",
+      "platform": "android",
+      "record_type": "platform_architecture",
+      "identity": {
+        "model_name": null,
+        "model_number": null,
+        "market_region": "global",
+        "os_version": "Android 6.0+ architecture; carrier ID integration Android 10+"
+      },
+      "subscription_context": {
+        "carrier": "generic",
+        "sim_type": "SIM/eSIM",
+        "plan_family": null,
+        "mvno_or_mno": "both"
+      },
+      "configuration": {
+        "state": "confirmed",
+        "platform_model": "android_carrier_configuration_v1",
+        "observed_version": null,
+        "matching_dimensions": [
+          "MCC",
+          "MNC",
+          "SPN",
+          "IMSI matching mechanism",
+          "GID1",
+          "GID2",
+          "Carrier ID"
+        ],
+        "feature_policies": [
+          "roaming/non-roaming",
+          "visual voicemail",
+          "SMS/MMS network settings",
+          "VoLTE/IMS",
+          "APN",
+          "5G UI behavior"
+        ],
+        "precedence": [
+          "carrier app",
+          "platform CarrierConfig app",
+          "framework defaults"
+        ]
+      },
+      "evidence": [
+        {
+          "type": "os_platform_official",
+          "source": "https://source.android.com/docs/core/connect/carrier",
+          "checked_at": "2026-09-19",
+          "scope": "CarrierConfig architecture, matching inputs, precedence and telephony policy examples",
+          "confidence": "high"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://source.android.com/docs/core/connect/carrierid",
+          "checked_at": "2026-09-19",
+          "scope": "Carrier ID database and CarrierConfig integration",
+          "confidence": "high"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://source.android.com/docs/core/connect/uicc",
+          "checked_at": "2026-09-19",
+          "scope": "UICC carrier privileges and carrier-service access",
+          "confidence": "high"
+        }
+      ],
+      "open_questions": []
+    },
+    {
+      "key": "apple-platform-carrier-settings-architecture",
+      "platform": "apple",
+      "record_type": "platform_architecture",
+      "identity": {
+        "model_name": "iPhone/iPad",
+        "model_number": null,
+        "market_region": "global",
+        "os_version": "current iOS/iPadOS support guidance"
+      },
+      "subscription_context": {
+        "carrier": "generic",
+        "sim_type": "SIM/eSIM",
+        "plan_family": null,
+        "mvno_or_mno": "both"
+      },
+      "configuration": {
+        "state": "confirmed",
+        "platform_model": "apple_carrier_settings_v1",
+        "observed_version": null,
+        "matching_dimensions": [],
+        "feature_policies": [
+          "cellular network connectivity/performance",
+          "5G support",
+          "Wi-Fi Calling support"
+        ],
+        "user_visible_check_path": "Settings > General > About > Carrier"
+      },
+      "evidence": [
+        {
+          "type": "os_platform_official",
+          "source": "https://support.apple.com/ja-jp/109324",
+          "checked_at": "2026-09-19",
+          "scope": "Carrier settings update behavior, user-visible version check, and new SIM/eSIM settings requirement",
+          "confidence": "high"
+        }
+      ],
+      "open_questions": [
+        "Apple does not publicly expose all internal carrier-bundle contents; do not infer hidden configuration."
+      ]
+    },
+    {
+      "key": "scg36-au-android16-carrier-config-placeholder",
+      "platform": "android",
+      "record_type": "device_subscription",
+      "identity": {
+        "model_name": "Galaxy S26",
+        "model_number": "SCG36",
+        "market_region": "JP",
+        "os_version": "Android 16",
+        "firmware_version": null,
+        "baseband_version": null
+      },
+      "subscription_context": {
+        "carrier": "au",
+        "sim_type": "SIM/eSIM",
+        "plan_family": null,
+        "mvno_or_mno": "MNO"
+      },
+      "configuration": {
+        "state": "unknown",
+        "platform_model": "android_carrier_configuration_v1",
+        "observed_version": null,
+        "matching_dimensions": [],
+        "feature_policies": {
+          "carrier_id": "unknown",
+          "carrier_app_present": "unknown",
+          "carrier_privileges_applied": "unknown",
+          "carrier_config_snapshot": "unknown",
+          "apn_policy": "unknown",
+          "volte_policy": "unknown",
+          "ims_policy": "unknown",
+          "wifi_calling_policy": "unknown",
+          "sms_mms_policy": "unknown",
+          "tethering_policy": "unknown",
+          "fiveg_ui_policy": "unknown"
+        }
+      },
+      "evidence": [
+        {
+          "type": "carrier_official",
+          "source": "https://www.au.com/mobile/product/sim/devices/",
+          "checked_at": "2026-09-18",
+          "scope": "Exact-model operation listing provides runtime results only; it does not expose CarrierConfig values.",
+          "confidence": "high"
+        }
+      ],
+      "open_questions": [
+        "Exact Android Carrier ID on this device/subscription",
+        "Actual CarrierConfig snapshot on the tested build",
+        "Carrier app presence and carrier-privilege state",
+        "IMS provisioning policy"
+      ]
+    },
+    {
+      "key": "iphone-generic-jp-carrier-settings-observation-template",
+      "platform": "apple",
+      "record_type": "device_subscription_template",
+      "identity": {
+        "model_name": "iPhone",
+        "model_number": null,
+        "market_region": "JP",
+        "os_version": null,
+        "firmware_version": null,
+        "baseband_version": null
+      },
+      "subscription_context": {
+        "carrier": null,
+        "sim_type": "SIM/eSIM",
+        "plan_family": null,
+        "mvno_or_mno": null
+      },
+      "configuration": {
+        "state": "not_tested",
+        "platform_model": "apple_carrier_settings_v1",
+        "observed_version": null,
+        "matching_dimensions": [],
+        "feature_policies": {
+          "carrier_name": null,
+          "carrier_settings_version": null,
+          "settings_update_available": null,
+          "settings_update_required": null,
+          "fiveg_feature_support": null,
+          "wifi_calling_feature_support": null
+        }
+      },
+      "evidence": [
+        {
+          "type": "os_platform_official",
+          "source": "https://support.apple.com/ja-jp/109324",
+          "checked_at": "2026-09-19",
+          "scope": "Template fields derived from Apple-visible carrier settings workflow; no device-specific version asserted.",
+          "confidence": "high"
+        }
+      ],
+      "open_questions": [
+        "Exact iPhone model",
+        "iOS version",
+        "Carrier",
+        "Carrier Settings Version shown on device",
+        "Whether an update prompt appears after SIM/eSIM change"
+      ]
+    }
+  ]
+}
