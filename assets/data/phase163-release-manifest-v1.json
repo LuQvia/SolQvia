@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "release": "phase163-device-passport-deep-ux",
+  "date": "2026-09-19",
+  "baseline": "Phase162 main a7a781d87938e8cf8378e2a3adfd5b62a03facee",
+  "goal": "Expose Phase154-162 evidence inside Device Passport as a three-layer UX: answer first, symptom-oriented troubleshooting, and collapsible technical/evidence detail.",
+  "public_changes": [
+    "JA/EN Device Passport load Phase163 CSS and JavaScript once.",
+    "Level 1 reuses Phase144 Answer First.",
+    "Level 2 adds symptom-oriented actions and a Phase161 next question when exact capture evidence supports one.",
+    "Level 3 surfaces exact-model deep evidence from Phase154-162 without hiding unknown/not-tested states.",
+    "English stale 569 device/sales meta/structured-data wording is synchronized to 572."
+  ],
+  "deep_overlay": {
+    "exact_records": 4,
+    "model_numbers": [
+      "SCG36",
+      "SC-51G",
+      "SM-S942Q",
+      "KY-41C"
+    ],
+    "solqvia_capture_sessions": 2,
+    "ky41c_next_question": "q_esim_profile_enabled"
+  },
+  "evidence_boundaries": [
+    "SCG36: mobile data/5G SA/generic voice/SMS may be confirmed while APN/DNN, IMS registration, directional voice/SMS and CA/DC remain unknown or not tested.",
+    "SM-S942Q: official single-band capability does not imply LTE CA/EN-DC/NR CA combination support.",
+    "KY-41C: profile configuration/install and SIM recognition do not imply enablement, network registration, data, voice, SMS or IMS.",
+    "Software latest-reference records remain partial/same-model evidence unless an exact runtime snapshot is bound.",
+    "No deep record is synthesized for the remaining Passport records."
+  ],
+  "outputs": [
+    "assets/data/phase163-device-passport-deep-overlay-v1.json",
+    "assets/phase163-device-passport-deep-ux.css",
+    "assets/phase163-device-passport-deep-ux.js",
+    "scripts/phase163-device-passport-ux-validate.mjs",
+    "assets/data/phase163-validation-report-v1.json",
+    "assets/data/phase163-release-manifest-v1.json",
+    "ja/technology/smartphone/device-passport/index.html",
+    "en/technology/smartphone/device-passport/index.html"
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0,
+    "sitemap_changes": 0
+  },
+  "next_phase": "Phase164 expand Phase162 real-device captures on GSC-priority devices and feed verified results back into the Phase163 deep overlay."
+}

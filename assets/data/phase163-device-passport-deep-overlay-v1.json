@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "release": "phase163-device-passport-deep-ux",
+  "checked_at": "2026-09-19",
+  "purpose": "Small public Device Passport overlay compiled from Phase154-162 exact-device evidence. It summarizes only explicit deep records and never invents values for the rest of the passport dataset.",
+  "records": [
+    {
+      "model_name": "Galaxy S26",
+      "model_number": "SCG36",
+      "original_carrier": "au",
+      "deep_coverage": "partial",
+      "software": {
+        "key": "galaxy-s26-scg36-au-official-latest-20260914",
+        "binding_state": "partial_snapshot",
+        "os": "Android 16",
+        "vendor_ui": "One UI 8.5",
+        "baseband_full": null,
+        "baseband_suffix": "ZH9",
+        "carrier_settings_version": null,
+        "device_update_date": "2026-09-14",
+        "source_scope": "Manufacturer-published latest version for au-sold SCG36, not a SolQvia device observation."
+      },
+      "carrier_configuration": {
+        "state": "unknown",
+        "carrier_id": "unknown",
+        "ims_policy": "unknown"
+      },
+      "data": {
+        "mobile_data": "confirmed",
+        "fiveg_sa": "confirmed",
+        "apn_dnn": "unknown",
+        "packet_session": "unknown",
+        "dns": "unknown",
+        "validation": "unknown"
+      },
+      "ims": {
+        "generic_voice": "confirmed",
+        "generic_sms": "confirmed",
+        "ims_registration": "unknown",
+        "volte_registration": "not_solqvia_tested",
+        "vonr_registration": "not_solqvia_tested",
+        "voice_outgoing": "not_solqvia_tested",
+        "voice_incoming": "not_solqvia_tested"
+      },
+      "aggregation": {
+        "lte_ca": "not_solqvia_tested",
+        "endc": "not_solqvia_tested",
+        "nr_ca": "not_solqvia_tested",
+        "observed_component_carriers": 0
+      },
+      "captures": [],
+      "next_question": null,
+      "evidence_note": "au official operation evidence confirms generic mobile data, 5G SA, voice and SMS for the exact model context; APN/DNN, IMS registration, directional voice/SMS and CA/DC internals remain unverified.",
+      "source_phases": [
+        "155",
+        "157",
+        "158",
+        "159",
+        "160"
+      ]
+    },
+    {
+      "model_name": "Galaxy S26",
+      "model_number": "SC-51G",
+      "original_carrier": "NTTドコモ",
+      "deep_coverage": "software_only",
+      "software": {
+        "key": "galaxy-s26-sc51g-docomo-official-latest-20260908",
+        "binding_state": "same_model_only",
+        "os": "Android 16",
+        "vendor_ui": "One UI 8.5",
+        "baseband_full": null,
+        "baseband_suffix": "ZH9",
+        "carrier_settings_version": null,
+        "device_update_date": "2026-09-08",
+        "source_scope": "Manufacturer-published latest version for docomo-sold SC-51G."
+      },
+      "carrier_configuration": null,
+      "data": null,
+      "ims": null,
+      "aggregation": null,
+      "captures": [],
+      "next_question": null,
+      "evidence_note": "Current deep evidence contains a manufacturer-published software/baseband reference only; no Phase162 runtime capture is bound.",
+      "source_phases": [
+        "159"
+      ]
+    },
+    {
+      "model_name": "Galaxy S26",
+      "model_number": "SM-S942Q",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "deep_coverage": "capability_plus_software",
+      "software": {
+        "key": "galaxy-s26-sms942q-samsungcom-official-latest-20260713",
+        "binding_state": "same_model_only",
+        "os": "Android 16",
+        "vendor_ui": "One UI 8.5",
+        "baseband_full": null,
+        "baseband_suffix": "ZF2",
+        "carrier_settings_version": null,
+        "device_update_date": "2026-07-13",
+        "source_scope": "Manufacturer-published latest version for SM-S942Q."
+      },
+      "carrier_configuration": null,
+      "data": null,
+      "ims": null,
+      "aggregation": {
+        "lte_ca": "unknown",
+        "endc": "unknown",
+        "nr_ca": "unknown",
+        "lte_single_band_count": 21,
+        "nr_single_band_count": 10
+      },
+      "captures": [],
+      "next_question": null,
+      "evidence_note": "Samsung Japan publishes the single-band list and current software reference, but no exact LTE CA / EN-DC / NR CA combination matrix is asserted here.",
+      "source_phases": [
+        "159",
+        "160"
+      ]
+    },
+    {
+      "model_name": "キッズケータイ",
+      "model_number": "KY-41C",
+      "original_carrier": "NTTドコモ",
+      "deep_coverage": "solqvia_capture",
+      "software": null,
+      "carrier_configuration": null,
+      "esim": {
+        "device_capability": "confirmed",
+        "profile_install": "confirmed",
+        "profile_enable": "unknown",
+        "carrier_line_activation": "unknown",
+        "network_registration": "unknown"
+      },
+      "data": {
+        "mobile_data": "not_tested",
+        "apn_dnn": "not_tested"
+      },
+      "ims": {
+        "ims_registration": "not_tested",
+        "volte_registration": "not_tested",
+        "voice_outgoing": "not_tested",
+        "voice_incoming": "not_tested",
+        "sms_send": "not_tested",
+        "sms_receive": "not_tested"
+      },
+      "aggregation": null,
+      "captures": [
+        {
+          "capture_id": "sqv-20260808-ky41c-ymobile-esim-profile",
+          "carrier": "Y!mobile",
+          "tested_at": "2026-08-08",
+          "binding_state": "unbound",
+          "observations": {
+            "subscriber.sim_or_esim_recognized": "confirmed",
+            "esim.profile_install": "confirmed",
+            "software.snapshot_binding": "unbound"
+          }
+        },
+        {
+          "capture_id": "sqv-20260808-ky41c-softbank-esim-profile",
+          "carrier": "SoftBank",
+          "tested_at": "2026-08-08",
+          "binding_state": "unbound",
+          "observations": {
+            "subscriber.sim_or_esim_recognized": "confirmed",
+            "esim.profile_install": "confirmed",
+            "software.snapshot_binding": "unbound"
+          }
+        }
+      ],
+      "next_question": {
+        "id": "q_esim_profile_enabled",
+        "ja": "対象eSIMプロファイルは有効化されていますか？",
+        "en": "Is the target eSIM profile enabled?",
+        "basis": [
+          "sqv-20260808-ky41c-ymobile-esim-profile",
+          "sqv-20260808-ky41c-softbank-esim-profile"
+        ]
+      },
+      "evidence_note": "SolQvia-owned capture confirms eSIM profile configuration/install and terminal-side SIM recognition for Y!mobile and SoftBank only. Network registration, data, voice, SMS and IMS remain untested.",
+      "source_phases": [
+        "156",
+        "157",
+        "158",
+        "161",
+        "162"
+      ]
+    }
+  ],
+  "ui_rules": [
+    "Level 1 reuses Phase144 Answer First and remains the fastest summary.",
+    "Level 2 presents symptom-oriented next actions and the Phase161 next question when a capture supports one.",
+    "Level 3 shows only explicit Phase154-162 deep evidence and software binding; missing values remain unknown/not tested.",
+    "Existing Phase110/131/134 detailed evidence remains authoritative below the Phase163 summary."
+  ]
+}
