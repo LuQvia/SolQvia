@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "release": "phase165-measurement-execution-gates",
+  "checked_at": "2026-09-19",
+  "audit_scope": "Device Passport current main versus publicly searchable crawl snapshot",
+  "repository_main": {
+    "ja_device_passport": {
+      "phase": "Phase163 · 3-Layer Device Passport",
+      "record_count": 572,
+      "search_count_text": "572件",
+      "ux_layer": "phase163-three-layer-device-passport-v1"
+    },
+    "en_device_passport": {
+      "phase": "Phase163 · 3-Layer Device Passport",
+      "record_count": 572,
+      "search_count_text": "572 records",
+      "ux_layer": "phase163-three-layer-device-passport-v1"
+    }
+  },
+  "searchable_crawl_snapshot": {
+    "observed": "2026-09-19",
+    "ja_device_passport": {
+      "crawl_age_label": "crawled yesterday",
+      "phase_text": "Phase143 · Galaxy S26 Family Normalization",
+      "hero_record_count": 572,
+      "search_ui_count": 550
+    },
+    "interpretation": [
+      "The crawl snapshot contains mixed generations: the hero already shows 572 while the interactive search count is 550.",
+      "Current main has 572 in both hero and search count, so the 550 value is not present in the current Device Passport HTML.",
+      "This supports an index/crawl freshness explanation, but does not independently prove origin deployment timing."
+    ]
+  },
+  "action": "Do not change current 572 implementation to match stale crawl output. Re-check after a later crawl and prioritize actual GSC/indexing evidence over assumptions."
+}
