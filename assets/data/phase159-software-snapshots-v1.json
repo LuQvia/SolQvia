@@ -1,0 +1,502 @@
+{
+  "schema_version": "1.0",
+  "release": "phase159-versioned-software-snapshot-model",
+  "checked_at": "2026-09-19",
+  "records": [
+    {
+      "key": "android-platform-software-snapshot-template-20260919",
+      "snapshot_type": "platform_observation_template",
+      "platform": "android",
+      "identity": {
+        "model_name": null,
+        "model_number": null,
+        "market_region": "global",
+        "sales_channel": null,
+        "original_carrier": null
+      },
+      "snapshot": {
+        "os_release": {
+          "os_name": "Android",
+          "os_version": null,
+          "sdk_int": null,
+          "sdk_int_full": null,
+          "base_os": null
+        },
+        "build_identity": {
+          "build_id": null,
+          "build_display": null,
+          "build_fingerprint": null,
+          "incremental": null,
+          "build_type": null,
+          "build_time": null
+        },
+        "security_state": {
+          "security_patch": null,
+          "system_modules_patch": null,
+          "kernel_version": null,
+          "google_play_system_update": null,
+          "apple_system_files_state": null
+        },
+        "radio_firmware": {
+          "radio_firmware_version": null,
+          "baseband_full": null,
+          "baseband_suffix": null,
+          "modem_firmware": null,
+          "radio_observation_method": "Build.getRadioVersion() or device UI / manufacturer support"
+        },
+        "vendor_software": {
+          "vendor_ui_name": null,
+          "vendor_ui_version": null,
+          "vendor_firmware_version": null,
+          "service_provider_software_version": null,
+          "regional_software_channel": null
+        },
+        "carrier_settings": {
+          "carrier_name": null,
+          "carrier_settings_version": null,
+          "carrier_settings_update_available": null,
+          "carrier_settings_update_required": null
+        },
+        "snapshot_context": {
+          "observed_at": null,
+          "device_update_date": null,
+          "reference_checked_at": "2026-09-19",
+          "source_scope": "Android platform observation template",
+          "subscription_carrier": null,
+          "sim_type": null,
+          "plan_family": null,
+          "network_mode": null,
+          "location_scope": null
+        }
+      },
+      "runtime_binding": {
+        "binding_state": "unbound",
+        "runtime_record_keys": [],
+        "binding_basis": "Template only; no device runtime bound.",
+        "known_version_gaps": [
+          "All device-specific values are unobserved."
+        ]
+      },
+      "evidence": [
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/os/Build",
+          "checked_at": "2026-09-19",
+          "scope": "Build fingerprint, build identifiers and radio firmware observation through getRadioVersion().",
+          "confidence": "high",
+          "role": "build_identity"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/os/Build.VERSION",
+          "checked_at": "2026-09-19",
+          "scope": "Android incremental build value and security patch level.",
+          "confidence": "high",
+          "role": "security_state"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/privacy-and-security/understand-device-security-state",
+          "checked_at": "2026-09-19",
+          "scope": "Separate effective security state for system, system modules and kernel.",
+          "confidence": "high",
+          "role": "security_state"
+        }
+      ],
+      "open_questions": [
+        "Exact build, baseband/radio firmware, security patch, Google Play system update and OEM channel require device observation or exact manufacturer/carrier evidence."
+      ]
+    },
+    {
+      "key": "apple-platform-software-snapshot-template-20260919",
+      "snapshot_type": "platform_observation_template",
+      "platform": "apple",
+      "identity": {
+        "model_name": "iPhone/iPad",
+        "model_number": null,
+        "market_region": "global",
+        "sales_channel": null,
+        "original_carrier": null
+      },
+      "snapshot": {
+        "os_release": {
+          "os_name": "iOS/iPadOS",
+          "os_version": null,
+          "sdk_int": null,
+          "sdk_int_full": null,
+          "base_os": null
+        },
+        "build_identity": {
+          "build_id": null,
+          "build_display": null,
+          "build_fingerprint": null,
+          "incremental": null,
+          "build_type": null,
+          "build_time": null
+        },
+        "security_state": {
+          "security_patch": null,
+          "system_modules_patch": null,
+          "kernel_version": null,
+          "google_play_system_update": null,
+          "apple_system_files_state": null
+        },
+        "radio_firmware": {
+          "radio_firmware_version": null,
+          "baseband_full": null,
+          "baseband_suffix": null,
+          "modem_firmware": null,
+          "radio_observation_method": "Settings > General > About > Modem Firmware"
+        },
+        "vendor_software": {
+          "vendor_ui_name": "iOS/iPadOS",
+          "vendor_ui_version": null,
+          "vendor_firmware_version": null,
+          "service_provider_software_version": null,
+          "regional_software_channel": null
+        },
+        "carrier_settings": {
+          "carrier_name": null,
+          "carrier_settings_version": null,
+          "carrier_settings_update_available": null,
+          "carrier_settings_update_required": null
+        },
+        "snapshot_context": {
+          "observed_at": null,
+          "device_update_date": null,
+          "reference_checked_at": "2026-09-19",
+          "source_scope": "Apple platform observation template",
+          "subscription_carrier": null,
+          "sim_type": null,
+          "plan_family": null,
+          "network_mode": null,
+          "location_scope": null
+        }
+      },
+      "runtime_binding": {
+        "binding_state": "unbound",
+        "runtime_record_keys": [],
+        "binding_basis": "Template only; no device runtime bound.",
+        "known_version_gaps": [
+          "Exact iOS version, modem firmware and carrier settings version are unobserved."
+        ]
+      },
+      "evidence": [
+        {
+          "type": "os_platform_official",
+          "source": "https://support.apple.com/ja-jp/109065",
+          "checked_at": "2026-09-19",
+          "scope": "Installed iOS/iPadOS version is visible in Settings > General > About.",
+          "confidence": "high",
+          "role": "os_version"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://support.apple.com/en-mt/guide/iphone/iph3dd5fc7e/ios",
+          "checked_at": "2026-09-19",
+          "scope": "About page exposes iOS software version, Modem Firmware, carrier/network information and IMS status.",
+          "confidence": "high",
+          "role": "radio_firmware"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://support.apple.com/ja-jp/109324",
+          "checked_at": "2026-09-19",
+          "scope": "Carrier Settings Version is visible in About and can update independently, including after SIM/eSIM changes.",
+          "confidence": "high",
+          "role": "carrier_settings"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://support.apple.com/ja-jp/118575",
+          "checked_at": "2026-09-19",
+          "scope": "Apple system files can update automatically without changing the main software version.",
+          "confidence": "high",
+          "role": "security_state"
+        }
+      ],
+      "open_questions": [
+        "Exact Apple build number and modem firmware must be observed on the device or an exact official release source.",
+        "Carrier settings version must be recorded per active carrier/SIM context."
+      ]
+    },
+    {
+      "key": "galaxy-s26-scg36-au-official-latest-20260914",
+      "snapshot_type": "official_latest_reference",
+      "platform": "android",
+      "identity": {
+        "model_name": "Galaxy S26",
+        "model_number": "SCG36",
+        "market_region": "JP",
+        "sales_channel": "au",
+        "original_carrier": "au"
+      },
+      "snapshot": {
+        "os_release": {
+          "os_name": "Android",
+          "os_version": "16",
+          "sdk_int": null,
+          "sdk_int_full": null,
+          "base_os": null
+        },
+        "build_identity": {
+          "build_id": null,
+          "build_display": null,
+          "build_fingerprint": null,
+          "incremental": null,
+          "build_type": null,
+          "build_time": null
+        },
+        "security_state": {
+          "security_patch": null,
+          "system_modules_patch": null,
+          "kernel_version": null,
+          "google_play_system_update": null,
+          "apple_system_files_state": null
+        },
+        "radio_firmware": {
+          "radio_firmware_version": null,
+          "baseband_full": null,
+          "baseband_suffix": "ZH9",
+          "modem_firmware": null,
+          "radio_observation_method": "Samsung Japan official au latest-version table; last three characters only"
+        },
+        "vendor_software": {
+          "vendor_ui_name": "One UI",
+          "vendor_ui_version": "8.5",
+          "vendor_firmware_version": null,
+          "service_provider_software_version": null,
+          "regional_software_channel": "au"
+        },
+        "carrier_settings": {
+          "carrier_name": "au",
+          "carrier_settings_version": null,
+          "carrier_settings_update_available": null,
+          "carrier_settings_update_required": null
+        },
+        "snapshot_context": {
+          "observed_at": null,
+          "device_update_date": "2026-09-14",
+          "reference_checked_at": "2026-09-19",
+          "source_scope": "Manufacturer-published latest version for au-sold SCG36, not a SolQvia device observation.",
+          "subscription_carrier": "au",
+          "sim_type": null,
+          "plan_family": null,
+          "network_mode": null,
+          "location_scope": "JP"
+        }
+      },
+      "runtime_binding": {
+        "binding_state": "partial_snapshot",
+        "runtime_record_keys": [
+          "scg36-au-android16-carrier-config-placeholder",
+          "scg36-au-android16-ims-placeholder",
+          "scg36-au-android16-data-session-placeholder"
+        ],
+        "binding_basis": "Same exact model SCG36 and Android 16 context, but the au operation-check evidence does not expose the exact baseband/build used in the runtime test.",
+        "known_version_gaps": [
+          "Runtime test build fingerprint unknown",
+          "Runtime test full baseband unknown",
+          "Runtime test baseband suffix not explicitly tied to ZH9",
+          "CarrierConfig snapshot unknown"
+        ]
+      },
+      "evidence": [
+        {
+          "type": "manufacturer_official",
+          "source": "https://www.samsung.com/jp/support/mobile-devices/please-tell-us-about-the-latest-version-of-galaxy-terminal-which-is-sold-in-au/",
+          "checked_at": "2026-09-19",
+          "scope": "SCG36 latest published Android 16 / One UI 8.5 / baseband suffix ZH9 / update date 2026-09-14.",
+          "confidence": "high",
+          "role": "radio_firmware"
+        }
+      ],
+      "open_questions": [
+        "Full baseband string",
+        "Build fingerprint/incremental",
+        "Security patch / Google Play system update",
+        "Exact software snapshot used in au operation testing"
+      ]
+    },
+    {
+      "key": "galaxy-s26-sc51g-docomo-official-latest-20260908",
+      "snapshot_type": "official_latest_reference",
+      "platform": "android",
+      "identity": {
+        "model_name": "Galaxy S26",
+        "model_number": "SC-51G",
+        "market_region": "JP",
+        "sales_channel": "NTTドコモ",
+        "original_carrier": "NTTドコモ"
+      },
+      "snapshot": {
+        "os_release": {
+          "os_name": "Android",
+          "os_version": "16",
+          "sdk_int": null,
+          "sdk_int_full": null,
+          "base_os": null
+        },
+        "build_identity": {
+          "build_id": null,
+          "build_display": null,
+          "build_fingerprint": null,
+          "incremental": null,
+          "build_type": null,
+          "build_time": null
+        },
+        "security_state": {
+          "security_patch": null,
+          "system_modules_patch": null,
+          "kernel_version": null,
+          "google_play_system_update": null,
+          "apple_system_files_state": null
+        },
+        "radio_firmware": {
+          "radio_firmware_version": null,
+          "baseband_full": null,
+          "baseband_suffix": "ZH9",
+          "modem_firmware": null,
+          "radio_observation_method": "Samsung Japan official docomo latest-version table; last three characters only"
+        },
+        "vendor_software": {
+          "vendor_ui_name": "One UI",
+          "vendor_ui_version": "8.5",
+          "vendor_firmware_version": null,
+          "service_provider_software_version": null,
+          "regional_software_channel": "NTTドコモ"
+        },
+        "carrier_settings": {
+          "carrier_name": "NTTドコモ",
+          "carrier_settings_version": null,
+          "carrier_settings_update_available": null,
+          "carrier_settings_update_required": null
+        },
+        "snapshot_context": {
+          "observed_at": null,
+          "device_update_date": "2026-09-08",
+          "reference_checked_at": "2026-09-19",
+          "source_scope": "Manufacturer-published latest version for docomo-sold SC-51G.",
+          "subscription_carrier": "NTTドコモ",
+          "sim_type": null,
+          "plan_family": null,
+          "network_mode": null,
+          "location_scope": "JP"
+        }
+      },
+      "runtime_binding": {
+        "binding_state": "same_model_only",
+        "runtime_record_keys": [],
+        "binding_basis": "No exact SolQvia runtime snapshot is bound to this published latest-reference record.",
+        "known_version_gaps": [
+          "No device-observed build/baseband/runtime binding."
+        ]
+      },
+      "evidence": [
+        {
+          "type": "manufacturer_official",
+          "source": "https://www.samsung.com/jp/support/mobile-devices/please-tell-us-about-the-latest-version-of-the-galaxy-device-sold-in-docomo/",
+          "checked_at": "2026-09-19",
+          "scope": "SC-51G latest published Android 16 / One UI 8.5 / baseband suffix ZH9 / update date 2026-09-08.",
+          "confidence": "high",
+          "role": "radio_firmware"
+        }
+      ],
+      "open_questions": [
+        "Full baseband/build/security state",
+        "Runtime evidence tied to this exact snapshot"
+      ]
+    },
+    {
+      "key": "galaxy-s26-sms942q-samsungcom-official-latest-20260713",
+      "snapshot_type": "official_latest_reference",
+      "platform": "android",
+      "identity": {
+        "model_name": "Galaxy S26",
+        "model_number": "SM-S942Q",
+        "market_region": "JP",
+        "sales_channel": "Samsung.com / SIMフリー",
+        "original_carrier": null
+      },
+      "snapshot": {
+        "os_release": {
+          "os_name": "Android",
+          "os_version": "16",
+          "sdk_int": null,
+          "sdk_int_full": null,
+          "base_os": null
+        },
+        "build_identity": {
+          "build_id": null,
+          "build_display": null,
+          "build_fingerprint": null,
+          "incremental": null,
+          "build_type": null,
+          "build_time": null
+        },
+        "security_state": {
+          "security_patch": null,
+          "system_modules_patch": null,
+          "kernel_version": null,
+          "google_play_system_update": null,
+          "apple_system_files_state": null
+        },
+        "radio_firmware": {
+          "radio_firmware_version": null,
+          "baseband_full": null,
+          "baseband_suffix": "ZF2",
+          "modem_firmware": null,
+          "radio_observation_method": "Samsung Japan official manufacturer-brand latest-version table; last three characters only"
+        },
+        "vendor_software": {
+          "vendor_ui_name": "One UI",
+          "vendor_ui_version": "8.5",
+          "vendor_firmware_version": null,
+          "service_provider_software_version": null,
+          "regional_software_channel": "Samsung.com / JP SIM-free"
+        },
+        "carrier_settings": {
+          "carrier_name": null,
+          "carrier_settings_version": null,
+          "carrier_settings_update_available": null,
+          "carrier_settings_update_required": null
+        },
+        "snapshot_context": {
+          "observed_at": null,
+          "device_update_date": "2026-07-13",
+          "reference_checked_at": "2026-09-19",
+          "source_scope": "Manufacturer-published latest version for SM-S942Q.",
+          "subscription_carrier": null,
+          "sim_type": null,
+          "plan_family": null,
+          "network_mode": null,
+          "location_scope": "JP"
+        }
+      },
+      "runtime_binding": {
+        "binding_state": "same_model_only",
+        "runtime_record_keys": [],
+        "binding_basis": "Published latest reference only; no exact runtime snapshot bound.",
+        "known_version_gaps": [
+          "Full baseband/build/security state unknown",
+          "Carrier-specific settings depend on inserted SIM/eSIM."
+        ]
+      },
+      "evidence": [
+        {
+          "type": "manufacturer_official",
+          "source": "https://www.samsung.com/jp/support/mobile-devices/please-tell-us-about-the-latest-version-of-your-galaxy-devices/",
+          "checked_at": "2026-09-19",
+          "scope": "SM-S942Q latest published Android 16 / One UI 8.5 / baseband suffix ZF2 / update date 2026-07-13.",
+          "confidence": "high",
+          "role": "radio_firmware"
+        }
+      ],
+      "open_questions": [
+        "Full baseband/build/security state",
+        "Carrier Settings/CarrierConfig after a specific SIM/eSIM is inserted",
+        "Runtime evidence tied to this exact snapshot"
+      ]
+    }
+  ]
+}

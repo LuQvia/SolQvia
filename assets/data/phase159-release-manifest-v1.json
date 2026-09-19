@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.0",
+  "release": "phase159-versioned-software-snapshot-model",
+  "date": "2026-09-19",
+  "baseline": "Phase158 main 05f77e3c61de7b5bad54c4b3b00df16eaee65f92",
+  "goal": "Bind connectivity evidence to versioned OS/build/radio/vendor/carrier-settings snapshots so results are never generalized from device name alone.",
+  "outputs": [
+    "assets/data/phase159-software-snapshot-schema-v1.json",
+    "assets/data/phase159-snapshot-comparison-rules-v1.json",
+    "assets/data/phase159-software-snapshots-v1.json",
+    "assets/data/phase159-phase154-158-field-map-v1.json",
+    "scripts/phase159-software-snapshot-validate.mjs"
+  ],
+  "dimensions": [
+    "hardware_identity",
+    "os_release",
+    "build_identity",
+    "security_state",
+    "radio_firmware",
+    "vendor_software",
+    "carrier_settings",
+    "snapshot_context",
+    "runtime_binding"
+  ],
+  "exact_reference_examples": [
+    {
+      "model_number": "SCG36",
+      "channel": "au",
+      "os": "Android 16",
+      "vendor_ui": "One UI 8.5",
+      "baseband_suffix": "ZH9",
+      "device_update_date": "2026-09-14"
+    },
+    {
+      "model_number": "SC-51G",
+      "channel": "NTTドコモ",
+      "os": "Android 16",
+      "vendor_ui": "One UI 8.5",
+      "baseband_suffix": "ZH9",
+      "device_update_date": "2026-09-08"
+    },
+    {
+      "model_number": "SM-S942Q",
+      "channel": "Samsung.com / SIMフリー",
+      "os": "Android 16",
+      "vendor_ui": "One UI 8.5",
+      "baseband_suffix": "ZF2",
+      "device_update_date": "2026-07-13"
+    }
+  ],
+  "official_basis": [
+    "Android Build / Build.VERSION for build fingerprint, incremental, security patch and radio firmware observation",
+    "Android device security state for separate system/system-modules/kernel state",
+    "Google Android version/update guidance",
+    "Apple installed software version / About information / modem firmware",
+    "Apple Carrier Settings Version and carrier-settings update behavior",
+    "Apple system-file updates that can occur without a main OS version change",
+    "Samsung Japan current Galaxy version tables for au, docomo and manufacturer-brand devices"
+  ],
+  "key_rules": [
+    "Same model does not mean same software snapshot.",
+    "Same OS version does not mean same build/baseband/carrier settings.",
+    "Published latest version is not proof that a specific device installed it.",
+    "Baseband suffix is stored as a suffix only and never reconstructed into a full value.",
+    "Connectivity evidence is exact only when the tested software snapshot is explicitly observed.",
+    "Carrier operation-check evidence remains partial when exact build/baseband used in the test is not exposed.",
+    "Newer software is not assumed to improve every connectivity function.",
+    "No serial/IMEI/EID/ICCID/IMSI/MSISDN or account/activation secrets are stored."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "public_html_changes": 0
+  },
+  "next_phase": "Phase160 LTE CA / EN-DC / NR CA combination capability and evidence model."
+}
