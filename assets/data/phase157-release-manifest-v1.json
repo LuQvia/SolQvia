@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "release": "phase157-ims-volte-vonr-evidence-matrix",
+  "date": "2026-09-19",
+  "baseline": "Phase156 main d8cb0097a3947b4b30c6ec3cb71034839d891682",
+  "goal": "Create an evidence matrix that separates IMS policy, entitlement, registration, capability, call/SMS direction and actual bearer for VoLTE, VoNR, Wi-Fi Calling and SMS over IMS.",
+  "outputs": [
+    "assets/data/phase157-ims-evidence-schema-v1.json",
+    "assets/data/phase157-ims-failure-taxonomy-v1.json",
+    "assets/data/phase157-ims-evidence-v1.json",
+    "assets/data/phase157-phase154-155-field-map-v1.json",
+    "scripts/phase157-ims-evidence-validate.mjs"
+  ],
+  "dimensions": [
+    "device_ims_capability",
+    "carrier_policy",
+    "entitlement_provisioning",
+    "ims_service_binding",
+    "ims_registration",
+    "service_capability",
+    "voice_runtime",
+    "sms_runtime",
+    "continuity_emergency"
+  ],
+  "official_basis": [
+    "AOSP IMS implementation",
+    "AOSP IMS service entitlement / GSMA TS.43 integration",
+    "Android CarrierConfigManager VoLTE/WFC/VoNR policy",
+    "Android CarrierConfigManager.ImsSms",
+    "Android IMS registration callbacks",
+    "Android CallLog VoLTE/VoNR/Wi-Fi feature flags",
+    "Apple Wi-Fi Calling and carrier feature support guidance"
+  ],
+  "key_rules": [
+    "Carrier policy does not prove IMS registration.",
+    "Entitlement/provisioning does not prove IMS registration.",
+    "IMS registration does not prove call or SMS success.",
+    "Generic voice/SMS success never expands to direction or bearer.",
+    "5G SA does not prove VoNR.",
+    "Wi-Fi Calling support does not prove WFC registration or an actual Wi-Fi call.",
+    "Apple internal IMS state remains unknown unless directly evidenced."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "public_html_changes": 0
+  },
+  "next_phase": "Phase158 LTE/NR registration and APN/DNN/PDU session model."
+}
