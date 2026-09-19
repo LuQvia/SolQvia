@@ -1,0 +1,739 @@
+{
+  "schema_version": "1.0",
+  "release": "phase157-ims-volte-vonr-evidence-matrix",
+  "checked_at": "2026-09-19",
+  "records": [
+    {
+      "key": "android-ims-platform-architecture-20260919",
+      "record_type": "platform_architecture",
+      "platform": "android",
+      "identity": {
+        "model_name": null,
+        "model_number": null,
+        "market_region": "global",
+        "os_version": "current Android platform references"
+      },
+      "matrix": {
+        "device_ims_capability": {
+          "telephony_ims_feature": {
+            "state": "supported_by_spec"
+          },
+          "mmtel_feature": {
+            "state": "supported_by_spec"
+          },
+          "rcs_feature": {
+            "state": "supported_by_spec"
+          }
+        },
+        "carrier_policy": {
+          "volte_available_policy": {
+            "state": "supported_by_spec"
+          },
+          "vonr_enabled_policy": {
+            "state": "supported_by_spec"
+          },
+          "wifi_calling_available_policy": {
+            "state": "supported_by_spec"
+          },
+          "sms_over_ims_supported_policy": {
+            "state": "supported_by_spec"
+          },
+          "ims_provisioning_required": {
+            "state": "supported_by_spec"
+          }
+        },
+        "entitlement_provisioning": {
+          "volte_entitlement": {
+            "state": "supported_by_spec"
+          },
+          "vowifi_entitlement": {
+            "state": "supported_by_spec"
+          },
+          "smsoip_entitlement": {
+            "state": "supported_by_spec"
+          }
+        },
+        "ims_service_binding": {
+          "ims_service_available": {
+            "state": "supported_by_spec"
+          },
+          "mmtel_service_bound": {
+            "state": "supported_by_spec"
+          },
+          "rcs_service_bound": {
+            "state": "supported_by_spec"
+          }
+        },
+        "ims_registration": {
+          "ims_registration_state": {
+            "state": "supported_by_spec"
+          },
+          "ims_transport": {
+            "state": "supported_by_spec",
+            "value": [
+              "WWAN",
+              "WLAN"
+            ]
+          },
+          "registration_access_network": {
+            "state": "unknown"
+          }
+        },
+        "service_capability": {
+          "mmtel_voice_capability": {
+            "state": "supported_by_spec"
+          },
+          "sms_over_ims_capability": {
+            "state": "supported_by_spec"
+          },
+          "wifi_calling_capability": {
+            "state": "supported_by_spec"
+          },
+          "emergency_mmtel_capability": {
+            "state": "supported_by_spec"
+          },
+          "rcs_capability": {
+            "state": "supported_by_spec"
+          }
+        },
+        "voice_runtime": {
+          "voice_outgoing": {
+            "state": "not_tested"
+          },
+          "voice_incoming": {
+            "state": "not_tested"
+          },
+          "volte_call": {
+            "state": "supported_by_spec",
+            "note": "Platform exposes VoLTE call metadata; no device runtime implied."
+          },
+          "vonr_call": {
+            "state": "supported_by_spec",
+            "note": "Current platform exposes VoNR call metadata on supported API level; no device runtime implied."
+          },
+          "wifi_call": {
+            "state": "supported_by_spec",
+            "note": "Platform exposes Wi-Fi call metadata; no device runtime implied."
+          },
+          "observed_call_bearer": {
+            "state": "unknown"
+          }
+        },
+        "sms_runtime": {
+          "sms_send": {
+            "state": "not_tested"
+          },
+          "sms_receive": {
+            "state": "not_tested"
+          },
+          "sms_over_ims_send": {
+            "state": "supported_by_spec"
+          },
+          "sms_over_ims_receive": {
+            "state": "supported_by_spec"
+          },
+          "sms_fallback_observed": {
+            "state": "unknown"
+          },
+          "observed_sms_path": {
+            "state": "unknown"
+          }
+        },
+        "continuity_emergency": {
+          "srvcc_or_access_transfer": {
+            "state": "supported_by_spec"
+          },
+          "ims_technology_change": {
+            "state": "supported_by_spec"
+          },
+          "emergency_calling": {
+            "state": "supported_by_spec"
+          },
+          "emergency_transport": {
+            "state": "unknown"
+          }
+        }
+      },
+      "evidence": [
+        {
+          "type": "os_platform_official",
+          "source": "https://source.android.com/docs/core/connect/ims",
+          "checked_at": "2026-09-19",
+          "scope": "ImsService architecture, IMS registration information, SMS over IMS integration and MMTel voice/video integration",
+          "confidence": "high",
+          "role": "ims_service_implementation"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://source.android.com/docs/core/connect/ims-service-entitlement",
+          "checked_at": "2026-09-19",
+          "scope": "TS.43 entitlement support for VoWiFi, VoLTE and SMSoIP",
+          "confidence": "high",
+          "role": "entitlement_provisioning"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/telephony/CarrierConfigManager",
+          "checked_at": "2026-09-19",
+          "scope": "CarrierConfig VoLTE/WFC/VoNR policy availability and provisioning controls",
+          "confidence": "high",
+          "role": "carrier_policy"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/telephony/CarrierConfigManager.ImsSms",
+          "checked_at": "2026-09-19",
+          "scope": "SMS over IMS support, RAT and fallback policy keys",
+          "confidence": "high",
+          "role": "carrier_policy"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/telephony/ims/RegistrationManager.RegistrationCallback",
+          "checked_at": "2026-09-19",
+          "scope": "IMS registration lifecycle callbacks and WWAN/WLAN transport",
+          "confidence": "high",
+          "role": "ims_registration"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/provider/CallLog.Calls",
+          "checked_at": "2026-09-19",
+          "scope": "Post-call feature flags for VoLTE, VoNR and Wi-Fi calls where available",
+          "confidence": "high",
+          "role": "runtime_bearer"
+        }
+      ],
+      "open_questions": [
+        "Exact API availability and permissions vary by Android version/build.",
+        "Platform capability never establishes carrier/device runtime without exact evidence."
+      ]
+    },
+    {
+      "key": "apple-iphone-wifi-calling-user-observation-20260919",
+      "record_type": "platform_user_observation",
+      "platform": "apple",
+      "identity": {
+        "model_name": "iPhone",
+        "model_number": null,
+        "market_region": "global",
+        "os_version": "current Apple guidance"
+      },
+      "matrix": {
+        "device_ims_capability": {
+          "telephony_ims_feature": {
+            "state": "unknown",
+            "note": "Apple does not expose Android-style IMS API state to the user."
+          },
+          "mmtel_feature": {
+            "state": "unknown"
+          },
+          "rcs_feature": {
+            "state": "unknown"
+          }
+        },
+        "carrier_policy": {
+          "volte_available_policy": {
+            "state": "unknown"
+          },
+          "vonr_enabled_policy": {
+            "state": "unknown"
+          },
+          "wifi_calling_available_policy": {
+            "state": "supported_by_spec"
+          },
+          "sms_over_ims_supported_policy": {
+            "state": "unknown"
+          },
+          "ims_provisioning_required": {
+            "state": "unknown"
+          }
+        },
+        "entitlement_provisioning": {
+          "volte_entitlement": {
+            "state": "unknown"
+          },
+          "vowifi_entitlement": {
+            "state": "unknown",
+            "note": "Carrier may require address/eligibility setup; internal entitlement state is not exposed."
+          },
+          "smsoip_entitlement": {
+            "state": "unknown"
+          }
+        },
+        "ims_service_binding": {
+          "ims_service_available": {
+            "state": "unknown"
+          },
+          "mmtel_service_bound": {
+            "state": "unknown"
+          },
+          "rcs_service_bound": {
+            "state": "unknown"
+          }
+        },
+        "ims_registration": {
+          "ims_registration_state": {
+            "state": "unknown"
+          },
+          "ims_transport": {
+            "state": "unknown"
+          },
+          "registration_access_network": {
+            "state": "unknown"
+          }
+        },
+        "service_capability": {
+          "mmtel_voice_capability": {
+            "state": "unknown"
+          },
+          "sms_over_ims_capability": {
+            "state": "unknown"
+          },
+          "wifi_calling_capability": {
+            "state": "supported_by_spec"
+          },
+          "emergency_mmtel_capability": {
+            "state": "unknown"
+          },
+          "rcs_capability": {
+            "state": "unknown"
+          }
+        },
+        "voice_runtime": {
+          "voice_outgoing": {
+            "state": "not_tested"
+          },
+          "voice_incoming": {
+            "state": "not_tested"
+          },
+          "volte_call": {
+            "state": "unknown"
+          },
+          "vonr_call": {
+            "state": "unknown"
+          },
+          "wifi_call": {
+            "state": "not_tested"
+          },
+          "observed_call_bearer": {
+            "state": "unknown"
+          }
+        },
+        "sms_runtime": {
+          "sms_send": {
+            "state": "not_tested"
+          },
+          "sms_receive": {
+            "state": "not_tested"
+          },
+          "sms_over_ims_send": {
+            "state": "unknown"
+          },
+          "sms_over_ims_receive": {
+            "state": "unknown"
+          },
+          "sms_fallback_observed": {
+            "state": "unknown"
+          },
+          "observed_sms_path": {
+            "state": "unknown"
+          }
+        },
+        "continuity_emergency": {
+          "srvcc_or_access_transfer": {
+            "state": "unknown"
+          },
+          "ims_technology_change": {
+            "state": "unknown"
+          },
+          "emergency_calling": {
+            "state": "supported_by_spec",
+            "note": "Apple documents emergency-call behavior with Wi-Fi Calling under conditions; internal IMS routing not inferred."
+          },
+          "emergency_transport": {
+            "state": "unknown"
+          }
+        }
+      },
+      "evidence": [
+        {
+          "type": "os_platform_official",
+          "source": "https://support.apple.com/ja-jp/108066",
+          "checked_at": "2026-09-19",
+          "scope": "User-visible Wi-Fi Calling support, setup, runtime indicator and troubleshooting",
+          "confidence": "high",
+          "role": "service_capability"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://support.apple.com/ja-jp/109510",
+          "checked_at": "2026-09-19",
+          "scope": "Carrier feature listings including VoLTE and Wi-Fi Calling by operator/region",
+          "confidence": "high",
+          "role": "device_capability"
+        }
+      ],
+      "open_questions": [
+        "Apple internal IMS registration/provisioning details remain unknown unless exact external evidence is available.",
+        "VoNR is not inferred from 5G availability or carrier support listings."
+      ]
+    },
+    {
+      "key": "scg36-au-android16-ims-placeholder",
+      "record_type": "device_subscription",
+      "platform": "android",
+      "identity": {
+        "model_name": "Galaxy S26",
+        "model_number": "SCG36",
+        "original_carrier": "au",
+        "tested_carrier": "au",
+        "market_region": "JP",
+        "os_version": "Android 16"
+      },
+      "matrix": {
+        "device_ims_capability": {
+          "telephony_ims_feature": {
+            "state": "unknown"
+          },
+          "mmtel_feature": {
+            "state": "unknown"
+          },
+          "rcs_feature": {
+            "state": "unknown"
+          }
+        },
+        "carrier_policy": {
+          "volte_available_policy": {
+            "state": "unknown"
+          },
+          "vonr_enabled_policy": {
+            "state": "unknown"
+          },
+          "wifi_calling_available_policy": {
+            "state": "unknown"
+          },
+          "sms_over_ims_supported_policy": {
+            "state": "unknown"
+          },
+          "ims_provisioning_required": {
+            "state": "unknown"
+          }
+        },
+        "entitlement_provisioning": {
+          "volte_entitlement": {
+            "state": "unknown"
+          },
+          "vowifi_entitlement": {
+            "state": "unknown"
+          },
+          "smsoip_entitlement": {
+            "state": "unknown"
+          },
+          "carrier_backend_provisioning": {
+            "state": "unknown"
+          }
+        },
+        "ims_service_binding": {
+          "ims_service_available": {
+            "state": "unknown"
+          },
+          "mmtel_service_bound": {
+            "state": "unknown"
+          },
+          "rcs_service_bound": {
+            "state": "unknown"
+          }
+        },
+        "ims_registration": {
+          "ims_registration_state": {
+            "state": "unknown"
+          },
+          "ims_transport": {
+            "state": "unknown"
+          },
+          "registration_access_network": {
+            "state": "unknown"
+          }
+        },
+        "service_capability": {
+          "mmtel_voice_capability": {
+            "state": "unknown"
+          },
+          "sms_over_ims_capability": {
+            "state": "unknown"
+          },
+          "wifi_calling_capability": {
+            "state": "unknown"
+          },
+          "emergency_mmtel_capability": {
+            "state": "unknown"
+          },
+          "rcs_capability": {
+            "state": "unknown"
+          }
+        },
+        "voice_runtime": {
+          "voice_outgoing": {
+            "state": "not_solqvia_tested"
+          },
+          "voice_incoming": {
+            "state": "not_solqvia_tested"
+          },
+          "volte_call": {
+            "state": "not_solqvia_tested"
+          },
+          "vonr_call": {
+            "state": "not_solqvia_tested"
+          },
+          "wifi_call": {
+            "state": "not_solqvia_tested"
+          },
+          "generic_voice": {
+            "state": "confirmed",
+            "note": "au official operation listing confirms voice generically; direction and bearer are not split."
+          },
+          "observed_call_bearer": {
+            "state": "unknown"
+          }
+        },
+        "sms_runtime": {
+          "sms_send": {
+            "state": "not_solqvia_tested"
+          },
+          "sms_receive": {
+            "state": "not_solqvia_tested"
+          },
+          "sms_over_ims_send": {
+            "state": "not_solqvia_tested"
+          },
+          "sms_over_ims_receive": {
+            "state": "not_solqvia_tested"
+          },
+          "generic_sms": {
+            "state": "confirmed",
+            "note": "au official operation listing confirms SMS generically; direction/path are not split."
+          },
+          "sms_fallback_observed": {
+            "state": "unknown"
+          },
+          "observed_sms_path": {
+            "state": "unknown"
+          }
+        },
+        "continuity_emergency": {
+          "srvcc_or_access_transfer": {
+            "state": "not_tested"
+          },
+          "ims_technology_change": {
+            "state": "not_tested"
+          },
+          "emergency_calling": {
+            "state": "not_tested"
+          },
+          "emergency_transport": {
+            "state": "unknown"
+          }
+        }
+      },
+      "upstream_context": {
+        "mobile_data": "confirmed",
+        "fiveg_sa": "confirmed",
+        "source": "Phase143 au official operation-check evidence"
+      },
+      "evidence": [
+        {
+          "type": "carrier_official",
+          "source": "https://www.au.com/mobile/product/sim/devices/",
+          "checked_at": "2026-09-18",
+          "scope": "Exact-model au operation listing confirms generic voice, SMS, mobile data, tethering and 5G SA; it does not expose IMS registration, call bearer or directional voice/SMS.",
+          "confidence": "high",
+          "role": "runtime_service"
+        }
+      ],
+      "open_questions": [
+        "Android Carrier ID / CarrierConfig snapshot",
+        "IMS entitlement/provisioning",
+        "IMS registration state and transport",
+        "VoLTE actual call bearer",
+        "VoNR actual call bearer",
+        "Wi-Fi Calling support/runtime",
+        "Directional voice and SMS",
+        "SMS over IMS path"
+      ]
+    },
+    {
+      "key": "ky41c-softbank-phase157-ims-unverified",
+      "record_type": "solqvia_real_device_projection",
+      "platform": "android",
+      "identity": {
+        "model_name": "キッズケータイ",
+        "model_number": "KY-41C",
+        "original_carrier": "NTTドコモ",
+        "tested_carrier": "SoftBank",
+        "market_region": "JP"
+      },
+      "matrix": {
+        "device_ims_capability": {
+          "telephony_ims_feature": {
+            "state": "unknown"
+          },
+          "mmtel_feature": {
+            "state": "unknown"
+          },
+          "rcs_feature": {
+            "state": "unknown"
+          }
+        },
+        "carrier_policy": {
+          "volte_available_policy": {
+            "state": "unknown"
+          },
+          "vonr_enabled_policy": {
+            "state": "not_applicable"
+          },
+          "wifi_calling_available_policy": {
+            "state": "unknown"
+          },
+          "sms_over_ims_supported_policy": {
+            "state": "unknown"
+          },
+          "ims_provisioning_required": {
+            "state": "unknown"
+          }
+        },
+        "entitlement_provisioning": {
+          "volte_entitlement": {
+            "state": "unknown"
+          },
+          "vowifi_entitlement": {
+            "state": "unknown"
+          },
+          "smsoip_entitlement": {
+            "state": "unknown"
+          },
+          "carrier_backend_provisioning": {
+            "state": "unknown"
+          }
+        },
+        "ims_service_binding": {
+          "ims_service_available": {
+            "state": "unknown"
+          },
+          "mmtel_service_bound": {
+            "state": "unknown"
+          },
+          "rcs_service_bound": {
+            "state": "unknown"
+          }
+        },
+        "ims_registration": {
+          "ims_registration_state": {
+            "state": "not_tested"
+          },
+          "ims_transport": {
+            "state": "unknown"
+          },
+          "registration_access_network": {
+            "state": "unknown"
+          }
+        },
+        "service_capability": {
+          "mmtel_voice_capability": {
+            "state": "not_tested"
+          },
+          "sms_over_ims_capability": {
+            "state": "not_tested"
+          },
+          "wifi_calling_capability": {
+            "state": "not_tested"
+          },
+          "emergency_mmtel_capability": {
+            "state": "not_tested"
+          },
+          "rcs_capability": {
+            "state": "not_tested"
+          }
+        },
+        "voice_runtime": {
+          "voice_outgoing": {
+            "state": "not_tested"
+          },
+          "voice_incoming": {
+            "state": "not_tested"
+          },
+          "volte_call": {
+            "state": "not_tested"
+          },
+          "vonr_call": {
+            "state": "not_applicable"
+          },
+          "wifi_call": {
+            "state": "not_tested"
+          },
+          "observed_call_bearer": {
+            "state": "unknown"
+          }
+        },
+        "sms_runtime": {
+          "sms_send": {
+            "state": "not_tested"
+          },
+          "sms_receive": {
+            "state": "not_tested"
+          },
+          "sms_over_ims_send": {
+            "state": "not_tested"
+          },
+          "sms_over_ims_receive": {
+            "state": "not_tested"
+          },
+          "sms_fallback_observed": {
+            "state": "unknown"
+          },
+          "observed_sms_path": {
+            "state": "unknown"
+          }
+        },
+        "continuity_emergency": {
+          "srvcc_or_access_transfer": {
+            "state": "not_tested"
+          },
+          "ims_technology_change": {
+            "state": "not_tested"
+          },
+          "emergency_calling": {
+            "state": "not_tested"
+          },
+          "emergency_transport": {
+            "state": "unknown"
+          }
+        }
+      },
+      "upstream_context": {
+        "esim_profile_configuration": "confirmed",
+        "sim_information_recognition": "confirmed",
+        "mobile_data": "not_tested",
+        "source": "Existing SolQvia KY-41C evidence"
+      },
+      "evidence": [
+        {
+          "type": "solqvia_real_device",
+          "source": "ky41c-ymobile-softbank-esim-profile-recognition-20260808",
+          "checked_at": "2026-08-08",
+          "scope": "eSIM profile configuration and terminal-side SIM information recognition only; no IMS/voice/SMS success is claimed.",
+          "confidence": "high",
+          "role": "solqvia_real_device"
+        }
+      ],
+      "open_questions": [
+        "Network registration",
+        "IMS registration",
+        "VoLTE",
+        "Voice outgoing/incoming",
+        "SMS send/receive",
+        "Guardian functions"
+      ]
+    }
+  ]
+}
