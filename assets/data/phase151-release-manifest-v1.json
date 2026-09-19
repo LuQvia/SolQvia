@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.0",
+  "release": "phase151-generic-symptom-cluster-strengthening",
+  "date": "2026-09-19",
+  "baseline": "Phase150 main dc744630fdb5f506fdc03e1450ab4bc69a51a532",
+  "gsc_basis": {
+    "source": "2026-09-08 Phase128 qualitative backlog",
+    "cluster": [
+      "タッチ反応しない",
+      "画面ちらつき・線",
+      "スマホ 音が出ない",
+      "スマホ 充電できない"
+    ],
+    "exact_numeric_metrics_available": false,
+    "note": "These intents were retained as a qualitative cluster; no synthetic impression total is created."
+  },
+  "strengthened_pages": [
+    "smartphone-touchscreen-not-responding",
+    "smartphone-screen-flickering-lines",
+    "smartphone-no-sound",
+    "smartphone-not-charging"
+  ],
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "changes": [
+    "Standardize all four symptom pages around answer-first, symptom matrix, safe diagnostic order, and repair decision.",
+    "Reduce generic template copy and make each page intent-specific.",
+    "Separate settings/software/accessory causes from likely hardware paths.",
+    "Keep factory reset out of the first-line workflow.",
+    "Refresh page metadata and modification date to 2026-09-19."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "next_priority": "Run a fresh Phase145 demand pass when new raw GSC is available; otherwise audit the strengthened cluster for internal-link and snippet consistency."
+}
