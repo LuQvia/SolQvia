@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "release": "phase157-ims-volte-vonr-evidence-matrix",
+  "checked_at": "2026-09-19",
+  "categories": [
+    {
+      "id": "ims_feature_unavailable",
+      "stage": "device_ims_capability",
+      "symptoms": [
+        "No telephony IMS feature/service exposed"
+      ],
+      "next_checks": [
+        "Exact device/OS support",
+        "OEM/carrier firmware"
+      ],
+      "do_not_infer": [
+        "SIM failure",
+        "band mismatch"
+      ]
+    },
+    {
+      "id": "carrier_policy_disabled",
+      "stage": "carrier_policy",
+      "symptoms": [
+        "VoLTE/VoNR/WFC/SMS-over-IMS policy hard-disabled or unavailable"
+      ],
+      "next_checks": [
+        "CarrierConfig/carrier settings",
+        "exact carrier/build support"
+      ],
+      "do_not_infer": [
+        "Network outage"
+      ]
+    },
+    {
+      "id": "ims_entitlement_not_provisioned",
+      "stage": "entitlement_provisioning",
+      "symptoms": [
+        "Policy allows service but entitlement/provisioning is absent or incomplete"
+      ],
+      "next_checks": [
+        "Carrier entitlement status",
+        "terms/emergency-address workflow",
+        "carrier backend provisioning"
+      ],
+      "do_not_infer": [
+        "IMS stack defect"
+      ]
+    },
+    {
+      "id": "ims_service_binding_failure",
+      "stage": "ims_service_binding",
+      "symptoms": [
+        "ImsService unavailable, crashed, or MMTel service not bound"
+      ],
+      "next_checks": [
+        "OEM/carrier IMS service",
+        "firmware",
+        "service availability"
+      ],
+      "do_not_infer": [
+        "Voice subscription barred"
+      ]
+    },
+    {
+      "id": "ims_registration_failure",
+      "stage": "ims_registration",
+      "symptoms": [
+        "IMS unregistered or registration repeatedly fails"
+      ],
+      "next_checks": [
+        "Carrier policy",
+        "provisioning",
+        "network registration",
+        "firmware/baseband",
+        "carrier outage"
+      ],
+      "do_not_infer": [
+        "APN is the only cause"
+      ]
+    },
+    {
+      "id": "mmtel_voice_capability_missing",
+      "stage": "service_capability",
+      "symptoms": [
+        "IMS may be registered but voice capability is unavailable"
+      ],
+      "next_checks": [
+        "MMTel feature",
+        "carrier provisioning",
+        "exact access-network support"
+      ],
+      "do_not_infer": [
+        "All IMS services are unavailable"
+      ]
+    },
+    {
+      "id": "volte_runtime_failure",
+      "stage": "voice_runtime",
+      "symptoms": [
+        "LTE/data/IMS context exists but LTE voice call fails or bearer is not VoLTE"
+      ],
+      "next_checks": [
+        "VoLTE policy/provisioning",
+        "MMTel voice capability",
+        "EUTRAN registration",
+        "call bearer observation"
+      ],
+      "do_not_infer": [
+        "VoNR failure"
+      ]
+    },
+    {
+      "id": "vonr_runtime_failure",
+      "stage": "voice_runtime",
+      "symptoms": [
+        "5G SA may work but voice does not use VoNR"
+      ],
+      "next_checks": [
+        "VoNR policy",
+        "NGRAN/SA support",
+        "IMS/MMTel registration",
+        "carrier/device support",
+        "fallback bearer"
+      ],
+      "do_not_infer": [
+        "5G SA failure solely because VoNR is absent"
+      ]
+    },
+    {
+      "id": "wifi_calling_failure",
+      "stage": "voice_runtime",
+      "symptoms": [
+        "Wi-Fi Calling cannot enable/register/place calls"
+      ],
+      "next_checks": [
+        "Carrier support",
+        "WFC entitlement",
+        "emergency-address/terms flow",
+        "Wi-Fi network",
+        "IMS WLAN registration"
+      ],
+      "do_not_infer": [
+        "Cellular VoLTE failure"
+      ]
+    },
+    {
+      "id": "sms_over_ims_failure",
+      "stage": "sms_runtime",
+      "symptoms": [
+        "SMS send/receive works only by fallback or IMS SMS fails"
+      ],
+      "next_checks": [
+        "SMS-over-IMS policy",
+        "supported RAT",
+        "IMS registration",
+        "fallback observation"
+      ],
+      "do_not_infer": [
+        "Generic SMS service failure if fallback succeeds"
+      ]
+    },
+    {
+      "id": "directional_voice_failure",
+      "stage": "voice_runtime",
+      "symptoms": [
+        "Outgoing works but incoming fails, or vice versa"
+      ],
+      "next_checks": [
+        "Test both directions",
+        "call routing/provisioning",
+        "IMS registration stability"
+      ],
+      "do_not_infer": [
+        "Opposite direction from one successful call"
+      ]
+    },
+    {
+      "id": "directional_sms_failure",
+      "stage": "sms_runtime",
+      "symptoms": [
+        "SMS send works but receive fails, or vice versa"
+      ],
+      "next_checks": [
+        "Test both directions",
+        "SMS path/fallback",
+        "carrier messaging provisioning"
+      ],
+      "do_not_infer": [
+        "Opposite direction from one successful SMS"
+      ]
+    },
+    {
+      "id": "ims_access_transfer_failure",
+      "stage": "continuity_emergency",
+      "symptoms": [
+        "IMS registration/call fails during access change or handover"
+      ],
+      "next_checks": [
+        "Technology-change failure evidence",
+        "SRVCC/access-transfer support",
+        "carrier coverage transition"
+      ],
+      "do_not_infer": [
+        "Normal stationary call support"
+      ]
+    }
+  ]
+}
