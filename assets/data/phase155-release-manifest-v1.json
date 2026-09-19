@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "release": "phase155-carrier-config-settings-db",
+  "date": "2026-09-19",
+  "baseline": "Phase154 main 254a40ff0d0320b0f0279fcf6b8d1638fdf6396e",
+  "goal": "Normalize carrier-specific configuration state across Android CarrierConfig and Apple Carrier Settings while keeping platform differences and evidence boundaries explicit.",
+  "outputs": [
+    "assets/data/phase155-carrier-config-settings-schema-v1.json",
+    "assets/data/phase155-carrier-config-settings-v1.json",
+    "assets/data/phase155-phase154-field-map-v1.json",
+    "scripts/phase155-carrier-config-settings-validate.mjs"
+  ],
+  "official_basis": [
+    "AOSP Carrier configuration",
+    "AOSP Carrier identification",
+    "AOSP UICC carrier privileges",
+    "AOSP APN and CarrierConfig",
+    "Apple carrier settings update guidance"
+  ],
+  "key_rules": [
+    "Android and Apple are normalized at the parent layer but retain separate platform submodels.",
+    "Unknown Carrier ID / CarrierConfig / Carrier Settings Version values stay unknown.",
+    "AOSP configuration does not prove an OEM build adopted the same value.",
+    "Carrier settings/configuration do not prove runtime service success.",
+    "Subscriber secrets are never stored."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "public_html_changes": 0
+  },
+  "next_phase": "Phase156 eSIM RSP lifecycle normalization and failure-state model."
+}
