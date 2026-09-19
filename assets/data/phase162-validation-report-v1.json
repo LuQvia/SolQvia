@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "release": "phase162-real-device-capture-format",
+  "checked_at": "2026-09-19",
+  "pass": true,
+  "capture_schema_version": "1.0",
+  "protocol_stages": 7,
+  "phase161_canonical_observations": 39,
+  "capture_records": 2,
+  "projection_samples": 2,
+  "projection_samples_passed": 2,
+  "script_syntax": {
+    "capture_to_diagnosis_input": true,
+    "capture_validator": true
+  },
+  "privacy": {
+    "prohibited_identifier_fields_present": 0,
+    "privacy_reviews_passed": 2
+  },
+  "notable_checks": [
+    "Capture records store only explicitly observed Phase161 keys.",
+    "Missing observations remain missing/unknown rather than being auto-filled.",
+    "KY-41C Y!mobile and SoftBank projections both lead to q_esim_profile_enabled.",
+    "Historical KY-41C evidence remains limited to profile configuration/install and terminal-side SIM information recognition.",
+    "No data/voice/SMS/IMS/network-registration success is inferred.",
+    "Software snapshot remains unbound because the historical test did not preserve OS/build/baseband context.",
+    "Converter requires privacy review to pass before projection.",
+    "Strong observations require evidence refs unless they are direct runtime tests."
+  ]
+}
