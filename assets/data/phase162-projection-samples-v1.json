@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0",
+  "release": "phase162-real-device-capture-format",
+  "checked_at": "2026-09-19",
+  "projections": [
+    {
+      "capture_id": "sqv-20260808-ky41c-ymobile-esim-profile",
+      "phase161_input": {
+        "goal": "esim_setup",
+        "observations": {
+          "subscriber.sim_or_esim_recognized": "confirmed",
+          "esim.profile_install": "confirmed",
+          "software.snapshot_binding": "unbound"
+        }
+      },
+      "expected_next_question": "q_esim_profile_enabled",
+      "rationale": "eSIM profile configuration/install is confirmed while profile enablement is not explicitly observed."
+    },
+    {
+      "capture_id": "sqv-20260808-ky41c-softbank-esim-profile",
+      "phase161_input": {
+        "goal": "esim_setup",
+        "observations": {
+          "subscriber.sim_or_esim_recognized": "confirmed",
+          "esim.profile_install": "confirmed",
+          "software.snapshot_binding": "unbound"
+        }
+      },
+      "expected_next_question": "q_esim_profile_enabled",
+      "rationale": "eSIM profile configuration/install is confirmed while profile enablement is not explicitly observed."
+    }
+  ]
+}
