@@ -10,13 +10,13 @@
       },
       {
         "phase154_field": "volte_registration",
-        "phase157_path": "matrix.voice_runtime.volte_call",
-        "note": "Only map when evidence explicitly represents VoLTE registration/call bearer; legacy combined values must not auto-map."
+        "phase157_path": "matrix.ims_registration.volte_registration",
+        "note": "Registration only. Actual VoLTE call bearer remains matrix.voice_runtime.volte_call."
       },
       {
         "phase154_field": "vonr_registration",
-        "phase157_path": "matrix.voice_runtime.vonr_call",
-        "note": "Only explicit VoNR evidence."
+        "phase157_path": "matrix.ims_registration.vonr_registration",
+        "note": "Registration only. Actual VoNR call bearer remains matrix.voice_runtime.vonr_call."
       },
       {
         "phase154_field": "voice_outgoing",
