@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "release": "phase153-gsc-impact-measurement",
+  "checked_at": "2026-09-19",
+  "raw_gsc_search": {
+    "requested_files": [
+      "solqvia.com-Performance-on-Search-2026-09-12.zip",
+      "solqvia.com-Performance-on-Search-2026-09-11.zip",
+      "solqvia.com-Performance-on-Search-2026-09-10.zip",
+      "solqvia.com-Performance-on-Search-2026-09-09.zip"
+    ],
+    "retrievable_from_current_project_or_library": false,
+    "latest_safe_baseline": "2026-09-08 Phase128 GSC-backed summary"
+  },
+  "consequence": "No Phase145 reprioritization or Phase146-151 uplift claim is produced in Phase153 without newer raw metrics.",
+  "ready_for_next_upload": true,
+  "accepted_inputs": [
+    "Queries.csv from Search Console export",
+    "Pages.csv from Search Console export",
+    "preferred: exact query-page CSV containing query,page,clicks,impressions,ctr,position"
+  ]
+}
