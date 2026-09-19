@@ -333,7 +333,7 @@
       ],
       "effort": 3,
       "safety": 3,
-      "priority": 60
+      "priority": 65
     },
     {
       "id": "q_physical_channels",
