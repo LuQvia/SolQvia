@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "release": "phase160-ca-endc-nrca-evidence-model",
+  "date": "2026-09-19",
+  "baseline": "Phase159 main 846b4a9e275bfa5b9609fb228c176a4a586aeaf4",
+  "goal": "Move SolQvia from single-band compatibility into evidence-scoped LTE CA / EN-DC / NR CA combination modeling, while separating standards existence, exact-device capability, carrier deployment and runtime observation.",
+  "outputs": [
+    "assets/data/phase160-ca-evidence-schema-v1.json",
+    "assets/data/phase160-ca-failure-taxonomy-v1.json",
+    "assets/data/phase160-ca-evidence-v1.json",
+    "assets/data/phase160-phase143-159-field-map-v1.json",
+    "scripts/phase160-ca-evidence-validate.mjs"
+  ],
+  "dimensions": [
+    "combination_identity",
+    "downlink_configuration",
+    "uplink_configuration",
+    "dual_connectivity",
+    "radio_features",
+    "runtime_physical_channels",
+    "runtime_display_hint",
+    "software_binding",
+    "deployment_context"
+  ],
+  "evidence_levels": [
+    "standard_defined",
+    "device_capability_official",
+    "carrier_deployment_official",
+    "runtime_observed"
+  ],
+  "official_basis": [
+    "3GPP TS 36.101 change records for LTE CA combination definitions",
+    "3GPP TS 38.101-1 change records for NR CA combinations",
+    "3GPP TS 38.101-3 for LTE/NR interworking and EN-DC combinations",
+    "Android PhysicalChannelConfig and PhysicalChannelConfigListener",
+    "Android ServiceState current serving-cell bandwidths",
+    "Android TelephonyDisplayInfo branding boundary",
+    "Samsung Japan Galaxy S26 SM-S942Q single-band specifications"
+  ],
+  "key_rules": [
+    "Single-band support never proves a CA/EN-DC/NR CA combination.",
+    "A 3GPP-defined combination never proves an exact device supports it.",
+    "Exact-device capability never proves carrier deployment.",
+    "Carrier deployment never proves runtime use.",
+    "Display indicators never prove exact physical-channel composition.",
+    "DL aggregation never proves UL CA.",
+    "Observed runtime at one place/time never proves nationwide availability.",
+    "Every runtime observation should bind to the Phase159 software snapshot when known."
+  ],
+  "current_device_boundary": {
+    "model_number": "SM-S942Q",
+    "single_band_official": true,
+    "lte_ca_combinations_official": 0,
+    "endc_combinations_official": 0,
+    "nr_ca_combinations_official": 0,
+    "action": "Keep combinations unknown until exact evidence exists."
+  },
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "public_html_changes": 0
+  },
+  "next_phase": "Phase161 failure-diagnosis engine that consumes Phase154-160 states and asks the minimum next question/test needed to localize a connectivity fault."
+}

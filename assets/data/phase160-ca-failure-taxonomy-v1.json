@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "release": "phase160-ca-endc-nrca-evidence-model",
+  "checked_at": "2026-09-19",
+  "categories": [
+    {
+      "id": "single_band_only_no_combination_evidence",
+      "stage": "combination_identity",
+      "symptoms": [
+        "Device supports both bands individually but no CA/DC combination source exists"
+      ],
+      "next_checks": [
+        "Exact OEM/carrier combo matrix",
+        "Modem capability source",
+        "runtime PhysicalChannelConfig"
+      ],
+      "do_not_infer": [
+        "CA support from band overlap"
+      ]
+    },
+    {
+      "id": "standard_exists_device_support_unknown",
+      "stage": "combination_identity",
+      "symptoms": [
+        "3GPP combination exists but exact-model support is unknown"
+      ],
+      "next_checks": [
+        "Exact device RF capability source",
+        "certification/OEM data",
+        "real-device observation"
+      ],
+      "do_not_infer": [
+        "Device support"
+      ]
+    },
+    {
+      "id": "device_support_carrier_deployment_unknown",
+      "stage": "deployment_context",
+      "symptoms": [
+        "Device combo capability known but carrier deployment is not"
+      ],
+      "next_checks": [
+        "Carrier network documentation",
+        "runtime observation by location"
+      ],
+      "do_not_infer": [
+        "Carrier deployment from device spec"
+      ]
+    },
+    {
+      "id": "display_hint_without_physical_combo",
+      "stage": "runtime_display_hint",
+      "symptoms": [
+        "LTE+/5G+/NR NSA indicator visible but physical channel set is unobserved"
+      ],
+      "next_checks": [
+        "PhysicalChannelConfig",
+        "field-test tooling",
+        "carrier documentation"
+      ],
+      "do_not_infer": [
+        "Exact CA/EN-DC/NR CA name"
+      ]
+    },
+    {
+      "id": "runtime_ca_without_capability_matrix",
+      "stage": "runtime_physical_channels",
+      "symptoms": [
+        "Multiple component carriers observed but full device capability list unavailable"
+      ],
+      "next_checks": [
+        "Bind observed runtime only",
+        "Do not extrapolate to unsupported combinations"
+      ],
+      "do_not_infer": [
+        "Full modem CA matrix"
+      ]
+    },
+    {
+      "id": "dl_ca_without_ul_ca_evidence",
+      "stage": "uplink_configuration",
+      "symptoms": [
+        "Multiple DL component carriers observed but UL aggregation not evidenced"
+      ],
+      "next_checks": [
+        "UL physical-channel data",
+        "OEM/carrier UL CA source"
+      ],
+      "do_not_infer": [
+        "UL CA"
+      ]
+    },
+    {
+      "id": "endc_anchor_secondary_ambiguity",
+      "stage": "dual_connectivity",
+      "symptoms": [
+        "NSA indicator present but LTE anchor/NR secondary bands unknown"
+      ],
+      "next_checks": [
+        "Observe per-channel RAT/band/role",
+        "Check exact EN-DC source"
+      ],
+      "do_not_infer": [
+        "Specific DC_x_ny combination"
+      ]
+    },
+    {
+      "id": "nr_ca_vs_wide_single_carrier_ambiguity",
+      "stage": "downlink_configuration",
+      "symptoms": [
+        "High NR throughput or 5G+ shown without multiple NR component carriers"
+      ],
+      "next_checks": [
+        "Physical channel count",
+        "band/channel bandwidth evidence",
+        "carrier combo source"
+      ],
+      "do_not_infer": [
+        "NR CA"
+      ]
+    },
+    {
+      "id": "intra_band_contiguous_vs_noncontiguous_unknown",
+      "stage": "downlink_configuration",
+      "symptoms": [
+        "Same NR/LTE band appears multiple times but contiguity/class is unknown"
+      ],
+      "next_checks": [
+        "Standards combo name",
+        "channel assignments",
+        "exact RF capability"
+      ],
+      "do_not_infer": [
+        "Contiguous CA class"
+      ]
+    },
+    {
+      "id": "software_snapshot_mismatch",
+      "stage": "software_binding",
+      "symptoms": [
+        "Runtime combo was observed on a different baseband/build than current reference"
+      ],
+      "next_checks": [
+        "Phase159 comparison",
+        "Retest after radio/baseband update"
+      ],
+      "do_not_infer": [
+        "Current snapshot behaves identically"
+      ]
+    },
+    {
+      "id": "location_deployment_variance",
+      "stage": "deployment_context",
+      "symptoms": [
+        "Combination appears in one area/time but not another"
+      ],
+      "next_checks": [
+        "Record location/time/network mode",
+        "Repeat observation"
+      ],
+      "do_not_infer": [
+        "Nationwide availability"
+      ]
+    }
+  ]
+}

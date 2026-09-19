@@ -1,0 +1,452 @@
+{
+  "schema_version": "1.0",
+  "release": "phase160-ca-endc-nrca-evidence-model",
+  "checked_at": "2026-09-19",
+  "records": [
+    {
+      "key": "3gpp-lte-ca-reference-r19-20260919",
+      "record_type": "standards_reference",
+      "family": "lte_ca",
+      "identity": {
+        "standard_spec": "36.101",
+        "standard_release": "Rel-19",
+        "device_model": null,
+        "carrier": null
+      },
+      "capability": {
+        "standard_defined": {
+          "state": "confirmed"
+        },
+        "device_capability_official": {
+          "state": "unknown"
+        },
+        "carrier_deployment_official": {
+          "state": "unknown"
+        },
+        "runtime_observed": {
+          "state": "unknown"
+        }
+      },
+      "combinations": [
+        {
+          "canonical_name": "CA_1A-3A-8A-41C",
+          "evidence_level": "standard_defined",
+          "dl_bands": [
+            "B1",
+            "B3",
+            "B8",
+            "B41"
+          ],
+          "ul_bands": [],
+          "note": "Standards example only. No device/carrier/runtime claim."
+        },
+        {
+          "canonical_name": "CA_1A-8A-41C",
+          "evidence_level": "standard_defined",
+          "dl_bands": [
+            "B1",
+            "B8",
+            "B41"
+          ],
+          "ul_bands": [],
+          "note": "Standards example only."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "standards_body",
+          "source": "https://portal.3gpp.org/DesktopModules/CRs/CrDetails.aspx?CrId=559887",
+          "checked_at": "2026-09-19",
+          "scope": "Rel-19 LTE CA combinations added to TS 36.101, including CA_1A-3A-8A-41C and CA_1A-8A-41C.",
+          "confidence": "high",
+          "level": "standard_defined"
+        }
+      ],
+      "open_questions": [
+        "Exact-device support",
+        "Carrier deployment",
+        "Runtime use"
+      ]
+    },
+    {
+      "key": "3gpp-nr-ca-reference-20260919",
+      "record_type": "standards_reference",
+      "family": "nr_ca",
+      "identity": {
+        "standard_spec": "38.101-1",
+        "standard_release": "Rel-19",
+        "device_model": null,
+        "carrier": null
+      },
+      "capability": {
+        "standard_defined": {
+          "state": "confirmed"
+        },
+        "device_capability_official": {
+          "state": "unknown"
+        },
+        "carrier_deployment_official": {
+          "state": "unknown"
+        },
+        "runtime_observed": {
+          "state": "unknown"
+        }
+      },
+      "combinations": [
+        {
+          "canonical_name": "CA_n77A-n78A",
+          "evidence_level": "standard_defined",
+          "dl_bands": [
+            "n77",
+            "n78"
+          ],
+          "ul_bands": [],
+          "note": "Standards example only."
+        },
+        {
+          "canonical_name": "CA_n28A-n41A-n78A",
+          "evidence_level": "standard_defined",
+          "dl_bands": [
+            "n28",
+            "n41",
+            "n78"
+          ],
+          "ul_bands": [],
+          "note": "Standards example only."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "standards_body",
+          "source": "https://portal.3gpp.org/DesktopModules/CRs/CrDetails.aspx?CrId=596383",
+          "checked_at": "2026-09-19",
+          "scope": "TS 38.101-1 NR CA configuration corrections and examples including CA_n28A-n41A-n78A.",
+          "confidence": "high",
+          "level": "standard_defined"
+        },
+        {
+          "type": "standards_body",
+          "source": "https://portal.3gpp.org/DesktopModules/CRs/CrDetails.aspx?CrId=493375",
+          "checked_at": "2026-09-19",
+          "scope": "TS 38.101-1 includes CA_n77A-n78A in NR CA work.",
+          "confidence": "high",
+          "level": "standard_defined"
+        }
+      ],
+      "open_questions": [
+        "Exact-device support",
+        "Carrier deployment",
+        "Runtime use"
+      ]
+    },
+    {
+      "key": "3gpp-endc-reference-20260919",
+      "record_type": "standards_reference",
+      "family": "endc",
+      "identity": {
+        "standard_spec": "38.101-3",
+        "standard_release": "Rel-16+",
+        "device_model": null,
+        "carrier": null
+      },
+      "capability": {
+        "standard_defined": {
+          "state": "confirmed"
+        },
+        "device_capability_official": {
+          "state": "unknown"
+        },
+        "carrier_deployment_official": {
+          "state": "unknown"
+        },
+        "runtime_observed": {
+          "state": "unknown"
+        }
+      },
+      "combinations": [
+        {
+          "canonical_name": "DC_12A_n78A",
+          "evidence_level": "standard_defined",
+          "lte_anchor_bands": [
+            "B12"
+          ],
+          "nr_secondary_bands": [
+            "n78"
+          ],
+          "note": "Standards example only."
+        },
+        {
+          "canonical_name": "DC_13A_n78A",
+          "evidence_level": "standard_defined",
+          "lte_anchor_bands": [
+            "B13"
+          ],
+          "nr_secondary_bands": [
+            "n78"
+          ],
+          "note": "Standards example only."
+        }
+      ],
+      "evidence": [
+        {
+          "type": "standards_body",
+          "source": "https://portal.3gpp.org/desktopmodules/Specifications/SpecificationDetails.aspx?specificationId=3285",
+          "checked_at": "2026-09-19",
+          "scope": "TS 38.101-3 is the NR interworking specification used for LTE/NR dual-connectivity combinations.",
+          "confidence": "high",
+          "level": "standard_defined"
+        },
+        {
+          "type": "standards_body",
+          "source": "https://portal.3gpp.org/DesktopModules/CRs/CrDetails.aspx?CrId=472024",
+          "checked_at": "2026-09-19",
+          "scope": "Rel-16 TS 38.101-3 examples include DC_12A_n78A and DC_13A_n78A.",
+          "confidence": "high",
+          "level": "standard_defined"
+        }
+      ],
+      "open_questions": [
+        "Exact-device support",
+        "Carrier deployment",
+        "Runtime use"
+      ]
+    },
+    {
+      "key": "android-physical-channel-observation-20260919",
+      "record_type": "platform_observation",
+      "family": "runtime_observation",
+      "platform": "android",
+      "identity": {
+        "device_model": null,
+        "carrier": null,
+        "os_version": "API 31+"
+      },
+      "observation_model": {
+        "physical_channel_config": {
+          "state": "supported_by_spec",
+          "fields": [
+            "band",
+            "network type",
+            "connection status",
+            "DL bandwidth",
+            "UL bandwidth",
+            "channel number"
+          ],
+          "permission_boundary": "READ_PRECISE_PHONE_STATE or carrier privileges"
+        },
+        "service_state_bandwidths": {
+          "state": "supported_by_spec",
+          "field": "current serving cell bandwidths"
+        },
+        "display_info": {
+          "state": "supported_by_spec",
+          "values": [
+            "LTE_CA",
+            "NR_NSA",
+            "NR_ADVANCED"
+          ],
+          "boundary": "Display/branding only; not exact physical state."
+        }
+      },
+      "evidence": [
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/telephony/PhysicalChannelConfig",
+          "checked_at": "2026-09-19",
+          "scope": "PhysicalChannelConfig exposes physical-channel band, bandwidth, network type and connection status.",
+          "confidence": "high",
+          "level": "runtime_observed"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/telephony/TelephonyCallback.PhysicalChannelConfigListener",
+          "checked_at": "2026-09-19",
+          "scope": "Runtime callback returns current PhysicalChannelConfig list and requires precise phone-state permission or carrier privileges.",
+          "confidence": "high",
+          "level": "runtime_observed"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/telephony/ServiceState",
+          "checked_at": "2026-09-19",
+          "scope": "getCellBandwidths returns bandwidths of current serving cells.",
+          "confidence": "high",
+          "level": "runtime_observed"
+        },
+        {
+          "type": "os_platform_official",
+          "source": "https://developer.android.com/reference/android/telephony/TelephonyDisplayInfo",
+          "checked_at": "2026-09-19",
+          "scope": "LTE CA / NR NSA / NR Advanced display overrides are visualization/branding information and not precise current radio state.",
+          "confidence": "high",
+          "level": "runtime_observed"
+        }
+      ],
+      "open_questions": [
+        "Exact component-carrier list depends on device/API/permissions and live network."
+      ]
+    },
+    {
+      "key": "galaxy-s26-sm-s942q-band-capability-no-combo-20260919",
+      "record_type": "device_capability_boundary",
+      "family": "cross_family",
+      "platform": "android",
+      "identity": {
+        "model_name": "Galaxy S26",
+        "model_number": "SM-S942Q",
+        "market_region": "JP",
+        "sales_channel": "Samsung.com / SIMフリー"
+      },
+      "single_band_capability": {
+        "lte_fdd": [
+          "B1",
+          "B2",
+          "B3",
+          "B4",
+          "B5",
+          "B7",
+          "B8",
+          "B12",
+          "B13",
+          "B18",
+          "B19",
+          "B20",
+          "B21",
+          "B26",
+          "B28",
+          "B66"
+        ],
+        "lte_tdd": [
+          "B38",
+          "B39",
+          "B40",
+          "B41",
+          "B42"
+        ],
+        "nr_fdd": [
+          "n1",
+          "n3",
+          "n5",
+          "n28",
+          "n66"
+        ],
+        "nr_tdd": [
+          "n40",
+          "n41",
+          "n77",
+          "n78",
+          "n79"
+        ]
+      },
+      "aggregation_capability": {
+        "lte_ca": {
+          "state": "unknown",
+          "official_combination_count": 0
+        },
+        "endc": {
+          "state": "unknown",
+          "official_combination_count": 0
+        },
+        "nr_ca": {
+          "state": "unknown",
+          "official_combination_count": 0
+        },
+        "uplink_ca": {
+          "state": "unknown"
+        },
+        "four_by_four_mimo_by_combo": {
+          "state": "unknown"
+        }
+      },
+      "software_binding": {
+        "software_snapshot_key": "galaxy-s26-sms942q-samsungcom-official-latest-20260713",
+        "binding_state": "same_model_only",
+        "note": "Published single-band specification is not an aggregation matrix."
+      },
+      "evidence": [
+        {
+          "type": "manufacturer_official",
+          "source": "https://www.samsung.com/jp/business/smartphones/galaxy-s/galaxy-s26-black-256gb-sm-s942qzkesjp/",
+          "checked_at": "2026-09-19",
+          "scope": "SM-S942Q official Japanese LTE and 5G single-band support list.",
+          "confidence": "high",
+          "level": "device_capability_official"
+        }
+      ],
+      "open_questions": [
+        "Exact LTE CA combinations",
+        "Exact EN-DC combinations",
+        "Exact NR CA combinations",
+        "UL CA combinations",
+        "Per-combination MIMO layers",
+        "Carrier-specific deployed combinations"
+      ]
+    },
+    {
+      "key": "galaxy-s26-scg36-au-ca-runtime-placeholder",
+      "record_type": "device_subscription_placeholder",
+      "family": "cross_family",
+      "platform": "android",
+      "identity": {
+        "model_name": "Galaxy S26",
+        "model_number": "SCG36",
+        "market_region": "JP",
+        "sales_channel": "au",
+        "tested_carrier": "au"
+      },
+      "capability": {
+        "lte_ca": {
+          "state": "unknown"
+        },
+        "endc": {
+          "state": "unknown"
+        },
+        "nr_ca": {
+          "state": "unknown"
+        }
+      },
+      "runtime": {
+        "lte_ca": {
+          "state": "not_solqvia_tested"
+        },
+        "endc": {
+          "state": "not_solqvia_tested"
+        },
+        "nr_ca": {
+          "state": "not_solqvia_tested"
+        },
+        "observed_component_carriers": [],
+        "display_hint": {
+          "state": "unknown"
+        }
+      },
+      "software_binding": {
+        "software_snapshot_key": "galaxy-s26-scg36-au-official-latest-20260914",
+        "binding_state": "partial_snapshot"
+      },
+      "upstream_context": {
+        "mobile_data": "confirmed",
+        "fiveg_sa": "confirmed",
+        "note": "au official operation checks confirm generic data/5G SA but do not publish CA/EN-DC/NR CA combinations."
+      },
+      "evidence": [
+        {
+          "type": "carrier_official",
+          "source": "https://www.au.com/mobile/product/sim/devices/",
+          "checked_at": "2026-09-18",
+          "scope": "SCG36 generic mobile-data and 5G SA operation check; no exact aggregation combination is claimed.",
+          "confidence": "high",
+          "level": "carrier_deployment_official"
+        }
+      ],
+      "open_questions": [
+        "LTE CA runtime",
+        "EN-DC runtime",
+        "NR CA runtime",
+        "DL/UL component carriers",
+        "Exact combination name",
+        "Per-channel bandwidth/MIMO"
+      ]
+    }
+  ]
+}

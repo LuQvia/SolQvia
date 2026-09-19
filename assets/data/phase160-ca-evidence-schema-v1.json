@@ -1,0 +1,325 @@
+{
+  "schema_version": "1.0",
+  "release": "phase160-ca-endc-nrca-evidence-model",
+  "checked_at": "2026-09-19",
+  "purpose": "Normalize LTE CA, EN-DC and NR CA capability and runtime evidence at the actual band-combination/component-carrier level without promoting single-band support or UI branding into aggregation support.",
+  "combination_families": [
+    "lte_ca",
+    "endc",
+    "nr_ca"
+  ],
+  "evidence_levels": [
+    {
+      "id": "standard_defined",
+      "meaning": "The combination exists in a 3GPP specification or approved change request.",
+      "proves": [
+        "standards existence"
+      ],
+      "does_not_prove": [
+        "device support",
+        "carrier deployment",
+        "runtime use"
+      ]
+    },
+    {
+      "id": "device_capability_official",
+      "meaning": "An exact model/OEM/carrier source explicitly states support for the combination or capability set.",
+      "proves": [
+        "device capability in the documented software/hardware context"
+      ],
+      "does_not_prove": [
+        "carrier deployment",
+        "runtime use at a location/time"
+      ]
+    },
+    {
+      "id": "carrier_deployment_official",
+      "meaning": "A carrier officially documents deployment/support of the combination or aggregation family.",
+      "proves": [
+        "carrier-side availability in the published scope"
+      ],
+      "does_not_prove": [
+        "exact device support",
+        "runtime attachment"
+      ]
+    },
+    {
+      "id": "runtime_observed",
+      "meaning": "The component carriers / physical channels were observed during an actual connection.",
+      "proves": [
+        "observed runtime configuration for the exact test conditions"
+      ],
+      "does_not_prove": [
+        "full device capability matrix",
+        "future reproducibility",
+        "all network locations"
+      ]
+    }
+  ],
+  "dimensions": [
+    {
+      "id": "combination_identity",
+      "order": 10,
+      "fields": [
+        "family",
+        "canonical_name",
+        "standard_release",
+        "standard_spec",
+        "standard_status",
+        "vendor_or_source_name"
+      ]
+    },
+    {
+      "id": "downlink_configuration",
+      "order": 20,
+      "fields": [
+        "dl_component_carrier_count",
+        "dl_bands",
+        "intra_band_contiguous",
+        "intra_band_non_contiguous",
+        "inter_band",
+        "bandwidth_classes",
+        "aggregate_bandwidth_mhz"
+      ]
+    },
+    {
+      "id": "uplink_configuration",
+      "order": 30,
+      "fields": [
+        "ul_component_carrier_count",
+        "ul_bands",
+        "uplink_ca",
+        "simultaneous_ul_bands",
+        "supplementary_uplink",
+        "aggregate_bandwidth_mhz"
+      ]
+    },
+    {
+      "id": "dual_connectivity",
+      "order": 40,
+      "fields": [
+        "lte_anchor_bands",
+        "nr_secondary_bands",
+        "lte_secondary_bands",
+        "nr_primary_bands",
+        "nsa",
+        "sa",
+        "endc",
+        "ne_dc",
+        "nr_dc"
+      ]
+    },
+    {
+      "id": "radio_features",
+      "order": 50,
+      "fields": [
+        "mimo_layers_by_band",
+        "four_by_four_mimo",
+        "modulation_dl",
+        "modulation_ul",
+        "power_class",
+        "fr1",
+        "fr2"
+      ]
+    },
+    {
+      "id": "runtime_physical_channels",
+      "order": 60,
+      "fields": [
+        "primary_serving_cell",
+        "secondary_serving_cells",
+        "physical_channel_count",
+        "band_by_channel",
+        "network_type_by_channel",
+        "connection_status_by_channel",
+        "dl_bandwidth_khz_by_channel",
+        "ul_bandwidth_khz_by_channel",
+        "channel_number_by_channel"
+      ]
+    },
+    {
+      "id": "runtime_display_hint",
+      "order": 70,
+      "fields": [
+        "telephony_display_override",
+        "lte_ca_indicator",
+        "nr_nsa_indicator",
+        "nr_advanced_indicator"
+      ],
+      "boundary": "Display hints are branding/visualization signals and must not be treated as precise physical-channel truth."
+    },
+    {
+      "id": "software_binding",
+      "order": 80,
+      "fields": [
+        "software_snapshot_key",
+        "os_version",
+        "baseband_or_radio_firmware",
+        "carrier_settings_or_config_context"
+      ]
+    },
+    {
+      "id": "deployment_context",
+      "order": 90,
+      "fields": [
+        "carrier",
+        "market",
+        "location_scope",
+        "tested_at",
+        "sim_type",
+        "plan_family",
+        "network_mode"
+      ]
+    }
+  ],
+  "component_carrier_object": {
+    "required": [
+      "rat",
+      "band",
+      "direction",
+      "evidence_state"
+    ],
+    "fields": [
+      "rat",
+      "band",
+      "bandwidth_class",
+      "channel_bandwidth_mhz",
+      "arfcn_or_earfcn",
+      "direction",
+      "role",
+      "mimo_layers",
+      "evidence_state"
+    ],
+    "allowed_rat": [
+      "LTE",
+      "NR"
+    ],
+    "allowed_direction": [
+      "DL",
+      "UL",
+      "DL_UL"
+    ],
+    "allowed_role": [
+      "primary",
+      "secondary",
+      "anchor",
+      "unknown"
+    ],
+    "evidence_state": [
+      "standard_defined",
+      "device_capability_official",
+      "carrier_deployment_official",
+      "runtime_observed",
+      "unknown"
+    ]
+  },
+  "canonical_naming_examples": [
+    {
+      "family": "lte_ca",
+      "value": "CA_1A-3A-8A-41C",
+      "note": "3GPP-style LTE CA combination example. Existence in the standard is not device support."
+    },
+    {
+      "family": "nr_ca",
+      "value": "CA_n77A-n78A",
+      "note": "3GPP-style NR CA combination example."
+    },
+    {
+      "family": "nr_ca",
+      "value": "CA_n28A-n41A-n78A",
+      "note": "3GPP-style multi-band NR CA combination example."
+    },
+    {
+      "family": "endc",
+      "value": "DC_12A_n78A",
+      "note": "3GPP-style EN-DC combination example."
+    }
+  ],
+  "android_observation_methods": [
+    {
+      "method": "TelephonyCallback.PhysicalChannelConfigListener",
+      "proves": "current list of physical channel configurations",
+      "permission_boundary": "Requires READ_PRECISE_PHONE_STATE or carrier privileges.",
+      "source_fields": [
+        "band",
+        "network type",
+        "connection status",
+        "DL bandwidth",
+        "UL bandwidth",
+        "channel number where exposed"
+      ],
+      "boundary": "A runtime list proves only the channels exposed in that observation. It does not enumerate every combination the modem supports."
+    },
+    {
+      "method": "ServiceState.getCellBandwidths",
+      "proves": "bandwidths of current serving cells",
+      "boundary": "Does not identify a full standards combination by itself."
+    },
+    {
+      "method": "TelephonyDisplayInfo",
+      "proves": "carrier-policy display override such as LTE CA or NR NSA branding hint",
+      "boundary": "Android explicitly states display info is for visualization/branding and is not necessarily a precise current radio state."
+    }
+  ],
+  "non_inference_rules": [
+    "Single-band LTE/NR support does not prove any CA or EN-DC combination.",
+    "Two supported bands do not imply the corresponding two-band CA combination.",
+    "A standards-defined combination does not prove device support.",
+    "Device support does not prove a carrier deploys the combination.",
+    "Carrier deployment does not prove an exact device uses the combination.",
+    "LTE CA support does not prove uplink CA.",
+    "EN-DC capability does not prove a currently active NR secondary cell.",
+    "NR NSA branding does not prove a specific EN-DC combination.",
+    "5G+ / NR Advanced branding does not prove NR CA.",
+    "PhysicalChannelConfig runtime evidence does not prove the device's full capability list.",
+    "Observed component carriers at one location/time do not prove nationwide availability.",
+    "Observed DL aggregation does not imply the same UL carrier aggregation.",
+    "MIMO capability must be evidenced per band/combination when possible; do not promote a device-wide marketing MIMO claim to every component carrier.",
+    "Band-class suffixes such as A/B/C are part of the standards combination notation and must not be dropped when they materially distinguish bandwidth-class capability.",
+    "Software/baseband changes can alter exposed or usable combinations; bind runtime observations to Phase159 snapshots."
+  ],
+  "evidence_contract": {
+    "required": [
+      "type",
+      "source",
+      "checked_at",
+      "scope",
+      "confidence",
+      "level"
+    ],
+    "allowed_types": [
+      "standards_body",
+      "manufacturer_official",
+      "carrier_official",
+      "os_platform_official",
+      "solqvia_real_device",
+      "external_real_device"
+    ],
+    "confidence": [
+      "high",
+      "medium",
+      "low",
+      "unknown"
+    ],
+    "levels": [
+      "standard_defined",
+      "device_capability_official",
+      "carrier_deployment_official",
+      "runtime_observed"
+    ]
+  },
+  "prohibited_fields": [
+    "imei",
+    "imei2",
+    "meid",
+    "serial_number",
+    "eid",
+    "iccid",
+    "imsi",
+    "msisdn",
+    "activation_code",
+    "confirmation_code",
+    "account_id",
+    "account_password"
+  ]
+}

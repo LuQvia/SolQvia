@@ -1,0 +1,111 @@
+{
+  "schema_version": "1.0",
+  "release": "phase160-ca-endc-nrca-evidence-model",
+  "phase154": {
+    "device_radio": [
+      {
+        "phase154_field": "lte_ca_combinations",
+        "phase160_path": "capability.lte_ca",
+        "rule": "Populate only from device_capability_official or stronger exact-model evidence; never from single-band overlap."
+      },
+      {
+        "phase154_field": "nr_ca_combinations",
+        "phase160_path": "capability.nr_ca",
+        "rule": "Populate only from explicit exact-model combination evidence."
+      },
+      {
+        "phase154_field": "endc_combinations",
+        "phase160_path": "capability.endc",
+        "rule": "Populate only from explicit exact-model EN-DC evidence."
+      },
+      {
+        "phase154_field": "uplink_ca",
+        "phase160_path": "uplink_configuration.uplink_ca",
+        "rule": "DL CA does not imply UL CA."
+      },
+      {
+        "phase154_field": "mimo_4x4",
+        "phase160_path": "radio_features.four_by_four_mimo",
+        "rule": "Do not promote a generic device MIMO marketing claim to every band/combination."
+      }
+    ]
+  },
+  "phase158": {
+    "access_registration": [
+      {
+        "phase158_field": "current_data_network_type",
+        "phase160_path": "runtime_physical_channels.network_type_by_channel"
+      },
+      {
+        "phase158_field": "fiveg_nsa_attach",
+        "phase160_path": "dual_connectivity.endc",
+        "rule": "An NSA indicator alone cannot populate a canonical EN-DC combination."
+      },
+      {
+        "phase158_field": "fiveg_sa_registration",
+        "phase160_path": "dual_connectivity.sa",
+        "rule": "5G SA does not imply NR CA."
+      }
+    ],
+    "runtime_data": [
+      {
+        "phase158_field": "runtime_data",
+        "phase160_path": "deployment_context",
+        "rule": "Data success may coexist with unknown aggregation configuration."
+      }
+    ]
+  },
+  "phase159": {
+    "software_binding": [
+      {
+        "phase159_field": "record.key",
+        "phase160_path": "software_binding.software_snapshot_key"
+      },
+      {
+        "phase159_field": "snapshot.os_release.os_version",
+        "phase160_path": "software_binding.os_version"
+      },
+      {
+        "phase159_field": "snapshot.radio_firmware.baseband_full",
+        "phase160_path": "software_binding.baseband_or_radio_firmware"
+      },
+      {
+        "phase159_field": "snapshot.radio_firmware.baseband_suffix",
+        "phase160_path": "software_binding.baseband_or_radio_firmware",
+        "rule": "Suffix remains partial; never reconstruct a full value."
+      }
+    ],
+    "rule": "Every runtime_observed CA/DC record should bind to a Phase159 snapshot when the tested software/radio state is available."
+  },
+  "phase143": {
+    "single_band_projection": [
+      {
+        "source": "network.lte_bands",
+        "target": "single_band_capability.lte_*",
+        "rule": "Single-band support remains capability context only."
+      },
+      {
+        "source": "network.nr_bands",
+        "target": "single_band_capability.nr_*",
+        "rule": "Single-band support never auto-creates CA/EN-DC/NR CA combinations."
+      }
+    ]
+  },
+  "legacy_projection_rules": [
+    {
+      "source": "TelephonyDisplayInfo OVERRIDE_NETWORK_TYPE_LTE_CA",
+      "target": "runtime_display_hint.lte_ca_indicator",
+      "rule": "Display hint only; do not create component-carrier list."
+    },
+    {
+      "source": "TelephonyDisplayInfo OVERRIDE_NETWORK_TYPE_NR_NSA",
+      "target": "runtime_display_hint.nr_nsa_indicator",
+      "rule": "Display hint only; do not infer LTE anchor/NR secondary bands."
+    },
+    {
+      "source": "TelephonyDisplayInfo OVERRIDE_NETWORK_TYPE_NR_ADVANCED",
+      "target": "runtime_display_hint.nr_advanced_indicator",
+      "rule": "Branding/visualization hint only; do not infer NR CA."
+    }
+  ]
+}
