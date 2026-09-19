@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "release": "phase144-answer-first-device-passport",
+  "date": "2026-09-19",
+  "baseline": "Phase143 main 059df5ab34e6403b7432e936fd72984a0c9c775a",
+  "goal": "Move the Device Passport from database-first presentation to answer-first presentation without changing the evidence model or SEO URL surface.",
+  "scope": {
+    "p0_public_sync": [
+      "Confirm Phase143 is deployed on the canonical Japanese Device Passport.",
+      "Synchronize stale static Device Passport counts on the passport and primary entry surfaces."
+    ],
+    "p1_answer_first": [
+      "Show SIM/eSIM, mobile data, voice, SMS, tethering, 5G, Dual SIM and evidence summary immediately after exact-model selection.",
+      "Keep unknown states explicitly unverified instead of inferring compatibility.",
+      "Keep detailed bands, carrier fit, evidence matrices and source URLs below the summary.",
+      "Add direct actions to focused SIM/eSIM, communication and Dual SIM diagnostics."
+    ]
+  },
+  "evidence_rules": [
+    "Answer First does not create new compatibility claims.",
+    "A capability specification is not treated as runtime confirmation.",
+    "Unverified never means unsupported.",
+    "SolQvia real-device evidence remains separate from official and third-party evidence.",
+    "Existing per-function evidence matrix remains the authoritative detailed evidence view."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_policy_changes": 0
+  },
+  "qa_targets": [
+    "Phase144 JavaScript syntax passes.",
+    "JA/EN Device Passport each load Phase144 CSS and JavaScript once.",
+    "JA/EN Device Passport static search count starts at 572 instead of 550.",
+    "Home and device-compatibility primary Device Passport promos show 572 records.",
+    "No sitemap or canonical change."
+  ]
+}
