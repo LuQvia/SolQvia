@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "release": "phase162-real-device-capture-format",
+  "date": "2026-09-19",
+  "baseline": "Phase161 main 1cd465e80890693d1b109cc80c94c7d640b39920",
+  "goal": "Make SolQvia real-device testing repeatable and directly consumable by the Phase161 diagnosis engine without adding inference during capture or projection.",
+  "outputs": [
+    "assets/data/phase162-real-device-capture-schema-v1.json",
+    "assets/data/phase162-test-protocol-v1.json",
+    "assets/data/phase162-capture-template-v1.json",
+    "assets/data/phase162-real-device-captures-v1.json",
+    "assets/data/phase162-phase161-projection-v1.json",
+    "assets/data/phase162-projection-samples-v1.json",
+    "assets/data/phase162-validation-report-v1.json",
+    "scripts/phase162-capture-to-diagnosis-input.mjs",
+    "scripts/phase162-capture-validate.mjs"
+  ],
+  "capture_scope": {
+    "protocol_stages": 7,
+    "phase161_observation_catalog": 39,
+    "historical_real_device_captures_migrated": 2,
+    "projection_samples_passed": 2
+  },
+  "capture_order": [
+    "A device/carrier/software context",
+    "B SIM/eSIM recognition and eSIM lifecycle",
+    "C service/network registration",
+    "D data selection/APN-session/IP-DNS-validation/runtime",
+    "E IMS/voice/SMS/Wi-Fi Calling",
+    "F LTE CA/EN-DC/NR CA",
+    "G evidence/privacy/diagnosis projection"
+  ],
+  "official_basis": [
+    "Android PhysicalChannelConfig for band/network type/primary-secondary/bandwidth observations",
+    "Android PreciseDataConnectionState for data connection/APN/link/failure state",
+    "Android IMS RegistrationManager callbacks for explicit IMS registration state",
+    "Apple Settings > General > About for software version, modem firmware, carrier information and visible IMS status",
+    "Apple carrier settings guidance for carrier settings version and SIM/eSIM-related updates"
+  ],
+  "privacy_rules": [
+    "No serial number, IMEI/IMEI2, MEID, EID, ICCID, IMSI, MSISDN or phone number is retained.",
+    "No activation code, confirmation code, account credentials, PIN/PUK or APN credentials are retained.",
+    "Screenshots/API outputs containing identifiers must be redacted before retention.",
+    "Only coarse test-location scope is stored."
+  ],
+  "safety_and_evidence_rules": [
+    "Routine capture never requires a real emergency call.",
+    "Routine capture does not delete/reissue eSIM or factory/network reset the device.",
+    "Routine capture does not change hidden/service-menu radio settings solely to force a result.",
+    "Capture-to-Phase161 projection is structural only and performs no semantic inference.",
+    "Generic data/voice/SMS success never backfills hidden registration/IMS/APN/CA states."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "public_html_changes": 0
+  },
+  "next_phase": "Phase163 integrate Capture/Diagnosis evidence summaries into Device Passport with three-tier UX: answer first, troubleshooting actions, technical/evidence detail."
+}
