@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "release": "phase164-real-device-capture-campaign",
+  "checked_at": "2026-09-19",
+  "pass": true,
+  "planned_campaigns": 6,
+  "priority_campaigns": 6,
+  "completed_phase162_captures": 2,
+  "canonical_observations": 39,
+  "fresh_raw_gsc_available": false,
+  "direct_device_query_demand_available": false,
+  "tracks": [
+    {
+      "id": "seo_demand_linked",
+      "priority": 1,
+      "campaigns": 1
+    },
+    {
+      "id": "proprietary_evidence_expansion",
+      "priority": 2,
+      "campaigns": 2
+    },
+    {
+      "id": "device_passport_depth",
+      "priority": 3,
+      "campaigns": 3
+    }
+  ],
+  "guardrails_verified": [
+    "No planned campaign is stored as completed Phase162 evidence.",
+    "All ordered observations resolve to Phase161 canonical observation keys.",
+    "The 2026-09-08 GSC basis remains explicitly dated and is not promoted to fresh 2026-09-19 demand.",
+    "No direct device-query GSC ranking is claimed.",
+    "KY-41C Y!mobile and SoftBank remain separate evidence scopes.",
+    "SM-S942Q carrier testing is defined as one carrier per capture.",
+    "No routine plan requires emergency calling, eSIM deletion/reissue, factory/network reset, or forced service-menu radio changes.",
+    "No phone number, ICCID, IMSI, EID, IMEI, activation credential or account secret is part of a planned capture field."
+  ],
+  "script_syntax": {
+    "plan_to_capture_template": true,
+    "capture_campaign_validator": true
+  },
+  "public_surface": {
+    "public_html_changes": 0,
+    "sitemap_changes": 0,
+    "canonical_changes": 0,
+    "target_indexable_urls": 802
+  }
+}

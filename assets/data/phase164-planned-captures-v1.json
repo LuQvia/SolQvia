@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0",
+  "release": "phase164-real-device-capture-campaign",
+  "checked_at": "2026-09-19",
+  "record_type": "planned_capture_only",
+  "warning": "These are execution plans, not completed Phase162 captures and not evidence of compatibility.",
+  "plans": [
+    {
+      "plan_id": "p164-au-esim-activation-flow",
+      "capture_level": "standard",
+      "test_goal": "esim_setup",
+      "target": {
+        "model_name": null,
+        "model_number": null,
+        "carrier": "au",
+        "sim_type": "eSIM"
+      },
+      "preconditions": [
+        "Record exact model number and software snapshot before testing.",
+        "Use an already authorized/legitimate au test line.",
+        "Preserve the exact message/restart event only if actually observed on that line/device."
+      ],
+      "ordered_observations": [
+        "subscriber.sim_or_esim_recognized",
+        "esim.profile_install",
+        "esim.profile_enable",
+        "esim.carrier_line_activation",
+        "network.service_state",
+        "network.data_registration",
+        "data.runtime",
+        "voice.outgoing",
+        "voice.incoming",
+        "sms.send",
+        "sms.receive",
+        "software.snapshot_binding"
+      ],
+      "stop_conditions": [
+        "Stop if continuing would require eSIM deletion/reissue solely for the test.",
+        "Stop if the exact device/software state cannot be recorded without retaining private identifiers.",
+        "Do not claim au Mail/MMS behavior unless that service is separately and explicitly tested."
+      ]
+    },
+    {
+      "plan_id": "p164-ky41c-ymobile-deepen",
+      "capture_level": "standard",
+      "test_goal": "general_connectivity",
+      "target": {
+        "model_name": "キッズケータイ",
+        "model_number": "KY-41C",
+        "carrier": "Y!mobile",
+        "sim_type": "eSIM"
+      },
+      "existing_capture_id": "sqv-20260808-ky41c-ymobile-esim-profile",
+      "ordered_observations": [
+        "software.snapshot_binding",
+        "subscriber.sim_or_esim_recognized",
+        "esim.profile_install",
+        "esim.profile_enable",
+        "esim.carrier_line_activation",
+        "network.service_state",
+        "network.data_registration",
+        "data.runtime",
+        "ims.registration",
+        "voice.outgoing",
+        "voice.incoming",
+        "sms.send",
+        "sms.receive"
+      ],
+      "stop_conditions": [
+        "Do not backfill current observations from the historical capture.",
+        "Do not test guardian functions unless a separate, consent-safe protocol is defined.",
+        "Do not save EID/ICCID/phone number."
+      ]
+    },
+    {
+      "plan_id": "p164-ky41c-softbank-deepen",
+      "capture_level": "standard",
+      "test_goal": "general_connectivity",
+      "target": {
+        "model_name": "キッズケータイ",
+        "model_number": "KY-41C",
+        "carrier": "SoftBank",
+        "sim_type": "eSIM"
+      },
+      "existing_capture_id": "sqv-20260808-ky41c-softbank-esim-profile",
+      "ordered_observations": [
+        "software.snapshot_binding",
+        "subscriber.sim_or_esim_recognized",
+        "esim.profile_install",
+        "esim.profile_enable",
+        "esim.carrier_line_activation",
+        "network.service_state",
+        "network.data_registration",
+        "data.runtime",
+        "ims.registration",
+        "voice.outgoing",
+        "voice.incoming",
+        "sms.send",
+        "sms.receive"
+      ],
+      "stop_conditions": [
+        "Do not copy Y!mobile results into SoftBank scope.",
+        "Do not test guardian functions unless a separate, consent-safe protocol is defined.",
+        "Do not save EID/ICCID/phone number."
+      ]
+    },
+    {
+      "plan_id": "p164-scg36-au-runtime-stack",
+      "capture_level": "deep",
+      "test_goal": "general_connectivity",
+      "target": {
+        "model_name": "Galaxy S26",
+        "model_number": "SCG36",
+        "carrier": "au",
+        "sim_type": "SIM/eSIM"
+      },
+      "ordered_observations": [
+        "software.snapshot_binding",
+        "subscriber.sim_or_esim_recognized",
+        "network.service_state",
+        "network.data_registration",
+        "data.selected_line",
+        "data.apn_or_dnn",
+        "data.packet_session",
+        "data.ip_link",
+        "data.dns",
+        "data.validation",
+        "data.runtime",
+        "carrier.ims_policy",
+        "ims.entitlement",
+        "ims.registration",
+        "ims.voice_capability",
+        "voice.outgoing",
+        "voice.incoming",
+        "voice.volte_call",
+        "voice.vonr_call",
+        "sms.send",
+        "sms.receive",
+        "radio.physical_channels",
+        "radio.lte_ca",
+        "radio.endc",
+        "radio.nr_ca"
+      ],
+      "optional_deep_methods": [
+        "Android telephony/IMS APIs only where permissions and device policy legitimately allow.",
+        "PhysicalChannelConfig or equivalent field-test evidence for CA/DC only when actually observable."
+      ],
+      "stop_conditions": [
+        "No service-menu forcing solely to obtain a preferred band/CA result.",
+        "If privileged API state is unavailable, keep it unknown and continue with safe runtime tests."
+      ]
+    },
+    {
+      "plan_id": "p164-sms942q-crosscarrier",
+      "capture_level": "standard_to_deep",
+      "test_goal": "general_connectivity",
+      "target": {
+        "model_name": "Galaxy S26",
+        "model_number": "SM-S942Q",
+        "carrier": "one carrier per capture",
+        "sim_type": "SIM/eSIM"
+      },
+      "repeat_per_carrier": [
+        "NTTドコモ",
+        "au",
+        "SoftBank",
+        "楽天モバイル"
+      ],
+      "ordered_observations": [
+        "software.snapshot_binding",
+        "subscriber.sim_or_esim_recognized",
+        "network.service_state",
+        "network.data_registration",
+        "data.runtime",
+        "carrier.ims_policy",
+        "ims.registration",
+        "voice.outgoing",
+        "voice.incoming",
+        "sms.send",
+        "sms.receive",
+        "radio.physical_channels",
+        "radio.lte_ca",
+        "radio.endc",
+        "radio.nr_ca"
+      ],
+      "stop_conditions": [
+        "One carrier's success/failure never fills another carrier's record.",
+        "Do not call single-band capability CA/EN-DC/NR CA support."
+      ]
+    },
+    {
+      "plan_id": "p164-sc51g-docomo-runtime",
+      "capture_level": "standard",
+      "test_goal": "general_connectivity",
+      "target": {
+        "model_name": "Galaxy S26",
+        "model_number": "SC-51G",
+        "carrier": "NTTドコモ",
+        "sim_type": "SIM/eSIM"
+      },
+      "ordered_observations": [
+        "software.snapshot_binding",
+        "subscriber.sim_or_esim_recognized",
+        "network.service_state",
+        "network.data_registration",
+        "data.runtime",
+        "carrier.ims_policy",
+        "ims.registration",
+        "voice.outgoing",
+        "voice.incoming",
+        "sms.send",
+        "sms.receive"
+      ],
+      "stop_conditions": [
+        "Do not treat the manufacturer latest-version reference as proof the tested device has that version; record the device-observed state."
+      ]
+    }
+  ]
+}

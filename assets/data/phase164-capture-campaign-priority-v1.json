@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "release": "phase164-real-device-capture-campaign",
+  "checked_at": "2026-09-19",
+  "purpose": "Prioritize the next SolQvia real-device captures without fabricating fresh GSC demand, device availability, or runtime results.",
+  "data_state": {
+    "latest_safe_gsc_basis": "2026-09-08",
+    "fresh_raw_gsc_available": false,
+    "direct_device_query_demand_available": false,
+    "consequence": "GSC is used only where a query cluster is explicitly supported by Phase145/153. Device-specific priorities are evidence-gap/operational priorities, not search-demand rankings."
+  },
+  "tracks": [
+    {
+      "id": "seo_demand_linked",
+      "priority": 1,
+      "rule": "Only campaigns with directly supported GSC query intent are listed here.",
+      "campaigns": [
+        {
+          "campaign_id": "p164-au-esim-activation-flow",
+          "status": "planned",
+          "gsc_link": {
+            "target_id": "phase147-au-line-info",
+            "query_cluster": [
+              "電話回線情報の書込みが終了しました",
+              "au 回線情報 書込み"
+            ],
+            "baseline": {
+              "source_date": "2026-09-08",
+              "impressions_lower_bound": 11,
+              "position_approx_min": 8,
+              "position_approx_max": 9,
+              "confidence": "medium"
+            }
+          },
+          "device_requirement": "Any exact-model au eSIM-capable device legitimately available for testing; exact model must be recorded before execution.",
+          "value": "Validate the post-activation sequence beyond the restart message: profile enablement, carrier line activation, service registration, data, voice, SMS, and optional au Mail/MMS where applicable.",
+          "evidence_boundary": "The published SMS/restart instruction is not proof that any downstream function works.",
+          "execution_gate": "Do not execute until an exact device, software snapshot, test line, and consent-safe voice/SMS counterpart are available."
+        }
+      ]
+    },
+    {
+      "id": "proprietary_evidence_expansion",
+      "priority": 2,
+      "rule": "Prefer continuing an existing SolQvia capture when one additional observation can unlock multiple downstream diagnostic layers.",
+      "campaigns": [
+        {
+          "campaign_id": "p164-ky41c-ymobile-deepen",
+          "status": "planned",
+          "model_number": "KY-41C",
+          "carrier": "Y!mobile",
+          "existing_capture_id": "sqv-20260808-ky41c-ymobile-esim-profile",
+          "current_confirmed": [
+            "subscriber.sim_or_esim_recognized",
+            "esim.profile_install"
+          ],
+          "current_next_question": "q_esim_profile_enabled",
+          "target_sequence": [
+            "esim.profile_enable",
+            "esim.carrier_line_activation",
+            "network.service_state",
+            "network.data_registration",
+            "data.runtime",
+            "ims.registration",
+            "voice.outgoing",
+            "voice.incoming",
+            "sms.send",
+            "sms.receive"
+          ],
+          "uniqueness_reason": "Existing SolQvia-owned exact-model cross-carrier eSIM evidence can be extended instead of starting from zero.",
+          "execution_gate": "Requires the same exact model and a valid Y!mobile test line. Do not infer continuity with the 2026-08-08 capture unless the current software snapshot is recorded."
+        },
+        {
+          "campaign_id": "p164-ky41c-softbank-deepen",
+          "status": "planned",
+          "model_number": "KY-41C",
+          "carrier": "SoftBank",
+          "existing_capture_id": "sqv-20260808-ky41c-softbank-esim-profile",
+          "current_confirmed": [
+            "subscriber.sim_or_esim_recognized",
+            "esim.profile_install"
+          ],
+          "current_next_question": "q_esim_profile_enabled",
+          "target_sequence": [
+            "esim.profile_enable",
+            "esim.carrier_line_activation",
+            "network.service_state",
+            "network.data_registration",
+            "data.runtime",
+            "ims.registration",
+            "voice.outgoing",
+            "voice.incoming",
+            "sms.send",
+            "sms.receive"
+          ],
+          "uniqueness_reason": "Second cross-carrier branch on the same exact device can separate Y!mobile and SoftBank behavior rather than merging them.",
+          "execution_gate": "Requires the same exact model and a valid SoftBank test line. No downstream result from Y!mobile may be copied across."
+        }
+      ]
+    },
+    {
+      "id": "device_passport_depth",
+      "priority": 3,
+      "rule": "Deepen exact models that already have Phase159/163 scaffolding, but do not call this a GSC ranking.",
+      "campaigns": [
+        {
+          "rank": 1,
+          "campaign_id": "p164-scg36-au-runtime-stack",
+          "status": "planned",
+          "model_number": "SCG36",
+          "carrier": "au",
+          "current_state": "Phase163 has official generic data/5G SA/voice/SMS plus Phase159 partial software reference, but no SolQvia runtime capture.",
+          "target_sequence": [
+            "software.snapshot_binding",
+            "subscriber.sim_or_esim_recognized",
+            "network.service_state",
+            "network.data_registration",
+            "data.selected_line",
+            "data.apn_or_dnn",
+            "data.packet_session",
+            "data.ip_link",
+            "data.dns",
+            "data.validation",
+            "data.runtime",
+            "carrier.ims_policy",
+            "ims.entitlement",
+            "ims.registration",
+            "ims.voice_capability",
+            "voice.outgoing",
+            "voice.incoming",
+            "voice.volte_call",
+            "voice.vonr_call",
+            "sms.send",
+            "sms.receive",
+            "radio.physical_channels",
+            "radio.lte_ca",
+            "radio.endc",
+            "radio.nr_ca"
+          ],
+          "priority_reason": "Largest current gap between rich official evidence and absent SolQvia-owned runtime evidence among the Phase163 deep-overlay records.",
+          "execution_gate": "Requires SCG36 + au test line. Deep API observations remain optional when permissions/tooling are unavailable."
+        },
+        {
+          "rank": 2,
+          "campaign_id": "p164-sms942q-crosscarrier",
+          "status": "planned",
+          "model_number": "SM-S942Q",
+          "carrier": "cross-carrier",
+          "current_state": "Official single-band capability and software reference exist; CA/EN-DC/NR CA and carrier-specific runtime are unknown.",
+          "carrier_matrix": [
+            "NTTドコモ",
+            "au",
+            "SoftBank",
+            "楽天モバイル"
+          ],
+          "target_sequence": [
+            "software.snapshot_binding",
+            "subscriber.sim_or_esim_recognized",
+            "network.service_state",
+            "network.data_registration",
+            "data.runtime",
+            "carrier.ims_policy",
+            "ims.registration",
+            "voice.outgoing",
+            "voice.incoming",
+            "sms.send",
+            "sms.receive",
+            "radio.physical_channels",
+            "radio.lte_ca",
+            "radio.endc",
+            "radio.nr_ca"
+          ],
+          "priority_reason": "SIM-free exact model can produce high-value carrier-difference evidence, but execution cost is higher because each carrier must be tested separately.",
+          "execution_gate": "Only carriers with legitimately available test lines are executed. Missing carriers remain planned/untested."
+        },
+        {
+          "rank": 3,
+          "campaign_id": "p164-sc51g-docomo-runtime",
+          "status": "planned",
+          "model_number": "SC-51G",
+          "carrier": "NTTドコモ",
+          "current_state": "Phase159 software/baseband reference exists but no bound SolQvia runtime capture.",
+          "target_sequence": [
+            "software.snapshot_binding",
+            "subscriber.sim_or_esim_recognized",
+            "network.service_state",
+            "network.data_registration",
+            "data.runtime",
+            "carrier.ims_policy",
+            "ims.registration",
+            "voice.outgoing",
+            "voice.incoming",
+            "sms.send",
+            "sms.receive"
+          ],
+          "priority_reason": "Snapshot-bound runtime would convert a software-only deep record into an actual exact-model evidence path.",
+          "execution_gate": "Requires SC-51G + docomo test line."
+        }
+      ]
+    }
+  ],
+  "global_rules": [
+    "A planned campaign is not real-device evidence.",
+    "No planned result is written into Phase162 real-device captures until an actual test is performed.",
+    "Fresh GSC data must replace the dated 2026-09-08 seed before any new device-specific search-demand ranking is claimed.",
+    "Exact model, carrier, SIM type, software snapshot and test date are mandatory at execution time.",
+    "Y!mobile, SoftBank, au, docomo and Rakuten results are separate evidence scopes.",
+    "No test may require emergency calling, forced service-menu radio changes, eSIM deletion/reissue, or factory/network reset as a routine step.",
+    "Voice/SMS tests use only consent-safe test counterparts and never store phone numbers.",
+    "Unknown/not-tested remains unknown/not-tested."
+  ]
+}
