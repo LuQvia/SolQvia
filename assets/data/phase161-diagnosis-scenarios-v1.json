@@ -207,12 +207,12 @@
       },
       "expect": {
         "diagnosis_status": "requires_more_evidence",
-        "next_question_id": "q_service_state",
+        "next_question_id": "q_sim_recognized",
         "candidate_includes": [
           "runtime_success_internal_state_unknown"
         ]
       },
-      "note": "The engine may still ask for upstream service state for a full general-connectivity trace, but it must not auto-fill APN/session/DNS."
+      "note": "Generic runtime success is retained, but a full general-connectivity trace starts with subscriber identity. The engine must not backfill APN/session/DNS internals."
     }
   ]
 }
