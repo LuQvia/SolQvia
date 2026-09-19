@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "release": "phase154-connectivity-stack-data-model",
+  "date": "2026-09-19",
+  "baseline": "Phase153 main a3849584a6e6649f1bd1ac0b185256990d5c1437",
+  "goal": "Create the additive connectivity-stack schema that future CarrierConfig, eSIM RSP, IMS, registration, firmware and failure-diagnosis phases can share.",
+  "outputs": [
+    "assets/data/phase154-connectivity-stack-schema-v1.json",
+    "assets/data/phase154-phase130-field-map-v1.json",
+    "assets/data/phase154-connectivity-stack-samples-v1.json",
+    "scripts/phase154-connectivity-stack-validate.mjs"
+  ],
+  "stack_layers": [
+    "device_radio",
+    "subscriber_identity",
+    "esim_rsp",
+    "carrier_configuration",
+    "network_registration",
+    "data_session",
+    "ims_services",
+    "runtime_observation",
+    "diagnosis"
+  ],
+  "compatibility": {
+    "phase130": "additive_mapping",
+    "device_passport": "no destructive field migration",
+    "current_runtime_evidence": "preserved"
+  },
+  "evidence_boundaries": [
+    "Profile install/enable does not prove network registration.",
+    "Network registration does not prove mobile data.",
+    "Mobile data does not prove IMS or VoLTE.",
+    "Generic carrier voice/SMS listings are not split into directional sub-results unless the source does so.",
+    "Subscriber secrets are prohibited from storage."
+  ],
+  "official_basis": [
+    "Android carrier customization / CarrierConfig and carrier identification",
+    "Android eSIM / EuiccManager / LPA architecture",
+    "Android IMS service entitlement and provisioning",
+    "Apple carrier settings update model",
+    "GSMA consumer eSIM remote SIM provisioning specification family"
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "public_html_changes": 0
+  },
+  "next_phase": "Phase155 CarrierConfig / Carrier Settings normalization on top of the Phase154 schema."
+}

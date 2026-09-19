@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "release": "phase154-connectivity-stack-data-model",
+  "source": "assets/data/phase130-unified-capability-taxonomy-v1.json",
+  "mapping": [
+    {
+      "phase130_domain": "identity",
+      "phase154_layer": "device_radio",
+      "status": "partial",
+      "notes": [
+        "model_name/model_number carry directly",
+        "sales/original-carrier context remains identity metadata"
+      ]
+    },
+    {
+      "phase130_domain": "sim_esim",
+      "phase154_layer": "subscriber_identity",
+      "status": "direct"
+    },
+    {
+      "phase130_domain": "esim_activation",
+      "phase154_layer": "esim_rsp",
+      "status": "expanded",
+      "notes": [
+        "Phase154 separates download/install/enable/transfer"
+      ]
+    },
+    {
+      "phase130_domain": "radio",
+      "phase154_layer": "device_radio",
+      "status": "expanded",
+      "notes": [
+        "adds CA/EN-DC/NR CA/VoNR capability fields"
+      ]
+    },
+    {
+      "phase130_domain": "carrier_fit",
+      "phase154_layer": "carrier_configuration",
+      "status": "partial",
+      "notes": [
+        "fit remains presentation-level; underlying config/evidence is normalized here"
+      ]
+    },
+    {
+      "phase130_domain": "runtime",
+      "phase154_layer": "runtime_observation",
+      "status": "direct"
+    },
+    {
+      "phase130_domain": "messaging",
+      "phase154_layer": "ims_services",
+      "status": "partial"
+    },
+    {
+      "phase130_domain": "apn_setup",
+      "phase154_layer": "data_session",
+      "status": "split",
+      "notes": [
+        "carrier_config moves to carrier_configuration",
+        "APN/DNN/data session remain data_session"
+      ]
+    },
+    {
+      "phase130_domain": "software",
+      "phase154_layer": "carrier_configuration",
+      "status": "split",
+      "notes": [
+        "OS/firmware/baseband are test-context identity; carrier settings map here"
+      ]
+    },
+    {
+      "phase130_domain": "troubleshooting",
+      "phase154_layer": "diagnosis",
+      "status": "expanded"
+    },
+    {
+      "phase130_domain": "evidence",
+      "phase154_layer": "all",
+      "status": "direct",
+      "notes": [
+        "every layer state can carry independent evidence"
+      ]
+    }
+  ],
+  "preserved_rules": [
+    "SIM recognition remains distinct from data/voice/SMS.",
+    "APN and eSIM profile configuration remain distinct.",
+    "Band match is not compatibility proof.",
+    "Official, external field, SolQvia real-device, and user-report evidence remain separate."
+  ]
+}

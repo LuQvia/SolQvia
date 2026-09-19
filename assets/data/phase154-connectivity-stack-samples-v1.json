@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0",
+  "release": "phase154-connectivity-stack-data-model",
+  "checked_at": "2026-09-19",
+  "records": [
+    {
+      "key": "sample-scg36-au-android16",
+      "sample_only": true,
+      "identity": {
+        "model_name": "Galaxy S26",
+        "model_number": "SCG36",
+        "original_carrier": "au",
+        "market_region": "JP",
+        "os_version": "Android 16"
+      },
+      "layers": {
+        "device_radio": {
+          "fiveg_sa": {
+            "state": "supported_by_spec",
+            "value": true,
+            "evidence": [
+              {
+                "type": "carrier_official",
+                "source": "https://www.au.com/mobile/product/smartphone/galaxy_s26/spec/",
+                "checked_at": "2026-09-18",
+                "scope": "SCG36 5G SA capability",
+                "confidence": "high"
+              }
+            ]
+          }
+        },
+        "subscriber_identity": {
+          "esim_supported": {
+            "state": "supported_by_spec",
+            "value": true,
+            "evidence": [
+              {
+                "type": "carrier_official",
+                "source": "https://www.au.com/mobile/product/smartphone/galaxy_s26/spec/",
+                "checked_at": "2026-09-18",
+                "scope": "SCG36 eSIM capability",
+                "confidence": "high"
+              }
+            ]
+          }
+        },
+        "esim_rsp": {
+          "profile_download": {
+            "state": "unknown",
+            "evidence": []
+          },
+          "profile_install": {
+            "state": "unknown",
+            "evidence": []
+          },
+          "profile_enable": {
+            "state": "unknown",
+            "evidence": []
+          }
+        },
+        "carrier_configuration": {
+          "android_carrier_config": {
+            "state": "unknown",
+            "evidence": []
+          },
+          "ims_provisioning_required": {
+            "state": "unknown",
+            "evidence": []
+          }
+        },
+        "network_registration": {
+          "fiveg_sa_registration": {
+            "state": "confirmed",
+            "evidence": [
+              {
+                "type": "carrier_official",
+                "source": "https://www.au.com/mobile/product/sim/devices/",
+                "checked_at": "2026-09-18",
+                "scope": "au operation-check listing records 5G SA for exact model/OS context; does not establish SolQvia-owned test",
+                "confidence": "high"
+              }
+            ]
+          }
+        },
+        "data_session": {
+          "mobile_data": {
+            "state": "confirmed",
+            "evidence": [
+              {
+                "type": "carrier_official",
+                "source": "https://www.au.com/mobile/product/sim/devices/",
+                "checked_at": "2026-09-18",
+                "scope": "au operation-check mobile data",
+                "confidence": "high"
+              }
+            ]
+          },
+          "tethering": {
+            "state": "confirmed",
+            "evidence": [
+              {
+                "type": "carrier_official",
+                "source": "https://www.au.com/mobile/product/sim/devices/",
+                "checked_at": "2026-09-18",
+                "scope": "au operation-check tethering",
+                "confidence": "high"
+              }
+            ]
+          }
+        },
+        "ims_services": {
+          "ims_registration": {
+            "state": "unknown",
+            "evidence": []
+          },
+          "voice_outgoing": {
+            "state": "unknown",
+            "evidence": []
+          },
+          "voice_incoming": {
+            "state": "unknown",
+            "evidence": []
+          },
+          "sms_send": {
+            "state": "unknown",
+            "evidence": []
+          },
+          "sms_receive": {
+            "state": "unknown",
+            "evidence": []
+          },
+          "voice_generic": {
+            "state": "confirmed",
+            "evidence": [
+              {
+                "type": "carrier_official",
+                "source": "https://www.au.com/mobile/product/sim/devices/",
+                "checked_at": "2026-09-18",
+                "scope": "au listing confirms voice generically; direction is not inferred",
+                "confidence": "high"
+              }
+            ]
+          },
+          "sms_generic": {
+            "state": "confirmed",
+            "evidence": [
+              {
+                "type": "carrier_official",
+                "source": "https://www.au.com/mobile/product/sim/devices/",
+                "checked_at": "2026-09-18",
+                "scope": "au listing confirms SMS generically; send/receive is not inferred",
+                "confidence": "high"
+              }
+            ]
+          }
+        },
+        "runtime_observation": {
+          "state": "not_solqvia_tested",
+          "evidence": [],
+          "note": "No SolQvia-owned SCG36 real-device record is claimed."
+        },
+        "diagnosis": {
+          "last_confirmed_layer": "data_session",
+          "first_failed_layer": null,
+          "candidate_root_causes": [],
+          "safe_next_checks": [
+            "IMS registration requires separate evidence before asserting VoLTE/IMS behavior"
+          ],
+          "unsupported_inferences": [
+            "Do not infer IMS registration from mobile-data or generic voice success."
+          ]
+        }
+      }
+    },
+    {
+      "key": "sample-ky41c-softbank-profile-recognition",
+      "sample_only": true,
+      "identity": {
+        "model_name": "キッズケータイ",
+        "model_number": "KY-41C",
+        "original_carrier": "NTTドコモ",
+        "market_region": "JP"
+      },
+      "layers": {
+        "subscriber_identity": {
+          "esim_supported": {
+            "state": "supported_by_spec",
+            "value": true,
+            "evidence": [
+              {
+                "type": "manufacturer_official",
+                "source": "https://www.kyocera.co.jp/prdct/telecom/consumer/lineup/ky-41c/spec.html",
+                "checked_at": "2026-08-08",
+                "scope": "KY-41C eSIM capability",
+                "confidence": "high"
+              }
+            ]
+          }
+        },
+        "esim_rsp": {
+          "profile_install": {
+            "state": "confirmed",
+            "evidence": [
+              {
+                "type": "solqvia_real_device",
+                "source": "ky41c-ymobile-softbank-esim-profile-recognition-20260808",
+                "checked_at": "2026-08-08",
+                "scope": "eSIM profile configuration observed on terminal",
+                "confidence": "high"
+              }
+            ]
+          },
+          "profile_enable": {
+            "state": "unknown",
+            "evidence": [],
+            "note": "Existing SolQvia note confirms profile configuration/SIM information recognition only; network service is not promoted."
+          }
+        },
+        "network_registration": {
+          "lte_eps_registration": {
+            "state": "unknown",
+            "evidence": []
+          }
+        },
+        "data_session": {
+          "mobile_data": {
+            "state": "not_tested",
+            "evidence": []
+          }
+        },
+        "ims_services": {
+          "ims_registration": {
+            "state": "not_tested",
+            "evidence": []
+          },
+          "voice_outgoing": {
+            "state": "not_tested",
+            "evidence": []
+          },
+          "voice_incoming": {
+            "state": "not_tested",
+            "evidence": []
+          },
+          "sms_send": {
+            "state": "not_tested",
+            "evidence": []
+          },
+          "sms_receive": {
+            "state": "not_tested",
+            "evidence": []
+          }
+        },
+        "runtime_observation": {
+          "state": "confirmed",
+          "evidence": [
+            {
+              "type": "solqvia_real_device",
+              "source": "ky41c-ymobile-softbank-esim-profile-recognition-20260808",
+              "checked_at": "2026-08-08",
+              "scope": "eSIM profile configuration and terminal-side SIM information recognition only",
+              "confidence": "high"
+            }
+          ]
+        },
+        "diagnosis": {
+          "last_confirmed_layer": "esim_rsp",
+          "first_failed_layer": null,
+          "candidate_root_causes": [],
+          "safe_next_checks": [
+            "network registration",
+            "mobile data",
+            "voice",
+            "SMS",
+            "IMS registration"
+          ],
+          "unsupported_inferences": [
+            "Do not infer data, voice, SMS, VoLTE/IMS or guardian-function usability from eSIM profile recognition."
+          ]
+        }
+      }
+    }
+  ]
+}
