@@ -1,0 +1,333 @@
+{
+  "schema_version": "1.0",
+  "release": "phase154-connectivity-stack-data-model",
+  "checked_at": "2026-09-19",
+  "purpose": "Represent the full smartphone connectivity path as ordered, evidence-scoped layers so SolQvia can distinguish capability, provisioning, registration and runtime failure without inferring success across layers.",
+  "design_principles": [
+    "SIM/eSIM recognition does not prove network registration.",
+    "Network registration does not prove mobile-data session success.",
+    "Mobile-data success does not prove IMS registration, VoLTE, SMS over IMS or Wi-Fi Calling.",
+    "eSIM profile download/install/enable are separate states from carrier activation and network registration.",
+    "CarrierConfig/carrier settings capability is separate from observed runtime.",
+    "Band support and radio capability never promote carrier compatibility by themselves.",
+    "Every factual field can carry independent evidence and confidence.",
+    "Unknown values remain unknown; no cross-layer inference fills them.",
+    "User-specific identifiers such as IMSI, ICCID, phone number or activation credentials are not stored."
+  ],
+  "enums": {
+    "observation_state": [
+      "confirmed",
+      "failed",
+      "supported_by_spec",
+      "not_supported_by_spec",
+      "not_tested",
+      "not_solqvia_tested",
+      "not_applicable",
+      "unknown"
+    ],
+    "evidence_type": [
+      "manufacturer_official",
+      "carrier_official",
+      "os_platform_official",
+      "standards_body",
+      "solqvia_real_device",
+      "external_real_device",
+      "user_report"
+    ],
+    "confidence": [
+      "high",
+      "medium",
+      "low",
+      "unknown"
+    ]
+  },
+  "identity_policy": {
+    "allowed": [
+      "model_name",
+      "model_number",
+      "market_region",
+      "sales_channel",
+      "original_carrier",
+      "os_version",
+      "firmware_version",
+      "baseband_version",
+      "carrier_settings_version"
+    ],
+    "prohibited_personal_identifiers": [
+      "imsi",
+      "iccid",
+      "msisdn",
+      "eid_full_value",
+      "activation_code",
+      "confirmation_code",
+      "account_id"
+    ],
+    "note": "The schema may record identifier types or matching mechanisms as capability metadata, but never a user's actual secret/subscriber identifier."
+  },
+  "layers": [
+    {
+      "id": "device_radio",
+      "order": 10,
+      "label_ja": "端末・無線",
+      "purpose": "Hardware and radio capability before carrier-specific provisioning.",
+      "fields": [
+        "model_name",
+        "model_number",
+        "market_region",
+        "soc",
+        "modem",
+        "lte_bands",
+        "nr_bands",
+        "lte_ca_combinations",
+        "nr_ca_combinations",
+        "endc_combinations",
+        "fiveg_nsa",
+        "fiveg_sa",
+        "vonr_capability",
+        "mmwave",
+        "dss",
+        "mimo_4x4",
+        "uplink_ca"
+      ]
+    },
+    {
+      "id": "subscriber_identity",
+      "order": 20,
+      "label_ja": "SIM / Subscriber Identity",
+      "purpose": "SIM/eSIM form and carrier-identification mechanisms without storing subscriber secrets.",
+      "fields": [
+        "physical_sim_supported",
+        "sim_form_factor",
+        "esim_supported",
+        "euicc_present",
+        "isim_capability",
+        "carrier_privileges",
+        "matching_dimensions"
+      ],
+      "matching_dimensions_allowed": [
+        "mcc_mnc",
+        "spn",
+        "carrier_id",
+        "gid1_type",
+        "gid2_type",
+        "imsi_pattern_type_only"
+      ]
+    },
+    {
+      "id": "esim_rsp",
+      "order": 30,
+      "label_ja": "eSIM RSP",
+      "purpose": "Remote SIM Provisioning lifecycle from device capability to enabled profile.",
+      "fields": [
+        "lpa_present",
+        "euicc_manager_available",
+        "smdp_reachable",
+        "activation_method",
+        "profile_download",
+        "profile_install",
+        "profile_enable",
+        "profile_disable",
+        "profile_delete",
+        "device_transfer",
+        "multiple_enabled_profiles"
+      ]
+    },
+    {
+      "id": "carrier_configuration",
+      "order": 40,
+      "label_ja": "CarrierConfig / Carrier Settings",
+      "purpose": "Carrier- and OS-specific policy/configuration layer applied after subscriber identification.",
+      "fields": [
+        "android_carrier_id",
+        "android_carrier_config",
+        "carrier_app",
+        "carrier_privileges_applied",
+        "apple_carrier_settings_version",
+        "apn_policy",
+        "ims_provisioning_required",
+        "volte_available",
+        "wifi_calling_available",
+        "tethering_policy",
+        "mms_policy"
+      ]
+    },
+    {
+      "id": "network_registration",
+      "order": 50,
+      "label_ja": "ネットワーク登録",
+      "purpose": "PLMN/RAT registration independent of data and IMS service success.",
+      "fields": [
+        "plmn_selection",
+        "lte_eps_registration",
+        "fiveg_registration",
+        "preferred_rat",
+        "fiveg_nsa_attach",
+        "fiveg_sa_registration",
+        "roaming_state"
+      ]
+    },
+    {
+      "id": "data_session",
+      "order": 60,
+      "label_ja": "データセッション",
+      "purpose": "Packet-data session establishment after network registration.",
+      "fields": [
+        "apn_selected",
+        "dnn_selected",
+        "ipv4",
+        "ipv6",
+        "pdp_or_pdu_session",
+        "dns_resolution",
+        "mobile_data",
+        "tethering"
+      ]
+    },
+    {
+      "id": "ims_services",
+      "order": 70,
+      "label_ja": "IMS・音声・メッセージ",
+      "purpose": "IMS registration and dependent services kept separate from packet data.",
+      "fields": [
+        "ims_registration",
+        "volte_registration",
+        "vonr_registration",
+        "voice_outgoing",
+        "voice_incoming",
+        "sms_send",
+        "sms_receive",
+        "sms_over_ims",
+        "wifi_calling",
+        "emergency_calling",
+        "rcs_registration"
+      ]
+    },
+    {
+      "id": "runtime_observation",
+      "order": 80,
+      "label_ja": "実動作・条件",
+      "purpose": "Observed outcome for exact device × carrier × SIM × OS × firmware × function conditions.",
+      "fields": [
+        "tested_at",
+        "carrier",
+        "plan",
+        "sim_type",
+        "os_version",
+        "firmware_version",
+        "baseband_version",
+        "network_mode",
+        "location_scope",
+        "conditions",
+        "observations"
+      ]
+    },
+    {
+      "id": "diagnosis",
+      "order": 90,
+      "label_ja": "診断",
+      "purpose": "Derived troubleshooting state based only on explicit layer observations.",
+      "fields": [
+        "last_confirmed_layer",
+        "first_failed_layer",
+        "candidate_root_causes",
+        "safe_next_checks",
+        "unsupported_inferences",
+        "open_questions"
+      ]
+    }
+  ],
+  "evidence_object": {
+    "required": [
+      "type",
+      "source",
+      "checked_at",
+      "scope",
+      "confidence"
+    ],
+    "properties": {
+      "type": "one of evidence_type",
+      "source": "URL or SolQvia test record key",
+      "checked_at": "YYYY-MM-DD",
+      "scope": "exact statement/function this evidence supports",
+      "confidence": "high/medium/low/unknown",
+      "note": "optional qualification"
+    }
+  },
+  "layer_state_object": {
+    "required": [
+      "state",
+      "evidence"
+    ],
+    "properties": {
+      "state": "one of observation_state",
+      "value": "optional scalar/array/object",
+      "evidence": "array of evidence_object",
+      "note": "optional boundary or condition"
+    }
+  },
+  "diagnostic_rules": [
+    {
+      "id": "sim_not_registration",
+      "if": "subscriber_identity confirmed AND network_registration failed",
+      "do_not_infer": [
+        "mobile_data",
+        "ims_registration",
+        "voice",
+        "sms"
+      ],
+      "next_checks": [
+        "carrier_configuration",
+        "PLMN/RAT support",
+        "SIM provisioning"
+      ]
+    },
+    {
+      "id": "registration_not_data",
+      "if": "network_registration confirmed AND data_session failed",
+      "do_not_infer": [
+        "ims_registration",
+        "voice",
+        "sms"
+      ],
+      "next_checks": [
+        "APN/DNN",
+        "packet session",
+        "carrier data provisioning"
+      ]
+    },
+    {
+      "id": "data_not_ims",
+      "if": "mobile_data confirmed AND ims_registration failed_or_unknown",
+      "do_not_infer": [
+        "VoLTE",
+        "VoNR",
+        "SMS over IMS",
+        "Wi-Fi Calling"
+      ],
+      "next_checks": [
+        "CarrierConfig/carrier settings",
+        "IMS provisioning",
+        "firmware/baseband",
+        "carrier support"
+      ]
+    },
+    {
+      "id": "esim_profile_not_service",
+      "if": "profile_enable confirmed",
+      "do_not_infer": [
+        "network registration",
+        "mobile data",
+        "voice",
+        "sms"
+      ],
+      "next_checks": [
+        "carrier activation",
+        "carrier configuration",
+        "network registration"
+      ]
+    }
+  ],
+  "compatibility": {
+    "phase130_mapping_file": "assets/data/phase154-phase130-field-map-v1.json",
+    "note": "Phase154 is an additive layer above Phase130. Existing Device Passport fields remain valid and are mapped rather than renamed destructively."
+  }
+}
