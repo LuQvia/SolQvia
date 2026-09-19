@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "release": "phase158-registration-data-session-model",
+  "phase154": {
+    "network_registration": [
+      {
+        "phase154_field": "plmn_selection",
+        "phase158_path": "matrix.plmn_service_state.registered_operator"
+      },
+      {
+        "phase154_field": "lte_eps_registration",
+        "phase158_path": "matrix.access_registration.lte_eps_registration"
+      },
+      {
+        "phase154_field": "fiveg_registration",
+        "phase158_path": "matrix.access_registration.fivegs_registration"
+      },
+      {
+        "phase154_field": "preferred_rat",
+        "phase158_path": "matrix.access_registration.current_data_network_type"
+      },
+      {
+        "phase154_field": "fiveg_nsa_attach",
+        "phase158_path": "matrix.access_registration.fiveg_nsa_attach"
+      },
+      {
+        "phase154_field": "fiveg_sa_registration",
+        "phase158_path": "matrix.access_registration.fiveg_sa_registration"
+      },
+      {
+        "phase154_field": "roaming_state",
+        "phase158_path": "matrix.subscription_data_selection.data_roaming_state"
+      }
+    ],
+    "data_session": [
+      {
+        "phase154_field": "apn_selected",
+        "phase158_path": "matrix.apn_dnn_profile.selected_for_default_data"
+      },
+      {
+        "phase154_field": "dnn_selected",
+        "phase158_path": "matrix.apn_dnn_profile.dnn_name"
+      },
+      {
+        "phase154_field": "ipv4",
+        "phase158_path": "matrix.ip_link.ipv4_address_present"
+      },
+      {
+        "phase154_field": "ipv6",
+        "phase158_path": "matrix.ip_link.ipv6_address_present"
+      },
+      {
+        "phase154_field": "pdp_or_pdu_session",
+        "phase158_path": "matrix.packet_session.session_state"
+      },
+      {
+        "phase154_field": "dns_resolution",
+        "phase158_path": "matrix.dns_resolution.dns_lookup_test"
+      },
+      {
+        "phase154_field": "mobile_data",
+        "phase158_path": "matrix.runtime_data"
+      },
+      {
+        "phase154_field": "tethering",
+        "phase158_path": "matrix.runtime_data.tethering_data_success"
+      }
+    ]
+  },
+  "phase155": [
+    {
+      "phase155_field": "feature_policies.apn_policy",
+      "phase158_path": "matrix.apn_dnn_profile"
+    },
+    {
+      "phase155_field": "feature_policies.tethering_policy",
+      "phase158_path": "matrix.runtime_data.tethering_data_success"
+    }
+  ],
+  "phase156": [
+    {
+      "phase156_stage": "network_registration",
+      "phase158_dimensions": [
+        "plmn_service_state",
+        "access_registration"
+      ]
+    },
+    {
+      "phase156_stage": "service_validation.mobile_data",
+      "phase158_path": "matrix.runtime_data"
+    }
+  ],
+  "legacy_projection_rules": [
+    {
+      "source": "Phase143 runtime.mobile_data=confirmed",
+      "target": "matrix.runtime_data",
+      "rule": "Keep runtime data confirmed generically; do not populate APN, session, IP, DNS or validation internals."
+    },
+    {
+      "source": "Phase143 runtime.fiveg_sa=confirmed",
+      "target": "matrix.access_registration.fiveg_sa_registration",
+      "rule": "May populate only when the source scope explicitly denotes 5G SA operation/registration for the exact model context; do not infer VoNR or data-session internals."
+    }
+  ]
+}
