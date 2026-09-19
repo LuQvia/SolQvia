@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "release": "phase165-measurement-execution-gates",
+  "date": "2026-09-19",
+  "baseline": "Phase164 main ca75ea6e3a47f6542a585edc19787783d4354cc5",
+  "goal": "Stop adding architecture by default and manage the transition to fresh measurement, rendered visual QA, real-device execution, static evidence feedback, and post-change SEO validation.",
+  "findings": [
+    "Newer SolQvia GSC ZIPs dated 2026-09-09 through 2026-09-12 were searched in Project/Library and were not retrievable.",
+    "The safe numeric GSC basis therefore remains 2026-09-08.",
+    "Current main Device Passport is Phase163 and contains 572 in both hero/search count.",
+    "A publicly searchable crawl snapshot observed on 2026-09-19 still mixes Phase143/550 search UI with a 572 hero, so crawl freshness lags current main.",
+    "Current environment cannot render the live site in a browser; visual QA remains pending rather than falsely passed.",
+    "Phase162 still has 2 completed captures; Phase164 has 6 planned campaigns and 0 newly completed captures."
+  ],
+  "gates": [
+    {
+      "id": "gsc_measurement",
+      "status": "blocked_input_missing"
+    },
+    {
+      "id": "public_index_freshness",
+      "status": "main_current_search_snapshot_stale"
+    },
+    {
+      "id": "visual_qa",
+      "status": "pending_browser_render"
+    },
+    {
+      "id": "real_device_execution",
+      "status": "ready_waiting_for_observation"
+    },
+    {
+      "id": "seo_evidence_feedback",
+      "status": "waiting_for_validated_capture"
+    }
+  ],
+  "next_executable_actions": [
+    "If a fresh SolQvia GSC export is supplied, run Phase153 measurement before reprioritizing SEO.",
+    "When browser rendering is available, execute the Phase165 390/768/1440 visual matrix.",
+    "When KY-41C test hardware/line is available, execute p164-ky41c-ymobile-deepen or p164-ky41c-softbank-deepen.",
+    "After any validated Phase162 capture, reflect the scoped result into the existing exact-model/diagnostic URL as static HTML before considering a new URL.",
+    "Measure GSC effect after recrawl/indexing rather than continuing schema expansion."
+  ],
+  "outputs": [
+    "assets/data/phase165-execution-gates-v1.json",
+    "assets/data/phase165-public-index-freshness-audit-v1.json",
+    "assets/data/phase165-visual-qa-matrix-v1.json",
+    "assets/data/phase165-validation-report-v1.json",
+    "assets/data/phase165-release-manifest-v1.json",
+    "scripts/phase165-execution-gate-validate.mjs"
+  ],
+  "public_surface": {
+    "public_html_changes": 0,
+    "sitemap_changes": 0,
+    "canonical_changes": 0,
+    "target_indexable_urls": 802
+  },
+  "stop_rule": "Do not create Phase166 as another architecture/schema phase unless a new concrete need appears. The next useful work should be fresh GSC ingestion, rendered visual QA, or an actual validated real-device capture."
+}
