@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "release": "phase163-device-passport-deep-ux",
+  "checked_at": "2026-09-19",
+  "pass": true,
+  "public_pages": {
+    "ja": {
+      "phase163_css_count": 1,
+      "phase163_js_count": 1,
+      "hero": true,
+      "ux_meta": true,
+      "canonical_unchanged": true
+    },
+    "en": {
+      "phase163_css_count": 1,
+      "phase163_js_count": 1,
+      "hero": true,
+      "ux_meta": true,
+      "canonical_unchanged": true,
+      "stale_569": false,
+      "current_572": true
+    }
+  },
+  "deep_overlay": {
+    "records": 4,
+    "model_numbers": [
+      "SCG36",
+      "SC-51G",
+      "SM-S942Q",
+      "KY-41C"
+    ],
+    "ky41c_capture_sessions": 2
+  },
+  "evidence_boundaries": {
+    "scg36_mobile_data": "confirmed",
+    "scg36_ims_registration": "unknown",
+    "scg36_nr_ca": "not_solqvia_tested",
+    "ky41c_mobile_data": "not_tested",
+    "ky41c_next_question": "q_esim_profile_enabled",
+    "sms942q_nr_ca": "unknown"
+  },
+  "script_syntax": {
+    "phase163_ui": true,
+    "phase163_validator": true
+  },
+  "seo_surface": {
+    "sitemap_changed": false,
+    "canonical_changed": false,
+    "new_urls": 0,
+    "removed_urls": 0,
+    "target_indexable_urls": 802
+  },
+  "notes": [
+    "Level 1 continues to use Phase144 Answer First rather than creating a second summary.",
+    "Level 2 exposes symptom-oriented actions and Phase161 next-question guidance when a deep capture exists.",
+    "Level 3 is collapsible and never fills missing deep fields by inference.",
+    "Existing Phase110/131/134 detailed sections remain below and authoritative for full evidence/source detail."
+  ]
+}
