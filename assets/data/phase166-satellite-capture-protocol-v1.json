@@ -1,0 +1,137 @@
+{
+  "schema_version": "1.0",
+  "release": "phase166-satellite-deep-stack",
+  "checked_at": "2026-09-22",
+  "purpose": "Define privacy-safe, non-emergency real-device satellite capture steps for future SolQvia evidence without placing real emergency calls or treating a satellite icon as proof of working service.",
+  "status": "planned_protocol_only",
+  "completed_solqvia_satellite_captures": 0,
+  "required_context": [
+    "exact model number",
+    "purchase-region/carrier variant",
+    "active carrier/brand",
+    "SIM/eSIM type without identifiers",
+    "plan/option entitlement",
+    "OS version",
+    "baseband/modem firmware when visible",
+    "carrier settings/config version when visible",
+    "coarse test region",
+    "test date/time",
+    "outdoor/open-sky condition"
+  ],
+  "safe_test_sequence": [
+    {
+      "order": 10,
+      "id": "preflight",
+      "observations": [
+        "terrestrial mobile unavailable",
+        "Wi-Fi unavailable",
+        "service/plan entitlement confirmed",
+        "latest software requirement met"
+      ],
+      "rule": "Do not intentionally disable a safer emergency communication path merely to create an emergency-use test."
+    },
+    {
+      "order": 20,
+      "id": "satellite_indicator",
+      "observations": [
+        "satellite mode/indicator appears",
+        "provider/service name if exposed"
+      ],
+      "rule": "Indicator alone is not a successful transfer."
+    },
+    {
+      "order": 30,
+      "id": "non_emergency_message",
+      "observations": [
+        "message send",
+        "message receive",
+        "message transport type if explicitly exposed"
+      ],
+      "safety": "Use a consented test counterpart. Do not store the phone number."
+    },
+    {
+      "order": 40,
+      "id": "supported_app_data",
+      "observations": [
+        "supported app name",
+        "app opens/refreshes",
+        "specific tested action",
+        "success/failure"
+      ],
+      "rule": "Do not generalize one app result to browser/general Internet."
+    },
+    {
+      "order": 50,
+      "id": "location_share",
+      "observations": [
+        "location share function available",
+        "send success/failure"
+      ],
+      "privacy": "Retain only success/failure and coarse region; do not store precise coordinates."
+    },
+    {
+      "order": 60,
+      "id": "sos_demo_only",
+      "observations": [
+        "official demo mode available",
+        "demo launch success",
+        "satellite guidance displayed"
+      ],
+      "safety": "Use only an official demo that does not submit a real SOS. Never place a false emergency call or send a live SOS."
+    },
+    {
+      "order": 70,
+      "id": "radio_or_service_details",
+      "observations": [
+        "satellite registration/status if legitimately exposed",
+        "carrier/provider setting",
+        "software snapshot binding"
+      ],
+      "rule": "Do not use hidden/service menus solely to force a satellite state."
+    }
+  ],
+  "provider_specific_notes": [
+    {
+      "provider": "Apple",
+      "note": "Use Apple's Satellite Connection/Emergency SOS demo where available; Messages via satellite tests are non-emergency and must use consented counterpart."
+    },
+    {
+      "provider": "au Starlink Direct",
+      "note": "au provides an SOS demo mode that does not make an actual report; use the demo rather than live SOS."
+    },
+    {
+      "provider": "docomo Starlink Direct",
+      "note": "Test only the documented commercial messaging/supported-app functions; do not assume a separate SOS/voice path."
+    },
+    {
+      "provider": "SoftBank Starlink Direct",
+      "note": "Do not attempt emergency calling as a feature test because the service states emergency calling is unavailable."
+    },
+    {
+      "provider": "Google Pixel Satellite SOS",
+      "note": "Japan is not a supported Satellite SOS region at the check date; no Japan runtime SOS test should be represented as available."
+    },
+    {
+      "provider": "Rakuten AST SpaceMobile",
+      "note": "Commercial service has not been confirmed launched at the check date; technology trials are not SolQvia consumer runtime evidence."
+    }
+  ],
+  "prohibited_capture_data": [
+    "IMEI",
+    "EID",
+    "ICCID",
+    "IMSI",
+    "phone number",
+    "account identifier",
+    "precise personal location",
+    "live emergency transcript"
+  ],
+  "evidence_states": [
+    "official_only",
+    "solqvia_demo_observed",
+    "solqvia_message_observed",
+    "solqvia_supported_app_observed",
+    "not_tested",
+    "unknown"
+  ]
+}

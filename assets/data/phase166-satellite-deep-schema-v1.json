@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+  "release": "phase166-satellite-deep-stack",
+  "checked_at": "2026-09-22",
+  "purpose": "Normalize smartphone/watch satellite connectivity by service path, exact device/software/region/plan conditions, feature type, emergency behavior, and runtime evidence without collapsing all satellite functions into one support flag.",
+  "service_families": [
+    "handset_native_satellite",
+    "carrier_direct_to_device",
+    "planned_mobile_broadband_satellite"
+  ],
+  "providers": [
+    "apple_globalstar",
+    "google_satellite_sos",
+    "au_starlink_direct",
+    "docomo_starlink_direct",
+    "softbank_starlink_direct",
+    "rakuten_ast_spacemobile"
+  ],
+  "dimensions": [
+    {
+      "id": "service_identity",
+      "order": 10,
+      "fields": [
+        "service_family",
+        "provider",
+        "service_name",
+        "network_partner",
+        "commercial_status",
+        "launch_date",
+        "checked_at"
+      ]
+    },
+    {
+      "id": "device_capability",
+      "order": 20,
+      "fields": [
+        "exact_model_required",
+        "device_generations",
+        "watch_support",
+        "sim_requirement",
+        "special_hardware_required",
+        "official_device_list_required"
+      ]
+    },
+    {
+      "id": "software_requirement",
+      "order": 30,
+      "fields": [
+        "minimum_os",
+        "latest_software_required",
+        "carrier_settings_or_config_required",
+        "pre_download_or_setup_required",
+        "software_snapshot_key"
+      ]
+    },
+    {
+      "id": "region_availability",
+      "order": 40,
+      "fields": [
+        "japan_status",
+        "domestic_area_rule",
+        "territorial_waters",
+        "international_roaming",
+        "supported_countries",
+        "regional_exclusions"
+      ]
+    },
+    {
+      "id": "subscription_entitlement",
+      "order": 50,
+      "fields": [
+        "carrier_requirement",
+        "supported_brands",
+        "supported_plans",
+        "application_required",
+        "monthly_fee",
+        "temporary_free_policy",
+        "isp_requirement"
+      ]
+    },
+    {
+      "id": "terrestrial_precondition",
+      "order": 60,
+      "fields": [
+        "cellular_must_be_unavailable",
+        "wifi_must_be_unavailable",
+        "automatic_fallback",
+        "manual_satellite_mode",
+        "roaming_setting_may_be_required"
+      ]
+    },
+    {
+      "id": "sky_link_condition",
+      "order": 70,
+      "fields": [
+        "outdoor_required",
+        "clear_sky_required",
+        "horizon_visibility",
+        "obstruction_notes",
+        "vehicle_indoor_limitations",
+        "connection_guidance"
+      ]
+    },
+    {
+      "id": "feature_matrix",
+      "order": 80,
+      "fields": [
+        "emergency_sos",
+        "direct_emergency_call",
+        "personal_sms",
+        "rcs",
+        "imessage",
+        "mms",
+        "file_attachment",
+        "location_share",
+        "roadside_assistance",
+        "app_data",
+        "browser_data",
+        "voice_call",
+        "video_call",
+        "emergency_alerts",
+        "ai_chat"
+      ]
+    },
+    {
+      "id": "emergency_path",
+      "order": 90,
+      "fields": [
+        "path_type",
+        "relay_center",
+        "public_safety_endpoint",
+        "supported_emergency_numbers",
+        "demo_mode",
+        "not_for_routine_testing"
+      ]
+    },
+    {
+      "id": "runtime_observation",
+      "order": 100,
+      "fields": [
+        "satellite_indicator",
+        "service_registered",
+        "message_send",
+        "message_receive",
+        "app_data",
+        "location_share",
+        "sos_demo",
+        "actual_emergency_use",
+        "voice",
+        "observed_at"
+      ]
+    },
+    {
+      "id": "evidence_scope",
+      "order": 110,
+      "fields": [
+        "source_type",
+        "source_url",
+        "source_date",
+        "scope",
+        "exact_device",
+        "exact_os",
+        "exact_plan",
+        "solqvia_real_device"
+      ]
+    }
+  ],
+  "state_values": [
+    "confirmed",
+    "available",
+    "unavailable",
+    "supported_by_official_source",
+    "not_supported_by_official_source",
+    "planned",
+    "announced",
+    "not_launched",
+    "limited",
+    "conditional",
+    "unknown",
+    "not_tested",
+    "not_applicable"
+  ],
+  "non_inference_rules": [
+    "A phone model supporting one satellite service does not prove support for another provider's satellite service.",
+    "Apple handset-native satellite support does not imply carrier Starlink Direct support.",
+    "Carrier Starlink Direct support does not imply Apple Emergency SOS availability.",
+    "A satellite icon does not prove message/data transfer succeeded.",
+    "Message support does not imply file attachment, RCS, MMS or iMessage support.",
+    "Data-capable satellite service does not imply unrestricted browser or general Internet access.",
+    "Satellite data support does not imply voice calling.",
+    "Normal voice calling support does not imply direct emergency calling over satellite.",
+    "An SOS relay-center workflow is distinct from direct 110/118/119 voice calling.",
+    "Device eligibility does not prove plan/brand entitlement.",
+    "Plan entitlement does not prove exact-model/OS support.",
+    "Japanese availability does not imply international roaming availability.",
+    "Overseas roaming availability is country-specific and may require data-roaming settings.",
+    "A successful field test at one place/time does not prove nationwide or indoor availability.",
+    "An open-sky requirement must remain explicit; satellite service is not treated as continuous terrestrial-equivalent coverage.",
+    "A carrier's supported-app data list does not imply arbitrary app or browser data.",
+    "A standards/network-partner capability claim does not prove the commercial carrier feature set.",
+    "Planned or announced services are never promoted to launched without current official evidence.",
+    "Emergency features are never routine-tested by placing a real emergency call."
+  ],
+  "privacy_and_safety": {
+    "prohibited_fields": [
+      "imei",
+      "eid",
+      "iccid",
+      "imsi",
+      "msisdn",
+      "phone_number",
+      "account_id",
+      "activation_code"
+    ],
+    "routine_test_prohibitions": [
+      "real emergency call",
+      "false SOS submission",
+      "retaining precise personal location",
+      "retaining subscriber identifiers"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+import fs from "node:fs";
+import path from "node:path";
+const root=process.cwd();
+const schema=JSON.parse(fs.readFileSync(path.join(root,"assets","data","phase166-satellite-deep-schema-v1.json"),"utf8"));
+const matrix=JSON.parse(fs.readFileSync(path.join(root,"assets","data","phase166-satellite-service-matrix-v1.json"),"utf8"));
+const taxonomy=JSON.parse(fs.readFileSync(path.join(root,"assets","data","phase166-satellite-diagnosis-taxonomy-v1.json"),"utf8"));
+const capture=JSON.parse(fs.readFileSync(path.join(root,"assets","data","phase166-satellite-capture-protocol-v1.json"),"utf8"));
+const ja=fs.readFileSync(path.join(root,"ja","technology","smartphone","satellite-emergency-connectivity-diagnosis","index.html"),"utf8");
+const en=fs.readFileSync(path.join(root,"en","technology","smartphone","satellite-emergency-connectivity-diagnosis","index.html"),"utf8");
+const legacyJs=fs.readFileSync(path.join(root,"assets","phase108-satellite-emergency.js"),"utf8");
+const deepJs=fs.readFileSync(path.join(root,"assets","phase166-satellite-deep.js"),"utf8");
+const errors=[];
+const ids=new Map((matrix.services||[]).map(x=>[x.id,x]));
+const required=["apple_native_japan","google_pixel_satellite_sos_japan","au_starlink_direct_japan","docomo_starlink_direct_japan","softbank_starlink_direct_japan","rakuten_ast_spacemobile_japan","rakuten_apple_satellite_messaging"];
+for(const id of required)if(!ids.has(id))errors.push({error:"missing_service",id});
+if((schema.dimensions||[]).length!==11)errors.push({error:"dimension_count",value:(schema.dimensions||[]).length});
+if((taxonomy.categories||[]).length!==16)errors.push({error:"taxonomy_count",value:(taxonomy.categories||[]).length});
+if(capture.completed_solqvia_satellite_captures!==0)errors.push({error:"satellite_capture_count_must_remain_zero",value:capture.completed_solqvia_satellite_captures});
+const apple=ids.get("apple_native_japan");
+const google=ids.get("google_pixel_satellite_sos_japan");
+const au=ids.get("au_starlink_direct_japan");
+const docomo=ids.get("docomo_starlink_direct_japan");
+const sb=ids.get("softbank_starlink_direct_japan");
+const rakuten=ids.get("rakuten_ast_spacemobile_japan");
+if(apple?.japan_status!=="available")errors.push({error:"apple_japan_status"});
+if(google?.japan_status!=="unavailable")errors.push({error:"google_japan_status"});
+if(au?.commercial_status!=="available"||au?.feature_matrix?.voice_call!=="unavailable")errors.push({error:"au_boundary"});
+if(docomo?.commercial_status!=="available"||docomo?.launch_date!=="2026-04-27")errors.push({error:"docomo_launch_boundary"});
+if(docomo?.feature_matrix?.voice_call!=="not_listed_in_launch_feature_set")errors.push({error:"docomo_voice_overclaim"});
+if(docomo?.feature_matrix?.emergency_sos!=="not_confirmed_by_launch_release")errors.push({error:"docomo_sos_overclaim"});
+if(sb?.commercial_status!=="available"||sb?.feature_matrix?.voice_call!=="unavailable"||sb?.feature_matrix?.emergency_sos!=="unavailable")errors.push({error:"softbank_boundary"});
+if(rakuten?.commercial_status!=="planned"||rakuten?.japan_status!=="not_launched_as_of_check")errors.push({error:"rakuten_launch_overclaim"});
+for(const [lang,html] of [["ja",ja],["en",en]]){
+  if(!html.includes("Phase166 · Satellite Deep Stack"))errors.push({lang,error:"phase166_hero_missing"});
+  if(!html.includes('id="p108Records">572'))errors.push({lang,error:"static_572_missing"});
+  if((html.match(/phase166-satellite-deep\.css/g)||[]).length!==1)errors.push({lang,error:"css_count"});
+  if((html.match(/phase166-satellite-deep\.js/g)||[]).length!==1)errors.push({lang,error:"js_count"});
+  if((html.match(/data-phase166/g)||[]).length!==1)errors.push({lang,error:"deep_root_count"});
+  if(/ドコモ衛星直接通信（発表）|Docomo direct satellite \(announced\)/.test(html))errors.push({lang,error:"stale_docomo_planned_text"});
+}
+if(legacyJs.includes("2026年8月9日時点"))errors.push({error:"stale_google_check_date"});
+if(!legacyJs.includes("2026年4月27日"))errors.push({error:"docomo_launch_logic_missing"});
+if(!legacyJs.includes("phase166_unverified_new_record"))errors.push({error:"new_record_unknown_guard_missing"});
+if(!legacyJs.includes("'132','133','135','136','137','138','139','140','141','143'"))errors.push({error:"current_overlay_merge_missing"});
+try{new Function(legacyJs)}catch(e){errors.push({error:"legacy_js_syntax",detail:String(e)})}
+try{new Function(deepJs)}catch(e){errors.push({error:"deep_js_syntax",detail:String(e)})}
+const result={schema_version:"1.0",release:"phase166-satellite-deep-stack",checked_at:new Date().toISOString(),dimensions:(schema.dimensions||[]).length,services:(matrix.services||[]).length,diagnosis_categories:(taxonomy.categories||[]).length,solqvia_satellite_captures:capture.completed_solqvia_satellite_captures,pass:errors.length===0,errors};
+fs.writeFileSync(path.join(root,"assets","data","phase166-validation-report-v1.json"),JSON.stringify(result,null,2)+"\n");
+console.log(JSON.stringify(result,null,2));
+if(errors.length)process.exitCode=1;
