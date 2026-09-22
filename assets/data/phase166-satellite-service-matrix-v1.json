@@ -1,0 +1,384 @@
+{
+  "schema_version": "1.0",
+  "release": "phase166-satellite-deep-stack",
+  "checked_at": "2026-09-22",
+  "services": [
+    {
+      "id": "apple_native_japan",
+      "service_family": "handset_native_satellite",
+      "provider": "apple_globalstar",
+      "service_name": "Apple satellite features",
+      "commercial_status": "available",
+      "japan_status": "available",
+      "device_capability": {
+        "iphone": "iPhone 14 or later (all models), subject to purchase-region exclusions",
+        "watch": "Apple Watch Ultra 3 or later for satellite messaging, with paired iPhone 14+ and active carrier plan",
+        "sim_requirement": "Valid SIM required for Messages via satellite"
+      },
+      "software_requirement": {
+        "emergency_sos": "Japan: iOS 17.6 or later",
+        "messages": "Japan: iOS 18 or later",
+        "latest_software_recommended": true
+      },
+      "terrestrial_precondition": {
+        "cellular_must_be_unavailable": true,
+        "wifi_must_be_unavailable": true
+      },
+      "sky_link_condition": {
+        "outdoor_required": true,
+        "clear_sky_required": true,
+        "horizon_visibility": true
+      },
+      "feature_matrix": {
+        "emergency_sos": "available",
+        "direct_emergency_call": "text-based satellite emergency path after normal call/text cannot connect",
+        "personal_sms": "available_with_carrier_support",
+        "rcs": "not_applicable",
+        "imessage": "available",
+        "mms": "not_confirmed",
+        "file_attachment": "not_confirmed_for_messages_via_satellite",
+        "location_share": "available",
+        "roadside_assistance": "region_dependent",
+        "app_data": "unavailable",
+        "browser_data": "unavailable",
+        "voice_call": "unavailable",
+        "video_call": "unavailable",
+        "emergency_alerts": "not_applicable",
+        "ai_chat": "unavailable"
+      },
+      "emergency_path": {
+        "path_type": "Apple Emergency SOS via satellite",
+        "relay_center": "may relay to emergency services depending on local endpoint",
+        "supported_emergency_numbers_japan": [
+          "110",
+          "118",
+          "119"
+        ],
+        "demo_mode": true,
+        "not_for_routine_testing": true
+      },
+      "evidence": [
+        {
+          "type": "platform_official",
+          "url": "https://support.apple.com/ja-jp/101573",
+          "scope": "Emergency SOS via satellite availability/requirements in Japan"
+        },
+        {
+          "type": "platform_official",
+          "url": "https://support.apple.com/ja-jp/120930",
+          "scope": "Messages via satellite availability/requirements in Japan"
+        },
+        {
+          "type": "platform_official",
+          "url": "https://support.apple.com/ja-jp/105097",
+          "scope": "Satellite connection conditions and available Apple satellite features"
+        },
+        {
+          "type": "platform_official",
+          "url": "https://support.apple.com/ja-jp/125127",
+          "scope": "Apple Watch Ultra satellite messaging requirements"
+        }
+      ]
+    },
+    {
+      "id": "google_pixel_satellite_sos_japan",
+      "service_family": "handset_native_satellite",
+      "provider": "google_satellite_sos",
+      "service_name": "Google Pixel Satellite SOS",
+      "commercial_status": "available_in_supported_regions",
+      "japan_status": "unavailable",
+      "device_capability": {
+        "eligible": "Pixel 9 and later except Pixel 9a",
+        "japan_effect": "Eligible hardware alone does not make Satellite SOS available in Japan"
+      },
+      "software_requirement": {
+        "registration_and_updates_required": true
+      },
+      "terrestrial_precondition": {
+        "cellular_must_be_unavailable": true,
+        "wifi_must_be_unavailable": true
+      },
+      "sky_link_condition": {
+        "outdoor_required": true,
+        "clear_sky_required": true
+      },
+      "feature_matrix": {
+        "emergency_sos": "unavailable_in_japan",
+        "direct_emergency_call": "unavailable_in_japan",
+        "personal_sms": "not_applicable",
+        "location_share": "service_specific",
+        "app_data": "unavailable",
+        "browser_data": "unavailable",
+        "voice_call": "unavailable"
+      },
+      "evidence": [
+        {
+          "type": "platform_official",
+          "url": "https://support.google.com/pixelphone/answer/15254448?hl=ja",
+          "scope": "Eligible Pixel models and current supported-country list; Japan absent at check date"
+        }
+      ]
+    },
+    {
+      "id": "au_starlink_direct_japan",
+      "service_family": "carrier_direct_to_device",
+      "provider": "au_starlink_direct",
+      "service_name": "au Starlink Direct",
+      "network_partner": "Starlink",
+      "commercial_status": "available",
+      "launch_date": "2025-04",
+      "japan_status": "available",
+      "device_capability": {
+        "official_device_list_required": true,
+        "supported_device_count": "99 devices as of 2026-08 on au overview; exact list updated separately",
+        "watch_support": "Some Apple Watch models supported for overseas roaming; domestic exact scope must follow official list"
+      },
+      "software_requirement": {
+        "latest_software_required": true
+      },
+      "subscription_entitlement": {
+        "au": "No separate start procedure for eligible au customers; temporary additional charge waived",
+        "uq_mobile": "Dedicated plan + required except eligible set-discount conditions",
+        "other_carrier_including_povo": "Dedicated plan + required",
+        "exact_fee": "Varies by brand/plan; verify current official fee table"
+      },
+      "terrestrial_precondition": {
+        "cellular_must_be_unavailable": true,
+        "wifi_must_be_unavailable": true
+      },
+      "sky_link_condition": {
+        "outdoor_required": true,
+        "clear_sky_required": true,
+        "obstruction_notes": "Trees, mountains and buildings can block service"
+      },
+      "feature_matrix": {
+        "emergency_sos": "available_via_au_starlink_direct_sos_center_on_eligible_conditions",
+        "direct_emergency_call": "not_supported_as_normal_voice_call",
+        "personal_sms": "available",
+        "rcs": "available",
+        "imessage": "available_on_supported_apple_devices",
+        "mms": "service_specific",
+        "file_attachment": "available_on_supported_devices",
+        "location_share": "available",
+        "app_data": "supported_apps_only",
+        "browser_data": "unavailable_for_general_web",
+        "voice_call": "unavailable",
+        "video_call": "unavailable",
+        "emergency_alerts": "available_limited_categories",
+        "ai_chat": "available_on_supported_paths"
+      },
+      "emergency_path": {
+        "path_type": "au Starlink Direct SOS Center relay",
+        "relay_center": "24/7 au Starlink Direct SOS Center",
+        "public_safety_endpoint": "Center relays SOS information to emergency-response receiving agencies",
+        "demo_mode": true,
+        "not_for_routine_testing": true
+      },
+      "international_roaming": {
+        "status": "available_selected_countries",
+        "countries_as_of_2026_08": [
+          "United States",
+          "Canada",
+          "Philippines",
+          "New Zealand"
+        ],
+        "setting": "Data roaming must be ON before travel"
+      },
+      "evidence": [
+        {
+          "type": "carrier_official",
+          "url": "https://www.au.com/mobile/service/starlink-direct/",
+          "scope": "Current service, plans, supported features, domestic/overseas conditions"
+        },
+        {
+          "type": "carrier_official",
+          "url": "https://www.au.com/mobile/service/starlink-direct/enabled-device/",
+          "scope": "Current supported-device and per-feature matrix"
+        },
+        {
+          "type": "carrier_official",
+          "url": "https://www.au.com/mobile/service/starlink-direct/sos/",
+          "scope": "SOS Center workflow and demo mode"
+        }
+      ]
+    },
+    {
+      "id": "docomo_starlink_direct_japan",
+      "service_family": "carrier_direct_to_device",
+      "provider": "docomo_starlink_direct",
+      "service_name": "docomo Starlink Direct",
+      "network_partner": "Starlink",
+      "commercial_status": "available",
+      "launch_date": "2026-04-27",
+      "japan_status": "available",
+      "device_capability": {
+        "official_device_list_required": true,
+        "supported_device_count": "84 docomo smartphones at launch announcement"
+      },
+      "software_requirement": {
+        "latest_software_required": true,
+        "ios_satellite_toggle_required": true
+      },
+      "subscription_entitlement": {
+        "supported_plans": "All docomo plans including ahamo at launch",
+        "application_required": false,
+        "monthly_fee": "Temporarily free at launch",
+        "isp_requirement": "Required for RCS/iMessage, location sharing, file transfer, Gemini and supported-app data"
+      },
+      "terrestrial_precondition": {
+        "cellular_must_be_unavailable": true,
+        "wifi_must_be_unavailable": true
+      },
+      "sky_link_condition": {
+        "outdoor_required": true,
+        "clear_sky_required": true
+      },
+      "feature_matrix": {
+        "emergency_sos": "not_confirmed_by_launch_release",
+        "direct_emergency_call": "not_confirmed_by_launch_release",
+        "personal_sms": "available",
+        "rcs": "available",
+        "imessage": "available",
+        "mms": "not_confirmed",
+        "file_attachment": "available",
+        "location_share": "available",
+        "app_data": "supported_apps_only",
+        "browser_data": "not_confirmed_general_web",
+        "voice_call": "not_listed_in_launch_feature_set",
+        "video_call": "not_listed_in_launch_feature_set",
+        "emergency_alerts": "available_limited_categories",
+        "ai_chat": "Gemini_on_supported_Android"
+      },
+      "evidence": [
+        {
+          "type": "carrier_official",
+          "url": "https://www.docomo.ne.jp/info/news_release/2026/04/02_01.html",
+          "scope": "Launch date, plan eligibility, area, supported-device count, supported feature set and setup conditions"
+        }
+      ]
+    },
+    {
+      "id": "softbank_starlink_direct_japan",
+      "service_family": "carrier_direct_to_device",
+      "provider": "softbank_starlink_direct",
+      "service_name": "SoftBank Starlink Direct",
+      "network_partner": "Starlink",
+      "commercial_status": "available",
+      "launch_date": "2026-04-10",
+      "japan_status": "available",
+      "software_requirement": {
+        "iphone": "iOS 26.4 or later",
+        "android": "Android 15 or later",
+        "google_messages_required_on_android": true,
+        "rcs_on_required_for_rcs": true
+      },
+      "subscription_entitlement": {
+        "softbank": "No new application; included in eligible plan/basic charge",
+        "app_data": "Data-capable plan or web usage fee required for supported-app data/MMS/RCS"
+      },
+      "terrestrial_precondition": {
+        "softbank_cellular_must_be_unavailable": true,
+        "outdoor_domestic_out_of_area": true
+      },
+      "sky_link_condition": {
+        "clear_sky_required": true,
+        "vehicle_and_dense_obstruction_limitations": true
+      },
+      "feature_matrix": {
+        "emergency_sos": "unavailable",
+        "direct_emergency_call": "unavailable",
+        "personal_sms": "available",
+        "rcs": "available",
+        "imessage": "platform_or_device_specific",
+        "mms": "available_on_supported_devices",
+        "file_attachment": "service_and_device_specific",
+        "location_share": "supported_apps",
+        "app_data": "supported_apps_only",
+        "browser_data": "not_general",
+        "voice_call": "unavailable",
+        "video_call": "unavailable",
+        "emergency_alerts": "available_limited_categories",
+        "ai_chat": "app_specific"
+      },
+      "international_roaming": {
+        "status": "planned_or_started_selected_countries",
+        "announcement_date": "2026-09-10",
+        "countries": [
+          "United States",
+          "Canada",
+          "New Zealand",
+          "Philippines"
+        ],
+        "exact_start_condition": "Verify current SoftBank overseas-use page before travel"
+      },
+      "evidence": [
+        {
+          "type": "carrier_official",
+          "url": "https://www.softbank.jp/mobile/service/starlink-direct/",
+          "scope": "Current Japan service, features, OS requirements, app limitations and emergency-call exclusion"
+        }
+      ]
+    },
+    {
+      "id": "rakuten_ast_spacemobile_japan",
+      "service_family": "planned_mobile_broadband_satellite",
+      "provider": "rakuten_ast_spacemobile",
+      "service_name": "Rakuten最強衛星サービス Powered by AST SpaceMobile",
+      "network_partner": "AST SpaceMobile",
+      "commercial_status": "planned",
+      "target_launch": "2026-Q4",
+      "japan_status": "not_launched_as_of_check",
+      "device_capability": {
+        "project_goal": "Direct communication with commercially available smartphones"
+      },
+      "feature_matrix": {
+        "emergency_sos": "unknown",
+        "personal_sms": "planned_service_details_pending",
+        "app_data": "broadband_goal",
+        "browser_data": "broadband_goal",
+        "voice_call": "technology_goal_demonstrated_in_trials_not_commercially_confirmed",
+        "video_call": "technology_trial_success_not_commercial_feature_confirmation"
+      },
+      "evidence": [
+        {
+          "type": "carrier_official",
+          "url": "https://corp.mobile.rakuten.co.jp/news/press/2025/0423_01/",
+          "scope": "Japan video-call trial success and Q4 2026 commercial launch target"
+        },
+        {
+          "type": "carrier_official",
+          "url": "https://corp.mobile.rakuten.co.jp/news/press/2024/0216_01/",
+          "scope": "Plan to provide domestic direct-to-device mobile broadband during 2026"
+        }
+      ],
+      "boundary": "Trial success is not commercial service availability."
+    },
+    {
+      "id": "rakuten_apple_satellite_messaging",
+      "service_family": "handset_native_satellite",
+      "provider": "apple_globalstar",
+      "service_name": "Apple Messages via satellite on Rakuten Mobile",
+      "commercial_status": "available",
+      "launch_date": "2026-03-26",
+      "japan_status": "available",
+      "device_capability": {
+        "iphone": "iPhone 14 and later supported by Rakuten announcement",
+        "watch": "Apple Watch Ultra 3 supported by Rakuten announcement"
+      },
+      "feature_matrix": {
+        "personal_sms": "available",
+        "imessage": "available",
+        "emergency_sos": "Apple-native service path",
+        "location_share": "Apple-native service path"
+      },
+      "evidence": [
+        {
+          "type": "carrier_official",
+          "url": "https://corp.mobile.rakuten.co.jp/news/press/2026/0326_01/",
+          "scope": "Rakuten support for Apple satellite iMessage/SMS on iPhone 14+ and Apple Watch Ultra 3"
+        }
+      ],
+      "boundary": "This is Apple handset-native satellite messaging support on Rakuten, not the planned AST SpaceMobile commercial service."
+    }
+  ]
+}
