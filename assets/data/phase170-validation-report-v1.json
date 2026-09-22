@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "release": "phase170-satellite-app-feature-matrix",
+  "checked_at": "2026-09-22",
+  "validation_mode": "connector_static_validation",
+  "pass": true,
+  "coverage": {
+    "app_catalog": 54,
+    "au": {
+      "ios_apps": 40,
+      "android_apps": 39
+    },
+    "docomo": {
+      "ios_apps": 38,
+      "android_apps": 41
+    },
+    "softbank": {
+      "ios_apps": 22,
+      "android_apps": 20
+    },
+    "device_records": 572
+  },
+  "checks": {
+    "javascript_syntax": true,
+    "app_catalog_ids_unique": true,
+    "all_service_app_ids_resolve": true,
+    "os_specific_lists_separate": true,
+    "app_data_requires_data_and_message": true,
+    "message_only_does_not_promote_app_data": true,
+    "app_specific_limitations_preserved": true,
+    "au_overseas_current": true,
+    "docomo_overseas_current_since_2026_09_01": true,
+    "softbank_overseas_scheduled_for_2026_09_28": true,
+    "domestic_eligibility_not_reused_as_overseas_proof": true,
+    "ja_page_wired": true,
+    "en_page_wired": true,
+    "solqvia_real_device_satellite_evidence_added": 0,
+    "new_indexable_urls": 0,
+    "canonical_changes": 0,
+    "sitemap_changes": 0
+  },
+  "representative_boundaries": [
+    "Pixel 9a message-only carrier records do not expose provider app-data lists as available.",
+    "Galaxy S25 SoftBank data+message records can surface the SoftBank Android app list subject to OS/setup conditions.",
+    "SoftBank overseas remains scheduled rather than available before 2026-09-28.",
+    "au app-specific limitations such as LINE voice/video/image restrictions and SmartNews limitations remain explicit.",
+    "docomo app data keeps the ISP requirement and carrier security caveat."
+  ],
+  "errors": []
+}

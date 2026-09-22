@@ -1,0 +1,935 @@
+{
+  "schema_version": "1.0",
+  "release": "phase170-satellite-app-feature-matrix",
+  "checked_at": "2026-09-22",
+  "purpose": "Normalize carrier satellite app support by service, OS, device data-capability level, app-specific restrictions, messaging capabilities, domestic/overseas scope and setup requirements without treating app support as unrestricted Internet.",
+  "common_rules": {
+    "app_data_requires_device_level": "data_and_message",
+    "message_only_behavior": "Text messaging may remain available according to the carrier/device message capability, but listed data apps are not promoted to available.",
+    "unsupported_app_notification_rule": "Notifications from unsupported apps may arrive on some services; notification receipt does not prove app data support.",
+    "app_version_rule": "Install/update supported apps before leaving terrestrial cellular/Wi-Fi coverage.",
+    "general_web_rule": "Supported-app data does not imply unrestricted browser/general Internet."
+  },
+  "app_catalog": [
+    {
+      "id": "yamap",
+      "name": "YAMAP",
+      "category": "outdoor"
+    },
+    {
+      "id": "weathernews",
+      "name": "ウェザーニュース",
+      "category": "weather"
+    },
+    {
+      "id": "x",
+      "name": "X",
+      "category": "social"
+    },
+    {
+      "id": "yamareco",
+      "name": "ヤマレコ",
+      "category": "outdoor"
+    },
+    {
+      "id": "imakoko",
+      "name": "いまココ",
+      "category": "location"
+    },
+    {
+      "id": "tidegraph",
+      "name": "タイドグラフBI",
+      "category": "marine"
+    },
+    {
+      "id": "tsuricari",
+      "name": "釣り船予約「釣割」",
+      "category": "marine"
+    },
+    {
+      "id": "boarding_cloud",
+      "name": "乗船名簿クラウド",
+      "category": "marine"
+    },
+    {
+      "id": "au_naviwalk",
+      "name": "auナビウォーク",
+      "category": "navigation"
+    },
+    {
+      "id": "family_navi",
+      "name": "家族の安心ナビ",
+      "category": "location"
+    },
+    {
+      "id": "au_carnavi",
+      "name": "auカーナビ",
+      "category": "navigation"
+    },
+    {
+      "id": "newspicks",
+      "name": "NewsPicks",
+      "category": "news"
+    },
+    {
+      "id": "smartnews",
+      "name": "SmartNews",
+      "category": "news"
+    },
+    {
+      "id": "nerv",
+      "name": "特務機関NERV防災",
+      "category": "emergency"
+    },
+    {
+      "id": "cocodayo",
+      "name": "ココダヨ",
+      "category": "emergency"
+    },
+    {
+      "id": "bowbear",
+      "name": "BowBear",
+      "category": "outdoor"
+    },
+    {
+      "id": "whatsapp",
+      "name": "WhatsApp",
+      "category": "messaging"
+    },
+    {
+      "id": "compass_ex",
+      "name": "コンパスEX",
+      "category": "outdoor"
+    },
+    {
+      "id": "marine_compass",
+      "name": "マリンコンパス",
+      "category": "marine"
+    },
+    {
+      "id": "livmap",
+      "name": "LivMap",
+      "category": "maps"
+    },
+    {
+      "id": "messenger",
+      "name": "Messenger",
+      "category": "messaging"
+    },
+    {
+      "id": "au_pay",
+      "name": "au PAY",
+      "category": "payment"
+    },
+    {
+      "id": "my_au",
+      "name": "My au",
+      "category": "carrier"
+    },
+    {
+      "id": "line",
+      "name": "LINE",
+      "category": "messaging"
+    },
+    {
+      "id": "hitococo",
+      "name": "HITOCOCO",
+      "category": "location"
+    },
+    {
+      "id": "yahoo_japan",
+      "name": "Yahoo! JAPAN",
+      "category": "portal"
+    },
+    {
+      "id": "yahoo_disaster",
+      "name": "Yahoo!防災速報",
+      "category": "emergency"
+    },
+    {
+      "id": "yahoo_weather",
+      "name": "Yahoo!天気",
+      "category": "weather"
+    },
+    {
+      "id": "yahoo_mail",
+      "name": "Yahoo!メール",
+      "category": "mail"
+    },
+    {
+      "id": "yahoo_map",
+      "name": "Yahoo!マップ",
+      "category": "maps"
+    },
+    {
+      "id": "yahoo_transit",
+      "name": "Yahoo!乗換案内",
+      "category": "transport"
+    },
+    {
+      "id": "yahoo_carnavi",
+      "name": "Yahoo!カーナビ",
+      "category": "navigation"
+    },
+    {
+      "id": "yahoo_news",
+      "name": "Yahoo!ニュース",
+      "category": "news"
+    },
+    {
+      "id": "kodomamo",
+      "name": "コドマモ",
+      "category": "family"
+    },
+    {
+      "id": "kodomamo_kids",
+      "name": "コドマモ Kids",
+      "category": "family"
+    },
+    {
+      "id": "nikkei",
+      "name": "日本経済新聞 電子版",
+      "category": "news"
+    },
+    {
+      "id": "apple_maps",
+      "name": "マップ",
+      "category": "maps"
+    },
+    {
+      "id": "apple_weather",
+      "name": "天気",
+      "category": "weather"
+    },
+    {
+      "id": "apple_fitness",
+      "name": "フィットネス",
+      "category": "fitness"
+    },
+    {
+      "id": "apple_compass",
+      "name": "コンパス",
+      "category": "navigation"
+    },
+    {
+      "id": "apple_messages",
+      "name": "メッセージ",
+      "category": "messaging"
+    },
+    {
+      "id": "apple_music",
+      "name": "Apple Music",
+      "category": "music"
+    },
+    {
+      "id": "google_maps",
+      "name": "Google Maps",
+      "category": "maps"
+    },
+    {
+      "id": "google_messages",
+      "name": "Google メッセージ",
+      "category": "messaging"
+    },
+    {
+      "id": "emergency_info",
+      "name": "緊急情報サービス",
+      "category": "emergency"
+    },
+    {
+      "id": "find_hub",
+      "name": "Google の Find Hub",
+      "category": "location"
+    },
+    {
+      "id": "google_weather",
+      "name": "天気",
+      "category": "weather"
+    },
+    {
+      "id": "au_mail",
+      "name": "auメール",
+      "category": "mail"
+    },
+    {
+      "id": "docomo_mail",
+      "name": "ドコモメール",
+      "category": "mail"
+    },
+    {
+      "id": "disaster_kit",
+      "name": "災害用キット",
+      "category": "emergency"
+    },
+    {
+      "id": "dbarai",
+      "name": "d払い",
+      "category": "payment"
+    },
+    {
+      "id": "imadoco",
+      "name": "イマドコサーチ",
+      "category": "location"
+    },
+    {
+      "id": "smartnews_docomo",
+      "name": "SmartNews for docomo",
+      "category": "news"
+    },
+    {
+      "id": "life_beacon",
+      "name": "LIFE BEACON",
+      "category": "location"
+    }
+  ],
+  "services": [
+    {
+      "id": "au_starlink_direct",
+      "label": "au Starlink Direct",
+      "domestic": {
+        "status": "available",
+        "region": "Japan domestic au 5G/4G LTE out-of-coverage and Wi-Fi unavailable",
+        "outdoor_open_sky_required": true
+      },
+      "device_gate": {
+        "data_apps_required_level": "data_and_message",
+        "message_levels": [
+          "data_and_message",
+          "message_only"
+        ]
+      },
+      "software": {
+        "ios": "latest_supported_software_required",
+        "android": "latest_supported_software_required",
+        "apps_latest_required": true
+      },
+      "messaging": {
+        "sms": true,
+        "rcs": true,
+        "imessage": "supported_Apple_devices",
+        "attachments": "smartphone_supported_with_device_exceptions",
+        "location_share": true,
+        "ai_chat": true,
+        "voice_call": false,
+        "normal_emergency_voice_call": false,
+        "emergency_alerts": [
+          "earthquake",
+          "tsunami",
+          "civil_protection_subset"
+        ]
+      },
+      "apps": {
+        "source_as_of": "2026-07",
+        "ios": [
+          "yamap",
+          "weathernews",
+          "x",
+          "yamareco",
+          "imakoko",
+          "tidegraph",
+          "tsuricari",
+          "boarding_cloud",
+          "au_naviwalk",
+          "family_navi",
+          "au_carnavi",
+          "newspicks",
+          "smartnews",
+          "nerv",
+          "cocodayo",
+          "bowbear",
+          "whatsapp",
+          "compass_ex",
+          "marine_compass",
+          "livmap",
+          "messenger",
+          "au_pay",
+          "my_au",
+          "line",
+          "hitococo",
+          "yahoo_japan",
+          "yahoo_disaster",
+          "yahoo_mail",
+          "yahoo_map",
+          "yahoo_transit",
+          "yahoo_carnavi",
+          "yahoo_news",
+          "kodomamo",
+          "nikkei",
+          "apple_maps",
+          "apple_weather",
+          "apple_fitness",
+          "apple_compass",
+          "apple_messages",
+          "apple_music"
+        ],
+        "android": [
+          "yamap",
+          "weathernews",
+          "google_maps",
+          "x",
+          "yamareco",
+          "imakoko",
+          "tidegraph",
+          "tsuricari",
+          "boarding_cloud",
+          "au_mail",
+          "au_naviwalk",
+          "family_navi",
+          "au_carnavi",
+          "newspicks",
+          "smartnews",
+          "nerv",
+          "cocodayo",
+          "whatsapp",
+          "compass_ex",
+          "marine_compass",
+          "livmap",
+          "messenger",
+          "au_pay",
+          "my_au",
+          "line",
+          "hitococo",
+          "yahoo_japan",
+          "yahoo_disaster",
+          "yahoo_mail",
+          "yahoo_map",
+          "yahoo_transit",
+          "yahoo_carnavi",
+          "yahoo_news",
+          "kodomamo",
+          "nikkei",
+          "emergency_info",
+          "find_hub",
+          "google_weather",
+          "google_messages"
+        ],
+        "overrides": {
+          "weathernews": {
+            "available_features": [
+              "current_weather",
+              "warnings",
+              "rain_thunder_radar",
+              "weather_charts",
+              "satellite_optimized_ai_chat"
+            ],
+            "limitations": []
+          },
+          "au_naviwalk": {
+            "limitations": [
+              "paid_membership_registration_unavailable",
+              "initial_au_id_login_unavailable"
+            ]
+          },
+          "family_navi": {
+            "limitations": [
+              "some_features_only"
+            ]
+          },
+          "au_carnavi": {
+            "limitations": [
+              "paid_membership_registration_unavailable",
+              "initial_au_id_login_unavailable"
+            ]
+          },
+          "newspicks": {
+            "limitations": [
+              "feed_video_disabled",
+              "images_hidden_or_compressed"
+            ]
+          },
+          "smartnews": {
+            "limitations": [
+              "location_restricted",
+              "notifications_restricted",
+              "external_site_navigation_restricted"
+            ]
+          },
+          "cocodayo": {
+            "limitations": [
+              "push_unavailable",
+              "map_display_unavailable",
+              "subscription_purchase_unavailable",
+              "chatbot_unavailable"
+            ]
+          },
+          "compass_ex": {
+            "available_features": [
+              "share_current_location",
+              "log_recording",
+              "change_descent_time",
+              "sos_to_emergency_contact_and_police"
+            ]
+          },
+          "marine_compass": {
+            "available_features": [
+              "emergency_reporting_in_satellite_mode"
+            ]
+          },
+          "au_pay": {
+            "limitations": [
+              "initial_au_id_login_unavailable"
+            ]
+          },
+          "my_au": {
+            "limitations": [
+              "initial_au_id_login_unavailable",
+              "some_features_restricted"
+            ]
+          },
+          "line": {
+            "available_features": [
+              "text_chat"
+            ],
+            "limitations": [
+              "stickers_unavailable",
+              "emoji_unavailable",
+              "image_video_transfer_unavailable",
+              "voice_call_unavailable",
+              "video_call_unavailable"
+            ]
+          },
+          "hitococo": {
+            "available_features": [
+              "location_send"
+            ],
+            "limitations": [
+              "location_send_button_operates_only_while_starlink_connected"
+            ]
+          },
+          "nikkei": {
+            "limitations": [
+              "nikkei_id_registration_unavailable",
+              "login_unavailable"
+            ]
+          },
+          "au_mail": {
+            "available_features": [
+              "mail_send_receive"
+            ],
+            "limitations": [
+              "initial_setup_unavailable",
+              "mail_settings_unavailable"
+            ]
+          }
+        }
+      },
+      "setup": [
+        "update_os_before_off_grid",
+        "update_apps_before_off_grid",
+        "service_or_plan_entitlement_required"
+      ],
+      "overseas": {
+        "status": "available",
+        "checked_at": "2026-09-22",
+        "countries": [
+          "United States",
+          "Canada",
+          "Philippines",
+          "New Zealand"
+        ],
+        "conditions": [
+          "country_specific_device_list",
+          "data_roaming_on_before_or_during_travel",
+          "terrestrial_roaming_area_exclusions_apply",
+          "no_application_and_no_extra_charge_temporarily"
+        ],
+        "note": "Overseas compatible devices differ by country; domestic eligibility is not automatically reused."
+      },
+      "sources": [
+        "https://www.au.com/mobile/service/starlink-direct/",
+        "https://www.au.com/mobile/service/starlink-direct/app/",
+        "https://www.au.com/mobile/service/starlink-direct/enabled-device/",
+        "https://www.au.com/mobile/service/starlink-direct/roaming/"
+      ]
+    },
+    {
+      "id": "docomo_starlink_direct",
+      "label": "docomo Starlink Direct",
+      "domestic": {
+        "status": "available",
+        "region": "Japan and territorial waters outside docomo 4G/5G/Wi-Fi",
+        "outdoor_open_sky_required": true
+      },
+      "device_gate": {
+        "data_apps_required_level": "data_and_message",
+        "message_levels": [
+          "data_and_message",
+          "message_only"
+        ]
+      },
+      "software": {
+        "ios": "latest_supported_software_required",
+        "android": "latest_supported_software_required",
+        "apps_latest_required": true
+      },
+      "messaging": {
+        "sms": true,
+        "rcs": true,
+        "imessage": true,
+        "attachments": "RCS/iMessage on supported devices",
+        "location_share": true,
+        "ai_chat": "Gemini_on_supported_Android",
+        "voice_call": false,
+        "normal_emergency_voice_call": "not_confirmed_as_service_feature",
+        "emergency_alerts": [
+          "earthquake",
+          "tsunami",
+          "civil_protection_subset"
+        ]
+      },
+      "apps": {
+        "source_as_of": "2026-09-22",
+        "ios": [
+          "line",
+          "yahoo_japan",
+          "yahoo_disaster",
+          "yahoo_weather",
+          "yahoo_mail",
+          "yahoo_map",
+          "yahoo_transit",
+          "yahoo_carnavi",
+          "yahoo_news",
+          "yamap",
+          "x",
+          "yamareco",
+          "imakoko",
+          "tidegraph",
+          "tsuricari",
+          "boarding_cloud",
+          "smartnews",
+          "nerv",
+          "cocodayo",
+          "whatsapp",
+          "messenger",
+          "compass_ex",
+          "livmap",
+          "apple_maps",
+          "apple_weather",
+          "apple_fitness",
+          "apple_compass",
+          "apple_messages",
+          "disaster_kit",
+          "dbarai",
+          "bowbear",
+          "newspicks",
+          "hitococo",
+          "life_beacon",
+          "kodomamo",
+          "kodomamo_kids",
+          "marine_compass",
+          "nikkei"
+        ],
+        "android": [
+          "line",
+          "yahoo_japan",
+          "yahoo_disaster",
+          "yahoo_weather",
+          "yahoo_mail",
+          "yahoo_map",
+          "yahoo_transit",
+          "yahoo_carnavi",
+          "yahoo_news",
+          "yamap",
+          "google_maps",
+          "x",
+          "yamareco",
+          "imakoko",
+          "tidegraph",
+          "tsuricari",
+          "boarding_cloud",
+          "smartnews",
+          "nerv",
+          "cocodayo",
+          "whatsapp",
+          "messenger",
+          "compass_ex",
+          "livmap",
+          "emergency_info",
+          "find_hub",
+          "google_weather",
+          "google_messages",
+          "docomo_mail",
+          "imadoco",
+          "disaster_kit",
+          "dbarai",
+          "smartnews_docomo",
+          "newspicks",
+          "hitococo",
+          "life_beacon",
+          "kodomamo",
+          "kodomamo_kids",
+          "bowbear",
+          "marine_compass",
+          "nikkei"
+        ],
+        "overrides": {
+          "docomo_mail": {
+            "available_features": [
+              "mail_send_receive"
+            ]
+          },
+          "disaster_kit": {
+            "available_features": [
+              "disaster_message_board_safety_registration",
+              "disaster_message_board_safety_confirmation"
+            ]
+          },
+          "hitococo": {
+            "available_features": [
+              "COCOHELI_SOS_DIRECT_supported"
+            ]
+          },
+          "google_messages": {
+            "available_features": [
+              "sms",
+              "rcs",
+              "location_share",
+              "file_transfer_where_device_supports"
+            ]
+          },
+          "apple_messages": {
+            "available_features": [
+              "sms",
+              "imessage",
+              "location_share",
+              "file_transfer_where_device_supports"
+            ]
+          }
+        }
+      },
+      "setup": [
+        "update_os_before_off_grid",
+        "update_apps_before_off_grid",
+        "supported_ISP_required_for_app_data_spmode_or_mopera",
+        "AnshinSecurity_dangerous_site_protection_may_interfere"
+      ],
+      "overseas": {
+        "status": "available",
+        "start_date": "2026-09-01",
+        "checked_at": "2026-09-22",
+        "countries": [
+          "United States",
+          "Canada",
+          "Philippines"
+        ],
+        "conditions": [
+          "country_specific_device_list",
+          "WORLDWING_area_exclusion_rule",
+          "voice_call_unavailable"
+        ],
+        "note": "Country-specific supported devices apply; domestic eligibility is not automatically reused."
+      },
+      "sources": [
+        "https://www.docomo.ne.jp/service/starlink_direct/",
+        "https://www.docomo.ne.jp/service/starlink_direct/compatible_model/",
+        "https://www.docomo.ne.jp/service/starlink_direct/compatible_model/other.html",
+        "https://www.docomo.ne.jp/service/starlink_direct/roaming/"
+      ]
+    },
+    {
+      "id": "softbank_starlink_direct",
+      "label": "SoftBank Starlink Direct",
+      "domestic": {
+        "status": "available",
+        "region": "Japan domestic SoftBank out-of-coverage outdoors",
+        "outdoor_open_sky_required": true
+      },
+      "device_gate": {
+        "data_apps_required_level": "data_and_message",
+        "message_levels": [
+          "data_and_message",
+          "message_only"
+        ]
+      },
+      "software": {
+        "ios": "iOS 26.4 or later",
+        "android": "Android 15 or later",
+        "apps_latest_required": true
+      },
+      "messaging": {
+        "sms": true,
+        "mms": true,
+        "rcs": true,
+        "international_sms": true,
+        "attachments": "service_and_device_specific",
+        "location_share": "supported_apps",
+        "voice_call": false,
+        "normal_emergency_voice_call": false,
+        "emergency_alerts": [
+          "earthquake",
+          "tsunami",
+          "civil_protection_subset"
+        ],
+        "call_forwarding": false,
+        "voicemail": false
+      },
+      "apps": {
+        "source_as_of": "2026-09-22",
+        "ios": [
+          "yamap",
+          "imakoko",
+          "yamareco",
+          "bowbear",
+          "boarding_cloud",
+          "tsuricari",
+          "newspicks",
+          "smartnews",
+          "weathernews",
+          "tidegraph",
+          "nerv",
+          "x",
+          "whatsapp",
+          "compass_ex",
+          "messenger",
+          "livmap",
+          "apple_messages",
+          "apple_maps",
+          "apple_weather",
+          "apple_compass",
+          "apple_fitness",
+          "apple_music"
+        ],
+        "android": [
+          "yamap",
+          "imakoko",
+          "yamareco",
+          "bowbear",
+          "boarding_cloud",
+          "tsuricari",
+          "newspicks",
+          "smartnews",
+          "weathernews",
+          "tidegraph",
+          "nerv",
+          "x",
+          "whatsapp",
+          "compass_ex",
+          "messenger",
+          "livmap",
+          "google_messages",
+          "emergency_info",
+          "google_maps",
+          "find_hub"
+        ],
+        "overrides": {}
+      },
+      "setup": [
+        "update_os_before_off_grid",
+        "update_apps_before_off_grid",
+        "flat_rate_data_plan_or_web_usage_fee_required_for_app_data_MMS_RCS"
+      ],
+      "overseas": {
+        "status": "scheduled",
+        "start_date": "2026-09-28",
+        "checked_at": "2026-09-22",
+        "launch_countries": [
+          "United States",
+          "Canada",
+          "New Zealand"
+        ],
+        "later_2026_fall": [
+          "Philippines"
+        ],
+        "ios_device_rule": "iPhone 13 or later with iOS 27.0 or later",
+        "android_device_rule": "to_be_announced",
+        "services": [
+          "text_messages",
+          "supported_app_data"
+        ],
+        "conditions": [
+          "country_or_region_may_reduce_app_functions"
+        ],
+        "note": "Not currently available overseas as of 2026-09-22; do not show as live before 2026-09-28."
+      },
+      "sources": [
+        "https://www.softbank.jp/mobile/service/starlink-direct/",
+        "https://www.softbank.jp/corp/news/press/sbkk/2026/20260910_01/"
+      ]
+    },
+    {
+      "id": "apple_native_satellite",
+      "label": "Apple satellite features",
+      "domestic": {
+        "status": "available_in_japan"
+      },
+      "device_gate": {
+        "rule": "iPhone 14 or later all models for Messages via satellite; feature-specific requirements apply"
+      },
+      "software": {
+        "messages_via_satellite": "iOS 18 or later"
+      },
+      "apps": {
+        "source_as_of": "2026-09-22",
+        "ios": [
+          "apple_messages"
+        ],
+        "feature_paths": [
+          "emergency_sos_via_satellite",
+          "messages_via_satellite",
+          "find_my_location_via_satellite"
+        ]
+      },
+      "messaging": {
+        "imessage": true,
+        "sms": true,
+        "text": true,
+        "emoji": true,
+        "tapback": true,
+        "voice_call": false,
+        "general_app_data": false
+      },
+      "sources": [
+        "https://support.apple.com/ja-jp/120930",
+        "https://support.apple.com/ja-jp/101573",
+        "https://support.apple.com/ja-jp/105097"
+      ]
+    },
+    {
+      "id": "google_pixel_satellite_sos",
+      "label": "Google Pixel Satellite SOS",
+      "domestic": {
+        "status": "unavailable_in_japan_as_of_check"
+      },
+      "device_gate": {
+        "rule": "Pixel 9 or later except Pixel 9a; region support separately required"
+      },
+      "apps": {
+        "source_as_of": "2026-09-22",
+        "android": [],
+        "feature_paths": [
+          "satellite_sos"
+        ]
+      },
+      "messaging": {
+        "personal_messaging": false,
+        "general_app_data": false,
+        "voice_call": false
+      },
+      "sources": [
+        "https://support.google.com/pixelphone/answer/15254448?hl=ja"
+      ]
+    },
+    {
+      "id": "rakuten_ast_spacemobile",
+      "label": "Rakuten AST SpaceMobile",
+      "domestic": {
+        "status": "planned_not_launched_as_of_2026_09_22"
+      },
+      "apps": {
+        "status": "commercial_app_matrix_not_available"
+      },
+      "sources": [
+        "https://corp.mobile.rakuten.co.jp/news/press/2025/0423_01/"
+      ]
+    }
+  ],
+  "evidence_boundaries": [
+    "A provider-listed app does not imply all functions inside the app are usable over satellite.",
+    "A data_and_message device is eligible for provider-listed app data only when plan, software, setup and region conditions are also satisfied.",
+    "A message_only device is not promoted to app-data capable.",
+    "An app not shown on a provider list may still work if the provider says unlisted apps can be compatible; SolQvia therefore reports unlisted rather than unsupported unless explicitly excluded.",
+    "Domestic device eligibility does not prove overseas eligibility.",
+    "SoftBank overseas service is future-dated to 2026-09-28 and remains scheduled at the 2026-09-22 check date.",
+    "No app listing is treated as SolQvia real-device evidence."
+  ]
+}
