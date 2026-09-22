@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "release": "phase170-satellite-app-feature-matrix",
+  "date": "2026-09-22",
+  "baseline": "Phase169 main 53274a4346c71f9e7a724413bfa7c8f8bb16989c",
+  "goal": "Add the missing app/service/OS/feature layer on top of the 572-record satellite device mapping so SolQvia can distinguish device eligibility, messaging-only support, supported-app data, app-specific limitations, setup requirements and overseas service status before real-device testing.",
+  "outputs": [
+    "assets/data/phase170-satellite-app-feature-matrix-v1.json",
+    "assets/data/phase170-validation-report-v1.json",
+    "assets/phase170-satellite-app-feature.js",
+    "assets/phase170-satellite-app-feature.css",
+    "scripts/phase170-satellite-app-validate.mjs",
+    "ja/technology/smartphone/satellite-emergency-connectivity-diagnosis/index.html",
+    "en/technology/smartphone/satellite-emergency-connectivity-diagnosis/index.html"
+  ],
+  "key_results": [
+    "54 normalized app identities across carrier satellite services.",
+    "au app matrix: 40 iPhone apps and 39 Android apps from the current official app page, with explicit per-app limitations where published.",
+    "docomo app matrix: 38 iPhone apps and 41 Android apps, including docomo Mail, Disaster Kit, d払い and current third-party apps.",
+    "SoftBank app matrix: 22 iPhone apps and 20 Android apps, with current domestic OS minimums iOS 26.4+ and Android 15+.",
+    "Device-level app access is gated by exact provider level: data_and_message can expose app data; message_only cannot.",
+    "au and docomo overseas are current; SoftBank overseas remains scheduled for 2026-09-28 at the check date.",
+    "Apple-native satellite and Google Satellite SOS remain separate service paths from carrier app data.",
+    "No app listing is promoted to SolQvia real-device evidence."
+  ],
+  "official_source_dates": {
+    "au_app_page": "2026-07 page state, rechecked 2026-09-22",
+    "au_device_page": "2026-09 state, rechecked 2026-09-22",
+    "docomo_service_page": "rechecked 2026-09-22",
+    "docomo_overseas": "available since 2026-09-01",
+    "softbank_service_page": "rechecked 2026-09-22",
+    "softbank_overseas": "scheduled 2026-09-28"
+  },
+  "seo_surface": {
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_changes": 0,
+    "sitemap_changes": 0,
+    "target_indexable_urls": 802
+  },
+  "real_device_satellite_evidence": {
+    "before": 0,
+    "after": 0
+  },
+  "next_step": "Phase171: execute a safe real-device satellite capture campaign using demo, non-emergency messaging and supported-app data only; bind every observation to exact model, carrier, plan entitlement, OS/software snapshot and coarse region."
+}
