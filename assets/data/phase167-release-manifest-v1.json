@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "release": "phase167-satellite-exact-device-eligibility",
+  "date": "2026-09-22",
+  "baseline": "Phase166 main a50b66fc38d5394c743f82551245fc070170425e",
+  "goal": "Replace the Phase166 blanket-unverified state for the 22 records added in Phase132-143 with current official satellite-provider eligibility scoped by exact Device Passport record, purchase source, release state and service path.",
+  "outputs": [
+    "assets/data/phase167-satellite-exact-device-eligibility-v1.json",
+    "assets/data/phase167-validation-report-v1.json",
+    "scripts/phase167-satellite-validate.mjs",
+    "assets/phase108-satellite-emergency.js"
+  ],
+  "key_results": [
+    "22/22 newer Device Passport records receive an explicit Phase167 satellite mapping.",
+    "Google Pixel hardware eligibility remains separate from Japan service availability.",
+    "Apple-native satellite remains separate from carrier satellite.",
+    "docomo exact-device state is now usable by the diagnosis instead of always returning generic verification.",
+    "SoftBank Free Style exclusion remains explicit.",
+    "Open-market/SIM-free support is not inferred from carrier-sold variants.",
+    "iPhone Duo remains future/scheduled and is not promoted to current availability.",
+    "Galaxy S26 SM-S942Q is KDDI IOT-listed but its feature level remains unknown because the current official table render is ambiguous."
+  ],
+  "seo_surface": {
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_changes": 0,
+    "target_indexable_urls": 802
+  },
+  "real_device_satellite_evidence": {
+    "before": 0,
+    "after": 0
+  },
+  "next_step": "Phase168: extend exact provider eligibility beyond the 22 new records to currently high-value existing Device Passport models, then prioritize safe non-emergency real-device captures for Apple native and carrier Starlink paths."
+}

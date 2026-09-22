@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "release": "phase167-satellite-exact-device-eligibility",
+  "checked_at": "2026-09-22",
+  "validation_mode": "connector_v8_static_validation",
+  "pass": true,
+  "checks": {
+    "javascript_syntax": true,
+    "eligibility_json_parse": true,
+    "record_count": 22,
+    "unique_record_count": 22,
+    "iphone_duo_future_release_guard": true,
+    "galaxy_s26_au_feature_level_not_overclaimed": true,
+    "rakuten_ast_not_launched_preserved": true,
+    "phase166_blanket_unverified_guard_resolved_only_by_phase167_map": true,
+    "docomo_exact_level_runtime_path_added": true,
+    "current_summary_counts_recomputed_from_merged_records": true,
+    "html_changes": 0,
+    "sitemap_changes": 0,
+    "canonical_changes": 0,
+    "new_indexable_urls": 0
+  },
+  "evidence_boundary_notes": [
+    "not_listed is a current-list evidence state, not a permanent hardware incompatibility claim",
+    "purchase-source scope remains explicit",
+    "future devices are not treated as currently usable",
+    "SolQvia real-device satellite evidence remains 0"
+  ],
+  "errors": []
+}

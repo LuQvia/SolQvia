@@ -1,0 +1,1275 @@
+{
+  "schema_version": "1.0",
+  "release": "phase167-satellite-exact-device-eligibility",
+  "checked_at": "2026-09-22",
+  "baseline_commit": "a50b66fc38d5394c743f82551245fc070170425e",
+  "purpose": "Resolve the Phase166 blanket-unverified guard for the 22 Device Passport records added in Phase132-143 by mapping each exact record to current official satellite-provider device/purchase-source eligibility without family-name overreach.",
+  "semantics": {
+    "data_and_message": "Current official source confirms supported-app data plus messaging for the relevant purchase-source or exact-model scope.",
+    "not_listed": "No match in the applicable current official supported-device list(s) at checked_at; this is not a permanent hardware-unsupported claim.",
+    "explicitly_unsupported": "Current official source explicitly excludes this sales/program scope.",
+    "future_listed": "Official service list contains the future device but it is not usable before release.",
+    "future_announced": "Official product material indicates satellite support for a future device, but the current compatibility list does not yet make it usable.",
+    "device_eligible_region_unavailable": "Device family meets platform hardware eligibility while Japan remains outside the platform service region.",
+    "iot_listed_feature_level_unresolved": "Exact model is present on the official IOT list, but the current rendered feature-level table is ambiguous; keep runtime capability unknown."
+  },
+  "global_boundaries": [
+    "Device family name match does not override purchase-source or exact-model restrictions.",
+    "Carrier-purchased support does not prove SIM-free/open-market support.",
+    "A future listed or announced device is not treated as currently usable.",
+    "Not listed means not confirmed by the current official list, not permanent hardware impossibility.",
+    "Google Pixel Satellite SOS device eligibility does not imply Japan availability.",
+    "Apple-native satellite and carrier-provided satellite remain separate service paths.",
+    "Rakuten AST SpaceMobile remains not launched at the checked date.",
+    "No Phase167 record creates SolQvia real-device satellite evidence."
+  ],
+  "source_registry": {
+    "apple_messages": {
+      "url": "https://support.apple.com/ja-jp/120930",
+      "type": "platform_official",
+      "scope": "Apple native Messages via satellite: iPhone 14+ all models, Japan availability and conditions"
+    },
+    "apple_carrier_sat": {
+      "url": "https://support.apple.com/ja-jp/122339",
+      "type": "platform_official",
+      "scope": "Apple guidance separating Apple-native satellite from carrier-provided satellite"
+    },
+    "google_sos": {
+      "url": "https://support.google.com/pixelphone/answer/15254448?hl=ja",
+      "type": "platform_official",
+      "scope": "Pixel Satellite SOS device family and supported regions; Japan absent at check date"
+    },
+    "au_devices": {
+      "url": "https://www.au.com/mobile/service/starlink-direct/enabled-device/",
+      "type": "carrier_official",
+      "scope": "au Starlink Direct current device list by purchase source and feature level"
+    },
+    "au_iot": {
+      "url": "https://open-dev.kddi.com/information-2",
+      "type": "carrier_official",
+      "scope": "KDDI au Starlink Direct IOT completed exact open-market models"
+    },
+    "docomo_own": {
+      "url": "https://www.docomo.ne.jp/service/starlink_direct/compatible_model/",
+      "type": "carrier_official",
+      "scope": "docomo Starlink Direct models purchased from docomo"
+    },
+    "docomo_other": {
+      "url": "https://www.docomo.ne.jp/service/starlink_direct/compatible_model/other.html",
+      "type": "carrier_official",
+      "scope": "docomo Starlink Direct models purchased from other companies"
+    },
+    "docomo_duo": {
+      "url": "https://www.docomo.ne.jp/iphone/duo/",
+      "type": "carrier_official",
+      "scope": "Future iPhone Duo product page displaying docomo Starlink Direct badge"
+    },
+    "softbank": {
+      "url": "https://www.softbank.jp/mobile/service/starlink-direct/",
+      "type": "carrier_official",
+      "scope": "SoftBank Starlink Direct current supported devices, purchase-source tabs and Free Style exclusion"
+    },
+    "rakuten_apple": {
+      "url": "https://corp.mobile.rakuten.co.jp/news/press/2026/0326_01/",
+      "type": "carrier_official",
+      "scope": "Rakuten Mobile support for Apple satellite messaging on eligible Apple devices"
+    },
+    "rakuten_ast": {
+      "url": "https://corp.mobile.rakuten.co.jp/news/press/2025/0423_01/",
+      "type": "carrier_official",
+      "scope": "AST SpaceMobile Japan trial and Q4 2026 commercial launch target"
+    }
+  },
+  "records": [
+    {
+      "id": "phase132-pixel11-guj0n",
+      "model_name": "Google Pixel 11",
+      "model_number": "GUJ0N",
+      "original_carrier": "Google Store",
+      "release_date": "2026-08-20",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": true,
+          "japan_status": "unavailable"
+        },
+        "au_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "docomo_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "google_sos",
+        "au_devices",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": true,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "data_and_message",
+        "docomo_starlink_direct_level": "data_and_message",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase132-pixel11pro-gm45k",
+      "model_name": "Google Pixel 11 Pro",
+      "model_number": "GM45K",
+      "original_carrier": "Google Store",
+      "release_date": "2026-08-20",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": true,
+          "japan_status": "unavailable"
+        },
+        "au_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "docomo_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "google_sos",
+        "au_devices",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": true,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "data_and_message",
+        "docomo_starlink_direct_level": "data_and_message",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase132-pixel11proxl-g4hcd",
+      "model_name": "Google Pixel 11 Pro XL",
+      "model_number": "G4HCD",
+      "original_carrier": "Google Store",
+      "release_date": "2026-08-20",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": true,
+          "japan_status": "unavailable"
+        },
+        "au_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "docomo_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "google_sos",
+        "au_devices",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": true,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "data_and_message",
+        "docomo_starlink_direct_level": "data_and_message",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase133-iphone18pro-a3713",
+      "model_name": "iPhone 18 Pro",
+      "model_number": "A3713",
+      "original_carrier": "Apple Store",
+      "release_date": "2026-09-18",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "available",
+          "scope": "iPhone_14_or_later_all_models_japan"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "docomo_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "available_with_rakuten_sim",
+          "scope": "Apple_family_rule"
+        }
+      },
+      "evidence_refs": [
+        "apple_messages",
+        "apple_carrier_sat",
+        "au_devices",
+        "docomo_other",
+        "softbank",
+        "rakuten_apple"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": true,
+        "apple_native_features_japan": [
+          "emergency_sos",
+          "messages",
+          "find_my"
+        ],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "data_and_message",
+        "docomo_starlink_direct_level": "data_and_message",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "available_with_rakuten_sim",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase133-iphone18promax-a3716",
+      "model_name": "iPhone 18 Pro Max",
+      "model_number": "A3716",
+      "original_carrier": "Apple Store",
+      "release_date": "2026-09-18",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "available",
+          "scope": "iPhone_14_or_later_all_models_japan"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "docomo_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "available_with_rakuten_sim",
+          "scope": "Apple_family_rule"
+        }
+      },
+      "evidence_refs": [
+        "apple_messages",
+        "apple_carrier_sat",
+        "au_devices",
+        "docomo_other",
+        "softbank",
+        "rakuten_apple"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": true,
+        "apple_native_features_japan": [
+          "emergency_sos",
+          "messages",
+          "find_my"
+        ],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "data_and_message",
+        "docomo_starlink_direct_level": "data_and_message",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "available_with_rakuten_sim",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase133-iphone-duo-a3719",
+      "model_name": "iPhone Duo",
+      "model_number": "A3719",
+      "original_carrier": "Apple Store",
+      "release_date": "2026-10-23",
+      "release_state": "scheduled",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "future_family_supported",
+          "scope": "iPhone_14_or_later_all_models_rule_but_device_not_released"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "future_listed",
+          "scope": "other_purchased_model_name_release_2026-10-23"
+        },
+        "docomo_starlink_direct": {
+          "level": "future_announced",
+          "scope": "docomo_product_page_starlink_badge_not_yet_in_compatibility_list"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "future_with_rakuten_sim",
+          "scope": "Apple_family_rule_but_device_not_released"
+        }
+      },
+      "evidence_refs": [
+        "apple_messages",
+        "apple_carrier_sat",
+        "au_devices",
+        "docomo_other",
+        "docomo_duo",
+        "softbank",
+        "rakuten_apple"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": true,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "future_listed",
+        "docomo_starlink_direct_level": "future_announced",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "future_with_rakuten_sim",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase135-pixel11profold-gzdq6",
+      "model_name": "Google Pixel 11 Pro Fold",
+      "model_number": "GZDQ6",
+      "original_carrier": "Google Store",
+      "release_date": "2026-08-20",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": true,
+          "japan_status": "unavailable"
+        },
+        "au_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "docomo_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "google_sos",
+        "au_devices",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": true,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "data_and_message",
+        "docomo_starlink_direct_level": "data_and_message",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase136-arrows-alpha2-f51g-docomo",
+      "model_name": "arrows Alpha2 F-51G",
+      "model_number": "F-51G",
+      "original_carrier": "NTTドコモ",
+      "release_date": "2026-08-27",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "docomo_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "docomo_exact_carrier_model"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "au_devices",
+        "au_iot",
+        "docomo_own",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "not_listed",
+        "docomo_starlink_direct_level": "data_and_message",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase136-arrows-alpha2-m10-au",
+      "model_name": "arrows Alpha2",
+      "model_number": "M10",
+      "original_carrier": "au Flex Style",
+      "release_date": "2026-08-27",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "docomo_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "au_devices",
+        "au_iot",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "not_listed",
+        "docomo_starlink_direct_level": "not_listed",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase136-arrows-alpha2-m10-rakuten",
+      "model_name": "arrows Alpha2",
+      "model_number": "M10",
+      "original_carrier": "楽天モバイル",
+      "release_date": "2026-08-27",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "docomo_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "au_devices",
+        "au_iot",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "not_listed",
+        "docomo_starlink_direct_level": "not_listed",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase136-arrows-alpha2-m10-softbank-ymobile",
+      "model_name": "arrows Alpha2",
+      "model_number": "M10",
+      "original_carrier": "SoftBank / Y!mobile Free Style",
+      "release_date": "2026-08-27",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "docomo_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "softbank_starlink_direct": {
+          "level": "explicitly_unsupported",
+          "scope": "SoftBank_Free_Style_exclusion"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "au_devices",
+        "au_iot",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "not_listed",
+        "docomo_starlink_direct_level": "not_listed",
+        "softbank_starlink_direct_level": "explicitly_unsupported",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase136-arrows-alpha2-m10-open-market",
+      "model_name": "arrows Alpha2",
+      "model_number": "M10",
+      "original_carrier": "SIMフリー（M10）",
+      "release_date": "2026-08-27",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "docomo_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "au_devices",
+        "au_iot",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "not_listed",
+        "docomo_starlink_direct_level": "not_listed",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase137-xperia1viii-xqge44",
+      "model_name": "Xperia 1 VIII",
+      "model_number": "XQ-GE44",
+      "original_carrier": "Sony Store / SIMフリー",
+      "release_date": "2026-06-11",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "docomo_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "au_devices",
+        "au_iot",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "not_listed",
+        "docomo_starlink_direct_level": "not_listed",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase138-galaxy-z-flip8-sm-f776q",
+      "model_name": "Galaxy Z Flip8",
+      "model_number": "SM-F776Q",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-08-07",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "docomo_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "au_devices",
+        "au_iot",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "not_listed",
+        "docomo_starlink_direct_level": "not_listed",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase139-galaxy-z-fold8-sm-f971q",
+      "model_name": "Galaxy Z Fold8",
+      "model_number": "SM-F971Q",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-08-07",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "docomo_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "au_devices",
+        "au_iot",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "not_listed",
+        "docomo_starlink_direct_level": "not_listed",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase139-galaxy-z-fold8-ultra-sm-f976q",
+      "model_name": "Galaxy Z Fold8 Ultra",
+      "model_number": "SM-F976Q",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-08-07",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "docomo_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "au_devices",
+        "au_iot",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "not_listed",
+        "docomo_starlink_direct_level": "not_listed",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase140-pixel10a-gq57s-google-store",
+      "model_name": "Google Pixel 10a",
+      "model_number": "GQ57S",
+      "original_carrier": "Google Store / SIMフリー",
+      "release_date": "2026-04-14",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": true,
+          "japan_status": "unavailable"
+        },
+        "au_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "docomo_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "softbank_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "other_purchased_model_name"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "google_sos",
+        "au_devices",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": true,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "data_and_message",
+        "docomo_starlink_direct_level": "data_and_message",
+        "softbank_starlink_direct_level": "data_and_message",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase141-galaxy-a57-sm-a576q",
+      "model_name": "Galaxy A57 5G",
+      "model_number": "SM-A576Q",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-04-23",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "KDDI_IOT_exact_model"
+        },
+        "docomo_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "au_iot",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "data_and_message",
+        "docomo_starlink_direct_level": "not_listed",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase141-aquos-r11-sh-m35",
+      "model_name": "AQUOS R11",
+      "model_number": "SH-M35",
+      "original_carrier": "SHARP / SIMフリー",
+      "release_date": "2026-07-09",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "docomo_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "au_devices",
+        "au_iot",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "not_listed",
+        "docomo_starlink_direct_level": "not_listed",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase143-galaxy-s26-sm-s942q",
+      "model_name": "Galaxy S26",
+      "model_number": "SM-S942Q",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-03-12",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "iot_listed_feature_level_unresolved",
+          "scope": "KDDI_IOT_exact_model",
+          "note": "KDDI IOT page lists SM-S942Q, but the crawled specification table is structurally ambiguous at checked_at; do not promote to data_and_message until manually reconfirmed."
+        },
+        "docomo_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "au_iot",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "unknown",
+        "docomo_starlink_direct_level": "not_listed",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase143-galaxy-s26-plus-sm-s947q",
+      "model_name": "Galaxy S26+",
+      "model_number": "SM-S947Q",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-03-12",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "KDDI_IOT_exact_model"
+        },
+        "docomo_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "au_iot",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "data_and_message",
+        "docomo_starlink_direct_level": "not_listed",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    },
+    {
+      "id": "phase143-galaxy-s26-ultra-sm-s948q",
+      "model_name": "Galaxy S26 Ultra",
+      "model_number": "SM-S948Q",
+      "original_carrier": "Samsung.com / SIMフリー",
+      "release_date": "2026-03-12",
+      "release_state": "released",
+      "checked_at": "2026-09-22",
+      "provider_eligibility": {
+        "apple_native": {
+          "level": "not_applicable"
+        },
+        "google_native": {
+          "device_eligible": false,
+          "japan_status": "not_applicable"
+        },
+        "au_starlink_direct": {
+          "level": "data_and_message",
+          "scope": "KDDI_IOT_exact_model"
+        },
+        "docomo_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "softbank_starlink_direct": {
+          "level": "not_listed",
+          "scope": "current_official_lists"
+        },
+        "rakuten_apple_satellite": {
+          "level": "not_applicable"
+        }
+      },
+      "evidence_refs": [
+        "au_iot",
+        "docomo_other",
+        "softbank"
+      ],
+      "runtime_mapping": {
+        "apple_native_satellite_japan": false,
+        "apple_native_features_japan": [],
+        "apple_native_future_supported": false,
+        "google_native_satellite_device_eligible": false,
+        "google_native_satellite_japan_available": false,
+        "au_starlink_direct_level": "data_and_message",
+        "docomo_starlink_direct_level": "not_listed",
+        "softbank_starlink_direct_level": "not_listed",
+        "rakuten_ast_spacemobile_level": "not_launched",
+        "rakuten_apple_satellite_level": "not_applicable",
+        "phase167_exact_satellite_mapping": true,
+        "phase166_unverified_new_record": false
+      }
+    }
+  ],
+  "qa_notes": [
+    "KDDI open-device IOT confirms Galaxy A57 SM-A576Q as message+data.",
+    "KDDI open-device IOT confirms Galaxy S26+ SM-S947Q and S26 Ultra SM-S948Q as message+data.",
+    "KDDI open-device IOT lists Galaxy S26 SM-S942Q but current crawl renders the feature row ambiguously; it remains unknown rather than inferred.",
+    "Newer open-market Z Flip8/Fold8/Fold8 Ultra, AQUOS R11 SH-M35, Xperia 1 VIII XQ-GE44 and arrows Alpha2 M10 were not found in the three-page KDDI Starlink Direct IOT list at checked_at; they remain not_listed for the au open-market path."
+  ]
+}
