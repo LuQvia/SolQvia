@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "release": "phase169-satellite-legacy-completion",
+  "date": "2026-09-22",
+  "baseline": "Phase168 main d19279a7836a2167ce244360affcc1ed59f2d85e",
+  "goal": "Complete the remaining 356 legacy Phase108 records with explicit satellite-provider state, currentize docomo Starlink Direct exact mapping, and preserve au/SoftBank evidence freshness instead of silently re-dating carried-forward legacy mappings.",
+  "outputs": [
+    "assets/data/phase169-satellite-legacy-completion-v1.json",
+    "assets/data/phase169-validation-report-v1.json",
+    "scripts/phase169-satellite-validate.mjs",
+    "assets/phase108-satellite-emergency.js"
+  ],
+  "coverage": {
+    "phase108_legacy_base": 550,
+    "phase168_priority_existing": 194,
+    "phase169_remaining_existing": 356,
+    "phase167_new_overlay": 22,
+    "total_runtime_records": 572
+  },
+  "key_results": [
+    "All 550 legacy Phase108 records are partitioned exactly between Phase168 and Phase169.",
+    "All 22 newer Phase132-143 records remain covered by Phase167.",
+    "docomo current supported-device state is added for the remaining legacy cohort.",
+    "Galaxy S21 family and selected 2023 Xperia/AQUOS models retain docomo message-only distinction where applicable.",
+    "au and SoftBank legacy per-record states retain their Phase108 source date rather than being silently promoted to fresh exact evidence.",
+    "Apple-native and Google-native satellite remain separate from carrier-provided satellite.",
+    "Rakuten AST SpaceMobile remains not launched at the check date.",
+    "No SolQvia real-device satellite evidence is fabricated."
+  ],
+  "source_freshness": {
+    "docomo_exact_checked_at": "2026-09-22",
+    "apple_google_rule_checked_at": "2026-09-22",
+    "au_legacy_exact_source_checked_at": "2026-08-09",
+    "softbank_legacy_exact_source_checked_at": "2026-08-09",
+    "current_au_softbank_service_pages_rechecked_at": "2026-09-22"
+  },
+  "known_source_coverage_note": "The current docomo list contains some supported variants that do not exist as distinct legacy records in Phase108 (for example a docomo AQUOS wish3 record is absent). Phase169 does not synthesize missing Device Passport records.",
+  "seo_surface": {
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_changes": 0,
+    "sitemap_changes": 0,
+    "target_indexable_urls": 802
+  },
+  "real_device_satellite_evidence": {
+    "before": 0,
+    "after": 0
+  },
+  "next_step": "Phase170: build the satellite real-device capture execution queue using only non-emergency demo/message/app-data paths and bind each capture to exact model, carrier, software snapshot, plan entitlement and coarse region."
+}
