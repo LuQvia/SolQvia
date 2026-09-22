@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "release": "phase168-satellite-priority-existing-exact",
+  "date": "2026-09-22",
+  "baseline": "Phase167 main b69e70a7b15de26ec7d81eb4034f6ace668133f0",
+  "goal": "Extend current official satellite-provider eligibility to 194 high-value existing Device Passport records while preserving purchase-source, platform-region, feature and evidence boundaries.",
+  "outputs": [
+    "assets/data/phase168-satellite-priority-existing-exact-v1.json",
+    "assets/data/phase168-validation-report-v1.json",
+    "scripts/phase168-satellite-validate.mjs",
+    "assets/phase108-satellite-emergency.js"
+  ],
+  "mapped_existing_records": 194,
+  "mapped_families": [
+    "iPhone 13-17/Air",
+    "Google Pixel 9/10",
+    "Galaxy S23-S25 and Z Flip/Fold 5-7",
+    "AQUOS R8-R10 and sense8-10",
+    "Xperia 1/5/10 V-VII"
+  ],
+  "key_results": [
+    "Apple-native satellite and carrier-provided satellite remain separate.",
+    "iPhone 13 is not Apple-native satellite capable but can be carrier-satellite eligible.",
+    "Pixel 9a remains excluded from Google Satellite SOS while carrier satellite messaging can still be eligible.",
+    "au/docomo/SoftBank purchase-source lists are preserved instead of model-name-only promotion.",
+    "docomo Starlink Direct exact levels are now available for the priority existing cohort.",
+    "Rakuten AST SpaceMobile remains not launched at the check date.",
+    "No SolQvia real-device satellite evidence is fabricated."
+  ],
+  "official_check_date": "2026-09-22",
+  "seo_surface": {
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_changes": 0,
+    "sitemap_changes": 0,
+    "target_indexable_urls": 802
+  },
+  "real_device_satellite_evidence": {
+    "before": 0,
+    "after": 0
+  },
+  "next_step": "Phase169: extend exact current satellite-provider mapping to the remaining legacy records where official lists provide evidence, then build a safe real-device capture queue for Apple native and carrier Starlink paths."
+}
