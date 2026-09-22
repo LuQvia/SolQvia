@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "release": "phase166-satellite-deep-stack",
+  "date": "2026-09-22",
+  "baseline": "Phase165 main 89e6b1d1eb8039414c570daef8dbceb49080788c",
+  "goal": "Deepen SolQvia satellite connectivity from a single support flag into provider/service/device/OS/region/entitlement/feature/emergency/runtime layers and currentize the public Japan diagnosis.",
+  "current_official_state": [
+    "Apple handset-native satellite features are available in Japan on supported iPhone generations; Messages via satellite is available in Japan with its own iOS/SIM/carrier conditions.",
+    "Google Pixel Satellite SOS hardware eligibility is separate from region availability; Japan is not in the current supported-region list.",
+    "au Starlink Direct is commercially available in Japan with messaging, supported-app data and an SOS Center path; normal voice calling remains unavailable.",
+    "docomo Starlink Direct launched on 2026-04-27. Launch features include SMS/RCS/iMessage, location/file sharing, supported-app data, Gemini on supported Android, and emergency alerts; voice/SOS are not promoted beyond what the launch source confirms.",
+    "SoftBank Starlink Direct launched on 2026-04-10; messaging and supported-app data are available under conditions, while voice and emergency calling are unavailable.",
+    "Rakuten's AST SpaceMobile consumer service remains a Q4 2026 target at the 2026-09-22 check date; technology trial success is not commercial availability.",
+    "Rakuten's Apple satellite messaging support is a separate Apple-native path and must not be confused with AST SpaceMobile."
+  ],
+  "outputs": [
+    "assets/data/phase166-satellite-deep-schema-v1.json",
+    "assets/data/phase166-satellite-service-matrix-v1.json",
+    "assets/data/phase166-satellite-diagnosis-taxonomy-v1.json",
+    "assets/data/phase166-satellite-public-summary-v1.json",
+    "assets/data/phase166-satellite-capture-protocol-v1.json",
+    "assets/data/phase166-validation-report-v1.json",
+    "assets/data/phase166-release-manifest-v1.json",
+    "assets/phase166-satellite-deep.css",
+    "assets/phase166-satellite-deep.js",
+    "assets/phase108-satellite-emergency.js",
+    "scripts/phase166-satellite-validate.mjs",
+    "ja/technology/smartphone/satellite-emergency-connectivity-diagnosis/index.html",
+    "en/technology/smartphone/satellite-emergency-connectivity-diagnosis/index.html"
+  ],
+  "public_changes": [
+    "Satellite diagnosis hero/static count aligned to 572 current Device Passport records.",
+    "Phase108 runtime now merges current Phase132-143 device overlays; newly added records are explicitly unmapped for satellite eligibility instead of being called unsupported.",
+    "Docomo current commercial status replaces the old planned-service result.",
+    "Rakuten AST remains pre-launch and separate from Rakuten support for Apple satellite messaging.",
+    "Phase166 deep comparison adds SOS, messaging, supported-app data, voice and condition columns.",
+    "Current official-source links are surfaced alongside the legacy Phase108 source list."
+  ],
+  "evidence_boundaries": [
+    "Device eligibility != regional availability.",
+    "Satellite icon != successful transfer.",
+    "Messaging != files/RCS/MMS/iMessage unless separately supported.",
+    "Supported-app data != unrestricted browser/general Internet.",
+    "Satellite data != voice.",
+    "SOS relay center != normal emergency voice calling.",
+    "Trial voice/video success != consumer commercial availability.",
+    "SolQvia satellite real-device capture count remains 0."
+  ],
+  "seo_surface": {
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_changes": 0,
+    "target_indexable_urls": 802
+  },
+  "next_step": "Map exact current satellite-provider device eligibility for the newest Phase132-143 records, then collect non-emergency SolQvia satellite demo/message/app-data captures when supported hardware and service conditions are physically available."
+}
