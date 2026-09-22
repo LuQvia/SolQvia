@@ -10,7 +10,8 @@
     "explicitly_unsupported": "Current official source explicitly excludes this sales/program scope.",
     "future_listed": "Official service list contains the future device but it is not usable before release.",
     "future_announced": "Official product material indicates satellite support for a future device, but the current compatibility list does not yet make it usable.",
-    "device_eligible_region_unavailable": "Device family meets platform hardware eligibility while Japan remains outside the platform service region."
+    "device_eligible_region_unavailable": "Device family meets platform hardware eligibility while Japan remains outside the platform service region.",
+    "iot_listed_feature_level_unresolved": "Exact model is present on the official IOT list, but the current rendered feature-level table is ambiguous; keep runtime capability unknown."
   },
   "global_boundaries": [
     "Device family name match does not override purchase-source or exact-model restrictions.",
@@ -1124,8 +1125,9 @@
           "japan_status": "not_applicable"
         },
         "au_starlink_direct": {
-          "level": "data_and_message",
-          "scope": "KDDI_IOT_exact_model"
+          "level": "iot_listed_feature_level_unresolved",
+          "scope": "KDDI_IOT_exact_model",
+          "note": "KDDI IOT page lists SM-S942Q, but the crawled specification table is structurally ambiguous at checked_at; do not promote to data_and_message until manually reconfirmed."
         },
         "docomo_starlink_direct": {
           "level": "not_listed",
@@ -1150,7 +1152,7 @@
         "apple_native_future_supported": false,
         "google_native_satellite_device_eligible": false,
         "google_native_satellite_japan_available": false,
-        "au_starlink_direct_level": "data_and_message",
+        "au_starlink_direct_level": "unknown",
         "docomo_starlink_direct_level": "not_listed",
         "softbank_starlink_direct_level": "not_listed",
         "rakuten_ast_spacemobile_level": "not_launched",
@@ -1263,5 +1265,11 @@
         "phase166_unverified_new_record": false
       }
     }
+  ],
+  "qa_notes": [
+    "KDDI open-device IOT confirms Galaxy A57 SM-A576Q as message+data.",
+    "KDDI open-device IOT confirms Galaxy S26+ SM-S947Q and S26 Ultra SM-S948Q as message+data.",
+    "KDDI open-device IOT lists Galaxy S26 SM-S942Q but current crawl renders the feature row ambiguously; it remains unknown rather than inferred.",
+    "Newer open-market Z Flip8/Fold8/Fold8 Ultra, AQUOS R11 SH-M35, Xperia 1 VIII XQ-GE44 and arrows Alpha2 M10 were not found in the three-page KDDI Starlink Direct IOT list at checked_at; they remain not_listed for the au open-market path."
   ]
 }
