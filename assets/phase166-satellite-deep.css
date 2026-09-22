@@ -1,0 +1,25 @@
+.p166-deep{margin-top:1.2rem}
+.p166-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap;margin-bottom:1rem}
+.p166-head h2{margin:.15rem 0 .4rem}
+.p166-head p{margin:0;color:#56687c;max-width:780px;line-height:1.65}
+.p166-date{display:inline-flex;align-items:center;padding:.35rem .62rem;border-radius:999px;background:#eef4fb;color:#3b526d;font-size:.78rem;font-weight:800}
+.p166-note-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:.9rem 0}
+.p166-note{padding:.75rem .8rem;border:1px solid #dbe5ef;border-radius:11px;background:#fbfdff;color:#4c6075;font-size:.83rem;line-height:1.55}
+.p166-table-wrap{overflow-x:auto;border:1px solid #d9e3ee;border-radius:14px;background:#fff}
+.p166-table{width:100%;min-width:980px;border-collapse:collapse}
+.p166-table th,.p166-table td{padding:.72rem .75rem;border-bottom:1px solid #e8eef4;text-align:left;vertical-align:top;font-size:.82rem;line-height:1.5}
+.p166-table th{background:#f4f7fb;color:#30465e;font-size:.77rem;letter-spacing:.01em;white-space:nowrap}
+.p166-table tr:last-child td{border-bottom:0}
+.p166-table strong{color:#20374f}
+.p166-state{display:inline-flex;align-items:center;padding:.18rem .45rem;border-radius:999px;background:#eef3f8;color:#41576e;font-size:.72rem;font-weight:800;margin-top:.28rem}
+.p166-details{margin-top:1rem;display:grid;gap:8px}
+.p166-details details{border:1px solid #dbe4ed;border-radius:12px;background:#fff}
+.p166-details summary{cursor:pointer;padding:.8rem .9rem;font-weight:800;color:#2c445e}
+.p166-detail-body{padding:0 .9rem .9rem;color:#52657a;font-size:.84rem;line-height:1.65}
+.p166-feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:.65rem}
+.p166-feature{padding:.62rem;border-radius:9px;background:#f6f9fc}
+.p166-feature b,.p166-feature span{display:block}
+.p166-feature b{font-size:.76rem;color:#53667b}
+.p166-feature span{margin-top:.18rem;font-size:.79rem;font-weight:700;color:#263c52;overflow-wrap:anywhere}
+.p166-boundary{margin-top:.8rem;padding:.75rem;border-left:4px solid #bd7f22;border-radius:9px;background:#fff8ed;color:#6d542d;font-size:.82rem;line-height:1.6}
+@media(max-width:760px){.p166-note-grid{grid-template-columns:1fr}.p166-feature-grid{grid-template-columns:1fr}}
