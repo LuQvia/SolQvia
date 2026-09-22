@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0",
+  "release": "phase166-satellite-deep-stack",
+  "checked_at": "2026-09-22",
+  "categories": [
+    {
+      "id": "terrestrial_or_wifi_available",
+      "layer": "terrestrial_precondition",
+      "meaning": "Satellite path should not be treated as the primary route while terrestrial cellular or Wi-Fi is available.",
+      "next_checks": [
+        "Use normal terrestrial connectivity first",
+        "For emergency situations, attempt normal emergency calling/text first"
+      ]
+    },
+    {
+      "id": "sky_obstructed",
+      "layer": "sky_link_condition",
+      "meaning": "Open-sky requirement is not met.",
+      "next_checks": [
+        "Move safely outdoors",
+        "Improve sky/horizon visibility"
+      ],
+      "do_not_infer": [
+        "Device incompatibility"
+      ]
+    },
+    {
+      "id": "exact_device_not_verified",
+      "layer": "device_capability",
+      "meaning": "Service exists but the exact model has not been verified against the provider's current device list.",
+      "next_checks": [
+        "Check exact model number",
+        "Check purchase-region variant",
+        "Check current provider device list"
+      ]
+    },
+    {
+      "id": "software_requirement_not_met",
+      "layer": "software_requirement",
+      "meaning": "OS/software condition is below the current provider requirement or not confirmed.",
+      "next_checks": [
+        "Update before going off-grid",
+        "Confirm carrier settings/config where applicable"
+      ]
+    },
+    {
+      "id": "plan_or_brand_not_entitled",
+      "layer": "subscription_entitlement",
+      "meaning": "Device may be capable but the active brand/plan/service entitlement is missing.",
+      "next_checks": [
+        "Check carrier/brand",
+        "Check dedicated option/plan",
+        "Check ISP requirement"
+      ]
+    },
+    {
+      "id": "satellite_setting_or_registration_missing",
+      "layer": "software_requirement",
+      "meaning": "Carrier/provider satellite setting, service registration or required messaging configuration is not ready.",
+      "next_checks": [
+        "Check satellite toggle",
+        "Check service registration",
+        "Check Google Messages/RCS/iMessage prerequisites as applicable"
+      ]
+    },
+    {
+      "id": "feature_not_supported_on_service",
+      "layer": "feature_matrix",
+      "meaning": "The selected service path does not offer the requested feature.",
+      "next_checks": [
+        "Select a different satellite path if the device/region supports one"
+      ],
+      "do_not_infer": [
+        "All satellite connectivity is unavailable"
+      ]
+    },
+    {
+      "id": "supported_apps_only",
+      "layer": "feature_matrix",
+      "meaning": "Satellite data is limited to a provider-defined supported-app set.",
+      "next_checks": [
+        "Check the current supported-app list",
+        "Do not treat browser/general Internet as available"
+      ]
+    },
+    {
+      "id": "emergency_path_mismatch",
+      "layer": "emergency_path",
+      "meaning": "The service offers either no emergency path or a relay/SOS workflow distinct from normal voice emergency calling.",
+      "next_checks": [
+        "Identify the provider-specific emergency entry point",
+        "Use normal emergency calling first when available"
+      ]
+    },
+    {
+      "id": "region_unavailable",
+      "layer": "region_availability",
+      "meaning": "Hardware may be eligible but the service is not commercially available in the current region.",
+      "next_checks": [
+        "Check provider country/region list"
+      ],
+      "do_not_infer": [
+        "Device hardware is unsupported everywhere"
+      ]
+    },
+    {
+      "id": "international_roaming_condition_missing",
+      "layer": "region_availability",
+      "meaning": "Overseas satellite use depends on country list and roaming settings.",
+      "next_checks": [
+        "Check supported country",
+        "Enable required data roaming before travel when provider instructs"
+      ]
+    },
+    {
+      "id": "commercial_service_not_launched",
+      "layer": "service_identity",
+      "meaning": "Technology trials or announced plans exist but commercial launch is not confirmed.",
+      "next_checks": [
+        "Check current official launch notice"
+      ],
+      "do_not_infer": [
+        "Trial voice/video success equals consumer availability"
+      ]
+    },
+    {
+      "id": "satellite_indicator_without_transfer",
+      "layer": "runtime_observation",
+      "meaning": "Satellite indicator is present but message/data transfer has not been observed.",
+      "next_checks": [
+        "Test the intended non-emergency feature",
+        "Record send/receive separately"
+      ],
+      "do_not_infer": [
+        "Indicator equals successful service"
+      ]
+    },
+    {
+      "id": "message_send_or_receive_failure",
+      "layer": "runtime_observation",
+      "meaning": "Satellite service appears available but directional message transfer fails.",
+      "next_checks": [
+        "Separate send from receive",
+        "Check SMS/RCS/iMessage/MMS path",
+        "Check sky visibility and required settings"
+      ]
+    },
+    {
+      "id": "app_data_failure",
+      "layer": "runtime_observation",
+      "meaning": "Supported-app data fails after satellite mode is available.",
+      "next_checks": [
+        "Confirm app is on current provider list",
+        "Confirm app is updated before leaving terrestrial coverage",
+        "Check plan/ISP entitlement"
+      ]
+    },
+    {
+      "id": "runtime_scope_unknown",
+      "layer": "runtime_observation",
+      "meaning": "Official capability exists but SolQvia has no real-device satellite observation for the exact conditions.",
+      "next_checks": [
+        "Keep result as official capability only",
+        "Add a Phase162-style non-emergency capture when available"
+      ]
+    }
+  ]
+}
