@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "release": "phase166-satellite-deep-stack",
+  "checked_at": "2026-09-22",
+  "pass": true,
+  "dimensions": 11,
+  "services": 7,
+  "diagnosis_categories": 16,
+  "solqvia_satellite_captures": 0,
+  "public_pages": {
+    "ja": {
+      "phase166": true,
+      "static_count": 572,
+      "deep_root": 1,
+      "stale_docomo_planned_text": false
+    },
+    "en": {
+      "phase166": true,
+      "static_count": 572,
+      "deep_root": 1,
+      "stale_docomo_planned_text": false
+    }
+  },
+  "official_state_boundaries": {
+    "apple_japan": "available",
+    "google_pixel_satellite_sos_japan": "unavailable",
+    "au_starlink_voice": "unavailable",
+    "docomo_starlink_status": "available",
+    "docomo_starlink_launch_date": "2026-04-27",
+    "docomo_satellite_sos": "not_confirmed_by_launch_release",
+    "softbank_starlink_voice": "unavailable",
+    "softbank_emergency_call": "unavailable",
+    "rakuten_ast_commercial_status": "planned"
+  },
+  "runtime_logic": {
+    "current_device_overlays_merged": true,
+    "newest_added_models_default_to_unmapped_not_unsupported": true,
+    "stale_google_check_date_removed": true,
+    "docomo_current_launch_logic_present": true
+  },
+  "script_syntax": {
+    "phase108_satellite_emergency": true,
+    "phase166_satellite_deep": true,
+    "phase166_validator": true
+  },
+  "seo_surface": {
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_changes": 0,
+    "target_indexable_urls": 802
+  }
+}
