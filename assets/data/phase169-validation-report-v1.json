@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "release": "phase169-satellite-legacy-completion",
+  "checked_at": "2026-09-22",
+  "validation_mode": "connector_static_validation",
+  "pass": true,
+  "coverage": {
+    "phase108_legacy_base": 550,
+    "phase168_priority_existing": 194,
+    "phase169_remaining_existing": 356,
+    "phase167_new_overlay": 22,
+    "total_runtime_records": 572
+  },
+  "checks": {
+    "legacy_partition_complete": true,
+    "phase168_phase169_overlap": 0,
+    "javascript_syntax": true,
+    "docomo_current_exact_mapping": true,
+    "au_softbank_legacy_evidence_date_preserved": true,
+    "apple_google_native_boundaries_preserved": true,
+    "rakuten_ast_not_launched_preserved": true,
+    "solqvia_real_device_satellite_evidence_added": 0,
+    "html_changes": 0,
+    "canonical_changes": 0,
+    "sitemap_changes": 0,
+    "new_indexable_urls": 0
+  },
+  "representative_cases": [
+    {
+      "model": "Galaxy S21 5G",
+      "model_number": "SC-51B",
+      "docomo": "message_only"
+    },
+    {
+      "model": "Galaxy S22",
+      "model_number": "SC-51C",
+      "docomo": "data_and_message"
+    },
+    {
+      "model": "Galaxy Z Flip4",
+      "model_number": "SC-54C",
+      "docomo": "data_and_message"
+    },
+    {
+      "model": "arrows We2",
+      "model_number": "F-52E",
+      "docomo": "data_and_message"
+    },
+    {
+      "model": "motorola razr 60d",
+      "model_number": "M-51F",
+      "docomo": "message_only"
+    },
+    {
+      "model": "iPhone 12",
+      "docomo": "not_listed"
+    }
+  ],
+  "errors": []
+}
