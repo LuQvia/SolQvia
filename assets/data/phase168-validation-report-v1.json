@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "release": "phase168-satellite-priority-existing-exact",
+  "checked_at": "2026-09-22",
+  "validation_mode": "connector_static_validation",
+  "pass": true,
+  "checks": {
+    "mapped_existing_records": 194,
+    "unique_record_ids": 194,
+    "all_records_exist_in_phase108_base": true,
+    "javascript_syntax": true,
+    "iphone13_native_vs_carrier_boundary": true,
+    "pixel9a_native_vs_carrier_boundary": true,
+    "purchase_source_boundary_galaxy_s24_au": true,
+    "purchase_source_boundary_galaxy_s25_softbank": true,
+    "docomo_exact_runtime_path": true,
+    "rakuten_ast_not_launched_preserved": true,
+    "solqvia_real_device_satellite_evidence_added": 0,
+    "html_changes": 0,
+    "canonical_changes": 0,
+    "sitemap_changes": 0,
+    "new_indexable_urls": 0
+  },
+  "errors": []
+}
