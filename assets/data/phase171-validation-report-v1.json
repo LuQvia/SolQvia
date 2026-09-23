@@ -30,7 +30,13 @@
     "page_assets_once_each": true,
     "new_indexable_urls": 0,
     "canonical_changes": 0,
-    "sitemap_changes": 0
+    "sitemap_changes": 0,
+    "softbank_legacy_repair_condition_date_preserved": true,
+    "ymobile_legacy_repair_condition_date_preserved": true
   },
-  "errors": []
+  "errors": [],
+  "notes": [
+    "SoftBank repair-in-progress restriction remains explicitly labeled as 2026-08-08 evidence because Phase171 did not reconfirm it on the current official route.",
+    "Y!mobile repair/loaner restriction remains explicitly labeled as 2026-08-08 evidence because Phase171 did not reconfirm it on the current official route."
+  ]
 }
