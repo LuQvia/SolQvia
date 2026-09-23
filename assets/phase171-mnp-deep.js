@@ -48,13 +48,13 @@
       const ids=String(root.dataset.mnpProvider||'').split(',').map(s=>s.trim()).filter(Boolean);
       if(ids.length){
         const recs=ids.map(id=>map.get(id)).filter(Boolean);
-        root.innerHTML='<div class="p171-head"><div><p class="eyebrow">Phase171 · MNP Reservation Deep Master</p><h2>MNP予約番号の発行方法・発行できない条件</h2><p>予約番号方式とMNPワンストップを分け、発行窓口・受付時間・本人確認・再発行・特殊契約を確認します。</p></div><span>公式再確認: 2026-09-23</span></div><div class="p171-records">'+recs.map(detail).join('')+'</div>';
+        root.innerHTML='<div class="p171-head"><div><p class="eyebrow">Phase172 · MNP Reservation Deep Master</p><h2>MNP予約番号の発行方法・発行できない条件</h2><p>予約番号方式とMNPワンストップを分け、発行窓口・受付時間・本人確認・再発行・特殊契約を確認します。</p></div><span>公式再確認: 2026-09-23</span></div><div class="p171-records">'+recs.map(detail).join('')+'</div>';
         continue;
       }
       const priority=(db.current_priority_ids||[]).map(id=>map.get(id)).filter(Boolean);
-      root.innerHTML='<div class="p171-head"><div><p class="eyebrow">Phase171 · MNP Reservation Deep Master</p><h2>予約番号・ワンストップ手続き診断</h2><p>72サービスを統一形式で確認。主要9サービスは2026年9月23日公式再確認済み、残りは旧確認日を保持します。</p></div><span>72 services</span></div>'+
+      root.innerHTML='<div class="p171-head"><div><p class="eyebrow">Phase172 · MNP Reservation Deep Master</p><h2>予約番号・ワンストップ手続き診断</h2><p>72サービスを統一形式で確認。最新再検証済みサービスは2026年9月23日公式再確認済み、残りは旧確認日を保持します。</p></div><span>72 services</span></div>'+
         '<div class="p171-search"><label for="p171Query">事業者名で検索</label><input id="p171Query" type="search" placeholder="例: docomo / povo / IIJmio"><small>「最新公式再確認」と「旧証拠日」を混同しない表示です。</small></div>'+
-        '<div class="p171-priority"><h3>最新深掘り 9サービス</h3><div class="p171-records" id="p171Priority">'+priority.map(detail).join('')+'</div></div>'+
+        '<div class="p171-priority"><h3>最新深掘り '+priority.length+'サービス</h3><div class="p171-records" id="p171Priority">'+priority.map(detail).join('')+'</div></div>'+
         '<div class="p171-all"><h3>全72サービス</h3><div class="p171-table-wrap"><table class="p171-table"><thead><tr><th>事業者</th><th>証拠鮮度</th><th>ワンストップ</th><th>発行窓口</th><th>発行目安</th><th>有効期限</th></tr></thead><tbody id="p171Rows"></tbody></table></div></div>';
       const input=root.querySelector('#p171Query'), tbody=root.querySelector('#p171Rows');
       const renderRows=()=>{

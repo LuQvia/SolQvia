@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "release": "phase172-mvno-mnp-current-exact-wave1",
+  "checked_at": "2026-09-23",
+  "validation_mode": "connector_static_validation",
+  "pass": true,
+  "coverage": {
+    "total_services": 72,
+    "current_exact_services": 16,
+    "legacy_carried_services": 56,
+    "newly_currentized_services": 7,
+    "wired_existing_pages": 8
+  },
+  "upgraded_services": [
+    "IIJmio",
+    "mineo",
+    "BIGLOBEモバイル",
+    "日本通信SIM",
+    "HISモバイル",
+    "NUROモバイル",
+    "イオンモバイル"
+  ],
+  "checks": {
+    "record_ids_unique": true,
+    "current_exact_dates_correct": true,
+    "legacy_evidence_dates_preserved": true,
+    "iijmio_issue_time_and_data_sim_boundary": true,
+    "mineo_time_window_and_next_day_notification": true,
+    "biglobe_next_day_and_share_sim_boundary": true,
+    "nihontsushin_two_day_and_name_mismatch_boundary": true,
+    "his_no_unverified_fixed_issue_time": true,
+    "nuro_one_to_two_days_and_no_extension_boundary": true,
+    "aeon_eight_oclock_cutoff_and_unpaid_blocker": true,
+    "static_mineo_guidance_currentized": true,
+    "static_his_stale_timing_removed": true,
+    "javascript_syntax": true,
+    "page_assets_once_each": true,
+    "new_indexable_urls": 0,
+    "canonical_changes": 0,
+    "sitemap_changes": 0
+  },
+  "errors": []
+}
