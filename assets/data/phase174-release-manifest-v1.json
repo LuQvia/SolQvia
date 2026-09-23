@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.0",
+  "release": "phase174-mnp-diagnosis-engine",
+  "date": "2026-09-23",
+  "baseline": "Phase173 hotfix main 51be7c528d15cc601b6859c12992c1a82300d5ba",
+  "goal": "Turn the current-exact MNP procedure master into a problem-solving diagnosis engine that maps user-selected contract/flow/account states to provider-specific blockers and next actions without inventing unsupported account status.",
+  "outputs": [
+    "assets/data/phase174-mnp-diagnosis-rules-v1.json",
+    "assets/data/phase174-validation-report-v1.json",
+    "assets/phase174-mnp-diagnosis.js",
+    "assets/phase174-mnp-diagnosis.css",
+    "scripts/phase174-mnp-diagnosis-validate.mjs",
+    "ja/technology/smartphone/mvno-mnp-reservation-number-directory/index.html"
+  ],
+  "coverage": {
+    "current_exact_providers": 23,
+    "normalized_issue_rules": 89,
+    "diagnosis_taxonomy_items": 19,
+    "real_account_observation_providers": 1,
+    "public_diagnosis_pages": 1
+  },
+  "diagnosis_dimensions": [
+    "contract type: voice / data / SMS-only",
+    "MNP One-Stop vs reservation-number flow",
+    "active reservation number",
+    "expired reservation number / reissue",
+    "login / authentication",
+    "SMS / OTP receive failure",
+    "unpaid charges",
+    "SIM/eSIM reissue or transfer in progress",
+    "other procedure in progress",
+    "multiple lines / share / same group",
+    "representative / main / pair line",
+    "new-contract or activation waiting period",
+    "target carrier already processing",
+    "normal cancellation started first",
+    "name / date-of-birth mismatch",
+    "payment method invalid",
+    "Web route unavailable",
+    "issue request still pending"
+  ],
+  "key_results": [
+    "Only current_exact/current-scope-limited provider records enter the diagnosis engine.",
+    "Explicitly ineligible contract types can return a hard stop; unknown/not-assumed eligibility returns verification, not denial.",
+    "MNP One-Stop and reservation-number flows remain separate and provider-specific.",
+    "Provider blocker strings are normalized into shared diagnosis taxonomy while retaining the original evidence text.",
+    "Issue timing and reissue/cancellation information are surfaced separately from blocker diagnosis.",
+    "LinksMate real-account observation remains visually and structurally separate from official provider rules.",
+    "J:COM source-side outbound unknowns remain unknown rather than inferred.",
+    "LIBMO next-business-day rule remains preserved."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_changes": 0,
+    "sitemap_changes": 0
+  },
+  "next_step": "Phase175: currentize only the highest-value remaining legacy MNP providers where official evidence materially improves the diagnosis engine, rather than indiscriminately updating all 49 long-tail services. Prioritize distinctive blockers and GSC/search demand."
+}
