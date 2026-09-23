@@ -70,7 +70,8 @@ if(!String(yu?.reservation_number?.issue_timing).includes("最大2日"))errors.p
 if(!(yu?.blockers||[]).some(x=>String(x).includes("支払い方法が無効")))errors.push({error:"yu_payment"});
 
 const lib=map.get("legacy-13-libmo");
-if(!String(lib?.reservation_number?.issue_timing).includes("翌日"))errors.push({error:"libmo_issue"});
+if(!String(lib?.reservation_number?.issue_timing).includes("翌営業日"))errors.push({error:"libmo_business_day_issue"});
+if(!String(lib?.reservation_number?.issue_timing).includes("土日祝日"))errors.push({error:"libmo_weekend_exclusion"});
 if(!(lib?.blockers||[]).some(x=>String(x).includes("8日以内")))errors.push({error:"libmo_8day"});
 
 if(schema.schema_version!=="1.1")errors.push({error:"schema_version"});

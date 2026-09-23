@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "release": "phase173-mvno-mnp-current-exact-wave2",
+  "release": "phase173-libmo-business-day-hotfix",
   "date": "2026-09-23",
   "baseline": "Phase172 main a7b860187d7ad88bfdc9c306efc0291f77783d8c",
   "goal": "Promote seven additional MNP providers to current exact/current-scope-limited records and introduce an explicit SolQvia real-account observation layer for LinksMate without conflating user-observed behavior with provider SLAs.",
@@ -39,13 +39,14 @@
     "LinksMate: official next-day 09:00 eligibility, same-group one-at-a-time rule, and cross-group parallel rule are structured.",
     "LinksMate: user-observed same-day issuance after next-day eligibility is stored only as SolQvia real-account observation, not as an official SLA.",
     "y.u mobile: up-to-two-day issuance, 15-day validity, payment-method blocker and auto-cancel behavior are structured.",
-    "LIBMO: web next-day issuance, new non-MNP contract 8-day restriction, phone/web fee difference, reissue cancellation handling and one-line-at-a-time multi-line behavior are structured."
+    "LIBMO: issuance is corrected to the current governing-term rule: earliest next business day, excluding weekends/holidays/long holiday periods; issue time cannot be specified."
   ],
   "evidence_policy": [
     "Official provider rules remain the authoritative specification layer.",
     "SolQvia real-account observations are stored separately with date, scope and limitations.",
     "An observation is not generalized into a provider-wide SLA unless official evidence confirms it.",
-    "Scope-limited current records keep unknown fields unknown rather than filling them with inference."
+    "Scope-limited current records keep unknown fields unknown rather than filling them with inference.",
+    "Where LIBMO notice pages and governing terms differ, SolQvia prioritizes the standing Important Matters document for issuance timing and records the wording conflict."
   ],
   "seo_surface": {
     "target_indexable_urls": 802,

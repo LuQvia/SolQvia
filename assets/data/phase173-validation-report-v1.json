@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "release": "phase173-mvno-mnp-current-exact-wave2",
+  "release": "phase173-libmo-business-day-hotfix",
   "checked_at": "2026-09-23",
   "validation_mode": "connector_static_validation",
   "pass": true,
@@ -33,13 +33,17 @@
     "linksmate_cross_group_parallel_rule": true,
     "linksmate_real_account_same_day_observation_separated_from_official_sla": true,
     "yu_mobile_two_day_and_payment_method_blocker": true,
-    "libmo_next_day_and_eight_day_new_contract_boundary": true,
     "observation_schema_present": true,
     "javascript_syntax": true,
     "page_assets_once_each": true,
     "new_indexable_urls": 0,
     "canonical_changes": 0,
-    "sitemap_changes": 0
+    "sitemap_changes": 0,
+    "libmo_next_business_day_and_eight_day_new_contract_boundary": true
   },
-  "errors": []
+  "errors": [],
+  "notes": [
+    "LIBMO corrected from next-day wording to earliest next business day, excluding weekends/holidays/long holiday periods, based on the Important Matters document and user correction.",
+    "A 2026 Golden Week notice used 'next day' wording for My Page; SolQvia does not use that event-specific notice as the standing issuance rule."
+  ]
 }
