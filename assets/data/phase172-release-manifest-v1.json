@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "release": "phase172-mvno-mnp-current-exact-wave1",
+  "date": "2026-09-23",
+  "baseline": "Phase171 main 6a099fecd4f00b47d2a68c7d757484e9d3e5dbe2",
+  "goal": "Promote seven high-value MVNO/mobile services from carried-forward 2026-08-08 evidence to current exact 2026-09-23 MNP procedure records, while preserving the 72-service unified master and existing URLs.",
+  "outputs": [
+    "assets/data/phase171-mnp-reservation-deep-master-v1.json",
+    "assets/data/phase172-validation-report-v1.json",
+    "scripts/phase172-mnp-validate.mjs",
+    "assets/phase171-mnp-deep.js",
+    "8 existing Japanese MNP pages wired/updated"
+  ],
+  "coverage": {
+    "total_services": 72,
+    "current_exact_before": 9,
+    "current_exact_after": 16,
+    "legacy_carried_before": 63,
+    "legacy_carried_after": 56,
+    "upgraded_services": 7
+  },
+  "upgraded_services": [
+    "IIJmio",
+    "mineo",
+    "BIGLOBEモバイル",
+    "日本通信SIM",
+    "HISモバイル",
+    "NUROモバイル",
+    "イオンモバイル"
+  ],
+  "key_results": [
+    "IIJmio: current issue-time range, voice-only eligibility, no data/SMS MNP, reissue/expiry timing and one-stop behavior structured.",
+    "mineo: 24-hour request reception, 9:02-20:59 processing window, next-day sequential processing and next-day notification structured.",
+    "BIGLOBE Mobile: next-day notification, 15-day validity, reissue after expiry, active-number cancellation route and share-SIM ordering structured.",
+    "Japan Communications SIM: up-to-two-day issuance/one-stop processing, 15-day validity and identity-mismatch boundary structured.",
+    "HIS Mobile: current My HIS Mobile/USIM/email flow structured; stale unverified carrier-specific issue-time estimates removed from public static guidance.",
+    "NURO Mobile: 1-2 day issuance, no same-day issue, no extension/reissue before expiry, data+SMS exclusion and in-progress-procedure blockers structured.",
+    "AEON Mobile: 08:00 cutoff/23:00 issue timing, phone/store/web channels, non-cancellable issue request, unpaid/SIM-reissue blockers and one-stop behavior structured."
+  ],
+  "evidence_policy": [
+    "No fixed issue time is invented where the current official source does not publish one.",
+    "MNP One-Stop and reservation-number flow remain separate.",
+    "Data-only/SMS-only contracts are not treated as MNP-eligible without explicit official support.",
+    "Static page content is changed only where Phase172 current evidence materially supersedes the older statement."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_changes": 0,
+    "sitemap_changes": 0
+  },
+  "next_step": "Phase173: currentize the next high-value legacy MNP cohort, prioritizing NifMo, OCN Mobile ONE, J:COM MOBILE, QTmobile, LinksMate, y.u mobile and LIBMO, while retaining provider-specific issue-time and blocker evidence."
+}
