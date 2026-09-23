@@ -878,6 +878,14 @@
           ],
           "next_action": "cancel both conflicting applications and retry after the other cancellation is completed, generally from the next day",
           "evidence_class": "carrier_official_current"
+        },
+        {
+          "category": "active_reservation",
+          "evidence": [
+            "MNP reservation number duplicate"
+          ],
+          "next_action": "現在の予約番号の有効期限・取消可否を確認してください。発行済み番号がワンストップや再発行を妨げる事業者では、既存番号を使うか、失効・取消後に次の手続きへ進みます。",
+          "evidence_class": "carrier_official_current"
         }
       ],
       "real_account_observation": null,
@@ -978,6 +986,14 @@
           ],
           "next_action": "音声SIM/音声eSIMの契約有無と現在の発行状態を確認する",
           "evidence_class": "provider_official_current"
+        },
+        {
+          "category": "active_reservation",
+          "evidence": [
+            "すでにMNP予約番号発行中"
+          ],
+          "next_action": "現在の予約番号の有効期限・取消可否を確認してください。発行済み番号がワンストップや再発行を妨げる事業者では、既存番号を使うか、失効・取消後に次の手続きへ進みます。",
+          "evidence_class": "provider_official_current"
         }
       ],
       "real_account_observation": null,
@@ -1053,6 +1069,15 @@
             "通常解約ではパケットシェア脱退が事前に必要"
           ],
           "next_action": "通常解約とMNP転出は別手続きです。通常解約を取消できるか確認し、MNP転出専用フローからやり直してください。",
+          "evidence_class": "provider_official_current"
+        },
+        {
+          "category": "active_reservation",
+          "evidence": [
+            "既にMNP予約番号を発行済みの場合、ワンストップ転出が進まないことがある",
+            "MNPワンストップは転出先からmineo専用ページへ遷移して手続き。既発行番号等で進めない場合は予約番号方式へ切替"
+          ],
+          "next_action": "現在の予約番号の有効期限・取消可否を確認してください。発行済み番号がワンストップや再発行を妨げる事業者では、既存番号を使うか、失効・取消後に次の手続きへ進みます。",
           "evidence_class": "provider_official_current"
         }
       ],
@@ -1226,6 +1251,14 @@
             "プラン変更など別手続き中は解約/MNPボタンが表示されない"
           ],
           "next_action": "Web対象外条件を確認し、電話・店頭など公式の代替窓口がある場合はそちらへ切り替えてください。",
+          "evidence_class": "provider_official_current"
+        },
+        {
+          "category": "active_reservation",
+          "evidence": [
+            "既にMNP予約番号発行済み等でワンストップ手続きできない場合あり"
+          ],
+          "next_action": "現在の予約番号の有効期限・取消可否を確認してください。発行済み番号がワンストップや再発行を妨げる事業者では、既存番号を使うか、失効・取消後に次の手続きへ進みます。",
           "evidence_class": "provider_official_current"
         }
       ],
@@ -1434,6 +1467,14 @@
             "QTnet会員専用ページ認証"
           ],
           "next_action": "契約回線に紐づくID・認証方法を確認し、正しいアカウントで再ログインしてください。 続けてWeb/マイページから再試行します。",
+          "evidence_class": "provider_official_current"
+        },
+        {
+          "category": "active_reservation",
+          "evidence": [
+            "有効期限内のMNP予約番号がすでにある"
+          ],
+          "next_action": "現在の予約番号の有効期限・取消可否を確認してください。発行済み番号がワンストップや再発行を妨げる事業者では、既存番号を使うか、失効・取消後に次の手続きへ進みます。",
           "evidence_class": "provider_official_current"
         }
       ],
@@ -1729,6 +1770,14 @@
           ],
           "next_action": "契約回線に紐づくID・認証方法を確認し、正しいアカウントで再ログインしてください。 続けてWeb/マイページから再試行します。",
           "evidence_class": "provider_official_current"
+        },
+        {
+          "category": "active_reservation",
+          "evidence": [
+            "MNP予約番号をすでに発行済みの場合はワンストップ利用不可"
+          ],
+          "next_action": "現在の予約番号の有効期限・取消可否を確認してください。発行済み番号がワンストップや再発行を妨げる事業者では、既存番号を使うか、失効・取消後に次の手続きへ進みます。",
+          "evidence_class": "provider_official_current"
         }
       ],
       "real_account_observation": null,
@@ -1952,5 +2001,6 @@
         "https://www.jcom.co.jp/service/mobile/column/018.html"
       ]
     }
-  ]
+  ],
+  "rule_count": 89
 }
