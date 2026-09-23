@@ -33,13 +33,16 @@
     "linksmate_cross_group_parallel_rule": true,
     "linksmate_real_account_same_day_observation_separated_from_official_sla": true,
     "yu_mobile_two_day_and_payment_method_blocker": true,
-    "libmo_next_day_and_eight_day_new_contract_boundary": true,
     "observation_schema_present": true,
     "javascript_syntax": true,
     "page_assets_once_each": true,
     "new_indexable_urls": 0,
     "canonical_changes": 0,
-    "sitemap_changes": 0
+    "sitemap_changes": 0,
+    "libmo_next_business_day_and_eight_day_new_contract_boundary": true
   },
-  "errors": []
+  "errors": [],
+  "notes": [
+    "LIBMO issuance baseline corrected to earliest next business day; weekends, holidays and long holiday periods are excluded per the current Important Matters document."
+  ]
 }
