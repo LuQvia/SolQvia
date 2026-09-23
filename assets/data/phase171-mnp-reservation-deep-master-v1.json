@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "release": "phase173-mvno-mnp-current-exact-wave2",
+  "release": "phase173-libmo-business-day-hotfix",
   "checked_at": "2026-09-23",
   "purpose": "Unify MNP reservation-number issuance and MNP One-Stop guidance across carriers/MVNOs with current deep records for nine high-priority services and preserved evidence dates for the legacy long-tail.",
   "record_count": 72,
@@ -1849,7 +1849,7 @@
       },
       "reservation_number": {
         "validity_days": 15,
-        "issue_timing": "マイページ申込は土日祝日を問わず原則翌日発行。重要事項説明では最短翌営業日対応。電話申込は営業日・長期休暇の影響あり",
+        "issue_timing": "最短で翌営業日対応（土日祝日・年末年始など長期休暇期間を除く）。発行は営業日ベースで、時間指定不可。",
         "delivery": "LIBMOマイページ/案内により確認。発行時間の指定不可",
         "reissue": "過去に発行した契約は発行済番号の取消処理が必要な場合あり。LIBMOお客様センターで対応",
         "cancellation": "MNP転出をLIBMOが確認した時点で該当回線解約"
@@ -1857,7 +1857,7 @@
       "channels": {
         "web": {
           "available": true,
-          "hours": "一部を除き24時間。マイページ申込は土日祝日問わず翌日発行案内あり",
+          "hours": "マイページから申請可能。MNP予約番号の発行処理は最短翌営業日（土日祝日・年末年始など長期休暇を除く）。",
           "entry": "LIBMOマイページ > ご解約や他社への転出 > MNP予約番号発行",
           "steps": [
             "LIBMOマイページへログイン",
@@ -1896,6 +1896,8 @@
         "法人の一部請求書払い契約はマイページが利用できない場合あり"
       ],
       "special_rules": [
+        "MNP予約番号の発行は最短で翌営業日対応（土日祝日・年末年始など長期休暇期間を除く）",
+        "発行時間の指定は不可",
         "他社からMNP転入で加入した場合は新規契約8日以内の発行制限の例外",
         "Webで自分でMNP予約番号発行した場合はMNP転出手数料無料",
         "電話で取得したMNP予約番号で転出した場合は1,100円のMNP転出手数料",
@@ -1908,13 +1910,14 @@
         "/ja/technology/smartphone/libmo-mnp-multiple-lines-data-share-left-behind/"
       ],
       "official_sources": [
+        "https://www.libmo.jp/pdf/terms/jyuyo_jiko.pdf",
         "https://www.libmo.jp/mypage_guide/",
         "https://www.libmo.jp/mnporderintroduction/",
         "https://www.libmo.jp/support/guidance/",
-        "https://www.libmo.jp/pdf/terms/jyuyo_jiko.pdf",
         "https://www.libmo.jp/news-archive/2026/04/24/16980/"
       ],
-      "evidence_class": "provider_official_current"
+      "evidence_class": "provider_official_current",
+      "evidence_note": "LIBMOの重要事項説明は『最短で翌営業日対応（土日祝日・年末年始など長期休暇期間を除く）』と明記。2026年GW案内には『マイページは翌日発行』という表現があるため、SolQviaでは恒常的な契約条件に近い重要事項説明を優先し、最短翌営業日・平日ベースとして扱う。"
     },
     {
       "id": "legacy-14-provider",
@@ -5184,6 +5187,7 @@
     "solqvia_real_account_observation_ids": [
       "legacy-09-linksmate"
     ],
-    "note": "Seven additional high-value mobile services were promoted to current exact/current-scope-limited records. LinksMate also carries a separate real-account observation layer supplied by the user, distinct from official claims."
+    "note": "Seven additional high-value mobile services were promoted to current exact/current-scope-limited records. LinksMate also carries a separate real-account observation layer supplied by the user, distinct from official claims.",
+    "libmo_business_day_hotfix": "2026-09-23"
   }
 }
