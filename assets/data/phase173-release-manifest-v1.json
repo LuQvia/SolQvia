@@ -39,7 +39,7 @@
     "LinksMate: official next-day 09:00 eligibility, same-group one-at-a-time rule, and cross-group parallel rule are structured.",
     "LinksMate: user-observed same-day issuance after next-day eligibility is stored only as SolQvia real-account observation, not as an official SLA.",
     "y.u mobile: up-to-two-day issuance, 15-day validity, payment-method blocker and auto-cancel behavior are structured.",
-    "LIBMO: web next-day issuance, new non-MNP contract 8-day restriction, phone/web fee difference, reissue cancellation handling and one-line-at-a-time multi-line behavior are structured."
+    "LIBMO: earliest next-business-day issuance, exclusion of weekends/holidays/long holiday periods, new non-MNP contract 8-day restriction, phone/web fee difference, reissue cancellation handling and one-line-at-a-time multi-line behavior are structured."
   ],
   "evidence_policy": [
     "Official provider rules remain the authoritative specification layer.",
@@ -54,5 +54,10 @@
     "canonical_changes": 0,
     "sitemap_changes": 0
   },
-  "next_step": "Phase174: currentize the next legacy MNP cohort based on search value and official-source availability, while prioritizing providers with distinctive blocker/reissue behavior and preserving current-vs-observed evidence layers."
+  "next_step": "Phase174: currentize the next legacy MNP cohort based on search value and official-source availability, while prioritizing providers with distinctive blocker/reissue behavior and preserving current-vs-observed evidence layers.",
+  "hotfix_2026_09_23": {
+    "provider": "LIBMO",
+    "correction": "Changed generic next-day wording to earliest next business day, excluding weekends, holidays and long holiday periods.",
+    "authority": "Current LIBMO Important Matters document takes precedence for the baseline rule; seasonal notices are retained as context, not the default rule."
+  }
 }
