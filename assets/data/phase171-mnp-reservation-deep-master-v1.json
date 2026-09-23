@@ -1849,7 +1849,7 @@
       },
       "reservation_number": {
         "validity_days": 15,
-        "issue_timing": "マイページ申込は土日祝日を問わず原則翌日発行。重要事項説明では最短翌営業日対応。電話申込は営業日・長期休暇の影響あり",
+        "issue_timing": "最短で翌営業日対応。土日祝日・年末年始など長期休暇期間を除く。発行時間の指定は不可",
         "delivery": "LIBMOマイページ/案内により確認。発行時間の指定不可",
         "reissue": "過去に発行した契約は発行済番号の取消処理が必要な場合あり。LIBMOお客様センターで対応",
         "cancellation": "MNP転出をLIBMOが確認した時点で該当回線解約"
@@ -1857,14 +1857,14 @@
       "channels": {
         "web": {
           "available": true,
-          "hours": "一部を除き24時間。マイページ申込は土日祝日問わず翌日発行案内あり",
+          "hours": "マイページから申請可能。予約番号の発行は最短翌営業日（土日祝日・年末年始など長期休暇期間を除く）",
           "entry": "LIBMOマイページ > ご解約や他社への転出 > MNP予約番号発行",
           "steps": [
             "LIBMOマイページへログイン",
             "MNP予約番号発行を選択",
             "対象回線を確認",
             "予約番号発行を申請",
-            "原則翌日に発行結果を確認"
+            "最短翌営業日以降に発行結果を確認"
           ]
         },
         "app": {
@@ -1896,6 +1896,7 @@
         "法人の一部請求書払い契約はマイページが利用できない場合あり"
       ],
       "special_rules": [
+        "通常仕様は最短翌営業日対応。土日祝日・年末年始など長期休暇期間は発行営業日に含めない",
         "他社からMNP転入で加入した場合は新規契約8日以内の発行制限の例外",
         "Webで自分でMNP予約番号発行した場合はMNP転出手数料無料",
         "電話で取得したMNP予約番号で転出した場合は1,100円のMNP転出手数料",
@@ -1914,7 +1915,11 @@
         "https://www.libmo.jp/pdf/terms/jyuyo_jiko.pdf",
         "https://www.libmo.jp/news-archive/2026/04/24/16980/"
       ],
-      "evidence_class": "provider_official_current"
+      "evidence_class": "provider_official_current",
+      "evidence_notes": [
+        "LIBMO重要事項説明は『最短で翌営業日対応（土日祝日・年末年始など長期休暇期間を除く）』と明記。",
+        "一部の季節営業案内にはマイページ翌日発行の記載例があるが、SolQviaの恒常仕様判定では重要事項説明を優先する。"
+      ]
     },
     {
       "id": "legacy-14-provider",
@@ -5185,5 +5190,10 @@
       "legacy-09-linksmate"
     ],
     "note": "Seven additional high-value mobile services were promoted to current exact/current-scope-limited records. LinksMate also carries a separate real-account observation layer supplied by the user, distinct from official claims."
+  },
+  "phase173_hotfix": {
+    "checked_at": "2026-09-23",
+    "provider": "LIBMO",
+    "reason": "Correct issue timing from generic next-day wording to next-business-day/weekday issuance baseline."
   }
 }
