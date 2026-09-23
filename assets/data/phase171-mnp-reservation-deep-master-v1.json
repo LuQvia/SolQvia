@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "release": "phase172-mvno-mnp-current-exact-wave1",
+  "release": "phase173-mvno-mnp-current-exact-wave2",
   "checked_at": "2026-09-23",
   "purpose": "Unify MNP reservation-number issuance and MNP One-Stop guidance across carriers/MVNOs with current deep records for nine high-priority services and preserved evidence dates for the legacy long-tail.",
   "record_count": 72,
-  "current_deep_count": 16,
-  "legacy_carried_count": 56,
+  "current_deep_count": 23,
+  "legacy_carried_count": 49,
   "semantics": {
     "current_exact": "Reverified against current official carrier/service information on 2026-09-23.",
     "carried_forward": "Retains the prior official check date; not silently treated as current exact verification.",
@@ -29,7 +29,14 @@
     "legacy-05-sim",
     "legacy-06-his",
     "legacy-04-nuro",
-    "legacy-14-provider"
+    "legacy-14-provider",
+    "legacy-11-nifmo",
+    "legacy-12-ocn-one",
+    "legacy-22-j-com-mobile",
+    "legacy-07-qt",
+    "legacy-09-linksmate",
+    "legacy-10-y-u-mobile",
+    "legacy-13-libmo"
   ],
   "legacy_source": {
     "carrier_procedure": "assets/data/carrier-procedure-data-v1.json",
@@ -1322,35 +1329,44 @@
     {
       "id": "legacy-07-qt",
       "provider": "QTモバイル",
-      "provider_group": "legacy_mvno_or_mobile_service",
-      "priority_tier": "legacy",
+      "provider_group": "qtnet",
+      "priority_tier": "current_deep",
+      "current_exact": true,
       "freshness": {
-        "status": "carried_forward",
-        "source_checked_at": "2026-08-08",
-        "phase171_rechecked": false,
-        "note": "Phase171 did not silently promote this provider to a 2026-09-23 exact re-verification."
+        "status": "current_exact",
+        "source_checked_at": "2026-09-23",
+        "phase171_rechecked": true,
+        "phase173_rechecked": true
       },
       "eligibility": {
-        "mnp_reservation": "per_legacy_record",
-        "voice_contract_only": null,
-        "data_only": null,
-        "sms_only": null
+        "mnp_reservation": "available_for_MNP_eligible_voice_line",
+        "voice_contract_only": true,
+        "data_only": "not assumed MNP eligible",
+        "sms_only": "not assumed MNP eligible"
       },
       "one_stop": {
-        "status": "乗り換え先の対応状況を確認。予約番号方式も利用可能。"
+        "status": "not_supported_current_official_page_states_two_stop_only",
+        "reservation_number_required": true
       },
       "reservation_number": {
-        "validity_days": null,
-        "issue_timing": "Dタイプは2〜5日程度、A/Sタイプは翌日以降。",
-        "delivery": null,
-        "reissue": null,
-        "cancellation": null
+        "validity_days": 14,
+        "issue_timing": "Dタイプは2〜5日程度、Aタイプ・Sタイプは翌日以降",
+        "delivery": "申込時に入力した連絡先メールアドレスへ送信",
+        "reissue": "有効期限内の予約番号がある間は新規発行不可。期限終了後に再手続き",
+        "cancellation": "MNP転出完了でQTモバイルの該当SIM契約が自動解約"
       },
       "channels": {
         "web": {
-          "available": null,
-          "hours": null,
-          "steps": []
+          "available": true,
+          "hours": "QTnet会員専用ページ",
+          "entry": "QTnet会員専用ページ > MNP予約番号発行",
+          "steps": [
+            "QTnet会員専用ページへログイン",
+            "MNP予約番号発行を選択",
+            "対象電話番号と連絡先メールアドレスを確認",
+            "発行申込",
+            "Dタイプは2〜5日程度、A/Sタイプは翌日以降にメールで番号を確認"
+          ]
         },
         "app": {
           "available": null,
@@ -1358,29 +1374,40 @@
           "steps": []
         },
         "phone": {
-          "available": null,
-          "hours": null,
-          "number": null
+          "available": true,
+          "hours": "QTモバイル問合せ窓口営業時間",
+          "number": "QTモバイルお問合せ窓口",
+          "fee": "1,100円"
         },
         "store": {
-          "available": null,
+          "available": false,
           "hours": null
         }
       },
-      "blockers": [
-        "有効期限内のMNP予約番号がある間は新しい番号を発行できない",
-        "電話手続きは有料（公式FAQ掲載の手数料を申請時に再確認）"
+      "authentication": [
+        "QTnet会員専用ページ認証"
       ],
-      "special_rules": [],
+      "blockers": [
+        "有効期限内のMNP予約番号がすでにある",
+        "メンテナンス等で通常より発行に時間がかかる場合あり"
+      ],
+      "special_rules": [
+        "Web発行は手数料無料",
+        "電話申込は1電話番号あたり1,100円",
+        "QTモバイルは現行公式ページでツーストップ方式のみ対応と案内",
+        "MNP転出先で回線切替完了後、QTモバイルの該当SIM契約は自動解約"
+      ],
+      "error_states": [],
       "article_url": "/ja/technology/smartphone/qtmobile-mnp-reservation-number-guide/",
       "troubleshooting_urls": [
         "/ja/technology/smartphone/qtmobile-mnp-reissue-expired-procedure-lock/"
       ],
       "official_sources": [
-        "https://faq.qtmobile.jp/faq_detail.html?id=900409"
+        "https://faq.qtmobile.jp/faq_detail.html?id=900409",
+        "https://faq.qtmobile.jp/faq_detail.html?id=900075",
+        "https://www.qtmobile.jp/guide/mnp_point/"
       ],
-      "evidence_class": "official_source_legacy",
-      "current_exact": false
+      "evidence_class": "provider_official_current"
     },
     {
       "id": "legacy-08-bb-excite",
@@ -1449,35 +1476,44 @@
     {
       "id": "legacy-09-linksmate",
       "provider": "LinksMate",
-      "provider_group": "legacy_mvno_or_mobile_service",
-      "priority_tier": "legacy",
+      "provider_group": "logiclinks",
+      "priority_tier": "current_deep_plus_real_account_observation",
+      "current_exact": true,
       "freshness": {
-        "status": "carried_forward",
-        "source_checked_at": "2026-08-08",
-        "phase171_rechecked": false,
-        "note": "Phase171 did not silently promote this provider to a 2026-09-23 exact re-verification."
+        "status": "current_exact_plus_solqvia_observation",
+        "source_checked_at": "2026-09-23",
+        "phase171_rechecked": true,
+        "phase173_rechecked": true
       },
       "eligibility": {
-        "mnp_reservation": "per_legacy_record",
-        "voice_contract_only": null,
-        "data_only": null,
-        "sms_only": null
+        "mnp_reservation": "available_for_voice_service_line",
+        "voice_contract_only": true,
+        "data_only": "not MNP eligible",
+        "sms_only": "not MNP eligible"
       },
       "one_stop": {
-        "status": "転入側では対応。転出時は乗り換え先の対応状況を確認。"
+        "status": "current official transfer-out flow uses reservation number; one-stop source-side transfer-out not confirmed on current official support pages"
       },
       "reservation_number": {
-        "validity_days": null,
-        "issue_timing": "公式サポートでは発行に1〜2日程度の案内あり。",
-        "delivery": null,
-        "reissue": null,
-        "cancellation": null
+        "validity_days": 15,
+        "issue_timing": "公式: 開通完了日の翌日午前9時以降から発行申込可能。申込後の固定発行所要時間は現行公式ページで明示確認できない",
+        "delivery": "LinksMateマイページでMNP予約番号を案内",
+        "reissue": "有効期限切れ時は再発行可能。再発行番号も発行日を含め15日間",
+        "cancellation": "MNP転出完了をLinksMateが確認した時点で該当サービス解約"
       },
       "channels": {
         "web": {
           "available": true,
-          "hours": null,
-          "steps": []
+          "hours": "開通完了日の翌日09:00以降から発行申込可能",
+          "entry": "LinksMateマイページ > MNP予約番号発行・確認",
+          "steps": [
+            "マイページへログイン",
+            "MNP予約番号発行・確認を開く",
+            "転出する電話番号を選択",
+            "MNP予約番号を発行申込",
+            "マイページで予約番号・有効期限を確認",
+            "同一グループ内で次のSIMを転出する場合は1枚目のMNP転出完了後に次の番号を発行"
+          ]
         },
         "app": {
           "available": null,
@@ -1485,65 +1521,99 @@
           "steps": []
         },
         "phone": {
-          "available": null,
+          "available": false,
           "hours": null,
           "number": null
         },
         "store": {
-          "available": null,
+          "available": false,
           "hours": null
         }
       },
-      "blockers": [
-        "同一契約グループに複数SIMがある場合、1枚目の転出完了後でないと次のSIMの予約番号を発行できない場合がある",
-        "期限切れ後、再発行可能になるまで最大3日程度かかる場合がある",
-        "SIM発行当日は予約番号を発行できない"
+      "authentication": [
+        "LinksMateマイページ認証"
       ],
-      "special_rules": [],
+      "blockers": [
+        "SIMカード開通完了当日はMNP予約番号発行不可",
+        "同一契約グループ内に複数SIMがある場合、複数同時にMNP転出不可",
+        "同一グループでは1枚目のMNP転出完了前に2枚目のMNP予約番号を発行できない"
+      ],
+      "special_rules": [
+        "別グループで契約しているSIMは各グループ1枚ずつ同時にMNP転出可能",
+        "MNP予約番号発行申込は開通完了日の翌日午前9時以降から可能",
+        "初期契約解除でMNP転出できるのはMNP転入した回線に関する条件があるため、通常新規発番と区別する"
+      ],
+      "real_account_observation": {
+        "evidence_class": "solqvia_user_real_account_observation",
+        "observation_date": "2026-09-23",
+        "scope": "User's actual LinksMate account experience, not an official SLA or universal guarantee.",
+        "findings": [
+          "契約・開通の翌日以降にMNP予約番号を申請した範囲では即日で発行された",
+          "同一グループ内では1回線のみ発行可能だった"
+        ],
+        "reconciliation": [
+          "公式規約が『開通翌日午前9時以降から申込可能』を確認しており、ユーザー観測の開始条件と整合",
+          "公式FAQが同一グループ内の複数同時MNP転出不可を確認しており、ユーザー観測と整合",
+          "即日発行速度そのものは公式の固定SLAとしては扱わず、実利用観測としてのみ表示"
+        ]
+      },
+      "error_states": [],
       "article_url": "/ja/technology/smartphone/linksmate-mnp-reservation-number-guide/",
       "troubleshooting_urls": [
         "/ja/technology/smartphone/linksmate-mnp-multiple-sim-reissue-delay/"
       ],
       "official_sources": [
+        "https://linksmate.jp/userpolicy/",
+        "https://linksmate.jp/eoii/",
         "https://linksmate.jp/support/help/?id=391",
         "https://linksmate.jp/support/help/?id=15",
-        "https://linksmate.jp/support/help/?id=389"
+        "https://linksmate.jp/support/help/?id=339",
+        "https://linksmate.jp/support/faq/"
       ],
-      "evidence_class": "official_source_legacy",
-      "current_exact": false
+      "evidence_class": "provider_official_current_plus_solqvia_real_account_observation"
     },
     {
       "id": "legacy-10-y-u-mobile",
       "provider": "y.u mobile",
-      "provider_group": "legacy_mvno_or_mobile_service",
-      "priority_tier": "legacy",
+      "provider_group": "yumobile",
+      "priority_tier": "current_deep",
+      "current_exact": true,
       "freshness": {
-        "status": "carried_forward",
-        "source_checked_at": "2026-08-08",
-        "phase171_rechecked": false,
-        "note": "Phase171 did not silently promote this provider to a 2026-09-23 exact re-verification."
+        "status": "current_exact",
+        "source_checked_at": "2026-09-23",
+        "phase171_rechecked": true,
+        "phase173_rechecked": true
       },
       "eligibility": {
-        "mnp_reservation": "per_legacy_record",
-        "voice_contract_only": null,
-        "data_only": null,
-        "sms_only": null
+        "mnp_reservation": "available_for_voice_SIM",
+        "voice_contract_only": true,
+        "data_only": "not MNP eligible",
+        "sms_only": "not MNP eligible"
       },
       "one_stop": {
-        "status": "乗り換え先の対応状況を確認。予約番号方式も利用可能。"
+        "status": "reservation_number_flow_is_current_official_outbound_flow; source-side one-stop not confirmed on current official help pages"
       },
       "reservation_number": {
-        "validity_days": null,
-        "issue_timing": "発行には最大2日かかる場合があります。",
-        "delivery": null,
-        "reissue": null,
-        "cancellation": null
+        "validity_days": 15,
+        "issue_timing": "発行に最大2日かかる場合あり",
+        "delivery": "マイページの対象SIM欄に予約番号・発効日・有効期限を表示",
+        "reissue": "支払い方法が有効な状態でマイページから再手続き。固定再発行時間は公式に明記なし",
+        "cancellation": "MNP転入先で開通すると対象SIMは自動解約。通常解約を先に行うと電話番号が即失効"
       },
       "channels": {
         "web": {
           "available": true,
-          "hours": null,
-          "steps": []
+          "hours": "マイページ",
+          "entry": "マイページ > 契約内容確認・変更 > SIM情報 > 変更 > MNP予約番号発行",
+          "steps": [
+            "マイページへログイン",
+            "契約内容確認・変更を選択",
+            "対象SIMの変更を選択",
+            "解約したいとき > MNP予約番号発行",
+            "最後のSIMの場合は注意事項を確認",
+            "発行を選択",
+            "発行準備中から予約番号・発効日・有効期限表示へ変わるのを確認"
+          ]
         },
         "app": {
           "available": null,
@@ -1552,63 +1622,81 @@
         },
         "phone": {
           "available": null,
-          "hours": null,
-          "number": null
+          "hours": "11:00-19:00",
+          "number": "0120-790-657"
         },
         "store": {
-          "available": null,
+          "available": false,
           "hours": null
         }
       },
-      "blockers": [
-        "支払い方法が無効だと発行できない",
-        "発行後に支払い方法が無効になると予約番号がキャンセルされる",
-        "シェアプランの追加SIM契約者による発行はカスタマーセンター対応"
+      "authentication": [
+        "y.u mobileマイページ認証"
       ],
-      "special_rules": [],
+      "blockers": [
+        "支払い方法が無効だとMNP予約番号を発行できない",
+        "発行後に支払い方法が無効になるとMNP予約番号がキャンセルされる",
+        "通常のSIM解約を先に行うと電話番号が即失効しMNPできなくなる"
+      ],
+      "special_rules": [
+        "MNP転出完了時に対象SIMは自動解約",
+        "U-NEXT月額プラン付き契約は他社MNP完了時に視聴権利を失う",
+        "シェア U-NEXTなど複数SIMは対象SIMごとに手続きを確認"
+      ],
+      "error_states": [],
       "article_url": "/ja/technology/smartphone/yu-mobile-mnp-reservation-number-guide/",
       "troubleshooting_urls": [
         "/ja/technology/smartphone/yu-mobile-mnp-payment-invalid-share-sim/"
       ],
       "official_sources": [
+        "https://help.yumobile.jp/manual/mnp",
         "https://help.yumobile.jp/troubleshooting/detail/issue-mnp-reservation-number",
-        "https://help.yumobile.jp/manual/share-sim"
+        "https://help.yumobile.jp/troubleshooting/detail/sim-cancel",
+        "https://help.yumobile.jp/faq/detail/how-to-mnp"
       ],
-      "evidence_class": "official_source_legacy",
-      "current_exact": false
+      "evidence_class": "provider_official_current"
     },
     {
       "id": "legacy-11-nifmo",
       "provider": "NifMo",
-      "provider_group": "legacy_mvno_or_mobile_service",
-      "priority_tier": "legacy",
+      "provider_group": "nifty",
+      "priority_tier": "current_deep",
+      "current_exact": true,
       "freshness": {
-        "status": "carried_forward",
-        "source_checked_at": "2026-08-08",
-        "phase171_rechecked": false,
-        "note": "Phase171 did not silently promote this provider to a 2026-09-23 exact re-verification."
+        "status": "current_exact",
+        "source_checked_at": "2026-09-23",
+        "phase171_rechecked": true,
+        "phase173_rechecked": true
       },
       "eligibility": {
-        "mnp_reservation": "per_legacy_record",
-        "voice_contract_only": null,
-        "data_only": null,
-        "sms_only": null
+        "mnp_reservation": "available_for_voice_SIM",
+        "voice_contract_only": true,
+        "data_only": "not MNP eligible",
+        "sms_only": "not MNP eligible"
       },
       "one_stop": {
-        "status": "対応事業者として案内あり。乗り換え先のワンストップ対応を確認。"
+        "status": "reservation_number_required_in_current_official_flow",
+        "reservation_number_required_if_destination_flow_does_not_support_one_stop": true
       },
       "reservation_number": {
-        "validity_days": null,
-        "issue_timing": "公式ページで一律の発行日数の明記は確認できないため、申請画面の案内を優先。",
-        "delivery": null,
-        "reissue": null,
-        "cancellation": null
+        "validity_days": 15,
+        "issue_timing": "申請から1〜2日程度。即時発行不可",
+        "delivery": "メールまたはNifMo利用状況照会で確認",
+        "reissue": "有効期限切れ後は再取得",
+        "cancellation": "NifMo回線の解除取消は不可。単純解約とMNP転出を混同しない"
       },
       "channels": {
         "web": {
-          "available": null,
-          "hours": null,
-          "steps": []
+          "available": true,
+          "hours": "Web手続き",
+          "entry": "解除・MNP転出・解約の手続き > 電話番号そのまま他社へお乗り換え > MNP転出のお手続き",
+          "steps": [
+            "@nifty IDとログインパスワードで手続きページへログイン",
+            "電話番号そのまま他社へお乗り換えを選択",
+            "MNP転出のお手続きを選択",
+            "MNP予約番号を申請",
+            "1〜2日後を目安にメールまたはNifMo利用状況照会で予約番号・有効期限を確認"
+          ]
         },
         "app": {
           "available": null,
@@ -1625,54 +1713,76 @@
           "hours": null
         }
       },
-      "blockers": [
-        "データ通信専用SIM・SMS対応SIMはMNP転出不可",
-        "NifMo回線の解除取消はできないため、単純解約とMNP転出を取り違えない"
+      "authentication": [
+        "@nifty ID",
+        "ログインパスワード"
       ],
-      "special_rules": [],
+      "blockers": [
+        "データ通信専用SIMはMNP転出不可",
+        "SMS対応SIMはMNP転出不可",
+        "MNP予約番号は即時発行されない",
+        "単純なNifMo解除を先に行うと電話番号を引き継ぐMNP転出と異なる処理になる"
+      ],
+      "special_rules": [
+        "他社でMNP転入が完了したことをNifMoが確認後、自動的にNifMo解除",
+        "月末に転入完了するとNifMo解除が翌月になる場合あり",
+        "NifMo回線の解除取消は不可"
+      ],
+      "error_states": [],
       "article_url": "/ja/technology/smartphone/nifmo-mnp-reservation-number-guide/",
       "troubleshooting_urls": [
         "/ja/technology/smartphone/nifmo-mnp-data-sms-cancel-mistake/"
       ],
       "official_sources": [
+        "https://faq.support.nifty.com/3316",
         "https://nifmo.nifty.com/cancel/",
-        "https://nifmo.nifty.com/navi/mnp/"
+        "https://nifmo.nifty.com/notice/"
       ],
-      "evidence_class": "official_source_legacy",
-      "current_exact": false
+      "evidence_class": "provider_official_current"
     },
     {
       "id": "legacy-12-ocn-one",
       "provider": "OCN モバイル ONE",
-      "provider_group": "legacy_mvno_or_mobile_service",
-      "priority_tier": "legacy",
+      "provider_group": "ntt_docomo_ocn",
+      "priority_tier": "current_deep",
+      "current_exact": true,
       "freshness": {
-        "status": "carried_forward",
-        "source_checked_at": "2026-08-08",
-        "phase171_rechecked": false,
-        "note": "Phase171 did not silently promote this provider to a 2026-09-23 exact re-verification."
+        "status": "current_exact",
+        "source_checked_at": "2026-09-23",
+        "phase171_rechecked": true,
+        "phase173_rechecked": true
       },
       "eligibility": {
-        "mnp_reservation": "per_legacy_record",
-        "voice_contract_only": null,
-        "data_only": null,
-        "sms_only": null
+        "mnp_reservation": "available_for_voice_enabled_SIM",
+        "voice_contract_only": true,
+        "data_only": "not MNP eligible",
+        "sms_only": "not MNP eligible"
       },
       "one_stop": {
-        "status": "対応。乗り換え先が対応し予約番号未発行ならワンストップで手続き可能。"
+        "status": "supported",
+        "reservation_number_required_if_destination_flow_does_not_support_one_stop_or_reservation_number_already_issued": true
       },
       "reservation_number": {
-        "validity_days": null,
-        "issue_timing": "申し込みから3営業日程度。",
-        "delivery": null,
-        "reissue": null,
-        "cancellation": null
+        "validity_days": 15,
+        "issue_timing": "申込から3営業日程度",
+        "delivery": "OCN マイページで予約番号・有効期限を確認。ワンストップ未完了時に発行された番号は対象電話番号へSMS通知される場合あり",
+        "reissue": "失効後に再申込。発行済み番号がある場合はワンストップではなく予約番号方式を利用",
+        "cancellation": "MNP転出完了まではOCN契約継続。転出完了時に自動解約"
       },
       "channels": {
         "web": {
           "available": true,
-          "hours": null,
-          "steps": []
+          "hours": "OCN マイページ",
+          "entry": "OCN マイページ > OCN モバイル ONE > MNP転出予約番号",
+          "steps": [
+            "OCN マイページへログイン",
+            "OCN モバイル ONE契約を選択",
+            "認証方法を選択し認証番号を入力",
+            "MNP転出予約番号のお申し込みへ進む",
+            "対象電話番号・個人/法人区分を確認",
+            "発行申込",
+            "3営業日程度後にOCN マイページで予約番号・有効期限を確認"
+          ]
         },
         "app": {
           "available": null,
@@ -1685,15 +1795,25 @@
           "number": null
         },
         "store": {
-          "available": null,
+          "available": false,
           "hours": null
         }
       },
-      "blockers": [
-        "MNP予約番号をすでに発行している場合はワンストップではなく発行済み番号を使う手順になる場合がある",
-        "対象は音声対応SIM"
+      "authentication": [
+        "dアカウントまたはOCN ID",
+        "選択した連絡方法による認証番号"
       ],
-      "special_rules": [],
+      "blockers": [
+        "音声対応SIM以外はMNP転出対象外",
+        "MNP予約番号をすでに発行済みの場合はワンストップ利用不可",
+        "OCN モバイル ONE契約と異なるOCNメールアドレスでログインすると対象契約が表示されない"
+      ],
+      "special_rules": [
+        "MNPワンストップで転出先申込が完了すれば別途OCN解約手続き不要",
+        "ワンストップ手続きが完了しなかった場合、OCN側で発行された予約番号を使って転出先で手続き可能",
+        "転出完了後はSIM返却が必要"
+      ],
+      "error_states": [],
       "article_url": "/ja/technology/smartphone/ocn-mobile-one-mnp-reservation-number-guide/",
       "troubleshooting_urls": [
         "/ja/technology/smartphone/ocn-mobile-one-mnp-three-business-days-onestop-existing-number/"
@@ -1701,74 +1821,100 @@
       "official_sources": [
         "https://support.ocn.ne.jp/personal/purpose/detail/pid2900001fiq/",
         "https://support.ocn.ne.jp/personal/purpose/detail/pid2900001k6s/",
-        "https://support.ocn.ne.jp/personal/purpose/detail/pid2900001k6t/"
+        "https://support.ocn.ne.jp/personal/purpose/detail/pid2900001k6t/",
+        "https://support.ocn.ne.jp/personal/purpose/detail/pid2900002die/"
       ],
-      "evidence_class": "official_source_legacy",
-      "current_exact": false
+      "evidence_class": "provider_official_current"
     },
     {
       "id": "legacy-13-libmo",
       "provider": "LIBMO",
-      "provider_group": "legacy_mvno_or_mobile_service",
-      "priority_tier": "legacy",
+      "provider_group": "tokai_communications",
+      "priority_tier": "current_deep",
+      "current_exact": true,
       "freshness": {
-        "status": "carried_forward",
-        "source_checked_at": "2026-08-08",
-        "phase171_rechecked": false,
-        "note": "Phase171 did not silently promote this provider to a 2026-09-23 exact re-verification."
+        "status": "current_exact",
+        "source_checked_at": "2026-09-23",
+        "phase171_rechecked": true,
+        "phase173_rechecked": true
       },
       "eligibility": {
-        "mnp_reservation": "per_legacy_record",
-        "voice_contract_only": null,
-        "data_only": null,
-        "sms_only": null
+        "mnp_reservation": "available_for_MNP_eligible_voice_line",
+        "voice_contract_only": true,
+        "data_only": "not assumed MNP eligible",
+        "sms_only": "not assumed MNP eligible"
       },
       "one_stop": {
-        "status": "乗り換え先の対応状況を確認。予約番号方式も利用可能。"
+        "status": "source-side one-stop not confirmed on current official LIBMO pages; reservation-number flow is current official route"
       },
       "reservation_number": {
-        "validity_days": null,
-        "issue_timing": "公式公開ページでは一律の日数を確認できないため、申請時の案内を優先。",
-        "delivery": null,
-        "reissue": null,
-        "cancellation": null
+        "validity_days": 15,
+        "issue_timing": "マイページ申込は土日祝日を問わず原則翌日発行。重要事項説明では最短翌営業日対応。電話申込は営業日・長期休暇の影響あり",
+        "delivery": "LIBMOマイページ/案内により確認。発行時間の指定不可",
+        "reissue": "過去に発行した契約は発行済番号の取消処理が必要な場合あり。LIBMOお客様センターで対応",
+        "cancellation": "MNP転出をLIBMOが確認した時点で該当回線解約"
       },
       "channels": {
         "web": {
           "available": true,
-          "hours": null,
-          "steps": []
+          "hours": "一部を除き24時間。マイページ申込は土日祝日問わず翌日発行案内あり",
+          "entry": "LIBMOマイページ > ご解約や他社への転出 > MNP予約番号発行",
+          "steps": [
+            "LIBMOマイページへログイン",
+            "MNP予約番号発行を選択",
+            "対象回線を確認",
+            "予約番号発行を申請",
+            "原則翌日に発行結果を確認"
+          ]
         },
         "app": {
-          "available": null,
-          "hours": null,
-          "steps": []
+          "available": true,
+          "hours": "TLCポイントアプリからマイページへアクセス可能",
+          "steps": [
+            "TLCポイントアプリからLIBMOマイページへアクセス",
+            "MNP予約番号発行へ進む"
+          ]
         },
         "phone": {
-          "available": null,
-          "hours": null,
-          "number": null
+          "available": true,
+          "hours": "10:00-19:00（年間数日休業あり）",
+          "number": "0120-27-1146",
+          "fee": "電話取得した予約番号で転出した場合は1,100円のMNP転出手数料が発生する旨が重要事項説明に記載"
         },
         "store": {
-          "available": null,
+          "available": false,
           "hours": null
         }
       },
-      "blockers": [
-        "複数回線は1回線ごとにMNPのりかえ申請",
-        "セット割やキャンペーン条件、端末分割残額がある場合は転出後の影響を確認"
+      "authentication": [
+        "LIBMOユーザID・パスワード",
+        "dアカウント連携済みの場合はdアカウントログイン可"
       ],
-      "special_rules": [],
+      "blockers": [
+        "新規加入でMNP転入ではない回線は契約内容確認書受領日から8日以内、MNP予約番号を発行しない",
+        "過去に発行した予約番号の取消処理が必要な場合あり",
+        "法人の一部請求書払い契約はマイページが利用できない場合あり"
+      ],
+      "special_rules": [
+        "他社からMNP転入で加入した場合は新規契約8日以内の発行制限の例外",
+        "Webで自分でMNP予約番号発行した場合はMNP転出手数料無料",
+        "電話で取得したMNP予約番号で転出した場合は1,100円のMNP転出手数料",
+        "複数回線は1回線ごとにMNP申請。データシェアの残り回線は自動解約されず継続",
+        "MNP転出月の音声通話機能付SIM利用料は日割りなし"
+      ],
+      "error_states": [],
       "article_url": "/ja/technology/smartphone/libmo-mnp-reservation-number-guide/",
       "troubleshooting_urls": [
         "/ja/technology/smartphone/libmo-mnp-multiple-lines-data-share-left-behind/"
       ],
       "official_sources": [
+        "https://www.libmo.jp/mypage_guide/",
         "https://www.libmo.jp/mnporderintroduction/",
-        "https://www.libmo.jp/pdf/terms/jyuyo_jiko.pdf"
+        "https://www.libmo.jp/support/guidance/",
+        "https://www.libmo.jp/pdf/terms/jyuyo_jiko.pdf",
+        "https://www.libmo.jp/news-archive/2026/04/24/16980/"
       ],
-      "evidence_class": "official_source_legacy",
-      "current_exact": false
+      "evidence_class": "provider_official_current"
     },
     {
       "id": "legacy-14-provider",
@@ -2312,34 +2458,37 @@
     {
       "id": "legacy-22-j-com-mobile",
       "provider": "J:COM MOBILE",
-      "provider_group": "legacy_mvno_or_mobile_service",
-      "priority_tier": "legacy",
+      "provider_group": "jcom",
+      "priority_tier": "current_deep",
+      "current_exact": true,
       "freshness": {
-        "status": "carried_forward",
-        "source_checked_at": "2026-08-08",
-        "phase171_rechecked": false,
-        "note": "Phase171 did not silently promote this provider to a 2026-09-23 exact re-verification."
+        "status": "current_exact_scope_limited",
+        "source_checked_at": "2026-09-23",
+        "phase171_rechecked": true,
+        "phase173_rechecked": true,
+        "note": "Current public J:COM pages were rechecked, but a source-side outbound reservation-number issuance time/route was not clearly published; unknown fields remain unknown rather than inferred."
       },
       "eligibility": {
-        "mnp_reservation": "per_legacy_record",
+        "mnp_reservation": "supported_as_MNP_mechanism_but_source_side_outbound_public_details_limited",
         "voice_contract_only": null,
-        "data_only": null,
-        "sms_only": null
+        "data_only": "not assumed MNP eligible",
+        "sms_only": "not assumed MNP eligible"
       },
       "one_stop": {
-        "status": "対応。J:COM MOBILEはMNPワンストップ対応事業者として公式案内されています。"
+        "status": "J:COM MOBILE supports MNP One-Stop; current public pages are strongest for J:COM as destination, so source-side outbound applicability is not overclaimed"
       },
       "reservation_number": {
-        "validity_days": null,
-        "issue_timing": "ワンストップは予約番号の発行待ちが不要です。予約番号方式の個別発行時間は公開ページで一律の明記を確認できないため、申請画面の表示を優先します。",
-        "delivery": null,
-        "reissue": null,
-        "cancellation": null
+        "validity_days": 15,
+        "issue_timing": "J:COMの現行公開ページでJ:COM MOBILE転出元としての一律発行時間を確認できないため推測しない",
+        "delivery": "現行公開ページで転出元としての通知方式を確認できないため推測しない",
+        "reissue": "現行公開ページで転出元としての再発行条件を確認できないため個別確認",
+        "cancellation": "転出完了で旧回線契約が終了する一般MNP原則を確認。J:COM転出元固有の予約取消手順は公開ページで明確に確認できず個別確認"
       },
       "channels": {
         "web": {
           "available": null,
           "hours": null,
+          "entry": "ご利用中の方 各種お手続き / サポートから確認",
           "steps": []
         },
         "app": {
@@ -2348,31 +2497,36 @@
           "steps": []
         },
         "phone": {
-          "available": null,
-          "hours": null,
-          "number": null
+          "available": true,
+          "hours": "09:00-18:00 year-round for J:COM MOBILE inquiries",
+          "number": "0120-989-970"
         },
         "store": {
           "available": null,
           "hours": null
         }
       },
+      "authentication": [],
       "blockers": [
-        "ワンストップと予約番号方式を同時に進めない",
-        "店舗手続きではワンストップを利用できない場合がある",
-        "転出先によって予約番号の必要残日数が異なるため、予約番号方式では取得後すぐ申し込む"
+        "J:COMの公開MNPページは転入案内が中心で、J:COM MOBILEからの転出予約番号発行時間・経路はPhase173時点で明確に公開確認できない",
+        "ワンストップと予約番号方式を同時に進めない"
       ],
-      "special_rules": [],
+      "special_rules": [
+        "J:COM MOBILEはMNPワンストップ対応を案内",
+        "予約番号方式では一般に15日有効。転入先が必要とする残日数を確認",
+        "SolQviaはJ:COM転出元固有の発行時間を推測しない"
+      ],
+      "error_states": [],
       "article_url": "/ja/technology/smartphone/jcom-mobile-mnp-reservation-number-guide/",
       "troubleshooting_urls": [
         "/ja/technology/smartphone/jcom-mobile-mnp-onestop-login-reservation-number/"
       ],
       "official_sources": [
         "https://www.jcom.co.jp/service/mobile/usage/mnp.html",
-        "https://www.jcom.co.jp/service/mobile/column/038.html"
+        "https://www.jcom.co.jp/service/mobile/column/038.html",
+        "https://www.jcom.co.jp/service/mobile/column/018.html"
       ],
-      "evidence_class": "official_source_legacy",
-      "current_exact": false
+      "evidence_class": "provider_official_current_scope_limited"
     },
     {
       "id": "legacy-23-provider",
@@ -5014,5 +5168,22 @@
     ],
     "upgraded_count": 7,
     "note": "Seven high-value MVNO/mobile services were promoted from carried-forward legacy evidence to current exact official-source records."
+  },
+  "phase173": {
+    "checked_at": "2026-09-23",
+    "upgraded_ids": [
+      "legacy-11-nifmo",
+      "legacy-12-ocn-one",
+      "legacy-22-j-com-mobile",
+      "legacy-07-qt",
+      "legacy-09-linksmate",
+      "legacy-10-y-u-mobile",
+      "legacy-13-libmo"
+    ],
+    "upgraded_count": 7,
+    "solqvia_real_account_observation_ids": [
+      "legacy-09-linksmate"
+    ],
+    "note": "Seven additional high-value mobile services were promoted to current exact/current-scope-limited records. LinksMate also carries a separate real-account observation layer supplied by the user, distinct from official claims."
   }
 }
