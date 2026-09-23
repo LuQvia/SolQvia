@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "release": "phase171-mnp-reservation-deep-master",
+  "date": "2026-09-23",
+  "baseline": "Phase170 main 3fa0f86e66d6440fb81080a5fcc1abc8d98dfe70",
+  "goal": "Rebuild MNP reservation-number / One-Stop guidance as a unified procedure master with current exact evidence for high-priority carriers and preserved legacy evidence dates for long-tail services.",
+  "outputs": [
+    "assets/data/phase171-mnp-reservation-deep-master-v1.json",
+    "assets/data/phase171-mnp-reservation-deep-schema-v1.json",
+    "assets/data/phase171-validation-report-v1.json",
+    "assets/phase171-mnp-deep.js",
+    "assets/phase171-mnp-deep.css",
+    "scripts/phase171-mnp-validate.mjs",
+    "9 existing Japanese MNP pages wired to the unified panel"
+  ],
+  "coverage": {
+    "unified_services": 72,
+    "current_exact_2026_09_23": 9,
+    "legacy_carried_with_2026_08_08_date": 63,
+    "existing_pages_wired": 9,
+    "new_indexable_urls": 0
+  },
+  "current_exact_services": [
+    "NTTドコモ",
+    "ahamo",
+    "au",
+    "UQ mobile",
+    "SoftBank",
+    "Y!mobile",
+    "LINEMO",
+    "楽天モバイル",
+    "povo2.0"
+  ],
+  "key_results": [
+    "MNP One-Stop and reservation-number issuance are modeled as separate flows.",
+    "Web/app/phone/store route, hours, step sequence, delivery method, validity, reissue/cancellation, authentication, blockers, special contracts and known error states are structured fields.",
+    "Data-only/SMS-only contracts are not assumed MNP-eligible.",
+    "docomo/ahamo representative-line, billing, Hikari pair and Data Plus prerequisite states are retained.",
+    "SoftBank/Y!mobile after-20:00 notification behavior is currentized.",
+    "Rakuten Mobile same-day issue and OTP flow are currentized.",
+    "povo2.0 data-only exclusion and same-day/account-state blockers are currentized.",
+    "63 long-tail services retain their original 2026-08-08 official evidence date instead of being silently promoted.",
+    "SoftBank repair and Y!mobile repair/loaner restrictions remain explicitly marked as 2026-08-08 legacy evidence because Phase171 did not reconfirm those conditions."
+  ],
+  "seo_surface": {
+    "target_indexable_urls": 802,
+    "new_indexable_urls": 0,
+    "removed_indexable_urls": 0,
+    "canonical_changes": 0,
+    "sitemap_changes": 0
+  },
+  "evidence_model": {
+    "real_device_required": false,
+    "reason": "MNP reservation issuance is primarily an account/procedure domain; current carrier primary-source evidence is the authoritative layer. Real account-flow captures can later add UI evidence without replacing official rules."
+  },
+  "next_step": "Phase172: reverify high-value MVNOs (IIJmio, mineo, BIGLOBE, Nihon Tsushin SIM, HIS Mobile, NURO Mobile, AEON Mobile) into current_exact records and extend error-state diagnostics without increasing URL count."
+}
