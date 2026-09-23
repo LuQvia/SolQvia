@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "release": "phase174-mnp-diagnosis-engine",
+  "checked_at": "2026-09-23",
+  "validation_mode": "connector_static_validation",
+  "pass": true,
+  "coverage": {
+    "current_exact_providers": 23,
+    "normalized_issue_rules": 89,
+    "diagnosis_taxonomy_items": 19,
+    "real_account_observation_providers": 1,
+    "public_pages_wired": 1
+  },
+  "checks": {
+    "current_exact_only_engine": true,
+    "data_only_hard_stop_only_when_explicit": true,
+    "unknown_data_eligibility_returns_verify_not_denial": true,
+    "one_stop_and_reservation_number_separated": true,
+    "qt_two_stop_boundary": true,
+    "jcom_scope_limited_unknowns_preserved": true,
+    "linksmate_official_vs_real_account_observation_separated": true,
+    "libmo_next_business_day_preserved": true,
+    "povo_unpaid_sim_reissue_new_contract_sms_rules": true,
+    "yu_mobile_payment_method_rule": true,
+    "ahamo_representative_pair_rule": true,
+    "au_sms_route_rule": true,
+    "javascript_syntax": true,
+    "page_assets_once_each": true,
+    "new_indexable_urls": 0,
+    "canonical_changes": 0,
+    "sitemap_changes": 0
+  },
+  "errors": []
+}
