@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "release": "phase176-evidence-moat",
+  "checked_at": "2026-10-13",
+  "purpose": "Expose function-scoped evidence coverage and the next SolQvia real-device verification gaps without converting official capability or third-party tests into first-party runtime proof.",
+  "principles": [
+    "SIM/eSIM recognition is not mobile-data, voice, SMS, OTP, 5G or VoLTE/IMS proof.",
+    "APN configuration and eSIM profile provisioning are different layers.",
+    "Voice and SMS aggregate results are never expanded into direction-specific outcomes.",
+    "Third-party field tests are never relabeled as SolQvia real-device evidence.",
+    "Unverified means unknown, not unsupported.",
+    "No compatibility score is calculated from mixed evidence classes."
+  ],
+  "functions": [
+    {
+      "id": "esim_profile_configuration",
+      "aliases": [
+        "esim_profile_configuration",
+        "profile_or_sim_setup"
+      ],
+      "priority": 1,
+      "ja": "eSIMプロファイル設定",
+      "en": "eSIM profile configuration"
+    },
+    {
+      "id": "sim_information_recognition",
+      "aliases": [
+        "sim_information_recognition",
+        "sim_recognition",
+        "device_recognition"
+      ],
+      "priority": 2,
+      "ja": "SIM/eSIM認識",
+      "en": "SIM/eSIM recognition"
+    },
+    {
+      "id": "mobile_data",
+      "aliases": [
+        "mobile_data"
+      ],
+      "priority": 3,
+      "ja": "モバイルデータ通信",
+      "en": "Mobile data"
+    },
+    {
+      "id": "voice_outgoing",
+      "aliases": [
+        "voice_outgoing"
+      ],
+      "priority": 4,
+      "ja": "音声発信",
+      "en": "Outgoing voice"
+    },
+    {
+      "id": "voice_incoming",
+      "aliases": [
+        "voice_incoming"
+      ],
+      "priority": 5,
+      "ja": "音声着信",
+      "en": "Incoming voice"
+    },
+    {
+      "id": "sms_send",
+      "aliases": [
+        "sms_send"
+      ],
+      "priority": 6,
+      "ja": "SMS送信",
+      "en": "SMS sending"
+    },
+    {
+      "id": "sms_receive",
+      "aliases": [
+        "sms_receive"
+      ],
+      "priority": 7,
+      "ja": "SMS受信",
+      "en": "SMS receiving"
+    },
+    {
+      "id": "otp",
+      "aliases": [
+        "otp",
+        "sms_otp",
+        "otp_receive"
+      ],
+      "priority": 8,
+      "ja": "SMS認証・OTP受信",
+      "en": "SMS OTP reception"
+    },
+    {
+      "id": "tethering",
+      "aliases": [
+        "tethering"
+      ],
+      "priority": 9,
+      "ja": "テザリング",
+      "en": "Tethering"
+    },
+    {
+      "id": "fiveg_attach",
+      "aliases": [
+        "fiveg_attach",
+        "5g"
+      ],
+      "priority": 10,
+      "ja": "5G実接続",
+      "en": "5G attach"
+    },
+    {
+      "id": "volte_ims_registration",
+      "aliases": [
+        "volte_ims_registration",
+        "ims_registration"
+      ],
+      "priority": 11,
+      "ja": "VoLTE / IMS登録",
+      "en": "VoLTE / IMS registration"
+    },
+    {
+      "id": "rcs",
+      "aliases": [
+        "rcs",
+        "rcs_messaging"
+      ],
+      "priority": 12,
+      "ja": "RCS送受信",
+      "en": "RCS messaging"
+    }
+  ],
+  "evidence_classes": [
+    {
+      "id": "solqvia_real_device",
+      "ja": "SolQvia実機",
+      "en": "SolQvia real-device"
+    },
+    {
+      "id": "external_field_test",
+      "ja": "外部実機",
+      "en": "External field test"
+    },
+    {
+      "id": "official_or_spec",
+      "ja": "公式・仕様",
+      "en": "Official / specification"
+    },
+    {
+      "id": "unverified",
+      "ja": "未確認",
+      "en": "Unverified"
+    }
+  ],
+  "data_sources": {
+    "solqvia_real_device": [
+      "/assets/data/phase131-solqvia-real-device-evidence-v1.json"
+    ],
+    "external_field": [
+      "/assets/data/phase132-external-field-evidence-v1.json",
+      "/assets/data/phase135-external-field-evidence-v1.json",
+      "/assets/data/phase137-external-field-evidence-v1.json",
+      "/assets/data/phase138-external-field-evidence-v1.json",
+      "/assets/data/phase139-external-field-evidence-v1.json",
+      "/assets/data/phase140-external-field-evidence-v1.json",
+      "/assets/data/phase141-external-field-evidence-v1.json"
+    ],
+    "official_runtime": [
+      "/assets/data/phase131-priority-enrichment-v1.json",
+      "/assets/data/phase136-priority-enrichment-v1.json",
+      "/assets/data/phase137-priority-enrichment-v1.json",
+      "/assets/data/phase138-priority-enrichment-v1.json",
+      "/assets/data/phase139-priority-enrichment-v1.json",
+      "/assets/data/phase140-priority-enrichment-v1.json",
+      "/assets/data/phase141-priority-enrichment-v1.json",
+      "/assets/data/phase143-priority-enrichment-v1.json"
+    ]
+  }
+}
