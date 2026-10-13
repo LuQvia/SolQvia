@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "release": "phase175-search-recovery-evidence-moat",
+  "date": "2026-10-13",
+  "purpose": "Controlled search recovery: first conservative batch only. Preserve technical assets while reducing low-signal/high-similarity carrier pages on index surfaces.",
+  "baseline": {
+    "main_commit": "1d34f3d842d869e59118c61a6cf155b481753136",
+    "sitemap_urls": 802,
+    "phase127_reexpanded_urls": 320
+  },
+  "batch1": {
+    "candidate_count": 61,
+    "selection": "Phase127-restored carrier pages with 0 clicks, <=2 impressions, nearest-neighbor similarity >=0.80, and 2024-or-earlier/known-legacy device scope.",
+    "actions": [
+      "robots noindex,follow",
+      "data-index-status=noindex",
+      "ad ineligible",
+      "remove from sitemap",
+      "remove from site-search JSON",
+      "remove from RSS",
+      "remove from primary all-articles listing"
+    ],
+    "preserved": [
+      "URL",
+      "canonical",
+      "page content",
+      "technical data",
+      "internal utility links"
+    ],
+    "excluded": [
+      "2025/2026 current-device pages",
+      "MNP",
+      "eSIM/network troubleshooting",
+      "general troubleshooting",
+      "Device Passport",
+      "diagnosis",
+      "evidence ledger"
+    ]
+  },
+  "sitemap": {
+    "before": 802,
+    "after": 741
+  },
+  "observation": {
+    "minimum_days": 14,
+    "recommended_days": 21,
+    "expand_only_if": "whole-site impressions/query breadth and retained-page rankings are stable or improving"
+  },
+  "seo_rule": "Final indexable page count is an outcome, not a KPI.",
+  "gsc_note": "Latest URL-level GSC CSV was not available in this workspace. Batch 1 intentionally uses a narrow historical-signal + duplication gate. Re-score with current GSC before batch 2."
+}
