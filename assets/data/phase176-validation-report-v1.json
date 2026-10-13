@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "release": "phase176-evidence-moat",
+  "checked_at": "2026-10-13",
+  "pass": true,
+  "qa": {
+    "changed_files": 9,
+    "device_passport_pages": 2,
+    "verification_ledger_pages": 2,
+    "evidence_functions": 12,
+    "otp_separate": true,
+    "voice_direction_separate": true,
+    "sms_direction_separate": true,
+    "volte_ims_separate": true,
+    "sim_recognition_not_runtime_proof": true,
+    "apn_not_esim_profile": true,
+    "external_not_first_party": true,
+    "unknown_not_unsupported": true,
+    "mixed_evidence_composite_score": false,
+    "sitemap_urls": 741,
+    "sitemap_change": 0,
+    "indexability_change": 0,
+    "new_indexable_urls": 0
+  },
+  "deployment_gate": {
+    "safe_to_fast_forward_main": true,
+    "phase175_observation_surface_preserved": true
+  }
+}
