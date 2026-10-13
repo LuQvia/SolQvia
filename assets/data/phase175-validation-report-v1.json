@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "release": "phase175-search-recovery-evidence-moat",
+  "checked_at": "2026-10-13",
+  "pass": true,
+  "qa": {
+    "candidate_pages": 61,
+    "candidate_html_changed": 61,
+    "unexpected_candidate_html_changes": 0,
+    "missing_candidate_changes": 0,
+    "search_surface_leaks": 0,
+    "sitemap_urls_before": 802,
+    "sitemap_urls_after": 741,
+    "canonical_policy": "unchanged",
+    "deletion_policy": "no URL/content deletion",
+    "robots_policy": "noindex,follow",
+    "ad_policy": "candidate pages ineligible",
+    "excluded_scopes": [
+      "2025/2026 current devices",
+      "MNP",
+      "eSIM/network troubleshooting",
+      "general troubleshooting",
+      "Device Passport",
+      "diagnosis",
+      "evidence"
+    ]
+  },
+  "deployment_gate": {
+    "branch": "phase175-search-recovery-evidence-moat",
+    "safe_to_fast_forward_main": true,
+    "requirement_after_deploy": "Observe GSC 14-21 days before considering Batch 2."
+  },
+  "limitation": "The latest URL-level GSC Pages CSV was not available during this implementation. Batch 1 is intentionally conservative and uses Phase127 historical performance plus high-similarity and age/legacy gates."
+}
