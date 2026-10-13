@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "release": "phase176-evidence-moat",
+  "date": "2026-10-13",
+  "purpose": "Strengthen SolQvia's defensible evidence layer without changing the Phase175 index surface.",
+  "changes": [
+    "Add 12-function evidence taxonomy including OTP as an independent runtime outcome.",
+    "Add per-device Evidence Moat panel to Device Passport.",
+    "Show SolQvia real-device, external field-test, official/spec and unknown states separately.",
+    "Generate next first-party verification priorities for each selected device.",
+    "Add evidence-coverage overview to real-device verification ledger.",
+    "Preserve all titles, descriptions, canonicals, robots directives and sitemap membership."
+  ],
+  "seo_surface": {
+    "sitemap_change": 0,
+    "indexability_change": 0,
+    "new_indexable_urls": 0
+  },
+  "evidence_boundary": {
+    "sim_recognition_is_not_runtime_proof": true,
+    "apn_is_not_esim_profile": true,
+    "aggregate_voice_not_split": true,
+    "aggregate_sms_not_split": true,
+    "external_not_first_party": true,
+    "unknown_not_unsupported": true
+  }
+}
