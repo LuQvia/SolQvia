@@ -90,6 +90,17 @@
     });
   };
 
+  const planDiagnosisBridgePaths = new Set([
+    '/ja/technology/smartphone/carrier-apn-sim-troubleshooting/',
+    '/ja/technology/smartphone/smartphone-esim-not-activating/',
+    '/ja/technology/smartphone/smartphone-apn-settings-not-working/',
+    '/ja/technology/smartphone/japan-carrier-band-compatibility-guide-2026/'
+  ]);
+  const loadPlanDiagnosisBridge = async () => {
+    if (!planDiagnosisBridgePaths.has(location.pathname)) return;
+    try { await loadScript('/assets/luqevora-plan-diagnosis-bridge.js'); } catch (_) {}
+  };
+
   // Phase98: controlled AdSense placement. The engine intentionally avoids interactive tools,
   // short pages, and critical-action UI. Existing legacy placeholders are rebuilt at runtime.
   const phase98AdPolicy = Object.freeze({
@@ -234,6 +245,7 @@
     await enableAnalytics();
     attachEvents();
     attachLearningLoop();
+    await loadPlanDiagnosisBridge();
     const adPlacement = prepareAdSlots();
     await loadAdSenseForReview();
     await enableManualAds(adPlacement);
