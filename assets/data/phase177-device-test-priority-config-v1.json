@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "release": "phase177-device-test-priority-engine",
+  "checked_at": "2026-10-27",
+  "purpose": "Prioritize SolQvia first-party device×carrier verification while sitewide search is in recovery.",
+  "weights": {
+    "demand_current_max": 35,
+    "demand_historical_max": 15,
+    "evidence_gap_max": 25,
+    "verification_leverage_max": 20,
+    "family_reach_max": 10,
+    "cross_carrier_uncertainty_max": 5,
+    "verified_commercial_max": 5,
+    "acquisition_cost_penalty_max": 10
+  },
+  "target_carriers": [
+    "NTTドコモ",
+    "au",
+    "SoftBank",
+    "楽天モバイル"
+  ],
+  "runtime_functions": [
+    "esim_profile_configuration",
+    "sim_information_recognition",
+    "mobile_data",
+    "voice_outgoing",
+    "voice_incoming",
+    "sms_send",
+    "sms_receive",
+    "otp",
+    "tethering",
+    "fiveg_attach",
+    "volte_ims_registration",
+    "rcs"
+  ],
+  "recovery_gate": {
+    "trigger": "last_28d_impressions / previous_28d_impressions < 0.5",
+    "when_triggered": [
+      "Cap GSC demand contribution at demand_historical_max.",
+      "Freeze additional noindex/index-surface contraction.",
+      "Treat 3-month GSC as historical demand evidence, not current traffic."
+    ]
+  },
+  "evidence_rules": [
+    "Only SolQvia-owned first-party results reduce the first-party evidence gap.",
+    "External field tests never count as SolQvia first-party verification.",
+    "Official capability does not count as runtime success.",
+    "Aggregate voice does not fill outgoing/incoming.",
+    "Aggregate SMS does not fill send/receive.",
+    "SIM/eSIM recognition does not fill data, voice, SMS, OTP, 5G or VoLTE/IMS.",
+    "APN configuration and eSIM profile configuration are separate.",
+    "Unknown is not treated as unsupported."
+  ],
+  "commercial_rules": [
+    "Commercial score is zero unless explicit conversion input is supplied.",
+    "A Luqevora bridge alone is not treated as revenue proof.",
+    "No EPC/CVR/revenue value is inferred."
+  ],
+  "acquisition_rules": [
+    "Cost penalty is zero unless an explicit acquisition-cost input is supplied.",
+    "No current market price is guessed.",
+    "One acquired device may cover multiple target-carrier scenarios."
+  ],
+  "diversification": {
+    "scenario_queue_family_cap": 4,
+    "scenario_queue_exact_record_cap": 2,
+    "first_batch_scenarios": 12,
+    "first_batch_family_cap": 2
+  }
+}
