@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "release": "phase178-winner-strengthening",
+  "checked_at": "2026-10-27",
+  "pass": true,
+  "qa": {
+    "target_pages": 8,
+    "sitemap_urls": 802,
+    "sitemap_change": 0,
+    "new_indexable_urls": 0,
+    "noindex_changes": 0,
+    "canonical_changes": 0,
+    "rss_changes": 0,
+    "site_search_changes": 0,
+    "broad_template_changes": 0,
+    "phase178_answer_blocks_per_page": 1,
+    "date_modified": "2026-10-27",
+    "phase176_preserved": true,
+    "phase177_preserved": true
+  },
+  "gsc_focus": {
+    "docomo_apn": {
+      "clicks": 4,
+      "impressions": 303,
+      "position": 11.24
+    },
+    "kids_main": {
+      "clicks": 3,
+      "impressions": 86,
+      "position": 7.83
+    },
+    "suspicious_app": {
+      "clicks": 0,
+      "impressions": 156,
+      "position": 27.28
+    },
+    "mnp_pages": "Japanet / Nihontsushin / Daredemo Smartphone / Pikara Mobile"
+  },
+  "official_recheck": {
+    "docomo_apn": true,
+    "ky41c_manual": true,
+    "google_play_protect": true,
+    "apple_profiles_and_delete_restrictions": true,
+    "japanet_service_basis": true,
+    "nihontsushin_mnp": true,
+    "daredemo_mnp": true,
+    "pikara_mnp": true
+  }
+}
