@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "release": "phase177-gsc-recovery-summary",
+  "source": "solqvia.com-Performance-on-Search-2026-10-27.zip",
+  "source_window": {
+    "from": "2026-07-25",
+    "to": "2026-10-24",
+    "filter": "過去3か月",
+    "search_type": "web_text"
+  },
+  "facts": {
+    "chart_total": {
+      "clicks": 109,
+      "impressions": 7708
+    },
+    "page_table_total": {
+      "clicks": 111,
+      "impressions": 7847
+    },
+    "before_breakpoint_2026_08_17_to_08_22": {
+      "days": 6,
+      "clicks": 37,
+      "impressions": 2988,
+      "avg_impressions_per_day": 498
+    },
+    "after_breakpoint_2026_08_24_to_08_29": {
+      "days": 6,
+      "clicks": 0,
+      "impressions": 108,
+      "avg_impressions_per_day": 18
+    },
+    "after_to_before_impression_ratio": 0.0361,
+    "current_28d_2026_09_27_to_10_24": {
+      "clicks": 1,
+      "impressions": 26
+    },
+    "prior_28d_2026_08_30_to_09_26": {
+      "clicks": 3,
+      "impressions": 120
+    },
+    "languages": {
+      "ja": {
+        "page_rows": 568,
+        "clicks": 101,
+        "impressions": 3730,
+        "ctr_percent": 2.71
+      },
+      "en": {
+        "page_rows": 256,
+        "clicks": 9,
+        "impressions": 4098,
+        "ctr_percent": 0.22
+      }
+    },
+    "query_clusters": {
+      "docomo_apn": {
+        "clicks": 4,
+        "impressions": 231
+      },
+      "suspicious_apps": {
+        "clicks": 0,
+        "impressions": 155
+      },
+      "mnp": {
+        "clicks": 3,
+        "impressions": 136
+      },
+      "esim": {
+        "clicks": 0,
+        "impressions": 36
+      }
+    },
+    "strong_pages": [
+      {
+        "path": "/ja/technology/smartphone/pixel-adaptive-connectivity-5g/",
+        "clicks": 8,
+        "impressions": 54,
+        "ctr_percent": 14.81,
+        "position": 10.26
+      },
+      {
+        "path": "/ja/technology/smartphone/docomo-apn-settings-android-2026/",
+        "clicks": 4,
+        "impressions": 303,
+        "ctr_percent": 1.32,
+        "position": 11.24
+      },
+      {
+        "path": "/ja/technology/smartphone/digno-bx3-softbank-2025-carrier-compatibility/",
+        "clicks": 4,
+        "impressions": 13,
+        "ctr_percent": 30.77,
+        "position": 5.77
+      },
+      {
+        "path": "/ja/technology/smartphone/docomo-kids-phone-apn-ymobile-softbank-guide/",
+        "clicks": 3,
+        "impressions": 86,
+        "ctr_percent": 3.49,
+        "position": 7.83
+      },
+      {
+        "path": "/ja/technology/smartphone/japanet-mobile-service-mnp-reservation-number-guide/",
+        "clicks": 3,
+        "impressions": 48,
+        "ctr_percent": 6.25,
+        "position": 7.6
+      }
+    ],
+    "phase175_batch1_historical_signal": {
+      "urls": 61,
+      "clicks": 1,
+      "impressions": 76,
+      "pages_with_impressions": 56
+    }
+  },
+  "structural_timeline": [
+    {
+      "date": "2026-08-20",
+      "phase": "124",
+      "change": "Newly held/noindex 1052 URLs; sitemap 1506 -> 454; indexable keep 454."
+    },
+    {
+      "date": "2026-08-23/24",
+      "event": "GSC impressions collapse from roughly 500/day to tens/day."
+    },
+    {
+      "date": "2026-08-28",
+      "phase": "125",
+      "change": "Selective restoration 26 URLs; 454 -> 480."
+    },
+    {
+      "date": "2026-09-08",
+      "phase": "127",
+      "change": "Re-expansion +320 URLs toward ~800 indexable."
+    }
+  ],
+  "interpretation": {
+    "fact": "The collapse predates Phase127 and follows Phase124 in time.",
+    "inference": "Phase124 mass index-surface contraction is the strongest structural breakpoint to investigate first.",
+    "not_proven": "Temporal alignment does not prove Phase124 is the sole cause."
+  },
+  "guardrails": [
+    "Freeze further noindex/index-surface contraction during recovery.",
+    "Do not treat Phase127 as the presumed root cause.",
+    "Use the 3-month export as demand history, not as a current traffic level.",
+    "Do not infer Query×Page from separate query/page exports.",
+    "Protect pages with clicks and pages with top-20 demand before any future noindex decision.",
+    "Keep Phase176 Evidence Moat independent from SEO surface changes."
+  ]
+}
