@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "release": "phase177-search-recovery-and-device-test-priority",
+  "checked_at": "2026-10-27",
+  "pass": true,
+  "checks": {
+    "restored_phase175_pages": 61,
+    "restore_method": "Exact Phase174 page blobs; no content rewrite.",
+    "sample_restored_robots": "index,follow,max-image-preview:large",
+    "sitemap_urls": 802,
+    "phase176_manifest_present": true,
+    "rss_restored": false,
+    "article_listing_restored": false,
+    "site_search_promotion_restored": false,
+    "priority_config_present": true,
+    "device_cost_template_present": true,
+    "commercial_template_present": true,
+    "recovery_audit_script_present": true,
+    "device_priority_script_present": true,
+    "gsc_summary_present": true,
+    "recovery_plan_present": true
+  },
+  "interpretation_boundary": "Phase124 is the strongest structural breakpoint by timing, but this release does not claim sole causation.",
+  "next_gate": "Use a fresh post-deploy GSC export after 14-21 days before any new broad index-surface change."
+}
