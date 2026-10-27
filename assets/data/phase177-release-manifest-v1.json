@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "release": "phase177-search-recovery-and-device-test-priority",
+  "date": "2026-10-27",
+  "parent_main": "e3030e9445495dc211f43f7e493f7deacf846f5d",
+  "purpose": "Correct Phase175 contraction after reviewing the 2026-10-27 GSC export, add a recovery gate, and make real-device testing priorities reproducible.",
+  "seo_correction": {
+    "phase175_batch1_urls": 61,
+    "action": "Restore exact Phase174 HTML blobs (index,follow) and restore sitemap to 802 URLs.",
+    "not_restored": [
+      "RSS promotion",
+      "all-articles promotion",
+      "site-search JSON promotion"
+    ],
+    "rationale": "The sitewide impression collapse starts 2026-08-23/24, before Phase127 and immediately after the 2026-08-20 Phase124 mass index-surface contraction."
+  },
+  "gsc_basis": {
+    "source": "solqvia.com-Performance-on-Search-2026-10-27.zip",
+    "range": "2026-07-25 to 2026-10-24",
+    "pre_breakpoint_avg_impressions_per_day": 498,
+    "post_breakpoint_avg_impressions_per_day": 18,
+    "post_to_pre_ratio": 0.0361,
+    "current_28d_impressions": 26,
+    "prior_28d_impressions": 120
+  },
+  "recovery_policy": [
+    "Freeze additional noindex batches while recovery gate is active.",
+    "Do not mass-create replacement URLs.",
+    "Strengthen existing demand winners before net-new content.",
+    "Treat 3-month demand as historical while current 28-day visibility remains depressed.",
+    "Do not infer Query×Page from separate GSC exports."
+  ],
+  "phase177_components": [
+    "GSC recovery audit engine",
+    "device×carrier test-priority engine",
+    "explicit weight config",
+    "optional acquisition-cost input",
+    "optional verified-commercial input",
+    "recovery summary",
+    "search-recovery action plan"
+  ],
+  "phase176_preserved": true
+}
