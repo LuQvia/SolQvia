@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0",
+  "release": "phase178-winner-strengthening",
+  "date": "2026-10-27",
+  "purpose": "Strengthen existing URLs with demonstrated GSC demand while preserving the Phase177 recovery freeze and 802-URL sitemap.",
+  "gsc_source": "solqvia.com-Performance-on-Search-2026-10-27.zip",
+  "targets": [
+    {
+      "path": "/ja/technology/smartphone/docomo-apn-settings-android-2026/",
+      "clicks": 4,
+      "impressions": 303,
+      "ctr_percent": 1.32,
+      "position": 11.24,
+      "action": "query-match + answer-first + official current values"
+    },
+    {
+      "path": "/ja/technology/smartphone/docomo-kids-phone-apn-ymobile-softbank-guide/",
+      "clicks": 3,
+      "impressions": 86,
+      "ctr_percent": 3.49,
+      "position": 7.83,
+      "action": "eSIM/APN boundary + manual setup answer-first"
+    },
+    {
+      "path": "/ja/technology/smartphone/docomo-kids-phone-ymobile-softbank-field-test/",
+      "clicks": 1,
+      "impressions": 15,
+      "ctr_percent": 6.67,
+      "position": 8.87,
+      "action": "first-party evidence matrix"
+    },
+    {
+      "path": "/ja/technology/smartphone/smartphone-remove-suspicious-app/",
+      "clicks": 0,
+      "impressions": 156,
+      "ctr_percent": 0,
+      "position": 27.28,
+      "action": "query-match + safe removal sequence + official Google/Apple sources"
+    },
+    {
+      "path": "/ja/technology/smartphone/japanet-mobile-service-mnp-reservation-number-guide/",
+      "clicks": 3,
+      "impressions": 48,
+      "ctr_percent": 6.25,
+      "position": 7.6,
+      "action": "protect winner + answer-first"
+    },
+    {
+      "path": "/ja/technology/smartphone/nihontsushin-sim-mnp-reservation-number-guide/",
+      "clicks": 1,
+      "impressions": 41,
+      "ctr_percent": 2.44,
+      "position": 13.59,
+      "action": "official-current answer-first"
+    },
+    {
+      "path": "/ja/technology/smartphone/daredemo-smartphone-mnp-reservation-number-guide/",
+      "clicks": 0,
+      "impressions": 43,
+      "ctr_percent": 0,
+      "position": 14.37,
+      "action": "query-match + official FAQ facts"
+    },
+    {
+      "path": "/ja/technology/smartphone/pikara-mobile-mnp-reservation-number-guide/",
+      "clicks": 0,
+      "impressions": 32,
+      "ctr_percent": 0,
+      "position": 9.16,
+      "action": "query-match + immediate-answer block"
+    }
+  ],
+  "guardrails": {
+    "new_indexable_urls": 0,
+    "sitemap_change": 0,
+    "noindex_changes": 0,
+    "canonical_changes": 0,
+    "rss_changes": 0,
+    "site_search_changes": 0,
+    "broad_template_changes": 0
+  },
+  "source_checks": [
+    "NTT Docomo APN support: spmode.ne.jp, auth unset/none, IPv4/IPv6.",
+    "KY-41C official manual: SIM information add, QR code, direct server-address input.",
+    "Google Play Protect: scan/warn/disable/remove potentially harmful apps; keep protection enabled.",
+    "Apple: check VPN & Device Management; deletion may be restricted by Screen Time or management.",
+    "Japanet: service is based on Y!mobile communication service; public support contact retained.",
+    "Nihontsushin: MNP one-stop supported; My Page reservation-number route when needed; may take up to two days.",
+    "Daredemo Smartphone: MNP number via help desk; valid 14 days; can be issued at any time.",
+    "Pikara Mobile: My Page/service center issuance; 15-day validity; data-only type not eligible for MNP transfer."
+  ]
+}
