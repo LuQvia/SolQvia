@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "release": "phase177-search-recovery-action-plan",
+  "priority_order": [
+    {
+      "rank": 1,
+      "action": "Cancel Phase175 batch1 contraction",
+      "implementation": "Restore index,follow and sitemap for the 61 URLs; keep RSS/articles/site-search promotion pruned.",
+      "reason": "New GSC shows the site is already in a severe recovery state and the main collapse predates Phase127."
+    },
+    {
+      "rank": 2,
+      "action": "Recovery freeze",
+      "implementation": "No additional noindex batches, mass URL creation, broad title rewrites or sitewide template experiments until fresh post-change GSC is available.",
+      "reason": "Need a clean observation window."
+    },
+    {
+      "rank": 3,
+      "action": "Strengthen existing demand winners",
+      "targets": [
+        "Docomo Android APN",
+        "Docomo kids-phone cross-carrier/eSIM",
+        "MNP reservation-number pages with observed clicks",
+        "Pixel connectivity/diagnostic pages"
+      ],
+      "reason": "These already demonstrate demand or clicks; improve answer-first UX and evidence rather than create duplicate URLs."
+    },
+    {
+      "rank": 4,
+      "action": "CTR/query-match work",
+      "targets": [
+        "Docomo APN: 303 impressions / 4 clicks / pos 11.24",
+        "Suspicious-app cluster: 155 query impressions / 0 clicks",
+        "Japanese MNP cluster: 136 query impressions / 3 clicks"
+      ],
+      "reason": "Existing demand is stronger than net-new page creation opportunities."
+    },
+    {
+      "rank": 5,
+      "action": "English containment, not deletion",
+      "implementation": "Pause net-new English expansion; improve only high-impression English pages and their titles/snippets/intent match.",
+      "evidence": "EN 4098 impressions / 9 clicks (0.22% CTR) versus JA 3730 / 101 (2.71%)."
+    },
+    {
+      "rank": 6,
+      "action": "Run Phase177 device-test priority engine in recovery mode",
+      "implementation": "Cap GSC demand weight; prioritize evidence gaps and test leverage until current GSC recovers.",
+      "reason": "The 3-month export contains substantial pre-collapse data and should not be treated as current demand."
+    }
+  ],
+  "observation": {
+    "minimum_days_after_deploy": 14,
+    "preferred_days": 21,
+    "metrics": [
+      "daily impressions",
+      "daily clicks",
+      "query breadth",
+      "indexed-page coverage",
+      "retained winner rankings"
+    ],
+    "success_signal": "Impressions/query breadth stabilize or rise without loss of click-winning pages.",
+    "failure_signal": "Further sitewide impression contraction or loss of protected winner rankings."
+  }
+}
